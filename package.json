@@ -2,7 +2,6 @@
   "name": "ner-hotel",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ejulcsi.github.io/ner-hotel",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "leaflet": "^1.5.1",

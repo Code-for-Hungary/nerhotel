@@ -12,7 +12,7 @@ function App () {
     return (
         <Provider store={store}>
             <div className="App">
-                <HashRouter basename="/ner-hotel">
+                <HashRouter>
                     <Switch>
                         <Route path="/" exact component={MapView}/>
                         <Route path="/hotel/:id" exact component={HotelView}/>
