@@ -1,0 +1,49 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 66%;
+    max-width: 420px;
+    height: 100vh;
+    padding: 20px;
+    z-index: 100;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 12px 0 40px 5px rgba(0, 0, 0, 0.2)
+}
+
+
+
+.menulist {
+    list-style: none;
+    padding: 0;
+}
+
+.menulist li {
+    margin: 0 0 20px;
+}
+
+.menulist li a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 14px;
+}
+
+
+.footer a {
+    display: block;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.close {
+    cursor: pointer;
+}

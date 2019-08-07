@@ -1,0 +1,1325 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 0,
+      "address": "1051 Budapest, Erzs\u00e9bet t\u00e9r 12.",
+      "name": "Akv\u00e1rium Klub",
+      "type": "sz\u00f3rakoz\u00f3hely",
+      "oligarch": "Lobenwein Norbert, F\u00fcl\u00f6p Zolt\u00e1n",
+      "company": "Volt Produkci\u00f3 Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/hetilap/2018.33/201833__a_balaton_urai__orbani_marketing__csinaljak_afesztivalt__szereposzto_divan_mulik"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.054417,
+        47.498596
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 2,
+      "address": "1073 Budapest, Klauz\u00e1l u. 32.",
+      "name": "Black Swan Budapest",
+      "type": "b\u00e1r",
+      "oligarch": "Sz\u00e1raz Istv\u00e1n",
+      "company": "S.Plissken Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://atlatszo.hu/2017/11/02/fidesz-kozeli-vallalkozok-is-megvetettek-a-labukat-a-hetedik-keruleti-romkocsmabizniszben/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.065128,
+        47.499136
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 3,
+      "address": "1051 Budapest, 1051, Sz\u00e9chenyi Istv\u00e1n t\u00e9r 7, ",
+      "name": "BoB",
+      "type": "\u00e9tterem",
+      "oligarch": "Lefkovics Gy\u00f6rgy",
+      "company": "Okt\u00f3ber 6. Invest Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://cink.hu/ilyen-joban-van-rogan-a-belvaros-kiralyaval-1644247632"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.047470999999998,
+        47.500577
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 4,
+      "address": "1113  Budapest, 1113, Tas vez\u00e9r u. 7, ",
+      "name": "Budai Parksz\u00ednpad",
+      "type": "sz\u00f3rakoz\u00f3hely",
+      "oligarch": "Varga Lajos",
+      "company": "Zsigmond Kert Kft",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://atlatszo.hu/2015/08/20/melyen-a-piaci-ar-alatt-berli-egy-fidesz-kozeli-cegcsoport-a-xi-kerulet-legjobb-vendeglatohelyeit/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.040237,
+        47.477131
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 5,
+      "address": "1050 Budapest, Erzs\u00e9bet t\u00e9r 13, ",
+      "name": "Fr\u00f6ccsterasz",
+      "type": "\u00e9tterem",
+      "oligarch": "Varga Lajos",
+      "company": "\u201eSTU-SZA\u201d Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://valasz.hu/itthon/elkelt-orban-rahel-belvarosi-etterme-120166"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.053409,
+        47.498581
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 8,
+      "address": "1065 Budapest, Nagymez\u0151 u. 38",
+      "name": "Hard Rock Hotel (\u00e9p\u00fcl)",
+      "type": "sz\u00e1lloda",
+      "oligarch": "Erdei B\u00e1lint",
+      "company": "ROCKWOOD INGATLAN Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/kkv/201817__uj_vigalmi_negyed__nemzeti_hop_onhop_off__erdei_balint__kulonjaratok"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.058477,
+        47.504569000000004
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 9,
+      "address": "1013 Budapest, 1, Clark \u00c1d\u00e1m t\u00e9r, ",
+      "name": "Hotel Clark Budapest",
+      "type": "sz\u00e1lloda",
+      "oligarch": "Scheer S\u00e1ndor",
+      "company": "Unione Clark Ingatlanhasznos\u00edt\u00f3 Kft. \u00e9s Cross Border Management Holding GmbH",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://valasz.hu/itthon/nem-is-gondolta-volna-ki-penzeli-az-uj-luxusszallot-a-lanchidnal-120600"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.040139,
+        47.498591
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 10,
+      "address": "1051 Budapest, Okt\u00f3ber 6. u. 9.",
+      "name": "Innio Restaurant and Bar",
+      "type": "\u00e9tterem",
+      "oligarch": "Lefkovics Gy\u00f6rgy",
+      "company": "Okt\u00f3ber 6. Invest Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://cink.hu/ilyen-joban-van-rogan-a-belvaros-kiralyaval-1644247632"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.051063,
+        47.500707
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 11,
+      "address": "1073 Budapest, Ak\u00e1cfa utca 51.",
+      "name": "Instant\u2013Fogash\u00e1z",
+      "type": "sz\u00f3rakoz\u00f3hely",
+      "oligarch": "Hamdan Zakarya, Awad E. A. Riad",
+      "company": "Redwood Holding Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/kkv/201817__uj_vigalmi_negyed__nemzeti_hop_onhop_off__erdei_balint__kulonjaratok"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.065147,
+        47.500578000000004
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 12,
+      "address": "1036 Budapest, Kolosy t\u00e9r 2, ",
+      "name": "Kolosy t\u00e9ri piaccsarnok",
+      "type": "\u00fczletk\u00f6zpont",
+      "oligarch": "Erdei B\u00e1lint",
+      "company": "Redwood Holding Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/kkv/201817__uj_vigalmi_negyed__nemzeti_hop_onhop_off__erdei_balint__kulonjaratok"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.038456,
+        47.528422
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 13,
+      "address": "1051 Budapest, Okt\u00f3ber 6 utca 19.",
+      "name": "Mr. Funk",
+      "type": "\u00e9tterem",
+      "oligarch": "Vajna T\u00edmea, Gomez Norbert",
+      "company": "Mr. Funk Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://blog.atlatszo.hu/2016/11/vegrehajtas-kerult-vajna-timea-fankozojanak-egyharmadara/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.05089,
+        47.50192
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 14,
+      "address": "1027 Budapest, Bem rkp. 53.",
+      "name": "R56 s\u00f6r\u00f6z\u0151",
+      "type": "b\u00e1r",
+      "oligarch": "Stefka Istv\u00e1n, Huth Gergely",
+      "company": "Dr. Sziget Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://index.hu/belfold/2017/02/09/75_millio_kozpenzbol_sorozo_es_dokumentumfilm/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.039403,
+        47.513458
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 15,
+      "address": "1075 Budapest, Kir\u00e1ly u. 13.",
+      "name": "Sp\u00edler Bisztr\u00f3",
+      "type": "b\u00e1r",
+      "oligarch": "Zsidai Roy, Zsidai P\u00e9ter",
+      "company": "Zsidai Group Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://atlatszo.hu/2017/11/02/fidesz-kozeli-vallalkozok-is-megvetettek-a-labukat-a-hetedik-keruleti-romkocsmabizniszben/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.058848,
+        47.498773
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 16,
+      "address": "1137 Budapest, Pozsonyi \u00fat 22.",
+      "name": "The Donut Library",
+      "type": "\u00e9tterem",
+      "oligarch": "Gomez Norbert",
+      "company": "The Donut Library Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://blog.atlatszo.hu/2018/06/vajna-timea-tulajdonostarsa-terjeszkedik-az-ujlipotvarosi-fankozo-piacon/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.050145,
+        47.516508
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 17,
+      "address": "1111 Budapest, Karinthy F. \u00fat 18.",
+      "name": "The Donut Library",
+      "type": "\u00e9tterem",
+      "oligarch": "Gomez Norbert",
+      "company": "The Donut Library Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://blog.atlatszo.hu/2018/06/vajna-timea-tulajdonostarsa-terjeszkedik-az-ujlipotvarosi-fankozo-piacon/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.051239000000002,
+        47.476890999999995
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 18,
+      "address": "1075 Budapest, K\u00e1roly krt. 7.",
+      "name": "The Donut Library",
+      "type": "\u00e9tterem",
+      "oligarch": "Gomez Norbert",
+      "company": "The Donut Library Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://blog.atlatszo.hu/2018/06/vajna-timea-tulajdonostarsa-terjeszkedik-az-ujlipotvarosi-fankozo-piacon/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.058304999999997,
+        47.496432
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 19,
+      "address": "1028 Budapest, Templom u. 12-14,",
+      "name": "Klebersberg Kast\u00e9ly",
+      "type": "sz\u00e1lloda",
+      "oligarch": "Schmitt Gr\u00e9ta",
+      "company": "Optimum F\u00fcred Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/itthon/20180531_Rendezzen_luxuseskuvot_Klebelsberg_emlekhazaban"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.961505,
+        47.566297999999996
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 20,
+      "address": "1051 Budapest, Erzs\u00e9bet t\u00e9r 7-8.",
+      "name": "Nobu",
+      "type": "\u00e9tterem",
+      "oligarch": "Andy Vajna",
+      "company": "Buno Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://www.vg.hu/velemeny/vajnanak-bejott-a-nobu-331654/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.051996,
+        47.497303
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 21,
+      "address": "1051 Budapest, Zr\u00ednyi u. 4/A, ",
+      "name": "\u00d6tkert Club",
+      "type": "sz\u00f3rakoz\u00f3hely",
+      "oligarch": "Lefkovics Gy\u00f6rgy",
+      "company": "Okt\u00f3ber 6. Invest Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://cink.hu/ilyen-joban-van-rogan-a-belvaros-kiralyaval-1644247632"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.048437,
+        47.500386999999996
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 22,
+      "address": "1051 Budapest, Sz\u00e9chenyi Istv\u00e1n t\u00e9r 7-8.",
+      "name": "TOKIO Budapest",
+      "type": "sz\u00f3rakoz\u00f3hely",
+      "oligarch": "Lefkovics Gy\u00f6rgy",
+      "company": "Okt\u00f3ber 6. Invest Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://cink.hu/ilyen-joban-van-rogan-a-belvaros-kiralyaval-1644247632"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.047864999999998,
+        47.500403000000006
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 23,
+      "address": "1051 Budapest, Okt\u00f3ber 6. u. 8.",
+      "name": "Tom George Budapest",
+      "type": "\u00e9tterem",
+      "oligarch": "Lefkovics Gy\u00f6rgy",
+      "company": "Okt\u00f3ber 6. Invest Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://cink.hu/ilyen-joban-van-rogan-a-belvaros-kiralyaval-1644247632"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.050913,
+        47.50045
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 24,
+      "address": "1123 Budapest, Alkot\u00e1s u 53.",
+      "name": "Tom George Piccolino",
+      "type": "\u00e9tterem",
+      "oligarch": "Lefkovics Gy\u00f6rgy",
+      "company": "Okt\u00f3ber 6. Invest Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://cink.hu/ilyen-joban-van-rogan-a-belvaros-kiralyaval-1644247632"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.023913,
+        47.490733
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 25,
+      "address": "1051 Budapest, Bestia, Szent Istv\u00e1n t\u00e9r 9.",
+      "name": "Bestia",
+      "type": "\u00e9tterem",
+      "oligarch": "Lefkovics Gy\u00f6rgy",
+      "company": "Okt\u00f3ber 6. Invest Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": null
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.052963000000002,
+        47.500933
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 26,
+      "address": "1053 Budapest, Kir\u00e1lyi P\u00e1l utca 4.",
+      "name": "Hotel Rum",
+      "type": "sz\u00e1lloda",
+      "oligarch": "Lefkovics Gy\u00f6rgy",
+      "company": "Hotel Rum Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": null
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.059071,
+        47.490516
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 27,
+      "address": "1014 Budapest, Orsz\u00e1gh\u00e1z utca 31.",
+      "name": "Baltaz\u00e1r",
+      "type": "\u00e9tterem",
+      "oligarch": "Zsidai Roy",
+      "company": "Zsidai Group Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/itthon/20170808_Extrem_arres_Zsidai_23_ezerert_berli_az_ingatlant_amivel_havi_26_milliot_kereshet"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.029235999999997,
+        47.504587
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 28,
+      "address": "1014 Budapest, Fortuna u. 3.",
+      "name": "Pest-Buda Hotel",
+      "type": "sz\u00e1lloda",
+      "oligarch": "Zsidai Roy",
+      "company": "Zsidai Group Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/itthon/20170808_Extrem_arres_Zsidai_23_ezerert_berli_az_ingatlant_amivel_havi_26_milliot_kereshet"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.032455,
+        47.503303
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 29,
+      "address": "1014 Budapest, Fortuna u. 3.",
+      "name": "Pest-Buda Bisztro",
+      "type": "\u00e9tterem",
+      "oligarch": "Zsidai Roy",
+      "company": "Zsidai Group Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/itthon/20170808_Extrem_arres_Zsidai_23_ezerert_berli_az_ingatlant_amivel_havi_26_milliot_kereshet"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.032495,
+        47.503334
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 30,
+      "address": "1014 Budapest, Fortuna u. 21",
+      "name": "21 Magyar Vendegl\u0151",
+      "type": "\u00e9tterem",
+      "oligarch": "Zsidai Roy",
+      "company": "Zsidai Group Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/itthon/20170221_Ennyiert_adtuk_Zsidainak_a_kozvagyont_hogy_Jamiest_nyisson_benne"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.03129,
+        47.504148
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 33,
+      "address": "1014 Budapest, Szenth\u00e1roms\u00e1g u. 9-11",
+      "name": "Jamie's Italian",
+      "type": "\u00e9tterem",
+      "oligarch": "Zsidai Roy",
+      "company": "Zsidai Group Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/itthon/20170221_Ennyiert_adtuk_Zsidainak_a_kozvagyont_hogy_Jamiest_nyisson_benne"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.0304986,
+        47.5011501
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 35,
+      "address": "1014 Budapest, Fortuna u. 14.",
+      "name": "Pierrot",
+      "type": "\u00e9tterem",
+      "oligarch": "Zsidai Roy",
+      "company": "Zsidai Group Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/egy-evig-ingyen-utana-fillerekert-igy-kap-hazat-lakast-zsidai-roy-a-varban-102627"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        19.031029999999998,
+        47.503969
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 42,
+      "address": "8230 Balatonf\u00fcred, F\u00fcrd\u0151 u. 34.",
+      "name": "Hotel Pallone",
+      "type": "sz\u00e1lloda",
+      "oligarch": "Soponyai R\u00f3bert",
+      "company": "Pallone Hotels Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://index.hu/sport/2018/04/19/negy_eve_megszunt_allami_ceg_ajanlott_fel_60_milliot_a_furedi_fc-nek/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.875486,
+        46.948684
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 43,
+      "address": "8220 Balatonalmadi, Bajcsy-Zsilinszky u. 14.",
+      "name": "Hunguest Hotel B\u00e1l Resort",
+      "type": "sz\u00e1lloda",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Hunguest Hotels Zrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.020191,
+        47.029635
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 44,
+      "address": "8300 Tapolca, K\u00f6zt\u00e1rsas\u00e1g t\u00e9r 10.",
+      "name": "Hunguest Hotel Pelion",
+      "type": "sz\u00e1lloda",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Hunguest Hotels Zrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.442448000000002,
+        46.886205
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 45,
+      "address": "8360 Keszthely, Mikus Gyula S\u00e9t\u00e1ny 5.",
+      "name": "Hunguest Hotel Helikon",
+      "type": "sz\u00e1lloda",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Hunguest Hotels Zrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.254934,
+        46.761238
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 46,
+      "address": "8380 H\u00e9v\u00edz, V\u00f6r\u00f6smarty Mih\u00e1ly utca 91.",
+      "name": "Hunguest Hotel Helios",
+      "type": "sz\u00e1lloda",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Hunguest Hotels Zrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.184910000000002,
+        46.780999
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 47,
+      "address": "8380 H\u00e9v\u00edz, Pet\u0151fi S\u00e1ndor u. 9.",
+      "name": "Hunguest Hotel Panor\u00e1ma",
+      "type": "sz\u00e1lloda",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Hunguest Hotels Zrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.188166,
+        46.789269
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 48,
+      "address": "8749 Zalakaros, Term\u00e1l \u00fat 7.",
+      "name": "Hunguest Hotel Freya",
+      "type": "sz\u00e1lloda",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Hunguest Hotels Zrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.123582,
+        46.547926000000004
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 49,
+      "address": "8230 Balatonf\u00fcred, Sz\u00e9chenyi Istv\u00e1n u. 24.",
+      "name": "Balatontourist F\u00fcred Kemping \u00e9s \u00dcd\u00fcl\u0151falu",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.876507,
+        46.946188
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 50,
+      "address": "8243 Balatonakali, Balaton u. 8.",
+      "name": "Balatontourist Strand-Holiday Kemping",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.755193,
+        46.881091999999995
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 51,
+      "address": "8253 R\u00e9vf\u00fcl\u00f6p, Hal\u00e1sz u. 5.",
+      "name": "Balatontourist Napf\u00e9ny Kemping",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.639974,
+        46.829534
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 52,
+      "address": "8360 Keszthely, Entz G\u00e9za stny. 1.",
+      "name": "Balatontourist Zala Kemping \u00e9s \u00dcd\u00fcl\u0151falu",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.244156,
+        46.746857
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 53,
+      "address": "8649 Balatonber\u00e9ny, H\u00e9tvez\u00e9r u. 2.",
+      "name": "Balatontourist Naturista Kemping",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.310803,
+        46.713511
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 54,
+      "address": "8220 Balatonalm\u00e1di, V\u00e9ghely Dezs\u0151 u. 18.",
+      "name": "Yacht Kemping",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.008426999999998,
+        47.020563
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 55,
+      "address": "8636 Balatonszemes, Lellei u. 1-2.",
+      "name": "Balatontourist Vadvir\u00e1g Kemping",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.740087,
+        46.800833000000004
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 56,
+      "address": "8621 Zam\u00e1rdi, Szent Istv\u00e1n u. 3512 hrsz.",
+      "name": "Mirabella Kemping",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.915216,
+        46.880458000000004
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 57,
+      "address": "8600 Si\u00f3fok, Szent L\u00e1szl\u00f3 u. 185.",
+      "name": "Aranypart Camping",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.103393,
+        46.927766
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 58,
+      "address": "8749 Zalakaros, Gy\u00f3gyf\u00fcrd\u0151 t\u00e9r 6.",
+      "name": "Balatontourist Term\u00e1l Kemping",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.125985,
+        46.553754999999995
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 59,
+      "address": "8257 Badacsonytomaj, F\u00fcredi \u00fat 65.",
+      "name": "Balatontourist Balaton Vend\u00e9gh\u00e1z",
+      "type": "sz\u00e1lloda",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Balatontourist Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.540418,
+        46.804384000000006
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 60,
+      "address": "8360 Keszthely, Mikus Gyula stny. 3.",
+      "name": "Balaton Sz\u00e1ll\u00f3",
+      "type": "sz\u00e1lloda",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Konzum Nyrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.252311,
+        46.759570000000004
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 61,
+      "address": "8360 Keszthely, Balaton u. 15.",
+      "name": "Hotel Via",
+      "type": "sz\u00e1lloda",
+      "oligarch": "Sz\u00edjj L\u00e1szl\u00f3",
+      "company": "Sz\u0151ke Tisza Invest Kft",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.257166,
+        46.763222
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 62,
+      "address": "8172 Balatonakarattya, Aligai u. 15.",
+      "name": "Piroska Kemping (z\u00e1rva)",
+      "type": "kemping",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "MKB Bank",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.162307000000002,
+        47.010603
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 63,
+      "address": "8360 Keszthely Cs\u00edk Ferenc stny.",
+      "name": "Hull\u00e1m Sz\u00e1ll\u00f3",
+      "type": "sz\u00e1lloda",
+      "oligarch": "Somlyai Zolt\u00e1n",
+      "company": "Pannon Tessera Hospitalis Zrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.251879000000002,
+        46.758967
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 64,
+      "address": "8360 Keszthely, Phoenix u. 1.",
+      "name": "Keszthely Yacht Kik\u00f6t\u0151",
+      "type": "b\u00e1r",
+      "oligarch": "Tiborcz Istv\u00e1n",
+      "company": "Keszthelyi Yachtkik\u00f6t\u0151 Zrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://atlatszo.hu/2015/01/27/hogyan-szereztek-meg-palyaztatas-es-verseny-nelkul-tiborczek-a-keszthelyi-kikotot-mutatjuk-a-trukkot/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.265898999999997,
+        46.764434
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 65,
+      "address": "8251 Z\u00e1nka, Borosok \u00fatja 1.",
+      "name": "Canter Borh\u00e1z",
+      "type": "bor\u00e1szat",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Canter Borh\u00e1z Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.698127,
+        46.877711
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 66,
+      "address": "8380 H\u00e9v\u00edz, Attila u. 1.",
+      "name": "Hotel Carbona",
+      "type": "sz\u00e1lloda",
+      "oligarch": "B\u00e1lintfy G\u00e1bor, Pocsai Alex",
+      "company": "Hoter Carbona Zrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://blog.atlatszo.hu/2017/09/fidesz-kozeli-hotelben-udul-a-mediahatosag/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.188654,
+        46.792001
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 67,
+      "address": "8230 Balatonf\u00fcred, Malomv\u00f6lgy 095/24",
+      "name": "Villa Vitae",
+      "type": "sz\u00e1lloda",
+      "oligarch": "Eppel csal\u00e1d",
+      "company": "E 55 Tan\u00e1csad\u00f3 Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://blog.atlatszo.hu/2017/01/luxusszallot-epitett-az-allam-kedvenc-autokereskedoje/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.839925,
+        46.951496
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 68,
+      "address": "8171 Balatonvil\u00e1gos, Aligai \u00fat 1.",
+      "name": "Club Aliga",
+      "type": "sz\u00e1lloda",
+      "oligarch": "M\u00e9sz\u00e1ros L\u0151rinc",
+      "company": "Appeninn Nyrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://index.hu/gazdasag/2018/07/26/meszaros_lorincek_megszereztek_a_club_aligat_az_egykori_partudulot/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        18.168357999999998,
+        46.991351
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 69,
+      "address": "8242 Balatonudvari, V\u00e1szolyi \u00fat",
+      "name": "Balaton Golf Club",
+      "type": "golfklub",
+      "oligarch": "Szivek Norbert",
+      "company": "Vaperty Investment Zrt.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://24.hu/belfold/2017/11/22/orban-fo-vagyonkezeloje-sejlik-fel-a-balatoni-golfpalya-megszerzese-mogott/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.801322,
+        46.909005
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 70,
+      "address": "8621 Zam\u00e1rdi, Szent Istv\u00e1n \u00fat 148/B.",
+      "name": "Diavolo VIP Park & Camping",
+      "type": "kemping",
+      "oligarch": "Serf\u0151z\u0151 Szabolcs",
+      "company": "Nagy-Mercatus Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "https://24.hu/belfold/2017/09/28/hatodaron-adtak-el-a-kempinget-ahol-tobb-ezren-taboroznak-a-balaton-sound-alatt/"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.913451000000002,
+        46.87944
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 71,
+      "address": "8636 Balatonszemes, Bajcsy-Zsilinszky \u00fat 25.",
+      "name": "Kist\u00fccs\u00f6k \u00e9tterem",
+      "type": "\u00e9tterem",
+      "oligarch": "Csapody Bal\u00e1zs",
+      "company": "GASTROGOLD Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/hetilap/2018.33/201833__a_balaton_urai__orbani_marketing__csinaljak_afesztivalt__szereposzto_divan_mulik"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.780251,
+        46.807463
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 72,
+      "address": "8253 R\u00e9vf\u00fcl\u00f6p, Hal\u00e1sz u. 37.",
+      "name": "Hotel R\u00e9vf\u00fcl\u00f6p",
+      "type": "sz\u00e1lloda",
+      "oligarch": "Kondor G\u00e9za",
+      "company": "HOTEL R\u00e9vf\u00fcl\u00f6p Kft.",
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://www.origo.hu/itthon/20110606-egesz-nyarra-kiberelte-a-hotel-revfulopot-az-mtva-a-balatoni.html"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.635558,
+        46.828685
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 73,
+      "address": "8257 Badacsonytomaj, F\u00fcredi \u00fat 29.",
+      "name": "V\u00e1nkos",
+      "type": "sz\u00e1lloda",
+      "oligarch": "J\u00e1szai Gell\u00e9rt",
+      "company": null,
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/hetilap/2018.33/201833_szomszedok_amedenceben"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.530353,
+        46.806812
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 74,
+      "address": "8257 Badacsonytomaj, K\u00e1polnav\u00f6lgyi \u00fat 25.",
+      "name": "Folly bor\u00e1szat",
+      "type": "bor\u00e1szat",
+      "oligarch": "Folly R\u00e9ka",
+      "company": null,
+      "type_of_relation": null,
+      "show_on_map": true,
+      "link": "http://hvg.hu/hetilap/2018.33/201833_szomszedok_amedenceben"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.545368,
+        46.810029
+      ]
+    }
+  }
+]

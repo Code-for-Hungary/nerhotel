@@ -1,0 +1,56 @@
+.list {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  width: 100%;
+  min-height: calc(100vh - 160px);
+  padding: 20px;
+  background: #fff;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.listItem {
+  font-size: 18px;
+  padding: 15px 5px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.listItemRow {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.listItemCol {
+  display: flex;
+  width: 300px;
+  margin-right: 10px;
+  align-items: baseline;
+}
+
+@media (max-width: 480px) {
+  .listItemCol {
+    width: 50%;
+    margin-right: 0;
+    align-items: center;
+  }
+}
+
+
+.listItem h1 {
+  font-size: 20px;
+}
+
+.listItem p {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}

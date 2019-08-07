@@ -1,0 +1,308 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 1,
+      "name": "Si\u00f3fok",
+      "address": "Si\u00f3fok",
+      "id": 14,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "18.0541598",
+        "46.9071694"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 3,
+      "name": "Balatonf\u00fcred",
+      "address": "Balatonf\u00fcred",
+      "id": 2,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.888892",
+        "46.9567254"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 6,
+      "name": "Keszthely",
+      "address": "Keszthely",
+      "id": 5,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.2462801",
+        "46.7675081"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 2,
+      "name": "R\u00e9vf\u00fcl\u00f6p",
+      "address": "R\u00e9vf\u00fcl\u00f6p",
+      "id": 9,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.6303514",
+        "46.828315"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 2,
+      "name": "Zam\u00e1rdi",
+      "address": "Zam\u00e1rdi",
+      "id": 13,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.9459928",
+        "46.8800183"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 30,
+      "name": "Budapest",
+      "address": "Budapest",
+      "id": 1,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "19.0404707",
+        "47.4983815"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 1,
+      "name": "Tapolca",
+      "address": "Tapolca",
+      "id": 4,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.4389619",
+        "46.8820972"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 1,
+      "name": "Balatonber\u00e9ny",
+      "address": "Balatonber\u00e9ny",
+      "id": 10,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.3193203",
+        "46.710836"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 2,
+      "name": "Balatonszemes",
+      "address": "Balatonszemes",
+      "id": 12,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.7789908",
+        "46.806042"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 1,
+      "name": "Balatonudvari",
+      "address": "Balatonudvari",
+      "id": 20,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.8048202",
+        "46.9054215"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 1,
+      "name": "Z\u00e1nka",
+      "address": "Z\u00e1nka",
+      "id": 18,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.6833856",
+        "46.8729306"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 2,
+      "name": "Balatonalm\u00e1di",
+      "address": "Balatonalm\u00e1di",
+      "id": 11,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "18.0200896",
+        "47.035766"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 3,
+      "name": "Badacsonytomaj",
+      "address": "Badacsonytomaj",
+      "id": 15,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.514693",
+        "46.8057988"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 2,
+      "name": "Zalakaros",
+      "address": "Zalakaros",
+      "id": 7,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.1221529",
+        "46.5607855"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 3,
+      "name": "H\u00e9v\u00edz",
+      "address": "H\u00e9v\u00edz",
+      "id": 6,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.1834489",
+        "46.7906038"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 1,
+      "name": "Balatonvil\u00e1gos",
+      "address": "Balatonvil\u00e1gos",
+      "id": 19,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "18.159314",
+        "46.9641731"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 1,
+      "name": "Balatonakarattya",
+      "address": "Balatonakarattya",
+      "id": 16,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "18.1439403",
+        "47.0239663"
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "count": 1,
+      "name": "Balatonakali",
+      "address": "Balatonakali",
+      "id": 8,
+      "type": "city"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        "17.7518613",
+        "46.8830854"
+      ]
+    }
+  }
+]

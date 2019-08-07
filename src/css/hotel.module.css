@@ -1,0 +1,36 @@
+.hotel {
+  position: relative;
+  top: 100px;
+  padding: 20px;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-top: 30px;
+  padding: 10px;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.hotelRow {
+  display: flex;
+  align-items: center;
+}
+
+.hotelRow p,
+.hotelRow a {
+  margin-left: 10px;
+}
+
+.hotelRow span {
+  font-weight: 700;
+}
+
+.hotelRow a {
+  /*text-decoration: none;*/
+  color: #000;
+}
