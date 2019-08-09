@@ -4,6 +4,31 @@
   padding: 20px;
 }
 
+.hotelWrapper {
+  display: flex;
+}
+
+.info,
+.map {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .hotelWrapper {
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .map {
+    width: 100%;
+    height: 240px;
+  }
+}
+
 .back {
   display: flex;
   justify-content: center;
