@@ -5,9 +5,7 @@ import store, { openList, setList, setSelectedPoint, openPopup, setMap } from '.
 import { Map, Marker, TileLayer } from 'react-leaflet';
 import LocateControl from './LocateControl.js';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
-// import 'leaflet.markercluster'
 
-// import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import orangeIcon from '../assets/marker-icon-orange.svg';
@@ -123,7 +121,7 @@ class MapComponent extends React.Component {
             url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
             attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
           />
-          <MarkerClusterGroup zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon} >
+          <MarkerClusterGroup maxClusterRadius={20} zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon} >
             <MarkerList/>
           </MarkerClusterGroup>
           <LocateControl options={locateOptions} startDirectly/>
