@@ -7,16 +7,21 @@ import horseIcon from '../assets/horse-icon.svg';
 import hotelIcon from '../assets/hotel-icon.svg';
 import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
-import store, { closePopup } from '../store';
+import store, { closePopup, setSelectedPoint } from '../store';
 
 
 const Popup = (props) => {
   const data = props.point.properties;
 
+  const close = () => {
+    store.dispatch(setSelectedPoint(null))
+    store.dispatch(closePopup())
+  }
+
   return (
     <div className={styles.popup}>
       <div className={styles.popupInner}>
-        <div className={styles.close} onClick={() => {store.dispatch(closePopup())}}>
+        <div className={styles.close} onClick={() => close()}>
             <Icon img={closeIcon} size="large"/>
         </div>
           <div>
