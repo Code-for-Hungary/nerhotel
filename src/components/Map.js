@@ -22,7 +22,7 @@ import styles from '../css/map.module.css';
 
 const filterPoints = (points, bounds) => {
   return points.filter(point => {
-    const [lng, lat] = point.geometry.coordinates
+    const [lat, lng] = point.geometry.coordinates
     return (lng > bounds._southWest.lng && lng < bounds._northEast.lng
       && lat > bounds._southWest.lat && lat < bounds._northEast.lat)
   })
@@ -73,6 +73,7 @@ class MapComponent extends React.Component {
 
   calcPoints () {
     let bounds = this.refs.map.leafletElement.getBounds()
+    console.log(bounds, places)
     const filteredPoints = filterPoints(places, bounds)
     this.setState({filteredPoints})
     store.dispatch(setList(filteredPoints))
@@ -103,7 +104,7 @@ class MapComponent extends React.Component {
 
     const MarkerList = () => {
       return this.state.filteredPoints.map((point, i) => {
-        const [lng, lat] = point.geometry.coordinates
+        const [lat, lng] = point.geometry.coordinates
         const isSelected = this.props.selectedPoint && this.props.selectedPoint.properties.id === point.properties.id
         const DefaultIcon = getIcon(orangeIcon)
         const ActiveIcon = getIcon(blueIcon)

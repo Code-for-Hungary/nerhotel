@@ -14,7 +14,7 @@ class List extends React.Component {
     }
 
     showItem(item) {
-        const [lng, lat] = item.geometry.coordinates
+        const [lat, lng] = item.geometry.coordinates
         this.props.map.setView([lat, lng], 18);
         store.dispatch(setCenter([lat, lng]))
         store.dispatch(setSelectedPoint(item))

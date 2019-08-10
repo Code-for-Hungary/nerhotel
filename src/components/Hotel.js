@@ -20,7 +20,7 @@ import orangeIcon from '../assets/marker-icon-orange.svg';
 const Hotel = (props) => {
     const hotelById = places.find(item => item.properties.id === parseInt(props.id))
     const data = hotelById.properties
-    const [lng, lat] = hotelById.geometry.coordinates
+    const [lat, lng] = hotelById.geometry.coordinates
 
     const icon = L.icon({
         iconUrl: orangeIcon,
