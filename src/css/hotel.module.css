@@ -60,6 +60,11 @@
   font-weight: 700;
 }
 
+.hotelRow span.title {
+  font-weight: 400;
+  font-style: italic;
+}
+
 .hotelRow a {
   /*text-decoration: none;*/
   color: #000;

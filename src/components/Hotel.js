@@ -1,5 +1,5 @@
 import React from 'react'
-import { Map, Marker, TileLayer } from 'react-leaflet';
+import { Map as LeafletMap, Marker, TileLayer } from 'react-leaflet';
 import Icon from './Icon.js'
 
 import styles from '../css/hotel.module.css'
@@ -34,8 +34,25 @@ const Hotel = (props) => {
     const goBack = () => {
         store.dispatch(closePopup())
         props.history.push('/');
-
     }
+
+    const oligarchs = data.oligarch.filter(ol => ol !== '').map(i => ({type: 'cégvezető', name: i}))
+    const ceos = data.ceo.filter(ol => ol !== '').map(i => ({type: 'üzletvezető', name: i}))
+
+    const allOligarchs = [...oligarchs, ...ceos]
+    const oligarchMap = allOligarchs.reduce((a, c) => {
+        if (!a.has(c.name)) {
+            a.set(c.name, c.type)
+        } else {
+            const type = `${a.get(c.name)}, ${c.type}`
+            a.set(c.name, type)
+        }
+
+        return a
+    }, new Map())
+
+    const oligarchData = Array.from(oligarchMap.entries()).map(([name, type]) => ({name, type}))
+
 
     return (
         <div className={[styles.hotel, 'hotel'].join(' ')}>
@@ -51,7 +68,9 @@ const Hotel = (props) => {
                     </div>
                     <div className={styles.hotelRow}>
                         <Icon img={horseIcon} size="small"/>
-                        <p>NER lovag: <span>{data.oligarch}</span></p>
+                        <p>NER lovag:<br/>
+                          {oligarchData.map(ol => (<span>{ol.name}<span className={styles.title}> ({ol.type})</span><br/></span>))}
+                        </p>
                     </div>
                     <div className={styles.hotelRow}>
                         <Icon img={pinIcon} size="small"/>
@@ -66,13 +85,13 @@ const Hotel = (props) => {
                     </div>
                 </div>
                 <div className={styles.map}>
-                    <Map className="markercluster-map" center={[lat, lng]} zoom={17} maxZoom={19} zoomControl={false}>
+                    <LeafletMap className="markercluster-map" center={[lat, lng]} zoom={17} maxZoom={19} zoomControl={false}>
                         <TileLayer
                             url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
                             attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
                         />
                         <Marker position={[lat, lng]} icon={icon}/>
-                    </Map>
+                    </LeafletMap>
                 </div>
             </div>
         </div>

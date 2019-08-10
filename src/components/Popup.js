@@ -18,6 +18,23 @@ const Popup = (props) => {
     store.dispatch(closePopup())
   }
 
+  const oligarchs = data.oligarch.filter(ol => ol !== '').map(i => ({type: 'cégvezető', name: i}))
+  const ceos = data.ceo.filter(ol => ol !== '').map(i => ({type: 'üzletvezető', name: i}))
+
+  const allOligarchs = [...oligarchs, ...ceos]
+  const oligarchMap = allOligarchs.reduce((a, c) => {
+      if (!a.has(c.name)) {
+          a.set(c.name, c.type)
+      } else {
+          const type = `${a.get(c.name)}, ${c.type}`
+          a.set(c.name, type)
+      }
+
+      return a
+  }, new Map())
+
+    const oligarchData = Array.from(oligarchMap.entries()).map(([name, type]) => ({name, type}))
+
   return (
     <div className={styles.popup}>
       <div className={styles.popupInner}>
@@ -39,7 +56,9 @@ const Popup = (props) => {
                           <span>NER-lovag</span>
                           <div className={styles.popupRow}>
                               <Icon img={horseIcon}  size="small"/>
-                              <p>{data.oligarch}</p>
+                            <div className={styles.oligarch}>
+                              {oligarchData.map(ol => (<p>{ol.name}<br/><span>{ol.type}</span></p>))}
+                            </div>
                           </div>
                       </div>
                   </div>
