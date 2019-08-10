@@ -66,7 +66,7 @@ const Hotel = (props) => {
                     </div>
                 </div>
                 <div className={styles.map}>
-                    <Map className="markercluster-map" center={[lat, lng]} zoom={17} maxZoom={19}>
+                    <Map className="markercluster-map" center={[lat, lng]} zoom={17} maxZoom={19} zoomControl={false}>
                         <TileLayer
                             url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
                             attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
