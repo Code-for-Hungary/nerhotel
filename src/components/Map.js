@@ -116,6 +116,7 @@ class MapComponent extends React.Component {
     }
 
     return (
+      <>
       <div className={styles.mapWrapper}>
         <Map ref='map' className="markercluster-map" center={this.props.center} zoom={16} maxZoom={19} onZoomEnd={this.onZoomEnd} onMoveEnd={this.onMoveEnd}>
           <TileLayer
@@ -130,8 +131,10 @@ class MapComponent extends React.Component {
         <div className={styles.listButton} onClick={this.openLocationList}>
           <Icon img={listIcon} size="small" />
         </div>
-        {this.props.showPopup && (<Popup close={this.closePopup} point={this.props.selectedPoint}/>)}
       </div>
+        {this.props.showPopup && (<Popup close={this.closePopup} point={this.props.selectedPoint}/>)}
+
+      </>
     )
   }
 }

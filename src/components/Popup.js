@@ -8,7 +8,7 @@ import hotelIcon from '../assets/hotel-icon.svg';
 import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
 import store, { closePopup, setSelectedPoint } from '../store';
-
+import {getOligarchData} from '../utils'
 
 const Popup = (props) => {
   const data = props.point.properties;
@@ -18,22 +18,7 @@ const Popup = (props) => {
     store.dispatch(closePopup())
   }
 
-  const oligarchs = data.oligarch.filter(ol => ol !== '').map(i => ({type: 'cégvezető', name: i}))
-  const ceos = data.ceo.filter(ol => ol !== '').map(i => ({type: 'üzletvezető', name: i}))
-
-  const allOligarchs = [...oligarchs, ...ceos]
-  const oligarchMap = allOligarchs.reduce((a, c) => {
-      if (!a.has(c.name)) {
-          a.set(c.name, c.type)
-      } else {
-          const type = `${a.get(c.name)}, ${c.type}`
-          a.set(c.name, type)
-      }
-
-      return a
-  }, new Map())
-
-    const oligarchData = Array.from(oligarchMap.entries()).map(([name, type]) => ({name, type}))
+  const oligarchData = getOligarchData(data)
 
   return (
     <div className={styles.popup}>

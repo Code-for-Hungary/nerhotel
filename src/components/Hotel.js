@@ -16,6 +16,8 @@ import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import orangeIcon from '../assets/marker-icon-orange.svg';
 
+import {getOligarchData} from '../utils'
+
 
 const Hotel = (props) => {
     const hotelById = places.find(item => item.properties.id === parseInt(props.id))
@@ -36,22 +38,7 @@ const Hotel = (props) => {
         props.history.push('/');
     }
 
-    const oligarchs = data.oligarch.filter(ol => ol !== '').map(i => ({type: 'cégvezető', name: i}))
-    const ceos = data.ceo.filter(ol => ol !== '').map(i => ({type: 'üzletvezető', name: i}))
-
-    const allOligarchs = [...oligarchs, ...ceos]
-    const oligarchMap = allOligarchs.reduce((a, c) => {
-        if (!a.has(c.name)) {
-            a.set(c.name, c.type)
-        } else {
-            const type = `${a.get(c.name)}, ${c.type}`
-            a.set(c.name, type)
-        }
-
-        return a
-    }, new Map())
-
-    const oligarchData = Array.from(oligarchMap.entries()).map(([name, type]) => ({name, type}))
+    const oligarchData = getOligarchData(data)
 
 
     return (
