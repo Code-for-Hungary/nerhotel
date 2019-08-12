@@ -65,7 +65,7 @@ const Hotel = (props) => {
                     </div>
                     {data.link !== "" && (<div className={styles.hotelRow}>
                         <Icon img={linkIcon} size="small"/>
-                        <a href={data.link}><span>Kapcsolódó cikk</span></a>
+                        <a href={data.link} target="_blank"><span>Kapcsolódó cikk</span></a>
                     </div>)}
                     <div className={styles.back} onClick={() => goBack()}>
                         <Icon img={arrowIcon} size="large"/>

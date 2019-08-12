@@ -56,7 +56,7 @@ const Popup = (props) => {
                   </div>
                   {data.link !== "" && (<div className={styles.popupRow}>
                       <Icon img={linkIcon}  size="small"/>
-                      <a href={data.link}>kapcsolódó cikk</a>
+                      <a href={data.link} target="_blank">kapcsolódó cikk</a>
                   </div>)}
               </div>
               <Link to={`/hotel/${data.id}`} className={styles.moreButton}>részletek</Link>
