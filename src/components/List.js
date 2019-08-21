@@ -35,7 +35,11 @@ class List extends React.Component {
                             <div className={styles.listItemRow}>
                                 <div className={styles.listItemCol}>
                                     <Icon img={horseIcon} size="small"/>
-                                    <p>{item.properties.oligarch}</p>
+                                    <div className={styles.oligarchList}>
+                                    {item.properties.oligarch.map(oligarch => (
+                                        <p>{oligarch}</p>
+                                    ))}
+                                    </div>
                                 </div>
                                 <div className={styles.listItemCol}>
                                     <Icon img={pinIcon} size="small"/>

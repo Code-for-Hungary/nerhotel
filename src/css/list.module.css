@@ -30,11 +30,19 @@
   align-items: baseline;
 }
 
+.oligarchList {
+  display: flex;
+  flex-direction: column;
+}
+
+.oligarchList p {
+  margin: 0 0 5px;
+}
+
 @media (max-width: 480px) {
   .listItemCol {
     width: 50%;
     margin-right: 0;
-    align-items: center;
   }
 }
 

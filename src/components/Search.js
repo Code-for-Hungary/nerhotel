@@ -28,9 +28,16 @@ class Search extends React.Component {
     }
 
     findProperty(place, phrase) {
+        console.log(place)
+        let foundOligarch = []
+        if (place.oligarch.length > 0) {
+            foundOligarch = place.oligarch.filter(ol => (
+                ol.toLowerCase().indexOf(phrase) > -1
+            ))
+        }
         return ((place.address && place.address.toLowerCase().indexOf(phrase) > -1)
             || (place.name && place.name.toLowerCase().indexOf(phrase) > -1)
-            || (place.oligarch && place.oligarch.toLowerCase().indexOf(phrase) > -1)
+            || (foundOligarch.length > 0)
         )
     }
 
