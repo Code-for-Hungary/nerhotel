@@ -7,9 +7,6 @@ import places from '../data/places.json'
 class Search extends React.Component {
     constructor() {
         super()
-        this.state = {
-            results: []
-        }
         this.search = this.search.bind(this)
     }
 
@@ -28,7 +25,6 @@ class Search extends React.Component {
     }
 
     findProperty(place, phrase) {
-        console.log(place)
         let foundOligarch = []
         if (place.oligarch.length > 0) {
             foundOligarch = place.oligarch.filter(ol => (

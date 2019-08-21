@@ -73,7 +73,6 @@ class MapComponent extends React.Component {
 
   calcPoints () {
     let bounds = this.refs.map.leafletElement.getBounds()
-    console.log(bounds, places)
     const filteredPoints = filterPoints(places, bounds)
     this.setState({filteredPoints})
     store.dispatch(setList(filteredPoints))
@@ -105,6 +104,7 @@ class MapComponent extends React.Component {
     const MarkerList = () => {
       return this.state.filteredPoints.map((point, i) => {
         const [lat, lng] = point.geometry.coordinates
+        console.log(this.props.selectedPoint, point)
         const isSelected = this.props.selectedPoint && this.props.selectedPoint.properties.id === point.properties.id
         const DefaultIcon = getIcon(orangeIcon)
         const ActiveIcon = getIcon(blueIcon)

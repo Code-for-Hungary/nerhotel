@@ -11,7 +11,7 @@ import hotelIcon from '../assets/hotel-icon.svg';
 import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
 
-import store, {closePopup} from '../store';
+import store, { closePopup, setCenter, setSelectedPoint } from '../store'
 import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import orangeIcon from '../assets/marker-icon-orange.svg';
@@ -34,8 +34,10 @@ const Hotel = (props) => {
     })
 
     const goBack = () => {
-        store.dispatch(closePopup())
+        // store.dispatch(closePopup())
         props.history.push('/');
+        store.dispatch(setSelectedPoint(hotelById))
+        setTimeout(() => store.dispatch(setCenter([lat, lng])), 100)
     }
 
     const oligarchData = getOligarchData(data)
