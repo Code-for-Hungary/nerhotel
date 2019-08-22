@@ -36,8 +36,8 @@ class List extends React.Component {
                                 <div className={styles.listItemCol}>
                                     <Icon img={horseIcon} size="small"/>
                                     <div className={styles.oligarchList}>
-                                    {item.properties.oligarch.map(oligarch => (
-                                        <p>{oligarch}</p>
+                                    {item.properties.mainOligarch.map(oligarch => (
+                                        <p>{oligarch.name}</p>
                                     ))}
                                     </div>
                                 </div>

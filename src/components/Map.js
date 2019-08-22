@@ -104,7 +104,6 @@ class MapComponent extends React.Component {
     const MarkerList = () => {
       return this.state.filteredPoints.map((point, i) => {
         const [lat, lng] = point.geometry.coordinates
-        console.log(this.props.selectedPoint, point)
         const isSelected = this.props.selectedPoint && this.props.selectedPoint.properties.id === point.properties.id
         const DefaultIcon = getIcon(orangeIcon)
         const ActiveIcon = getIcon(blueIcon)
