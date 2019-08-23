@@ -18,7 +18,7 @@ const Popup = (props) => {
     store.dispatch(closePopup())
   }
 
-  const oligarchData = getOligarchData(data)
+  const oligarchData = getOligarchData(data.mainOligarch, data.mainCEO)
 
   return (
     <div className={styles.popup}>
@@ -42,7 +42,7 @@ const Popup = (props) => {
                           <div className={styles.popupRow}>
                               <Icon img={horseIcon}  size="small"/>
                             <div className={styles.oligarch}>
-                              {oligarchData.map(ol => (<p>{ol.name}<br/><span>{ol.type}</span></p>))}
+                              {oligarchData.map(ol => (<p>{ol.name}<br/><span>{ol.data.type}</span></p>))}
                             </div>
                           </div>
                       </div>

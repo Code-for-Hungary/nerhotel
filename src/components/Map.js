@@ -73,7 +73,6 @@ class MapComponent extends React.Component {
 
   calcPoints () {
     let bounds = this.refs.map.leafletElement.getBounds()
-    console.log(bounds, places)
     const filteredPoints = filterPoints(places, bounds)
     this.setState({filteredPoints})
     store.dispatch(setList(filteredPoints))

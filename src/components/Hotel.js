@@ -11,7 +11,7 @@ import hotelIcon from '../assets/hotel-icon.svg';
 import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
 
-import store, {closePopup} from '../store';
+import store, { closePopup, setCenter, setSelectedPoint } from '../store'
 import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import orangeIcon from '../assets/marker-icon-orange.svg';
@@ -34,11 +34,13 @@ const Hotel = (props) => {
     })
 
     const goBack = () => {
-        store.dispatch(closePopup())
+        // store.dispatch(closePopup())
         props.history.push('/');
+        store.dispatch(setSelectedPoint(hotelById))
+        setTimeout(() => store.dispatch(setCenter([lat, lng])), 100)
     }
 
-    const oligarchData = getOligarchData(data)
+    const oligarchData = getOligarchData(data.oligarchs, data.ceos)
 
 
     return (
@@ -47,7 +49,7 @@ const Hotel = (props) => {
                 <div className={styles.info}>
                     <h1>{data.name}</h1>
                     <div className={styles.hotelRow}>
-                        <p>Ingatlan típusa: <span>{data.type}</span></p>
+                        <p>Hely típusa: <span>{data.type}</span></p>
                     </div>
                     <div className={styles.hotelRow}>
                         <Icon img={hotelIcon} size="small"/>
@@ -55,8 +57,8 @@ const Hotel = (props) => {
                     </div>
                     <div className={styles.hotelRow}>
                         <Icon img={horseIcon} size="small"/>
-                        <p>NER lovag:<br/>
-                          {oligarchData.map(ol => (<span>{ol.name}<span className={styles.title}> ({ol.type})</span><br/></span>))}
+                        <p>Kapcsolódó személyek:<br/>
+                          {oligarchData.map(ol => (<span>{ol.name}<span className={styles.title}> ({ol.data.type})</span><br/></span>))}
                         </p>
                     </div>
                     <div className={styles.hotelRow}>
@@ -67,6 +69,11 @@ const Hotel = (props) => {
                         <Icon img={linkIcon} size="small"/>
                         <a href={data.link} target="_blank"><span>Kapcsolódó cikk</span></a>
                     </div>)}
+                    {data.date !== "" && (
+                      <div className={styles.hotelRow}>
+                        <p>Adatok frissítve: <span>{data.date}</span></p>
+                    </div>
+                    )}
                     <div className={styles.back} onClick={() => goBack()}>
                         <Icon img={arrowIcon} size="large"/>
                     </div>
