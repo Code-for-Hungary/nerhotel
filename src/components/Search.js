@@ -1,46 +1,55 @@
 import React from 'react';
-import store, {setList, openList, closeList} from '../store.js'
-import styles from '../css/search.module.css'
+import store, { setList, openList, closeList } from '../store.js';
+import styles from '../css/search.module.css';
 
-import places from '../data/places.json'
+import places from '../data/places.json';
 
 class Search extends React.Component {
-    constructor() {
-        super()
-        this.search = this.search.bind(this)
+    constructor () {
+        super();
+        this.state = {value: ''};
+        this.onKeyUp = this.onKeyUp.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    search(e) {
-        if (e.key === 'Enter') {
-            const value = e.target.value.toLowerCase()
-            const results = places.filter(place => (this.findProperty(place.properties, value)))
-            store.dispatch(setList(results))
-            store.dispatch(openList())
+    onKeyUp (e) {
+        const value = e.target.value;
+
+        if (e.key === 'Escape' || value === '') {
+            store.dispatch(closeList());
+            store.dispatch(setList([]));
         }
 
-        if (e.key === 'Escape' || e.target.value === '') {
-            store.dispatch(closeList())
-            store.dispatch(setList([]))
-        }
+        this.setState({value});
     }
 
-    findProperty(place, phrase) {
-        let foundOligarch = []
-        if (place.oligarch.length > 0) {
-            foundOligarch = place.oligarch.filter(ol => (
-                ol.toLowerCase().indexOf(phrase) > -1
-            ))
+    handleSubmit (e) {
+        e.preventDefault();
+        const results = places.filter(place => (this.findProperty(place.properties, this.state.value)));
+        store.dispatch(setList(results));
+        store.dispatch(openList());
+    }
+
+    findProperty (place, phrase) {
+        let foundOligarch = [];
+        if (place.oligarchs.length > 0) {
+            foundOligarch = place.oligarchs.filter(ol => (
+                ol.name.toLowerCase().indexOf(phrase) > -1
+            ));
         }
         return ((place.address && place.address.toLowerCase().indexOf(phrase) > -1)
             || (place.name && place.name.toLowerCase().indexOf(phrase) > -1)
             || (foundOligarch.length > 0)
-        )
+        );
     }
 
-    render() {
+    render () {
         return (
             <div className={styles.form}>
-                <input onKeyUp={this.search} className={styles.input} placeholder="keress név, hely, oligarcha szerint"/>
+                <form onSubmit={this.handleSubmit}>
+                    <input onKeyUp={this.onKeyUp} className={styles.input}
+                           placeholder="keress név, hely, oligarcha szerint"/>
+                </form>
             </div>
         );
     }
