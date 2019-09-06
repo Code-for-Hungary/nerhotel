@@ -1,14 +1,18 @@
 .hotel {
   position: relative;
   top: 100px;
-  padding: 20px;
+  padding: 40px;
 }
 
 .hotelWrapper {
   display: flex;
+  justify-content: space-between;
 }
 
-.info,
+.info {
+  width: 33%;
+}
+
 .map {
   width: 50%;
 }
@@ -19,8 +23,13 @@
 }
 
 @media (max-width: 768px) {
+  .hotel {
+    padding: 20px;
+  }
+
   .hotelWrapper {
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .info {

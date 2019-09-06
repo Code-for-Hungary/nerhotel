@@ -1,0 +1,19 @@
+.about {
+    width: 60%;
+    max-width: 960px;
+    margin: 150px auto 80px;
+    padding: 0 20px;
+}
+
+.about section {
+    margin-bottom: 45px;
+}
+
+.about h2 {
+    font-size: 24px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+}

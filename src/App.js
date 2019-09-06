@@ -1,12 +1,13 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter, Route, Switch } from "react-router-dom";
-import store from './store.js';
-
-import MapView from './views/MapView'
-import HotelView from './views/HotelView'
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
+import store from './store.js';
+
+import HotelView from './views/HotelView';
+import MapView from './views/MapView';
+import AboutView from './views/AboutView';
 
 function App () {
     return (
@@ -16,6 +17,7 @@ function App () {
                     <Switch>
                         <Route path="/" exact component={MapView}/>
                         <Route path="/hotel/:id" exact component={HotelView}/>
+                        <Route path="/about" exact component={AboutView}/>
                     </Switch>
                 </HashRouter>
             </div>

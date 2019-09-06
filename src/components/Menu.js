@@ -1,17 +1,18 @@
-import React from 'react'
-import styles from '../css/menu.module.css'
-import Icon from './Icon';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import closeIcon from '../assets/close-icon.svg';
+import styles from '../css/menu.module.css';
+import Icon from './Icon';
 
 const Menu = (props) => {
   return (
     <div className={styles.menu}>
       <div onClick={props.close} className={styles.close}>
-          <Icon img={closeIcon} size="large" />
+        <Icon img={closeIcon} size="large"/>
       </div>
       <ul className={styles.menulist}>
-        <li><a href="">Mi ez?</a></li>
-        <li><a href="">Kontakt</a></li>
+        <li><Link to="/about">Mi ez?</Link></li>
+        <li><a href="/">Kontakt</a></li>
       </ul>
       <div className={styles.footer}>
           <p><strong>K-Monitor Közhasznú Egyesület</strong></p>
@@ -21,7 +22,7 @@ const Menu = (props) => {
           <a href="mailto:info@k-monitor.hu">info@k-monitor.hu</a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
