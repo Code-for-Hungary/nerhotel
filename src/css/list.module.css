@@ -56,6 +56,10 @@
   margin-left: 5px;
 }
 
+.listItem a {
+  color: #000;
+}
+
 .closeButton {
   position: absolute;
   top: 20px;

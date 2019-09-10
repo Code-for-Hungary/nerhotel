@@ -75,7 +75,7 @@
 
 .popupRow {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   margin-bottom: 5px;
 }
 
