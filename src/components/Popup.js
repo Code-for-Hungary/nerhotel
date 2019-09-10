@@ -26,7 +26,7 @@ const Popup = (props) => {
         <div className={styles.close} onClick={() => close()}>
           <Icon img={closeIcon} size="large"/>
         </div>
-        <div>
+        <>
           <h1>{data.name}</h1>
           <div className={styles.popupInfo}>
             <div className={styles.popupRow}>
@@ -43,9 +43,10 @@ const Popup = (props) => {
                   <Icon img={horseIcon} size="small"/>
                   <div className={styles.oligarch}>
                     {oligarchData.map(oligarch => (
-                        <>
-                          <p><a href={oligarch.data.link} target="_blank">{oligarch.name}</a><br/><span>{oligarch.data.type}</span></p>
-                        </>
+                        <div>
+                          <a href={oligarch.data.link} target="_blank">{oligarch.name}</a>
+                          <span>{oligarch.data.type}</span>
+                        </div>
                     ))}
                   </div>
                 </div>
@@ -66,7 +67,7 @@ const Popup = (props) => {
           {}
           <Link to={`/hotel/${data.id}`} className={styles.moreButton}>részletek</Link>
 
-        </div>
+        </>
       </div>
     </div>
   );
