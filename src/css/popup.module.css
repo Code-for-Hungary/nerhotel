@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 320px;
   z-index: 10000;
-  bottom: 20px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
