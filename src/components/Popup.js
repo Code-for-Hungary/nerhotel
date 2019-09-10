@@ -42,7 +42,11 @@ const Popup = (props) => {
                 <div className={styles.popupRow}>
                   <Icon img={horseIcon} size="small"/>
                   <div className={styles.oligarch}>
-                    {oligarchData.map(oligarch => (<p>{oligarch.name}<br/><span>{oligarch.data.type}</span></p>))}
+                    {oligarchData.map(oligarch => (
+                        <>
+                          <p><a href={oligarch.data.link} target="_blank">{oligarch.name}</a><br/><span>{oligarch.data.type}</span></p>
+                        </>
+                    ))}
                   </div>
                 </div>
               </div>

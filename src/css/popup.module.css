@@ -88,3 +88,7 @@
   font-style: italic;
   font-weight: 400;
 }
+
+.oligarch a {
+  text-decoration: underline;
+}
