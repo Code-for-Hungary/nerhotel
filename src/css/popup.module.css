@@ -2,9 +2,11 @@
   position: absolute;
   width: 100%;
   max-width: 320px;
+  height: calc(100vh - 120px);
   z-index: 10000;
-  bottom: 50px;
+  top: 80px;
   left: 50%;
+  overflow: hidden;
   transform: translateX(-50%);
   background: #fff;
   border-radius: 10px;
@@ -17,6 +19,7 @@
   height: 100%;
   padding: 20px;
   z-index: 2;
+  overflow-y: scroll;
   box-sizing: border-box;
 }
 
