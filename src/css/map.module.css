@@ -1,8 +1,15 @@
+.map {
+  position: fixed;
+  top: 160px;
+  width: 100%;
+  height: calc(100vh - 160px);
+}
+
 .mapWrapper {
   position: relative;
-  top: 160px;
+  width: 100%;
+  height: 100%;
   z-index: 1;
-  height: calc(100vh - 150px);
 }
 
 .listButton {

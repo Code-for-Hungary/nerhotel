@@ -30,6 +30,12 @@
   align-items: baseline;
 }
 
+@media (max-width: 480px) {
+  .listItemCol {
+    align-items: center;
+  }
+}
+
 .oligarchList {
   display: flex;
   flex-direction: column;
@@ -56,9 +62,13 @@
   margin-left: 5px;
 }
 
+.listItem a {
+  color: #000;
+}
+
 .closeButton {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 15px;
   cursor: pointer;
 }

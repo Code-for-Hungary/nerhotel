@@ -23,6 +23,8 @@ class List extends React.Component {
   }
 
   render () {
+    console.log(this.props.list)
+
     return (
       <div className={styles.list}>
         <div className={styles.closeButton} onClick={() => this.closeList()}>
@@ -37,7 +39,7 @@ class List extends React.Component {
                   <Icon img={horseIcon} size="small"/>
                   <div className={styles.oligarchList}>
                     {item.properties.mainOligarch.map(oligarch => (
-                      <p>{oligarch.name}</p>
+                        <p><a href={oligarch.link} target="_blank">{oligarch.name}</a></p>
                     ))}
                   </div>
                 </div>

@@ -3,6 +3,13 @@
     max-width: 960px;
     margin: 150px auto 80px;
     padding: 0 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .about {
+        width: 100%;
+    }
 }
 
 .about section {
@@ -16,4 +23,10 @@
 .about p {
     font-size: 16px;
     line-height: 1.6;
+}
+
+.about a {
+    display: block;
+    color: #000;
+    margin-bottom: 15px;
 }
