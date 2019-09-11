@@ -23,7 +23,7 @@
           "name": "Tiff\u00e1n Zsolt"
         }
       ], 
-      "address": "F\u0151 utca 3.", 
+      "address": "Budapest, F\u0151 utca 3., 1011", 
       "date": "08/27/2019", 
       "id": 0, 
       "city": "Budapest", 
@@ -40,7 +40,7 @@
       ], 
       "mainCEO": [], 
       "type": "\u00e9tterem", 
-      "details": ""
+      "details": "Havi 113 153 forint\u00e9rt b\u00e9rel a Clark \u00c1d\u00e1m t\u00e9rn\u00e9l az \u00f6nkorm\u00e1nyzatt\u00f3l \u00fczlethelys\u00e9get Kov\u00e1cs \u00c1kos \u00e9s Tiff\u00e1n Zsolt c\u00e9ge."
     }
   }, 
   {
@@ -71,7 +71,7 @@
           "name": "Kelemen Beatrix Csilla"
         }
       ], 
-      "address": "Kossuth u.", 
+      "address": "Bodrogkisfalud, Kossuth u., 3917", 
       "date": "07/30/2019", 
       "id": 1, 
       "city": "Bodrogkisfalud", 
@@ -119,7 +119,7 @@
           "name": "Kelemen Beatrix Csilla"
         }
       ], 
-      "address": "Henye d\u0171l\u0151, Hrsz: 0134/2", 
+      "address": "Bodrogkereszt\u00far, Henye d\u0171l\u0151, Hrsz: 0134/2, 3916", 
       "date": "07/30/2019", 
       "id": 2, 
       "city": "Bodrogkereszt\u00far", 
@@ -179,7 +179,7 @@
           "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
         }
       ], 
-      "address": "F\u0151 \u00fat 94.", 
+      "address": "Tarcal, F\u0151 \u00fat 94., 3915", 
       "date": "07/30/2019", 
       "id": 3, 
       "city": "Tarcal", 
@@ -235,7 +235,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Erzs\u00e9bet s\u00e9t\u00e1ny 1.", 
+      "address": "Lillaf\u00fcred, Erzs\u00e9bet s\u00e9t\u00e1ny 1., 3517", 
       "date": "07/30/2019", 
       "id": 4, 
       "city": "Lillaf\u00fcred", 
@@ -280,7 +280,7 @@
           "name": "Becs\u00f3 Zsolt"
         }
       ], 
-      "address": "Sport \u00fat 8.", 
+      "address": "Holl\u00f3k\u0151, Sport \u00fat 8., 3176", 
       "date": "07/30/2019", 
       "id": 5, 
       "city": "Holl\u00f3k\u0151", 
@@ -297,7 +297,7 @@
       ], 
       "mainCEO": [], 
       "type": "sz\u00e1lloda", 
-      "details": ""
+      "details": "Becs\u00f3 Zsolt orsz\u00e1ggy\u0171l\u00e9si k\u00e9pvisel\u0151 ved\u00e9gh\u00e1za 34 milli\u00f3 forint t\u00e1mogat\u00e1st kapott az MVH-t\u00f3l, \u00e1m a h\u00e1zn\u00e1l semmilyen arra utal\u00f3 feliratot nem lehet l\u00e1tni, hogy vend\u00e9gh\u00e1zk\u00e9nt \u00fczemelne."
     }
   }, 
   {
@@ -332,7 +332,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Szindb\u00e1d s\u00e9t\u00e1ny 11.", 
+      "address": "Ny\u00edregyh\u00e1za, Szindb\u00e1d s\u00e9t\u00e1ny 11., 4400", 
       "date": "07/30/2019", 
       "id": 6, 
       "city": "Ny\u00edregyh\u00e1za", 
@@ -385,7 +385,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Kod\u00e1ly Zolt\u00e1n s\u00e9t\u00e1ny 10.", 
+      "address": "Galyatet\u0151, Kod\u00e1ly Zolt\u00e1n s\u00e9t\u00e1ny 10., 3234", 
       "date": "07/30/2019", 
       "id": 7, 
       "city": "Galyatet\u0151", 
@@ -438,7 +438,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Kod\u00e1ly Zolt\u00e1n s\u00e9t\u00e1ny 10.", 
+      "address": "Galyatet\u0151, Kod\u00e1ly Zolt\u00e1n s\u00e9t\u00e1ny 10., 3234", 
       "date": "07/30/2019", 
       "id": 8, 
       "city": "Galyatet\u0151", 
@@ -491,7 +491,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "F\u00fcrd\u0151 u. 5.", 
+      "address": "Eger, F\u00fcrd\u0151 u. 5., 3300", 
       "date": "07/30/2019", 
       "id": 9, 
       "city": "Eger", 
@@ -544,11 +544,11 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Forr\u00e1s utca 6.", 
+      "address": "Egerszal\u00f3k, Forr\u00e1s utca 6., 3394", 
       "date": "07/30/2019", 
       "id": 10, 
       "city": "Egerszal\u00f3k", 
-      "name": "Pinot Noir \u00e9tterem", 
+      "name": "Pinot Noir", 
       "oligarchs": [
         {
           "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
@@ -597,7 +597,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Forr\u00e1s utca 6.", 
+      "address": "Egerszal\u00f3k, Forr\u00e1s utca 6., 3394", 
       "date": "07/30/2019", 
       "id": 11, 
       "city": "Egerszal\u00f3k", 
@@ -650,11 +650,11 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Forr\u00e1s u. 6.", 
+      "address": "Egerszal\u00f3k, Forr\u00e1s u. 6., 3394", 
       "date": "07/30/2019", 
       "id": 12, 
       "city": "Egerszal\u00f3k", 
-      "name": "Saliris Resort - Spa Conference Hotel", 
+      "name": "Saliris Resort Hotel", 
       "oligarchs": [
         {
           "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
@@ -703,7 +703,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "3233 Gy\u00f6ngy\u00f6s", 
+      "address": "Gy\u00f6ngy\u00f6s, 3233 Gy\u00f6ngy\u00f6s, 3233", 
       "date": "07/30/2019", 
       "id": 13, 
       "city": "Gy\u00f6ngy\u00f6s", 
@@ -752,7 +752,7 @@
           "name": "Kelemen Beatrix Csilla"
         }
       ], 
-      "address": "2831 Tarj\u00e1n", 
+      "address": "Tarj\u00e1n, 2831 Tarj\u00e1n, 2831", 
       "date": "07/30/2019", 
       "id": 14, 
       "city": "Tarj\u00e1n", 
@@ -796,7 +796,7 @@
           "name": "Vajna T\u00edmea"
         }
       ], 
-      "address": "Pozsonyi \u00fat 22.", 
+      "address": "Budapest, Pozsonyi \u00fat 22., 1137", 
       "date": "07/30/2019", 
       "id": 15, 
       "city": "Budapest", 
@@ -849,7 +849,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Fortuna utca 14.", 
+      "address": "Budapest, Fortuna utca 14., 1014", 
       "date": "07/30/2019", 
       "id": 16, 
       "city": "Budapest", 
@@ -906,7 +906,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Kapisztr\u00e1n t\u00e9r", 
+      "address": "Budapest, Kapisztr\u00e1n t\u00e9r, 1014", 
       "date": "07/30/2019", 
       "id": 17, 
       "city": "Budapest", 
@@ -954,7 +954,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Fortuna utca 3.", 
+      "address": "Budapest, Fortuna utca 3., 1014", 
       "date": "07/30/2019", 
       "id": 18, 
       "city": "Budapest", 
@@ -989,7 +989,7 @@
     "type": "Feature", 
     "properties": {
       "ceos": [], 
-      "company": "Zsidai Group Kft.", 
+      "company": "Opera Gasztron\u00f3mia Kft.", 
       "link": "", 
       "mainOligarch": [
         {
@@ -997,7 +997,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Andr\u00e1ssy \u00fat 22.", 
+      "address": "Budapest, Andr\u00e1ssy \u00fat 22., 1061", 
       "date": "07/30/2019", 
       "id": 19, 
       "city": "Budapest", 
@@ -1045,7 +1045,7 @@
           "name": "Vajna T\u00edmea"
         }
       ], 
-      "address": "Arany J\u00e1nos u. 19-21 ", 
+      "address": "Budapest, Arany J\u00e1nos u. 19-21 , 1051", 
       "date": "07/30/2019", 
       "id": 20, 
       "city": "Budapest", 
@@ -1098,6 +1098,10 @@
       "link": "https://24.hu/belfold/2018/09/10/garancsi-csanyi-hernadi-andrassy-palota/", 
       "mainOligarch": [
         {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }, 
+        {
           "link": "https://k-monitor.hu/adatbazis/cimkek/hernadi-zsolt", 
           "name": "Hern\u00e1di Zsolt"
         }, 
@@ -1106,7 +1110,7 @@
           "name": "Garancsi Istv\u00e1n"
         }
       ], 
-      "address": "Andr\u00e1ssy \u00fat 8.", 
+      "address": "Budapest, Andr\u00e1ssy \u00fat 8., 1061", 
       "date": "07/30/2019", 
       "id": 21, 
       "city": "Budapest", 
@@ -1132,7 +1136,7 @@
         }
       ], 
       "type": "sz\u00e1lloda", 
-      "details": ""
+      "details": "A kor\u00e1bban \u00f6nkorm\u00e1nyzati ingatlanok felv\u00e1s\u00e1rl\u00e1s\u00e1val jutott hozz\u00e1 a korm\u00e1nyzattal j\u00f3 viszonyt \u00e1pol\u00f3 Cs\u00e1nyi-Garancsi-Hern\u00e1di tri\u00f3 az Andr\u00e1ssy \u00fati \u00e9p\u00fclethez."
     }
   }, 
   {
@@ -1154,7 +1158,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "\u00dari utca 21.", 
+      "address": "Budapest, \u00dari utca 21., 1014", 
       "date": "07/30/2019", 
       "id": 22, 
       "city": "Budapest", 
@@ -1206,7 +1210,7 @@
           "name": "Lefkovics Gy\u00f6rgy"
         }
       ], 
-      "address": "Szent Istv\u00e1n t\u00e9r 9.", 
+      "address": "Budapest, Szent Istv\u00e1n t\u00e9r 9., 1051", 
       "date": "07/30/2019", 
       "id": 23, 
       "city": "Budapest", 
@@ -1258,7 +1262,7 @@
           "name": "Lefkovics Gy\u00f6rgy"
         }
       ], 
-      "address": "Okt\u00f3ber 6. u. 8.", 
+      "address": "Budapest, Okt\u00f3ber 6. u. 8., 1051", 
       "date": "07/30/2019", 
       "id": 24, 
       "city": "Budapest", 
@@ -1310,7 +1314,7 @@
           "name": "Lefkovics Gy\u00f6rgy"
         }
       ], 
-      "address": "Sz\u00e9chenyi Istv\u00e1n t\u00e9r 7-8.", 
+      "address": "Budapest, Sz\u00e9chenyi Istv\u00e1n t\u00e9r 7-8., 1051", 
       "date": "07/30/2019", 
       "id": 25, 
       "city": "Budapest", 
@@ -1362,7 +1366,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Kir\u00e1ly utca 13.", 
+      "address": "Budapest, Kir\u00e1ly utca 13., 1075", 
       "date": "07/30/2019", 
       "id": 26, 
       "city": "Budapest", 
@@ -1419,7 +1423,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Kir\u00e1ly utca 13.", 
+      "address": "Budapest, Kir\u00e1ly utca 13., 1075", 
       "date": "07/30/2019", 
       "id": 27, 
       "city": "Budapest", 
@@ -1476,7 +1480,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Kir\u00e1ly utca 13.", 
+      "address": "Budapest, Kir\u00e1ly utca 13., 1075", 
       "date": "07/30/2019", 
       "id": 28, 
       "city": "Budapest", 
@@ -1524,7 +1528,7 @@
           "name": "Varga Lajos"
         }
       ], 
-      "address": "Erzs\u00e9bet t\u00e9r 11-13 .", 
+      "address": "Budapest, Erzs\u00e9bet t\u00e9r 11-13 ., 1051", 
       "date": "07/30/2019", 
       "id": 29, 
       "city": "Budapest", 
@@ -1564,7 +1568,7 @@
           "name": "Scheer S\u00e1ndor"
         }
       ], 
-      "address": "Clark \u00c1d\u00e1m t\u00e9r 1", 
+      "address": "Budapest, Clark \u00c1d\u00e1m t\u00e9r 1, 1013", 
       "date": "07/30/2019", 
       "id": 30, 
       "city": "Budapest", 
@@ -1582,7 +1586,7 @@
         }
       ], 
       "type": "sz\u00e1lloda", 
-      "details": ""
+      "details": "Az \u00e1llami Eximbank 2,3 milli\u00e1rd forintos \u201eversenyk\u00e9pess\u00e9get jav\u00edt\u00f3 belf\u00f6ldi befektet\u00e9si hitelt\u201d adott a Hotel Clark fel\u00e9p\u00edt\u00e9s\u00e9re."
     }
   }, 
   {
@@ -1613,7 +1617,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "De\u00e1k Ferenc u. 12-14.", 
+      "address": "Budapest, De\u00e1k Ferenc u. 12-14., 1052", 
       "date": "07/30/2019", 
       "id": 31, 
       "city": "Budapest", 
@@ -1670,7 +1674,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "De\u00e1k Ferenc u. 12-14.", 
+      "address": "Budapest, De\u00e1k Ferenc u. 12-14., 1052", 
       "date": "07/30/2019", 
       "id": 32, 
       "city": "Budapest", 
@@ -1723,7 +1727,7 @@
           "name": "Vajna T\u00edmea"
         }
       ], 
-      "address": "K\u00e1roly krt. 7.", 
+      "address": "Budapest, K\u00e1roly krt. 7., 1075", 
       "date": "07/30/2019", 
       "id": 33, 
       "city": "Budapest", 
@@ -1784,11 +1788,11 @@
           "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
         }
       ], 
-      "address": "M1 43 km BAL", 
+      "address": "\u00d3barok, M1 43 km BAL, 2063", 
       "date": "07/30/2019", 
       "id": 34, 
       "city": "\u00d3barok", 
-      "name": "Szek\u00e9r Cs\u00e1rda Hotel \u00e9s \u00c9tterem", 
+      "name": "Szek\u00e9r Cs\u00e1rda", 
       "oligarchs": [
         {
           "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
@@ -1832,7 +1836,7 @@
           "name": "Lefkovics Gy\u00f6rgy"
         }
       ], 
-      "address": "Alkot\u00e1s u 53.", 
+      "address": "Budapest, Alkot\u00e1s u 53., 1123", 
       "date": "07/30/2019", 
       "id": 35, 
       "city": "Budapest", 
@@ -1871,7 +1875,7 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Alkot\u00e1s u. 53.", 
+      "address": "Budapest, Alkot\u00e1s u. 53., 1123", 
       "date": "07/30/2019", 
       "id": 36, 
       "city": "Budapest", 
@@ -1927,7 +1931,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "K\u00f6nyves K. krt. 44.", 
+      "address": "Budapest, K\u00f6nyves K. krt. 44., 1087", 
       "date": "07/30/2019", 
       "id": 37, 
       "city": "Budapest", 
@@ -1980,7 +1984,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "\u00dcll\u0151i \u00fat 94-98.", 
+      "address": "Budapest, \u00dcll\u0151i \u00fat 94-98., 1089", 
       "date": "07/30/2019", 
       "id": 38, 
       "city": "Budapest", 
@@ -2025,7 +2029,7 @@
           "name": "Farag\u00f3 Tibor Dante"
         }
       ], 
-      "address": "Tas vez\u00e9r u. 7.", 
+      "address": "Budapest, Tas vez\u00e9r u. 7., 1113", 
       "date": "07/30/2019", 
       "id": 39, 
       "city": "Budapest", 
@@ -2073,7 +2077,7 @@
           "name": "Farag\u00f3 Tibor Dante"
         }
       ], 
-      "address": "M\u00f3ricz Zsigmond k\u00f6rt\u00e9r Gomba \u00e9p\u00fcletegy\u00fcttes 1. cikk", 
+      "address": "Budapest, M\u00f3ricz Zsigmond k\u00f6rt\u00e9r Gomba \u00e9p\u00fcletegy\u00fcttes 1. cikk, 1117", 
       "date": "08/01/2019", 
       "id": 40, 
       "city": "Budapest", 
@@ -2121,7 +2125,7 @@
           "name": "Farag\u00f3 Tibor Dante"
         }
       ], 
-      "address": "M\u00f3ricz Zsigmond k\u00f6rt\u00e9r Gomba \u00e9p\u00fcletegy\u00fcttes", 
+      "address": "Budapest, M\u00f3ricz Zsigmond k\u00f6rt\u00e9r Gomba \u00e9p\u00fcletegy\u00fcttes, 1117", 
       "date": "07/31/2019", 
       "id": 41, 
       "city": "Budapest", 
@@ -2173,7 +2177,7 @@
           "name": "Kelemen Beatrix Csilla"
         }
       ], 
-      "address": "8087 Alcs\u00fatdoboz Kast\u00e9ly u. 7.,", 
+      "address": "Alcs\u00fatdoboz, Alcs\u00fatdoboz Kast\u00e9ly u. 7.,, 8087", 
       "date": "07/30/2019", 
       "id": 42, 
       "city": "Alcs\u00fatdoboz", 
@@ -2225,7 +2229,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 12-14.", 
+      "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 12-14., 4200", 
       "date": "07/30/2019", 
       "id": 43, 
       "city": "Hajd\u00faszoboszl\u00f3", 
@@ -2278,7 +2282,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10.", 
+      "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10., 4200", 
       "date": "07/30/2019", 
       "id": 44, 
       "city": "Hajd\u00faszoboszl\u00f3", 
@@ -2331,7 +2335,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10.", 
+      "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10., 4200", 
       "date": "07/30/2019", 
       "id": 45, 
       "city": "Hajd\u00faszoboszl\u00f3", 
@@ -2384,7 +2388,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "G\u00e1bor \u00c1ron utca 7-9.", 
+      "address": "Hajd\u00faszoboszl\u00f3, G\u00e1bor \u00c1ron utca 7-9., 4200", 
       "date": "07/30/2019", 
       "id": 46, 
       "city": "Hajd\u00faszoboszl\u00f3", 
@@ -2441,7 +2445,7 @@
           "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
         }
       ], 
-      "address": "Mozdony u. 4.", 
+      "address": "Felcs\u00fat, Mozdony u. 4., 8086", 
       "date": "07/30/2019", 
       "id": 47, 
       "city": "Felcs\u00fat", 
@@ -2493,7 +2497,7 @@
           "name": "M\u00e9sz\u00e1ros Beatrix"
         }
       ], 
-      "address": "M\u00e1riav\u00f6lgy", 
+      "address": "Alcs\u00fatdoboz, M\u00e1riav\u00f6lgy, 8087", 
       "date": "07/30/2019", 
       "id": 48, 
       "city": "Alcs\u00fatdoboz", 
@@ -2541,7 +2545,7 @@
           "name": "Kelemen Beatrix Csilla"
         }
       ], 
-      "address": "V\u00e9rti Vadaskert k\u00f6zep\u00e9n", 
+      "address": "Alcs\u00fatdoboz, V\u00e9rti Vadaskert k\u00f6zep\u00e9n, 8087", 
       "date": "07/30/2019", 
       "id": 49, 
       "city": "Alcs\u00fatdoboz", 
@@ -2597,7 +2601,7 @@
           "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
         }
       ], 
-      "address": "Szabads\u00e1g utca 156.", 
+      "address": "Alcs\u00fatdoboz, Szabads\u00e1g utca 156., 8087", 
       "date": "07/30/2019", 
       "id": 50, 
       "city": "Alcs\u00fatdoboz", 
@@ -2653,7 +2657,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Term\u00e1l krt. 26.", 
+      "address": "B\u00fckf\u00fcrd\u0151, Term\u00e1l krt. 26., 9740", 
       "date": "07/30/2019", 
       "id": 51, 
       "city": "B\u00fckf\u00fcrd\u0151", 
@@ -2706,7 +2710,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Eur\u00f3pa \u00fat 3.", 
+      "address": "B\u00fckf\u00fcrd\u0151, Eur\u00f3pa \u00fat 3., 9740", 
       "date": "07/30/2019", 
       "id": 52, 
       "city": "B\u00fckf\u00fcrd\u0151", 
@@ -2751,7 +2755,7 @@
           "name": "Nyerges Zsolt"
         }
       ], 
-      "address": "Galamb u. 9.", 
+      "address": "Szolnok, Galamb u. 9., 5000", 
       "date": "07/30/2019", 
       "id": 53, 
       "city": "Szolnok", 
@@ -2803,7 +2807,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "St. Gerorgen am Kreischberg Sankt Lorenzen 6.", 
+      "address": "Kreischberg, St. Gerorgen am Kreischberg Sankt Lorenzen 6., 8861", 
       "date": "07/30/2019", 
       "id": 54, 
       "city": "Kreischberg", 
@@ -2856,7 +2860,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Kreischberg 2", 
+      "address": "Kreischberg, Kreischberg 2, 8861", 
       "date": "07/30/2019", 
       "id": 55, 
       "city": "Kreischberg", 
@@ -2909,7 +2913,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Winkl 46", 
+      "address": "Heiligenblut, Winkl 46, 9844", 
       "date": "07/30/2019", 
       "id": 56, 
       "city": "Heiligenblut", 
@@ -2962,7 +2966,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Bajcsy-Zsilinszky u. 14.", 
+      "address": "Balatonalm\u00e1di, Bajcsy-Zsilinszky u. 14., 8220", 
       "date": "07/30/2019", 
       "id": 57, 
       "city": "Balatonalm\u00e1di", 
@@ -3006,7 +3010,7 @@
           "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
         }
       ], 
-      "address": "V\u00e9ghely Dezs\u0151 utca 18.", 
+      "address": "Balatonalm\u00e1di, V\u00e9ghely Dezs\u0151 utca 18., 8220", 
       "date": "07/30/2019", 
       "id": 58, 
       "city": "Balatonalm\u00e1di", 
@@ -3054,7 +3058,7 @@
           "name": "Tiborcz Istv\u00e1n Ferenc"
         }
       ], 
-      "address": "Aligai \u00fat 1.", 
+      "address": "Balatonvil\u00e1gos, Aligai \u00fat 1., 8171", 
       "date": "07/30/2019", 
       "id": 59, 
       "city": "Balatonvil\u00e1gos", 
@@ -3098,11 +3102,11 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Sz\u00e9chenyi Istv\u00e1n u. 24.", 
+      "address": "Balatonf\u00fcred, Sz\u00e9chenyi Istv\u00e1n u. 24., 8230", 
       "date": "07/30/2019", 
       "id": 60, 
       "city": "Balatonf\u00fcred", 
-      "name": "F\u00fcred Kemping \u00e9s \u00dcd\u00fcl\u0151falu", 
+      "name": "F\u00fcred Kemping", 
       "oligarchs": [
         {
           "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
@@ -3138,7 +3142,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Szent L\u00e1szl\u00f3 u. 185.", 
+      "address": "Si\u00f3fok-Szabadif\u00fcrd\u0151, Szent L\u00e1szl\u00f3 u. 185., 8600", 
       "date": "07/30/2019", 
       "id": 61, 
       "city": "Si\u00f3fok-Szabadif\u00fcrd\u0151", 
@@ -3190,7 +3194,7 @@
           "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
         }
       ], 
-      "address": "K\u00fclter\u00fclet 075/17. hrsz", 
+      "address": "Tihany, K\u00fclter\u00fclet 075/17. hrsz, 8237", 
       "date": "07/30/2019", 
       "id": 62, 
       "city": "Tihany", 
@@ -3246,7 +3250,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "K\u00f6zt\u00e1rsas\u00e1g t\u00e9r 10.", 
+      "address": "Tapolca, K\u00f6zt\u00e1rsas\u00e1g t\u00e9r 10., 8300", 
       "date": "07/30/2019", 
       "id": 63, 
       "city": "Tapolca", 
@@ -3294,7 +3298,7 @@
           "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
         }
       ], 
-      "address": "Balaton u. 8, ", 
+      "address": "Balatonakali, Balaton u. 8, , 8243", 
       "date": "07/30/2019", 
       "id": 64, 
       "city": "Balatonakali", 
@@ -3342,7 +3346,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Szent Istv\u00e1n \u00fat hrsz. 3512.", 
+      "address": "Zam\u00e1rdi, Szent Istv\u00e1n \u00fat hrsz. 3512., 8621", 
       "date": "07/30/2019", 
       "id": 65, 
       "city": "Zam\u00e1rdi", 
@@ -3386,7 +3390,7 @@
           "name": "Kelemen Beatrix Csilla"
         }
       ], 
-      "address": "", 
+      "address": "B\u00e9lmegyer, , 5643", 
       "date": "07/30/2019", 
       "id": 66, 
       "city": "B\u00e9lmegyer", 
@@ -3430,7 +3434,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Hal\u00e1sz u. 5.", 
+      "address": "R\u00e9vf\u00fcl\u00f6p, Hal\u00e1sz u. 5., 8253", 
       "date": "07/30/2019", 
       "id": 67, 
       "city": "R\u00e9vf\u00fcl\u00f6p", 
@@ -3474,7 +3478,7 @@
           "name": "Sz\u00e9les G\u00e1bor"
         }
       ], 
-      "address": "", 
+      "address": "Zalacs\u00e1ny, , 8782", 
       "date": "07/30/2019", 
       "id": 68, 
       "city": "Zalacs\u00e1ny", 
@@ -3522,11 +3526,11 @@
           "name": "Sz\u00e9les G\u00e1bor"
         }
       ], 
-      "address": "Cs\u00e1ny L\u00e1szl\u00f3 u. 24.", 
+      "address": "Zalacs\u00e1ny, Cs\u00e1ny L\u00e1szl\u00f3 u. 24., 8782", 
       "date": "07/30/2019", 
       "id": 69, 
       "city": "Zalacs\u00e1ny", 
-      "name": "Batth\u00e1nyi K\u00faria \u00e9s kast\u00e9lysz\u00e1ll\u00f3", 
+      "name": "Batth\u00e1nyi K\u00faria", 
       "oligarchs": [
         {
           "link": "https://k-monitor.hu/adatbazis/cimkek/szeles-gabor", 
@@ -3570,7 +3574,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "F\u00fcredi \u00fat 65.", 
+      "address": "Badacsonytomaj, F\u00fcredi \u00fat 65., 8257", 
       "date": "07/30/2019", 
       "id": 70, 
       "city": "Badacsonytomaj", 
@@ -3610,7 +3614,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Lellei u. 1-2.", 
+      "address": "Balatonszemes, Lellei u. 1-2., 8636", 
       "date": "07/30/2019", 
       "id": 71, 
       "city": "Balatonszemes", 
@@ -3650,7 +3654,7 @@
           "name": "Szatm\u00e1ry Krist\u00f3f"
         }
       ], 
-      "address": "HRSZ 023/8", 
+      "address": "Badacsonytomaj, HRSZ 023/8, 8261", 
       "date": "07/30/2019", 
       "id": 72, 
       "city": "Badacsonytomaj", 
@@ -3702,7 +3706,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Pet\u0151fi S\u00e1ndor u. 9.", 
+      "address": "H\u00e9v\u00edz, Pet\u0151fi S\u00e1ndor u. 9., 8380", 
       "date": "07/30/2019", 
       "id": 73, 
       "city": "H\u00e9v\u00edz", 
@@ -3755,7 +3759,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "V\u00f6r\u00f6smarty Mih\u00e1ly utca 91.", 
+      "address": "H\u00e9v\u00edz, V\u00f6r\u00f6smarty Mih\u00e1ly utca 91., 8380", 
       "date": "07/30/2019", 
       "id": 74, 
       "city": "H\u00e9v\u00edz", 
@@ -3808,7 +3812,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "V\u00f6r\u00f6smarty Mih\u00e1ly utca 91.", 
+      "address": "H\u00e9v\u00edz, V\u00f6r\u00f6smarty Mih\u00e1ly utca 91., 8380", 
       "date": "07/30/2019", 
       "id": 75, 
       "city": "H\u00e9v\u00edz", 
@@ -3853,7 +3857,7 @@
           "name": "Tiborcz Istv\u00e1n Ferenc"
         }
       ], 
-      "address": "Phoenix u. 1.", 
+      "address": "Keszthely, Phoenix u. 1., 8360", 
       "date": "07/30/2019", 
       "id": 76, 
       "city": "Keszthely", 
@@ -3892,7 +3896,7 @@
           "name": "Varga K\u00e1roly"
         }
       ], 
-      "address": "Balaton u. 15.", 
+      "address": "Keszthely, Balaton u. 15., 8360", 
       "date": "07/30/2019", 
       "id": 77, 
       "city": "Keszthely", 
@@ -3936,7 +3940,7 @@
           "name": "Tiborcz Istv\u00e1n Ferenc"
         }
       ], 
-      "address": "Mikus Gyula s\u00e9t\u00e1ny 5.", 
+      "address": "Keszthely, Mikus Gyula s\u00e9t\u00e1ny 5., 8360", 
       "date": "07/30/2019", 
       "id": 78, 
       "city": "Keszthely", 
@@ -3975,7 +3979,7 @@
           "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
         }
       ], 
-      "address": "Mikus Gyula stny. 3.", 
+      "address": "Keszthely, Mikus Gyula stny. 3., 8360", 
       "date": "07/30/2019", 
       "id": 79, 
       "city": "Keszthely", 
@@ -4019,7 +4023,7 @@
           "name": "Tiborcz Istv\u00e1n Ferenc"
         }
       ], 
-      "address": "Mikus Gyula s\u00e9t\u00e1ny 1.", 
+      "address": "Keszthely, Mikus Gyula s\u00e9t\u00e1ny 1., 8360", 
       "date": "07/30/2019", 
       "id": 80, 
       "city": "Keszthely", 
@@ -4059,7 +4063,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Park u. 016/1", 
+      "address": "Vonyarcvashegy, Park u. 016/1, 8314", 
       "date": "07/30/2019", 
       "id": 81, 
       "city": "Vonyarcvashegy", 
@@ -4099,11 +4103,11 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Entz G\u00e9za stny. 1.", 
+      "address": "Keszthely, Entz G\u00e9za stny. 1., 8360", 
       "date": "07/30/2019", 
       "id": 82, 
       "city": "Keszthely", 
-      "name": "Zala Kemping \u00e9s \u00dcd\u00fcl\u0151falu", 
+      "name": "Zala Kemping", 
       "oligarchs": [
         {
           "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
@@ -4139,7 +4143,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "H\u00e9tvez\u00e9r u. 2.", 
+      "address": "Balatonber\u00e9ny, H\u00e9tvez\u00e9r u. 2., 8649", 
       "date": "07/30/2019", 
       "id": 83, 
       "city": "Balatonber\u00e9ny", 
@@ -4187,7 +4191,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "V\u00e1rkert u.1.", 
+      "address": "Gyula, V\u00e1rkert u.1., 5700", 
       "date": "07/30/2019", 
       "id": 84, 
       "city": "Gyula", 
@@ -4240,7 +4244,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "V\u00e1rkert u.1.", 
+      "address": "Gyula, V\u00e1rkert u.1., 5700", 
       "date": "07/30/2019", 
       "id": 85, 
       "city": "Gyula", 
@@ -4285,7 +4289,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Gy\u00f3gyf\u00fcrd\u0151 t\u00e9r 6.", 
+      "address": "Zalakaros, Gy\u00f3gyf\u00fcrd\u0151 t\u00e9r 6., 8749", 
       "date": "07/30/2019", 
       "id": 86, 
       "city": "Zalakaros", 
@@ -4333,7 +4337,7 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Term\u00e1l u. 7", 
+      "address": "Zalakaros, Term\u00e1l u. 7, 8749", 
       "date": "07/30/2019", 
       "id": 87, 
       "city": "Zalakaros", 
@@ -4351,6 +4355,216 @@
         }
       ], 
       "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.422164, 
+        20.317222
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, P\u00e1lffy u. 4., 6800", 
+      "date": "07/30/2019", 
+      "id": 88, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Kis Bandula Faloda", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.422054, 
+        20.317485
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, P\u00e1lffy u. 4., 6800", 
+      "date": "07/30/2019", 
+      "id": 89, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Bandula borsorol\u00f3", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.422037, 
+        20.317651
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, P\u00e1lffy u. 2., 6800", 
+      "date": "07/30/2019", 
+      "id": 90, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Bandula kisvend\u00e9gl\u0151", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.414964, 
+        20.316474
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Kossuth t\u00e9r 3., 6800", 
+      "date": "07/30/2019", 
+      "id": 91, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Fekete Sas Mulat\u00f3", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.414964, 
+        20.316474
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Kossuth t\u00e9r 3., 6800", 
+      "date": "07/30/2019", 
+      "id": 92, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Fekete Sas", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.411842, 
+        20.324236
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Kaszap utca 27., 6800", 
+      "date": "07/30/2019", 
+      "id": 93, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Bagolyv\u00e1r \u00e9tterem", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
       "details": ""
     }
   }, 
@@ -4378,9 +4592,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Kemping u. 47.", 
+      "address": "Kaposv\u00e1r, Kemping u. 47., 7400", 
       "date": "07/30/2019", 
-      "id": 88, 
+      "id": 94, 
       "city": "Kaposv\u00e1r", 
       "name": "Deseda kemping", 
       "oligarchs": [
@@ -4391,6 +4605,41 @@
       ], 
       "mainCEO": [], 
       "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.390316, 
+        20.279949
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Z\u00f6lderd\u0151 utca 4., 6800", 
+      "date": "07/30/2019", 
+      "id": 95, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "K\u00f6k\u00e9nydombi cs\u00e1rda", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
       "details": ""
     }
   }, 
@@ -4426,9 +4675,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "N. B\u0103lcescu u. 11.", 
+      "address": "Cs\u00edkszereda, N. B\u0103lcescu u. 11., 530003", 
       "date": "07/30/2019", 
-      "id": 89, 
+      "id": 96, 
       "city": "Cs\u00edkszereda", 
       "name": "Hunguest Hotel Feny\u0151", 
       "oligarchs": [
@@ -4479,9 +4728,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Szent-Gy\u00f6rgyi Albert u. 16-24", 
+      "address": "Szeged, Szent-Gy\u00f6rgyi Albert u. 16-24, 6726", 
       "date": "07/30/2019", 
-      "id": 90, 
+      "id": 97, 
       "city": "Szeged", 
       "name": "Hotel Forr\u00e1s", 
       "oligarchs": [
@@ -4519,9 +4768,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Toront\u00e1l t\u00e9r 1.", 
+      "address": "Szeged, Toront\u00e1l t\u00e9r 1., 6726", 
       "date": "07/30/2019", 
-      "id": 91, 
+      "id": 98, 
       "city": "Szeged", 
       "name": "Napf\u00e9nyf\u00fcrd\u0151 Aquapolis", 
       "oligarchs": [
@@ -4559,9 +4808,9 @@
           "name": "Schmidt M\u00e1ria"
         }
       ], 
-      "address": "", 
+      "address": "Erd\u0151smecske, , 7723", 
       "date": "07/30/2019", 
-      "id": 92, 
+      "id": 99, 
       "city": "Erd\u0151smecske", 
       "name": "M\u00e9szkemence Vend\u00e9gh\u00e1z", 
       "oligarchs": [
@@ -4607,9 +4856,9 @@
           "name": "Tiff\u00e1n Zsolt"
         }
       ], 
-      "address": "Erkel Ferenc u. 10.", 
+      "address": "Vill\u00e1ny, Erkel Ferenc u. 10., 7773", 
       "date": "07/30/2019", 
-      "id": 93, 
+      "id": 100, 
       "city": "Vill\u00e1ny", 
       "name": "Tiff\u00e1n Bor\u00e1szat", 
       "oligarchs": [
@@ -4624,7 +4873,7 @@
       ], 
       "mainCEO": [], 
       "type": "bor\u00e1szat", 
-      "details": ""
+      "details": "Tiff\u00e1n Zsolt  2010-ben vill\u00e1nyi bor\u00e1szb\u00f3l orsz\u00e1ggy\u0171l\u00e9si k\u00e9pvisel\u0151 lett. A Budav\u00e1ri \u00d6nkorm\u00e1nyzatt\u00f3l havi 47 ezer forint\u00e9rt kapott \u00f6nkorm\u00e1nyzati b\u00e9rlak\u00e1st."
     }
   }, 
   {
@@ -4659,9 +4908,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Sveta bubala bb.", 
+      "address": "Herceg Novi, Sveta bubala bb., ", 
       "date": "07/30/2019", 
-      "id": 94, 
+      "id": 101, 
       "city": "Herceg Novi", 
       "name": "Hotel Sun Resort", 
       "oligarchs": [
@@ -4712,9 +4961,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Kod\u00e1ly Z. u. 10.", 
+      "address": "M\u00e1traszentimre, Kod\u00e1ly Z. u. 10., 3234", 
       "date": "07/30/2019", 
-      "id": 95, 
+      "id": 102, 
       "city": "M\u00e1traszentimre", 
       "name": "Panor\u00e1ma \u00c9tterem", 
       "oligarchs": [
@@ -4761,9 +5010,9 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Orsz\u00e1gh\u00e1z utca 31.", 
+      "address": "Budapest, Orsz\u00e1gh\u00e1z utca 31., 1014", 
       "date": "07/30/2019", 
-      "id": 96, 
+      "id": 103, 
       "city": "Budapest", 
       "name": "Baltaz\u00e1r Grill", 
       "oligarchs": [
@@ -4818,9 +5067,9 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Fortuna utca 21", 
+      "address": "Budapest, Fortuna utca 21, 1014", 
       "date": "07/30/2019", 
-      "id": 97, 
+      "id": 104, 
       "city": "Budapest", 
       "name": "21 Magyar Vend\u00e9gl\u0151", 
       "oligarchs": [
@@ -4883,9 +5132,9 @@
           "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
         }
       ], 
-      "address": "Zs\u00e1mb\u00e9ki \u00fat 16.", 
+      "address": "Herceghalom, Zs\u00e1mb\u00e9ki \u00fat 16., 2053", 
       "date": "07/30/2019", 
-      "id": 98, 
+      "id": 105, 
       "city": "Herceghalom", 
       "name": "Talentis \u00c9tterem", 
       "oligarchs": [
@@ -4935,9 +5184,9 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Fortuna utca 3.", 
+      "address": "Budapest, Fortuna utca 3., 1014", 
       "date": "07/30/2019", 
-      "id": 99, 
+      "id": 106, 
       "city": "Budapest", 
       "name": "Pest-Buda \u00c9tterem", 
       "oligarchs": [
@@ -4992,9 +5241,9 @@
           "name": "Zsidai Zolt\u00e1n Roy"
         }
       ], 
-      "address": "Szenth\u00e1roms\u00e1g utca 9-11", 
+      "address": "Budapest, Szenth\u00e1roms\u00e1g utca 9-11, 1014", 
       "date": "07/30/2019", 
-      "id": 100, 
+      "id": 107, 
       "city": "Budapest", 
       "name": "Jamie's Italian Budapest", 
       "oligarchs": [
@@ -5045,9 +5294,9 @@
           "name": "Sz\u00e1raz Istv\u00e1n P\u00e9ter"
         }
       ], 
-      "address": "Klauz\u00e1l utca 32", 
+      "address": "Budapest, Klauz\u00e1l utca 32, 1072", 
       "date": "07/30/2019", 
-      "id": 101, 
+      "id": 108, 
       "city": "Budapest", 
       "name": "Utopia", 
       "oligarchs": [
@@ -5098,9 +5347,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "\u00dcll\u0151i \u00fat 94-98.", 
+      "address": "Budapest, \u00dcll\u0151i \u00fat 94-98., 1089", 
       "date": "07/30/2019", 
-      "id": 102, 
+      "id": 109, 
       "city": "Budapest", 
       "name": "T\u00f6rley \u00e9tterem", 
       "oligarchs": [
@@ -5151,9 +5400,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 12-14.", 
+      "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 12-14., 4200", 
       "date": "07/30/2019", 
-      "id": 103, 
+      "id": 110, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "Apoll\u00f3 \u00c9tterem", 
       "oligarchs": [
@@ -5204,9 +5453,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10.", 
+      "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10., 4200", 
       "date": "07/30/2019", 
-      "id": 104, 
+      "id": 111, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "Strand b\u00fcf\u00e9", 
       "oligarchs": [
@@ -5257,9 +5506,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "G\u00e1bor \u00c1ron utca 7-9.", 
+      "address": "Hajd\u00faszoboszl\u00f3, G\u00e1bor \u00c1ron utca 7-9., 4200", 
       "date": "07/30/2019", 
-      "id": 105, 
+      "id": 112, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "Korz\u00f3 \u00c9tterem", 
       "oligarchs": [
@@ -5306,9 +5555,9 @@
           "name": "Kelemen Beatrix Csilla"
         }
       ], 
-      "address": "B\u00e9ke utca 1.", 
+      "address": "Alcs\u00fatdoboz, B\u00e9ke utca 1., 8087", 
       "date": "07/30/2019", 
-      "id": 106, 
+      "id": 113, 
       "city": "Alcs\u00fatdoboz", 
       "name": "V\u00e1lv\u00f6lgyi P\u00e9ks\u00e9g \u00e9s Hentesbolt", 
       "oligarchs": [
@@ -5358,9 +5607,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Bajcsy-Zsilinszky u. 14.", 
+      "address": "Balatonalm\u00e1di, Bajcsy-Zsilinszky u. 14., 8220", 
       "date": "07/30/2019", 
-      "id": 107, 
+      "id": 114, 
       "city": "Balatonalm\u00e1di", 
       "name": "Sky-b\u00e1r", 
       "oligarchs": [
@@ -5403,9 +5652,9 @@
           "name": "Sz\u00e1raz Istv\u00e1n P\u00e9ter"
         }
       ], 
-      "address": "Z\u00e1konyi Ferenc utca 1", 
+      "address": "Balatonf\u00fcred, Z\u00e1konyi Ferenc utca 1, 8230", 
       "date": "07/30/2019", 
-      "id": 108, 
+      "id": 115, 
       "city": "Balatonf\u00fcred", 
       "name": "Terasz \u00c9tterem", 
       "oligarchs": [
@@ -5448,9 +5697,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Kiserd\u0151telepi \u00fat 075/15 hrsz", 
+      "address": "Tihany, Kiserd\u0151telepi \u00fat 075/15 hrsz, 8237", 
       "date": "07/30/2019", 
-      "id": 109, 
+      "id": 116, 
       "city": "Tihany", 
       "name": "Termel\u0151i borkim\u00e9r\u00e9s", 
       "oligarchs": [
@@ -5488,6 +5737,10 @@
       "link": "https://www.napi.hu/magyar_vallalatok/vilagorokseg-balaton-turizmus-szalloda.679516.html", 
       "mainOligarch": [
         {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }, 
+        {
           "link": "https://k-monitor.hu/adatbazis/cimkek/hernadi-zsolt", 
           "name": "Hern\u00e1di Zsolt"
         }, 
@@ -5496,9 +5749,9 @@
           "name": "Garancsi Istv\u00e1n"
         }
       ], 
-      "address": "", 
+      "address": "Tihany, , 8237", 
       "date": "07/30/2019", 
-      "id": 110, 
+      "id": 117, 
       "city": "Tihany", 
       "name": "Tihanyi Kast\u00e9lysz\u00e1ll\u00f3 ", 
       "oligarchs": [
@@ -5517,7 +5770,7 @@
       ], 
       "mainCEO": [], 
       "type": "sz\u00e1lloda", 
-      "details": ""
+      "details": "A kast\u00e9lysz\u00e1ll\u00f3t a Garancsi-Hern\u00e1di-Cs\u00e1nyi tri\u00f3 c\u00e9ge \u00fczemelteti. \u00dcd\u00fcl\u0151\u00f6vezetb\u0151l vegyes felhaszn\u00e1l\u00e1s\u00fa ter\u00fclett\u00e9 soroltatn\u00e1k \u00e1t az ingatlan  k\u00f6rny\u00e9k\u00e9t annak \u00e9rdek\u00e9ben, hogy be\u00e9p\u00edt\u00e9si korl\u00e1toz\u00e1sok ne akad\u00e1lyozz\u00e1k a 4,2 milli\u00e1rd forintos beruh\u00e1z\u00e1sukat. "
     }
   }, 
   {
@@ -5552,9 +5805,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "K\u00f6zt\u00e1rsas\u00e1g t\u00e9r 10.", 
+      "address": "Tapolca, K\u00f6zt\u00e1rsas\u00e1g t\u00e9r 10., 8300", 
       "date": "07/30/2019", 
-      "id": 111, 
+      "id": 118, 
       "city": "Tapolca", 
       "name": "Orchidea \u00c9tterem", 
       "oligarchs": [
@@ -5601,11 +5854,11 @@
           "name": "Kelemen Beatrix Csilla"
         }
       ], 
-      "address": "Borosok \u00fatja 1.", 
+      "address": "Z\u00e1nka, Borosok \u00fatja 1., 8251", 
       "date": "07/30/2019", 
-      "id": 112, 
+      "id": 119, 
       "city": "Z\u00e1nka", 
-      "name": "Canter Borh\u00e1z & Vinot\u00e9ka", 
+      "name": "Canter Borh\u00e1z", 
       "oligarchs": [
         {
           "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
@@ -5653,9 +5906,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Pet\u0151fi S\u00e1ndor utca 9.", 
+      "address": "H\u00e9v\u00edz, Pet\u0151fi S\u00e1ndor utca 9., 8380", 
       "date": "07/30/2019", 
-      "id": 113, 
+      "id": 120, 
       "city": "H\u00e9v\u00edz", 
       "name": "M\u00e1rv\u00e1ny \u00c9tterem", 
       "oligarchs": [
@@ -5706,9 +5959,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "V\u00e1rkert u.1.", 
+      "address": "Gyula, V\u00e1rkert u.1., 5700", 
       "date": "07/30/2019", 
-      "id": 114, 
+      "id": 121, 
       "city": "Gyula", 
       "name": "Orchidea \u00c9tterem", 
       "oligarchs": [
@@ -5759,9 +6012,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Term\u00e1l u. 7", 
+      "address": "Zalakaros, Term\u00e1l u. 7, 8749", 
       "date": "07/30/2019", 
-      "id": 115, 
+      "id": 122, 
       "city": "Zalakaros", 
       "name": "Brissing \u00e9tterem", 
       "oligarchs": [
@@ -5812,9 +6065,9 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Szent-Gy\u00f6rgyi Albert u. 16-24", 
+      "address": "Szeged, Szent-Gy\u00f6rgyi Albert u. 16-24, 6276", 
       "date": "07/30/2019", 
-      "id": 116, 
+      "id": 123, 
       "city": "Szeged", 
       "name": "Bowling b\u00e1r", 
       "oligarchs": [
@@ -5829,6 +6082,106 @@
           "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
         }
       ], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        45.874163, 
+        18.455377
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Cs\u00e1nyi P\u00e9ter"
+        }, 
+        {
+          "link": "", 
+          "name": "Romsics L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "Cs\u00e1nyi Attila"
+        }
+      ], 
+      "company": "Cs\u00e1nyi Pinc\u00e9szet Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }
+      ], 
+      "address": "Vill\u00e1ny, Ady fasor 2, 7773", 
+      "date": "", 
+      "id": 124, 
+      "city": "Vill\u00e1ny", 
+      "name": "Cs\u00e1nyi borbolt", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }, 
+        {
+          "link": "", 
+          "name": "Kocsis Istv\u00e1nn\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Cs\u00e1nyi Erika"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "bor\u00e1szat", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.517035, 
+        19.079807
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Mih\u00e1lyi G\u00e1bor"
+        }
+      ], 
+      "company": "Monsoon Rain Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/papcsak-ferenc", 
+          "name": "Papcs\u00e1k Ferenc"
+        }
+      ], 
+      "address": "Budapest, V\u00e1rosligeti krt. 2., 1146", 
+      "date": "", 
+      "id": 125, 
+      "city": "Budapest", 
+      "name": "Nyereg Itat\u00f3", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Horv\u00e1th L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/papcsak-ferenc", 
+          "name": "Papcs\u00e1k Ferenc"
+        }
+      ], 
+      "mainCEO": [], 
       "type": "b\u00e1r", 
       "details": ""
     }
