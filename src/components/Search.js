@@ -22,7 +22,6 @@ class Search extends React.Component {
 
   onKeyUp(e) {
     const value = e.target.value;
-    console.log(e)
     if (e.key === 'Escape' || value === '') {
       store.dispatch(closeList());
       store.dispatch(setList([]));
