@@ -52,7 +52,7 @@ class List extends React.Component {
           ))}
 
           {this.props.list.length === 0 && (
-            <p>Nincs megfelelo NER hotel.</p>
+            <p>Nincsen megfelelő NER hotel.</p>
           )}
         </div>
       </div>

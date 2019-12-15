@@ -121,7 +121,7 @@ class MapComponent extends React.Component {
               url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
               attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
             />
-            <MarkerClusterGroup maxClusterRadius={20} zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
+            <MarkerClusterGroup maxClusterRadius={6} zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
               <MarkerList/>
             </MarkerClusterGroup>
             <LocateControl options={locateOptions} startDirectly/>

@@ -7,6 +7,12 @@ import styles from '../css/header.module.css'
 import Icon from './Icon';
 import listIcon from '../assets/menu-icon.svg';
 
+import logo from '../assets/nh-logo.svg';
+import hotel from '../assets/nh-hotel.svg';
+import beach from '../assets/nh-beach.svg';
+import restaurant from '../assets/nh-restaurant.svg';
+import golf from '../assets/nh-golf.svg';
+
 
 class Header extends React.Component {
   constructor () {
@@ -31,11 +37,21 @@ class Header extends React.Component {
 
     return (
       <div className={[styles.header, headerHeight].join(' ')}>
-        <Link to="/"><h1>NER Hotel</h1></Link>
         <div className={styles.menubutton} onClick={this.openMenu}>
           <Icon img={listIcon} size="large" />
         </div>
-        {this.props.withSearch && <Search/>}
+        <Link to="/" className={styles.logo}>
+          <img src={logo}/>
+        </Link>
+        <div className={styles.headerInner}>
+          <div className={styles.icons}>
+            <img src={hotel}/>
+            <img src={beach}/>
+            <img src={restaurant}/>
+            <img src={golf}/>
+          </div>
+          {this.props.withSearch && <Search/>}
+        </div>
         {this.state.showMenu && <Menu close={this.closeMenu}/>}
       </div>
     )

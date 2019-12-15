@@ -9,7 +9,7 @@ const AboutView = () => (
       <section>
         <h2>Mi az a NER Hotel?</h2>
         <p>Egy olyan webes alkalmazás, ami térkép segítségével átláthatóbbá teszi a vendéglátóhelyek tulajdonosi hálóját. Egy olyan eszközt adunk a tudatos állampolgárok kezébe, amivel hitelesen
-          tájékoztatnak a tulajdoni viszonyokról. Segítségével informálódni tudsz, mielőtt asztalt, szállást foglalsz, belépőt veszel.</p>
+          tájékoztatnak a tulajdoni viszonyokról a Nemzeti Együttműködés Rendszere időszakában. Segítségével informálódni tudsz, mielőtt asztalt, szállást foglalsz, belépőt veszel.</p>
       </section>
       <section>
         <h2>Milyen helyek szerepelnek rajta?</h2>
@@ -22,7 +22,8 @@ const AboutView = () => (
         <h2>Miért ezek a helyek kerültek fel?</h2>
         <p>Olyan helyeket jelenítünk meg, amelyeket üzemeltető társaságok tulajdonosai vagy vezető az alábbi kritériumok alapján a Nemzeti Együttműködés Rendszere haszonélvezői és kihasználói.</p>
         <p><strong>Vagyongyarapodás:</strong> nyilvános adatbázisok híján a magánvagyon gyarapodást feltételezni sajtóhírek és részben igazolni pedig céginformációs adatbázis alapján tudjuk. Minden
-          esetben sikeres, jól teljesítő magánszemélyeket és társaságokat gyűjtöttünk.</p>
+          esetben sikeres, jól teljesítő magánszemélyeket és társaságokat gyűjtöttünk.
+        </p>
         <p><strong>Politikai hátszél:</strong> a vagyongyarapodás hátterében olyan személyeket kerestünk a sajtóhírekben, akik közbeszerzések kiemelkedő nyertesei, ingatlanok áron aluli megszerzői
           vagy vissza nem térítendő támogatások kedvezményezettjei. A személyekhez kapcsolt hivatkozásokat a K-Monitor korrupciós-közpénzes sajtóadatbázisában rendszerezve gyűjtjük. Feltüntettük
           továbbá politikusok és családtagjaikhoz üzemeltetésében álló szállás- és vendéglátóhelyeket is.</p>
