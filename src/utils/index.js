@@ -5,8 +5,7 @@ const reduceByName = (a, c) => {
   if (!a.has(c.name)) {
     a.set(c.name, c);
   } else {
-    const type = `${a.get(c.name).type}, ${c.type}`;
-    c.type = type;
+    c.type = `${a.get(c.name).type}, ${c.type}`;
     a.set(c.name, c);
   }
 

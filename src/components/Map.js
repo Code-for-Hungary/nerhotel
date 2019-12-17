@@ -14,7 +14,7 @@ import blueIcon from '../assets/marker-icon-blue.svg';
 import Popup from '../components/Popup';
 import Icon from '../components/Icon';
 
-import places from '../data/places.json';
+import places from '../data/nerhotel.json';
 import listIcon from '../assets/menu-icon.svg';
 
 import styles from '../css/map.module.css';

@@ -2,7 +2,7 @@ import React from 'react';
 import store, { setList, openList, closeList } from '../store.js';
 import styles from '../css/search.module.css';
 
-import places from '../data/places.json';
+import places from '../data/nerhotel.json';
 
 class Search extends React.Component {
   constructor () {

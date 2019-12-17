@@ -4,7 +4,7 @@ import Icon from './Icon.js';
 
 import styles from '../css/hotel.module.css';
 
-import places from '../data/places.json';
+import places from '../data/nerhotel.json';
 import arrowIcon from '../assets/arrow-icon.svg';
 import horseIcon from '../assets/horse-icon.svg';
 import hotelIcon from '../assets/hotel-icon.svg';

@@ -18,7 +18,11 @@ const Popup = (props) => {
     store.dispatch(closePopup());
   };
 
-  const oligarchData = getOligarchData(data.mainOligarch, data.mainCEO);
+  const mainOligarchs = getOligarchData(data.mainOligarch, data.mainCEO);
+  const simpleOligarchs = getOligarchData(data.oligarchs || [], data.ceos || []);
+  const oligarchsToShow = mainOligarchs.length > 0 ? mainOligarchs : simpleOligarchs;
+
+  console.log(data.oligarchs, mainOligarchs);
 
   return (
     <div className={styles.popup}>
@@ -42,7 +46,7 @@ const Popup = (props) => {
                 <div className={styles.popupRow}>
                   <Icon img={horseIcon} size="small"/>
                   <div className={styles.oligarch}>
-                    {oligarchData.map(oligarch => (
+                    {oligarchsToShow.map(oligarch => (
                         <div>
                           <a href={oligarch.data.link} target="_blank">{oligarch.name}</a>
                           <span>{oligarch.data.type}</span>
