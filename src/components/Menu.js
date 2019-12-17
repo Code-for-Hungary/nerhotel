@@ -22,7 +22,7 @@ const Menu = (props) => {
                 <li><Link to="/about">Mi ez?</Link></li>
                 <li><Link to="/contact">Kontakt</Link></li>
                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6uNP-ML46outzCbOifdwKefAaB1x_j9eXMzeTJYGB5NEnA/viewform" target="_blank">Küldj be!</a></li>
-                <li><a href="tamogatas.k-monitor.hu" target="_blank">Támogatás</a></li>
+                <li><a href="https://tamogatas.k-monitor.hu" target="_blank">Támogatás</a></li>
             </ul>
             {isDesktop && <div className={styles.imageWrapper}>
               <img src={image} />

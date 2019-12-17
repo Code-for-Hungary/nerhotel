@@ -8,19 +8,19 @@ const AboutView = () => (
     <div className={styles.about}>
       <section>
         <h2>Mi az a NER Hotel?</h2>
-        <p>Egy olyan webes alkalmazás, ami térkép segítségével átláthatóbbá teszi a vendéglátóhelyek tulajdonosi hálóját. Egy olyan eszközt adunk a tudatos állampolgárok kezébe, amivel hitelesen
-          tájékoztatnak a tulajdoni viszonyokról a Nemzeti Együttműködés Rendszere időszakában. Segítségével informálódni tudsz, mielőtt asztalt, szállást foglalsz, belépőt veszel.</p>
+        <p>A NER Hotel egy olyan webes alkalmazás, ami átláthatóbbá teszi a Nemzeti Együttműködés Rendszerében működő vendéglátóegységek tulajdonosi és működtetői hátterét. Segítségével informálódni
+          tudsz, mielőtt asztalt, szállást foglalsz, belépőt veszel.</p>
       </section>
       <section>
         <h2>Milyen helyek szerepelnek rajta?</h2>
-        <p>Turizmusban érdekelt vendéglátó, szabadidő és szálláshelyeket, amiknek üzemeltetői a piaci körülmények adta lehetőségeken túl (politikai) pozíciójuk, családi kötődésük vagy más kapcsolataik
-          révén kerültek előbbre. Előfordulhat, hogy egy hely ingatlanának más a tulajdonosa, mint az ott üzemelő helynek, az ilyen esetekben az utóbbi alapján dolgoztunk, hiszen a fogyasztásból eredő
-          haszon közvetlenül az üzemeltetőnél jelenik meg.</p>
+        <p>Olyan vendéglátó, idegenforgalmi és szálláshelyek, amelyek a sajtó vagy a NER Hotel létrehozói szerint piaci pozíciójukat nem kizárólag üzleti teljesítményüknek köszönhetik. Előfordulhat,
+          hogy egy ingatlannaknak más a tulajdonosa, mint az ott üzemelő helynek, az ilyen esetekben az utóbbi alapján dolgoztunk, hiszen a fogyasztásból eredő haszon közvetlenül az üzemeltetőnél
+          jelenik meg.</p>
       </section>
       <section>
 
         <h2>Miért ezek a helyek kerültek fel?</h2>
-        <p>Olyan helyeket jelenítünk meg, amelyeket üzemeltető társaságok tulajdonosai vagy vezető az alábbi kritériumok alapján a Nemzeti Együttműködés Rendszere haszonélvezői és kihasználói.</p>
+        <p>Olyan helyeket jelenítünk meg, amelyek üzemeltetői társaságok tulajdonosai vagy vezető az alábbi kritériumok alapján a Nemzeti Együttműködés Rendszere haszonélvezői és kihasználói.</p>
         <p><strong>Vagyongyarapodás:</strong> nyilvános adatbázisok híján a magánvagyon gyarapodást feltételezni sajtóhírek és részben igazolni pedig céginformációs adatbázis alapján tudjuk. Minden
           esetben sikeres, jól teljesítő magánszemélyeket és társaságokat gyűjtöttünk.
         </p>

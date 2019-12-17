@@ -1,0 +1,6903 @@
+[
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.8548689, 
+        20.3306519
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Egerszal\u00f3k, Forr\u00e1s utca 6., 3394", 
+      "date": "07/30/2019", 
+      "id": 0, 
+      "city": "Egerszal\u00f3k", 
+      "name": "Furmint drinkb\u00e1r", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.503846, 
+        19.028412
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "company": "Le Pierrot Kft.", 
+      "link": "http://magyarnarancs.hu/belpol/egy-evig-ingyen-utana-fillerekert-igy-kap-hazat-lakast-zsidai-roy-a-varban-102627", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Kapisztr\u00e1n t\u00e9r, 1014", 
+      "date": "07/30/2019", 
+      "id": 1, 
+      "city": "Budapest", 
+      "name": "Sp\u00edler Biergarten", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.500403, 
+        19.047865
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Lefkovicsn\u00e9 Kolos \u00c1gnes"
+        }, 
+        {
+          "link": "", 
+          "name": "Pryma Zolt\u00e1n"
+        }
+      ], 
+      "company": "Burger & Beer Kft.", 
+      "link": "https://cink.hu/ilyen-joban-van-rogan-a-belvaros-kiralyaval-1644247632", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy", 
+          "name": "Lefkovics Gy\u00f6rgy"
+        }
+      ], 
+      "address": "Budapest, Sz\u00e9chenyi Istv\u00e1n t\u00e9r 7-8., 1051", 
+      "date": "07/30/2019", 
+      "id": 2, 
+      "city": "Budapest", 
+      "name": "TOKIO Budapest", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy", 
+          "name": "Lefkovics Gy\u00f6rgy"
+        }, 
+        {
+          "link": "", 
+          "name": "Wossala Rozina"
+        }, 
+        {
+          "link": "", 
+          "name": "Sztan\u00f3 Tam\u00e1s"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "b\u00e1r", 
+      "details": "T\u00f6bb, Lefkovicshoz k\u00f6t\u0151d\u0151 c\u00e9g is b\u00e9rl\u0151i kedvezm\u00e9nnyel vett ingatlanokat az akkor m\u00e9g Rog\u00e1n Antal vezette V. ker\u00fcleti \u00f6nkorm\u00e1nyzatt\u00f3l."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.498773, 
+        19.058848
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "company": "Le Pierrot Kft.", 
+      "link": "https://atlatszo.hu/2017/11/02/fidesz-kozeli-vallalkozok-is-megvetettek-a-labukat-a-hetedik-keruleti-romkocsmabizniszben/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Kir\u00e1ly utca 13., 1075", 
+      "date": "07/30/2019", 
+      "id": 3, 
+      "city": "Budapest", 
+      "name": "Sp\u00edler Bisztr\u00f3", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.498772, 
+        19.059
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "company": "Le Pierrot Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Kir\u00e1ly utca 13., 1075", 
+      "date": "07/30/2019", 
+      "id": 4, 
+      "city": "Budapest", 
+      "name": "Sp\u00edler Shanghai", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.496842, 
+        19.052262
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "company": "Trinity Gasztron\u00f3mia Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, De\u00e1k Ferenc u. 12-14., 1052", 
+      "date": "07/30/2019", 
+      "id": 5, 
+      "city": "Budapest", 
+      "name": "\u00c9S Bisztr\u00f3", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.477131, 
+        19.040237
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Guly\u00e1s Attila Bal\u00e1zs"
+        }
+      ], 
+      "company": "Zsigmond Kert Kft.", 
+      "link": "https://atlatszo.hu/2015/08/20/melyen-a-piaci-ar-alatt-berli-egy-fidesz-kozeli-cegcsoport-a-xi-kerulet-legjobb-vendeglatohelyeit/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/farago-tibor", 
+          "name": "Farag\u00f3 Tibor Dante"
+        }
+      ], 
+      "address": "Budapest, Tas vez\u00e9r u. 7., 1113", 
+      "date": "07/30/2019", 
+      "id": 6, 
+      "city": "Budapest", 
+      "name": "Budai Parksz\u00ednpad", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/farago-tibor", 
+          "name": "Farag\u00f3 Tibor Dante"
+        }, 
+        {
+          "link": "", 
+          "name": "Ungern\u00e9 Sz\u00e9n\u00e1si Ildik\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "Svetlai-Szepes T\u00edmea"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "b\u00e1r", 
+      "details": "A Zsigmond Kert Kft. 20 \u00e9vre kapta meg a F\u0151v\u00e1rost\u00f3l Parksz\u00ednpad b\u00e9rleti jog\u00e1t m\u00e9lyen a piaci \u00e1r alatt."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.477101, 
+        19.046628
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Guly\u00e1s Attila Bal\u00e1zs"
+        }
+      ], 
+      "company": "Zsigmond Kert Kft.", 
+      "link": "https://atlatszo.hu/2015/08/20/melyen-a-piaci-ar-alatt-berli-egy-fidesz-kozeli-cegcsoport-a-xi-kerulet-legjobb-vendeglatohelyeit/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/farago-tibor", 
+          "name": "Farag\u00f3 Tibor Dante"
+        }
+      ], 
+      "address": "Budapest, M\u00f3ricz Zsigmond k\u00f6rt\u00e9r Gomba \u00e9p\u00fcletegy\u00fcttes 1. cikk, 1117", 
+      "date": "08/01/2019", 
+      "id": 7, 
+      "city": "Budapest", 
+      "name": "Prosit Buda Bistro", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/farago-tibor", 
+          "name": "Farag\u00f3 Tibor Dante"
+        }, 
+        {
+          "link": "", 
+          "name": "Ungern\u00e9 Sz\u00e9n\u00e1si Ildik\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "Svetlai-Szepes T\u00edmea"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.764434, 
+        17.265899
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "P\u00e9ter Zsolt Mikl\u00f3s"
+        }
+      ], 
+      "company": "Keszthelyi Yachtkik\u00f6t\u0151 Kft.", 
+      "link": "https://atlatszo.hu/2015/01/27/hogyan-szereztek-meg-palyaztatas-es-verseny-nelkul-tiborczek-a-keszthelyi-kikotot-mutatjuk-a-trukkot/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "address": "Keszthely, Phoenix u. 1., 8360", 
+      "date": "07/30/2019", 
+      "id": 8, 
+      "city": "Keszthely", 
+      "name": "Keszthely Yacht Kik\u00f6t\u0151", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.414964, 
+        20.316474
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Kossuth t\u00e9r 3., 6800", 
+      "date": "07/30/2019", 
+      "id": 9, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Fekete Sas Mulat\u00f3", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.477395, 
+        19.094536
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Budapest, \u00dcll\u0151i \u00fat 94-98., 1089", 
+      "date": "07/30/2019", 
+      "id": 10, 
+      "city": "Budapest", 
+      "name": "T\u00f6rley \u00e9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.453337, 
+        21.403549
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10., 4200", 
+      "date": "07/30/2019", 
+      "id": 11, 
+      "city": "Hajd\u00faszoboszl\u00f3", 
+      "name": "Strand b\u00fcf\u00e9", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.029733, 
+        18.020234
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Balatonalm\u00e1di, Bajcsy-Zsilinszky u. 14., 8220", 
+      "date": "07/30/2019", 
+      "id": 12, 
+      "city": "Balatonalm\u00e1di", 
+      "name": "Sky-b\u00e1r", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.251669, 
+        20.159918
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Szeged, Szent-Gy\u00f6rgyi Albert u. 16-24, 6276", 
+      "date": "07/30/2019", 
+      "id": 13, 
+      "city": "Szeged", 
+      "name": "Bowling b\u00e1r", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.517035, 
+        19.079807
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Mih\u00e1lyi G\u00e1bor"
+        }
+      ], 
+      "company": "Monsoon Rain Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/papcsak-ferenc", 
+          "name": "Papcs\u00e1k Ferenc"
+        }
+      ], 
+      "address": "Budapest, V\u00e1rosligeti krt. 2., 1146", 
+      "date": "", 
+      "id": 14, 
+      "city": "Budapest", 
+      "name": "Nyereg Itat\u00f3", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Horv\u00e1th L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/papcsak-ferenc", 
+          "name": "Papcs\u00e1k Ferenc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "b\u00e1r", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.426557, 
+        18.602309
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "De\u00e1k G\u00e1bor"
+        }
+      ], 
+      "company": "B\u00fazakal\u00e1sz 66 Felcs\u00fat Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "address": "Alcs\u00fatdoboz, B\u00e9ke utca 1., 8087", 
+      "date": "07/30/2019", 
+      "id": 15, 
+      "city": "Alcs\u00fatdoboz", 
+      "name": "V\u00e1lv\u00f6lgyi P\u00e9ks\u00e9g \u00e9s Hentesbolt", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "bolt", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        48.170109, 
+        21.361615
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Kalocsai L\u00e1szl\u00f3"
+        }
+      ], 
+      "company": "Dereszla Bortermel\u0151 Kft.", 
+      "link": "http://hvg.hu/hetilap/2018.33/201833__a_balaton_urai__orbani_marketing__csinaljak_afesztivalt__szereposzto_divan_mulik", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "address": "Bodrogkisfalud, Kossuth u., 3917", 
+      "date": "07/30/2019", 
+      "id": 16, 
+      "city": "Bodrogkisfalud", 
+      "name": "Dereszla bor\u00e1szat", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "bor\u00e1szat", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.793145, 
+        17.487626
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagyiv\u00e1nyi Szabolcs D\u00e1vid"
+        }
+      ], 
+      "company": "Nimfeum Kft.", 
+      "link": "https://index.hu/belfold/2018/07/24/eu_szallashely_palyazat_2._kor/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szatmary-kristof", 
+          "name": "Szatm\u00e1ry Krist\u00f3f"
+        }
+      ], 
+      "address": "Badacsonytomaj, HRSZ 023/8, 8261", 
+      "date": "07/30/2019", 
+      "id": 17, 
+      "city": "Badacsonytomaj", 
+      "name": "Nimfeum", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szatmary-kristof", 
+          "name": "Szatm\u00e1ry Krist\u00f3f"
+        }, 
+        {
+          "link": "", 
+          "name": "Simon Be\u00e1ta"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "bor\u00e1szat", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        45.865348, 
+        18.44438
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Tiff\u00e1n Ede"
+        }
+      ], 
+      "company": "Tiff\u00e1n's Kft.", 
+      "link": "https://hvg.hu/itthon/20181214_Bagoert_kap_meg_5_evre_berlakast_a_fideszes_kepviselo_a_Varban", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiffan-zsolt", 
+          "name": "Tiff\u00e1n Zsolt"
+        }
+      ], 
+      "address": "Vill\u00e1ny, Erkel Ferenc u. 10., 7773", 
+      "date": "07/30/2019", 
+      "id": 18, 
+      "city": "Vill\u00e1ny", 
+      "name": "Tiff\u00e1n Bor\u00e1szat", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiffan-zsolt", 
+          "name": "Tiff\u00e1n Zsolt"
+        }, 
+        {
+          "link": "", 
+          "name": "Tiff\u00e1n Ede"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "bor\u00e1szat", 
+      "details": "Tiff\u00e1n Zsolt  2010-ben vill\u00e1nyi bor\u00e1szb\u00f3l orsz\u00e1ggy\u0171l\u00e9si k\u00e9pvisel\u0151 lett. A Budav\u00e1ri \u00d6nkorm\u00e1nyzatt\u00f3l havi 47 ezer forint\u00e9rt kapott \u00f6nkorm\u00e1nyzati b\u00e9rlak\u00e1st."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.911396, 
+        17.876128
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "De\u00e1k G\u00e1bor"
+        }
+      ], 
+      "company": "Tihany-Vin Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Tihany, Kiserd\u0151telepi \u00fat 075/15 hrsz, 8237", 
+      "date": "07/30/2019", 
+      "id": 19, 
+      "city": "Tihany", 
+      "name": "Termel\u0151i borkim\u00e9r\u00e9s", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "bor\u00e1szat", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.877652, 
+        17.697865
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Gelencs\u00e9r Gerg\u0151"
+        }
+      ], 
+      "company": "Canter Borh\u00e1z Kft", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "address": "Z\u00e1nka, Borosok \u00fatja 1., 8251", 
+      "date": "07/30/2019", 
+      "id": 20, 
+      "city": "Z\u00e1nka", 
+      "name": "Canter Borh\u00e1z", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "bor\u00e1szat", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.50513, 
+        19.062004
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/kiss-szilard-miklos", 
+          "name": "Kiss Szil\u00e1rd Mikl\u00f3s"
+        }
+      ], 
+      "company": "Champion Wines Kft.", 
+      "link": "", 
+      "mainOligarch": [], 
+      "address": "Budapest, J\u00f3kai t\u00e9r 6., 1061", 
+      "date": "12/16/2019", 
+      "id": 21, 
+      "city": "Budapest", 
+      "name": "Vin\u00e1rium", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Elena Tsvetkova"
+        }, 
+        {
+          "link": "", 
+          "name": "Limorova Andrea Kinga"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/kiss-szilard-miklos", 
+          "name": "Kiss Szil\u00e1rd Mikl\u00f3s"
+        }
+      ], 
+      "type": "bor\u00e1szat", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        45.874163, 
+        18.455377
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Cs\u00e1nyi P\u00e9ter"
+        }, 
+        {
+          "link": "", 
+          "name": "Romsics L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "Cs\u00e1nyi Attila"
+        }
+      ], 
+      "company": "Cs\u00e1nyi Pinc\u00e9szet Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }
+      ], 
+      "address": "Vill\u00e1ny, Ady fasor 2, 7773", 
+      "date": "", 
+      "id": 22, 
+      "city": "Vill\u00e1ny", 
+      "name": "Cs\u00e1nyi borbolt", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }, 
+        {
+          "link": "", 
+          "name": "Kocsis Istv\u00e1nn\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Cs\u00e1nyi Erika"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "bor\u00e1szat", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.499339, 
+        19.040607
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Kov\u00e1cs \u00c1kos Mikl\u00f3s"
+        }
+      ], 
+      "company": "Andante Borpatika Kft.", 
+      "link": "https://444.hu/2016/06/03/dragabb-a-nagyfroccs-akos-ettermeben-mint-amennyit-egy-negyzetmeterert-fizet-az-i-keruletnek", 
+      "mainOligarch": [], 
+      "address": "Budapest, F\u0151 utca 3., 1011", 
+      "date": "12/12/2019", 
+      "id": 23, 
+      "city": "Budapest", 
+      "name": "Andante Borpatika", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Geri Zolt\u00e1n J\u00f3zsef"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": "Havi 113 153 forint\u00e9rt b\u00e9rel a Clark \u00c1d\u00e1m t\u00e9rn\u00e9l az \u00f6nkorm\u00e1nyzatt\u00f3l \u00fczlethelys\u00e9get a kor\u00e1bban Kov\u00e1cs \u00c1koshoz \u00e9s Tiff\u00e1n Zsolthoz tartoz\u00f3 c\u00e9g."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.8548689, 
+        20.3306519
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Egerszal\u00f3k, Forr\u00e1s utca 6., 3394", 
+      "date": "07/30/2019", 
+      "id": 24, 
+      "city": "Egerszal\u00f3k", 
+      "name": "Pinot Noir", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.516508, 
+        19.050145
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "company": "Mr. Funk Kft.", 
+      "link": "https://blog.atlatszo.hu/2018/06/vajna-timea-tulajdonostarsa-terjeszkedik-az-ujlipotvarosi-fankozo-piacon/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "address": "Budapest, Pozsonyi \u00fat 22., 1137", 
+      "date": "07/30/2019", 
+      "id": 25, 
+      "city": "Budapest", 
+      "name": "The Donut Library Pozsonyi", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Gomez Norbert"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.503969, 
+        19.03103
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "company": "Le Pierrot Kft.", 
+      "link": "http://magyarnarancs.hu/belpol/egy-evig-ingyen-utana-fillerekert-igy-kap-hazat-lakast-zsidai-roy-a-varban-102627", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Fortuna utca 14., 1014", 
+      "date": "07/30/2019", 
+      "id": 26, 
+      "city": "Budapest", 
+      "name": "Pierrot", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.502705, 
+        19.058792
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "Opera Gasztron\u00f3mia Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Andr\u00e1ssy \u00fat 22., 1061", 
+      "date": "07/30/2019", 
+      "id": 27, 
+      "city": "Budapest", 
+      "name": "Opera Cafe", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.5023438, 
+        19.048537
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "company": "Mr. Funk Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "address": "Budapest, Arany J\u00e1nos u. 19-21 , 1051", 
+      "date": "07/30/2019", 
+      "id": 28, 
+      "city": "Budapest", 
+      "name": "Mr. Funk Arany J\u00e1nos utca", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Gomez Norbert"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.500933, 
+        19.052963
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Lefkovicsn\u00e9 Kolos \u00c1gnes"
+        }, 
+        {
+          "link": "", 
+          "name": "Pryma Zolt\u00e1n"
+        }
+      ], 
+      "company": "Burger & Beer Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy", 
+          "name": "Lefkovics Gy\u00f6rgy"
+        }
+      ], 
+      "address": "Budapest, Szent Istv\u00e1n t\u00e9r 9., 1051", 
+      "date": "07/30/2019", 
+      "id": 29, 
+      "city": "Budapest", 
+      "name": "Bestia", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy", 
+          "name": "Lefkovics Gy\u00f6rgy"
+        }, 
+        {
+          "link": "", 
+          "name": "Wossala Rozina"
+        }, 
+        {
+          "link": "", 
+          "name": "Sztan\u00f3 Tam\u00e1s"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": "T\u00f6bb, Lefkovicshoz k\u00f6t\u0151d\u0151 c\u00e9g is b\u00e9rl\u0151i kedvezm\u00e9nnyel vett ingatlanokat az akkor m\u00e9g Rog\u00e1n Antal vezette V. ker\u00fcleti \u00f6nkorm\u00e1nyzatt\u00f3l."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.50045, 
+        19.050913
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Lefkovicsn\u00e9 Kolos \u00c1gnes"
+        }, 
+        {
+          "link": "", 
+          "name": "Pryma Zolt\u00e1n"
+        }
+      ], 
+      "company": "Burger & Beer Kft.", 
+      "link": "https://cink.hu/ilyen-joban-van-rogan-a-belvaros-kiralyaval-1644247632", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy", 
+          "name": "Lefkovics Gy\u00f6rgy"
+        }
+      ], 
+      "address": "Budapest, Okt\u00f3ber 6. u. 8., 1051", 
+      "date": "07/30/2019", 
+      "id": 30, 
+      "city": "Budapest", 
+      "name": "Tom George Budapest", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy", 
+          "name": "Lefkovics Gy\u00f6rgy"
+        }, 
+        {
+          "link": "", 
+          "name": "Wossala Rozina"
+        }, 
+        {
+          "link": "", 
+          "name": "Sztan\u00f3 Tam\u00e1s"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": "T\u00f6bb, Lefkovicshoz k\u00f6t\u0151d\u0151 c\u00e9g is b\u00e9rl\u0151i kedvezm\u00e9nnyel vett ingatlanokat az akkor m\u00e9g Rog\u00e1n Antal vezette V. ker\u00fcleti \u00f6nkorm\u00e1nyzatt\u00f3l."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.499335, 
+        19.046457
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Kov\u00e1cs Zs\u00f3fia \u00c9va"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00e1mori J\u00f3zsef"
+        }
+      ], 
+      "company": "Harang Kft.", 
+      "link": "https://444.hu/2018/01/10/unios-penzbol-epitenek-sorfozdet-matolcsy-adam-haverjai", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/varga-lajos", 
+          "name": "Varga Lajos"
+        }
+      ], 
+      "address": "Budapest, Jane Haining rkp., 1052", 
+      "date": "07/30/2019", 
+      "id": 31, 
+      "city": "Budapest", 
+      "name": "Raqpart", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Szini B\u00e9l\u00e1n\u00e9 sz. \u00d6tv\u00f6s Julianna"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/varga-lajos", 
+          "name": "Varga Lajos"
+        }, 
+        {
+          "link": "", 
+          "name": "Vajda M\u00e1rton"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": "Varga c\u00e9ge a Valton-Sec. Kft. rendszeresen biztos\u00edtja a Fidesz \u00e9s a korm\u00e1nyzat rendezv\u00e9nyeit (pl. stadionok, vizes v\u00e9b\u00e9, V\u00e1rosliget)."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.499104, 
+        19.058358
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "company": "Trinity Gasztron\u00f3mia Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Kir\u00e1ly utca 13., 1075", 
+      "date": "07/30/2019", 
+      "id": 32, 
+      "city": "Budapest", 
+      "name": "Jamie Oliver's Pizzeria", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.498737, 
+        19.053571
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "Fr\u00f6ccsterasz Kft.", 
+      "link": "http://valasz.hu/itthon/elkelt-orban-rahel-belvarosi-etterme-120166", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/varga-lajos", 
+          "name": "Varga Lajos"
+        }
+      ], 
+      "address": "Budapest, Erzs\u00e9bet t\u00e9r 11-13 ., 1051", 
+      "date": "07/30/2019", 
+      "id": 33, 
+      "city": "Budapest", 
+      "name": "Snacks And Steaks", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/varga-lajos", 
+          "name": "Varga Lajos"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": "Varga c\u00e9ge a Valton-Sec. Kft. rendszeresen biztos\u00edtja a Fidesz \u00e9s a korm\u00e1nyzat rendezv\u00e9nyeit (pl. stadionok, vizes v\u00e9b\u00e9, V\u00e1rosliget)."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4969, 
+        19.052412
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "company": "Trinity Gasztron\u00f3mia Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, De\u00e1k Ferenc u. 12-14., 1052", 
+      "date": "07/30/2019", 
+      "id": 34, 
+      "city": "Budapest", 
+      "name": "\u00c9S Deli", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.496432, 
+        19.058305
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "company": "Mr. Funk Kft.", 
+      "link": "https://blog.atlatszo.hu/2018/06/vajna-timea-tulajdonostarsa-terjeszkedik-az-ujlipotvarosi-fankozo-piacon/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "address": "Budapest, K\u00e1roly krt. 7., 1075", 
+      "date": "07/30/2019", 
+      "id": 35, 
+      "city": "Budapest", 
+      "name": "The Donut Library K\u00e1roly krt.", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Gomez Norbert"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vajna-timea", 
+          "name": "Vajna T\u00edmea"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4948923, 
+        18.5675188
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Czene Ferenc"
+        }, 
+        {
+          "link": "", 
+          "name": "Vad\u00e1sz Tam\u00e1s"
+        }
+      ], 
+      "company": "M\u00e9sz\u00e1ros Gasztro Kft.", 
+      "link": "https://blog.atlatszo.hu/2016/11/felszamolasbol-vasarolt-fogado-meszarosek-gasztrocegenel/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "address": "\u00d3barok, M1 43 km BAL, 2063", 
+      "date": "07/30/2019", 
+      "id": 36, 
+      "city": "\u00d3barok", 
+      "name": "Szek\u00e9r Cs\u00e1rda", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.490733, 
+        19.023913
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Sztan\u00f3 Tam\u00e1s"
+        }
+      ], 
+      "company": "Leroy.co Kft.", 
+      "link": "https://cink.hu/ilyen-joban-van-rogan-a-belvaros-kiralyaval-1644247632", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy", 
+          "name": "Lefkovics Gy\u00f6rgy"
+        }
+      ], 
+      "address": "Budapest, Alkot\u00e1s u 53., 1123", 
+      "date": "07/30/2019", 
+      "id": 37, 
+      "city": "Budapest", 
+      "name": "Tom George Piccolino", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy", 
+          "name": "Lefkovics Gy\u00f6rgy"
+        }, 
+        {
+          "link": "", 
+          "name": "Sztan\u00f3 Tam\u00e1s"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": "T\u00f6bb, Lefkovicshoz k\u00f6t\u0151d\u0151 c\u00e9g is b\u00e9rl\u0151i kedvezm\u00e9nnyel vett ingatlanokat az akkor m\u00e9g Rog\u00e1n Antal vezette V. ker\u00fcleti \u00f6nkorm\u00e1nyzatt\u00f3l."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.490337, 
+        19.024012
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "Zsidai Group Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Alkot\u00e1s u. 53., 1123", 
+      "date": "07/30/2019", 
+      "id": 38, 
+      "city": "Budapest", 
+      "name": "Sp\u00edler Buda", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4526899, 
+        21.404008
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10., 4200", 
+      "date": "07/30/2019", 
+      "id": 39, 
+      "city": "Hajd\u00faszoboszl\u00f3", 
+      "name": "P\u00e1vai Vajna \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4230127, 
+        18.6040953
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Czene Ferenc"
+        }, 
+        {
+          "link": "", 
+          "name": "Vad\u00e1sz Tam\u00e1s"
+        }
+      ], 
+      "company": "M\u00e9sz\u00e1ros Gasztro Kft.", 
+      "link": "https://blog.atlatszo.hu/2016/11/felszamolasbol-vasarolt-fogado-meszarosek-gasztrocegenel/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "address": "Alcs\u00fatdoboz, Szabads\u00e1g utca 156., 8087", 
+      "date": "07/30/2019", 
+      "id": 40, 
+      "city": "Alcs\u00fatdoboz", 
+      "name": "M\u00e9sz\u00e1ros Pub & Pizz\u00e9ria", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.8973608, 
+        17.8770164
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Czene Ferenc"
+        }, 
+        {
+          "link": "", 
+          "name": "Vad\u00e1sz Tam\u00e1s"
+        }
+      ], 
+      "company": "M\u00e9sz\u00e1ros Gasztro Kft.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "address": "Tihany, K\u00fclter\u00fclet 075/17. hrsz, 8237", 
+      "date": "07/30/2019", 
+      "id": 41, 
+      "city": "Tihany", 
+      "name": "Vinarius \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.780822, 
+        17.1850784
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "H\u00e9v\u00edz, V\u00f6r\u00f6smarty Mih\u00e1ly utca 91., 8380", 
+      "date": "07/30/2019", 
+      "id": 42, 
+      "city": "H\u00e9v\u00edz", 
+      "name": "Borosty\u00e1n \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.644825, 
+        21.2873841
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Gyula, V\u00e1rkert u.1., 5700", 
+      "date": "07/30/2019", 
+      "id": 43, 
+      "city": "Gyula", 
+      "name": "Nosztalgia \u00e9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.422164, 
+        20.317222
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, P\u00e1lffy u. 4., 6800", 
+      "date": "07/30/2019", 
+      "id": 44, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Kis Bandula Faloda", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.422054, 
+        20.317485
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, P\u00e1lffy u. 4., 6800", 
+      "date": "07/30/2019", 
+      "id": 45, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Bandula borsorol\u00f3", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.422037, 
+        20.317651
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, P\u00e1lffy u. 2., 6800", 
+      "date": "07/30/2019", 
+      "id": 46, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Bandula kisvend\u00e9gl\u0151", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.414964, 
+        20.316474
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Kossuth t\u00e9r 3., 6800", 
+      "date": "07/30/2019", 
+      "id": 47, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Fekete Sas", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.411842, 
+        20.324236
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Kaszap utca 27., 6800", 
+      "date": "07/30/2019", 
+      "id": 48, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "Bagolyv\u00e1r \u00e9tterem", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.390316, 
+        20.279949
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "B\u00f3nus Istv\u00e1n", 
+      "link": "https://orszagszerte.atlatszo.hu/tizmilliokat-koltott-a-vasarhelyi-onkormanyzat-a-batidai-kastely-egyik-tulajdonosanal/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Z\u00f6lderd\u0151 utca 4., 6800", 
+      "date": "07/30/2019", 
+      "id": 49, 
+      "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
+      "name": "K\u00f6k\u00e9nydombi cs\u00e1rda", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonus-istvan", 
+          "name": "B\u00f3nus Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.915697, 
+        19.924396
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "M\u00e1traszentimre, Kod\u00e1ly Z. u. 10., 3234", 
+      "date": "07/30/2019", 
+      "id": 50, 
+      "city": "M\u00e1traszentimre", 
+      "name": "Panor\u00e1ma \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.504566, 
+        19.02914
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "company": "V1 Gasztron\u00f3mia Kft.", 
+      "link": "https://hvg.hu/itthon/20170302_zsidaidosszie_5_lakashoz_meg_a_diszkutat_is_berbe_adtak", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Orsz\u00e1gh\u00e1z utca 31., 1014", 
+      "date": "07/30/2019", 
+      "id": 51, 
+      "city": "Budapest", 
+      "name": "Baltaz\u00e1r Grill", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": "\u00d6sszesen 1023 n\u00e9gyzetm\u00e9teres \u00f6nkorm\u00e1nyzati tulajdont b\u00e9rel !!!Zsidai Zolt\u00e1n Roy c\u00e9ge n\u00e9gyzetm\u00e9terenk\u00e9nt 1670 forintos \u00e1ron."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.504109, 
+        19.031227
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }
+      ], 
+      "company": "HARLEQUIN Kft.", 
+      "link": "http://hvg.hu/itthon/20170221_Ennyiert_adtuk_Zsidainak_a_kozvagyont_hogy_Jamiest_nyisson_benne", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Fortuna utca 21, 1014", 
+      "date": "07/30/2019", 
+      "id": 52, 
+      "city": "Budapest", 
+      "name": "21 Magyar Vend\u00e9gl\u0151", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": "A 118 n\u00e9gyzetm\u00e9teres ingatlant 446 ezer forint\u00e9rt b\u00e9rli az \u00f6nkorm\u00e1nyzatt\u00f3l !!!Zsidai Zolt\u00e1n Roy c\u00e9ge."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.503657, 
+        18.753196
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Czene Ferenc"
+        }, 
+        {
+          "link": "", 
+          "name": "Vad\u00e1sz Tam\u00e1s"
+        }
+      ], 
+      "company": "M\u00e9sz\u00e1ros Gasztro Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "address": "Herceghalom, Zs\u00e1mb\u00e9ki \u00fat 16., 2053", 
+      "date": "07/30/2019", 
+      "id": 53, 
+      "city": "Herceghalom", 
+      "name": "Talentis \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.503336, 
+        19.032261
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }
+      ], 
+      "company": "HARLEQUIN Kft.", 
+      "link": "https://hvg.hu/itthon/20170221_Ennyiert_adtuk_Zsidainak_a_kozvagyont_hogy_Jamiest_nyisson_benne", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Fortuna utca 3., 1014", 
+      "date": "07/30/2019", 
+      "id": 54, 
+      "city": "Budapest", 
+      "name": "Pest-Buda \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": "A patin\u00e1s \u00e9p\u00fcletben a f\u00f6ldszinti 146 n\u00e9gyzetm\u00e9teres ingatlant 574 ezer forint\u00e9rt b\u00e9rli az \u00f6nkorm\u00e1nyzatt\u00f3l !!!Zsidai Zolt\u00e1n Roy c\u00e9ge."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.501113, 
+        19.032659
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "company": "Trinity Gasztron\u00f3mia Kft.", 
+      "link": "http://hvg.hu/itthon/20170221_Ennyiert_adtuk_Zsidainak_a_kozvagyont_hogy_Jamiest_nyisson_benne", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Szenth\u00e1roms\u00e1g utca 9-11, 1014", 
+      "date": "07/30/2019", 
+      "id": 55, 
+      "city": "Budapest", 
+      "name": "Jamie's Italian Budapest", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": "A 400 n\u00e9gyzetm\u00e9ter helyis\u00e9get 2 milli\u00f3 forint\u00e9rt b\u00e9rli !!!Zsidai Zolt\u00e1n Roy c\u00e9ge az \u00f6nkorm\u00e1nyzatt\u00f3l, kedvezm\u00e9nyekkel, hossz\u00fa t\u00e1vra."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.499128, 
+        19.06498
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan", 
+          "name": "Sz\u00e1raz Istv\u00e1n P\u00e9ter"
+        }
+      ], 
+      "company": "S.Plissken Kft.", 
+      "link": "https://atlatszo.hu/2017/11/02/fidesz-kozeli-vallalkozok-is-megvetettek-a-labukat-a-hetedik-keruleti-romkocsmabizniszben/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan", 
+          "name": "Sz\u00e1raz Istv\u00e1n P\u00e9ter"
+        }
+      ], 
+      "address": "Budapest, Klauz\u00e1l utca 32, 1072", 
+      "date": "12/16/2019", 
+      "id": 56, 
+      "city": "Budapest", 
+      "name": "Black Swan Budapest", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan", 
+          "name": "Sz\u00e1raz Istv\u00e1n P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan", 
+          "name": "Sz\u00e1raz Istv\u00e1n P\u00e9ter"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.453065, 
+        21.404211
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 12-14., 4200", 
+      "date": "07/30/2019", 
+      "id": 57, 
+      "city": "Hajd\u00faszoboszl\u00f3", 
+      "name": "Apoll\u00f3 \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.451287, 
+        21.400712
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Hajd\u00faszoboszl\u00f3, G\u00e1bor \u00c1ron utca 7-9., 4200", 
+      "date": "07/30/2019", 
+      "id": 58, 
+      "city": "Hajd\u00faszoboszl\u00f3", 
+      "name": "Korz\u00f3 \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.953542, 
+        17.892128
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Sz\u00e1raz Istv\u00e1n P\u00e9ter"
+        }
+      ], 
+      "company": "S.Plissken Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan", 
+          "name": "Sz\u00e1raz Istv\u00e1n P\u00e9ter"
+        }
+      ], 
+      "address": "Balatonf\u00fcred, Z\u00e1konyi Ferenc utca 1, 8230", 
+      "date": "07/30/2019", 
+      "id": 59, 
+      "city": "Balatonf\u00fcred", 
+      "name": "Terasz \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan", 
+          "name": "Sz\u00e1raz Istv\u00e1n P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "", 
+          "name": "Sz\u00e1raz Istv\u00e1n P\u00e9ter"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.886323, 
+        17.442394
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Tapolca, K\u00f6zt\u00e1rsas\u00e1g t\u00e9r 10., 8300", 
+      "date": "07/30/2019", 
+      "id": 60, 
+      "city": "Tapolca", 
+      "name": "Orchidea \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.789113, 
+        17.18847
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "H\u00e9v\u00edz, Pet\u0151fi S\u00e1ndor utca 9., 8380", 
+      "date": "07/30/2019", 
+      "id": 61, 
+      "city": "H\u00e9v\u00edz", 
+      "name": "M\u00e1rv\u00e1ny \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.644574, 
+        21.287648
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Gyula, V\u00e1rkert u.1., 5700", 
+      "date": "07/30/2019", 
+      "id": 62, 
+      "city": "Gyula", 
+      "name": "Orchidea \u00c9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.54724, 
+        17.123847
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Zalakaros, Term\u00e1l u. 7, 8749", 
+      "date": "07/30/2019", 
+      "id": 63, 
+      "city": "Zalakaros", 
+      "name": "Brissing \u00e9tterem", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "\u00e9tterem", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.250898, 
+        20.159159
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "Ligetf\u00fcrd\u0151 Kft.\t", 
+      "link": "https://24.hu/fn/gazdasag/2018/06/12/szegedi-furdovel-bovult-meszaros-lorinc-birodalma/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Szeged, Toront\u00e1l t\u00e9r 1., 6726", 
+      "date": "07/30/2019", 
+      "id": 64, 
+      "city": "Szeged", 
+      "name": "Napf\u00e9nyf\u00fcrd\u0151 Aquapolis", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "f\u00fcrd\u0151", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.501003, 
+        19.03316
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "Zsidai Group Kft.", 
+      "link": "https://24.hu/belfold/2018/09/19/zsidai-roy-budai-var-mnb-varoshaza/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, \u00dari utca 21., 1014", 
+      "date": "07/30/2019", 
+      "id": 65, 
+      "city": "Budapest", 
+      "name": "Budapest Mokka Cafe&Deli", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "k\u00e1v\u00e9z\u00f3", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.476986, 
+        19.046916
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Guly\u00e1s Attila Bal\u00e1zs"
+        }
+      ], 
+      "company": "Zsigmond Kert Kft.", 
+      "link": "https://atlatszo.hu/2015/08/20/melyen-a-piaci-ar-alatt-berli-egy-fidesz-kozeli-cegcsoport-a-xi-kerulet-legjobb-vendeglatohelyeit/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/farago-tibor", 
+          "name": "Farag\u00f3 Tibor Dante"
+        }
+      ], 
+      "address": "Budapest, M\u00f3ricz Zsigmond k\u00f6rt\u00e9r Gomba \u00e9p\u00fcletegy\u00fcttes, 1117", 
+      "date": "07/31/2019", 
+      "id": 66, 
+      "city": "Budapest", 
+      "name": "4 street coffee", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/farago-tibor", 
+          "name": "Farag\u00f3 Tibor Dante"
+        }, 
+        {
+          "link": "", 
+          "name": "Ungern\u00e9 Sz\u00e9n\u00e1si Ildik\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "Svetlai-Szepes T\u00edmea"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "k\u00e1v\u00e9z\u00f3", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4409397, 
+        18.5854545
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Czene Ferenc"
+        }, 
+        {
+          "link": "", 
+          "name": "Vad\u00e1sz Tam\u00e1s"
+        }
+      ], 
+      "company": "M\u00e9sz\u00e1ros Gasztro Kft.", 
+      "link": "https://blog.atlatszo.hu/2016/11/felszamolasbol-vasarolt-fogado-meszarosek-gasztrocegenel/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "address": "Felcs\u00fat, Mozdony u. 4., 8086", 
+      "date": "07/30/2019", 
+      "id": 67, 
+      "city": "Felcs\u00fat", 
+      "name": "\u00c1llom\u00e1s Cafe", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "k\u00e1v\u00e9z\u00f3", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.0232493, 
+        18.0075883
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "Konzum Nyrt.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "address": "Balatonalm\u00e1di, V\u00e9ghely Dezs\u0151 utca 18., 8220", 
+      "date": "07/30/2019", 
+      "id": 68, 
+      "city": "Balatonalm\u00e1di", 
+      "name": "Yacht kemping ", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.9856579, 
+        18.1701973
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "D\u00e9t\u00e1ri-Szab\u00f3 \u00c1d\u00e1m"
+        }
+      ], 
+      "company": "Appeninn BLT Kft.", 
+      "link": "https://index.hu/gazdasag/2018/07/26/meszaros_lorincek_megszereztek_a_club_aligat_az_egykori_partudulot/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "address": "Balatonvil\u00e1gos, Aligai \u00fat 1., 8171", 
+      "date": "07/30/2019", 
+      "id": 69, 
+      "city": "Balatonvil\u00e1gos", 
+      "name": "Club Aliga", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.946188, 
+        17.876507
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Balatonf\u00fcred, Sz\u00e9chenyi Istv\u00e1n u. 24., 8230", 
+      "date": "07/30/2019", 
+      "id": 70, 
+      "city": "Balatonf\u00fcred", 
+      "name": "F\u00fcred Kemping", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.927766, 
+        18.103393
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Si\u00f3fok-Szabadif\u00fcrd\u0151, Szent L\u00e1szl\u00f3 u. 185., 8600", 
+      "date": "07/30/2019", 
+      "id": 71, 
+      "city": "Si\u00f3fok-Szabadif\u00fcrd\u0151", 
+      "name": "Aranypart Camping", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.8810886, 
+        17.7529883
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "Zion Europe Kft.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "", 
+          "name": "M\u00e9sz\u00e1ros Beatrix"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "address": "Balatonakali, Balaton u. 8, , 8243", 
+      "date": "07/30/2019", 
+      "id": 72, 
+      "city": "Balatonakali", 
+      "name": "Strand-Holiday Kemping", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "", 
+          "name": "M\u00e9sz\u00e1ros Beatrix"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes", 
+          "name": "Homlok-M\u00e9sz\u00e1ros \u00c1gnes"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.8804029, 
+        17.9129793
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Zam\u00e1rdi, Szent Istv\u00e1n \u00fat hrsz. 3512., 8621", 
+      "date": "07/30/2019", 
+      "id": 73, 
+      "city": "Zam\u00e1rdi", 
+      "name": "Mirabella Kemping", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.829534, 
+        17.639974
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "R\u00e9vf\u00fcl\u00f6p, Hal\u00e1sz u. 5., 8253", 
+      "date": "07/30/2019", 
+      "id": 74, 
+      "city": "R\u00e9vf\u00fcl\u00f6p", 
+      "name": "Napf\u00e9ny Kemping", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.801279, 
+        17.739075
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Balatonszemes, Lellei u. 1-2., 8636", 
+      "date": "07/30/2019", 
+      "id": 75, 
+      "city": "Balatonszemes", 
+      "name": "Vadvir\u00e1g kemping", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.7514613, 
+        17.331343
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Vonyarcvashegy, Park u. 016/1, 8314", 
+      "date": "07/30/2019", 
+      "id": 76, 
+      "city": "Vonyarcvashegy", 
+      "name": "Kemping & \u00fcd\u00fcl\u0151falu", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.746857, 
+        17.244156
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Keszthely, Entz G\u00e9za stny. 1., 8360", 
+      "date": "07/30/2019", 
+      "id": 77, 
+      "city": "Keszthely", 
+      "name": "Zala Kemping", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.712952, 
+        17.3075676
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Balatonber\u00e9ny, H\u00e9tvez\u00e9r u. 2., 8649", 
+      "date": "07/30/2019", 
+      "id": 78, 
+      "city": "Balatonber\u00e9ny", 
+      "name": "Ber\u00e9ny naturista kemping", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.553683, 
+        17.1238526
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Zalakaros, Gy\u00f3gyf\u00fcrd\u0151 t\u00e9r 6., 8749", 
+      "date": "07/30/2019", 
+      "id": 79, 
+      "city": "Zalakaros", 
+      "name": "Term\u00e1l kemping", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.392083, 
+        17.821246
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Kaposv\u00e1r, Kemping u. 47., 7400", 
+      "date": "07/30/2019", 
+      "id": 80, 
+      "city": "Kaposv\u00e1r", 
+      "name": "Deseda kemping", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "kemping", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.431802, 
+        18.620711
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Harnos L\u00e1szl\u00f3"
+        }
+      ], 
+      "company": "M\u00e1riav\u00f6lgy Zrt.", 
+      "link": "https://index.hu/gazdasag/2019/07/31/meszaros_lorinc_orban_gyozo_golf/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "", 
+          "name": "M\u00e9sz\u00e1ros Beatrix"
+        }
+      ], 
+      "address": "Alcs\u00fatdoboz, M\u00e1riav\u00f6lgy, 8087", 
+      "date": "07/30/2019", 
+      "id": 81, 
+      "city": "Alcs\u00fatdoboz", 
+      "name": "Pannonia Golf & Country Club", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "", 
+          "name": "M\u00e9sz\u00e1ros Beatrix"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sport", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.175561, 
+        20.1594922
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Rib\u00e1r Zsuzsanna"
+        }
+      ], 
+      "company": "Szolnok Tenisz Club KFT.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/nyerges-zsolt", 
+          "name": "Nyerges Zsolt"
+        }
+      ], 
+      "address": "Szolnok, Galamb u. 9., 5000", 
+      "date": "07/30/2019", 
+      "id": 82, 
+      "city": "Szolnok", 
+      "name": "Tenisz Club Szolnok", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/nyerges-zsolt", 
+          "name": "Nyerges Zsolt"
+        }, 
+        {
+          "link": "", 
+          "name": "Nyergesn\u00e9 Farkas Gabriella"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sport", 
+      "details": "Nyerges Zsolt neve k\u00f6thet\u0151 a Fidesz m\u00e9diabirodalm\u00e1t szervez\u0151 Infocenter.hu Zrt., valamint a 300 milli\u00e1rd forintnyi \u00e9p\u00edt\u00e9si k\u00f6zbeszerz\u00e9sben r\u00e9szt v\u00e1llal\u00f3 K\u00f6zg\u00e9p Zrt.-hez."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.823299, 
+        17.099607
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "N\u00f3gr\u00e1di P\u00e9ter L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "Benk\u00f3cs Tam\u00e1s"
+        }
+      ], 
+      "company": "Zala Springs Golf Resort Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szeles-gabor", 
+          "name": "Sz\u00e9les G\u00e1bor"
+        }
+      ], 
+      "address": "Zalacs\u00e1ny, , 8782", 
+      "date": "07/30/2019", 
+      "id": 83, 
+      "city": "Zalacs\u00e1ny", 
+      "name": "Zala Springs golfp\u00e1lya", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szeles-gabor", 
+          "name": "Sz\u00e9les G\u00e1bor"
+        }, 
+        {
+          "link": "", 
+          "name": "Sz\u00e9les Anna Borb\u00e1la"
+        }, 
+        {
+          "link": "", 
+          "name": "Sz\u00e9les Kinga J\u00falia"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sport", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        48.1514379, 
+        21.349178
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Kalocsai L\u00e1szl\u00f3"
+        }
+      ], 
+      "company": "Henye Hotel Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "address": "Bodrogkereszt\u00far, Henye d\u0171l\u0151, Hrsz: 0134/2, 3916", 
+      "date": "07/30/2019", 
+      "id": 84, 
+      "city": "Bodrogkereszt\u00far", 
+      "name": "Henye Vend\u00e9gh\u00e1z", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Kalocsai L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        48.127852, 
+        21.3471091
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n"
+        }
+      ], 
+      "company": "T\u00e9madesign Kft.", 
+      "link": "https://24.hu/fn/gazdasag/2019/11/21/tiborcz-istvan-hotel-szalloda-andrassy-rezidencia-meszaros-lorinc/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "address": "Tarcal, F\u0151 \u00fat 94., 3915", 
+      "date": "12/12/2019", 
+      "id": 85, 
+      "city": "Tarcal", 
+      "name": "Andr\u00e1ssy Rezidencia", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": "*Kisfaludy program t\u00e1mogat\u00e1s"
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        48.0978791, 
+        20.6190183
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Lillaf\u00fcred, Erzs\u00e9bet s\u00e9t\u00e1ny 1., 3517", 
+      "date": "07/30/2019", 
+      "id": 86, 
+      "city": "Lillaf\u00fcred", 
+      "name": "Hunguest Hotel Palota", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.994637, 
+        19.591722
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Becs\u00f3 K\u00e1roly Csaba"
+        }
+      ], 
+      "company": "Pal\u00f3c Hotel Kft.", 
+      "link": "https://444.hu/2016/07/27/becso-zsolt-kepviselo-cege-tizmilliokat-nyert-az-allamtol-de-a-vagyonbevallasaban-nincs-se-ceg-se-penz", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/becso-zsolt", 
+          "name": "Becs\u00f3 Zsolt"
+        }
+      ], 
+      "address": "Holl\u00f3k\u0151, Sport \u00fat 8., 3176", 
+      "date": "07/30/2019", 
+      "id": 87, 
+      "city": "Holl\u00f3k\u0151", 
+      "name": "G\u00f6rbeorsz\u00e1g Vend\u00e9gh\u00e1z", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/becso-zsolt", 
+          "name": "Becs\u00f3 Zsolt"
+        }, 
+        {
+          "link": "", 
+          "name": "Becs\u00f3 K\u00e1roly Csaba"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": "Becs\u00f3 Zsolt orsz\u00e1ggy\u0171l\u00e9si k\u00e9pvisel\u0151 ved\u00e9gh\u00e1za 34 milli\u00f3 forint t\u00e1mogat\u00e1st kapott az MVH-t\u00f3l, \u00e1m a h\u00e1zn\u00e1l semmilyen arra utal\u00f3 feliratot nem lehet l\u00e1tni, hogy vend\u00e9gh\u00e1zk\u00e9nt \u00fczemelne."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.986824, 
+        21.7183024
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "https://24.hu/kozelet/2018/04/24/meszaros-lorinc-hotel-szalloda-nyiregyhaza-hunguest/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Ny\u00edregyh\u00e1za, Szindb\u00e1d s\u00e9t\u00e1ny 11., 4400", 
+      "date": "07/30/2019", 
+      "id": 88, 
+      "city": "Ny\u00edregyh\u00e1za", 
+      "name": "Hotel S\u00f3st\u00f3", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.916038, 
+        19.923718
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Galyatet\u0151, Kod\u00e1ly Zolt\u00e1n s\u00e9t\u00e1ny 10., 3234", 
+      "date": "07/30/2019", 
+      "id": 89, 
+      "city": "Galyatet\u0151", 
+      "name": "Hunguest Grandhotel Galya", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.9159836, 
+        19.9214812
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Galyatet\u0151, Kod\u00e1ly Zolt\u00e1n s\u00e9t\u00e1ny 10., 3234", 
+      "date": "07/30/2019", 
+      "id": 90, 
+      "city": "Galyatet\u0151", 
+      "name": "Grandhotel Galya", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.8987456, 
+        20.3803223
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Eger, F\u00fcrd\u0151 u. 5., 3300", 
+      "date": "07/30/2019", 
+      "id": 91, 
+      "city": "Eger", 
+      "name": "Hotel Fl\u00f3ra", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.853924, 
+        20.335601
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "https://24.hu/fn/gazdasag/2018/04/04/meszaros-lorinc-konzum-szalloda/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Egerszal\u00f3k, Forr\u00e1s u. 6., 3394", 
+      "date": "07/30/2019", 
+      "id": 92, 
+      "city": "Egerszal\u00f3k", 
+      "name": "Saliris Resort Hotel", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.852673, 
+        19.9702903
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "https://mno.hu/gazdasag/meszaros-es-tiborcz-beszallt-a-szallodaiparba-maris-omlik-a-penz-a-turizmusba-2421790", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Gy\u00f6ngy\u00f6s, 3233 Gy\u00f6ngy\u00f6s, 3233", 
+      "date": "07/30/2019", 
+      "id": 93, 
+      "city": "Gy\u00f6ngy\u00f6s", 
+      "name": "Lifestyle Hotel M\u00e1tra", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.5700909, 
+        18.5244354
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Adravecz Edit"
+        }
+      ], 
+      "company": "V\u00e9rt Vad\u00e1szati Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "address": "Tarj\u00e1n, 2831 Tarj\u00e1n, 2831", 
+      "date": "07/30/2019", 
+      "id": 94, 
+      "city": "Tarj\u00e1n", 
+      "name": "Post\u00e1s Vad\u00e1szt\u00e1rsas\u00e1g", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.503303, 
+        19.032455
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "Zsidai Group Kft.", 
+      "link": "http://hvg.hu/itthon/20170808_Extrem_arres_Zsidai_23_ezerert_berli_az_ingatlant_amivel_havi_26_milliot_kereshet", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }
+      ], 
+      "address": "Budapest, Fortuna utca 3., 1014", 
+      "date": "07/30/2019", 
+      "id": 95, 
+      "city": "Budapest", 
+      "name": "Pest-Buda Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zsidai-zoltan-roy", 
+          "name": "Zsidai Zolt\u00e1n Roy"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9tern\u00e9"
+        }, 
+        {
+          "link": "", 
+          "name": "Zsidai P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": "A sz\u00e1llod\u00e1v\u00e1 alak\u00edtott \u00f6nkorm\u00e1nyzati lak\u00e1sokat 126 ezer forint\u00e9rt b\u00e9rli !!!Zsidai Zolt\u00e1n Roy c\u00e9ge."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.501047, 
+        19.05665
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "D\u00fal Zita"
+        }, 
+        {
+          "link": "", 
+          "name": "Szigeti Zsolt Attila"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/garancsi-istvan", 
+          "name": "Garancsi Istv\u00e1n"
+        }
+      ], 
+      "company": "A8 Palace Hotel Zrt.", 
+      "link": "https://24.hu/belfold/2018/09/10/garancsi-csanyi-hernadi-andrassy-palota/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/hernadi-zsolt", 
+          "name": "Hern\u00e1di Zsolt"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/garancsi-istvan", 
+          "name": "Garancsi Istv\u00e1n"
+        }
+      ], 
+      "address": "Budapest, Andr\u00e1ssy \u00fat 8., 1061", 
+      "date": "07/30/2019", 
+      "id": 96, 
+      "city": "Budapest", 
+      "name": "Hotel Moments", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/hernadi-zsolt", 
+          "name": "Hern\u00e1di Zsolt"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/garancsi-istvan", 
+          "name": "Garancsi Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/garancsi-istvan", 
+          "name": "Garancsi Istv\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": "A kor\u00e1bban \u00f6nkorm\u00e1nyzati ingatlanok felv\u00e1s\u00e1rl\u00e1s\u00e1val jutott hozz\u00e1 a korm\u00e1nyzattal j\u00f3 viszonyt \u00e1pol\u00f3 Cs\u00e1nyi-Garancsi-Hern\u00e1di tri\u00f3 az Andr\u00e1ssy \u00fati \u00e9p\u00fclethez."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.498591, 
+        19.040139
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/scheer-sandor", 
+          "name": "Scheer S\u00e1ndor"
+        }
+      ], 
+      "company": "Unione-Clark Kft.", 
+      "link": "http://valasz.hu/itthon/nem-is-gondolta-volna-ki-penzeli-az-uj-luxusszallot-a-lanchidnal-120600", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/scheer-sandor", 
+          "name": "Scheer S\u00e1ndor"
+        }
+      ], 
+      "address": "Budapest, Clark \u00c1d\u00e1m t\u00e9r 1, 1013", 
+      "date": "07/30/2019", 
+      "id": 97, 
+      "city": "Budapest", 
+      "name": "Hotel Clark Budapest", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/scheer-sandor", 
+          "name": "Scheer S\u00e1ndor"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/scheer-sandor", 
+          "name": "Scheer S\u00e1ndor"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": "Az \u00e1llami Eximbank 2,3 milli\u00e1rd forintos \u201eversenyk\u00e9pess\u00e9get jav\u00edt\u00f3 belf\u00f6ldi befektet\u00e9si hitelt\u201d adott a Hotel Clark fel\u00e9p\u00edt\u00e9s\u00e9re."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4786446, 
+        19.0983753
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Budapest, K\u00f6nyves K. krt. 44., 1087", 
+      "date": "07/30/2019", 
+      "id": 98, 
+      "city": "Budapest", 
+      "name": "Hotel Plat\u00e1nus", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4773166, 
+        19.0923119
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Budapest, \u00dcll\u0151i \u00fat 94-98., 1089", 
+      "date": "07/30/2019", 
+      "id": 99, 
+      "city": "Budapest", 
+      "name": "Hotel Millennium", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4567514, 
+        18.6865039
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Adravecz Edit"
+        }
+      ], 
+      "company": "V\u00e9rt Vad\u00e1szati Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "address": "Alcs\u00fatdoboz, 8087 Alcs\u00fatdoboz Kast\u00e9ly u. 7.,, 8087", 
+      "date": "07/30/2019", 
+      "id": 100, 
+      "city": "Alcs\u00fatdoboz", 
+      "name": "Alcs\u00fatdobozi Vad\u00e1szh\u00e1z", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4530626, 
+        21.4022603
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 12-14., 4200", 
+      "date": "07/30/2019", 
+      "id": 101, 
+      "city": "Hajd\u00faszoboszl\u00f3", 
+      "name": "Hotel Apollo", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4526935, 
+        21.4018193
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10., 4200", 
+      "date": "07/30/2019", 
+      "id": 102, 
+      "city": "Hajd\u00faszoboszl\u00f3", 
+      "name": "Hotel B\u00e9ke", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.4511456, 
+        21.3987523
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Hajd\u00faszoboszl\u00f3, G\u00e1bor \u00c1ron utca 7-9., 4200", 
+      "date": "07/30/2019", 
+      "id": 103, 
+      "city": "Hajd\u00faszoboszl\u00f3", 
+      "name": "Hotel Aqua-Sol", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.429763, 
+        18.702534
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Adravecz Edit"
+        }
+      ], 
+      "company": "V\u00e9rt Vad\u00e1szati Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "address": "Alcs\u00fatdoboz, V\u00e9rti Vadaskert k\u00f6zep\u00e9n, ", 
+      "date": "07/30/2019", 
+      "id": 104, 
+      "city": "Alcs\u00fatdoboz", 
+      "name": "V\u00e9rti vad\u00e1szh\u00e1z", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.385011, 
+        16.7854021
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "B\u00fckf\u00fcrd\u0151, Term\u00e1l krt. 26., 9740", 
+      "date": "07/30/2019", 
+      "id": 105, 
+      "city": "B\u00fckf\u00fcrd\u0151", 
+      "name": "Hotel R\u00e9pce", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.3761289, 
+        16.7704868
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "B\u00fckf\u00fcrd\u0151, Eur\u00f3pa \u00fat 3., 9740", 
+      "date": "07/30/2019", 
+      "id": 106, 
+      "city": "B\u00fckf\u00fcrd\u0151", 
+      "name": "Hotel R\u00e9pce Gold", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.0994512, 
+        14.0902618
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Kreischberg, St. Gerorgen am Kreischberg Sankt Lorenzen 6., 8861", 
+      "date": "07/30/2019", 
+      "id": 107, 
+      "city": "Kreischberg", 
+      "name": "Hotel Alpenblick", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.098481, 
+        14.087488
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "https://24.hu/fn/gazdasag/2018/04/04/meszaros-lorinc-konzum-szalloda/", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Kreischberg, Kreischberg 2, 8861", 
+      "date": "07/30/2019", 
+      "id": 108, 
+      "city": "Kreischberg", 
+      "name": "Hotel Relax Resort", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.0403816, 
+        12.8330124
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Heiligenblut, Winkl 46, 9844", 
+      "date": "07/30/2019", 
+      "id": 109, 
+      "city": "Heiligenblut", 
+      "name": "Hotel Heiligenblut", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.0303333, 
+        18.0179755
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Balatonalm\u00e1di, Bajcsy-Zsilinszky u. 14., 8220", 
+      "date": "07/30/2019", 
+      "id": 110, 
+      "city": "Balatonalm\u00e1di", 
+      "name": "Hotel B\u00e1l Resort", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.8859311, 
+        17.4401407
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Tapolca, K\u00f6zt\u00e1rsas\u00e1g t\u00e9r 10., 8300", 
+      "date": "07/30/2019", 
+      "id": 111, 
+      "city": "Tapolca", 
+      "name": "Hotel Pelion", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.848666, 
+        21.21512
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Adravecz Edit"
+        }
+      ], 
+      "company": "V\u00e9rt Vad\u00e1szati Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "address": "B\u00e9lmegyer, , 5643", 
+      "date": "07/30/2019", 
+      "id": 112, 
+      "city": "B\u00e9lmegyer", 
+      "name": "B\u00e9lmegyeri K\u00e1r\u00e1sz Vad\u00e1szkast\u00e9ly", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix", 
+          "name": "Kelemen Beatrix Csilla"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.810752, 
+        17.09409
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Sz\u00e9les Kinga"
+        }
+      ], 
+      "company": "Sghtherm\u00e1l Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szeles-gabor", 
+          "name": "Sz\u00e9les G\u00e1bor"
+        }
+      ], 
+      "address": "Zalacs\u00e1ny, Cs\u00e1ny L\u00e1szl\u00f3 u. 24., 8782", 
+      "date": "07/30/2019", 
+      "id": 113, 
+      "city": "Zalacs\u00e1ny", 
+      "name": "Batth\u00e1nyi K\u00faria", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szeles-gabor", 
+          "name": "Sz\u00e9les G\u00e1bor"
+        }, 
+        {
+          "link": "", 
+          "name": "Sz\u00e9les Anna Borb\u00e1la"
+        }, 
+        {
+          "link": "", 
+          "name": "Sz\u00e9les Kinga J\u00falia"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.8051202, 
+        17.5393377
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nagy G\u00e1bor Zolt\u00e1n"
+        }
+      ], 
+      "company": "Balatontourist Camping Kft. ", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Badacsonytomaj, F\u00fcredi \u00fat 65., 8257", 
+      "date": "07/30/2019", 
+      "id": 114, 
+      "city": "Badacsonytomaj", 
+      "name": "Balaton Vend\u00e9gh\u00e1z ", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.7892136, 
+        17.1860043
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "H\u00e9v\u00edz, Pet\u0151fi S\u00e1ndor u. 9., 8380", 
+      "date": "07/30/2019", 
+      "id": 115, 
+      "city": "H\u00e9v\u00edz", 
+      "name": "Hotel Panor\u00e1ma", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.780999, 
+        17.18491
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "H\u00e9v\u00edz, V\u00f6r\u00f6smarty Mih\u00e1ly utca 91., 8380", 
+      "date": "07/30/2019", 
+      "id": 116, 
+      "city": "H\u00e9v\u00edz", 
+      "name": "Hunguest Hotel Helios", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.763019, 
+        17.257091
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "Hotel Via Kft.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/szijj-laszlo", 
+          "name": "Sz\u00edjj L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/varga-karoly", 
+          "name": "Varga K\u00e1roly"
+        }
+      ], 
+      "address": "Keszthely, Balaton u. 15., 8360", 
+      "date": "07/30/2019", 
+      "id": 117, 
+      "city": "Keszthely", 
+      "name": "Hotel Via (bez\u00e1rt)", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/szijj-laszlo", 
+          "name": "Sz\u00edjj L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/varga-karoly", 
+          "name": "Varga K\u00e1roly"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.761079, 
+        17.254825
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Malik Zolt\u00e1n"
+        }
+      ], 
+      "company": "Longoria Holding Zrt.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "address": "Keszthely, Mikus Gyula s\u00e9t\u00e1ny 5., 8360", 
+      "date": "07/30/2019", 
+      "id": 118, 
+      "city": "Keszthely", 
+      "name": "Helikon Hotel Keszthely", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.759463, 
+        17.252327
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [], 
+      "company": "Konzum Nyrt.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "address": "Keszthely, Mikus Gyula stny. 3., 8360", 
+      "date": "07/30/2019", 
+      "id": 119, 
+      "city": "Keszthely", 
+      "name": "Balaton Sz\u00e1ll\u00f3", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.758936, 
+        17.251926
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Malik Zolt\u00e1n"
+        }
+      ], 
+      "company": "Longoria Holding Zrt.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "address": "Keszthely, Mikus Gyula s\u00e9t\u00e1ny 1., 8360", 
+      "date": "07/30/2019", 
+      "id": 120, 
+      "city": "Keszthely", 
+      "name": "Hull\u00e1m Hotel", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.6448287, 
+        21.2851954
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Gyula, V\u00e1rkert u.1., 5700", 
+      "date": "07/30/2019", 
+      "id": 121, 
+      "city": "Gyula", 
+      "name": "Hotel Erkel", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.5391328, 
+        17.1241446
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Zalakaros, Term\u00e1l u. 7, 8749", 
+      "date": "07/30/2019", 
+      "id": 122, 
+      "city": "Zalakaros", 
+      "name": "Hotel Freya", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.357707, 
+        25.7981104
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Cs\u00edkszereda, N. B\u0103lcescu u. 11., 530003", 
+      "date": "07/30/2019", 
+      "id": 123, 
+      "city": "Cs\u00edkszereda", 
+      "name": "Hunguest Hotel Feny\u0151", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.251559, 
+        20.160431
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "https://web0.nepszava.hu/1162050_meszaros-lorinc-hetfon-is-vett-negy-szallodat-es-egy-elmenyfurdot", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Szeged, Szent-Gy\u00f6rgyi Albert u. 16-24, 6726", 
+      "date": "07/30/2019", 
+      "id": 124, 
+      "city": "Szeged", 
+      "name": "Hotel Forr\u00e1s", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.208453, 
+        18.529939
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Berecz Krist\u00f3f"
+        }
+      ], 
+      "company": "M\u00e9szkemence Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/schmidt-maria", 
+          "name": "Schmidt M\u00e1ria"
+        }
+      ], 
+      "address": "Erd\u0151smecske, , 7723", 
+      "date": "07/30/2019", 
+      "id": 125, 
+      "city": "Erd\u0151smecske", 
+      "name": "M\u00e9szkemence Vend\u00e9gh\u00e1z", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/schmidt-maria", 
+          "name": "Schmidt M\u00e1ria"
+        }, 
+        {
+          "link": "", 
+          "name": "Ung\u00e1r Anna"
+        }, 
+        {
+          "link": "", 
+          "name": "Ung\u00e1r P\u00e9ter"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        42.454182, 
+        18.52675
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n L\u00e1szl\u00f3"
+        }, 
+        {
+          "link": "", 
+          "name": "H\u00fclvely Istv\u00e1n"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "company": "Hunguest Hotels Zrt.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "address": "Herceg Novi, Sveta bubala bb., ", 
+      "date": "07/30/2019", 
+      "id": 126, 
+      "city": "Herceg Novi", 
+      "name": "Hotel Sun Resort", 
+      "oligarchs": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
+          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+        }
+      ], 
+      "mainCEO": [
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/jaszai-gellert", 
+          "name": "J\u00e1szai Gell\u00e9rt Zolt\u00e1n"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.911307, 
+        17.892662
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Szigeti Zsolt Attila"
+        }, 
+        {
+          "link": "", 
+          "name": "Csidei Laura"
+        }
+      ], 
+      "company": "CDHT Hotel Projekt Kft.", 
+      "link": "https://www.napi.hu/magyar_vallalatok/vilagorokseg-balaton-turizmus-szalloda.679516.html", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/hernadi-zsolt", 
+          "name": "Hern\u00e1di Zsolt"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/garancsi-istvan", 
+          "name": "Garancsi Istv\u00e1n"
+        }
+      ], 
+      "address": "Tihany, , 8237", 
+      "date": "07/30/2019", 
+      "id": 127, 
+      "city": "Tihany", 
+      "name": "Tihanyi Kast\u00e9lysz\u00e1ll\u00f3 ", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/hernadi-zsolt", 
+          "name": "Hern\u00e1di Zsolt"
+        }, 
+        {
+          "link": "http://k-monitor.hu/adatbazis/cimkek/garancsi-istvan", 
+          "name": "Garancsi Istv\u00e1n"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": "A kast\u00e9lysz\u00e1ll\u00f3t a Garancsi-Hern\u00e1di-Cs\u00e1nyi tri\u00f3 c\u00e9ge \u00fczemelteti. \u00dcd\u00fcl\u0151\u00f6vezetb\u0151l vegyes felhaszn\u00e1l\u00e1s\u00fa ter\u00fclett\u00e9 soroltatn\u00e1k \u00e1t az ingatlan  k\u00f6rny\u00e9k\u00e9t annak \u00e9rdek\u00e9ben, hogy be\u00e9p\u00edt\u00e9si korl\u00e1toz\u00e1sok ne akad\u00e1lyozz\u00e1k a 4,2 milli\u00e1rd forintos beruh\u00e1z\u00e1sukat. "
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.790986, 
+        17.697332
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zaid-naffa", 
+          "name": "Naffa Zaid Ibrahim"
+        }
+      ], 
+      "company": "Lellepart Kft.", 
+      "link": "", 
+      "mainOligarch": [], 
+      "address": "Balatonlelle, Napospart utca 1., 8638", 
+      "date": "12/16/2019", 
+      "id": 128, 
+      "city": "Balatonlelle", 
+      "name": "Lellepart Apartmanh\u00e1z", 
+      "oligarchs": [], 
+      "mainCEO": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zaid-naffa", 
+          "name": "Naffa Zaid Ibrahim"
+        }
+      ], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        46.078674, 
+        18.245191
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Hamar Endre"
+        }
+      ], 
+      "company": "V\u00e1r - Gold Kft.", 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/dr-hamar-endre", 
+          "name": "dr. Hamar Endre"
+        }
+      ], 
+      "address": "P\u00e9cs, Fels\u0151v\u00e1mh\u00e1z utca 53., 7626", 
+      "date": "12/16/2019", 
+      "id": 129, 
+      "city": "P\u00e9cs", 
+      "name": "Retro Panzi\u00f3", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Hamar Endre"
+        }, 
+        {
+          "link": "", 
+          "name": "Papp-Hamar Henrietta"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/dr-hamar-endre", 
+          "name": "dr. Hamar Endre"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": "* Kisfaludy program t\u00e1mogat\u00e1s"
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.493904, 
+        19.052713
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, V\u00e1ci utca 22., 1052", 
+      "date": "11/22/2019", 
+      "id": 130, 
+      "city": "Budapest", 
+      "name": "Promenade City Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.493333, 
+        19.052382
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, Piarista k\u00f6z 6., 1052", 
+      "date": "11/22/2019", 
+      "id": 131, 
+      "city": "Budapest", 
+      "name": "La Prima Fashion Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.488653, 
+        19.056603
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, V\u00e1ci utca 77., 1056", 
+      "date": "11/22/2019", 
+      "id": 132, 
+      "city": "Budapest", 
+      "name": "Cosmo City Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.500633, 
+        19.081352
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, Baross t\u00e9r 15., 1077", 
+      "date": "11/22/2019", 
+      "id": 133, 
+      "city": "Budapest", 
+      "name": "Baross City Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.49431, 
+        19.078531
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, N\u00e9psz\u00ednh\u00e1z u. 39-41., 1081", 
+      "date": "11/22/2019", 
+      "id": 134, 
+      "city": "Budapest", 
+      "name": "Atlas City Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.493116, 
+        19.122268
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, Expo t\u00e9r 2, 1101", 
+      "date": "11/22/2019", 
+      "id": 135, 
+      "city": "Budapest", 
+      "name": "Expo Congress Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.493258, 
+        19.054931
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, Pet\u0151fi S\u00e1ndor u. 2-4., 1052", 
+      "date": "11/22/2019", 
+      "id": 136, 
+      "city": "Budapest", 
+      "name": "P\u00e1risi Udvar Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.49604, 
+        19.072612
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, Csokonai u. 14., 1081", 
+      "date": "11/22/2019", 
+      "id": 137, 
+      "city": "Budapest", 
+      "name": "Atrium Fashion Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.488016, 
+        19.057165
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, V\u00e1ci utca 83., 1056", 
+      "date": "11/22/2019", 
+      "id": 138, 
+      "city": "Budapest", 
+      "name": "Estilo Fashion Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.497002, 
+        19.066301
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, Ny\u00e1r utca 6., 1072", 
+      "date": "11/22/2019", 
+      "id": 139, 
+      "city": "Budapest", 
+      "name": "Marco Polo Top Ho(s)tel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.504726, 
+        19.081195
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, Istv\u00e1n utca 14., 1078", 
+      "date": "11/22/2019", 
+      "id": 140, 
+      "city": "Budapest", 
+      "name": "Star City Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.501981, 
+        19.031153
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "company": "Mellow Mood Hotels Kft.", 
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
+      "mainOligarch": [], 
+      "address": "Budapest, \u00dari utca 39, 1014", 
+      "date": "11/22/2019", 
+      "id": 141, 
+      "city": "Budapest", 
+      "name": "Buda Castle Fashion Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.506275, 
+        19.056021
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Moln\u00e1r Arnold"
+        }
+      ], 
+      "company": "Ublot Kft.", 
+      "link": "https://24.hu/belfold/2019/12/13/szalloda-belvaros-becso-zsolt-fidesz-parlamenti-kepviselo-engedely/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/becso-zsolt", 
+          "name": "Becs\u00f3 Zsolt"
+        }
+      ], 
+      "address": "Budapest, Nagymez\u0151 utca 66., 1065", 
+      "date": "12/13/2019", 
+      "id": 142, 
+      "city": "Budapest", 
+      "name": "BP Design Hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/becso-zsolt", 
+          "name": "Becs\u00f3 Zsolt"
+        }, 
+        {
+          "link": "", 
+          "name": "Moln\u00e1rn\u00e9 Szandai Edit"
+        }, 
+        {
+          "link": "", 
+          "name": "Moln\u00e1r Arnold"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }
+]

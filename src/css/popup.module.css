@@ -49,6 +49,11 @@
 
 .popupInfo a {
   margin-left: 5px;
+  transition: color .2s;
+}
+
+.popupInfo a:hover {
+  color: #F05F22;
 }
 
 .popupInner span {
@@ -80,9 +85,14 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  background: #333333;
+  background-color: #F05F22;
   border-radius: 4px;
   box-sizing: border-box;
+  transition: background-color .2s;
+}
+
+.popupInner .moreButton:hover {
+    background-color: #F05F22;
 }
 
 .popupRow {
