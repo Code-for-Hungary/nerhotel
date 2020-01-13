@@ -4,10 +4,12 @@ import { connect } from 'react-redux';
 import MapComponent from '../components/Map.js';
 import Header from '../components/Header.js';
 import List from '../components/List.js';
+import Menu from '../components/Menu';
 
 const MapView = (props) => (
   <div>
-    <Header withSearch={true}/>
+    <Header withSearch={true} history={props.history}/>
+    <Menu/>
     <MapComponent/>
     {props.showList && <List/>}
   </div>

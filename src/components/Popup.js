@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from '../css/popup.module.css';
 import { Link } from 'react-router-dom';
 import Icon from './Icon';
@@ -22,7 +22,6 @@ const Popup = (props) => {
   const simpleOligarchs = getOligarchData(data.oligarchs || [], data.ceos || []);
   const oligarchsToShow = mainOligarchs.length > 0 ? mainOligarchs : simpleOligarchs;
 
-  console.log(data.oligarchs, mainOligarchs);
 
   return (
     <div className={styles.popup}>
@@ -70,7 +69,6 @@ const Popup = (props) => {
           </div>
           {}
           <Link to={`/hotel/${data.id}`} className={styles.moreButton}>részletek</Link>
-
         </>
       </div>
     </div>

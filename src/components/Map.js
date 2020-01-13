@@ -133,7 +133,6 @@ class MapComponent extends React.Component {
 
       </div>
           {this.props.showPopup && (<Popup close={this.closePopup} point={this.props.selectedPoint}/>)}
-
         </>
     );
   }

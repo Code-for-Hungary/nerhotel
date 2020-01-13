@@ -6,7 +6,7 @@
     max-width: 420px;
     height: 100vh;
     padding: 20px;
-    z-index: 100;
+    z-index: 100000;
     overflow: auto;
     background: #fff;
     box-sizing: border-box;

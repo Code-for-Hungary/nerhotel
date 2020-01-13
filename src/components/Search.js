@@ -37,9 +37,9 @@ class Search extends React.Component {
         return oligarch.name.toLowerCase().indexOf(phrase) > -1;
       });
     }
-    return ((place.address && place.address.toLowerCase().indexOf(phrase) > -1)
-      || (place.name && place.name.toLowerCase().indexOf(phrase) > -1)
-      || (foundOligarch.length > 0)
+    return ((place.address && place.address.toLowerCase().indexOf(phrase) > -1) ||
+      (place.name && place.name.toLowerCase().indexOf(phrase) > -1) ||
+      foundOligarch.length > 0
     );
   }
 

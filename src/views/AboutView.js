@@ -1,10 +1,12 @@
 import React from 'react';
 import Header from '../components/Header.js';
+import Menu from '../components/Menu.js';
 import styles from '../css/about.module.css';
 
-const AboutView = () => (
+const AboutView = (props) => (
   <div>
-    <Header/>
+    <Header history={props.history}/>
+    <Menu/>
     <div className={styles.about}>
       <section>
         <h2>Mi az a NER Hotel?</h2>
