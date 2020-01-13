@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Search from './Search';
-import Menu from './Menu';
 import styles from '../css/header.module.css';
 import Icon from './Icon';
 import listIcon from '../assets/menu-icon.svg';
