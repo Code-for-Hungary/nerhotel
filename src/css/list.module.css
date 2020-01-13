@@ -10,6 +10,12 @@
   box-sizing: border-box;
 }
 
+.listWrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .listItem {
   font-size: 18px;
   padding: 15px 5px;

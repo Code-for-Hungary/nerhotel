@@ -30,7 +30,7 @@ class List extends React.Component {
         <div className={styles.closeButton} onClick={() => this.closeList()}>
           <Icon img={closeIcon} size="large"/>
         </div>
-        <div>
+        <div className={styles.listWrapper}>
           {this.props.list.length > 0 && this.props.list.map(item => (
             <div className={styles.listItem} onClick={() => this.showItem(item)}>
               <h1>{item.properties.name}</h1>
