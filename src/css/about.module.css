@@ -1,14 +1,14 @@
 .about {
-    width: 60%;
+    width: 100%;
     max-width: 960px;
     margin: 150px auto 80px;
-    padding: 0 20px;
     box-sizing: border-box;
 }
 
 @media (max-width: 480px) {
     .about {
         width: 100%;
+        padding: 0 20px;
     }
 }
 

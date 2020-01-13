@@ -39,6 +39,11 @@
     font-weight: 700;
     color: #000;
     text-decoration: none;
+    transition: color .2s;
+}
+
+.menulist li a:hover {
+    color: #F05F22;
 }
 
 .footer {
