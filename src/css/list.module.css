@@ -54,6 +54,7 @@
 .listItem h1 {
   font-size: 20px;
   margin-bottom: 5px;
+  transition: color .2s;
 }
 
 .listItem p {
@@ -63,6 +64,12 @@
 
 .listItem a {
   color: #000;
+  transition: color .2s;
+}
+
+.listItem h1:hover,
+.listItem a:hover {
+  color: #F05F22;
 }
 
 .closeButton {

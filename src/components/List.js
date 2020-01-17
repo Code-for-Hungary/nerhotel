@@ -8,6 +8,30 @@ import closeIcon from '../assets/close-icon.svg';
 import horseIcon from '../assets/horse-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
 
+const ListItem = (props) => {
+  const { item } = props;
+  const oligarchs = item.properties.mainOligarch.length > 0 ?
+    item.properties.mainOligarch : item.properties.oligarchs;
+
+  return (<>
+    <h1>{item.properties.name}</h1>
+    <div className={styles.listItemRow}>
+      <div className={styles.listItemCol}>
+        <Icon img={horseIcon} size="small"/>
+        <div className={styles.oligarchList}>
+          {oligarchs.map(oligarch => (
+              <p><a href={oligarch.link} target="_blank">{oligarch.name}</a></p>
+          ))}
+        </div>
+      </div>
+      <div className={styles.listItemCol}>
+        <Icon img={pinIcon} size="small"/>
+        <p>{item.properties.address}</p>
+      </div>
+    </div>
+  </>)
+}
+
 class List extends React.Component {
   closeList () {
     store.dispatch(closeList());
@@ -33,21 +57,7 @@ class List extends React.Component {
         <div className={styles.listWrapper}>
           {this.props.list.length > 0 && this.props.list.map(item => (
             <div className={styles.listItem} onClick={() => this.showItem(item)}>
-              <h1>{item.properties.name}</h1>
-              <div className={styles.listItemRow}>
-                <div className={styles.listItemCol}>
-                  <Icon img={horseIcon} size="small"/>
-                  <div className={styles.oligarchList}>
-                    {item.properties.mainOligarch.map(oligarch => (
-                        <p><a href={oligarch.link} target="_blank">{oligarch.name}</a></p>
-                    ))}
-                  </div>
-                </div>
-                <div className={styles.listItemCol}>
-                  <Icon img={pinIcon} size="small"/>
-                  <p>{item.properties.address}</p>
-                </div>
-              </div>
+              <ListItem item={item}/>
             </div>
           ))}
 
