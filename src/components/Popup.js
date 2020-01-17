@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import styles from '../css/popup.module.css';
 import { Link } from 'react-router-dom';
 import Icon from './Icon';
@@ -21,7 +21,6 @@ const Popup = (props) => {
   const mainOligarchs = getOligarchData(data.mainOligarch, data.mainCEO);
   const simpleOligarchs = getOligarchData(data.oligarchs || [], data.ceos || []);
   const oligarchsToShow = mainOligarchs.length > 0 ? mainOligarchs : simpleOligarchs;
-
 
   return (
     <div className={styles.popup}>
@@ -46,10 +45,11 @@ const Popup = (props) => {
                   <Icon img={horseIcon} size="small"/>
                   <div className={styles.oligarch}>
                     {oligarchsToShow.map(oligarch => (
-                        <div>
-                          <a href={oligarch.data.link} target="_blank">{oligarch.name}</a>
-                          <span>{oligarch.data.type}</span>
-                        </div>
+                      <div>
+                        <a href={oligarch.data.link} target="_blank"
+                           rel="noopener noreferrer">{oligarch.name}</a>
+                        <span>{oligarch.data.type}</span>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -64,7 +64,9 @@ const Popup = (props) => {
             </div>
             {data.link !== '' && (<div className={styles.popupRow}>
               <Icon img={linkIcon} size="small"/>
-              <a href={data.link} target="_blank">kapcsolódó cikk</a>
+              <a href={data.link} target="_blank" rel="noopener noreferrer">
+                kapcsolódó cikk
+              </a>
             </div>)}
           </div>
           {}

@@ -20,7 +20,7 @@ const ListItem = (props) => {
         <Icon img={horseIcon} size="small"/>
         <div className={styles.oligarchList}>
           {oligarchs.map(oligarch => (
-              <p><a href={oligarch.link} target="_blank">{oligarch.name}</a></p>
+              <p><a href={oligarch.link} target="_blank" rel="noopener noreferrer">{oligarch.name}</a></p>
           ))}
         </div>
       </div>
@@ -30,7 +30,7 @@ const ListItem = (props) => {
       </div>
     </div>
   </>)
-}
+};
 
 class List extends React.Component {
   closeList () {

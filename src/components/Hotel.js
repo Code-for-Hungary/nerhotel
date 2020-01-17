@@ -57,7 +57,7 @@ const Hotel = (props) => {
             <p>Kapcsolódó személyek:<br/>
               {oligarchData.map(oligarch => (
                 <span className={styles.oligarch}>
-                  <a href={oligarch.data.link} target="_blank">{oligarch.name}</a>
+                  <a href={oligarch.data.link} target="_blank" rel="noopener noreferrer">{oligarch.name}</a>
                   <span className={styles.title}> ({oligarch.data.type})</span><br/>
                 </span>
               ))}

@@ -27,14 +27,14 @@ const Header = (props) => {
       </div>
       <div className={styles.headerWrapper}>
         <div onClick={() => goHome()} className={styles.logo}>
-          <img src={logo}/>
+          <img src={logo} alt=""/>
         </div>
         <div className={styles.headerInner}>
           <div className={styles.icons}>
-            <img src={hotel}/>
-            <img src={beach}/>
-            <img src={restaurant}/>
-            <img src={golf}/>
+            <img src={hotel} alt=""/>
+            <img src={beach} alt=""/>
+            <img src={restaurant} alt=""/>
+            <img src={golf} alt=""/>
           </div>
           {props.withSearch && <Search/>}
         </div>

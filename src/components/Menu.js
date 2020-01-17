@@ -20,17 +20,18 @@ const Menu = (props) => {
         <Icon img={closeIcon} size="large"/>
       </div>
       {isDesktop && <div className={styles.logoWrapper}>
-        <img src={logo}/>
+        <img src={logo} alt=""/>
       </div>}
       <ul className={styles.menulist}>
         <li><Link to="/">Térkép</Link></li>
         <li><Link to="/about">Mi ez?</Link></li>
         <li><Link to="/contact">Kontakt</Link></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6uNP-ML46outzCbOifdwKefAaB1x_j9eXMzeTJYGB5NEnA/viewform" target="_blank">Küldj be!</a></li>
-        <li><a href="https://tamogatas.k-monitor.hu" target="_blank">Támogatás</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6uNP-ML46outzCbOifdwKefAaB1x_j9eXMzeTJYGB5NEnA/viewform"
+               target="_blank" rel="noopener noreferrer">Küldj be!</a></li>
+        <li><a href="https://tamogatas.k-monitor.hu" target="_blank" rel="noopener noreferrer">Támogatás</a></li>
       </ul>
       {isDesktop && <div className={styles.imageWrapper}>
-        <img src={image}/>
+        <img src={image} alt=""/>
       </div>}
       <div className={styles.footer}>
         <p><strong>K-Monitor<br/>Közhasznú Egyesület</strong></p>
