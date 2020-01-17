@@ -19,8 +19,8 @@ const ListItem = (props) => {
       <div className={styles.listItemCol}>
         <Icon img={horseIcon} size="small"/>
         <div className={styles.oligarchList}>
-          {oligarchs.map(oligarch => (
-              <p><a href={oligarch.link} target="_blank" rel="noopener noreferrer">{oligarch.name}</a></p>
+          {oligarchs.map((oligarch, key) => (
+              <p key={key}><a href={oligarch.link} target="_blank" rel="noopener noreferrer">{oligarch.name}</a></p>
           ))}
         </div>
       </div>
@@ -47,16 +47,14 @@ class List extends React.Component {
   }
 
   render () {
-    console.log(this.props.list)
-
     return (
       <div className={styles.list}>
         <div className={styles.closeButton} onClick={() => this.closeList()}>
           <Icon img={closeIcon} size="large"/>
         </div>
         <div className={styles.listWrapper}>
-          {this.props.list.length > 0 && this.props.list.map(item => (
-            <div className={styles.listItem} onClick={() => this.showItem(item)}>
+          {this.props.list.length > 0 && this.props.list.map((item, key) => (
+            <div key={key} className={styles.listItem} onClick={() => this.showItem(item)}>
               <ListItem item={item}/>
             </div>
           ))}
