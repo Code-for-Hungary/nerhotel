@@ -96,7 +96,10 @@ class MapComponent extends React.Component {
   render () {
     const locateOptions = {
       position: 'topright',
-      keepCurrentZoomLevel: true
+      keepCurrentZoomLevel: false,
+      drawCircle: true,
+      enableHighAccuracy: true,
+      compassStyle: { radius: 2, color: '#65a' }
     };
 
     const MarkerList = () => {

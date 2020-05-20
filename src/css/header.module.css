@@ -50,6 +50,7 @@
   display: block;
   height: 80%;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .logo img {

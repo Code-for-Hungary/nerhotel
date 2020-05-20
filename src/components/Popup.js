@@ -36,16 +36,16 @@ const Popup = (props) => {
                 <span>Üzemeltető</span>
                 <div className={styles.popupRow}>
                   <Icon img={hotelIcon} size="small"/>
-                  <p>{data.company}</p>
+                  <p>{data.company.name}</p>
                 </div>
               </div>
               <div className={styles.popupCol}>
-                <span>NER lovag</span>
+                <span>PEP</span>
                 <div className={styles.popupRow}>
                   <Icon img={horseIcon} size="small"/>
                   <div className={styles.oligarch}>
-                    {oligarchsToShow.map(oligarch => (
-                      <div>
+                    {oligarchsToShow.map((oligarch, key) => (
+                      <div key={key}>
                         <a href={oligarch.data.link} target="_blank"
                            rel="noopener noreferrer">{oligarch.name}</a>
                         <span>{oligarch.data.type}</span>

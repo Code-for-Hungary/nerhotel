@@ -50,13 +50,17 @@ const Hotel = (props) => {
           </div>
           <div className={styles.hotelRow}>
             <Icon img={hotelIcon} size="small"/>
-            <p>Üzemeltető: <span>{data.company}</span></p>
+            <p>Üzemeltető:
+                {data.company.link ?
+                  <span><a href={data.company.link} target="_blank" rel="noopener noreferrer">{data.company.name}</a></span> :
+                  <span> {data.company.name}</span>}
+            </p>
           </div>
           <div className={styles.hotelRow}>
             <Icon img={horseIcon} size="small"/>
             <p>Kapcsolódó személyek:<br/>
-              {oligarchData.map(oligarch => (
-                <span className={styles.oligarch}>
+              {oligarchData.map((oligarch, key) => (
+                <span key={key} className={styles.oligarch}>
                   <a href={oligarch.data.link} target="_blank" rel="noopener noreferrer">{oligarch.name}</a>
                   <span className={styles.title}> ({oligarch.data.type})</span><br/>
                 </span>
@@ -73,7 +77,7 @@ const Hotel = (props) => {
           </div>)}
           {data.details !== '' && (
             <div className={styles.hotelRow}>
-              <p>A hely azért szerepel, mert:<br/>{data.details}</p>
+              <p><span>A hely azért szerepel, mert:</span><br/>{data.details}</p>
             </div>
           )}
           {data.date !== '' && (
