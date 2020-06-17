@@ -10,6 +10,7 @@ const OPEN_POPUP = 'OPEN_POPUP';
 const CLOSE_POPUP = 'CLOSE_POPUP';
 const OPEN_MENU = 'OPEN_MENU';
 const CLOSE_MENU = 'CLOSE_MENU';
+const SET_LOCATOR = 'SET_LOCATOR';
 
 const initialState = {
   list: [],
@@ -17,7 +18,8 @@ const initialState = {
   showPopup: false,
   showMenu: false,
   center: [47.498045, 19.0385183],
-  selectedPoint: null
+  selectedPoint: null,
+  locationRequired: false
 };
 
 const mapStore = (state = initialState, action) => {
@@ -71,6 +73,11 @@ const mapStore = (state = initialState, action) => {
       return {
         ...state,
         showMenu: false
+      };
+    case SET_LOCATOR:
+      return {
+        ...state,
+        locationRequired: true
       };
     default:
       return state;

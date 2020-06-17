@@ -69,6 +69,12 @@ class MapComponent extends React.Component {
     }
   }
 
+  componentDidUpdate (prevProps) {
+    if (!prevProps.locationRequired) {
+      store.dispatch({ type: 'SET_LOCATOR' })
+    }
+  }
+
   calcPoints () {
     let bounds = this.refs.map.leafletElement.getBounds();
     const filteredPoints = filterPoints(places, bounds);
@@ -76,7 +82,7 @@ class MapComponent extends React.Component {
     store.dispatch(setList(filteredPoints));
   }
 
-  onZoomEnd (e) {
+  onZoomEnd () {
     this.calcPoints();
   }
 
@@ -127,7 +133,7 @@ class MapComponent extends React.Component {
             <MarkerClusterGroup maxClusterRadius={6} zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
               <MarkerList/>
             </MarkerClusterGroup>
-            <LocateControl options={locateOptions} startDirectly/>
+            <LocateControl options={locateOptions} started={this.props.locationRequired} />
           </Map>
           <div className={styles.listButton} onClick={this.openLocationList}>
             <Icon img={listIcon} size="small"/>
@@ -144,7 +150,8 @@ class MapComponent extends React.Component {
 const mapStateToProps = state => ({
   center: state.center,
   selectedPoint: state.selectedPoint,
-  showPopup: state.showPopup
+  showPopup: state.showPopup,
+  locationRequired: state.locationRequired
 });
 
 export default connect(mapStateToProps)(MapComponent);
