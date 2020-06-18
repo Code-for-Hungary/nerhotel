@@ -7,16 +7,18 @@ import horseIcon from '../assets/horse-icon.svg';
 import hotelIcon from '../assets/hotel-icon.svg';
 import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
-import store, { closePopup, setSelectedPoint } from '../store';
 import { getOligarchData } from '../utils';
+import { MapContext } from '../context';
+
 
 const Popup = (props) => {
+  const { dispatch } = React.useContext(MapContext);
   const data = props.point.properties;
 
-  const close = () => {
-    store.dispatch(setSelectedPoint(null));
-    store.dispatch(closePopup());
-  };
+  const close = React.useCallback(() => {
+    dispatch({ type: 'SetSelectedPoint', point: null });
+    dispatch({ type: 'TogglePopup', showPopup: false });
+  }, [dispatch]);
 
   const mainOligarchs = getOligarchData(data.mainOligarch, data.mainCEO);
   const simpleOligarchs = getOligarchData(data.oligarchs || [], data.ceos || []);
@@ -36,9 +38,14 @@ const Popup = (props) => {
                 <span>Üzemeltető</span>
                 <div className={styles.popupRow}>
                   <Icon img={hotelIcon} size="small"/>
-                  <p>{data.company.name}</p>
+                  <div className={styles.company}>
+                    {data.company.link ?
+                    <p><a href={data.company.link} target="_blank" rel="noopener noreferrer">{data.company.name}</a></p> :
+                    <p>{data.company.name}</p>}
+                  </div>
                 </div>
               </div>
+
               {oligarchsToShow && oligarchsToShow.length > 0 &&
               (<div className={styles.popupCol}>
                 <span>PEP</span>
@@ -59,6 +66,7 @@ const Popup = (props) => {
                   </div>
                 </div>
               </div>)}
+
             </div>
             <div>
               <span>Cím</span>

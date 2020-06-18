@@ -1,29 +1,14 @@
-import React, { useEffect } from 'react';
-import { connect } from 'react-redux';
-
+import React from 'react';
 import MapComponent from '../components/Map.js';
-import Header from '../components/Header.js';
-import List from '../components/List.js';
-import Menu from '../components/Menu';
-import store, { closeMenu } from '../store';
+import Layout from './Layout';
 
 const MapView = (props) => {
-  useEffect(() => {
-    store.dispatch(closeMenu());
-  }, []);
-
   return (
-    <div>
-      <Header withSearch={true} history={props.history}/>
-      <Menu/>
+    <Layout withSearch={true} withList={true} history={props.history}>
       <MapComponent/>
-      {props.showList && <List/>}
-    </div>
+    </Layout>
   );
 };
 
-const mapStateToProps = state => ({
-  showList: state.showList
-});
 
-export default connect(mapStateToProps)(MapView);
+export default MapView;

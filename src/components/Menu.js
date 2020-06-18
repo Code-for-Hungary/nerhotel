@@ -1,22 +1,27 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import closeIcon from '../assets/close-icon.svg';
 import styles from '../css/menu.module.css';
 import Icon from './Icon';
 import image from '../assets/nh-main.svg';
 import logo from '../assets/nh-logo.svg';
-import store, { closeMenu } from '../store';
+import { MapContext } from '../context';
 
-const Menu = (props) => {
-  if (!props.showMenu) {
+const Menu = () => {
+  const { dispatch, showMenu } = React.useContext(MapContext);
+  const closeMenu = React.useCallback(() => {
+    dispatch({ type: 'ToggleMenu', showMenu: false });
+  }, [dispatch]);
+
+  if (!showMenu) {
     return null;
   }
+
   const isDesktop = window.innerWidth > 768;
 
   return (
     <div className={styles.menu}>
-      <div onClick={() => store.dispatch(closeMenu())} className={styles.close}>
+      <div onClick={closeMenu} className={styles.close}>
         <Icon img={closeIcon} size="large"/>
       </div>
       {isDesktop && <div className={styles.logoWrapper}>
@@ -43,8 +48,4 @@ const Menu = (props) => {
   );
 };
 
-const mapStateToProps = state => ({
-  showMenu: state.showMenu
-});
-
-export default connect(mapStateToProps)(Menu);
+export default Menu;

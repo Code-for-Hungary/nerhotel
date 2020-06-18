@@ -1,6 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import store, { openList, setList, setSelectedPoint, openPopup, setMap } from '../store.js';
 
 import { Map, Marker, TileLayer } from 'react-leaflet';
 import LocateControl from './LocateControl.js';
@@ -14,10 +12,11 @@ import blueIcon from '../assets/marker-icon-blue.svg';
 import Popup from '../components/Popup';
 import Icon from '../components/Icon';
 
-import places from '../data/nerhotel.json';
 import listIcon from '../assets/menu-icon.svg';
 
 import styles from '../css/map.module.css';
+import { MapContext, HotelContext } from '../context';
+
 
 const filterPoints = (points, bounds) => {
   return points.filter(point => {
@@ -26,6 +25,14 @@ const filterPoints = (points, bounds) => {
       && lat > bounds._southWest.lat && lat < bounds._northEast.lat);
   });
 };
+
+const locateOptions = {
+    position: 'topright',
+    keepCurrentZoomLevel: false,
+    drawCircle: true,
+    enableHighAccuracy: true,
+    compassStyle: { radius: 2, color: '#65a' }
+  };
 
 const getIcon = (iconUrl) => {
   return L.icon({
@@ -46,112 +53,86 @@ const createClusterCustomIcon = (cluster) => {
   });
 };
 
-class MapComponent extends React.Component {
-  constructor (props) {
-    super(props);
-
-    this.state = {
-      bounds: null,
-      filteredPoints: [],
-      showPopup: false,
-    };
-
-    this.onZoomEnd = this.onZoomEnd.bind(this);
-    this.onMoveEnd = this.onMoveEnd.bind(this);
-    this.calcPoints = this.calcPoints.bind(this);
-    this.openLocationList = this.openLocationList.bind(this);
-  }
-
-  componentDidMount () {
-    if (!this.state.bounds) {
-      store.dispatch(setMap(this.refs.map.leafletElement));
-      this.calcPoints();
-    }
-  }
-
-  componentDidUpdate (prevProps) {
-    if (!prevProps.locationRequired) {
-      store.dispatch({ type: 'SET_LOCATOR' })
-    }
-  }
-
-  calcPoints () {
-    let bounds = this.refs.map.leafletElement.getBounds();
-    const filteredPoints = filterPoints(places, bounds);
-    this.setState({filteredPoints});
-    store.dispatch(setList(filteredPoints));
-  }
-
-  onZoomEnd () {
-    this.calcPoints();
-  }
-
-  onMoveEnd () {
-    this.calcPoints();
-  }
-
-  onMarkerClick (e, point) {
-    store.dispatch(setSelectedPoint(point));
-    store.dispatch(openPopup());
-  }
-
-  openLocationList () {
-    store.dispatch(openList());
-  }
-
-  render () {
-    const locateOptions = {
-      position: 'topright',
-      keepCurrentZoomLevel: false,
-      drawCircle: true,
-      enableHighAccuracy: true,
-      compassStyle: { radius: 2, color: '#65a' }
-    };
-
-    const MarkerList = () => {
-      return this.state.filteredPoints.map((point, i) => {
-        const [lat, lng] = point.geometry.coordinates;
-        const isSelected = this.props.selectedPoint && this.props.selectedPoint.properties.id === point.properties.id;
-        const DefaultIcon = getIcon(orangeIcon);
-        const ActiveIcon = getIcon(blueIcon);
-
-        return (
-          <Marker position={[lat, lng]} key={i} icon={isSelected ? ActiveIcon : DefaultIcon} onClick={(e) => this.onMarkerClick(e, point)}/>
-        );
-      });
-    };
+const getMarkerList = (filteredPoints, selectedPoint, callback) => {
+  return filteredPoints.map((point, i) => {
+    const [lat, lng] = point.geometry.coordinates;
+    const isSelected = selectedPoint && selectedPoint.properties.id === point.properties.id;
+    const DefaultIcon = getIcon(orangeIcon);
+    const ActiveIcon = getIcon(blueIcon);
 
     return (
-        <>
+      <Marker position={[lat, lng]} key={i} icon={isSelected ? ActiveIcon : DefaultIcon} onClick={callback(point)}/>
+    );
+  });
+};
+
+function MapComponent() {
+  const {
+    dispatch,
+    showPopup,
+    center,
+    selectedPoint,
+    locationRequired,
+    map
+  } = React.useContext(MapContext);
+  const { hotels } = React.useContext(HotelContext);
+  const [loaded, setLoaded] = React.useState(false);
+  const [filteredPoints, setFilteredPoints] = React.useState([]);
+  const mapRef = React.createRef();
+  const calcPoints = React.useCallback(() => {
+    let mapBounds = mapRef.current.leafletElement.getBounds();
+    const points = filterPoints(hotels, mapBounds);
+    setFilteredPoints(points);
+    dispatch({ type: 'SetList', list: points })
+  }, [hotels, dispatch, mapRef]);
+
+  React.useEffect(() => {
+    if (!loaded) {
+      calcPoints();
+      dispatch({ type: 'SetMap', map: mapRef.current.leafletElement });
+      setLoaded(true);
+    }
+  }, [dispatch, loaded, calcPoints, mapRef, map]);
+
+  React.useEffect(() => {
+    if (!locationRequired) {
+      dispatch({ type: 'SetLocator' });
+    }
+  }, [locationRequired, dispatch]);
+
+  const onMarkerClickCallback = React.useCallback((point) => () => {
+    dispatch({ type: 'SetSelectedPoint', point });
+    dispatch({ type: 'TogglePopup', showPopup: true });
+  }, [dispatch]);
+
+  const openLocationListCallback = React.useCallback(() => {
+    calcPoints();
+    dispatch({ type: 'ToggleList', showList: true });
+  }, [dispatch, calcPoints]);
+
+  return (
+    <>
       <div className={styles.map}>
         <div className={styles.mapWrapper}>
-          <Map ref='map' className="markercluster-map" center={this.props.center} zoom={16} maxZoom={19} onZoomEnd={this.onZoomEnd} onMoveEnd={this.onMoveEnd}>
+          <Map ref={mapRef} className="markercluster-map" center={center} zoom={16} maxZoom={19} onZoomEnd={calcPoints} onMoveEnd={calcPoints}>
             <TileLayer
               url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
               attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
             />
             <MarkerClusterGroup maxClusterRadius={6} zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
-              <MarkerList/>
+              {getMarkerList(filteredPoints, selectedPoint, onMarkerClickCallback)}
             </MarkerClusterGroup>
-            <LocateControl options={locateOptions} started={this.props.locationRequired} />
+            <LocateControl options={locateOptions} started={locationRequired} />
           </Map>
-          <div className={styles.listButton} onClick={this.openLocationList}>
+          <div className={styles.listButton} onClick={openLocationListCallback}>
             <Icon img={listIcon} size="small"/>
           </div>
         </div>
 
       </div>
-          {this.props.showPopup && (<Popup close={this.closePopup} point={this.props.selectedPoint}/>)}
-        </>
-    );
-  }
+      {showPopup && (<Popup point={selectedPoint}/>)}
+    </>
+  );
 }
 
-const mapStateToProps = state => ({
-  center: state.center,
-  selectedPoint: state.selectedPoint,
-  showPopup: state.showPopup,
-  locationRequired: state.locationRequired
-});
-
-export default connect(mapStateToProps)(MapComponent);
+export default MapComponent;

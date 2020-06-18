@@ -4,39 +4,41 @@ import Icon from './Icon.js';
 
 import styles from '../css/hotel.module.css';
 
-import places from '../data/nerhotel.json';
 import arrowIcon from '../assets/arrow-icon.svg';
 import horseIcon from '../assets/horse-icon.svg';
 import hotelIcon from '../assets/hotel-icon.svg';
 import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
 
-import store, { setCenter, setSelectedPoint } from '../store';
 import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import orangeIcon from '../assets/marker-icon-orange.svg';
 
 import { getOligarchData } from '../utils';
+import { MapContext, HotelContext } from '../context';
+
+const icon = L.icon({
+  iconUrl: orangeIcon,
+  shadowUrl: iconShadow,
+  iconSize: [40, 62],
+  iconAnchor: [20, 52],
+  shadowSize: [40, 62],
+  shadowAnchor: [12, 62],
+});
 
 const Hotel = (props) => {
-  const hotelById = places.find(item => item.properties.id === parseInt(props.id));
+  const {dispatch} = React.useContext(MapContext);
+  const {hotels} = React.useContext(HotelContext);
+  const hotelById = hotels.find(item => item.properties.id === parseInt(props.id));
   const data = hotelById.properties;
   const [lat, lng] = hotelById.geometry.coordinates;
 
-  const icon = L.icon({
-    iconUrl: orangeIcon,
-    shadowUrl: iconShadow,
-    iconSize: [40, 62],
-    iconAnchor: [20, 52],
-    shadowSize: [40, 62],
-    shadowAnchor: [12, 62],
-  });
-
   const goBack = () => {
-    props.history.push('/');
-    store.dispatch(setSelectedPoint(hotelById));
-    setTimeout(() => store.dispatch(setCenter([lat, lng])), 100);
-  };
+      props.history.push('/');
+      dispatch({type: 'SetSelectedPoint', point: hotelById});
+      dispatch({type: 'SetCenter', center: [lat, lng]});
+    }
+  ;
 
   const oligarchData = getOligarchData(data.oligarchs, data.ceos);
 
@@ -54,7 +56,7 @@ const Hotel = (props) => {
               <p>Üzemeltető:
                 {data.company.link ?
                   <span><a href={data.company.link} target="_blank" rel="noopener noreferrer">{data.company.name}</a></span> :
-                  <span> {data.company.name}</span>}
+                  <span>{data.company.name}</span>}
               </p>
             </div>
           )}
@@ -98,7 +100,7 @@ const Hotel = (props) => {
               <p>Adatok frissítve: <span>{data.date}</span></p>
             </div>
           )}
-          <div className={styles.back} onClick={() => goBack()}>
+          <div className={styles.back} onClick={goBack}>
             <Icon img={arrowIcon} size="large"/>
           </div>
         </div>

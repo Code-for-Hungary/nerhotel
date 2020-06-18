@@ -10,19 +10,25 @@ import hotel from '../assets/nh-hotel.svg';
 import beach from '../assets/nh-beach.svg';
 import restaurant from '../assets/nh-restaurant.svg';
 import golf from '../assets/nh-golf.svg';
-import store, { closePopup, openMenu } from '../store';
+import { MapContext } from '../context';
 
 const Header = (props) => {
+  const { dispatch } = React.useContext(MapContext);
+
   const goHome = () => {
-    store.dispatch(closePopup());
+    dispatch({ type: 'TogglePopup', showPopup: false });
     props.history.push('/');
   };
+
+  const onMenuCallback = React.useCallback(() => {
+    dispatch({ type: 'ToggleMenu', showMenu: true })
+  }, [dispatch]);
 
   const headerHeight = props.withSearch ? styles.large : styles.small;
 
   return (
     <div className={[styles.header, headerHeight].join(' ')}>
-      <div className={styles.menubutton} onClick={() => store.dispatch(openMenu())}>
+      <div className={styles.menubutton} onClick={onMenuCallback}>
         <Icon img={listIcon} size="large"/>
       </div>
       <div className={styles.headerWrapper}>

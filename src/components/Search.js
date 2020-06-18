@@ -1,38 +1,9 @@
 import React from 'react';
-import store, { setList, openList, closeList, closePopup } from '../store.js';
 import styles from '../css/search.module.css';
 
-import places from '../data/nerhotel.json';
+import { MapContext, HotelContext } from '../context';
 
-class Search extends React.Component {
-  constructor () {
-    super();
-    this.state = {value: ''}
-    this.search = this.search.bind(this);
-    this.onKeyUp = this.onKeyUp.bind(this);
-  }
-
-  search(e) {
-    e.preventDefault();
-    store.dispatch(closePopup());
-
-    const value = this.state.value.toLowerCase();
-    const results = places.filter(place => (this.findProperty(place.properties, value)));
-    store.dispatch(setList(results));
-    store.dispatch(openList());
-  }
-
-  onKeyUp(e) {
-    const value = e.target.value;
-    if (e.key === 'Escape' || value === '') {
-      store.dispatch(closeList());
-      store.dispatch(setList([]));
-    }
-
-    this.setState({value})
-  }
-
-  findProperty(place, phrase) {
+function findProperty(place, phrase) {
     let foundOligarch = [];
     if (place.mainOligarch.length > 0) {
       foundOligarch = place.mainOligarch.filter(oligarch => {
@@ -45,15 +16,35 @@ class Search extends React.Component {
     );
   }
 
-  render () {
-    return (
-      <div className={styles.form}>
-        <form onSubmit={this.search}>
-          <input onKeyUp={this.onKeyUp} className={styles.input} placeholder="keress név, hely, személy szerint"/>
-        </form>
-      </div>
-    );
-  }
+function Search() {
+  const {dispatch} = React.useContext(MapContext);
+  const {hotels} = React.useContext(HotelContext);
+  const [value, setValue] = React.useState('');
+
+  const onSearchCallback = React.useCallback((e) => {
+    e.preventDefault();
+    dispatch({ type: 'TogglePopup', showPopup: false });
+
+    const results = hotels.filter(hotel => (findProperty(hotel.properties, value.toLowerCase())));
+    dispatch({ type: 'SetList', list: results });
+    dispatch({ type: 'ToggleList', showList: true });
+  }, [dispatch, hotels, value]);
+
+  const onKeyUpCallback = React.useCallback((e) => {
+    setValue(e.target.value);
+    if (e.key === 'Escape' || value === '') {
+      dispatch({ type: 'SetList', list: [] });
+      dispatch({ type: 'ToggleList', showList: false });
+    }
+  }, [value, dispatch]);
+
+  return (
+    <div className={styles.form}>
+      <form onSubmit={onSearchCallback}>
+        <input onKeyUp={onKeyUpCallback} className={styles.input} placeholder="keress név, hely, személy szerint"/>
+      </form>
+    </div>
+  );
 }
 
 export default Search;

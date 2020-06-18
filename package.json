@@ -12,14 +12,12 @@
     "react-dom": "^16.8.6",
     "react-leaflet": "^2.4.0",
     "react-leaflet-markercluster": "^2.0.0-rc3",
-    "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
-    "redux": "^4.0.4"
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

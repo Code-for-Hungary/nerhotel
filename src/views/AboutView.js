@@ -1,18 +1,10 @@
-import React, { useEffect } from 'react';
-import Header from '../components/Header.js';
-import Menu from '../components/Menu.js';
-import store, { closeMenu } from '../store.js';
+import React from 'react';
+import Layout from './Layout';
 import styles from '../css/about.module.css';
 
 const AboutView = (props) => {
-  useEffect(() => {
-    store.dispatch(closeMenu());
-  }, []);
-
   return (
-    <div>
-      <Header history={props.history}/>
-      <Menu/>
+    <Layout history={props.history}>
       <div className={styles.about}>
         <section>
           <h2>Mi az a NER Hotel?</h2>
@@ -50,7 +42,7 @@ const AboutView = (props) => {
           <p>Büszkék vagyunk rá, hogy önkéntesek segítségével építettük az alkalmazást és nyitottak vagyunk minden észrevételre. Járulj hozzá te is a fejlesztéshez! <a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6uNP-ML46outzCbOifdwKefAaB1x_j9eXMzeTJYGB5NEnA/viewform" target="_blank" rel="noopener noreferrer">Írd meg nekünk</a>, ha hibát találsz, vagy ha egy hely megjelenítésével nem értesz egyet! A beküldött információkat természetesen nem közvetlenül, hanem csak a saját módszertanunkkal való összevetés után vezetjük fel.</p>
         </section>
       </div>
-    </div>
+    </Layout>
   );
 };
 

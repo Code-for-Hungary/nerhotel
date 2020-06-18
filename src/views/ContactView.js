@@ -1,19 +1,10 @@
-import React, { useEffect } from 'react';
-import Header from '../components/Header.js';
-import Menu from '../components/Menu';
+import React from 'react';
+import Layout from './Layout';
 import styles from '../css/about.module.css';
-import store, { closeMenu } from '../store';
 
 const AboutView = (props) => {
-  useEffect(() => {
-    store.dispatch(closeMenu());
-  }, []);
-
-
   return (
-    <div>
-      <Header history={props.history}/>
-      <Menu/>
+    <Layout history={props.history}>
       <div className={styles.about}>
         <section>
           <h1>K-Monitor</h1>
@@ -28,7 +19,7 @@ const AboutView = (props) => {
           <a href="mailto:info@k-monitor.hu">info@k-monitor.hu</a>
         </section>
       </div>
-    </div>
+    </Layout>
   );
 }
 

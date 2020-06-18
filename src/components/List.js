@@ -1,6 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import store, { closeList, setCenter, setSelectedPoint, openPopup } from '../store.js';
 import styles from '../css/list.module.css';
 import Icon from './Icon.js';
 
@@ -8,8 +6,10 @@ import closeIcon from '../assets/close-icon.svg';
 import horseIcon from '../assets/horse-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
 
-const ListItem = (props) => {
-  const { item } = props;
+import { MapContext } from '../context';
+
+
+const ListItem = ({ item }) => {
   const oligarchs = item.properties.mainOligarch.length > 0 ?
     item.properties.mainOligarch : item.properties.oligarchs;
 
@@ -20,7 +20,12 @@ const ListItem = (props) => {
         <Icon img={horseIcon} size="small"/>
         <div className={styles.oligarchList}>
           {oligarchs.map((oligarch, key) => (
-              <p key={key}><a href={oligarch.link} target="_blank" rel="noopener noreferrer">{oligarch.name}</a></p>
+              <p key={key}>
+                {oligarch.link ? (
+                  <a href={oligarch.link} target="_blank" rel="noopener noreferrer">{oligarch.name}</a>):
+                  oligarch.name
+                }
+              </p>
           ))}
         </div>
       </div>
@@ -32,45 +37,42 @@ const ListItem = (props) => {
   </>)
 };
 
-class List extends React.Component {
-  closeList () {
-    store.dispatch(closeList());
-  }
+function List() {
+  const { dispatch, list, map } = React.useContext(MapContext);
 
-  showItem (item) {
+  const showItem = React.useCallback((item) => () => {
     const [lat, lng] = item.geometry.coordinates;
-    this.props.map.setView([lat, lng], 18);
-    store.dispatch(setCenter([lat, lng]));
-    store.dispatch(setSelectedPoint(item));
-    store.dispatch(closeList());
-    store.dispatch(openPopup());
-  }
+    if (map) {
+      map.setView([lat, lng], 18);
+    }
+    dispatch({ type: 'SetCenter', center: [lat, lng] });
+    dispatch({ type: 'SetSelectedPoint', point: item });
+    dispatch({ type: 'ToggleList', showList: false });
+    dispatch({ type: 'TogglePopup', showPopup: true });
+  }, [map, dispatch]);
 
-  render () {
-    return (
-      <div className={styles.list}>
-        <div className={styles.closeButton} onClick={() => this.closeList()}>
-          <Icon img={closeIcon} size="large"/>
-        </div>
-        <div className={styles.listWrapper}>
-          {this.props.list.length > 0 && this.props.list.map((item, key) => (
-            <div key={key} className={styles.listItem} onClick={() => this.showItem(item)}>
-              <ListItem item={item}/>
-            </div>
-          ))}
+  const closeList = React.useCallback(() => {
+      dispatch({ type: 'ToggleList', showList: false });
+  }, [dispatch]);
 
-          {this.props.list.length === 0 && (
-            <p>Nincsen megfelelő NER hotel.</p>
-          )}
-        </div>
+  return (
+    <div className={styles.list}>
+      <div className={styles.closeButton} onClick={closeList}>
+        <Icon img={closeIcon} size="large"/>
       </div>
-    );
-  }
+      <div className={styles.listWrapper}>
+        {list && list.length > 0 && list.map((item, key) => (
+          <div key={key} className={styles.listItem} onClick={showItem(item)}>
+            <ListItem item={item}/>
+          </div>
+        ))}
+
+        {list.length === 0 && (
+          <p>Nincsen megfelelő NER hotel.</p>
+        )}
+      </div>
+    </div>
+  );
 }
 
-const mapStateToProps = (state) => ({
-  list: state.list,
-  map: state.map
-});
-
-export default connect(mapStateToProps)(List);
+export default List;
