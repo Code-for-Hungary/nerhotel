@@ -4469,50 +4469,40 @@
     }, 
     "type": "Feature", 
     "properties": {
-      "ceos": [
-        {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/detari-szabo-adam", 
-          "name": "D\u00e9t\u00e1ri-Szab\u00f3 \u00c1d\u00e1m"
-        }
-      ], 
+      "ceos": [], 
       "company": {
-        "link": "https://k-monitor.hu/adatbazis/cimkek/appeninn-blt-kft", 
-        "name": "Appeninn BLT Kft."
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/appeninn-holding-nyrt", 
+        "name": "Appeninn Nyrt."
       }, 
-      "link": "https://index.hu/gazdasag/2018/07/26/meszaros_lorincek_megszereztek_a_club_aligat_az_egykori_partudulot/", 
+      "link": "https://www.valaszonline.hu/2020/04/29/bayer-construct-balazs-attila-balatoni-kikotoberuhazas/", 
       "mainOligarch": [
         {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
-          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel", 
+          "name": "Jellinek D\u00e1niel"
         }, 
         {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
-          "name": "Tiborcz Istv\u00e1n Ferenc"
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balazs-attila", 
+          "name": "Bal\u00e1zs Attila"
         }
       ], 
       "address": "Balatonvil\u00e1gos, Aligai \u00fat 1., 8171", 
-      "date": "07/30/2019", 
+      "date": "06/18/2020", 
       "id": 83, 
       "city": "Balatonvil\u00e1gos", 
       "name": "Club Aliga", 
       "oligarchs": [
         {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc", 
-          "name": "M\u00e9sz\u00e1ros L\u0151rinc"
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel", 
+          "name": "Jellinek D\u00e1niel"
         }, 
         {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
-          "name": "Tiborcz Istv\u00e1n Ferenc"
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balazs-attila", 
+          "name": "Bal\u00e1zs Attila"
         }
       ], 
-      "mainCEO": [
-        {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/detari-szabo-adam", 
-          "name": "D\u00e9t\u00e1ri-Szab\u00f3 \u00c1d\u00e1m"
-        }
-      ], 
-      "type": "kemping", 
-      "details": ""
+      "mainCEO": [], 
+      "type": "strand", 
+      "details": "A 2007-ben privatiz\u00e1lt egykori p\u00e1rt\u00fcd\u00fcl\u0151t 2018 j\u00falius\u00e1ban az akkor m\u00e9g M\u00e9sz\u00e1ros-f\u00e9le Konzum ingatlankezel\u0151 c\u00e9ge, az Appeninn vette meg, annak le\u00e1nyv\u00e1llalat\u00e1\u00e9 lett a ter\u00fcletet \u00e9s a kik\u00f6t\u0151t tulajdonl\u00f3 a Pro-Mot Hung\u00e1ria Kft. 74,99%-os \u00fczletr\u00e9sze. K\u00e9s\u0151bb Tiborcz Istv\u00e1n is megjelent a c\u00e9gben, amely \u00e1llami t\u00e1mogat\u00e1st nyert a kik\u00f6t\u0151 fejleszt\u00e9s\u00e9re \u00e9s az \u00e1llami Erzs\u00e9bet-program nyaral\u00e1sainak egyik helysz\u00edne lett. 2020-ban az Appeninnb\u0151l M\u00e9sz\u00e1ros \u00e9s Tiborcz is kisz\u00e1lltak, az \u00faj tulajdonosok k\u00f6zt azonban felbukkant a Tiborczhoz k\u00f6thet\u0151 Bal\u00e1zs Attila, illetve tov\u00e1bbra is kisebbs\u00e9gi tulajdonos a Lexan-csoport, amit a sajt\u00f3ban Szivek Norbert kor\u00e1bbi MNV-vezet\u0151h\u00f6z k\u00f6tnek."
     }
   }, 
   {

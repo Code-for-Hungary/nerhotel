@@ -39,21 +39,26 @@ const Popup = (props) => {
                   <p>{data.company.name}</p>
                 </div>
               </div>
-              <div className={styles.popupCol}>
+              {oligarchsToShow && oligarchsToShow.length > 0 &&
+              (<div className={styles.popupCol}>
                 <span>PEP</span>
                 <div className={styles.popupRow}>
                   <Icon img={horseIcon} size="small"/>
                   <div className={styles.oligarch}>
                     {oligarchsToShow.map((oligarch, key) => (
                       <div key={key}>
-                        <a href={oligarch.data.link} target="_blank"
+                        {oligarch.data.link !== '' ? (
+                           <a href={oligarch.data.link} target="_blank"
                            rel="noopener noreferrer">{oligarch.name}</a>
+                        ) : (
+                          <p>{oligarch.name}</p>
+                        )}
                         <span>{oligarch.data.type}</span>
                       </div>
                     ))}
                   </div>
                 </div>
-              </div>
+              </div>)}
             </div>
             <div>
               <span>Cím</span>

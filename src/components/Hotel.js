@@ -48,33 +48,46 @@ const Hotel = (props) => {
           <div className={styles.hotelRow}>
             <p>Hely típusa: <span>{data.type}</span></p>
           </div>
-          <div className={styles.hotelRow}>
-            <Icon img={hotelIcon} size="small"/>
-            <p>Üzemeltető:
+          {data.company && (
+            <div className={styles.hotelRow}>
+              <Icon img={hotelIcon} size="small"/>
+              <p>Üzemeltető:
                 {data.company.link ?
                   <span><a href={data.company.link} target="_blank" rel="noopener noreferrer">{data.company.name}</a></span> :
                   <span> {data.company.name}</span>}
-            </p>
-          </div>
-          <div className={styles.hotelRow}>
-            <Icon img={horseIcon} size="small"/>
-            <p>Kapcsolódó személyek:<br/>
-              {oligarchData.map((oligarch, key) => (
-                <span key={key} className={styles.oligarch}>
-                  <a href={oligarch.data.link} target="_blank" rel="noopener noreferrer">{oligarch.name}</a>
-                  <span className={styles.title}> ({oligarch.data.type})</span><br/>
-                </span>
-              ))}
-            </p>
-          </div>
-          <div className={styles.hotelRow}>
-            <Icon img={pinIcon} size="small"/>
-            <p>Cím: <span>{data.address}</span></p>
-          </div>
-          {data.link !== '' && (<div className={styles.hotelRow}>
-            <Icon img={linkIcon} size="small"/>
-            <a href={data.link} target="_blank" rel="noopener noreferrer"><span>Kapcsolódó cikk</span></a>
-          </div>)}
+              </p>
+            </div>
+          )}
+          {data.oligarchData && data.oligarchData.length > 0 && (
+            <div className={styles.hotelRow}>
+              <Icon img={horseIcon} size="small"/>
+              <p>Kapcsolódó személyek:<br/>
+                {oligarchData.map((oligarch, key) => (
+                  <span key={key} className={styles.oligarch}>
+                    {oligarch.data.link !== '' ? (
+                       <a href={oligarch.data.link} target="_blank"
+                       rel="noopener noreferrer">{oligarch.name}</a>
+                    ) : (
+                      <p>{oligarch.name}</p>
+                    )}
+                    <span className={styles.title}> ({oligarch.data.type})</span><br/>
+                  </span>
+                ))}
+              </p>
+            </div>
+          )}
+          {data.address && (
+            <div className={styles.hotelRow}>
+              <Icon img={pinIcon} size="small"/>
+              <p>Cím: <span>{data.address}</span></p>
+            </div>
+          )}
+          {data.link !== '' && (
+            <div className={styles.hotelRow}>
+              <Icon img={linkIcon} size="small"/>
+              <a href={data.link} target="_blank" rel="noopener noreferrer"><span>Kapcsolódó cikk</span></a>
+            </div>
+          )}
           {data.details !== '' && (
             <div className={styles.hotelRow}>
               <p><span>Kapcsolódó információ:</span><br/>{data.details}</p>
