@@ -1,5 +1,5 @@
 import React from 'react';
-import store, { setList, openList, closeList } from '../store.js';
+import store, { setList, openList, closeList, closePopup } from '../store.js';
 import styles from '../css/search.module.css';
 
 import places from '../data/nerhotel.json';
@@ -14,6 +14,8 @@ class Search extends React.Component {
 
   search(e) {
     e.preventDefault();
+    store.dispatch(closePopup());
+
     const value = this.state.value.toLowerCase();
     const results = places.filter(place => (this.findProperty(place.properties, value)));
     store.dispatch(setList(results));
