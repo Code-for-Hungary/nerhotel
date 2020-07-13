@@ -7,14 +7,24 @@ function findProperty(place, phrase) {
     let foundOligarch = [];
     if (place.mainOligarch.length > 0) {
       foundOligarch = place.mainOligarch.filter(oligarch => {
-        return oligarch.name.toLowerCase().indexOf(phrase) > -1;
+        return (oligarch.name.toLowerCase().includes(phrase) ||
+          normalizeString(oligarch.name).includes(phrase));
       });
     }
-    return ((place.address && place.address.toLowerCase().indexOf(phrase) > -1) ||
-      (place.name && place.name.toLowerCase().indexOf(phrase) > -1) ||
-      foundOligarch.length > 0
-    );
+    const foundPlace = place.name &&
+      (place.name.toLowerCase().includes(phrase) ||
+      normalizeString(place.name).includes(phrase));
+    const foundAddress = place.address &&
+      (place.address.toLowerCase().includes(phrase) ||
+      normalizeString(place.address).includes(phrase));
+
+
+    return (foundPlace || foundAddress || foundOligarch.length > 0);
   }
+
+function normalizeString(string) {
+  return string.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
 
 function Search() {
   const {dispatch} = React.useContext(MapContext);
