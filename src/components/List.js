@@ -68,7 +68,8 @@ function List() {
         ))}
 
         {list.length === 0 && (
-          <p>Nincsen megfelelő NER hotel.</p>
+          <p>Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6uNP-ML46outzCbOifdwKefAaB1x_j9eXMzeTJYGB5NEnA/viewform">küldd el nekünk
+          </a>!</p>
         )}
       </div>
     </div>
