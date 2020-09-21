@@ -308,53 +308,6 @@
     "geometry": {
       "type": "Point", 
       "coordinates": [
-        47.903344, 
-        20.374816
-      ]
-    }, 
-    "type": "Feature", 
-    "properties": {
-      "ceos": [
-        {
-          "link": "", 
-          "name": "B\u00f3ta J\u00f3zsef S\u00e1ndorn\u00e9"
-        }
-      ], 
-      "company": {
-        "link": "https://k-monitor.hu/adatbazis/cimkek/gaszting-kft", 
-        "name": "Gaszting Kft."
-      }, 
-      "link": "", 
-      "mainOligarch": [
-        {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/bota-jozsef", 
-          "name": "B\u00f3ta J\u00f3zsef S\u00e1ndor"
-        }
-      ], 
-      "address": "Eger, Zal\u00e1r J\u00f3zsef utca 11., 3300", 
-      "date": "09/04/2019", 
-      "id": 6, 
-      "city": "Eger", 
-      "name": "Nemzeti K\u00e1v\u00e9h\u00e1z \u00c9tterem", 
-      "oligarchs": [
-        {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/bota-jozsef", 
-          "name": "B\u00f3ta J\u00f3zsef S\u00e1ndor"
-        }, 
-        {
-          "link": "", 
-          "name": "B\u00f3ta J\u00f3zsef S\u00e1ndorn\u00e9"
-        }
-      ], 
-      "mainCEO": [], 
-      "type": "\u00e9tterem", 
-      "details": ""
-    }
-  }, 
-  {
-    "geometry": {
-      "type": "Point", 
-      "coordinates": [
         47.764386, 
         18.953078
       ]
@@ -388,7 +341,7 @@
       ], 
       "address": "Visegr\u00e1d, Lepence v\u00f6lgy 2., 2025", 
       "date": "07/30/2019", 
-      "id": 7, 
+      "id": 6, 
       "city": "Visegr\u00e1d", 
       "name": "Thermal Hotel Visegr\u00e1d", 
       "oligarchs": [
@@ -431,7 +384,7 @@
       ], 
       "address": "Balatonudvari, V\u00e1szolyi \u00fat, 8242", 
       "date": "07/30/2019", 
-      "id": 8, 
+      "id": 7, 
       "city": "Balatonudvari", 
       "name": "Balaton Golf Club", 
       "oligarchs": [
@@ -479,7 +432,7 @@
       ], 
       "address": "Ny\u00edregyh\u00e1za, T\u00f6lgyes utca 21./b, 4431", 
       "date": "08/13/2019", 
-      "id": 9, 
+      "id": 8, 
       "city": "Ny\u00edregyh\u00e1za", 
       "name": "Siesta Panzi\u00f3", 
       "oligarchs": [
@@ -534,7 +487,7 @@
       ], 
       "address": "Fels\u0151t\u00e1rk\u00e1ny, B\u00fckkerd\u0151 s\u00e9t\u00e1ny 2-4., 3324", 
       "date": "07/30/2019", 
-      "id": 10, 
+      "id": 9, 
       "city": "Fels\u0151t\u00e1rk\u00e1ny", 
       "name": "Bambara Hotel", 
       "oligarchs": [
@@ -589,7 +542,7 @@
       ], 
       "address": "Egerszal\u00f3k, Sz\u00e9chenyi \u00fat 31., 3394", 
       "date": "07/30/2019", 
-      "id": 11, 
+      "id": 10, 
       "city": "Egerszal\u00f3k", 
       "name": "Mes\u00e9s Shiraz", 
       "oligarchs": [
@@ -631,7 +584,7 @@
       "mainOligarch": [], 
       "address": "Alcs\u00fatdoboz, Kast\u00e9lykert \u00fat 6., 8087", 
       "date": "07/30/2019", 
-      "id": 12, 
+      "id": 11, 
       "city": "Alcs\u00fatdoboz", 
       "name": "Sport Hotel***", 
       "oligarchs": [], 
@@ -665,7 +618,7 @@
         "link": "https://k-monitor.hu/adatbazis/cimkek/simon-es-simon-kft", 
         "name": "\"Simon \u00e9s Simon\" Kft."
       }, 
-      "link": "https://24.hu/belfold/2019/01/31/l-simon-laszlo-panzio-agard-kisfaludy-program/", 
+      "link": "https://24.hu/belfold/2020/09/11/l-simon-tamogatas-panzio-trukk/", 
       "mainOligarch": [
         {
           "link": "https://k-monitor.hu/adatbazis/cimkek/vass-eszter", 
@@ -673,10 +626,10 @@
         }
       ], 
       "address": "Ag\u00e1rd, Bikav\u00f6lgyi \u00fat 2., 2484", 
-      "date": "05/20/2020", 
-      "id": 13, 
+      "date": "09/11/2020", 
+      "id": 12, 
       "city": "Ag\u00e1rd", 
-      "name": "Simon Panzi\u00f3", 
+      "name": "Bikav\u00f6lgyi Panzi\u00f3 (ex Simon)", 
       "oligarchs": [
         {
           "link": "https://k-monitor.hu/adatbazis/cimkek/vass-eszter", 
@@ -690,7 +643,7 @@
         }
       ], 
       "type": "sz\u00e1lloda", 
-      "details": "L. Simon L\u00e1szl\u00f3 k\u00e9pvisel\u0151 feles\u00e9ge 45 milli\u00f3 forintot kapott panzi\u00f3ja fejleszt\u00e9s\u00e9re a Kisfaludy programb\u00f3l."
+      "details": "L. Simon L\u00e1szl\u00f3 k\u00e9pvisel\u0151 feles\u00e9ge 2019-ben 45,5 milli\u00f3 forintot kapott panzi\u00f3fejleszt\u00e9sre a Kisfaludy programb\u00f3l, majd 2020-ban egy \u00faj c\u00e9ggel, a Bikav\u00f6lgyi Panzi\u00f3 Kft.-vel ugyanerre a sz\u00e1ll\u00e1shelyre 4 milli\u00f3 forintot \u00edt\u00e9ltek meg nekik a kisebb mag\u00e1nsz\u00e1ll\u00e1shelyek fejleszt\u00e9si ki\u00edrt \u00e1llami p\u00e1ly\u00e1zaton."
     }
   }, 
   {
@@ -717,7 +670,7 @@
       "mainOligarch": [], 
       "address": "St. Lorenzen ob Murau, St. Lorenzen 6, 8861", 
       "date": "07/30/2019", 
-      "id": 14, 
+      "id": 13, 
       "city": "St. Lorenzen ob Murau", 
       "name": "Alpenblick Hotel", 
       "oligarchs": [], 
@@ -767,7 +720,7 @@
       ], 
       "address": "H\u00e9v\u00edz, Attila u. 1., 8380", 
       "date": "05/30/2020", 
-      "id": 15, 
+      "id": 14, 
       "city": "H\u00e9v\u00edz", 
       "name": "Hotel Carbona", 
       "oligarchs": [
@@ -823,7 +776,7 @@
       ], 
       "address": "M\u00f3rahalom, Szegedi \u00fat 1/b, 6782", 
       "date": "08/23/2019", 
-      "id": 16, 
+      "id": 15, 
       "city": "M\u00f3rahalom", 
       "name": "Therm\u00e1l Panzi\u00f3", 
       "oligarchs": [
@@ -879,7 +832,7 @@
       ], 
       "address": "Eger, Kist\u00e1lyai \u00fat 18., 3300", 
       "date": "09/04/2019", 
-      "id": 17, 
+      "id": 16, 
       "city": "Eger", 
       "name": "Szent L\u0151rinc Hotel", 
       "oligarchs": [
@@ -939,7 +892,7 @@
       ], 
       "address": "Egerszal\u00f3k, Forr\u00e1s utca 6., 3394", 
       "date": "07/30/2019", 
-      "id": 18, 
+      "id": 17, 
       "city": "Egerszal\u00f3k", 
       "name": "Furmint drinkb\u00e1r", 
       "oligarchs": [
@@ -995,7 +948,7 @@
       ], 
       "address": "Budapest, Kapisztr\u00e1n t\u00e9r, 1014", 
       "date": "07/30/2019", 
-      "id": 19, 
+      "id": 18, 
       "city": "Budapest", 
       "name": "Sp\u00edler Biergarten", 
       "oligarchs": [
@@ -1055,7 +1008,7 @@
       ], 
       "address": "Budapest, Kir\u00e1ly utca 13., 1075", 
       "date": "07/30/2019", 
-      "id": 20, 
+      "id": 19, 
       "city": "Budapest", 
       "name": "Sp\u00edler Bisztr\u00f3", 
       "oligarchs": [
@@ -1115,7 +1068,7 @@
       ], 
       "address": "Budapest, Kir\u00e1ly utca 13., 1075", 
       "date": "07/30/2019", 
-      "id": 21, 
+      "id": 20, 
       "city": "Budapest", 
       "name": "Sp\u00edler Shanghai", 
       "oligarchs": [
@@ -1171,7 +1124,7 @@
       ], 
       "address": "Budapest, Tas vez\u00e9r u. 7., 1113", 
       "date": "07/30/2019", 
-      "id": 22, 
+      "id": 21, 
       "city": "Budapest", 
       "name": "Budai Parksz\u00ednpad", 
       "oligarchs": [
@@ -1222,7 +1175,7 @@
       ], 
       "address": "Budapest, M\u00f3ricz Zsigmond k\u00f6rt\u00e9r Gomba \u00e9p\u00fcletegy\u00fcttes 1. cikk, 1117", 
       "date": "08/01/2019", 
-      "id": 23, 
+      "id": 22, 
       "city": "Budapest", 
       "name": "Prosit Buda Bistro", 
       "oligarchs": [
@@ -1281,7 +1234,7 @@
       ], 
       "address": "Budapest, \u00dcll\u0151i \u00fat 94-98., 1089", 
       "date": "07/30/2019", 
-      "id": 24, 
+      "id": 23, 
       "city": "Budapest", 
       "name": "T\u00f6rley \u00e9tterem", 
       "oligarchs": [
@@ -1341,7 +1294,7 @@
       ], 
       "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10., 4200", 
       "date": "07/30/2019", 
-      "id": 25, 
+      "id": 24, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "Strand b\u00fcf\u00e9", 
       "oligarchs": [
@@ -1401,7 +1354,7 @@
       ], 
       "address": "Balatonalm\u00e1di, Bajcsy-Zsilinszky u. 14., 8220", 
       "date": "07/30/2019", 
-      "id": 26, 
+      "id": 25, 
       "city": "Balatonalm\u00e1di", 
       "name": "Sky-b\u00e1r", 
       "oligarchs": [
@@ -1461,7 +1414,7 @@
       ], 
       "address": "Szeged, Szent-Gy\u00f6rgyi Albert u. 16-24, 6276", 
       "date": "07/30/2019", 
-      "id": 27, 
+      "id": 26, 
       "city": "Szeged", 
       "name": "Bowling b\u00e1r", 
       "oligarchs": [
@@ -1513,7 +1466,7 @@
       ], 
       "address": "Bodrogkisfalud, 3357. hrsz., 3917", 
       "date": "05/06/2020", 
-      "id": 28, 
+      "id": 27, 
       "city": "Bodrogkisfalud", 
       "name": "Patricius Boroz\u00f3", 
       "oligarchs": [
@@ -1556,7 +1509,7 @@
       ], 
       "address": "Budapest, V\u00e1ci u. 72., 1052", 
       "date": "05/12/2020", 
-      "id": 29, 
+      "id": 28, 
       "city": "Budapest", 
       "name": "La Botte", 
       "oligarchs": [
@@ -1599,7 +1552,7 @@
       ], 
       "address": "Budapest, Naphegy utca 67, 1016", 
       "date": "05/06/2020", 
-      "id": 30, 
+      "id": 29, 
       "city": "Budapest", 
       "name": "Naphegy \u00e9tterem", 
       "oligarchs": [
@@ -1642,7 +1595,7 @@
       "mainOligarch": [], 
       "address": "Budapest, \u00dcll\u0151i \u00fat 45-51., 1091", 
       "date": "05/06/2020", 
-      "id": 31, 
+      "id": 30, 
       "city": "Budapest", 
       "name": "Mr. Pisztr\u00e1ng", 
       "oligarchs": [
@@ -1680,7 +1633,7 @@
       "mainOligarch": [], 
       "address": "Lakitelek, Fels\u0151alp\u00e1r 3., 6065", 
       "date": "05/06/2020", 
-      "id": 32, 
+      "id": 31, 
       "city": "Lakitelek", 
       "name": "Tisza Vend\u00e9gl\u0151", 
       "oligarchs": [], 
@@ -1739,7 +1692,7 @@
       ], 
       "address": "P\u00e9cs, Alkotm\u00e1ny utca 94., 7624", 
       "date": "05/06/2020", 
-      "id": 33, 
+      "id": 32, 
       "city": "P\u00e9cs", 
       "name": "P\u00e9csi S\u00f6r\u00f6k Boltja", 
       "oligarchs": [
@@ -1803,7 +1756,7 @@
       ], 
       "address": "Eger, Sz\u00e9passzony-v\u00f6lgy, 3300", 
       "date": "05/06/2020", 
-      "id": 34, 
+      "id": 33, 
       "city": "Eger", 
       "name": "Hotel K\u00f6dm\u00f6n", 
       "oligarchs": [
@@ -1850,7 +1803,7 @@
       "mainOligarch": [], 
       "address": "Lakitelek, Fels\u0151alp\u00e1r 3., 6065", 
       "date": "10/22/2019", 
-      "id": 35, 
+      "id": 34, 
       "city": "Lakitelek", 
       "name": "Hotel Club Tisza", 
       "oligarchs": [], 
@@ -1876,7 +1829,7 @@
     "properties": {
       "ceos": [
         {
-          "link": "", 
+          "link": "https://k-monitor.hu/adatbazis/cimkek/nikolits-reka", 
           "name": "Nikolits R\u00e9ka Zs\u00f3fia"
         }
       ], 
@@ -1893,7 +1846,7 @@
       ], 
       "address": "Fels\u0151pet\u00e9ny, Szabads\u00e1g utca 29., 2611", 
       "date": "05/06/2020", 
-      "id": 36, 
+      "id": 35, 
       "city": "Fels\u0151pet\u00e9ny", 
       "name": "Mini\u00far Udvarh\u00e1z", 
       "oligarchs": [
@@ -1908,7 +1861,7 @@
       ], 
       "mainCEO": [
         {
-          "link": "", 
+          "link": "https://k-monitor.hu/adatbazis/cimkek/nikolits-reka", 
           "name": "Nikolits R\u00e9ka Zs\u00f3fia"
         }
       ], 
@@ -1928,7 +1881,7 @@
     "properties": {
       "ceos": [
         {
-          "link": "", 
+          "link": "https://k-monitor.hu/adatbazis/cimkek/nikolits-reka", 
           "name": "Nikolits R\u00e9ka Zs\u00f3fia"
         }
       ], 
@@ -1944,8 +1897,8 @@
         }
       ], 
       "address": "Szombathely, Szent Istv\u00e1n park 15., 9700", 
-      "date": "05/06/2020", 
-      "id": 37, 
+      "date": "09/16/2020", 
+      "id": 36, 
       "city": "Szombathely", 
       "name": "Garda Hotel", 
       "oligarchs": [
@@ -1960,7 +1913,7 @@
       ], 
       "mainCEO": [
         {
-          "link": "", 
+          "link": "https://k-monitor.hu/adatbazis/cimkek/nikolits-reka", 
           "name": "Nikolits R\u00e9ka Zs\u00f3fia"
         }
       ], 
@@ -2001,7 +1954,7 @@
       ], 
       "address": "Budapest, V\u00e1rosligeti krt. 2., 1146", 
       "date": "04/06/2020", 
-      "id": 38, 
+      "id": 37, 
       "city": "Budapest", 
       "name": "Nyereg Itat\u00f3", 
       "oligarchs": [
@@ -2052,7 +2005,7 @@
       ], 
       "address": "Alcs\u00fatdoboz, B\u00e9ke utca 1., 8087", 
       "date": "07/30/2019", 
-      "id": 39, 
+      "id": 38, 
       "city": "Alcs\u00fatdoboz", 
       "name": "V\u00e1lv\u00f6lgyi P\u00e9ks\u00e9g \u00e9s Hentesbolt", 
       "oligarchs": [
@@ -2108,7 +2061,7 @@
       ], 
       "address": "Bodrogkisfalud, Kossuth u., 3917", 
       "date": "07/30/2019", 
-      "id": 40, 
+      "id": 39, 
       "city": "Bodrogkisfalud", 
       "name": "Dereszla bor\u00e1szat", 
       "oligarchs": [
@@ -2155,7 +2108,7 @@
       ], 
       "address": "Badacsonytomaj, HRSZ 023/8, 8261", 
       "date": "07/20/2020", 
-      "id": 41, 
+      "id": 40, 
       "city": "Badacsonytomaj", 
       "name": "Nimfeum", 
       "oligarchs": [
@@ -2202,7 +2155,7 @@
       ], 
       "address": "Vill\u00e1ny, Erkel Ferenc u. 10., 7773", 
       "date": "07/30/2019", 
-      "id": 42, 
+      "id": 41, 
       "city": "Vill\u00e1ny", 
       "name": "Tiff\u00e1n Bor\u00e1szat", 
       "oligarchs": [
@@ -2261,7 +2214,7 @@
       ], 
       "address": "Tihany, Kiserd\u0151telepi \u00fat 075/15 hrsz, 8237", 
       "date": "08/23/2020", 
-      "id": 43, 
+      "id": 42, 
       "city": "Tihany", 
       "name": "Tihanyi Vinarius", 
       "oligarchs": [
@@ -2316,7 +2269,7 @@
       ], 
       "address": "Z\u00e1nka, Borosok \u00fatja 1., 8251", 
       "date": "07/30/2019", 
-      "id": 44, 
+      "id": 43, 
       "city": "Z\u00e1nka", 
       "name": "Canter Borh\u00e1z", 
       "oligarchs": [
@@ -2363,7 +2316,7 @@
       ], 
       "address": "Budapest, J\u00f3kai t\u00e9r 6., 1061", 
       "date": "12/16/2019", 
-      "id": 45, 
+      "id": 44, 
       "city": "Budapest", 
       "name": "Vin\u00e1rium", 
       "oligarchs": [
@@ -2423,7 +2376,7 @@
       ], 
       "address": "Vill\u00e1ny, Ady fasor 2, 7773", 
       "date": "04/06/2020", 
-      "id": 46, 
+      "id": 45, 
       "city": "Vill\u00e1ny", 
       "name": "Cs\u00e1nyi borbolt", 
       "oligarchs": [
@@ -2473,7 +2426,7 @@
       "mainOligarch": [], 
       "address": "Budapest, F\u0151 utca 3., 1011", 
       "date": "05/20/2020", 
-      "id": 47, 
+      "id": 46, 
       "city": "Budapest", 
       "name": "Andante Borpatika", 
       "oligarchs": [
@@ -2533,7 +2486,7 @@
       ], 
       "address": "Egerszal\u00f3k, Forr\u00e1s utca 6., 3394", 
       "date": "07/30/2019", 
-      "id": 48, 
+      "id": 47, 
       "city": "Egerszal\u00f3k", 
       "name": "Pinot Noir", 
       "oligarchs": [
@@ -2589,7 +2542,7 @@
       ], 
       "address": "Budapest, Fortuna utca 14., 1014", 
       "date": "07/30/2019", 
-      "id": 49, 
+      "id": 48, 
       "city": "Budapest", 
       "name": "Pierrot", 
       "oligarchs": [
@@ -2640,7 +2593,7 @@
       ], 
       "address": "Budapest, Andr\u00e1ssy \u00fat 22., 1061", 
       "date": "07/30/2019", 
-      "id": 50, 
+      "id": 49, 
       "city": "Budapest", 
       "name": "Opera Cafe", 
       "oligarchs": [
@@ -2695,7 +2648,7 @@
       ], 
       "address": "Budapest, Jane Haining rkp., 1052", 
       "date": "05/27/2020", 
-      "id": 51, 
+      "id": 50, 
       "city": "Budapest", 
       "name": "Raqpart", 
       "oligarchs": [
@@ -2750,7 +2703,7 @@
       ], 
       "address": "Budapest, Kir\u00e1ly utca 13., 1075", 
       "date": "07/30/2019", 
-      "id": 52, 
+      "id": 51, 
       "city": "Budapest", 
       "name": "Jamie Oliver's Pizzeria", 
       "oligarchs": [
@@ -2801,7 +2754,7 @@
       ], 
       "address": "Budapest, Erzs\u00e9bet t\u00e9r 11-13 ., 1051", 
       "date": "07/30/2019", 
-      "id": 53, 
+      "id": 52, 
       "city": "Budapest", 
       "name": "Snacks And Steaks", 
       "oligarchs": [
@@ -2856,7 +2809,7 @@
       ], 
       "address": "\u00d3barok, M1 43 km BAL, 2063", 
       "date": "08/23/2020", 
-      "id": 54, 
+      "id": 53, 
       "city": "\u00d3barok", 
       "name": "Szek\u00e9r Cs\u00e1rda", 
       "oligarchs": [
@@ -2902,7 +2855,7 @@
       ], 
       "address": "Budapest, Alkot\u00e1s u. 53., 1123", 
       "date": "07/30/2019", 
-      "id": 55, 
+      "id": 54, 
       "city": "Budapest", 
       "name": "Sp\u00edler Buda", 
       "oligarchs": [
@@ -2961,7 +2914,7 @@
       ], 
       "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10., 4200", 
       "date": "07/30/2019", 
-      "id": 56, 
+      "id": 55, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "P\u00e1vai Vajna \u00c9tterem", 
       "oligarchs": [
@@ -3025,7 +2978,7 @@
       ], 
       "address": "Alcs\u00fatdoboz, Szabads\u00e1g utca 156., 8087", 
       "date": "08/23/2020", 
-      "id": 57, 
+      "id": 56, 
       "city": "Alcs\u00fatdoboz", 
       "name": "M\u00e9sz\u00e1ros Pub & Pizz\u00e9ria", 
       "oligarchs": [
@@ -3084,7 +3037,7 @@
       ], 
       "address": "H\u00e9v\u00edz, V\u00f6r\u00f6smarty Mih\u00e1ly utca 91., 8380", 
       "date": "07/30/2019", 
-      "id": 58, 
+      "id": 57, 
       "city": "H\u00e9v\u00edz", 
       "name": "Borosty\u00e1n \u00c9tterem", 
       "oligarchs": [
@@ -3144,7 +3097,7 @@
       ], 
       "address": "Gyula, V\u00e1rkert u.1., 5700", 
       "date": "07/30/2019", 
-      "id": 59, 
+      "id": 58, 
       "city": "Gyula", 
       "name": "Nosztalgia \u00e9tterem", 
       "oligarchs": [
@@ -3204,7 +3157,7 @@
       ], 
       "address": "M\u00e1traszentimre, Kod\u00e1ly Z. u. 10., 3234", 
       "date": "07/30/2019", 
-      "id": 60, 
+      "id": 59, 
       "city": "M\u00e1traszentimre", 
       "name": "Panor\u00e1ma \u00c9tterem", 
       "oligarchs": [
@@ -3260,7 +3213,7 @@
       ], 
       "address": "Budapest, Orsz\u00e1gh\u00e1z utca 31., 1014", 
       "date": "07/30/2019", 
-      "id": 61, 
+      "id": 60, 
       "city": "Budapest", 
       "name": "Baltaz\u00e1r Grill", 
       "oligarchs": [
@@ -3320,7 +3273,7 @@
       ], 
       "address": "Budapest, Fortuna utca 21, 1014", 
       "date": "07/30/2019", 
-      "id": 62, 
+      "id": 61, 
       "city": "Budapest", 
       "name": "21 Magyar Vend\u00e9gl\u0151", 
       "oligarchs": [
@@ -3388,7 +3341,7 @@
       ], 
       "address": "Herceghalom, Zs\u00e1mb\u00e9ki \u00fat 16., 2053", 
       "date": "08/23/2020", 
-      "id": 63, 
+      "id": 62, 
       "city": "Herceghalom", 
       "name": "Talentis \u00c9tterem", 
       "oligarchs": [
@@ -3443,7 +3396,7 @@
       ], 
       "address": "Budapest, Fortuna utca 3., 1014", 
       "date": "07/30/2019", 
-      "id": 64, 
+      "id": 63, 
       "city": "Budapest", 
       "name": "Pest-Buda \u00c9tterem", 
       "oligarchs": [
@@ -3503,7 +3456,7 @@
       ], 
       "address": "Budapest, Szenth\u00e1roms\u00e1g utca 9-11, 1014", 
       "date": "07/30/2019", 
-      "id": 65, 
+      "id": 64, 
       "city": "Budapest", 
       "name": "Jamie's Italian Budapest", 
       "oligarchs": [
@@ -3559,7 +3512,7 @@
       ], 
       "address": "Budapest, Klauz\u00e1l utca 32, 1072", 
       "date": "12/16/2019", 
-      "id": 66, 
+      "id": 65, 
       "city": "Budapest", 
       "name": "Black Swan Budapest", 
       "oligarchs": [
@@ -3615,7 +3568,7 @@
       ], 
       "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 12-14., 4200", 
       "date": "07/30/2019", 
-      "id": 67, 
+      "id": 66, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "Apoll\u00f3 \u00c9tterem", 
       "oligarchs": [
@@ -3675,7 +3628,7 @@
       ], 
       "address": "Hajd\u00faszoboszl\u00f3, G\u00e1bor \u00c1ron utca 7-9., 4200", 
       "date": "07/30/2019", 
-      "id": 68, 
+      "id": 67, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "Korz\u00f3 \u00c9tterem", 
       "oligarchs": [
@@ -3727,7 +3680,7 @@
       ], 
       "address": "Balatonf\u00fcred, Z\u00e1konyi Ferenc utca 1, 8230", 
       "date": "07/30/2019", 
-      "id": 69, 
+      "id": 68, 
       "city": "Balatonf\u00fcred", 
       "name": "Terasz \u00c9tterem", 
       "oligarchs": [
@@ -3783,7 +3736,7 @@
       ], 
       "address": "Tapolca, K\u00f6zt\u00e1rsas\u00e1g t\u00e9r 10., 8300", 
       "date": "07/30/2019", 
-      "id": 70, 
+      "id": 69, 
       "city": "Tapolca", 
       "name": "Orchidea \u00c9tterem", 
       "oligarchs": [
@@ -3843,7 +3796,7 @@
       ], 
       "address": "H\u00e9v\u00edz, Pet\u0151fi S\u00e1ndor utca 9., 8380", 
       "date": "07/30/2019", 
-      "id": 71, 
+      "id": 70, 
       "city": "H\u00e9v\u00edz", 
       "name": "M\u00e1rv\u00e1ny \u00c9tterem", 
       "oligarchs": [
@@ -3903,7 +3856,7 @@
       ], 
       "address": "Gyula, V\u00e1rkert u.1., 5700", 
       "date": "07/30/2019", 
-      "id": 72, 
+      "id": 71, 
       "city": "Gyula", 
       "name": "Orchidea \u00c9tterem", 
       "oligarchs": [
@@ -3963,7 +3916,7 @@
       ], 
       "address": "Zalakaros, Term\u00e1l u. 7, 8749", 
       "date": "07/30/2019", 
-      "id": 73, 
+      "id": 72, 
       "city": "Zalakaros", 
       "name": "Brissing \u00e9tterem", 
       "oligarchs": [
@@ -4010,7 +3963,7 @@
       ], 
       "address": "Szeged, Toront\u00e1l t\u00e9r 1., 6726", 
       "date": "07/30/2019", 
-      "id": 74, 
+      "id": 73, 
       "city": "Szeged", 
       "name": "Napf\u00e9nyf\u00fcrd\u0151 Aquapolis", 
       "oligarchs": [
@@ -4048,7 +4001,7 @@
       ], 
       "address": "Budapest, \u00dari utca 21., 1014", 
       "date": "07/30/2019", 
-      "id": 75, 
+      "id": 74, 
       "city": "Budapest", 
       "name": "Budapest Mokka Cafe&Deli", 
       "oligarchs": [
@@ -4099,7 +4052,7 @@
       ], 
       "address": "Budapest, M\u00f3ricz Zsigmond k\u00f6rt\u00e9r Gomba \u00e9p\u00fcletegy\u00fcttes, 1117", 
       "date": "07/31/2019", 
-      "id": 76, 
+      "id": 75, 
       "city": "Budapest", 
       "name": "4 street coffee", 
       "oligarchs": [
@@ -4162,7 +4115,7 @@
       ], 
       "address": "Felcs\u00fat, Mozdony u. 4., 8086", 
       "date": "08/23/2020", 
-      "id": 77, 
+      "id": 76, 
       "city": "Felcs\u00fat", 
       "name": "\u00c1llom\u00e1s Cafe", 
       "oligarchs": [
@@ -4212,7 +4165,7 @@
       ], 
       "address": "Balatonalm\u00e1di, V\u00e9ghely Dezs\u0151 utca 18., 8220", 
       "date": "07/30/2019", 
-      "id": 78, 
+      "id": 77, 
       "city": "Balatonalm\u00e1di", 
       "name": "Yacht kemping ", 
       "oligarchs": [
@@ -4259,7 +4212,7 @@
       ], 
       "address": "Balatonvil\u00e1gos, Aligai \u00fat 1., 8171", 
       "date": "07/20/2020", 
-      "id": 79, 
+      "id": 78, 
       "city": "Balatonvil\u00e1gos", 
       "name": "Club Aliga", 
       "oligarchs": [
@@ -4309,7 +4262,7 @@
       ], 
       "address": "Balatonakali, Balaton u. 8, , 8243", 
       "date": "07/30/2019", 
-      "id": 80, 
+      "id": 79, 
       "city": "Balatonakali", 
       "name": "Strand-Holiday Kemping", 
       "oligarchs": [
@@ -4364,7 +4317,7 @@
       ], 
       "address": "Alcs\u00fatdoboz, M\u00e1riav\u00f6lgy, 8087", 
       "date": "07/30/2019", 
-      "id": 81, 
+      "id": 80, 
       "city": "Alcs\u00fatdoboz", 
       "name": "Pannonia Golf & Country Club", 
       "oligarchs": [
@@ -4411,7 +4364,7 @@
       ], 
       "address": "Szolnok, Galamb u. 9., 5000", 
       "date": "07/30/2019", 
-      "id": 82, 
+      "id": 81, 
       "city": "Szolnok", 
       "name": "Tenisz Club Szolnok", 
       "oligarchs": [
@@ -4458,7 +4411,7 @@
       ], 
       "address": "Tarcal, F\u0151 \u00fat 94., 3915", 
       "date": "05/20/2020", 
-      "id": 83, 
+      "id": 82, 
       "city": "Tarcal", 
       "name": "Andr\u00e1ssy Rezidencia", 
       "oligarchs": [
@@ -4514,7 +4467,7 @@
       ], 
       "address": "Lillaf\u00fcred, Erzs\u00e9bet s\u00e9t\u00e1ny 1., 3517", 
       "date": "07/15/2020", 
-      "id": 84, 
+      "id": 83, 
       "city": "Lillaf\u00fcred", 
       "name": "Hunguest Hotel Palota", 
       "oligarchs": [
@@ -4557,7 +4510,7 @@
       ], 
       "address": "Holl\u00f3k\u0151, Sport \u00fat 8., 3176", 
       "date": "07/30/2019", 
-      "id": 85, 
+      "id": 84, 
       "city": "Holl\u00f3k\u0151", 
       "name": "G\u00f6rbeorsz\u00e1g Vend\u00e9gh\u00e1z", 
       "oligarchs": [
@@ -4612,7 +4565,7 @@
       ], 
       "address": "Ny\u00edregyh\u00e1za, Szindb\u00e1d s\u00e9t\u00e1ny 11., 4400", 
       "date": "07/30/2019", 
-      "id": 86, 
+      "id": 85, 
       "city": "Ny\u00edregyh\u00e1za", 
       "name": "Hotel S\u00f3st\u00f3", 
       "oligarchs": [
@@ -4670,10 +4623,10 @@
           "name": "M\u00e9sz\u00e1ros L\u0151rinc"
         }
       ], 
-      "address": "Galyatet\u0151, Kod\u00e1ly Zolt\u00e1n s\u00e9t\u00e1ny 10., 3234", 
-      "date": "05/30/2020", 
-      "id": 87, 
-      "city": "Galyatet\u0151", 
+      "address": "M\u00e1traszentimre, Kod\u00e1ly Zolt\u00e1n s\u00e9t\u00e1ny 10., 3234", 
+      "date": "09/02/2020", 
+      "id": 86, 
+      "city": "M\u00e1traszentimre", 
       "name": "Grandhotel Galya", 
       "oligarchs": [
         {
@@ -4732,7 +4685,7 @@
       ], 
       "address": "Eger, F\u00fcrd\u0151 u. 5., 3300", 
       "date": "05/30/2020", 
-      "id": 88, 
+      "id": 87, 
       "city": "Eger", 
       "name": "Hotel Fl\u00f3ra", 
       "oligarchs": [
@@ -4792,7 +4745,7 @@
       ], 
       "address": "Egerszal\u00f3k, Forr\u00e1s u. 6., 3394", 
       "date": "05/30/2020", 
-      "id": 89, 
+      "id": 88, 
       "city": "Egerszal\u00f3k", 
       "name": "Saliris Resort Hotel", 
       "oligarchs": [
@@ -4852,7 +4805,7 @@
       ], 
       "address": "Gy\u00f6ngy\u00f6s, 3233 Gy\u00f6ngy\u00f6s, 3233", 
       "date": "05/30/2020", 
-      "id": 90, 
+      "id": 89, 
       "city": "Gy\u00f6ngy\u00f6s", 
       "name": "Lifestyle Hotel M\u00e1tra", 
       "oligarchs": [
@@ -4908,7 +4861,7 @@
       ], 
       "address": "Tarj\u00e1n, 2831 Tarj\u00e1n, 2831", 
       "date": "07/30/2019", 
-      "id": 91, 
+      "id": 90, 
       "city": "Tarj\u00e1n", 
       "name": "Post\u00e1s Vad\u00e1szt\u00e1rsas\u00e1g", 
       "oligarchs": [
@@ -4950,7 +4903,7 @@
       ], 
       "address": "Budapest, Fortuna utca 3., 1014", 
       "date": "07/30/2019", 
-      "id": 92, 
+      "id": 91, 
       "city": "Budapest", 
       "name": "Pest-Buda Hotel", 
       "oligarchs": [
@@ -5017,7 +4970,7 @@
       ], 
       "address": "Budapest, Andr\u00e1ssy \u00fat 8., 1061", 
       "date": "07/30/2019", 
-      "id": 93, 
+      "id": 92, 
       "city": "Budapest", 
       "name": "Hotel Moments", 
       "oligarchs": [
@@ -5073,7 +5026,7 @@
       ], 
       "address": "Budapest, Clark \u00c1d\u00e1m t\u00e9r 1, 1013", 
       "date": "05/12/2020", 
-      "id": 94, 
+      "id": 93, 
       "city": "Budapest", 
       "name": "Hotel Clark Budapest", 
       "oligarchs": [
@@ -5129,7 +5082,7 @@
       ], 
       "address": "Budapest, K\u00f6nyves K. krt. 44., 1087", 
       "date": "07/30/2019", 
-      "id": 95, 
+      "id": 94, 
       "city": "Budapest", 
       "name": "Hotel Plat\u00e1nus", 
       "oligarchs": [
@@ -5189,7 +5142,7 @@
       ], 
       "address": "Budapest, \u00dcll\u0151i \u00fat 94-98., 1089", 
       "date": "07/30/2019", 
-      "id": 96, 
+      "id": 95, 
       "city": "Budapest", 
       "name": "Hotel Millennium", 
       "oligarchs": [
@@ -5245,7 +5198,7 @@
       ], 
       "address": "Alcs\u00fatdoboz, Kast\u00e9ly u. 7., 8087", 
       "date": "07/30/2019", 
-      "id": 97, 
+      "id": 96, 
       "city": "Alcs\u00fatdoboz", 
       "name": "Alcs\u00fatdobozi Vad\u00e1szh\u00e1z", 
       "oligarchs": [
@@ -5300,7 +5253,7 @@
       ], 
       "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 12-14., 4200", 
       "date": "07/30/2019", 
-      "id": 98, 
+      "id": 97, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "Hotel Apollo", 
       "oligarchs": [
@@ -5360,7 +5313,7 @@
       ], 
       "address": "Hajd\u00faszoboszl\u00f3, M\u00e1ty\u00e1s Kir\u00e1ly s\u00e9t\u00e1ny 10., 4200", 
       "date": "05/30/2020", 
-      "id": 99, 
+      "id": 98, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "Hotel B\u00e9ke", 
       "oligarchs": [
@@ -5420,7 +5373,7 @@
       ], 
       "address": "Hajd\u00faszoboszl\u00f3, G\u00e1bor \u00c1ron utca 7-9., 4200", 
       "date": "05/30/2020", 
-      "id": 100, 
+      "id": 99, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "Hotel Aqua-Sol", 
       "oligarchs": [
@@ -5476,7 +5429,7 @@
       ], 
       "address": "Alcs\u00fatdoboz, V\u00e9rti Vadaskert k\u00f6zep\u00e9n, 8087", 
       "date": "07/30/2019", 
-      "id": 101, 
+      "id": 100, 
       "city": "Alcs\u00fatdoboz", 
       "name": "V\u00e9rti vad\u00e1szh\u00e1z", 
       "oligarchs": [
@@ -5531,7 +5484,7 @@
       ], 
       "address": "B\u00fckf\u00fcrd\u0151, Term\u00e1l krt. 26., 9740", 
       "date": "05/30/2020", 
-      "id": 102, 
+      "id": 101, 
       "city": "B\u00fckf\u00fcrd\u0151", 
       "name": "Hotel R\u00e9pce", 
       "oligarchs": [
@@ -5591,7 +5544,7 @@
       ], 
       "address": "B\u00fckf\u00fcrd\u0151, Eur\u00f3pa \u00fat 3., 9740", 
       "date": "07/30/2019", 
-      "id": 103, 
+      "id": 102, 
       "city": "B\u00fckf\u00fcrd\u0151", 
       "name": "Hotel R\u00e9pce Gold", 
       "oligarchs": [
@@ -5651,7 +5604,7 @@
       ], 
       "address": "Kreischberg, Kreischberg 2, 8861", 
       "date": "07/30/2019", 
-      "id": 104, 
+      "id": 103, 
       "city": "Kreischberg", 
       "name": "Hotel Relax Resort", 
       "oligarchs": [
@@ -5711,7 +5664,7 @@
       ], 
       "address": "Heiligenblut, Winkl 46, 9844", 
       "date": "07/30/2019", 
-      "id": 105, 
+      "id": 104, 
       "city": "Heiligenblut", 
       "name": "Hotel Heiligenblut", 
       "oligarchs": [
@@ -5771,7 +5724,7 @@
       ], 
       "address": "Balatonalm\u00e1di, Bajcsy-Zsilinszky u. 14., 8220", 
       "date": "05/30/2020", 
-      "id": 106, 
+      "id": 105, 
       "city": "Balatonalm\u00e1di", 
       "name": "Hotel B\u00e1l Resort", 
       "oligarchs": [
@@ -5831,7 +5784,7 @@
       ], 
       "address": "Tapolca, K\u00f6zt\u00e1rsas\u00e1g t\u00e9r 10., 8300", 
       "date": "05/30/2020", 
-      "id": 107, 
+      "id": 106, 
       "city": "Tapolca", 
       "name": "Hotel Pelion", 
       "oligarchs": [
@@ -5887,7 +5840,7 @@
       ], 
       "address": "B\u00e9lmegyer, , 5643", 
       "date": "07/30/2019", 
-      "id": 108, 
+      "id": 107, 
       "city": "B\u00e9lmegyer", 
       "name": "B\u00e9lmegyeri K\u00e1r\u00e1sz Vad\u00e1szkast\u00e9ly", 
       "oligarchs": [
@@ -5942,7 +5895,7 @@
       ], 
       "address": "H\u00e9v\u00edz, Pet\u0151fi S\u00e1ndor u. 9., 8380", 
       "date": "05/30/2020", 
-      "id": 109, 
+      "id": 108, 
       "city": "H\u00e9v\u00edz", 
       "name": "Hotel Panor\u00e1ma", 
       "oligarchs": [
@@ -6002,7 +5955,7 @@
       ], 
       "address": "H\u00e9v\u00edz, V\u00f6r\u00f6smarty Mih\u00e1ly utca 91., 8380", 
       "date": "05/30/2020", 
-      "id": 110, 
+      "id": 109, 
       "city": "H\u00e9v\u00edz", 
       "name": "Hunguest Hotel Helios", 
       "oligarchs": [
@@ -6054,7 +6007,7 @@
       ], 
       "address": "Keszthely, Mikus Gyula s\u00e9t\u00e1ny 5., 8360", 
       "date": "05/30/2020", 
-      "id": 111, 
+      "id": 110, 
       "city": "Keszthely", 
       "name": "Helikon Hotel Keszthely", 
       "oligarchs": [
@@ -6105,7 +6058,7 @@
       ], 
       "address": "Keszthely, Mikus Gyula stny. 3., 8360", 
       "date": "07/30/2019", 
-      "id": 112, 
+      "id": 111, 
       "city": "Keszthely", 
       "name": "Balaton Sz\u00e1ll\u00f3", 
       "oligarchs": [
@@ -6152,7 +6105,7 @@
       ], 
       "address": "Keszthely, Mikus Gyula s\u00e9t\u00e1ny 1., 8360", 
       "date": "05/30/2020", 
-      "id": 113, 
+      "id": 112, 
       "city": "Keszthely", 
       "name": "Hull\u00e1m Hotel", 
       "oligarchs": [
@@ -6212,7 +6165,7 @@
       ], 
       "address": "Gyula, V\u00e1rkert u.1., 5700", 
       "date": "05/30/2020", 
-      "id": 114, 
+      "id": 113, 
       "city": "Gyula", 
       "name": "Hotel Erkel", 
       "oligarchs": [
@@ -6272,7 +6225,7 @@
       ], 
       "address": "Zalakaros, Term\u00e1l u. 7, 8749", 
       "date": "05/30/2020", 
-      "id": 115, 
+      "id": 114, 
       "city": "Zalakaros", 
       "name": "Hotel Freya", 
       "oligarchs": [
@@ -6332,7 +6285,7 @@
       ], 
       "address": "Cs\u00edkszereda, N. B\u0103lcescu u. 11., 530003", 
       "date": "07/30/2019", 
-      "id": 116, 
+      "id": 115, 
       "city": "Cs\u00edkszereda", 
       "name": "Hunguest Hotel Feny\u0151", 
       "oligarchs": [
@@ -6392,7 +6345,7 @@
       ], 
       "address": "Szeged, Szent-Gy\u00f6rgyi Albert u. 16-24, 6726", 
       "date": "05/30/2020", 
-      "id": 117, 
+      "id": 116, 
       "city": "Szeged", 
       "name": "Hotel Forr\u00e1s", 
       "oligarchs": [
@@ -6448,7 +6401,7 @@
       ], 
       "address": "Erd\u0151smecske, , 7723", 
       "date": "07/30/2019", 
-      "id": 118, 
+      "id": 117, 
       "city": "Erd\u0151smecske", 
       "name": "M\u00e9szkemence Vend\u00e9gh\u00e1z", 
       "oligarchs": [
@@ -6507,7 +6460,7 @@
       ], 
       "address": "Herceg Novi, Sveta bubala bb., ", 
       "date": "07/30/2019", 
-      "id": 119, 
+      "id": 118, 
       "city": "Herceg Novi", 
       "name": "Hotel Sun Resort", 
       "oligarchs": [
@@ -6571,7 +6524,7 @@
       ], 
       "address": "Tihany, , 8237", 
       "date": "05/30/2020", 
-      "id": 120, 
+      "id": 119, 
       "city": "Tihany", 
       "name": "Tihanyi Kast\u00e9lysz\u00e1ll\u00f3 ", 
       "oligarchs": [
@@ -6617,7 +6570,7 @@
       "mainOligarch": [], 
       "address": "Balatonlelle, Napospart utca 1., 8638", 
       "date": "05/12/2020", 
-      "id": 121, 
+      "id": 120, 
       "city": "Balatonlelle", 
       "name": "Lellepart Apartmanh\u00e1z", 
       "oligarchs": [], 
@@ -6660,7 +6613,7 @@
       ], 
       "address": "P\u00e9cs, Fels\u0151v\u00e1mh\u00e1z utca 53., 7626", 
       "date": "05/30/2020", 
-      "id": 122, 
+      "id": 121, 
       "city": "P\u00e9cs", 
       "name": "Retro Panzi\u00f3", 
       "oligarchs": [
@@ -6719,7 +6672,7 @@
       ], 
       "address": "Budapest, V\u00e1ci utca 22., 1052", 
       "date": "05/12/2020", 
-      "id": 123, 
+      "id": 122, 
       "city": "Budapest", 
       "name": "Promenade City Hotel", 
       "oligarchs": [
@@ -6783,7 +6736,7 @@
       ], 
       "address": "Budapest, Piarista k\u00f6z 6., 1052", 
       "date": "05/12/2020", 
-      "id": 124, 
+      "id": 123, 
       "city": "Budapest", 
       "name": "La Prima Fashion Hotel", 
       "oligarchs": [
@@ -6847,7 +6800,7 @@
       ], 
       "address": "Budapest, V\u00e1ci utca 77., 1056", 
       "date": "05/12/2020", 
-      "id": 125, 
+      "id": 124, 
       "city": "Budapest", 
       "name": "Cosmo City Hotel", 
       "oligarchs": [
@@ -6911,7 +6864,7 @@
       ], 
       "address": "Budapest, Baross t\u00e9r 15., 1077", 
       "date": "05/12/2020", 
-      "id": 126, 
+      "id": 125, 
       "city": "Budapest", 
       "name": "Baross City Hotel", 
       "oligarchs": [
@@ -6975,7 +6928,7 @@
       ], 
       "address": "Budapest, N\u00e9psz\u00ednh\u00e1z u. 39-41., 1081", 
       "date": "05/12/2020", 
-      "id": 127, 
+      "id": 126, 
       "city": "Budapest", 
       "name": "Atlas City Hotel", 
       "oligarchs": [
@@ -7039,7 +6992,7 @@
       ], 
       "address": "Budapest, Expo t\u00e9r 2, 1101", 
       "date": "05/12/2020", 
-      "id": 128, 
+      "id": 127, 
       "city": "Budapest", 
       "name": "Expo Congress Hotel", 
       "oligarchs": [
@@ -7078,52 +7031,60 @@
     "properties": {
       "ceos": [
         {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }, 
+        {
           "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
           "name": "Awad Zuhair Fathi"
         }, 
         {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
-          "name": "Hamdan Sameer Mahmoud"
+          "link": "", 
+          "name": "Ayesh Majdi"
         }
       ], 
       "company": {
-        "link": "https://k-monitor.hu/adatbazis/cimkek/mellow-mood-kft", 
-        "name": "MMG Hotels Kft."
+        "link": "", 
+        "name": "P\u00e1rizs Property Kft."
       }, 
       "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/", 
       "mainOligarch": [
         {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
-          "name": "Awad Zuhair Fathi"
-        }, 
-        {
           "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
           "name": "Hamdan Sameer Mahmoud"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
         }
       ], 
       "address": "Budapest, Pet\u0151fi S\u00e1ndor u. 2-4., 1052", 
-      "date": "05/12/2020", 
-      "id": 129, 
+      "date": "09/18/2020", 
+      "id": 128, 
       "city": "Budapest", 
       "name": "P\u00e1risi Udvar Hotel", 
       "oligarchs": [
         {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
+          "name": "Hamdan Sameer Mahmoud"
+        }, 
+        {
           "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
           "name": "Awad Zuhair Fathi"
         }, 
         {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
-          "name": "Hamdan Sameer Mahmoud"
+          "link": "", 
+          "name": "Ayesh Majdi"
         }
       ], 
       "mainCEO": [
         {
-          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
-          "name": "Awad Zuhair Fathi"
-        }, 
-        {
           "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1", 
           "name": "Hamdan Sameer Mahmoud"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad", 
+          "name": "Awad Zuhair Fathi"
         }
       ], 
       "type": "sz\u00e1lloda", 
@@ -7167,7 +7128,7 @@
       ], 
       "address": "Budapest, Csokonai u. 14., 1081", 
       "date": "05/12/2020", 
-      "id": 130, 
+      "id": 129, 
       "city": "Budapest", 
       "name": "Atrium Fashion Hotel", 
       "oligarchs": [
@@ -7231,7 +7192,7 @@
       ], 
       "address": "Budapest, V\u00e1ci utca 83., 1056", 
       "date": "05/12/2020", 
-      "id": 131, 
+      "id": 130, 
       "city": "Budapest", 
       "name": "Estilo Fashion Hotel", 
       "oligarchs": [
@@ -7295,7 +7256,7 @@
       ], 
       "address": "Budapest, Ny\u00e1r utca 6., 1072", 
       "date": "05/12/2020", 
-      "id": 132, 
+      "id": 131, 
       "city": "Budapest", 
       "name": "Marco Polo Top Ho(s)tel", 
       "oligarchs": [
@@ -7359,7 +7320,7 @@
       ], 
       "address": "Budapest, Istv\u00e1n utca 14., 1078", 
       "date": "05/12/2020", 
-      "id": 133, 
+      "id": 132, 
       "city": "Budapest", 
       "name": "Star City Hotel", 
       "oligarchs": [
@@ -7423,7 +7384,7 @@
       ], 
       "address": "Budapest, \u00dari utca 39, 1014", 
       "date": "05/12/2020", 
-      "id": 134, 
+      "id": 133, 
       "city": "Budapest", 
       "name": "Buda Castle Fashion Hotel", 
       "oligarchs": [
@@ -7479,7 +7440,7 @@
       ], 
       "address": "Budapest, Nagymez\u0151 utca 66., 1065", 
       "date": "12/13/2019", 
-      "id": 135, 
+      "id": 134, 
       "city": "Budapest", 
       "name": "BP Design Hotel", 
       "oligarchs": [
@@ -7530,7 +7491,7 @@
       ], 
       "address": "B\u00fck, Golf \u00fat 4., 9740", 
       "date": "05/29/2020", 
-      "id": 136, 
+      "id": 135, 
       "city": "B\u00fck", 
       "name": "Greenfield Hotel", 
       "oligarchs": [
@@ -7578,7 +7539,7 @@
       ], 
       "address": "Hajd\u00faszoboszl\u00f3, Daru zug 5/a, 4200", 
       "date": "04/06/2020", 
-      "id": 137, 
+      "id": 136, 
       "city": "Hajd\u00faszoboszl\u00f3", 
       "name": "Hotel Aqua Blue", 
       "oligarchs": [
@@ -7629,7 +7590,7 @@
       ], 
       "address": "Budapest, Sz\u00e9chenyi Istv\u00e1n t\u00e9r 7-8., 1051", 
       "date": "07/30/2019", 
-      "id": 138, 
+      "id": 137, 
       "city": "Budapest", 
       "name": "TOKIO Budapest", 
       "oligarchs": [
@@ -7680,7 +7641,7 @@
       ], 
       "address": "Keszthely, Phoenix u. 1., 8360", 
       "date": "07/16/2020", 
-      "id": 139, 
+      "id": 138, 
       "city": "Keszthely", 
       "name": "Keszthely Yacht Kik\u00f6t\u0151", 
       "oligarchs": [
@@ -7718,7 +7679,7 @@
       ], 
       "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Kossuth t\u00e9r 3., 6800", 
       "date": "07/30/2019", 
-      "id": 140, 
+      "id": 139, 
       "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
       "name": "Fekete Sas Mulat\u00f3", 
       "oligarchs": [
@@ -7765,7 +7726,7 @@
       ], 
       "address": "Budapest, Szent Istv\u00e1n t\u00e9r 9., 1051", 
       "date": "07/30/2019", 
-      "id": 141, 
+      "id": 140, 
       "city": "Budapest", 
       "name": "Bestia", 
       "oligarchs": [
@@ -7820,7 +7781,7 @@
       ], 
       "address": "Budapest, Okt\u00f3ber 6. u. 8., 1051", 
       "date": "07/30/2019", 
-      "id": 142, 
+      "id": 141, 
       "city": "Budapest", 
       "name": "Tom George Budapest", 
       "oligarchs": [
@@ -7871,7 +7832,7 @@
       ], 
       "address": "Budapest, Alkot\u00e1s u 53., 1123", 
       "date": "07/30/2019", 
-      "id": 143, 
+      "id": 142, 
       "city": "Budapest", 
       "name": "Tom George Piccolino", 
       "oligarchs": [
@@ -7913,7 +7874,7 @@
       ], 
       "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, P\u00e1lffy u. 4., 6800", 
       "date": "07/30/2019", 
-      "id": 144, 
+      "id": 143, 
       "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
       "name": "Kis Bandula Faloda", 
       "oligarchs": [
@@ -7951,7 +7912,7 @@
       ], 
       "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, P\u00e1lffy u. 4., 6800", 
       "date": "07/30/2019", 
-      "id": 145, 
+      "id": 144, 
       "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
       "name": "Bandula borsorol\u00f3", 
       "oligarchs": [
@@ -7989,7 +7950,7 @@
       ], 
       "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, P\u00e1lffy u. 2., 6800", 
       "date": "07/30/2019", 
-      "id": 146, 
+      "id": 145, 
       "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
       "name": "Bandula kisvend\u00e9gl\u0151", 
       "oligarchs": [
@@ -8027,7 +7988,7 @@
       ], 
       "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Kossuth t\u00e9r 3., 6800", 
       "date": "07/30/2019", 
-      "id": 147, 
+      "id": 146, 
       "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
       "name": "Fekete Sas", 
       "oligarchs": [
@@ -8065,7 +8026,7 @@
       ], 
       "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Kaszap utca 27., 6800", 
       "date": "07/30/2019", 
-      "id": 148, 
+      "id": 147, 
       "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
       "name": "Bagolyv\u00e1r \u00e9tterem", 
       "oligarchs": [
@@ -8103,7 +8064,7 @@
       ], 
       "address": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely, Z\u00f6lderd\u0151 utca 4., 6800", 
       "date": "07/30/2019", 
-      "id": 149, 
+      "id": 148, 
       "city": "H\u00f3dmez\u0151v\u00e1s\u00e1rhely", 
       "name": "K\u00f6k\u00e9nydombi cs\u00e1rda", 
       "oligarchs": [
@@ -8146,7 +8107,7 @@
       ], 
       "address": "Balatonf\u00fcred, Sz\u00e9chenyi Istv\u00e1n u. 24., 8230", 
       "date": "07/30/2019", 
-      "id": 150, 
+      "id": 149, 
       "city": "Balatonf\u00fcred", 
       "name": "F\u00fcred Kemping", 
       "oligarchs": [
@@ -8189,7 +8150,7 @@
       ], 
       "address": "Si\u00f3fok-Szabadif\u00fcrd\u0151, Szent L\u00e1szl\u00f3 u. 185., 8600", 
       "date": "07/30/2019", 
-      "id": 151, 
+      "id": 150, 
       "city": "Si\u00f3fok-Szabadif\u00fcrd\u0151", 
       "name": "Aranypart Camping", 
       "oligarchs": [
@@ -8232,7 +8193,7 @@
       ], 
       "address": "Zam\u00e1rdi, Szent Istv\u00e1n \u00fat hrsz. 3512., 8621", 
       "date": "07/30/2019", 
-      "id": 152, 
+      "id": 151, 
       "city": "Zam\u00e1rdi", 
       "name": "Mirabella Kemping", 
       "oligarchs": [
@@ -8275,7 +8236,7 @@
       ], 
       "address": "R\u00e9vf\u00fcl\u00f6p, Hal\u00e1sz u. 5., 8253", 
       "date": "07/30/2019", 
-      "id": 153, 
+      "id": 152, 
       "city": "R\u00e9vf\u00fcl\u00f6p", 
       "name": "Napf\u00e9ny Kemping", 
       "oligarchs": [
@@ -8318,7 +8279,7 @@
       ], 
       "address": "Balatonszemes, Lellei u. 1-2., 8636", 
       "date": "07/30/2019", 
-      "id": 154, 
+      "id": 153, 
       "city": "Balatonszemes", 
       "name": "Vadvir\u00e1g kemping", 
       "oligarchs": [
@@ -8361,7 +8322,7 @@
       ], 
       "address": "Vonyarcvashegy, Park u. 016/1, 8314", 
       "date": "07/30/2019", 
-      "id": 155, 
+      "id": 154, 
       "city": "Vonyarcvashegy", 
       "name": "Kemping & \u00fcd\u00fcl\u0151falu", 
       "oligarchs": [
@@ -8404,7 +8365,7 @@
       ], 
       "address": "Keszthely, Entz G\u00e9za stny. 1., 8360", 
       "date": "07/30/2019", 
-      "id": 156, 
+      "id": 155, 
       "city": "Keszthely", 
       "name": "Zala Kemping", 
       "oligarchs": [
@@ -8447,7 +8408,7 @@
       ], 
       "address": "Balatonber\u00e9ny, H\u00e9tvez\u00e9r u. 2., 8649", 
       "date": "07/30/2019", 
-      "id": 157, 
+      "id": 156, 
       "city": "Balatonber\u00e9ny", 
       "name": "Ber\u00e9ny naturista kemping", 
       "oligarchs": [
@@ -8490,7 +8451,7 @@
       ], 
       "address": "Zalakaros, Gy\u00f3gyf\u00fcrd\u0151 t\u00e9r 6., 8749", 
       "date": "07/30/2019", 
-      "id": 158, 
+      "id": 157, 
       "city": "Zalakaros", 
       "name": "Term\u00e1l kemping", 
       "oligarchs": [
@@ -8533,7 +8494,7 @@
       ], 
       "address": "Kaposv\u00e1r, Kemping u. 47., 7400", 
       "date": "07/30/2019", 
-      "id": 159, 
+      "id": 158, 
       "city": "Kaposv\u00e1r", 
       "name": "Deseda kemping", 
       "oligarchs": [
@@ -8580,7 +8541,7 @@
       ], 
       "address": "Zalacs\u00e1ny, , 8782", 
       "date": "07/30/2019", 
-      "id": 160, 
+      "id": 159, 
       "city": "Zalacs\u00e1ny", 
       "name": "Zala Springs golfp\u00e1lya", 
       "oligarchs": [
@@ -8635,7 +8596,7 @@
       ], 
       "address": "Bodrogkereszt\u00far, Henye d\u0171l\u0151, Hrsz: 0134/2, 3916", 
       "date": "07/30/2019", 
-      "id": 161, 
+      "id": 160, 
       "city": "Bodrogkereszt\u00far", 
       "name": "Henye Vend\u00e9gh\u00e1z", 
       "oligarchs": [
@@ -8686,7 +8647,7 @@
       ], 
       "address": "Zalacs\u00e1ny, Cs\u00e1ny L\u00e1szl\u00f3 u. 24., 8782", 
       "date": "05/30/2020", 
-      "id": 162, 
+      "id": 161, 
       "city": "Zalacs\u00e1ny", 
       "name": "Batth\u00e1nyi K\u00faria", 
       "oligarchs": [
@@ -8737,7 +8698,7 @@
       ], 
       "address": "Badacsonytomaj, F\u00fcredi \u00fat 65., 8257", 
       "date": "07/30/2019", 
-      "id": 163, 
+      "id": 162, 
       "city": "Badacsonytomaj", 
       "name": "Balaton Vend\u00e9gh\u00e1z ", 
       "oligarchs": [
@@ -8780,7 +8741,7 @@
       ], 
       "address": "Gy\u0151r, Jedlik \u00c1nyos utca 19, 9022", 
       "date": "10/16/2019", 
-      "id": 164, 
+      "id": 163, 
       "city": "Gy\u0151r", 
       "name": "P\u00e1lffy Mikl\u00f3s Vit\u00e9zi Lakom\u00e1z\u00f3", 
       "oligarchs": [
@@ -8836,7 +8797,7 @@
       ], 
       "address": "Gy\u0151r, Sz\u00e9chenyi t\u00e9r 3, 9022", 
       "date": "10/16/2019", 
-      "id": 165, 
+      "id": 164, 
       "city": "Gy\u0151r", 
       "name": "P\u00e1lffyt\u00e1lia \u00e9tterem", 
       "oligarchs": [
@@ -8879,7 +8840,7 @@
       ], 
       "address": "Budapest, \u00c1llatkerti krt. 9-11., 1146", 
       "date": "10/21/2019", 
-      "id": 166, 
+      "id": 165, 
       "city": "Budapest", 
       "name": "Sz\u00e9chenyi Kertvend\u00e9gl\u0151", 
       "oligarchs": [
@@ -8922,7 +8883,7 @@
       ], 
       "address": "Gy\u0151r, Schweidel u. 7 , 9022", 
       "date": "12/04/2019", 
-      "id": 167, 
+      "id": 166, 
       "city": "Gy\u0151r", 
       "name": "Te\u00e1trum \u00e9tterem \u00e9s panzi\u00f3", 
       "oligarchs": [
@@ -8970,7 +8931,7 @@
       ], 
       "address": "Gy\u0151r, Megyeh\u00e1z t\u00e9r, 9021", 
       "date": "10/16/2019", 
-      "id": 168, 
+      "id": 167, 
       "city": "Gy\u0151r", 
       "name": "Central Fagyiz\u00f3", 
       "oligarchs": [
@@ -9026,7 +8987,7 @@
       ], 
       "address": "Gy\u0151r, Marcalv\u00e1ros II M\u00e9cs L\u00e1szl\u00f3 utcai utca p, 9024", 
       "date": "10/16/2019", 
-      "id": 169, 
+      "id": 168, 
       "city": "Gy\u0151r", 
       "name": "MARCALV\u00c1ROS II. Fagyiz\u00f3", 
       "oligarchs": [
@@ -9086,7 +9047,7 @@
       ], 
       "address": "Budapest, Hermina \u00fat 17., 1146", 
       "date": "06/11/2020", 
-      "id": 170, 
+      "id": 169, 
       "city": "Budapest", 
       "name": "Hermina \u00c9tterem", 
       "oligarchs": [
@@ -9141,7 +9102,7 @@
       ], 
       "address": "Budapest, T\u0171zolt\u00f3 utca 37-47., 1094", 
       "date": "06/11/2020", 
-      "id": 171, 
+      "id": 170, 
       "city": "Budapest", 
       "name": "DARWIN CAFE & RESTAURANT", 
       "oligarchs": [
@@ -9196,7 +9157,7 @@
       ], 
       "address": "Szentendre, Dobog\u00f3k\u0151i \u00fat 1, 2000", 
       "date": "06/28/2020", 
-      "id": 172, 
+      "id": 171, 
       "city": "Szentendre", 
       "name": "CORNER 11 Pub", 
       "oligarchs": [
@@ -9247,7 +9208,7 @@
       ], 
       "address": "Miskolc, Csabai \u00fat 4-6., 3519", 
       "date": "01/07/2020", 
-      "id": 173, 
+      "id": 172, 
       "city": "Miskolc", 
       "name": "Lignum Hotel", 
       "oligarchs": [
@@ -9294,7 +9255,7 @@
       ], 
       "address": "Taksony, Sziget s\u00e9t\u00e1ny, 2335", 
       "date": "05/06/2020", 
-      "id": 174, 
+      "id": 173, 
       "city": "Taksony", 
       "name": "Z\u00f6ld sziget panzi\u00f3", 
       "oligarchs": [
@@ -9341,7 +9302,7 @@
       ], 
       "address": "Budapest, R\u00e9giposta utca 10., 1052", 
       "date": "05/22/2020", 
-      "id": 175, 
+      "id": 174, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9384,7 +9345,7 @@
       ], 
       "address": "Budapest, Ter\u00e9z krt 55., 1062", 
       "date": "05/22/2020", 
-      "id": 176, 
+      "id": 175, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9427,7 +9388,7 @@
       ], 
       "address": "Budapest, V\u00f6r\u00f6sv\u00e1ri \u00fat 52-54., 1035", 
       "date": "05/22/2020", 
-      "id": 177, 
+      "id": 176, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9470,7 +9431,7 @@
       ], 
       "address": "Budapest, J\u00f3zsef krt 52-56., 1088", 
       "date": "05/22/2020", 
-      "id": 178, 
+      "id": 177, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9513,7 +9474,7 @@
       ], 
       "address": "Budapest, S\u00fct\u0151 utca 2., 1052", 
       "date": "05/22/2020", 
-      "id": 179, 
+      "id": 178, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9556,7 +9517,7 @@
       ], 
       "address": "Budapest, \u00dcll\u0151i \u00fat 133-137., 1098", 
       "date": "05/22/2020", 
-      "id": 180, 
+      "id": 179, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9599,7 +9560,7 @@
       ], 
       "address": "Budapest, Szt.Istv\u00e1n k\u00f6r\u00fat 2., 1137", 
       "date": "05/22/2020", 
-      "id": 181, 
+      "id": 180, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9642,7 +9603,7 @@
       ], 
       "address": "Budapest, Egressy t\u00e9r, 1149", 
       "date": "05/22/2020", 
-      "id": 182, 
+      "id": 181, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9685,7 +9646,7 @@
       ], 
       "address": "Budapest, Margit k\u00f6r\u00fat 103., 1024", 
       "date": "05/22/2020", 
-      "id": 183, 
+      "id": 182, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9728,7 +9689,7 @@
       ], 
       "address": "Budapest, M\u00fazeum krt 1/b, 1053", 
       "date": "05/22/2020", 
-      "id": 184, 
+      "id": 183, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9771,7 +9732,7 @@
       ], 
       "address": "Budapest, Ter\u00e9z krt 19., 1067", 
       "date": "05/22/2020", 
-      "id": 185, 
+      "id": 184, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9814,7 +9775,7 @@
       ], 
       "address": "Budapest, V\u00e1ci \u00fat 1-3., 1069", 
       "date": "05/22/2020", 
-      "id": 186, 
+      "id": 185, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9857,7 +9818,7 @@
       ], 
       "address": "Budapest, Hung\u00e1ria krt 175., 1146", 
       "date": "05/22/2020", 
-      "id": 187, 
+      "id": 186, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9900,7 +9861,7 @@
       ], 
       "address": "Budapest, Nagyt\u00e9t\u00e9nyi \u00fat 37-45., 1222", 
       "date": "05/22/2020", 
-      "id": 188, 
+      "id": 187, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9943,7 +9904,7 @@
       ], 
       "address": "Budapest, \u00d6rs vez\u00e9r tere 25., 1106", 
       "date": "05/22/2020", 
-      "id": 189, 
+      "id": 188, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -9986,7 +9947,7 @@
       ], 
       "address": "Budapest, M3-as aut\u00f3p\u00e1lya 12. km, 1152", 
       "date": "05/22/2020", 
-      "id": 190, 
+      "id": 189, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10029,7 +9990,7 @@
       ], 
       "address": "Budapest, V\u00e1ci \u00fat 95., 1139", 
       "date": "05/22/2020", 
-      "id": 191, 
+      "id": 190, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10072,7 +10033,7 @@
       ], 
       "address": "Budapest, Bev\u00e1s\u00e1rl\u00f3 utca 195847/53, 1237", 
       "date": "05/22/2020", 
-      "id": 192, 
+      "id": 191, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10115,7 +10076,7 @@
       ], 
       "address": "Budapest, Kerepesi \u00fat 9., 1087", 
       "date": "05/22/2020", 
-      "id": 193, 
+      "id": 192, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10158,7 +10119,7 @@
       ], 
       "address": "Budapest, Szentmih\u00e1lyi \u00fat 131., 1153", 
       "date": "05/22/2020", 
-      "id": 194, 
+      "id": 193, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10201,7 +10162,7 @@
       ], 
       "address": "Budapest, Gy\u00f6mr\u0151i \u00fat 99., 1103", 
       "date": "05/22/2020", 
-      "id": 195, 
+      "id": 194, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10244,7 +10205,7 @@
       ], 
       "address": "Budapest, Nagyk\u0151r\u00f6si \u00fat 347., 1239", 
       "date": "05/22/2020", 
-      "id": 196, 
+      "id": 195, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10287,7 +10248,7 @@
       ], 
       "address": "Budapest, Buda\u00f6rsi \u00fat 112., 1112", 
       "date": "05/22/2020", 
-      "id": 197, 
+      "id": 196, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10330,7 +10291,7 @@
       ], 
       "address": "Budapest, Bethlen G. u. 1., 1077", 
       "date": "05/22/2020", 
-      "id": 198, 
+      "id": 197, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10373,7 +10334,7 @@
       ], 
       "address": "Budapest, J\u00f3zsef krt. 8., 1085", 
       "date": "07/29/2020", 
-      "id": 199, 
+      "id": 198, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10416,7 +10377,7 @@
       ], 
       "address": "Budapest, V\u00e1ci \u00fat 94-96., 1044", 
       "date": "05/22/2020", 
-      "id": 200, 
+      "id": 199, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10459,7 +10420,7 @@
       ], 
       "address": "Budapest, Ipartelep utca 1/a., 1039", 
       "date": "05/22/2020", 
-      "id": 201, 
+      "id": 200, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10502,7 +10463,7 @@
       ], 
       "address": "Budapest, M\u00f3ricz Zsigmond k\u00f6rt\u00e9r 3., 1114", 
       "date": "05/22/2020", 
-      "id": 202, 
+      "id": 201, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10545,7 +10506,7 @@
       ], 
       "address": "Budapest, Budafoki \u00fat 113., 1117", 
       "date": "05/22/2020", 
-      "id": 203, 
+      "id": 202, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10588,7 +10549,7 @@
       ], 
       "address": "Budapest, Pesti \u00fat 16-18., 1173", 
       "date": "05/22/2020", 
-      "id": 204, 
+      "id": 203, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10631,7 +10592,7 @@
       ], 
       "address": "Budapest, Gy\u00e1li \u00fat 46-48., 1097", 
       "date": "05/22/2020", 
-      "id": 205, 
+      "id": 204, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10674,7 +10635,7 @@
       ], 
       "address": "Budapest, V\u00e1ci \u00fat 178-192., 1138", 
       "date": "05/22/2020", 
-      "id": 206, 
+      "id": 205, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10717,7 +10678,7 @@
       ], 
       "address": "Budapest, Sz\u00e9chenyi utca 4., 1203", 
       "date": "05/22/2020", 
-      "id": 207, 
+      "id": 206, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10760,7 +10721,7 @@
       ], 
       "address": "Budapest, Szentmih\u00e1lyi \u00fat 131. (P\u00f3lus Center), 1153", 
       "date": "05/22/2020", 
-      "id": 208, 
+      "id": 207, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10803,7 +10764,7 @@
       ], 
       "address": "Budapest, Bor\u00e1ros t\u00e9r 4., 1093", 
       "date": "05/22/2020", 
-      "id": 209, 
+      "id": 208, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10846,7 +10807,7 @@
       ], 
       "address": "Budapest, Nagyt\u00e9t\u00e9nyi \u00fat 27., 1222", 
       "date": "05/22/2020", 
-      "id": 210, 
+      "id": 209, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10889,7 +10850,7 @@
       ], 
       "address": "Budapest, Alkot\u00e1s utca 53., 1123", 
       "date": "05/22/2020", 
-      "id": 211, 
+      "id": 210, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10932,7 +10893,7 @@
       ], 
       "address": "Budapest, K\u00f6nyves K\u00e1lm\u00e1n k\u00f6r\u00fat 25., 1101", 
       "date": "05/22/2020", 
-      "id": 212, 
+      "id": 211, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -10975,7 +10936,7 @@
       ], 
       "address": "Budapest, Kerepesi \u00fat 73., 1106", 
       "date": "05/22/2020", 
-      "id": 213, 
+      "id": 212, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11018,7 +10979,7 @@
       ], 
       "address": "Budapest, Kossuth L utca 99., 1211", 
       "date": "05/22/2020", 
-      "id": 214, 
+      "id": 213, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11061,7 +11022,7 @@
       ], 
       "address": "Budapest, K\u00f6nyves K\u00e1lm\u00e1n krt 12-14., 1097", 
       "date": "05/22/2020", 
-      "id": 215, 
+      "id": 214, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11104,7 +11065,7 @@
       ], 
       "address": "Budapest, Nagyt\u00e9t\u00e9nyi \u00fat 33., 1222", 
       "date": "05/22/2020", 
-      "id": 216, 
+      "id": 215, 
       "city": "Budapest", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11147,7 +11108,7 @@
       ], 
       "address": "Gy\u0151r, Baross utca 23., 9023", 
       "date": "05/22/2020", 
-      "id": 217, 
+      "id": 216, 
       "city": "Gy\u0151r", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11190,7 +11151,7 @@
       ], 
       "address": "Szeged, K\u00e1r\u00e1sz utca 11., 6720", 
       "date": "05/22/2020", 
-      "id": 218, 
+      "id": 217, 
       "city": "Szeged", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11233,7 +11194,7 @@
       ], 
       "address": "Sopron, Lackner K utca 60., 9400", 
       "date": "05/22/2020", 
-      "id": 219, 
+      "id": 218, 
       "city": "Sopron", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11276,7 +11237,7 @@
       ], 
       "address": "Debrecen, F\u00fcredi \u00fat 59/c, 4027", 
       "date": "05/22/2020", 
-      "id": 220, 
+      "id": 219, 
       "city": "Debrecen", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11319,7 +11280,7 @@
       ], 
       "address": "Buda\u00f6rs, Garibaldi \u00fat 2., 2040", 
       "date": "05/22/2020", 
-      "id": 221, 
+      "id": 220, 
       "city": "Buda\u00f6rs", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11362,7 +11323,7 @@
       ], 
       "address": "Szeged, R\u00f3kusi krt 27., 6724", 
       "date": "05/22/2020", 
-      "id": 222, 
+      "id": 221, 
       "city": "Szeged", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11405,7 +11366,7 @@
       ], 
       "address": "Szolnok, Th\u00f6k\u00f6ly \u00fat 51., 5000", 
       "date": "05/22/2020", 
-      "id": 223, 
+      "id": 222, 
       "city": "Szolnok", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11448,7 +11409,7 @@
       ], 
       "address": "Buda\u00f6rs, Kinizsi u. 1-3., 2040", 
       "date": "05/22/2020", 
-      "id": 224, 
+      "id": 223, 
       "city": "Buda\u00f6rs", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11491,7 +11452,7 @@
       ], 
       "address": "Miskolc, Solt\u00e9sz Nagy K. utca 152., 3529", 
       "date": "05/22/2020", 
-      "id": 225, 
+      "id": 224, 
       "city": "Miskolc", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11534,7 +11495,7 @@
       ], 
       "address": "Budakal\u00e1sz, Omszk park 1., 2011", 
       "date": "05/22/2020", 
-      "id": 226, 
+      "id": 225, 
       "city": "Budakal\u00e1sz", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11577,7 +11538,7 @@
       ], 
       "address": "Veszpr\u00e9m, Brusznyai utca 16-18., 8200", 
       "date": "05/22/2020", 
-      "id": 227, 
+      "id": 226, 
       "city": "Veszpr\u00e9m", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11620,7 +11581,7 @@
       ], 
       "address": "Vecs\u00e9s, F\u0151 \u00fat 250., 2220", 
       "date": "05/22/2020", 
-      "id": 228, 
+      "id": 227, 
       "city": "Vecs\u00e9s", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11663,7 +11624,7 @@
       ], 
       "address": "Tatab\u00e1nya, Gy\u0151ri \u00fat 7-9., 2800", 
       "date": "05/22/2020", 
-      "id": 229, 
+      "id": 228, 
       "city": "Tatab\u00e1nya", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11706,7 +11667,7 @@
       ], 
       "address": "Mosonmagyar\u00f3v\u00e1r, Szekeres Rich\u00e1rd utca 19., 9200", 
       "date": "05/22/2020", 
-      "id": 230, 
+      "id": 229, 
       "city": "Mosonmagyar\u00f3v\u00e1r", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11749,7 +11710,7 @@
       ], 
       "address": "Dunakeszi, N\u00e1das utca 6., 2120", 
       "date": "05/22/2020", 
-      "id": 231, 
+      "id": 230, 
       "city": "Dunakeszi", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11792,7 +11753,7 @@
       ], 
       "address": "Gy\u0151r, P\u00e1pai \u00fat 2856/3, 9024", 
       "date": "05/22/2020", 
-      "id": 232, 
+      "id": 231, 
       "city": "Gy\u0151r", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11835,7 +11796,7 @@
       ], 
       "address": "Debrecen, Piac utca 53., 4025", 
       "date": "05/22/2020", 
-      "id": 233, 
+      "id": 232, 
       "city": "Debrecen", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11878,7 +11839,7 @@
       ], 
       "address": "Sz\u00e9kesfeh\u00e9rv\u00e1r, Piac t\u00e9r 1., 8000", 
       "date": "05/22/2020", 
-      "id": 234, 
+      "id": 233, 
       "city": "Sz\u00e9kesfeh\u00e9rv\u00e1r", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11921,7 +11882,7 @@
       ], 
       "address": "Miskolc, B\u00faza t\u00e9r 1., 3526", 
       "date": "05/22/2020", 
-      "id": 235, 
+      "id": 234, 
       "city": "Miskolc", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -11964,7 +11925,7 @@
       ], 
       "address": "\u00c1cs, M1-es aut\u00f3p\u00e1lya 93, M1-es aut\u00f3p\u00e1lya 93,7. km 0390/2/A, 2941", 
       "date": "05/22/2020", 
-      "id": 236, 
+      "id": 235, 
       "city": "\u00c1cs, M1-es aut\u00f3p\u00e1lya 93", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12007,7 +11968,7 @@
       ], 
       "address": "Zalaegerszeg, Sz\u00e9chenyi t\u00e9r 1., 8900", 
       "date": "05/22/2020", 
-      "id": 237, 
+      "id": 236, 
       "city": "Zalaegerszeg", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12050,7 +12011,7 @@
       ], 
       "address": "Si\u00f3fok, Z\u00fag\u00f3 utca 1., 8600", 
       "date": "05/22/2020", 
-      "id": 238, 
+      "id": 237, 
       "city": "Si\u00f3fok", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12093,7 +12054,7 @@
       ], 
       "address": "V\u00e9rtessz\u0151l\u0151s, Hat\u00e1r \u00fat 1-3., 2837", 
       "date": "05/22/2020", 
-      "id": 239, 
+      "id": 238, 
       "city": "V\u00e9rtessz\u0151l\u0151s", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12136,7 +12097,7 @@
       ], 
       "address": "Ny\u00edregyh\u00e1za,  Zr\u00ednyi \u00fat 4-6., 4400", 
       "date": "05/22/2020", 
-      "id": 240, 
+      "id": 239, 
       "city": "Ny\u00edregyh\u00e1za", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12179,7 +12140,7 @@
       ], 
       "address": "T\u00f6r\u00f6kb\u00e1lint,  M0 0199/2., 2045", 
       "date": "05/22/2020", 
-      "id": 241, 
+      "id": 240, 
       "city": "T\u00f6r\u00f6kb\u00e1lint", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12222,7 +12183,7 @@
       ], 
       "address": "Szombathely,  F\u0151 t\u00e9r 29., 9700", 
       "date": "05/22/2020", 
-      "id": 242, 
+      "id": 241, 
       "city": "Szombathely", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12265,7 +12226,7 @@
       ], 
       "address": "Szigetszentmikl\u00f3s,  M0 0178/9/A, 2310", 
       "date": "05/22/2020", 
-      "id": 243, 
+      "id": 242, 
       "city": "Szigetszentmikl\u00f3s", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12308,7 +12269,7 @@
       ], 
       "address": "Salg\u00f3tarj\u00e1n,  Bajcsy-Zsilinszky utca 2., 3100", 
       "date": "05/22/2020", 
-      "id": 244, 
+      "id": 243, 
       "city": "Salg\u00f3tarj\u00e1n", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12351,7 +12312,7 @@
       ], 
       "address": "Kaposv\u00e1r, Berzsenyi D. utca 11., 7400", 
       "date": "05/22/2020", 
-      "id": 245, 
+      "id": 244, 
       "city": "Kaposv\u00e1r", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12394,7 +12355,7 @@
       ], 
       "address": "Eger, Sz\u00e9chenyi utca 8., 3300", 
       "date": "05/22/2020", 
-      "id": 246, 
+      "id": 245, 
       "city": "Eger", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12437,7 +12398,7 @@
       ], 
       "address": "Sz\u00e9kesfeh\u00e9rv\u00e1r, L\u00f6v\u00f6lde utca 1/a., 8000", 
       "date": "05/22/2020", 
-      "id": 247, 
+      "id": 246, 
       "city": "Sz\u00e9kesfeh\u00e9rv\u00e1r", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12480,7 +12441,7 @@
       ], 
       "address": "Debrecen, P\u00e9terfia utca 18., 4026", 
       "date": "05/22/2020", 
-      "id": 248, 
+      "id": 247, 
       "city": "Debrecen", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12523,7 +12484,7 @@
       ], 
       "address": "Miskolc, Szentp\u00e1li utca 2-6., 3526", 
       "date": "05/22/2020", 
-      "id": 249, 
+      "id": 248, 
       "city": "Miskolc", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12566,7 +12527,7 @@
       ], 
       "address": "Keszthely, Tapolcai \u00fat 56., 8360", 
       "date": "05/22/2020", 
-      "id": 250, 
+      "id": 249, 
       "city": "Keszthely", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12609,7 +12570,7 @@
       ], 
       "address": "Kecskem\u00e9t, Izs\u00e1ki \u00fat 3., 6000", 
       "date": "05/22/2020", 
-      "id": 251, 
+      "id": 250, 
       "city": "Kecskem\u00e9t", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12652,7 +12613,7 @@
       ], 
       "address": "Duna\u00fajv\u00e1ros, Baracsi \u00fat 2-4., 2400", 
       "date": "05/22/2020", 
-      "id": 252, 
+      "id": 251, 
       "city": "Duna\u00fajv\u00e1ros", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12695,7 +12656,7 @@
       ], 
       "address": "Nagykanizsa, Balatoni \u00fat 43., 8800", 
       "date": "05/22/2020", 
-      "id": 253, 
+      "id": 252, 
       "city": "Nagykanizsa", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12738,7 +12699,7 @@
       ], 
       "address": "Kecskem\u00e9t, Korona u. 2., 6000", 
       "date": "05/22/2020", 
-      "id": 254, 
+      "id": 253, 
       "city": "Kecskem\u00e9t", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12781,7 +12742,7 @@
       ], 
       "address": "\u00c9rd, Budai \u00fat 13., 2030", 
       "date": "05/22/2020", 
-      "id": 255, 
+      "id": 254, 
       "city": "\u00c9rd", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12824,7 +12785,7 @@
       ], 
       "address": "Debrecen, Kishegyesi utca 2., 4031", 
       "date": "05/22/2020", 
-      "id": 256, 
+      "id": 255, 
       "city": "Debrecen", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12867,7 +12828,7 @@
       ], 
       "address": "Szeksz\u00e1rd, Tartsay Vilmos u. 42., 7100", 
       "date": "05/22/2020", 
-      "id": 257, 
+      "id": 256, 
       "city": "Szeksz\u00e1rd", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12910,7 +12871,7 @@
       ], 
       "address": "Sz\u00e9kesfeh\u00e9rv\u00e1r, Szent Fl\u00f3ri\u00e1n krt. 3., 8000", 
       "date": "05/22/2020", 
-      "id": 258, 
+      "id": 257, 
       "city": "Sz\u00e9kesfeh\u00e9rv\u00e1r", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12953,7 +12914,7 @@
       ], 
       "address": "P\u00e9cs, Zsolnay V utca 4-6., 7632", 
       "date": "05/22/2020", 
-      "id": 259, 
+      "id": 258, 
       "city": "P\u00e9cs", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -12996,7 +12957,7 @@
       ], 
       "address": "P\u00e9cs, Megyeri \u00fat 70., 7632", 
       "date": "05/22/2020", 
-      "id": 260, 
+      "id": 259, 
       "city": "P\u00e9cs", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -13039,7 +13000,7 @@
       ], 
       "address": "Ny\u00edregyh\u00e1za, L\u00e1szl\u00f3 u. 59., 4400", 
       "date": "05/22/2020", 
-      "id": 261, 
+      "id": 260, 
       "city": "Ny\u00edregyh\u00e1za", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -13082,7 +13043,7 @@
       ], 
       "address": "Gy\u0151r, Vasv\u00e1ri P\u00e1l u. 1., 9023", 
       "date": "05/22/2020", 
-      "id": 262, 
+      "id": 261, 
       "city": "Gy\u0151r", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -13125,7 +13086,7 @@
       ], 
       "address": "P\u00e9cs, Bajcsy-Zsilinszky utca 11., 7622", 
       "date": "05/22/2020", 
-      "id": 263, 
+      "id": 262, 
       "city": "P\u00e9cs", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -13168,7 +13129,7 @@
       ], 
       "address": "Balatonlelle, R\u00e1k\u00f3czi Ferenc utca 293., 8638", 
       "date": "05/22/2020", 
-      "id": 264, 
+      "id": 263, 
       "city": "Balatonlelle", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -13211,7 +13172,7 @@
       ], 
       "address": "T\u00f6r\u00f6kb\u00e1lint, M0 aut\u00f3\u00fat 6-os Km. bal oldal. \u00e9p., 2045", 
       "date": "05/22/2020", 
-      "id": 265, 
+      "id": 264, 
       "city": "T\u00f6r\u00f6kb\u00e1lint", 
       "name": "McDonald's", 
       "oligarchs": [
@@ -13254,7 +13215,7 @@
       ], 
       "address": "Balatonkenese, Parti s\u00e9t\u00e1ny 51., 8174", 
       "date": "05/27/2020", 
-      "id": 266, 
+      "id": 265, 
       "city": "Balatonkenese", 
       "name": "Kenese Bay", 
       "oligarchs": [
@@ -13310,7 +13271,7 @@
       ], 
       "address": "P\u00e9cs, Kir\u00e1ly utca 3., 7621", 
       "date": "05/29/2020", 
-      "id": 267, 
+      "id": 266, 
       "city": "P\u00e9cs", 
       "name": "Aranyhaj\u00f3 Fogad\u00f3", 
       "oligarchs": [
@@ -13358,7 +13319,7 @@
       ], 
       "address": "P\u00e9cs, Kir\u00e1ly utca 5., 7621", 
       "date": "05/29/2020", 
-      "id": 268, 
+      "id": 267, 
       "city": "P\u00e9cs", 
       "name": "Palatinus Hotel", 
       "oligarchs": [
@@ -13406,7 +13367,7 @@
       ], 
       "address": "Velence, B\u00e9ke u. 57., 2481", 
       "date": "05/27/2020", 
-      "id": 269, 
+      "id": 268, 
       "city": "Velence", 
       "name": "Velence Resort", 
       "oligarchs": [
@@ -13449,7 +13410,7 @@
       ], 
       "address": "Balatonf\u00fcred, Sz\u00e9chenyi u. 10., 8230", 
       "date": "05/29/2020", 
-      "id": 270, 
+      "id": 269, 
       "city": "Balatonf\u00fcred", 
       "name": "UNI Hotel", 
       "oligarchs": [
@@ -13496,7 +13457,7 @@
       ], 
       "address": "Zalaszabar, hrsz. 1565., 8743", 
       "date": "05/29/2020", 
-      "id": 271, 
+      "id": 270, 
       "city": "Zalaszabar", 
       "name": "KalandoZoo", 
       "oligarchs": [
@@ -13556,7 +13517,7 @@
       ], 
       "address": "Bicske, Szent L\u00e1szl\u00f3 u. 47., 2060", 
       "date": "05/30/2020", 
-      "id": 272, 
+      "id": 271, 
       "city": "Bicske", 
       "name": "Fogad\u00f3 a H\u00e1rom L\u00f3k\u00f6t\u0151h\u00f6z", 
       "oligarchs": [
@@ -13615,7 +13576,7 @@
       ], 
       "address": "Si\u00f3fok, Si\u00f3fok, Erkel Ferenc u. 2/C, 8600", 
       "date": "05/30/2020", 
-      "id": 273, 
+      "id": 272, 
       "city": "Si\u00f3fok", 
       "name": "Hotel Az\u00far", 
       "oligarchs": [
@@ -13675,7 +13636,7 @@
       ], 
       "address": "S\u00e1rv\u00e1r, Vadkert krt. 5., 9600", 
       "date": "06/10/2020", 
-      "id": 274, 
+      "id": 273, 
       "city": "S\u00e1rv\u00e1r", 
       "name": "Spirit Hotel", 
       "oligarchs": [
@@ -13731,7 +13692,7 @@
       ], 
       "address": "Gy\u0151r, Juharfa u. 11., 9027", 
       "date": "06/28/2020", 
-      "id": 275, 
+      "id": 274, 
       "city": "Gy\u0151r", 
       "name": "WHB Hotel", 
       "oligarchs": [
@@ -13783,7 +13744,7 @@
       ], 
       "address": "Gyomaendr\u0151d, Dr. Szil\u00e1gyi Ferenc \u00fcd\u00fcl\u0151telep, 5500", 
       "date": "06/28/2020", 
-      "id": 276, 
+      "id": 275, 
       "city": "Gyomaendr\u0151d", 
       "name": "Hidash\u00e1ti Panzi\u00f3", 
       "oligarchs": [
@@ -13830,7 +13791,7 @@
       ], 
       "address": "Erd\u0151b\u00e9nye, Kossuth Lajos u. 39., 3932", 
       "date": "06/28/2020", 
-      "id": 277, 
+      "id": 276, 
       "city": "Erd\u0151b\u00e9nye", 
       "name": "Bardon Bor\u00e1szat", 
       "oligarchs": [
@@ -13873,7 +13834,7 @@
       ], 
       "address": "Balatonlelle, R\u00e1k\u00f3czi \u00fat 56., 8638", 
       "date": "06/28/2020", 
-      "id": 278, 
+      "id": 277, 
       "city": "Balatonlelle", 
       "name": "Becsali cs\u00e1rda", 
       "oligarchs": [
@@ -13916,7 +13877,7 @@
       ], 
       "address": "Tura, Park utca 37., 2194", 
       "date": "06/28/2020", 
-      "id": 279, 
+      "id": 278, 
       "city": "Tura", 
       "name": "Botaniq", 
       "oligarchs": [
@@ -13959,7 +13920,7 @@
       ], 
       "address": "T\u00e1llya, R\u00e1k\u00f3czi \u00fat 23., 3907", 
       "date": "06/28/2020", 
-      "id": 280, 
+      "id": 279, 
       "city": "T\u00e1llya", 
       "name": "Oroszl\u00e1nos fogad\u00f3", 
       "oligarchs": [
@@ -14007,7 +13968,7 @@
       ], 
       "address": "Tihany, Aranyh\u00e1z utca 32., 8237", 
       "date": "07/30/2020", 
-      "id": 281, 
+      "id": 280, 
       "city": "Tihany", 
       "name": "Barackvir\u00e1g panzi\u00f3", 
       "oligarchs": [
@@ -14063,7 +14024,7 @@
       ], 
       "address": "Hegymagas, hrsz: 869, 8265", 
       "date": "08/10/2020", 
-      "id": 282, 
+      "id": 281, 
       "city": "Hegymagas", 
       "name": "Tar\u00e1nyi Pr\u00e9sh\u00e1z 1780 ", 
       "oligarchs": [
@@ -14110,7 +14071,7 @@
       ], 
       "address": "Tihany, Major u. 2., 8237", 
       "date": "08/14/2020", 
-      "id": 283, 
+      "id": 282, 
       "city": "Tihany", 
       "name": "Mandula Villa", 
       "oligarchs": [
@@ -14157,7 +14118,7 @@
       ], 
       "address": "M\u00e1d, R\u00e1k\u00f3czi utca 59., 3909", 
       "date": "08/26/2020", 
-      "id": 284, 
+      "id": 283, 
       "city": "M\u00e1d", 
       "name": "Demetervin", 
       "oligarchs": [
@@ -14208,7 +14169,7 @@
       ], 
       "address": "M\u00e1d, R\u00e1k\u00f3czi utca 57., 3909", 
       "date": "08/26/2020", 
-      "id": 285, 
+      "id": 284, 
       "city": "M\u00e1d", 
       "name": "Demetervin pinc\u00e9szet", 
       "oligarchs": [
@@ -14223,6 +14184,176 @@
       ], 
       "mainCEO": [], 
       "type": "bor\u00e1szat", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.512832, 
+        19.074034
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Somlyai Zolt\u00e1n"
+        }
+      ], 
+      "company": {
+        "link": "", 
+        "name": "Alice Hotel Kft."
+      }, 
+      "link": "https://24.hu/fn/gazdasag/2020/08/31/tiborcz-istvan-paar-attila-andrassy-ut-butikhotel-granit-bank/", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "address": "Budapest, Andr\u00e1ssy \u00fat 116., 1062", 
+      "date": "08/30/2020", 
+      "id": 285, 
+      "city": "Budapest", 
+      "name": "Hotel Alice", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan", 
+          "name": "Tiborcz Istv\u00e1n Ferenc"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.93549, 
+        22.458705
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Hubert Katalin"
+        }
+      ], 
+      "company": {
+        "link": "", 
+        "name": "Szatm\u00e1r Nekt\u00e1rja Nonprofit Kft."
+      }, 
+      "link": "https://24.hu/belfold/2020/09/02/kovacs-sandor-fidesz-geberjen-turisztika-europai-unios-penz/", 
+      "mainOligarch": [], 
+      "address": "G\u00e9berj\u00e9n, M\u00f3ricz Zsigmond utca 2/A., 4754", 
+      "date": "09/02/2020", 
+      "id": 286, 
+      "city": "G\u00e9berj\u00e9n", 
+      "name": "T\u00fcnd\u00e9rmez\u0151 Vend\u00e9gh\u00e1z", 
+      "oligarchs": [], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": "Kov\u00e1cs S\u00e1ndor fideszes orsz\u00e1ggy\u0171l\u00e9si k\u00e9pvisel\u0151 birtok\u00e1n 60 milli\u00f3 forint vissza nem t\u00e9r\u00edtend\u0151 t\u00e1mogat\u00e1sb\u00f3l l\u00e9tes\u00fcltek turisztikai beruh\u00e1z\u00e1sok. A vend\u00e9gh\u00e1zat \u00fczemeltet\u0151 c\u00e9get tulajdonl\u00f3 egyes\u00fcletet Kov\u00e1cs feles\u00e9ge vezeti."
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.042626, 
+        19.345934
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "De\u00e1k Istv\u00e1n J\u00e1nos"
+        }
+      ], 
+      "company": {
+        "link": "", 
+        "name": "Sarl\u00f3spuszta Zrt."
+      }, 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }
+      ], 
+      "address": "Tat\u00e1rszentgy\u00f6rgy, Sarl\u00f3spuszta, 2375", 
+      "date": "09/18/2020", 
+      "id": 287, 
+      "city": "Tat\u00e1rszentgy\u00f6rgy", 
+      "name": "Sarl\u00f3spuszta club hotel", 
+      "oligarchs": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/csanyi-sandor", 
+          "name": "Cs\u00e1nyi S\u00e1ndor"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
+      "details": ""
+    }
+  }, 
+  {
+    "geometry": {
+      "type": "Point", 
+      "coordinates": [
+        47.505509, 
+        19.047935
+      ]
+    }, 
+    "type": "Feature", 
+    "properties": {
+      "ceos": [
+        {
+          "link": "", 
+          "name": "Nana Elek"
+        }
+      ], 
+      "company": {
+        "link": "", 
+        "name": "St\u00fadi\u00f3-V Kft."
+      }, 
+      "link": "", 
+      "mainOligarch": [
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/leisztinger-tamas", 
+          "name": "Leisztinger Tam\u00e1s"
+        }
+      ], 
+      "address": "Budapest, V\u00e9rtanuk tere 1., 1054", 
+      "date": "09/18/2020", 
+      "id": 288, 
+      "city": "Budapest", 
+      "name": "Kossuth t\u00e9ri apartman", 
+      "oligarchs": [
+        {
+          "link": "", 
+          "name": "Leisztinger J\u00f3zsefn\u00e9"
+        }, 
+        {
+          "link": "https://k-monitor.hu/adatbazis/cimkek/leisztinger-tamas", 
+          "name": "Leisztinger Tam\u00e1s"
+        }, 
+        {
+          "link": "", 
+          "name": "Leisztinger J\u00f3zsef"
+        }
+      ], 
+      "mainCEO": [], 
+      "type": "sz\u00e1lloda", 
       "details": ""
     }
   }
