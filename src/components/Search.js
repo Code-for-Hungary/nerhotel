@@ -42,8 +42,8 @@ function Search() {
   const {hotels} = React.useContext(HotelContext);
   const [value, setValue] = React.useState('');
 
-  const onSearchCallback = React.useCallback((e) => {
-    e.preventDefault();
+  const onSearchCallback = React.useCallback((event) => {
+    event.preventDefault();
     dispatch({ type: 'TogglePopup', showPopup: false });
 
     const results = hotels.filter(hotel => (findProperty(hotel.properties, value.toLowerCase())));
@@ -51,9 +51,9 @@ function Search() {
     dispatch({ type: 'ToggleList', showList: true });
   }, [dispatch, hotels, value]);
 
-  const onKeyUpCallback = React.useCallback((e) => {
-    setValue(e.target.value);
-    if (e.key === 'Escape' || value === '') {
+  const onKeyUpCallback = React.useCallback((event) => {
+    setValue(event.target.value);
+    if (event.key === 'Escape' || value === '') {
       dispatch({ type: 'SetList', list: [] });
       dispatch({ type: 'ToggleList', showList: false });
     }
