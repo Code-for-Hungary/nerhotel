@@ -20,9 +20,9 @@ import { MapContext, HotelContext } from '../context';
 
 const filterPoints = (points, bounds) => {
   return points.filter(point => {
-    const [lat, lng] = point.geometry.coordinates;
-    return (lng > bounds._southWest.lng && lng < bounds._northEast.lng
-      && lat > bounds._southWest.lat && lat < bounds._northEast.lat);
+    const [latitude, longitude] = point.geometry.coordinates;
+    return (longitude > bounds._southWest.lng && longitude < bounds._northEast.lng
+      && latitude > bounds._southWest.lat && latitude < bounds._northEast.lat);
   });
 };
 

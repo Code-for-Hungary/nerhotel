@@ -45,7 +45,7 @@ import orangeIcon from '../assets/marker-icon-orange.svg';
 const Hotel = (props) => {
   const {dispatch} = React.useContext(MapContext);
   const {hotels} = React.useContext(HotelContext);
-  const hotelById = hotels.find(item => item.properties.id === parseInt(props.id));
+  const hotelById = hotels.find(hotel => hotel.properties.id === parseInt(props.id));
   const data = hotelById.properties;
   const [lat, lng] = hotelById.geometry.coordinates;
 
