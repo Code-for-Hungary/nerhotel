@@ -3,6 +3,10 @@ import {Map as LeafletMap, Marker, TileLayer} from 'react-leaflet';
 import {Link} from "react-router-dom";
 import Icon from './Icon.js';
 
+import {getOligarchData} from '../utils';
+import {MapContext, HotelContext} from '../context';
+import {createOrangeIcon} from "../leaflet-helper.js";
+
 import styles from '../css/hotel.module.css';
 
 import arrowIcon from '../assets/arrow-icon.svg';
@@ -11,9 +15,7 @@ import hotelIcon from '../assets/hotel-icon.svg';
 import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
 
-import L from 'leaflet';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-import orangeIcon from '../assets/marker-icon-orange.svg';
+const icon = createOrangeIcon();
 
 /**
  * @typedef {Object} HotelGeometry
