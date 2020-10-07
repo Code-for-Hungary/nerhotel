@@ -14,17 +14,32 @@ import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import orangeIcon from '../assets/marker-icon-orange.svg';
 
-import { getOligarchData } from '../utils';
-import { MapContext, HotelContext } from '../context';
+/**
+ * @typedef {Object} HotelGeometry
+ * @property {string} type
+ * @property {number[]} coordinates
+ */
 
-const icon = L.icon({
-  iconUrl: orangeIcon,
-  shadowUrl: iconShadow,
-  iconSize: [40, 62],
-  iconAnchor: [20, 52],
-  shadowSize: [40, 62],
-  shadowAnchor: [12, 62],
-});
+/**
+ * @typedef {Object} Hotel
+ * @property {HotelGeometry} geometry
+ * @property {string} type
+ * @property {Object} properties
+ * @property {int} properties.id
+ * @property {string} properties.name
+ * @property {string} properties.type One of these:
+ *           borászat, bár, étterem, fagyizó, fürdő, fürdő, kalandpark, kemping, kávézó, pékség, sport, szálloda, szálloda és strand, sörfőzde.
+ * @property {string} properties.details
+ * @property {string} properties.link
+ * @property {string} properties.date
+ * @property {string} properties.city
+ * @property {string} properties.address
+ * @property {{name: string, link: string}} properties.company
+ * @property {{name: string, link: string}[]} properties.ceos
+ * @property {{name: string, link: string}[]} properties.mainCEO
+ * @property {{name: string, link: string}[]} properties.oligarchs
+ * @property {{name: string, link: string}} properties.mainOligarch
+ */
 
 const Hotel = (props) => {
   const {dispatch} = React.useContext(MapContext);
