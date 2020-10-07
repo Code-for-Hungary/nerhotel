@@ -1,0 +1,31 @@
+.data-export {
+    width: 100%;
+    max-width: 960px;
+    margin: 150px auto 80px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .data-export {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.data-export section {
+    margin-bottom: 45px;
+}
+
+.data-export h2 {
+    font-size: 24px;
+}
+
+.data-export p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.data-export a {
+    color: #000;
+    margin-bottom: 15px;
+}
