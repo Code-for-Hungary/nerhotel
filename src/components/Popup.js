@@ -55,8 +55,7 @@ const Popup = (props) => {
                     {oligarchsToShow.map((oligarch, key) => (
                       <div key={key}>
                         {oligarch.data.link !== '' ? (
-                           <a href={oligarch.data.link} target="_blank"
-                           rel="noopener noreferrer">{oligarch.name}</a>
+                           <Link to={`/person/${oligarch.name}`}>{oligarch.name}</Link>
                         ) : (
                           <p>{oligarch.name}</p>
                         )}

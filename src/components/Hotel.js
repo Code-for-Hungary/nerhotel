@@ -1,5 +1,6 @@
 import React from 'react';
-import { Map as LeafletMap, Marker, TileLayer } from 'react-leaflet';
+import {Map as LeafletMap, Marker, TileLayer} from 'react-leaflet';
+import {Link} from "react-router-dom";
 import Icon from './Icon.js';
 
 import styles from '../css/hotel.module.css';
@@ -81,12 +82,7 @@ const Hotel = (props) => {
               <p>Kapcsolódó személyek:<br/>
                 {oligarchData.map((oligarch, key) => (
                   <span key={key} className={styles.oligarch}>
-                    {oligarch.data.link !== '' ? (
-                       <a href={oligarch.data.link} target="_blank"
-                       rel="noopener noreferrer">{oligarch.name}</a>
-                    ) : (
-                      <p>{oligarch.name}</p>
-                    )}
+                     <Link to={`/person/${oligarch.name}`}>{oligarch.name}</Link>
                     <span className={styles.title}> ({oligarch.data.type})</span><br/>
                   </span>
                 ))}
