@@ -41,7 +41,7 @@ const icon = createOrangeIcon();
  * @property {{name: string, link: string}[]} properties.ceos
  * @property {{name: string, link: string}[]} properties.mainCEO
  * @property {{name: string, link: string}[]} properties.oligarchs
- * @property {{name: string, link: string}} properties.mainOligarch
+ * @property {{name: string, link: string}[]} properties.mainOligarch
  */
 
 const Hotel = (props) => {
