@@ -58,7 +58,7 @@ const Hotel = (props) => {
     }
   ;
 
-  const oligarchData = getOligarchData(data.oligarchs, data.ceos);
+  const oligarchData = getOligarchData(data.oligarchs || [], data.ceos || []);
 
   return (
     <div className={[styles.hotel, 'hotel'].join(' ')}>
@@ -78,7 +78,7 @@ const Hotel = (props) => {
               </p>
             </div>
           )}
-          {oligarchData && oligarchData.length > 0 && (
+          {oligarchData.length && (
             <div className={styles.hotelRow}>
               <Icon img={horseIcon} size="small"/>
               <p>Kapcsolódó személyek:<br/>
