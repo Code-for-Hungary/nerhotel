@@ -78,7 +78,7 @@ const Hotel = (props) => {
               </p>
             </div>
           )}
-          {oligarchData.length && (
+          {(oligarchData.length > 0) && (
             <div className={styles.hotelRow}>
               <Icon img={horseIcon} size="small"/>
               <p>Kapcsolódó személyek:<br/>

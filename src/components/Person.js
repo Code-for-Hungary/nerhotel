@@ -42,7 +42,7 @@ const Person = (props) => {
         <div className={styles.info}>
           <h1>{personName}</h1>
           {personLink && <p>K-Monitor link: <a href={personLink} target="_blank" rel="noopener noreferrer">{personName}</a></p>}
-          {affiliatedHotels.length && (
+          {(affiliatedHotels.length > 0) && (
             <>
               <div className={styles.hotelRow}>
                 <Icon img={hotelIcon} size="small"/>
