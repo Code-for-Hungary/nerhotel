@@ -41,7 +41,7 @@ const Person = (props) => {
       <div className={styles.hotelWrapper}>
         <div className={styles.info}>
           <h1>{personName}</h1>
-          <p>K-Monitor link: <a href={personLink} target="_blank" rel="noopener noreferrer">{personName}</a></p>
+          {personLink && <p>K-Monitor link: <a href={personLink} target="_blank" rel="noopener noreferrer">{personName}</a></p>}
           {affiliatedHotels.length && (
             <>
               <div className={styles.hotelRow}>
