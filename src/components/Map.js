@@ -91,7 +91,7 @@ function MapComponent() {
               attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
             />
             <MarkerClusterGroup maxClusterRadius={6} zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
-              {getMarkerList(filteredPoints, selectedPoint, onMarkerClickCallback)}
+              {getMarkerList({points: filteredPoints, selectedPoint, clickCallback: onMarkerClickCallback})}
             </MarkerClusterGroup>
             <LocateControl options={locateOptions} started={locationRequired} />
           </Map>

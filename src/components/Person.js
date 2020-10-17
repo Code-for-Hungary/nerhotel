@@ -72,8 +72,7 @@ const Person = (props) => {
               url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
               attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
             />
-            {getMarkerList(affiliatedHotels, null, () => {
-            })}
+            {getMarkerList({points: affiliatedHotels})}
           </Map>
         </div>
       </div>
