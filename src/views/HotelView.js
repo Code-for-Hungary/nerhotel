@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import Layout from './Layout';
 import Hotel from '../components/Hotel.js';
 

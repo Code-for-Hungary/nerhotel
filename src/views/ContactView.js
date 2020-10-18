@@ -2,6 +2,10 @@ import React from 'react';
 import Layout from './Layout';
 import styles from '../css/about.module.css';
 
+// TODO: This is called "AboutView" but it's in a file called "ContactView". Also the CSS is reused.
+//       Suggestion: rename constant to "ContactView", and rename the CSS to something more generic,
+//                   and keep on using it here. Also, in DataExportView, the same CSS should be used
+//                   as it's now a duplicate.
 const AboutView = (props) => {
   return (
     <Layout history={props.history}>
