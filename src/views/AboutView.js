@@ -27,6 +27,7 @@ const AboutView = (props) => {
             sajtóprofiljuk alapján valamely politikailag exponált személlyel kiterjedt, a szereplők reputációját befolyásoló kapcsolatot tartanak fenn.</p>
           <p>A NER HOTEL célja, hogy ezen személyek turisztikai érdekeltségeiről hiteles és rendszerezett információt kínáljon, ami egy szempontja lehet a tudatos fogyasztói döntéseknek. Az ehhez
             szükséges információk feltérképezését nyilvánosan is elérhető sajtóhírek és cégadatok alapján, a K-Monitor sajtóadatbázisát felhasználva folyamatosan végezzük.</p>
+            <p>Az adatbázis tartalmának csv formátumban letöltéséhez <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSEboU5aIOUgZ-hmNpLQIYB8EZTc1HYAFf9mL97jvjVl6S9auEiFxJ1fwMpbr6-7dwPYl57BOK4ANfs/pub?gid=0&single=true&output=csv">kattints ide</a> (2020. október 7-i állapot).</p>
         </section>
         <section>
           <h2>Milyen adatokra alapozzuk mindezt?</h2>
