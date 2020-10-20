@@ -8,6 +8,7 @@ import MapView from './views/MapView';
 import AboutView from './views/AboutView';
 import ContactView from './views/ContactView';
 import PersonView from './views/PersonView';
+import DataExportView from './views/DataExportView';
 
 import { MapContext, HotelContext } from './context';
 import reducer, { initialState } from './reducer';
@@ -29,6 +30,7 @@ function App () {
               <Route path="/about" exact component={AboutView}/>
               <Route path="/contact" exact component={ContactView}/>
               <Route path="/person/:name" exact component={PersonView}/>
+              <Route path="/data-export" exact component={DataExportView}/>
             </Switch>
           </HashRouter>
         </MapContext.Provider>
