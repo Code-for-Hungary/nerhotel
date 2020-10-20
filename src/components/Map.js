@@ -13,13 +13,18 @@ import styles from '../css/map.module.css';
 import { MapContext, HotelContext } from '../context';
 import {createClusterCustomIcon, getMarkerList} from '../leaflet-helper.js';
 
-const filterPoints = (points, bounds) => {
+/**
+ * @param {Hotel[]} points
+ * @param {LatLngBounds} bounds
+ * @returns {*}
+ */
+function filterPoints(points, bounds) {
   return points.filter(point => {
     const [latitude, longitude] = point.geometry.coordinates;
     return (longitude > bounds._southWest.lng && longitude < bounds._northEast.lng
       && latitude > bounds._southWest.lat && latitude < bounds._northEast.lat);
   });
-};
+}
 
 const locateOptions = {
     position: 'topright',
