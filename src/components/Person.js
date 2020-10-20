@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {Map, TileLayer} from 'react-leaflet';
-import {MapContext, HotelContext} from '../context';
+import {HotelContext} from '../context';
 import {getMarkerList} from '../leaflet-helper.js';
 
 import Icon from './Icon.js';
@@ -12,8 +12,6 @@ import hotelIcon from '../assets/hotel-icon.svg';
 
 const Person = (props) => {
   const personName = props.name;
-
-  const {dispatch} = React.useContext(MapContext);
 
   const hotelContext = React.useContext(HotelContext);
   /** @type {Hotel[]} */
@@ -31,8 +29,6 @@ const Person = (props) => {
 
   const goBack = () => {
       props.history.push('/');
-      dispatch({type: 'SetSelectedPoint', point: null});
-      dispatch({type: 'SetCenter', center: [centerLatitude, centerLongitude]});
     }
   ;
 
