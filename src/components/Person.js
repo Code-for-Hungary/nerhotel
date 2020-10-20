@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import Leaflet from "leaflet";
 import {Map, TileLayer} from 'react-leaflet';
 import {HotelContext} from '../context';
 import {getMarkerList} from '../leaflet-helper.js';
@@ -18,14 +19,10 @@ const Person = (props) => {
   const hotels = hotelContext.hotels;
 
   const affiliatedHotels = hotels.filter(hotel => hotel.properties.oligarchs.find(oligarch => oligarch.name === personName));
-  /** @type {number[]} */
-  const latitudes = affiliatedHotels.map(hotel => hotel.geometry.coordinates[0]);
-  /** @type {number[]} */
-  const longitudes = affiliatedHotels.map(hotel => hotel.geometry.coordinates[1]);
-  const centerLatitude = Math.min(...latitudes) + (Math.max(...latitudes) - Math.min(...latitudes)) / 2;
-  const centerLongitude = Math.min(...longitudes) + (Math.max(...longitudes) - Math.min(...longitudes)) / 2;
 
   const personLink = affiliatedHotels.length ? affiliatedHotels[0].properties.oligarchs.find(oligarch => oligarch.name === personName).link : '';
+
+  const bounds = new Leaflet.LatLngBounds(affiliatedHotels.map(hotel => ([hotel.geometry.coordinates[0], hotel.geometry.coordinates[1]])));
 
   const goBack = () => {
       props.history.push('/');
@@ -63,7 +60,7 @@ const Person = (props) => {
           </div>
         </div>
         <div className={styles.map}>
-          <Map className="markercluster-map" center={[centerLatitude, centerLongitude]} zoom={14} maxZoom={19} zoomControl={false}>
+          <Map className="markercluster-map" bounds={bounds} maxZoom={19}>
             <TileLayer
               url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
               attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
