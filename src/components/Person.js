@@ -11,18 +11,33 @@ import styles from '../css/hotel.module.css';
 import arrowIcon from '../assets/arrow-icon.svg';
 import hotelIcon from '../assets/hotel-icon.svg';
 
+/**
+ * @param {Hotel[]} hotels
+ * @param {string} personName
+ * @returns {Hotel[]}
+ */
+function _getAllHotelsAffiliatedWithPerson(hotels, personName) {
+  return hotels.filter(
+    hotel => hotel.properties.ceos.find(ceo => ceo.name === personName)
+      || hotel.properties.oligarchs.find(oligarch => oligarch.name === personName));
+}
+
 const Person = (props) => {
   const personName = props.name;
 
   const hotelContext = React.useContext(HotelContext);
   /** @type {Hotel[]} */
   const hotels = hotelContext.hotels;
+  const affiliatedHotels = _getAllHotelsAffiliatedWithPerson(hotels, personName);
 
-  const affiliatedHotels = hotels.filter(hotel => hotel.properties.oligarchs.find(oligarch => oligarch.name === personName));
+  /** @type {{name: string, link: string}|undefined} */
+  const person = affiliatedHotels
+    ? (affiliatedHotels[0].properties.ceos.find(ceo => ceo.name === personName)
+    || affiliatedHotels[0].properties.oligarchs.find(oligarch => oligarch.name === personName)) : undefined;
+  /** @type {string} */
+  const personUrl = (affiliatedHotels.length && person) ? person.link : '';
 
-  const personLink = affiliatedHotels.length ? affiliatedHotels[0].properties.oligarchs.find(oligarch => oligarch.name === personName).link : '';
-
-  const bounds = new Leaflet.LatLngBounds(affiliatedHotels.map(hotel => ([hotel.geometry.coordinates[0], hotel.geometry.coordinates[1]])));
+  const bounds = affiliatedHotels.length ? new Leaflet.LatLngBounds(affiliatedHotels.map(hotel => ([hotel.geometry.coordinates[0], hotel.geometry.coordinates[1]]))) : undefined;
 
   const goBack = () => {
       props.history.push('/');
@@ -34,7 +49,7 @@ const Person = (props) => {
       <div className={styles.hotelWrapper}>
         <div className={styles.info}>
           <h1>{personName}</h1>
-          {personLink && <p>K-Monitor link: <a href={personLink} target="_blank" rel="noopener noreferrer">{personName}</a></p>}
+          {personUrl && <p>K-Monitor link: <a href={personUrl} target="_blank" rel="noopener noreferrer">{personName}</a></p>}
           {(affiliatedHotels.length > 0) && (
             <>
               <div className={styles.hotelRow}>
