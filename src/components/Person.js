@@ -10,6 +10,7 @@ import Icon from './Icon.js';
 import styles from '../css/hotel.module.css';
 import arrowIcon from '../assets/arrow-icon.svg';
 import hotelIcon from '../assets/hotel-icon.svg';
+import horseIcon from '../assets/horse-icon.svg';
 
 /**
  * @param {Hotel[]} hotels
@@ -34,6 +35,9 @@ const Person = (props) => {
   const person = affiliatedHotels
     ? (affiliatedHotels[0].properties.ceos.find(ceo => ceo.name === personName)
     || affiliatedHotels[0].properties.oligarchs.find(oligarch => oligarch.name === personName)) : undefined;
+  const isMainOligarch = !!(affiliatedHotels
+    && (affiliatedHotels[0].properties.mainCEO.find(ceo => ceo.name === personName)
+      || affiliatedHotels[0].properties.mainOligarch.find(oligarch => oligarch.name === personName)));
   /** @type {string} */
   const personUrl = (affiliatedHotels.length && person) ? person.link : '';
 
@@ -48,7 +52,7 @@ const Person = (props) => {
     <div className={[styles.hotel, 'hotel'].join(' ')}>
       <div className={styles.hotelWrapper}>
         <div className={styles.info}>
-          <h1>{personName}</h1>
+          <h1>{isMainOligarch && <Link to="/about"><Icon img={horseIcon} size="large" className={styles.inlineIcon}/></Link>}{personName}</h1>
           {personUrl && <p>K-Monitor link: <a href={personUrl} target="_blank" rel="noopener noreferrer">{personName}</a></p>}
           {(affiliatedHotels.length > 0) && (
             <>
