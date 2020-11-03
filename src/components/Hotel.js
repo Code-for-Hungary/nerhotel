@@ -1,6 +1,11 @@
 import React from 'react';
-import { Map as LeafletMap, Marker, TileLayer } from 'react-leaflet';
+import {Map as LeafletMap, Marker, TileLayer} from 'react-leaflet';
+import {Link} from "react-router-dom";
 import Icon from './Icon.js';
+
+import {getOligarchData} from '../utils';
+import {MapContext, HotelContext} from '../context';
+import {createOrangeIcon} from "../leaflet-helper.js";
 
 import styles from '../css/hotel.module.css';
 
@@ -10,26 +15,39 @@ import hotelIcon from '../assets/hotel-icon.svg';
 import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
 
-import L from 'leaflet';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-import orangeIcon from '../assets/marker-icon-orange.svg';
+const icon = createOrangeIcon();
 
-import { getOligarchData } from '../utils';
-import { MapContext, HotelContext } from '../context';
+/**
+ * @typedef {Object} HotelGeometry
+ * @property {string} type
+ * @property {number[]} coordinates
+ */
 
-const icon = L.icon({
-  iconUrl: orangeIcon,
-  shadowUrl: iconShadow,
-  iconSize: [40, 62],
-  iconAnchor: [20, 52],
-  shadowSize: [40, 62],
-  shadowAnchor: [12, 62],
-});
+/**
+ * @typedef {Object} Hotel
+ * @property {HotelGeometry} geometry
+ * @property {string} type
+ * @property {Object} properties
+ * @property {int} properties.id
+ * @property {string} properties.name
+ * @property {string} properties.type One of these:
+ *           borászat, bár, étterem, fagyizó, fürdő, fürdő, kalandpark, kemping, kávézó, pékség, sport, szálloda, szálloda és strand, sörfőzde.
+ * @property {string} properties.details
+ * @property {string} properties.link
+ * @property {string} properties.date
+ * @property {string} properties.city
+ * @property {string} properties.address
+ * @property {{name: string, link: string}} properties.company
+ * @property {{name: string, link: string}[]} properties.ceos
+ * @property {{name: string, link: string}[]} properties.mainCEO
+ * @property {{name: string, link: string}[]} properties.oligarchs
+ * @property {{name: string, link: string}[]} properties.mainOligarch
+ */
 
 const Hotel = (props) => {
   const {dispatch} = React.useContext(MapContext);
   const {hotels} = React.useContext(HotelContext);
-  const hotelById = hotels.find(item => item.properties.id === parseInt(props.id));
+  const hotelById = hotels.find(hotel => hotel.properties.id === parseInt(props.id));
   const data = hotelById.properties;
   const [lat, lng] = hotelById.geometry.coordinates;
 
@@ -40,7 +58,7 @@ const Hotel = (props) => {
     }
   ;
 
-  const oligarchData = getOligarchData(data.oligarchs, data.ceos);
+  const oligarchData = getOligarchData(data.oligarchs || [], data.ceos || []);
 
   return (
     <div className={[styles.hotel, 'hotel'].join(' ')}>
@@ -60,18 +78,13 @@ const Hotel = (props) => {
               </p>
             </div>
           )}
-          {oligarchData && oligarchData.length > 0 && (
+          {(oligarchData.length > 0) && (
             <div className={styles.hotelRow}>
               <Icon img={horseIcon} size="small"/>
               <p>Kapcsolódó személyek:<br/>
                 {oligarchData.map((oligarch, key) => (
                   <span key={key} className={styles.oligarch}>
-                    {oligarch.data.link !== '' ? (
-                       <a href={oligarch.data.link} target="_blank"
-                       rel="noopener noreferrer">{oligarch.name}</a>
-                    ) : (
-                      <p>{oligarch.name}</p>
-                    )}
+                     <Link to={`/person/${oligarch.name}`}>{oligarch.name}</Link>
                     <span className={styles.title}> ({oligarch.data.type})</span><br/>
                   </span>
                 ))}

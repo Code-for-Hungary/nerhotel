@@ -1,13 +1,8 @@
 import React from 'react';
 
-import { Map, Marker, TileLayer } from 'react-leaflet';
+import {Map, TileLayer} from 'react-leaflet';
 import LocateControl from './LocateControl.js';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
-
-import L from 'leaflet';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-import orangeIcon from '../assets/marker-icon-orange.svg';
-import blueIcon from '../assets/marker-icon-blue.svg';
 
 import Popup from '../components/Popup';
 import Icon from '../components/Icon';
@@ -16,15 +11,20 @@ import listIcon from '../assets/menu-icon.svg';
 
 import styles from '../css/map.module.css';
 import { MapContext, HotelContext } from '../context';
+import {createClusterCustomIcon, getMarkerList} from '../leaflet-helper.js';
 
-
-const filterPoints = (points, bounds) => {
+/**
+ * @param {Hotel[]} points
+ * @param {LatLngBounds} bounds
+ * @returns {*}
+ */
+function filterPoints(points, bounds) {
   return points.filter(point => {
-    const [lat, lng] = point.geometry.coordinates;
-    return (lng > bounds._southWest.lng && lng < bounds._northEast.lng
-      && lat > bounds._southWest.lat && lat < bounds._northEast.lat);
+    const [latitude, longitude] = point.geometry.coordinates;
+    return (longitude > bounds._southWest.lng && longitude < bounds._northEast.lng
+      && latitude > bounds._southWest.lat && latitude < bounds._northEast.lat);
   });
-};
+}
 
 const locateOptions = {
     position: 'topright',
@@ -33,38 +33,6 @@ const locateOptions = {
     enableHighAccuracy: true,
     compassStyle: { radius: 2, color: '#65a' }
   };
-
-const getIcon = (iconUrl) => {
-  return L.icon({
-    iconUrl,
-    shadowUrl: iconShadow,
-    iconSize: [40, 62],
-    iconAnchor: [20, 52],
-    shadowSize: [40, 62],
-    shadowAnchor: [12, 62]
-  });
-};
-
-const createClusterCustomIcon = (cluster) => {
-  return L.divIcon({
-    html: `<span>${cluster.getChildCount()}</span>`,
-    className: styles.clusterMarker,
-    iconSize: L.point(40, 40, true),
-  });
-};
-
-const getMarkerList = (filteredPoints, selectedPoint, callback) => {
-  return filteredPoints.map((point, i) => {
-    const [lat, lng] = point.geometry.coordinates;
-    const isSelected = selectedPoint && selectedPoint.properties.id === point.properties.id;
-    const DefaultIcon = getIcon(orangeIcon);
-    const ActiveIcon = getIcon(blueIcon);
-
-    return (
-      <Marker position={[lat, lng]} key={i} icon={isSelected ? ActiveIcon : DefaultIcon} onClick={callback(point)}/>
-    );
-  });
-};
 
 function MapComponent() {
   const {
@@ -100,10 +68,18 @@ function MapComponent() {
     }
   }, [locationRequired, dispatch]);
 
-  const onMarkerClickCallback = React.useCallback((point) => () => {
-    dispatch({ type: 'SetSelectedPoint', point });
-    dispatch({ type: 'TogglePopup', showPopup: true });
-  }, [dispatch]);
+  const onMarkerClickCallback = React.useCallback(createCallbackForPoint, [dispatch]);
+
+  /**
+   * @param {Hotel} point
+   * @returns {function(): void}
+   */
+  function createCallbackForPoint(point) {
+    return () => {
+      dispatch({type: 'SetSelectedPoint', point});
+      dispatch({type: 'TogglePopup', showPopup: true});
+    };
+  }
 
   const openLocationListCallback = React.useCallback(() => {
     calcPoints();
@@ -120,7 +96,7 @@ function MapComponent() {
               attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
             />
             <MarkerClusterGroup maxClusterRadius={6} zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
-              {getMarkerList(filteredPoints, selectedPoint, onMarkerClickCallback)}
+              {getMarkerList({points: filteredPoints, selectedPoint, clickCallback: onMarkerClickCallback})}
             </MarkerClusterGroup>
             <LocateControl options={locateOptions} started={locationRequired} />
           </Map>
