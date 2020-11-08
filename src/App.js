@@ -7,6 +7,7 @@ import HotelView from './views/HotelView';
 import MapView from './views/MapView';
 import AboutView from './views/AboutView';
 import ContactView from './views/ContactView';
+import PersonView from './views/PersonView';
 import DataExportView from './views/DataExportView';
 import DataImportView from './views/DataImportView';
 
@@ -29,6 +30,7 @@ function App () {
               <Route path="/hotel/:id" exact component={HotelView}/>
               <Route path="/about" exact component={AboutView}/>
               <Route path="/contact" exact component={ContactView}/>
+              <Route path="/person/:name" exact component={PersonView}/>
               <Route path="/data-export" exact component={DataExportView}/>
               <Route path="/data-import" exact component={DataImportView}/>
             </Switch>
