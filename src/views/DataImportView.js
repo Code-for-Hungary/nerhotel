@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from './Layout';
 import styles from '../css/data-import.module.css';
-import config from '../config.js';
+import {config} from '../config.js';
 
 const DataExportView = (props) => {
   const {json, setJson} = React.useState(null);
