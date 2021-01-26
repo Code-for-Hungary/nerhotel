@@ -15435,5 +15435,112 @@
         19.62486807
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 310,
+      "address": "Harkány, Bartók B. u. 1., 7815",
+      "company": {
+        "name": "Investeur kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/finszter-erika"
+      },
+      "name": "Dráva Hotel",
+      "city": "Harkány",
+      "type": "szálloda",
+      "link": "https://www.valaszonline.hu/2020/11/24/puch-laszlo-kipszer-mefter-turisztikai-tamogatas/",
+      "mainOligarch": [
+        {
+          "name": "Finszter Erika",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/finszter-erika"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Puch Eszter",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/puch-eszter"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Finszter Erika",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/finszter-erika"
+        },
+        {
+          "name": "Finszter Géza",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Puch Eszter",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/puch-eszter"
+        }
+      ],
+      "date": "2020.11.24",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.85434628,
+        18.2394926
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 311,
+      "address": "Lovasberény, Erdősor üdülő 1., 8093",
+      "company": {
+        "name": "Civil Biztonsági Szolgálat Zrt.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/civil-biztonsagi-szolgalat-zrt"
+      },
+      "name": "Hotel Lovasberény",
+      "city": "Lovasberény",
+      "type": "szálloda",
+      "link": "https://24.hu/belfold/2021/01/26/lovasbereny-kormanyudulo-hotel-pinter-sandor-tasnadi-laszlo-lajtar-jozsef-mtu-kisfaludy/",
+      "mainOligarch": [],
+      "mainCEO": [
+        {
+          "name": "Tasnádi László",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tasnadi-laszlo"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Szabó Péter",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szabo-peter"
+        },
+        {
+          "name": "Tölgyesi Vilmos",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tolgyesi-vilmos"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Rétszilasi László",
+          "link": ""
+        },
+        {
+          "name": "Tasnádi László",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tasnadi-laszlo"
+        },
+        {
+          "name": "Szabó Péter József",
+          "link": ""
+        }
+      ],
+      "date": "2021.01.26",
+      "details": "2021-ben 1,3 milliárd forint vissza nem térítendő támogatást ítélt meg a Magyar Turisztikai Ügynökség a Pintér Sándor belügyminiszter korábbi cége tulajdonába került egykori lovasberényi kormányüdülő fejlesztésére."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.27184678,
+        18.59007145
+      ]
+    }
   }
 ]
