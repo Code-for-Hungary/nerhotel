@@ -1669,7 +1669,7 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        null,
+        47.453065,
         21.404211
       ]
     }
@@ -14715,7 +14715,7 @@
       "name": "Laposa Birtok",
       "city": "Badacsonytomaj",
       "type": "étterem",
-      "link": "",
+      "link": "https://24.hu/belfold/2021/01/27/mtu-egyedi-tamogatas-balatoni-kor-laposa-bence-guller-zoltan/",
       "mainOligarch": [
         {
           "name": "Laposa Bence",
@@ -14748,8 +14748,8 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/laposa-bence"
         }
       ],
-      "date": "2020.09.29",
-      "details": ""
+      "date": "2021.01.27",
+      "details": "Laposa Bence (önkormányzati képviselő Badacsonytomajon) 71,5 millió forint egyedi MTÜ támogatást kapott 2021 elején a Laposa borterasz felújítására."
     },
     "geometry": {
       "type": "Point",
@@ -14819,6 +14819,57 @@
     "type": "Feature",
     "properties": {
       "id": 298,
+      "address": "Badacsonytomaj, Kisfaludy Sándor u. 1-3., 8261",
+      "company": {
+        "name": "Laposa Friss Kft.",
+        "link": ""
+      },
+      "name": "Friss Terasz",
+      "city": "Badacsonytomaj",
+      "type": "étterem",
+      "link": "https://24.hu/belfold/2021/01/27/mtu-egyedi-tamogatas-balatoni-kor-laposa-bence-guller-zoltan/",
+      "mainOligarch": [
+        {
+          "name": "Laposa Bence",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/laposa-bence"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Laposa Bence",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/laposa-bence"
+        },
+        {
+          "name": "Laposa József",
+          "link": ""
+        },
+        {
+          "name": "Laposa Zsófia",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Bakk István",
+          "link": ""
+        }
+      ],
+      "date": "2021.01.27",
+      "details": "Laposa Bence (önkormányzati képviselő Badacsonytomajon) 71,5 millió forint egyedi MTÜ támogatást kapott 2021 elején a Friss Terasz bővítésére."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.78862484,
+        17.49987848
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 299,
       "address": "Badacsonytomaj, Kisfaludy Sándor u. 5., 8261",
       "company": {
         "name": "Laposa Birtok Kft.",
@@ -14874,7 +14925,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 299,
+      "id": 300,
       "address": "Egerszalók, Széchenyi u. 25., 3394",
       "company": {
         "name": "Juhászvin Kft.",
@@ -14926,7 +14977,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 300,
+      "id": 301,
       "address": "Etyek, Újhegy, 2091",
       "company": {
         "name": "Rókusfalvy Birtok Kft.",
@@ -14990,7 +15041,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 301,
+      "id": 302,
       "address": "Tiszafüred, Húszöles út 27., 5350",
       "company": {
         "name": "Tisza-balneum Kft.",
@@ -15041,7 +15092,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 302,
+      "id": 303,
       "address": "Balatonlelle, Rákóczi u. 223., 8638",
       "company": {
         "name": "Witzmann Mihályné",
@@ -15079,7 +15130,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 303,
+      "id": 304,
       "address": "Hercegkút, Gombos-hegyi Pincesor, 3958",
       "company": {
         "name": "TOKAJ-PORTIUS PINCÉSZET Kft.",
@@ -15127,7 +15178,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 304,
+      "id": 305,
       "address": "Bogács, 037/4., 3412",
       "company": {
         "name": "Hór Agro borászat",
@@ -15186,7 +15237,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 305,
+      "id": 306,
       "address": "Biri, Fő utca 90-92., 4235",
       "company": {
         "name": "Közös Kincs Közhasznú Nonprofit Kft.",
@@ -15234,7 +15285,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 306,
+      "id": 307,
       "address": "Budapest, Ybl Miklós tér 9., 1013",
       "company": {
         "name": "Vízház Gasztronómia Zrt.",
@@ -15276,7 +15327,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 307,
+      "id": 308,
       "address": "Györköny, Petőfi Sándor u. 386, 7045",
       "company": {
         "name": "Braun-Bősz Pincészet Szolgáltató Kft.",
@@ -15332,7 +15383,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 308,
+      "id": 309,
       "address": "Györköny, Pincehegy, 7045",
       "company": {
         "name": "Braun-Bősz Pincészet Szolgáltató Kft.",
@@ -15388,7 +15439,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 309,
+      "id": 310,
       "address": "Nógrádmegyer, Baglyaspuszta tanya 1., 3132",
       "company": {
         "name": "MEGYERVAD Kft.",
@@ -15439,7 +15490,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 310,
+      "id": 311,
       "address": "Harkány, Bartók B. u. 1., 7815",
       "company": {
         "name": "Investeur kft.",
@@ -15491,7 +15542,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 311,
+      "id": 312,
       "address": "Lovasberény, Erdősor üdülő 1., 8093",
       "company": {
         "name": "Civil Biztonsági Szolgálat Zrt.",
