@@ -15645,5 +15645,61 @@
         18.61903176
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 314,
+      "address": "Tarcal, , 3915",
+      "company": {
+        "name": "TOKAJICUM Borház Kft.",
+        "link": ""
+      },
+      "name": "Tokajicum borház",
+      "city": "Tarcal",
+      "type": "borászat",
+      "link": "",
+      "mainOligarch": [
+        {
+          "name": "Béres István",
+          "link": ""
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Béres István",
+          "link": ""
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Béres István",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Béres István",
+          "link": ""
+        },
+        {
+          "name": "Lénárt Ágnes",
+          "link": ""
+        },
+        {
+          "name": "Visnyei Ágnes",
+          "link": ""
+        }
+      ],
+      "date": "2021.02.19",
+      "details": "Béres István stratégiai főtanácsadó a XII. kerületi önkormányzatnál."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        48.12006865,
+        21.35320066
+      ]
+    }
   }
 ]
