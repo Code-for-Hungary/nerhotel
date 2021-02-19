@@ -15593,5 +15593,57 @@
         18.59007145
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 313,
+      "address": "Zomba, Szentgálszőlőhegy 4., 7173",
+      "company": {
+        "name": "VINITIS-Agrárium Szőlészeti Kft.",
+        "link": ""
+      },
+      "name": "Szent Gaál borház",
+      "city": "Zomba",
+      "type": "borászat",
+      "link": "",
+      "mainOligarch": [
+        {
+          "name": "Béres István",
+          "link": ""
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Béres István",
+          "link": ""
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Béres István",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Sirály Judit",
+          "link": ""
+        },
+        {
+          "name": "Béres István",
+          "link": ""
+        }
+      ],
+      "date": "2021.02.19",
+      "details": "Béres István stratégiai főtanácsadó a XII. kerületi önkormányzatnál."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.37339577,
+        18.61903176
+      ]
+    }
   }
 ]
