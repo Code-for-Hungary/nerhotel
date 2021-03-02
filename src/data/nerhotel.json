@@ -6847,7 +6847,7 @@
         "name": "Andante Borpatika Kft.",
         "link": "https://k-monitor.hu/adatbazis/cimkek/andante-borpatika-kft"
       },
-      "name": "Andante Borpatika",
+      "name": "Andante Borpatika (bezárt)",
       "city": "Budapest",
       "type": "étterem",
       "link": "https://24.hu/belfold/2020/04/15/meszaros-lorinc-akos-tiffan-zsolt-i-kerulet-etterm-andante-borpatika/?fbclid=IwAR1k6zDX_yu0lsCWU-fwZBXlX7-a5GEtV2Jal3wUG2NdswptF8riVlveAP4",
@@ -6878,7 +6878,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-beatrix"
         }
       ],
-      "date": "2020.05.20",
+      "date": "2021.03.02",
       "details": "Havi 113 153 forintért bérel a Clark Ádám térnél az önkormányzattól üzlethelységet a korábban Kovács Ákoshoz és Tiffán Zsolthoz tartozó cég (immáron Mészáros Lőrinc tulajdona)."
     },
     "geometry": {
@@ -15699,6 +15699,457 @@
       "coordinates": [
         48.12006865,
         21.35320066
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 315,
+      "address": "Budapest, Nagy Lajos király útja 217., 1142",
+      "company": {
+        "name": "LVC Diamond Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/lvc-diamond-kft"
+      },
+      "name": "Las Vegas Casino Atlantis",
+      "city": "Budapest",
+      "type": "kaszinó",
+      "link": "https://telex.hu/gazdasag/2021/02/24/az-allam-es-a-tovabbra-is-mukodo-kaszinok-erthetetlen-de-kozben-nagyon-is-ertheto",
+      "mainOligarch": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        },
+        {
+          "name": "Szalay-Bobrovniczky Kristóf",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalay-bobrovniczky-kristof"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        },
+        {
+          "name": "Szalay-Bobrovniczky Kristóf",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalay-bobrovniczky-kristof"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Klement Judit Mária",
+          "link": ""
+        },
+        {
+          "name": "Zábrádi Tímea",
+          "link": ""
+        }
+      ],
+      "date": "2021.03.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.524127,
+        19.097882
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 316,
+      "address": "Budapest, Széchenyi István tér 2., 1051",
+      "company": {
+        "name": "LVC Diamond Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/lvc-diamond-kft"
+      },
+      "name": "Las Vegas Casino Sofitel",
+      "city": "Budapest",
+      "type": "kaszinó",
+      "link": "https://telex.hu/gazdasag/2021/02/24/az-allam-es-a-tovabbra-is-mukodo-kaszinok-erthetetlen-de-kozben-nagyon-is-ertheto",
+      "mainOligarch": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        },
+        {
+          "name": "Szalay-Bobrovniczky Kristóf",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalay-bobrovniczky-kristof"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        },
+        {
+          "name": "Szalay-Bobrovniczky Kristóf",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalay-bobrovniczky-kristof"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Klement Judit Mária",
+          "link": ""
+        },
+        {
+          "name": "Zábrádi Tímea",
+          "link": ""
+        }
+      ],
+      "date": "2021.03.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.49842171,
+        19.04839643
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 317,
+      "address": "Budapest, Corvin sétány 4., 1082",
+      "company": {
+        "name": "LVC Diamond Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/lvc-diamond-kft"
+      },
+      "name": "Las Vegas Casino Corvin",
+      "city": "Budapest",
+      "type": "kaszinó",
+      "link": "https://telex.hu/gazdasag/2021/02/24/az-allam-es-a-tovabbra-is-mukodo-kaszinok-erthetetlen-de-kozben-nagyon-is-ertheto",
+      "mainOligarch": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        },
+        {
+          "name": "Szalay-Bobrovniczky Kristóf",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalay-bobrovniczky-kristof"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        },
+        {
+          "name": "Szalay-Bobrovniczky Kristóf",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalay-bobrovniczky-kristof"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Klement Judit Mária",
+          "link": ""
+        },
+        {
+          "name": "Zábrádi Tímea",
+          "link": ""
+        }
+      ],
+      "date": "2021.03.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.48606118,
+        19.07627312
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 318,
+      "address": "Budapest, Vigadó u. 2., 1051",
+      "company": {
+        "name": "LVC Diamond Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/lvc-diamond-kft"
+      },
+      "name": "Las Vegas Casino Tropicana",
+      "city": "Budapest",
+      "type": "kaszinó",
+      "link": "https://telex.hu/gazdasag/2021/02/24/az-allam-es-a-tovabbra-is-mukodo-kaszinok-erthetetlen-de-kozben-nagyon-is-ertheto",
+      "mainOligarch": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        },
+        {
+          "name": "Szalay-Bobrovniczky Kristóf",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalay-bobrovniczky-kristof"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        },
+        {
+          "name": "Szalay-Bobrovniczky Kristóf",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalay-bobrovniczky-kristof"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Klement Judit Mária",
+          "link": ""
+        },
+        {
+          "name": "Zábrádi Tímea",
+          "link": ""
+        }
+      ],
+      "date": "2021.03.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.49642086,
+        19.04935397
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 319,
+      "address": "Budapest, Bécsi út 154., 1037",
+      "company": {
+        "name": "LVC Diamond Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/lvc-diamond-kft"
+      },
+      "name": "Las Vegas Casino Atrium",
+      "city": "Budapest",
+      "type": "kaszinó",
+      "link": "https://telex.hu/gazdasag/2021/02/24/az-allam-es-a-tovabbra-is-mukodo-kaszinok-erthetetlen-de-kozben-nagyon-is-ertheto",
+      "mainOligarch": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        },
+        {
+          "name": "Szalay-Bobrovniczky Kristóf",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalay-bobrovniczky-kristof"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        },
+        {
+          "name": "Szalay-Bobrovniczky Kristóf",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalay-bobrovniczky-kristof"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Klement Judit Mária",
+          "link": ""
+        },
+        {
+          "name": "Zábrádi Tímea",
+          "link": ""
+        }
+      ],
+      "date": "2021.03.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.54647383,
+        19.02888209
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 320,
+      "address": "Győr, Vasvári Pál u. 1., 9024",
+      "company": {
+        "name": "Casino Win Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/casino-win-kft"
+      },
+      "name": "Casino Win Győr",
+      "city": "Győr",
+      "type": "kaszinó",
+      "link": "https://telex.hu/gazdasag/2021/02/24/az-allam-es-a-tovabbra-is-mukodo-kaszinok-erthetetlen-de-kozben-nagyon-is-ertheto",
+      "mainOligarch": [
+        {
+          "name": "Rákosfalvy Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/rakosfalvy-zoltan"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Rákosfalvy Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/rakosfalvy-zoltan"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Kruppa Zsolt András",
+          "link": ""
+        }
+      ],
+      "date": "2021.03.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.66853206,
+        17.65105559
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 321,
+      "address": "Pécs, Bajcsy-Zsilinszky u. 18., 7622",
+      "company": {
+        "name": "Casino Win Pécs Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/casino-win-pecs-kft"
+      },
+      "name": "Casino Win Pécs",
+      "city": "Pécs",
+      "type": "kaszinó",
+      "link": "https://telex.hu/gazdasag/2021/02/24/az-allam-es-a-tovabbra-is-mukodo-kaszinok-erthetetlen-de-kozben-nagyon-is-ertheto",
+      "mainOligarch": [
+        {
+          "name": "Rákosfalvy Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/rakosfalvy-zoltan"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Rákosfalvy Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/rakosfalvy-zoltan"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Kruppa Zsolt András",
+          "link": ""
+        }
+      ],
+      "date": "2021.03.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.06897574,
+        18.23055172
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 322,
+      "address": "Miskolc, Szűcs Sámuel u. 5., 3525",
+      "company": {
+        "name": "Casino Win Miskolc Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/casino-win-miskolc-kft"
+      },
+      "name": "Casino Tropicana",
+      "city": "Miskolc",
+      "type": "kaszinó",
+      "link": "https://telex.hu/gazdasag/2021/02/24/az-allam-es-a-tovabbra-is-mukodo-kaszinok-erthetetlen-de-kozben-nagyon-is-ertheto",
+      "mainOligarch": [
+        {
+          "name": "Rákosfalvy Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/rakosfalvy-zoltan"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Rákosfalvy Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/rakosfalvy-zoltan"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Kruppa Zsolt András",
+          "link": ""
+        }
+      ],
+      "date": "2021.03.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        48.10490261,
+        20.78956581
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 323,
+      "address": "Sopron, Lackner Kristóf u. 33., 9400",
+      "company": {
+        "name": "CAI Hungary Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/cai-hungary-kftt"
+      },
+      "name": "Casino Sopron",
+      "city": "Sopron",
+      "type": "kaszinó",
+      "link": "https://telex.hu/gazdasag/2021/02/24/az-allam-es-a-tovabbra-is-mukodo-kaszinok-erthetetlen-de-kozben-nagyon-is-ertheto",
+      "mainOligarch": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Garancsi István",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Holcsek Erik",
+          "link": ""
+        },
+        {
+          "name": "Dravecz Róbert",
+          "link": ""
+        }
+      ],
+      "date": "2021.03.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.69552983,
+        16.58132908
       ]
     }
   }
