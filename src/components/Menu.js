@@ -33,7 +33,7 @@ const Menu = () => {
         <li><Link to="/contact">Kontakt</Link></li>
         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6uNP-ML46outzCbOifdwKefAaB1x_j9eXMzeTJYGB5NEnA/viewform"
                target="_blank" rel="noopener noreferrer">Küldj be!</a></li>
-        <li><a href="https://tamogatas.k-monitor.hu" target="_blank" rel="noopener noreferrer">Támogatás</a></li>
+        <li><a href="https://tamogatas.k-monitor.hu" target="_blank" rel="noopener noreferrer"><font color="#F05F22">Tetszik? Támogasd!</font></a></li>
           <li><Link to="/data-export">Adat export</Link></li>
       </ul>
       {isDesktop && <div className={styles.imageWrapper}>
