@@ -16152,5 +16152,91 @@
         16.58132908
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 324,
+      "address": "Mezőkövesd, Fülemüle út 2., 3400",
+      "company": {
+        "name": "Hotel Balneo Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/hotel-balneo-kft"
+      },
+      "name": "Balneo",
+      "city": "Mezőkövesd",
+      "type": "szálloda",
+      "link": "https://www.valaszonline.hu/2021/02/26/turisztika-tamogatasok-ugynokseg-mtu-guller-zoltan/",
+      "mainOligarch": [
+        {
+          "name": "Kosik János",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/kosik-janos"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Kosik János",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/kosik-janos"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Kosik János",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/kosik-janos"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Kosik János",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/kosik-janos"
+        }
+      ],
+      "date": "2021.03.02",
+      "details": "A Balneo 3,5 milliárd forintot kapott a Kisfaludy-programból. A tulajdonos Kosik János, aki a Tiborcz-érdekkörbe tartozó Sájer Gáborral épít közös napelemparkot Herenden. Kosik arról is híres, hogy korábban mezszponzorként szállt be Tállai András mellé a mezőkövesdi fociba."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.79593947,
+        20.52293194
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 325,
+      "address": "Mende, Fő u. 41., 2235",
+      "company": {
+        "name": "Kaszanyi Vivien",
+        "link": ""
+      },
+      "name": "Vivien vendégház",
+      "city": "Mende",
+      "type": "szálloda",
+      "link": "https://blog.atlatszo.hu/2021/03/a-jarvany-kozepen-zanzibaron-piheno-mendei-polgarmester-a-loszolarium-ugy-egyik-szereploje/",
+      "mainOligarch": [
+        {
+          "name": "Kaszanyi Vivien",
+          "link": ""
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Kaszanyi Vivien",
+          "link": ""
+        }
+      ],
+      "ceos": [],
+      "date": "2021.04.15",
+      "details": "Kaszanyi Vivien (Kaszanyi József polgármester lánya) 49,7 millió forintot kapott a Vidékfejlesztési Programból 2018-ban új falusi szálláshely létrehozására."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.42872158,
+        19.45415507
+      ]
+    }
   }
 ]
