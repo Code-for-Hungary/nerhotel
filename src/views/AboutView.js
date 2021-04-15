@@ -15,6 +15,8 @@ const AboutView = (props) => {
             mellett és a politikai hátszéllel segített vállalkozói réteg további térhódítása ellen.</p>
           <p>A NER Hotel egy olyan webes alkalmazás, ami átláthatóbbá teszi a magyar szállás- és a vendéglátóhelyek tulajdonosi és üzemeltetői hátterét. Segítségével tájékozódhatsz, kinél cseng a
             kassza a költésed nyomán, ha asztalt vagy szállást foglalsz.</p>
+          <p>Az oldal tartalmát az alábbi módszertan alapján a K-Monitor készíti. Az oldal fejlesztésben a <a href="https://github.com/Code-for-Hungary" target="new">Code for Hungary</a> önkéntesei vettek részt. Ha segítenél, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeep6bUaI0nC-ZelkPjdUdw_kvzAJu2XJc8qpNhAJeIRSyZEA/viewform" target="new">itt tudsz beszállni a csapatba</a>!</p>
+
         </section>
         <section>
           <h2>Milyen helyek szerepelnek rajta?</h2>
