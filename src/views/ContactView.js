@@ -20,7 +20,7 @@ const AboutView = (props) => {
           <h2>Elérhetőség</h2>
           <p><strong>K-Monitor Közhasznú Egyesület</strong></p>
           <p>Levelezési cím: 1062 Budapest, Bajza u. 23.</p>
-          <a href="mailto:info@k-monitor.hu">info@k-monitor.hu</a>
+          <a href="mailto:info@k-monitor.hu">info@k-monitor.hu</a> 
           <a href="https://k-monitor.hu" target="new">k-monitor.hu</a>
 
         </section>
