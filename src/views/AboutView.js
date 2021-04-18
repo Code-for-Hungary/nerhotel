@@ -28,7 +28,7 @@ const AboutView = (props) => {
             tekintettel egy ennél bővebb definíciót használ. Ez tartalmazza az önkormányzati döntéshozókat, a turisztikai ágazat kormányzati szervezeteinek vezetőit, illetve azokat a személyeket, akik
             sajtóprofiljuk alapján valamely politikailag exponált személlyel kiterjedt, a szereplők reputációját befolyásoló kapcsolatot tartanak fenn.</p>
           <p>A NER HOTEL célja, hogy ezen személyek turisztikai érdekeltségeiről hiteles és rendszerezett információt kínáljon, ami egy szempontja lehet a tudatos fogyasztói döntéseknek. Az ehhez
-            szükséges információk feltérképezését nyilvánosan is elérhető sajtóhírek és cégadatok alapján, a K-Monitor sajtóadatbázisát felhasználva folyamatosan végezzük.</p>
+            szükséges információk feltérképezését nyilvánosan is elérhető sajtóhírek és cégadatok alapján, a <a href="https://k-monitor.hu/adatbazis" target="new">K-Monitor sajtóadatbázisát</a> felhasználva folyamatosan végezzük.</p>
             <p>Az aktuális adatbázis tartalmának csv formátumban letöltéséhez <a href="https://www.nerhotel.hu/#/data-export">kattints ide</a>.</p>
         </section>
         <section>
