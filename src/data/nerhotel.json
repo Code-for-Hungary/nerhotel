@@ -16238,5 +16238,60 @@
         19.45415507
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 326,
+      "address": "Szántód, Móricz Zsigmond u. 96., 8622",
+      "company": {
+        "name": "Bambara Hotel Kft.",
+        "link": ""
+      },
+      "name": "BalaLand Residence",
+      "city": "Szántód",
+      "type": "szálloda",
+      "link": "https://mfor.hu/cikkek/vallalatok/a-ner-es-szallodakirallyal-butorozott-ossze-orban-viktor-vejenek-korabbi-erdekeltsege.html",
+      "mainOligarch": [
+        {
+          "name": "Szepesi Richárd József",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szepesi-richard"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Szepesi Richárd József",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szepesi-richard"
+        },
+        {
+          "name": "Bonnyai Péter",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonnyai-peter"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Bonnyai Péter",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/bonnyai-peter"
+        },
+        {
+          "name": "Bialkó Kinga",
+          "link": ""
+        },
+        {
+          "name": "Smuczer Zsolt",
+          "link": ""
+        }
+      ],
+      "date": "2021.04.28",
+      "details": "Szepesi Richárd az egyik legeredményesebb a Magyar Turisztikai Ügynökség pályázatain, az ötcsillagos BalaLand építésére 5,9 milliárd forintott kapott."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.88004014,
+        17.90771644
+      ]
+    }
   }
 ]
