@@ -16293,5 +16293,61 @@
         17.90771644
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 327,
+      "address": "Hévíz, Honvéd u. 14., 8380",
+      "company": {
+        "name": "Aquamarin Kft.",
+        "link": ""
+      },
+      "name": "Hotel Aquamarin",
+      "city": "Hévíz",
+      "type": "szálloda",
+      "link": "https://telex.hu/gazdasag/2021/05/04/meszaros-varkonyi-meg-egy-haz-a-xii-keruletben",
+      "mainOligarch": [
+        {
+          "name": "Éder Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/eder-zoltan"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Éder Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/eder-zoltan"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Éder Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/eder-zoltan"
+        },
+        {
+          "name": "Issovitsné Szőke Renáta",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Éder Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/eder-zoltan"
+        },
+        {
+          "name": "Issovits István Péter",
+          "link": ""
+        }
+      ],
+      "date": "2021.05.05",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.78878278,
+        17.18343766
+      ]
+    }
   }
 ]
