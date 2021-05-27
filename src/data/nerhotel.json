@@ -13018,9 +13018,9 @@
         "name": "Nimfeum Kft.",
         "link": "https://k-monitor.hu/adatbazis/cimkek/nimfeum-kft"
       },
-      "name": "Nimfeum",
+      "name": "Villa Salve",
       "city": "Badacsonytomaj",
-      "type": "borászat",
+      "type": "borászat és szálloda",
       "link": "https://444.hu/2020/07/13/1276-millio-forintnyi-unios-tamogatast-kapott-balatoni-boraszatara-es-panziofejlesztesre-a-fideszes-kepviselo",
       "mainOligarch": [
         {
@@ -13043,9 +13043,13 @@
         {
           "name": "Nagyiványi Szabolcs Dávid",
           "link": ""
+        },
+        {
+          "name": "Simon Beáta",
+          "link": ""
         }
       ],
-      "date": "2020.07.20",
+      "date": "2021.05.27",
       "details": "Szatmáry Kristóf fideszes képviselő borászati cége 127,6 millió forintnyi uniós támogatást kapott a kormánytól, hogy a badacsonytomaji birtokán borászati épületet és egy panziót alakítson ki."
     },
     "geometry": {
