@@ -16315,5 +16315,43 @@
         19.05274766
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 327,
+      "address": "Somoskőújfalu, Vörösmarty út 1., 3121",
+      "company": {
+        "name": "Fenyvesi Gábor",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/fenyvesi-gabor"
+      },
+      "name": "Gesztenyéskert vendégház",
+      "city": "Somoskőújfalu",
+      "type": "szálloda",
+      "link": "https://index.hu/belfold/2018/08/22/somoskoujfalu_vendeghaz_eu/",
+      "mainOligarch": [
+        {
+          "name": "Fenyvesi Gábor",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/fenyvesi-gabor"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Fenyvesi Gábor",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/fenyvesi-gabor"
+        }
+      ],
+      "ceos": [],
+      "date": "2021.06.02",
+      "details": "Fenyvesi Gábor Salgótarján volt alpolgármestere  7,2 millió forint vissza nem térítendő támogatást kapott az EU-tól (Darányi Ignác terv) a szálláshely kialakítására."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        48.1613286,
+        19.8216999
+      ]
+    }
   }
 ]
