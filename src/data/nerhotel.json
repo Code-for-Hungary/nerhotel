@@ -3408,10 +3408,10 @@
         "name": "Puskás Ferenc Sport Hotel Nonprofit Kft.",
         "link": "https://k-monitor.hu/adatbazis/cimkek/puskas-ferenc-sport-hotel-kft"
       },
-      "name": "Sport Hotel***",
+      "name": "Puskás Ferenc Sport Hotel***",
       "city": "Alcsútdoboz",
       "type": "szálloda",
-      "link": "",
+      "link": "https://mfor.hu/cikkek/vallalatok/megerheti-meszarosek-sporthoteljeben-dolgozni.html",
       "mainOligarch": [],
       "mainCEO": [
         {
@@ -3426,8 +3426,8 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
-      "date": "2019.07.30",
-      "details": ""
+      "date": "2021.06.07",
+      "details": "A szálloda végső tulajdonosa a Mészáros Lőrinc vezette Felcsúti Utánpótlás Neveléséért Alapítvány."
     },
     "geometry": {
       "type": "Point",
