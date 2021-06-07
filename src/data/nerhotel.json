@@ -16353,5 +16353,48 @@
         19.8216999
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 328,
+      "address": "Budapest, Zoltán utca 10., 1054",
+      "company": {
+        "name": "Apriori Cultura Nonprofit Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/apriori-cultura-nonprofit-kft"
+      },
+      "name": "Scruton kávézó",
+      "city": "Budapest",
+      "type": "kávézó",
+      "link": "https://444.hu/2021/06/05/600-millios-tamogatast-kapott-a-fideszesek-kedvenc-kavezojat-uzemelteto-ceg",
+      "mainOligarch": [
+        {
+          "name": "Szalai Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalai-zoltan"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Szalai Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/szalai-zoltan"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Pesti Ivett",
+          "link": ""
+        }
+      ],
+      "date": "2021.06.07",
+      "details": "Szalai Zoltán, a Mathias Corvinus Collegium főigazgatója kávézója 600 millió forint támogatásban részesült a Batthyány Alapítványtól (amely a Miniszterelnöki Kabinetirodától kapott 3 milliárd forintot) 2021-ben."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.50438388,
+        19.04739426
+      ]
+    }
   }
 ]
