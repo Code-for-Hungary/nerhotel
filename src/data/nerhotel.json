@@ -16396,5 +16396,69 @@
         19.04739426
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 329,
+      "address": "Bécs, Schönbrunner Straße 41, 1050",
+      "company": {
+        "name": "MMG Hotels Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+      },
+      "name": "La Prima Fashion Hotel Vienna",
+      "city": "Bécs",
+      "type": "szálloda",
+      "link": "https://atlatszo.hu/2019/05/07/milliardos-migransok-orban-viktor-udvaraban-igy-jottek-a-parisi-udvar-uj-tulajdonosai/",
+      "mainOligarch": [
+        {
+          "name": "Awad Zuhair Fathi",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad"
+        },
+        {
+          "name": "Hamdan Sameer Mahmoud",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Awad Zuhair Fathi",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad"
+        },
+        {
+          "name": "Hamdan Sameer Mahmoud",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Awad Zuhair Fathi",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad"
+        },
+        {
+          "name": "Hamdan Sameer Mahmoud",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Awad Zuhair Fathi",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/zuhair-awad"
+        },
+        {
+          "name": "Hamdan Sameer Mahmoud",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/sameer-hamdan-1"
+        }
+      ],
+      "date": "2021.07.01",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        48.19265699,
+        16.35752471
+      ]
+    }
   }
 ]
