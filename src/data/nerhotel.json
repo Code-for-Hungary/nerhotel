@@ -707,6 +707,10 @@
         {
           "name": "Kelemen Beatrix Csilla",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
+        },
+        {
+          "name": "Kalocsai László",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/kalocsai-laszlo"
         }
       ],
       "ceos": [
@@ -715,7 +719,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/kalocsai-laszlo"
         }
       ],
-      "date": "2019.07.30",
+      "date": "2021.07.12",
       "details": ""
     },
     "geometry": {
@@ -2918,12 +2922,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
-      "mainCEO": [
-        {
-          "name": "Deák Gábor",
-          "link": ""
-        }
-      ],
+      "mainCEO": [],
       "oligarchs": [
         {
           "name": "Mészáros Lőrinc",
@@ -2936,7 +2935,7 @@
       ],
       "ceos": [
         {
-          "name": "Deák Gábor",
+          "name": "Kovács János",
           "link": ""
         }
       ],
@@ -3016,10 +3015,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Mészáros Beatrix",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-beatrix"
         }
       ],
       "mainCEO": [],
@@ -3027,10 +3022,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Mészáros Beatrix",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-beatrix"
         }
       ],
       "ceos": [
@@ -3039,7 +3030,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/harnos-laszlo"
         }
       ],
-      "date": "2019.07.30",
+      "date": "2021.07.12",
       "details": ""
     },
     "geometry": {
@@ -5506,15 +5497,27 @@
       "link": "",
       "mainOligarch": [
         {
-          "name": "Kékessy Dezső András",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/kekessy-dezso"
+          "name": "Gál Miklós",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/gal-mikloss"
+        },
+        {
+          "name": "Vida József",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vida-jozseff"
         }
       ],
       "mainCEO": [],
       "oligarchs": [
         {
-          "name": "Kékessy Dezső András",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/kekessy-dezso"
+          "name": "Gál Miklós",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/gal-mikloss"
+        },
+        {
+          "name": "Vida József",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/vida-jozseff"
+        },
+        {
+          "name": "Nagy Szilvia",
+          "link": ""
         }
       ],
       "ceos": [
@@ -5523,7 +5526,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/molnar-peter"
         }
       ],
-      "date": "2020.05.06",
+      "date": "2021.07.12",
       "details": ""
     },
     "geometry": {
@@ -13284,14 +13287,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "mainCEO": [],
@@ -13299,14 +13294,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "ceos": [
@@ -13319,7 +13306,7 @@
           "link": ""
         }
       ],
-      "date": "2020.08.23",
+      "date": "2021.07.12",
       "details": ""
     },
     "geometry": {
@@ -13347,14 +13334,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "mainCEO": [],
@@ -13362,14 +13341,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "ceos": [
@@ -13382,7 +13353,7 @@
           "link": ""
         }
       ],
-      "date": "2020.08.23",
+      "date": "2021.07.12",
       "details": ""
     },
     "geometry": {
@@ -13410,14 +13381,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "mainCEO": [],
@@ -13425,14 +13388,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "ceos": [
@@ -13445,7 +13400,7 @@
           "link": ""
         }
       ],
-      "date": "2020.08.23",
+      "date": "2021.07.12",
       "details": ""
     },
     "geometry": {
@@ -13473,14 +13428,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "mainCEO": [],
@@ -13488,14 +13435,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "ceos": [
@@ -13508,7 +13447,7 @@
           "link": ""
         }
       ],
-      "date": "2020.08.23",
+      "date": "2021.07.12",
       "details": ""
     },
     "geometry": {
@@ -13536,14 +13475,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "mainCEO": [],
@@ -13551,14 +13482,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "ceos": [
@@ -13571,7 +13494,7 @@
           "link": ""
         }
       ],
-      "date": "2020.08.23",
+      "date": "2021.07.12",
       "details": ""
     },
     "geometry": {
@@ -13638,7 +13561,7 @@
         "name": "Demetervin Kft.",
         "link": ""
       },
-      "name": "Demetervin",
+      "name": "Demetervin szálláshely",
       "city": "Mád",
       "type": "szálloda",
       "link": "https://mfor.hu/cikkek/makro/tokaji-apartmanjara-kapott-kozpenz-milliokat-a-kormanymegbizott.html",
@@ -14247,12 +14170,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
         }
       ],
-      "mainCEO": [
-        {
-          "name": "Száraz István Péter",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
-        }
-      ],
+      "mainCEO": [],
       "oligarchs": [
         {
           "name": "Száraz István Péter",
@@ -14261,11 +14179,11 @@
       ],
       "ceos": [
         {
-          "name": "Száraz István Péter",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
+          "name": "Ódor András",
+          "link": ""
         }
       ],
-      "date": "2020.09.24",
+      "date": "2021.07.12.",
       "details": ""
     },
     "geometry": {
@@ -14295,12 +14213,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
         }
       ],
-      "mainCEO": [
-        {
-          "name": "Száraz István Péter",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
-        }
-      ],
+      "mainCEO": [],
       "oligarchs": [
         {
           "name": "Száraz István Péter",
@@ -14309,11 +14222,11 @@
       ],
       "ceos": [
         {
-          "name": "Száraz István Péter",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
+          "name": "Ódor András",
+          "link": ""
         }
       ],
-      "date": "2020.09.24",
+      "date": "2021.07.12",
       "details": ""
     },
     "geometry": {
