@@ -16287,5 +16287,99 @@
         16.35752471
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 328,
+      "address": "Esztergom, Táncsics Mihály utca 5., 2500",
+      "company": {
+        "name": "Solva Hotel Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/solva-hotel-kft"
+      },
+      "name": "Portobello Wellness & Yacht Hotel",
+      "city": "Esztergom",
+      "type": "szálloda",
+      "link": "https://hvg.hu/kkv/20210728_Hernadi_Zsolt_Molvezernek_mar_harom_esztergomi_szallodaja_van",
+      "mainOligarch": [
+        {
+          "name": "Hernádi Zsolt",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/hernadi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Hernádi Zsolt",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/hernadi-zsolt"
+        },
+        {
+          "name": "Komondi Zsolt",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/komondi-zsolt"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Wilder Ádám",
+          "link": ""
+        }
+      ],
+      "date": "2021.08.03",
+      "details": "A Hernádi Zsolt Mol-vezér egyik érdekeltsége által kezelt Solva Magántőkealap birtokában lévő fejlesztőcég üzemelteti, aminek építéséhez a Magyar Turisztikai Ügynökség 2,8 milliárd forintos támogatást adott."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.79492687,
+        18.73818387
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 329,
+      "address": "Esztergom, Táncsics Mihály utca 6., 2500",
+      "company": {
+        "name": "Solva Property Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/solva-property-ingatlanfejleszto-es-hasznosito-kft"
+      },
+      "name": "Grand Hotel Esztergom",
+      "city": "Esztergom",
+      "type": "szálloda",
+      "link": "https://www.valaszonline.hu/2021/02/26/turisztika-tamogatasok-ugynokseg-mtu-guller-zoltan/",
+      "mainOligarch": [
+        {
+          "name": "Hernádi Zsolt",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/hernadi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Hernádi Zsolt",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/hernadi-zsolt"
+        },
+        {
+          "name": "Komondi Zsolt",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/komondi-zsolt"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Wilder Ádám",
+          "link": ""
+        }
+      ],
+      "date": "2021.07.08",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.79382407,
+        18.73719683
+      ]
+    }
   }
 ]
