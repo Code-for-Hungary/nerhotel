@@ -16381,5 +16381,169 @@
         18.73719683
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 330,
+      "address": "Balatonboglár, Fő u. 44., 8691",
+      "company": {
+        "name": "Kislaki Bormanufaktúra Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/kislaki-bormanufaktura-szolo-es-bortermelo-kft/legli-attila"
+      },
+      "name": "Kislaki borkert és szállás",
+      "city": "Balatonboglár",
+      "type": "szálloda és borászat",
+      "link": "https://24.hu/kozelet/2021/06/01/balatonboglar-meszaros-miklos-legli-geza-legli-otto-magyar-turisztikai-ugynokseg-egyedi-tamogatas/",
+      "mainOligarch": [
+        {
+          "name": "Légli Géza",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-geza"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Légli Géza",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-geza"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Légli Géza",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-geza"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Légli Géza",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-geza"
+        }
+      ],
+      "date": "2021.08.13",
+      "details": "Légli Géza testvére, Légli Ottó a Fidesz-KDNP balatonboglári önkormányzati képviselője. A borászat fejlesztéséhez a Magyar Turisztikai Ügynökség nyújtott támogatást."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.73287769,
+        17.67367509
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 331,
+      "address": "Balatonboglár, Epres utca 7., 8691",
+      "company": {
+        "name": "Légli Kerámia Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/legli-keramiagyarto-es-forgalmazo-kft"
+      },
+      "name": "Légli major vendégház",
+      "city": "Balatonboglár",
+      "type": "szálloda és borászat",
+      "link": "https://24.hu/kozelet/2021/06/01/balatonboglar-meszaros-miklos-legli-geza-legli-otto-magyar-turisztikai-ugynokseg-egyedi-tamogatas/",
+      "mainOligarch": [
+        {
+          "name": "Légli Géza",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-geza"
+        },
+        {
+          "name": "Légli Attila",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-attila"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Légli Géza",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-geza"
+        },
+        {
+          "name": "Légli Attila",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-attila"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Légli Géza",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-geza"
+        },
+        {
+          "name": "Légli Attila",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-attila"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Légli Géza",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-geza"
+        },
+        {
+          "name": "Légli Attila",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-attila"
+        }
+      ],
+      "date": "2021.08.13",
+      "details": "Légli Géza és Attila testvére, Légli Ottó a Fidesz-KDNP balatonboglári önkormányzati képviselője. A borászat, szálláshely és létesítmény fejlesztéséhez a Magyar Turisztikai Ügynökség nyújtott támogatást."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.73292917,
+        17.67217306
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 332,
+      "address": "Balatonboglár, Árpád u. 47., 8630",
+      "company": {
+        "name": "Légli Kft.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/legli-szolo-es-bortermelo-kft"
+      },
+      "name": "Légli borászat",
+      "city": "Balatonboglár",
+      "type": "borászat",
+      "link": "https://24.hu/kozelet/2021/06/01/balatonboglar-meszaros-miklos-legli-geza-legli-otto-magyar-turisztikai-ugynokseg-egyedi-tamogatas/",
+      "mainOligarch": [
+        {
+          "name": "Légli Ottó",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-otto"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Légli Ottó",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-otto"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Légli Ottó",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-otto"
+        },
+        {
+          "name": "Dóri Katalin Krisztina",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Légli Ottó",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/legli-otto"
+        }
+      ],
+      "date": "2021.08.13",
+      "details": "Légli Ottó a Fidesz-KDNP balatonboglári önkormányzati képviselője."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.77440875,
+        17.66218275
+      ]
+    }
   }
 ]
