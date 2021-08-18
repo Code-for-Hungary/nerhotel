@@ -15990,7 +15990,7 @@
       "id": 322,
       "address": "Szántód, Móricz Zsigmond u. 96., 8622",
       "company": {
-        "name": "Bambara Hotel Kft.",
+        "name": "BalaLand Residence Kft.",
         "link": ""
       },
       "name": "BalaLand Residence",
@@ -16006,6 +16006,10 @@
       "mainCEO": [],
       "oligarchs": [
         {
+          "name": "Szepesi Krisztina",
+          "link": ""
+        },
+        {
           "name": "Szepesi Richárd József",
           "link": "https://k-monitor.hu/adatbazis/cimkek/szepesi-richard"
         },
@@ -16016,19 +16020,11 @@
       ],
       "ceos": [
         {
-          "name": "Bonnyai Péter",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/bonnyai-peter"
-        },
-        {
-          "name": "Bialkó Kinga",
-          "link": ""
-        },
-        {
-          "name": "Smuczer Zsolt",
+          "name": "Szepesi Krisztina",
           "link": ""
         }
       ],
-      "date": "2021.04.28",
+      "date": "2021.08.18",
       "details": "Szepesi Richárd az egyik legeredményesebb a Magyar Turisztikai Ügynökség pályázatain, az ötcsillagos BalaLand építésére 5,9 milliárd forintott kapott."
     },
     "geometry": {
