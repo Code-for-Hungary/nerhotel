@@ -15039,27 +15039,28 @@
       "name": "Felix Kitchen&Bar",
       "city": "Budapest",
       "type": "étterem",
-      "link": "https://hvg.hu/360/201938__tiborcz_istvan__borbiznisz__felix__ihatnak_amedve_borere",
+      "link": "https://24.hu/belfold/2021/09/15/felix-etterem-matolcsy-pinter-mate/",
       "mainOligarch": [
         {
-          "name": "Bánkuty Tamás József",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/bankuty-tamas"
+          "name": "Pintér Máté Tibor",
+          "link": ""
         }
       ],
       "mainCEO": [],
       "oligarchs": [
         {
-          "name": "Németh Gergely",
+          "name": "Pintér Máté Tibor",
           "link": ""
-        },
-        {
-          "name": "Bánkuty Tamás József",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/bankuty-tamas"
         }
       ],
-      "ceos": [],
-      "date": "2020.11.20",
-      "details": "Az étterem tényleges tulajdonosa az MNB PADMA alapítványa, az üzemeltető cég vezetője a több MNB alapítványt is irányító, Matolcsy Györgyhöz több szálon is kapcsolódó Bánkuty Tamás."
+      "ceos": [
+        {
+          "name": "Németh Gergely",
+          "link": ""
+        }
+      ],
+      "date": "2021.09.15",
+      "details": "Az étterem MNB PADMA alapítványától 2021 szeptemberében került a jegybankelnök fiának, Matolcsy Ádámnak a köréhez kötődő Pintér Mátéhoz."
     },
     "geometry": {
       "type": "Point",
