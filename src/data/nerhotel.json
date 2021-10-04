@@ -16590,5 +16590,43 @@
         -0.8515713225
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 334,
+      "address": "Bakonybél, Szőlőgyöp, 8427",
+      "company": {
+        "name": "Nagy Tamás",
+        "link": ""
+      },
+      "name": "Galagonyás vendégház",
+      "city": "Bakonybél",
+      "type": "szálloda",
+      "link": "https://24.hu/belfold/2021/10/04/szentgyorgyvolgyi-peter-bakony-panzio-kozpenz-pajta/",
+      "mainOligarch": [
+        {
+          "name": "Nagy Tamás",
+          "link": ""
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Nagy Tamás",
+          "link": ""
+        }
+      ],
+      "ceos": [],
+      "date": "2021.10.04",
+      "details": "Szentgyörgyvölgyi Péter Budapest 5. kerületének polgármestere ingatlanján Nagy Tamás üzemeltet vendégházat, amelyre a Kisfaludy-programból 4 millió forint vissza nem térítendő támogatást kapott 2020-ban."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.24677383,
+        17.73426375
+      ]
+    }
   }
 ]
