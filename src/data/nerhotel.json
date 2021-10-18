@@ -12747,8 +12747,8 @@
       "id": 257,
       "address": "Tura, Park utca 37., 2194",
       "company": {
-        "name": "TRA Real Estates Kft.",
-        "link": "https://k-monitor.hu/adatbazis/cimkek/tra-real-estates-kft"
+        "name": "BDPST Hotel Management Zrt.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
       },
       "name": "Botaniq",
       "city": "Tura",
@@ -12760,7 +12760,12 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
         }
       ],
-      "mainCEO": [],
+      "mainCEO": [
+        {
+          "name": "Somlyai Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
+        }
+      ],
       "oligarchs": [
         {
           "name": "Tiborcz István Ferenc",
@@ -12770,10 +12775,10 @@
       "ceos": [
         {
           "name": "Somlyai Zoltán",
-          "link": ""
+          "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
         }
       ],
-      "date": "2020.06.28",
+      "date": "2021.10.18",
       "details": ""
     },
     "geometry": {
@@ -16549,7 +16554,7 @@
       "id": 333,
       "address": "Los Alcázares, C/ los Luisos, 11, 30710",
       "company": {
-        "name": "BDPST Hotel Zrt.",
+        "name": "BDPST Hotel Management Zrt.",
         "link": "https://k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
       },
       "name": "Hotel Atrio del Mar",
@@ -16580,14 +16585,14 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
         }
       ],
-      "date": "2021.09.24",
+      "date": "2021.10.18",
       "details": "A Tiborcz István tulajdonában álló BDPST 2021 nyara óta üzemelteti első küföldi szállodáját, a spanyolországi Atrio del Mart."
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
         37.73858459,
-        -0.8515713225
+        null
       ]
     }
   },
@@ -16626,6 +16631,54 @@
       "coordinates": [
         47.24677383,
         17.73426375
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 335,
+      "address": "Budapest, Október 6. utca 26., 1051",
+      "company": {
+        "name": "BDPST Hotel Management Zrt.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
+      },
+      "name": "Grand Hotel Budapest",
+      "city": "Budapest",
+      "type": "szálloda",
+      "link": "https://www.portfolio.hu/ingatlan/20211013/belvarosi-hotelt-vasarolt-a-bdpst-group-505138",
+      "mainOligarch": [
+        {
+          "name": "Tiborcz István Ferenc",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Somlyai Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Tiborcz István Ferenc",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Somlyai Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
+        }
+      ],
+      "date": "2021.10.18",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.50270285,
+        19.05040714
       ]
     }
   }
