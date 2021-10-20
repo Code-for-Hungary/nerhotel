@@ -3348,24 +3348,39 @@
       "id": 65,
       "address": "St. Lorenzen ob Murau, St. Lorenzen 6, 8861",
       "company": {
-        "name": "RELAX Gastro & Hotel GmbH",
-        "link": "https://k-monitor.hu/adatbazis/cimkek/relax-gastro-hotel-gmbh"
+        "name": "BDPST Hotel Management Zrt.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
       },
       "name": "Alpenblick Hotel",
       "city": "St. Lorenzen ob Murau",
       "type": "szálloda",
-      "link": "https://24.hu/fn/gazdasag/2018/04/04/meszaros-lorinc-konzum-szalloda/",
-      "mainOligarch": [],
-      "mainCEO": [],
-      "oligarchs": [],
-      "ceos": [
+      "link": "https://444.hu/2021/10/19/tiborcz-vett-ket-osztrak-sihotelt-meszaros-lorinctol?fbclid=IwAR3FC_2ut3pn6XNLTSBj7HFm5dzvDZIIiCG8j8aWEqFQAYhxyUCM4iGYwgQ",
+      "mainOligarch": [
         {
-          "name": "Schmidl Peter György",
-          "link": ""
+          "name": "Tiborcz István Ferenc",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
         }
       ],
-      "date": "2019.07.30",
-      "details": ""
+      "mainCEO": [
+        {
+          "name": "Somlyai Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Tiborcz István Ferenc",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Somlyai Zoltán",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
+        }
+      ],
+      "date": "2021.10.20",
+      "details": "A korábban Mészáros Lőrinc féle Hunguest Hotelshez tartozó 43 családi szobás, 4 csillagos szálláshelyet 2021. októberben vette át Tiborcz István BDPST-je."
     },
     "geometry": {
       "type": "Point",
@@ -3999,51 +4014,39 @@
       "id": 77,
       "address": "Kreischberg, Kreischberg 2, 8861",
       "company": {
-        "name": "Hunguest Hotels Zrt.",
-        "link": "https://k-monitor.hu/adatbazis/cimkek/hunguest-hotels-zrt"
+        "name": "BDPST Hotel Management Zrt.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
       },
-      "name": "Hunguest Hotel Relax Resort",
+      "name": "Hotel Relax Resort",
       "city": "Kreischberg",
       "type": "szálloda",
-      "link": "https://24.hu/fn/gazdasag/2018/04/04/meszaros-lorinc-konzum-szalloda/",
+      "link": "https://444.hu/2021/10/19/tiborcz-vett-ket-osztrak-sihotelt-meszaros-lorinctol?fbclid=IwAR3FC_2ut3pn6XNLTSBj7HFm5dzvDZIIiCG8j8aWEqFQAYhxyUCM4iGYwgQ",
       "mainOligarch": [
         {
-          "name": "Mészáros Lőrinc",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+          "name": "Tiborcz István Ferenc",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
         }
       ],
       "mainCEO": [
         {
-          "name": "Somlyai Zoltán László",
+          "name": "Somlyai Zoltán",
           "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
-        },
-        {
-          "name": "Jászai Gellért Zoltán",
-          "link": ""
         }
       ],
       "oligarchs": [
         {
-          "name": "Mészáros Lőrinc",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+          "name": "Tiborcz István Ferenc",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
         }
       ],
       "ceos": [
         {
-          "name": "Somlyai Zoltán László",
+          "name": "Somlyai Zoltán",
           "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
-        },
-        {
-          "name": "Hülvely István",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/hulvely-istvan"
-        },
-        {
-          "name": "Jászai Gellért Zoltán",
-          "link": ""
         }
       ],
-      "date": "2019.07.30",
-      "details": ""
+      "date": "2021.10.20",
+      "details": "A korábban Mészáros Lőrinc féle Hunguest Hotelshez tartozó 91 szobás, 4 csillagos pályaszállást 2021. októberben vette át Tiborcz István BDPST-je."
     },
     "geometry": {
       "type": "Point",
