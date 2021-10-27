@@ -16684,5 +16684,48 @@
         19.05040714
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 336,
+      "address": "Celldömölk, Sági utca 56., 9500",
+      "company": {
+        "name": "CELL-BAHNBAU Kft.",
+        "link": ""
+      },
+      "name": "Vasvirág Hotel",
+      "city": "Celldömölk",
+      "type": "szálloda",
+      "link": "https://alfahir.hu/szocialista_mutyi_keszulodik_celldomolkon",
+      "mainOligarch": [
+        {
+          "name": "Söptei Józsefné",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/soptei-jozsefne"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Söptei Józsefné",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/soptei-jozsefne"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Geiger Gábor",
+          "link": ""
+        }
+      ],
+      "date": "2021.10.27",
+      "details": "Söptei Józsefné Celldömölk alpolgármestere."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.24964803,
+        17.15209233
+      ]
+    }
   }
 ]
