@@ -11288,57 +11288,45 @@
       "id": 231,
       "address": "Gyöngyös, 3233 Gyöngyös, 3233",
       "company": {
-        "name": "Hunguest Hotels Zrt.",
-        "link": "https://k-monitor.hu/adatbazis/cimkek/hunguest-hotels-zrt"
+        "name": "BDPST Hotel Management Zrt.",
+        "link": "https://k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
       },
       "name": "Lifestyle Hotel Mátra",
       "city": "Gyöngyös",
       "type": "szálloda",
-      "link": "https://mno.hu/gazdasag/meszaros-es-tiborcz-beszallt-a-szallodaiparba-maris-omlik-a-penz-a-turizmusba-2421790",
+      "link": "https://444.hu/2021/10/29/tiborcz-istvan-cege-viszi-a-lifestyle-hotel-matrat",
       "mainOligarch": [
         {
-          "name": "Mészáros Lőrinc",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+          "name": "Tiborcz István Ferenc",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
         }
       ],
       "mainCEO": [
         {
-          "name": "Somlyai Zoltán László",
+          "name": "Somlyai Zoltán",
           "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
-        },
-        {
-          "name": "Jászai Gellért Zoltán",
-          "link": ""
         }
       ],
       "oligarchs": [
         {
-          "name": "Mészáros Lőrinc",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+          "name": "Tiborcz István Ferenc",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
         }
       ],
       "ceos": [
         {
-          "name": "Somlyai Zoltán László",
+          "name": "Somlyai Zoltán",
           "link": "https://k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
-        },
-        {
-          "name": "Hülvely István",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/hulvely-istvan"
-        },
-        {
-          "name": "Jászai Gellért Zoltán",
-          "link": ""
         }
       ],
-      "date": "2020.05.30",
-      "details": "2020 májusában 819 millió forintot kapott a Kisfaludy programból a LifeStyle Hotel Mátra."
+      "date": "2021.10.29",
+      "details": "2020 májusában 819 millió forintot kapott a Kisfaludy programból az akkor még Mészáros Lőrinc érdekeltségébe (Hunguest) tartozó LifeStyle Hotel Mátra. Az egység 2021. októberben került Tiborcz Istvánhoz (BDPST Group)."
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        47.852673,
-        19.9702903
+        47.85263647,
+        19.97299669
       ]
     }
   },
