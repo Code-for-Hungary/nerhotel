@@ -2586,8 +2586,13 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
-      "ceos": [],
-      "date": "2019.07.30",
+      "ceos": [
+        {
+          "name": "Gombai Gabriella",
+          "link": ""
+        }
+      ],
+      "date": "2021.11.09",
       "details": "A 2007-ben privatizált egykori pártüdülőt 2018 júliusában az akkor még Mészáros-féle Konzum ingatlankezelő cége, az Appeninn vette meg, annak leányvállalatáé lett a területet és a kikötőt tulajdonló a Pro-Mot Hungária Kft. 74,99%-os üzletrésze. Később Tiborcz István is megjelent a cégben, amely állami támogatást nyert a kikötő fejlesztésére és az állami Erzsébet-program nyaralásainak egyik helyszíne lett. 2020-ban az Appeninnből Mészáros és Tiborcz is kiszálltak, az új tulajdonosok közt azonban felbukkant a Tiborczhoz köthető Balázs Attila, illetve továbbra is kisebbségi tulajdonos a Lexan-csoport, amit a sajtóban Szivek Norbert korábbi MNV-vezetőhöz kötnek."
     },
     "geometry": {
@@ -12988,6 +12993,10 @@
       "link": "https://www.valaszonline.hu/2020/04/29/bayer-construct-balazs-attila-balatoni-kikotoberuhazas/",
       "mainOligarch": [
         {
+          "name": "Jellinek Dániel",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
           "name": "Balázs Attila",
           "link": "https://k-monitor.hu/adatbazis/cimkek/balazs-attila"
         }
@@ -13005,11 +13014,19 @@
       ],
       "ceos": [
         {
-          "name": "Détári-Szabó Ádám",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/detari-szabo-adam"
+          "name": "Bihari Tamás",
+          "link": ""
+        },
+        {
+          "name": "Szabó Nóra",
+          "link": ""
+        },
+        {
+          "name": "Hegelsberger Zoltán",
+          "link": ""
         }
       ],
-      "date": "2020.07.20",
+      "date": "2021.11.09",
       "details": ""
     },
     "geometry": {
