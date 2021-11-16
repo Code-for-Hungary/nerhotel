@@ -692,10 +692,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "mainCEO": [],
@@ -703,10 +699,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         },
         {
           "name": "Kalocsai László",
@@ -719,7 +711,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/kalocsai-laszlo"
         }
       ],
-      "date": "2021.07.12",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
@@ -783,7 +775,7 @@
       "id": 14,
       "address": "Zánka, Borosok útja 1., 8251",
       "company": {
-        "name": "Canter Borház Kft.",
+        "name": "Dereszla Balaton Kft.",
         "link": "https://k-monitor.hu/adatbazis/cimkek/canter-borhaz-kft"
       },
       "name": "Canter Borház",
@@ -794,10 +786,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "mainCEO": [],
@@ -805,19 +793,15 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "ceos": [
         {
-          "name": "Gelencsér Gergő",
-          "link": ""
+          "name": "Kalocsai László",
+          "link": "https://k-monitor.hu/adatbazis/cimkek/kalocsai-laszlo"
         }
       ],
-      "date": "2019.07.30",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
@@ -2921,10 +2905,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "mainCEO": [],
@@ -2932,10 +2912,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "ceos": [
@@ -2944,7 +2920,7 @@
           "link": ""
         }
       ],
-      "date": "2019.07.30",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
@@ -3035,7 +3011,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/harnos-laszlo"
         }
       ],
-      "date": "2021.07.12",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
@@ -3519,10 +3495,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "mainCEO": [],
@@ -3530,10 +3502,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "ceos": [
@@ -3542,7 +3510,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/adravecz-edit"
         }
       ],
-      "date": "2019.07.30",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
@@ -3808,10 +3776,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "mainCEO": [],
@@ -3819,10 +3783,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "ceos": [
@@ -3831,7 +3791,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/adravecz-edit"
         }
       ],
-      "date": "2019.07.30",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
@@ -3919,10 +3879,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "mainCEO": [],
@@ -3930,10 +3886,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "ceos": [
@@ -3942,7 +3894,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/adravecz-edit"
         }
       ],
-      "date": "2019.07.30",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
@@ -4138,10 +4090,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "mainCEO": [],
@@ -4149,10 +4097,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "ceos": [
@@ -4161,7 +4105,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/adravecz-edit"
         }
       ],
-      "date": "2019.07.30",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
@@ -4410,10 +4354,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "mainCEO": [],
@@ -4421,10 +4361,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         },
         {
           "name": "Kalocsai László",
@@ -4437,7 +4373,7 @@
           "link": "https://k-monitor.hu/adatbazis/cimkek/kalocsai-laszlo"
         }
       ],
-      "date": "2019.07.30",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
@@ -12703,10 +12639,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "mainCEO": [],
@@ -12714,10 +12646,6 @@
         {
           "name": "Mészáros Lőrinc",
           "link": "https://k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Kelemen Beatrix Csilla",
-          "link": "https://k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
         }
       ],
       "ceos": [
@@ -12726,7 +12654,7 @@
           "link": ""
         }
       ],
-      "date": "2020.06.28",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
@@ -13289,8 +13217,8 @@
       "id": 268,
       "address": "Tihany, Kiserdőtelepi út 075/15 hrsz, 8237",
       "company": {
-        "name": "Mészáros Gasztro Kft.",
-        "link": "https://k-monitor.hu/adatbazis/cimkek/tihany-vin-kft"
+        "name": "Tihany-Vin Kft.",
+        "link": ""
       },
       "name": "Tihanyi Vinarius",
       "city": "Tihany",
@@ -13311,15 +13239,11 @@
       ],
       "ceos": [
         {
-          "name": "Czene Ferenc",
-          "link": ""
-        },
-        {
-          "name": "Vadász Tamás",
+          "name": "Kovács János",
           "link": ""
         }
       ],
-      "date": "2021.07.12",
+      "date": "2021.11.16",
       "details": ""
     },
     "geometry": {
