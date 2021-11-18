@@ -16656,5 +16656,91 @@
         17.15209233
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 337,
+      "address": "Sopron, Sopron, Várkerület 25, 9400",
+      "company": {
+        "name": "Arcus Kereskedelmi Kft.",
+        "link": ""
+      },
+      "name": "Arcus kávézó",
+      "city": "Sopron",
+      "type": "étterem",
+      "link": "",
+      "mainOligarch": [
+        {
+          "name": "Simon István",
+          "link": ""
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Simon István",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Zsidó László",
+          "link": ""
+        }
+      ],
+      "date": "2021.11.17",
+      "details": "Jelenleg Simon István tulajdonában áll a Sopronban két vendéglátóhelyet üzemeltető cég, amiben sokáig felesége, Molnár Ágnes, Sopron országgyűlési képviselője is tulajdonos volt."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.68637323,
+        16.59341738
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 338,
+      "address": "Sopron, Bécsi út, 9400",
+      "company": {
+        "name": "Arcus Kereskedelmi Kft.",
+        "link": ""
+      },
+      "name": "Arcus pihenőhely",
+      "city": "Sopron",
+      "type": "étterem",
+      "link": "https://www.youtube.com/watch?v=gj2l2YPSAxE",
+      "mainOligarch": [
+        {
+          "name": "Simon István",
+          "link": ""
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Simon István",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Zsidó László",
+          "link": ""
+        }
+      ],
+      "date": "2021.11.17",
+      "details": "Jelenleg Simon István tulajdonában áll a Sopronban két vendéglátóhelyet üzemeltető cég, amiben sokáig felesége, Molnár Ágnes, Sopron országgyűlési képviselője is tulajdonos volt."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.71601037,
+        16.57093309
+      ]
+    }
   }
 ]
