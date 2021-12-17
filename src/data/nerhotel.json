@@ -16742,5 +16742,65 @@
         16.57093309
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 339,
+      "address": "Eger, Szálloda út 1-3., 3300",
+      "company": {
+        "name": "Hunguest Hotels Zrt.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hunguest-hotels-zrt"
+      },
+      "name": "Hotel Eger & Park",
+      "city": "Eger",
+      "type": "szálloda",
+      "link": "https://hvg.hu/kkv/20211217_meszaros_lorinc_hunguest_hotels_eger_szalloda_hotel_opus_global",
+      "mainOligarch": [
+        {
+          "name": "Mészáros Lőrinc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Somlyai Zoltán László",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
+        },
+        {
+          "name": "Jászai Gellért Zoltán",
+          "link": ""
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Mészáros Lőrinc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Somlyai Zoltán László",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
+        },
+        {
+          "name": "Hülvely István",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hulvely-istvan"
+        },
+        {
+          "name": "Jászai Gellért Zoltán",
+          "link": ""
+        }
+      ],
+      "date": "2021.12.17",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.89712054,
+        20.37656265
+      ]
+    }
   }
 ]
