@@ -16802,5 +16802,61 @@
         20.37656265
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 340,
+      "address": "Balatonederics, Kossuth u. 72., 8312",
+      "company": {
+        "name": "BG Pálinkaház Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bg-palinkahaz-kft"
+      },
+      "name": "Bringatanya pihenőhely és büfé",
+      "city": "Balatonederics",
+      "type": "büfé",
+      "link": "https://hvg.hu/kkv/20170727_Muhal_es_latens_kerekparut_megint_elment_egy_rakas_unios_penz",
+      "mainOligarch": [
+        {
+          "name": "Benkő Gábor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/benko-gabor"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Benkő Gábor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/benko-gabor"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Benkő Gábor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/benko-gabor"
+        },
+        {
+          "name": "Kámány Zoltán Roland",
+          "link": ""
+        },
+        {
+          "name": "Udvardi Imre",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Benkő Gábor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/benko-gabor"
+        }
+      ],
+      "date": "2021.12.30",
+      "details": "Benkő Gábor, Nemesvita alpolgármestere tulajdonában álló cég üzemeltetei a 324 millió uniós pályázati pénzből megvalósult bringatanyához kapcsolódó büfét."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.81044374,
+        17.38127849
+      ]
+    }
   }
 ]
