@@ -16516,5 +16516,48 @@
         19.046628
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 341,
+      "address": "Budapest, Ybl Miklós tér 6., 1013",
+      "company": {
+        "name": "Bárkert Kft.",
+        "link": ""
+      },
+      "name": "Bárkert Bistró",
+      "city": "Budapest",
+      "type": "étterem",
+      "link": "https://444.hu/2022/01/19/a-luxusbisztro-is-matolcsy-adam-baratjae-lett-a-varkert-bazarban",
+      "mainOligarch": [
+        {
+          "name": "Pintér Máté Tibor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/pinter-mate"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Pintér Máté Tibor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/pinter-mate"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Németh Gergely",
+          "link": ""
+        }
+      ],
+      "date": "2022.01.19",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.49379126,
+        19.04312403
+      ]
+    }
   }
 ]
