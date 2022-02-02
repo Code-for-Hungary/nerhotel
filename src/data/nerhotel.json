@@ -492,7 +492,7 @@
           "link": ""
         }
       ],
-      "date": "2021.08.18",
+      "date": "2022.01.28",
       "details": "Szepesi Richárd az egyik legeredményesebb a Magyar Turisztikai Ügynökség pályázatain, az ötcsillagos BalaLand építésére 5,9 milliárd forintott kapott."
     },
     "geometry": {
@@ -16643,6 +16643,816 @@
       "coordinates": [
         48.22016958,
         20.28247612
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 344,
+      "address": "Szihalom, Vadász út 40-42., 3377",
+      "company": {
+        "name": "Pintérné Eötvös Ildikó",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/pinterne-eotvos-ildiko"
+      },
+      "name": "4 szobás szálláshely",
+      "city": "Szihalom",
+      "type": "szálloda",
+      "link": "",
+      "mainOligarch": [],
+      "mainCEO": [],
+      "oligarchs": [],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": "Pintér Sándor belügyminiszter felesége által üzemeltetett, 4 szobás, 9 ágyas egyéb szálláshely."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.79538807,
+        20.51516894
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 345,
+      "address": "Moravske Toplice, 12 Kranjčeva ulica, 9226",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Terme 3000",
+      "city": "Moravske Toplice",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.68322177,
+        16.22031156
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 346,
+      "address": "Radenci, Zdraviliško naselje 12, 9252",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Zdravilišče Radenci",
+      "city": "Radenci",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.64324326,
+        16.04632518
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 347,
+      "address": "Ptuj, Pot v Toplice 9, 2251",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Terme Ptuj",
+      "city": "Ptuj",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.42183578,
+        15.85569767
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 348,
+      "address": "Izola, Morova ulica 6a, 6310",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "San Simon Resort Hotel Haliaetum",
+      "city": "Izola",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.53077313,
+        13.6491944
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 349,
+      "address": "Izola, Morova ulica 6a, 6310",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "San Simon Resort Hotel Mirta",
+      "city": "Izola",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.53101156,
+        13.64759311
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 350,
+      "address": "Izola, Morova ulica 6a-3, 6310",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "San Simon Resort Depandances San Simon",
+      "city": "Izola",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.53122175,
+        13.64640041
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 351,
+      "address": "Portorož, Strunjan 14, 6320",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Salinera Resort Salinera Apartments",
+      "city": "Portorož",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.52489508,
+        13.59907473
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 352,
+      "address": "Portorož, Strunjan 14-1, 6320",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Salinera Resort Vila Maia",
+      "city": "Portorož",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.52563726,
+        13.59783961
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 353,
+      "address": "Portorož, , 6320",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Salinera Resort Hotel Salinera",
+      "city": "Portorož",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.52414623,
+        13.59790771
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 354,
+      "address": "Portorož, Obala 2, 6320",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Grand Hotel Bernardin",
+      "city": "Portorož",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.51684849,
+        13.56961279
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 355,
+      "address": "Portorož, Obala 2b, 6320",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Hotel Histrion",
+      "city": "Portorož",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.51511348,
+        13.57197135
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 356,
+      "address": "Portorož, Obala 2c, 6320",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Hotel Vile Park",
+      "city": "Portorož",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.51576299,
+        13.57191389
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 357,
+      "address": "Portorož, Obala 2, 6320",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Apartments Vila Barka",
+      "city": "Portorož",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        45.51482111,
+        13.57385712
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 358,
+      "address": "Bled, Cesta svobode 15, 4260",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Hotel Park",
+      "city": "Bled",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.36763578,
+        14.10941229
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 359,
+      "address": "Bled, Cesta svobode 12, 4260",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Grand Hotel Toplice",
+      "city": "Bled",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.3656262,
+        14.1073438
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 360,
+      "address": "Bled, Cankarjeva cesta 4, 4260",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Rikli Balance Hotel",
+      "city": "Bled",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.36555112,
+        14.10944978
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 361,
+      "address": "Bled, Cankarjeva cesta 6, 4260",
+      "company": {
+        "name": "Sava Turizem d.d.",
+        "link": ""
+      },
+      "name": "Hotel Savica Garni",
+      "city": "Bled",
+      "type": "szálloda",
+      "link": "https://24.hu/kulfold/2022/01/24/szlovenia-komonczi-zsolt-jellinek-daniel-diofa-alapkezelo-szivek-norbert-sava-szalloda/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+        },
+        {
+          "name": "Komonczi Zsolt Csaba",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/komonczi-zsolt"
+        }
+      ],
+      "ceos": [],
+      "date": "2022.02.02",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.36562335,
+        14.11076273
       ]
     }
   }
