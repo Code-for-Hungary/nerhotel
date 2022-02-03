@@ -15789,6 +15789,49 @@
     "type": "Feature",
     "properties": {
       "id": 326,
+      "address": "Újrónafő, , 9244",
+      "company": {
+        "name": "Vért Vadászati Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/vert-vadaszati-kft"
+      },
+      "name": "Lajta-Hanság vadászház",
+      "city": "Újrónafő",
+      "type": "szálloda",
+      "link": "https://24.hu/fn/gazdasag/2020/09/08/meszaros-lorinc-vadaszhaz-ujronafo/",
+      "mainOligarch": [
+        {
+          "name": "Mészáros Lőrinc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Mészáros Lőrinc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Adravecz Edit",
+          "link": ""
+        }
+      ],
+      "date": "2022.02.03",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.7997368,
+        17.27475004
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 327,
       "address": "Zomba, Szentgálszőlőhegy 4., 7173",
       "company": {
         "name": "VINITIS-Agrárium Szőlészeti Kft.",
@@ -15840,7 +15883,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 327,
+      "id": 328,
       "address": "Budapest, Ybl Miklós tér 9., 1013",
       "company": {
         "name": "Vízház Gasztronómia Zrt.",
@@ -15883,7 +15926,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 328,
+      "id": 329,
       "address": "Velence, Béke u. 57., 2481",
       "company": {
         "name": "VRS Part HOTEL Kft.",
@@ -15926,7 +15969,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 329,
+      "id": 330,
       "address": "Győr, Juharfa u. 11., 9027",
       "company": {
         "name": "WHB Hotel Kft.",
@@ -15974,7 +16017,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 330,
+      "id": 331,
       "address": "Balatonlelle, Rákóczi u. 223., 8638",
       "company": {
         "name": "Witzmann Mihályné",
@@ -16012,7 +16055,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 331,
+      "id": 332,
       "address": "Zalacsány, , 8782",
       "company": {
         "name": "Zala Springs Golf Resort Zrt.",
@@ -16067,7 +16110,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 332,
+      "id": 333,
       "address": "Balatonakali, Balaton u. 8,, 8243",
       "company": {
         "name": "ZION Europe Ingatlanforgalmazó és Hasznosító Kft.",
@@ -16126,7 +16169,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 333,
+      "id": 334,
       "address": "Zalaszabar, hrsz. 1565., 8743",
       "company": {
         "name": "Zobori KalandoZoo Kft.",
@@ -16182,7 +16225,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 334,
+      "id": 335,
       "address": "Taksony, Sziget sétány, 2335",
       "company": {
         "name": "Zöld Sziget Panzió Kft.",
@@ -16229,7 +16272,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 335,
+      "id": 336,
       "address": "Budapest, Alkotás u. 53., 1123",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -16275,7 +16318,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 336,
+      "id": 337,
       "address": "Budapest, Úri utca 21., 1014",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -16321,7 +16364,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 337,
+      "id": 338,
       "address": "Budapest, Fortuna utca 3., 1014",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -16367,7 +16410,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 338,
+      "id": 339,
       "address": "Budapest, Tas vezér u. 7., 1113",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -16418,7 +16461,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 339,
+      "id": 340,
       "address": "Budapest, Móricz Zsigmond körtér Gomba épületegyüttes, 1117",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -16469,7 +16512,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 340,
+      "id": 341,
       "address": "Budapest, Móricz Zsigmond körtér Gomba épületegyüttes 1. cikk, 1117",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -16520,7 +16563,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 341,
+      "id": 342,
       "address": "Budapest, Ybl Miklós tér 6., 1013",
       "company": {
         "name": "Bárkert Kft.",
@@ -16563,7 +16606,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 342,
+      "id": 343,
       "address": "Kisvárda, Városmajor u. 47., 4600",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -16606,7 +16649,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 343,
+      "id": 344,
       "address": "Ózd, Kohász u. 2., 3600",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -16649,7 +16692,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 344,
+      "id": 345,
       "address": "Szihalom, Vadász út 40-42., 3377",
       "company": {
         "name": "Pintérné Eötvös Ildikó",
@@ -16677,7 +16720,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 345,
+      "id": 346,
       "address": "Moravske Toplice, 12 Kranjčeva ulica, 9226",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16723,7 +16766,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 346,
+      "id": 347,
       "address": "Radenci, Zdraviliško naselje 12, 9252",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16769,7 +16812,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 347,
+      "id": 348,
       "address": "Ptuj, Pot v Toplice 9, 2251",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16815,7 +16858,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 348,
+      "id": 349,
       "address": "Izola, Morova ulica 6a, 6310",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16861,7 +16904,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 349,
+      "id": 350,
       "address": "Izola, Morova ulica 6a, 6310",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16907,7 +16950,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 350,
+      "id": 351,
       "address": "Izola, Morova ulica 6a-3, 6310",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16953,7 +16996,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 351,
+      "id": 352,
       "address": "Portorož, Strunjan 14, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16999,7 +17042,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 352,
+      "id": 353,
       "address": "Portorož, Strunjan 14-1, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17045,7 +17088,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 353,
+      "id": 354,
       "address": "Portorož, , 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17091,7 +17134,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 354,
+      "id": 355,
       "address": "Portorož, Obala 2, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17137,7 +17180,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 355,
+      "id": 356,
       "address": "Portorož, Obala 2b, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17183,7 +17226,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 356,
+      "id": 357,
       "address": "Portorož, Obala 2c, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17229,7 +17272,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 357,
+      "id": 358,
       "address": "Portorož, Obala 2, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17275,7 +17318,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 358,
+      "id": 359,
       "address": "Bled, Cesta svobode 15, 4260",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17321,7 +17364,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 359,
+      "id": 360,
       "address": "Bled, Cesta svobode 12, 4260",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17367,7 +17410,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 360,
+      "id": 361,
       "address": "Bled, Cankarjeva cesta 4, 4260",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17413,7 +17456,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 361,
+      "id": 362,
       "address": "Bled, Cankarjeva cesta 6, 4260",
       "company": {
         "name": "Sava Turizem d.d.",
