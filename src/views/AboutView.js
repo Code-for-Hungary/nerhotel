@@ -20,9 +20,9 @@ const AboutView = (props) => {
         </section>
         <section>
           <h2>Milyen helyek szerepelnek rajta?</h2>
-          <p>A NER HOTEL olyan vendéglátó-, idegenforgalmi- és szálláshelyeket jelenít meg, amelyek politikailag exponált személyekhez (angolul politically exposed persons, PEP) köthetőek, az általuk
+          <p>A NER HOTEL olyan <b>vendéglátó-, idegenforgalmi- és szálláshelyeket jelenít meg, amelyek politikailag exponált személyekhez köthetőek</b>, az általuk
             termelt haszon ilyen szereplőknél jelenik meg. Előfordulhat, hogy egy ingatlannak más a tulajdonosa, mint az ott üzemelő helynek, ilyenkor az utóbbit vesszük alapul, mivel a fogyasztásból
-            eredő haszon közvetlenül az üzemeltetőnél csapódik le. Politikailag exponált személynek elsősorban a <u>2017. évi LIII. törvény</u> 4. §-ában adott meghatározást követve a kiemelt
+            eredő haszon közvetlenül az üzemeltetőnél csapódik le. Politikailag exponált személynek elsősorban a <a href="https://net.jogtar.hu/jogszabaly?docid=a1700053.tv" target="new">2017. évi LIII. törvény</a> 4. §-ában adott meghatározást követve a kiemelt
             közszereplőket, ezek közeli hozzátartozóit és a velük közeli kapcsolatban álló személyeket tekintjük. Ez a definíció a nemzetközi pénzügyi visszaélésekkel összefüggésben, kockázati elven
             határozza meg a PEP-ek egy bizonyos körét. A hazai idegenforgalom politikailag exponált szereplőinek azonosítása érdekében a NER HOTEL a nemzetközi átvilágítási sztenderdekre is
             tekintettel egy ennél bővebb definíciót használ. Ez tartalmazza az önkormányzati döntéshozókat, a turisztikai ágazat kormányzati szervezeteinek vezetőit, illetve azokat a személyeket, akik
