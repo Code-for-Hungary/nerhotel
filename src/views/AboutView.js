@@ -40,6 +40,11 @@ const AboutView = (props) => {
           <p><strong>Helyek adatai:</strong> Országos Kereskedelmi Nyilvántartás, önkéntes gyűjtés (helyek honlapjai, sajtócikkek, <a href="https://k-monitor.hu/adatbazis/cimkek/kisfaludy-program" target="_blank" rel="noopener noreferrer">Kisfaludy Program stb.)</a></p>
         </section>
         <section>
+          <h2>Milyen forrásból? Honnan volt rá pénz?</h2>
+          <p>Az ötlet első megfogalmazását követően írt <a href="https://k.blog.hu/2018/08/03/ner_hotel" target="new">blogposztunk</a> felhívására 116 támogatónk adott össze összesen 577.213 forintot. Ebből az összegből részben a fejlesztés során felmerülő, valamint a fenntartáshoz szükséges elkerülhetetlen költségeket fedeztük, részben kommunikációra költöttünk.</p> Ezen mikroadományokon túl más forrás nem kapcsolódik a projekthez.
+          <p>Ha értékesnek találod a munkánkat, <a href="https://tamogatas.k-monitor.hu" target="new">támogasd a K-Monitort rendszeres adományoddal</a>!</p>
+        </section>
+        <section>
           <h2>Hibát találtál? Jelezd felénk!</h2>
           <p>Az idegenforgalom és vendéglátás folyamatos mozgásban van, gyakran történnek változások a céges adatokban. Elképzelhető, hogy bizonyos, a NER Hotelben feltüntetett adatok mára elavultak, nem pontosak vagy éppen hiányosak.</p>
           <p>Büszkék vagyunk rá, hogy önkéntesek segítségével építettük az alkalmazást és nyitottak vagyunk minden észrevételre. Járulj hozzá te is a fejlesztéshez! <a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6uNP-ML46outzCbOifdwKefAaB1x_j9eXMzeTJYGB5NEnA/viewform" target="_blank" rel="noopener noreferrer">Írd meg nekünk</a>, ha hibát találsz, vagy ha egy hely megjelenítésével nem értesz egyet! A beküldött információkat természetesen nem közvetlenül, hanem csak a saját módszertanunkkal való összevetés után vezetjük fel.</p>
