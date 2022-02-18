@@ -41,8 +41,8 @@ const AboutView = (props) => {
         </section>
         <section>
           <h2>Milyen forrásból? Honnan volt rá pénz?</h2>
-          <p>Az ötlet első megfogalmazását követően írt <a href="https://k.blog.hu/2018/08/03/ner_hotel" target="new">blogposztunk</a> felhívására 116 támogatónk adott össze összesen 577.213 forintot. Ebből az összegből részben a fejlesztés során felmerülő, valamint a fenntartáshoz szükséges elkerülhetetlen költségeket fedeztük, részben kommunikációra költöttünk.</p> Ezen mikroadományokon túl más forrás nem kapcsolódik a projekthez.
-          <p>Ha értékesnek találod a munkánkat, <a href="https://tamogatas.k-monitor.hu" target="new">támogasd a K-Monitort rendszeres adományoddal</a>!</p>
+          <p>Az ötlet első publikus megfogalmazását jelentő 2018-ban írt <a href="https://k.blog.hu/2018/08/03/ner_hotel" target="new">blogposztunk</a> felhívására <b>116 támogatónk adott össze összesen 577.213 forintot</b>. Ebből az összegből részben a fejlesztés során felmerülő, valamint a fenntartáshoz szükséges elkerülhetetlen költségeket fedeztük, részben kommunikációra költöttünk.</p> Ezen mikroadományokon túl más forrás nem kapcsolódik a projekthez.
+          <p><b>Ha értékesnek találod a munkánkat, <a href="https://tamogatas.k-monitor.hu" target="new">támogasd a K-Monitort rendszeres adományoddal</a>!</b></p>
         </section>
         <section>
           <h2>Hibát találtál? Jelezd felénk!</h2>
