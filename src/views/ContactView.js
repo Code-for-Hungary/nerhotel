@@ -15,7 +15,7 @@ const AboutView = (props) => {
           <p>A K-Monitor Iroda 2007 óta küzd a közpénzek átlátható felhasználásáért és a korrupció visszaszorításáért.
             Civil szervezetünk olyan politikai, gazdasági és társadalmi környezetet megteremtéséért dolgozik, ahol
             az állampolgárok elutasítják, a hatóságok pedig hatékonyan feltárják és szankcionálják a korrupciót.</p>
-            <p><a href="https://tamogatas.k-monitor.hu/"> target="new">Támogasd munkánkat rendszeres adományoddal!</a></p>
+            <p><a href="https://tamogatas.k-monitor.hu/" target="new">Támogasd munkánkat rendszeres adományoddal!</a></p>
         </section>
         <section>
           <h2>Elérhetőség</h2>
