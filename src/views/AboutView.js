@@ -13,9 +13,9 @@ const AboutView = (props) => {
             megkerülhetetlenné váltak azok a vállalkozások, amelyek ennek a folyamatnak a haszonélvezői, hotelek és éttermek százai kerültek politikaközeli szereplők érdekeltségébe szerte az
             országban. A rendszerszerű klientúraépítés felett az állampolgári kontroll lehetőségei beszűkültek, vásárlóként azonban továbbra is lehetőségünk van a pénztárcánkkal szavazni a vállalkozók
             mellett és a politikai hátszéllel segített vállalkozói réteg további térhódítása ellen.</p>
-          <p>A NER Hotel egy olyan webes alkalmazás, ami átláthatóbbá teszi a magyar szállás- és a vendéglátóhelyek tulajdonosi és üzemeltetői hátterét. Segítségével tájékozódhatsz, kinél cseng a
+          <p><b>A NER HOTEL egy olyan webes alkalmazás, ami átláthatóbbá teszi a magyar szállás- és a vendéglátóhelyek tulajdonosi és üzemeltetői hátterét.</b> Segítségével tájékozódhatsz, kinél cseng a
             kassza a költésed nyomán, ha asztalt vagy szállást foglalsz.</p>
-          <p>Az oldal tartalmát az alábbi módszertan alapján a K-Monitor készíti. Az oldal fejlesztésben a <a href="https://github.com/Code-for-Hungary" target="new">Code for Hungary</a> önkéntesei vettek részt. Ha segítenél, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeep6bUaI0nC-ZelkPjdUdw_kvzAJu2XJc8qpNhAJeIRSyZEA/viewform" target="new">itt tudsz beszállni a csapatba</a>!</p>
+          <p>Az oldal tartalmát az alábbi módszertan alapján a K-Monitor készíti. Az oldal fejlesztésben a <a href="https://github.com/Code-for-Hungary" target="new">Code for Hungary</a> önkéntesei vettek részt. Az eszköz <a href="https://github.com/Code-for-Hungary/nerhotel" target="new">nyílt forráskóddal</a> rendelkezik, így szabadon továbbfejleszthető, alakítható és felhasználható. Ha segítenél, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeep6bUaI0nC-ZelkPjdUdw_kvzAJu2XJc8qpNhAJeIRSyZEA/viewform" target="new">itt tudsz beszállni a csapatba</a>!</p>
 
         </section>
         <section>
@@ -37,7 +37,7 @@ const AboutView = (props) => {
             adatbázisban szereplő helyek tulajdonosainak vagy üzemeltetőinek politikai szimpátiája nem szolgálhat alapul a NER Hotelen történő megjelenésre.</p>
           <p><strong>Személyek háttere:</strong> <a href="https://k-monitor.hu/adatbazis" target="_blank" rel="noopener noreferrer">K-Monitor sajtóadatbázis</a></p>
           <p><strong>Céginformációk:</strong> Bisnode</p>
-          <p><strong>Helyek adatai:</strong> Országos Kereskedelmi Nyilvántartás, önkéntes gyűjtés (helyek honlapjai, sajtócikkek, <a href="https://k-monitor.hu/adatbazis/cimkek/kisfaludy-program" target="_blank" rel="noopener noreferrer">Kisfaludy Program stb.)</a></p>
+          <p><strong>Helyek adatai:</strong> Országos Kereskedelmi Nyilvántartás, önkéntes gyűjtés (helyek honlapjai, sajtócikkek, <a href="https://k-monitor.hu/adatbazis/cimkek/kisfaludy-program" target="_blank" rel="noopener noreferrer">Kisfaludy Program</a>, stb.)</p>
         </section>
         <section>
           <h2>Milyen forrásból? Honnan volt rá pénz?</h2>
