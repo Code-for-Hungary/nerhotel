@@ -75,7 +75,7 @@ const Person = (props) => {
             </>
           )}
           <div className={styles.back} onClick={goBack}>
-            <Icon img={arrowIcon} size="large"/>
+            <Icon img={arrowIcon} alt="Vissza a térképhez" size="large"/>
           </div>
         </div>
         <div className={styles.map}>
