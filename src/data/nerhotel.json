@@ -17498,5 +17498,69 @@
         14.11076273
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 363,
+      "address": "Budapest, Olof Palme stny. 6., 1146",
+      "company": {
+        "name": "Csónakázótó Vendéglátóipari Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csonakazoto-vendeglatoipari-kft"
+      },
+      "name": "Városliget Café",
+      "city": "Budapest",
+      "type": "étterem",
+      "link": "https://hvg.hu/itthon/20200210_Fidesz_parlamenti_frakcio_szerzodesei_201820",
+      "mainOligarch": [
+        {
+          "name": "Faragó Tibor Dante",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/farago-tibor"
+        },
+        {
+          "name": "Varga Lajos",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Varga Lajos",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Faragó Tibor Dante",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/farago-tibor"
+        },
+        {
+          "name": "Ungerné Szénási Ildikó",
+          "link": ""
+        },
+        {
+          "name": "Varga Lajos",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Varga Lajos",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos"
+        },
+        {
+          "name": "Ondrusek Péter",
+          "link": ""
+        }
+      ],
+      "date": "2022.03.03",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.51452869,
+        19.08018631
+      ]
+    }
   }
 ]
