@@ -13889,171 +13889,6 @@
     "type": "Feature",
     "properties": {
       "id": 288,
-      "address": "Budapest, Hermina út 17., 1146",
-      "company": {
-        "name": "Sapezok Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/sapezok-kft"
-      },
-      "name": "Hermina Étterem",
-      "city": "Budapest",
-      "type": "étterem",
-      "link": "",
-      "mainOligarch": [
-        {
-          "name": "Dikácz Péter",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/dikacz-peterr"
-        }
-      ],
-      "mainCEO": [],
-      "oligarchs": [
-        {
-          "name": "Dikácz Péter",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/dikacz-peterr"
-        },
-        {
-          "name": "Fehér Zoltán",
-          "link": ""
-        },
-        {
-          "name": "Friebesz Sándor Béla",
-          "link": ""
-        }
-      ],
-      "ceos": [
-        {
-          "name": "Fehér Zoltán",
-          "link": ""
-        },
-        {
-          "name": "Friebesz Sándor Béla",
-          "link": ""
-        }
-      ],
-      "date": "2020.06.11",
-      "details": ""
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        47.513319,
-        19.093685
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "id": 289,
-      "address": "Budapest, Tűzoltó utca 37-47., 1094",
-      "company": {
-        "name": "Sapezok Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/sapezok-kft"
-      },
-      "name": "DARWIN CAFE & RESTAURANT",
-      "city": "Budapest",
-      "type": "étterem",
-      "link": "",
-      "mainOligarch": [
-        {
-          "name": "Dikácz Péter",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/dikacz-peterr"
-        }
-      ],
-      "mainCEO": [],
-      "oligarchs": [
-        {
-          "name": "Dikácz Péter",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/dikacz-peterr"
-        },
-        {
-          "name": "Fehér Zoltán",
-          "link": ""
-        },
-        {
-          "name": "Friebesz Sándor Béla",
-          "link": ""
-        }
-      ],
-      "ceos": [
-        {
-          "name": "Fehér Zoltán",
-          "link": ""
-        },
-        {
-          "name": "Friebesz Sándor Béla",
-          "link": ""
-        }
-      ],
-      "date": "2020.06.11",
-      "details": ""
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        47.481126,
-        19.078376
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "id": 290,
-      "address": "Szentendre, Dobogókői út 1, 2000",
-      "company": {
-        "name": "Sapezok Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/sapezok-kft"
-      },
-      "name": "CORNER 11 Pub",
-      "city": "Szentendre",
-      "type": "étterem",
-      "link": "",
-      "mainOligarch": [
-        {
-          "name": "Dikácz Péter",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/dikacz-peterr"
-        }
-      ],
-      "mainCEO": [],
-      "oligarchs": [
-        {
-          "name": "Dikácz Péter",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/dikacz-peterr"
-        },
-        {
-          "name": "Fehér Zoltán",
-          "link": ""
-        },
-        {
-          "name": "Friebesz Sándor Béla",
-          "link": ""
-        }
-      ],
-      "ceos": [
-        {
-          "name": "Fehér Zoltán",
-          "link": ""
-        },
-        {
-          "name": "Friebesz Sándor Béla",
-          "link": ""
-        }
-      ],
-      "date": "2020.06.28",
-      "details": ""
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        47.64527,
-        19.068498
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "id": 291,
       "address": "Tatárszentgyörgy, Sarlóspuszta, 2375",
       "company": {
         "name": "Sarlóspuszta Zrt.",
@@ -14096,7 +13931,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 292,
+      "id": 289,
       "address": "Zalacsány, Csány László u. 24., 8782",
       "company": {
         "name": "Sghthermál Kft.",
@@ -14147,7 +13982,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 293,
+      "id": 290,
       "address": "Egerszalók, Széchenyi út 31., 3394",
       "company": {
         "name": "Shiraz Team Kft.",
@@ -14202,7 +14037,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 294,
+      "id": 291,
       "address": "Agárd, Bikavölgyi út 2., 2484",
       "company": {
         "name": "Simon és Simon Kft.",
@@ -14250,7 +14085,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 295,
+      "id": 292,
       "address": "Esztergom, Táncsics Mihály utca 5., 2500",
       "company": {
         "name": "Solva Hotel Kft.",
@@ -14297,7 +14132,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 296,
+      "id": 293,
       "address": "Esztergom, Táncsics Mihály utca 6., 2500",
       "company": {
         "name": "Solva Property Kft.",
@@ -14344,7 +14179,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 297,
+      "id": 294,
       "address": "Sárvár, Vadkert krt. 5., 9600",
       "company": {
         "name": "Spirit Hotel Gyógyszálloda Kft.",
@@ -14408,7 +14243,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 298,
+      "id": 295,
       "address": "Budapest, Vértanuk tere 1., 1054",
       "company": {
         "name": "Stúdió-V Kft.",
@@ -14459,7 +14294,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 299,
+      "id": 296,
       "address": "Géberjén, Móricz Zsigmond utca 2/A., 4754",
       "company": {
         "name": "Szatmár Nektárja Nonprofit Kft.",
@@ -14492,7 +14327,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 300,
+      "id": 297,
       "address": "Budapest, Állatkerti krt. 9-11., 1146",
       "company": {
         "name": "Széchenyi Étterem Kft.",
@@ -14535,7 +14370,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 301,
+      "id": 298,
       "address": "Eger, Szépasszony-völgy, 3300",
       "company": {
         "name": "Szépasszonyvölgy Kft.",
@@ -14591,7 +14426,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 302,
+      "id": 299,
       "address": "Szolnok, Galamb u. 9., 5000",
       "company": {
         "name": "Szolnok Tenisz Club Kft.",
@@ -14638,7 +14473,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 303,
+      "id": 300,
       "address": "Tállya, Rákóczi út 23., 3907",
       "company": {
         "name": "Tállya Bor Kft.",
@@ -14686,7 +14521,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 304,
+      "id": 301,
       "address": "Hegymagas, hrsz: 869, 8265",
       "company": {
         "name": "Tarányi Nonprofit Kft.",
@@ -14742,7 +14577,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 305,
+      "id": 302,
       "address": "Tarcal, Fő út 94., 3915",
       "company": {
         "name": "Témadesign Kft.",
@@ -14790,7 +14625,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 306,
+      "id": 303,
       "address": "Győr, Schweidel u. 7, 9022",
       "company": {
         "name": "Thália 2004 Kft.",
@@ -14838,7 +14673,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 307,
+      "id": 304,
       "address": "Visegrád, Lepence völgy 2., 2025",
       "company": {
         "name": "Thermal Hotel Visegrád Zrt.",
@@ -14889,7 +14724,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 308,
+      "id": 305,
       "address": "Mórahalom, Szegedi út 1/b, 6782",
       "company": {
         "name": "Thermálgyűrű Turisztikai és Vendéglátó Kft.",
@@ -14941,7 +14776,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 309,
+      "id": 306,
       "address": "Villány, Erkel Ferenc u. 10., 7773",
       "company": {
         "name": "Tiffán's Kft.",
@@ -14988,7 +14823,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 310,
+      "id": 307,
       "address": "Tihany, Kiserdőtelepi út 075/15 hrsz, 8237",
       "company": {
         "name": "Tihany-Vin Kft.",
@@ -15031,7 +14866,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 311,
+      "id": 308,
       "address": "Tiszafüred, Húszöles út 27., 5350",
       "company": {
         "name": "Tisza-balneum Kft.",
@@ -15082,7 +14917,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 312,
+      "id": 309,
       "address": "Hercegkút, Gombos-hegyi Pincesor, 3958",
       "company": {
         "name": "TOKAJ-PORTIUS PINCÉSZET Kft.",
@@ -15130,7 +14965,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 313,
+      "id": 310,
       "address": "Tarcal, , 3915",
       "company": {
         "name": "TOKAJICUM Borház Kft.",
@@ -15186,7 +15021,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 314,
+      "id": 311,
       "address": "Budapest, Király utca 13., 1075",
       "company": {
         "name": "Trinity Gasztronómia Kft.",
@@ -15246,7 +15081,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 315,
+      "id": 312,
       "address": "Budapest, Szentháromság utca 9-11, 1014",
       "company": {
         "name": "Trinity Gasztronómia Kft.",
@@ -15306,7 +15141,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 316,
+      "id": 313,
       "address": "Budapest, Nagymező utca 66., 1065",
       "company": {
         "name": "Ublot Kft.",
@@ -15357,7 +15192,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 317,
+      "id": 314,
       "address": "Budapest, Clark Ádám tér 1, 1013",
       "company": {
         "name": "Unione-Clark Kft.",
@@ -15405,7 +15240,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 318,
+      "id": 315,
       "address": "Budapest, Országház utca 31., 1014",
       "company": {
         "name": "V1 Gasztronómia Kft.",
@@ -15465,7 +15300,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 319,
+      "id": 316,
       "address": "Balatonudvari, Vászolyi út, 8242",
       "company": {
         "name": "Vaperty Investment Zrt.",
@@ -15513,7 +15348,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 320,
+      "id": 317,
       "address": "Pécs, Felsővámház utca 53., 7626",
       "company": {
         "name": "Vár - Gold Kft.",
@@ -15564,7 +15399,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 321,
+      "id": 318,
       "address": "Cegléd, Kossuth tér 9-10., 2700",
       "company": {
         "name": "Vassily Kft.",
@@ -15616,7 +15451,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 322,
+      "id": 319,
       "address": "Tarján, 2831 Tarján, 2831",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15659,7 +15494,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 323,
+      "id": 320,
       "address": "Alcsútdoboz, Kastély u. 7., 8087",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15702,7 +15537,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 324,
+      "id": 321,
       "address": "Alcsútdoboz, Vérti Vadaskert közepén, 8087",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15745,7 +15580,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 325,
+      "id": 322,
       "address": "Bélmegyer, , 5643",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15788,7 +15623,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 326,
+      "id": 323,
       "address": "Újrónafő, , 9244",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15831,7 +15666,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 327,
+      "id": 324,
       "address": "Zomba, Szentgálszőlőhegy 4., 7173",
       "company": {
         "name": "VINITIS-Agrárium Szőlészeti Kft.",
@@ -15883,7 +15718,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 328,
+      "id": 325,
       "address": "Budapest, Ybl Miklós tér 9., 1013",
       "company": {
         "name": "Vízház Gasztronómia Zrt.",
@@ -15926,7 +15761,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 329,
+      "id": 326,
       "address": "Velence, Béke u. 57., 2481",
       "company": {
         "name": "VRS Part HOTEL Kft.",
@@ -15969,7 +15804,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 330,
+      "id": 327,
       "address": "Győr, Juharfa u. 11., 9027",
       "company": {
         "name": "WHB Hotel Kft.",
@@ -16017,7 +15852,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 331,
+      "id": 328,
       "address": "Balatonlelle, Rákóczi u. 223., 8638",
       "company": {
         "name": "Witzmann Mihályné",
@@ -16055,7 +15890,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 332,
+      "id": 329,
       "address": "Zalacsány, , 8782",
       "company": {
         "name": "Zala Springs Golf Resort Zrt.",
@@ -16110,7 +15945,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 333,
+      "id": 330,
       "address": "Balatonakali, Balaton u. 8,, 8243",
       "company": {
         "name": "ZION Europe Ingatlanforgalmazó és Hasznosító Kft.",
@@ -16169,7 +16004,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 334,
+      "id": 331,
       "address": "Zalaszabar, hrsz. 1565., 8743",
       "company": {
         "name": "Zobori KalandoZoo Kft.",
@@ -16225,7 +16060,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 335,
+      "id": 332,
       "address": "Taksony, Sziget sétány, 2335",
       "company": {
         "name": "Zöld Sziget Panzió Kft.",
@@ -16272,7 +16107,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 336,
+      "id": 333,
       "address": "Budapest, Alkotás u. 53., 1123",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -16318,7 +16153,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 337,
+      "id": 334,
       "address": "Budapest, Úri utca 21., 1014",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -16364,7 +16199,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 338,
+      "id": 335,
       "address": "Budapest, Fortuna utca 3., 1014",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -16410,7 +16245,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 339,
+      "id": 336,
       "address": "Budapest, Tas vezér u. 7., 1113",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -16461,7 +16296,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 340,
+      "id": 337,
       "address": "Budapest, Móricz Zsigmond körtér Gomba épületegyüttes, 1117",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -16512,7 +16347,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 341,
+      "id": 338,
       "address": "Budapest, Móricz Zsigmond körtér Gomba épületegyüttes 1. cikk, 1117",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -16563,7 +16398,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 342,
+      "id": 339,
       "address": "Budapest, Ybl Miklós tér 6., 1013",
       "company": {
         "name": "Bárkert Kft.",
@@ -16606,7 +16441,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 343,
+      "id": 340,
       "address": "Kisvárda, Városmajor u. 47., 4600",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -16649,7 +16484,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 344,
+      "id": 341,
       "address": "Ózd, Kohász u. 2., 3600",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -16692,7 +16527,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 345,
+      "id": 342,
       "address": "Szihalom, Vadász út 40-42., 3377",
       "company": {
         "name": "Pintérné Eötvös Ildikó",
@@ -16720,7 +16555,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 346,
+      "id": 343,
       "address": "Moravske Toplice, 12 Kranjčeva ulica, 9226",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16766,7 +16601,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 347,
+      "id": 344,
       "address": "Radenci, Zdraviliško naselje 12, 9252",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16812,7 +16647,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 348,
+      "id": 345,
       "address": "Ptuj, Pot v Toplice 9, 2251",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16858,7 +16693,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 349,
+      "id": 346,
       "address": "Izola, Morova ulica 6a, 6310",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16904,7 +16739,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 350,
+      "id": 347,
       "address": "Izola, Morova ulica 6a, 6310",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16950,7 +16785,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 351,
+      "id": 348,
       "address": "Izola, Morova ulica 6a-3, 6310",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -16996,7 +16831,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 352,
+      "id": 349,
       "address": "Portorož, Strunjan 14, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17042,7 +16877,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 353,
+      "id": 350,
       "address": "Portorož, Strunjan 14-1, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17088,7 +16923,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 354,
+      "id": 351,
       "address": "Portorož, , 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17134,7 +16969,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 355,
+      "id": 352,
       "address": "Portorož, Obala 2, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17180,7 +17015,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 356,
+      "id": 353,
       "address": "Portorož, Obala 2b, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17226,7 +17061,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 357,
+      "id": 354,
       "address": "Portorož, Obala 2c, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17272,7 +17107,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 358,
+      "id": 355,
       "address": "Portorož, Obala 2, 6320",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17318,7 +17153,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 359,
+      "id": 356,
       "address": "Bled, Cesta svobode 15, 4260",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17364,7 +17199,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 360,
+      "id": 357,
       "address": "Bled, Cesta svobode 12, 4260",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17410,7 +17245,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 361,
+      "id": 358,
       "address": "Bled, Cankarjeva cesta 4, 4260",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17456,7 +17291,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 362,
+      "id": 359,
       "address": "Bled, Cankarjeva cesta 6, 4260",
       "company": {
         "name": "Sava Turizem d.d.",
@@ -17502,7 +17337,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 363,
+      "id": 360,
       "address": "Budapest, Olof Palme stny. 6., 1146",
       "company": {
         "name": "Csónakázótó Vendéglátóipari Kft.",
