@@ -17397,5 +17397,53 @@
         19.08018631
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 361,
+      "address": "Balatonakarattya, Koppány lejtő 2., 8172",
+      "company": {
+        "name": "Dry Beta Kft.",
+        "link": ""
+      },
+      "name": "Pine Weekendhouse",
+      "city": "Balatonakarattya",
+      "type": "szálloda",
+      "link": "",
+      "mainOligarch": [
+        {
+          "name": "Száraz István Péter",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Száraz István Péter",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Száraz István Péter",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Száraz István Péter",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
+        }
+      ],
+      "date": "2022.04.09",
+      "details": "A Kisfaludy szálláshely támogatásban is részesült szálláshely üzemeltetője Száraz István Dry Gamma Kft-je."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.02659264,
+        18.13959744
+      ]
+    }
   }
 ]
