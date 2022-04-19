@@ -17446,4 +17446,55 @@
       ]
     }
   }
+    {
+    "type": "Feature",
+    "properties": {
+      "id": 363,
+      "address": "Budapest, Olof Palme stny. 3., 1146",
+      "company": {
+        "name": "RaMpART Gasztronómia Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/rampart-gasztronomia-kft"
+      },
+      "name": "Magyar Zene Háza kávézó",
+      "city": "Budapest",
+      "type": "kávézó",
+      "link": "",
+      "mainOligarch": [
+        {
+          "name": "Varga Lajos",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Sájerné Fajd Eszter",
+          "link": ""
+        },
+        {
+          "name": "Kárpáti Péter György",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/karpati-peter-gyorgy"
+        },
+        {
+          "name": "Varga Lajos",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Hegyi Attila",
+          "link": ""
+        }
+      ],
+      "date": "2022.04.19",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.51269365,
+        19.08396021
+      ]
+    }
+  }
 ]
