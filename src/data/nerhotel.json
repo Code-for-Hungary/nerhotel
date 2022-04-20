@@ -17445,11 +17445,11 @@
         18.13959744
       ]
     }
-  }
-    {
+  },
+  {
     "type": "Feature",
     "properties": {
-      "id": 363,
+      "id": 362,
       "address": "Budapest, Olof Palme stny. 3., 1146",
       "company": {
         "name": "RaMpART Gasztronómia Kft.",
