@@ -78,7 +78,7 @@
       "address": "Budapest, Andrássy út 116., 1062",
       "company": {
         "name": "Alice Hotel Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/alice-hotel-kft"
+        "link": ""
       },
       "name": "Hotel Alice",
       "city": "Budapest",
@@ -121,7 +121,7 @@
       "address": "Budapest, Fő utca 3., 1011",
       "company": {
         "name": "Andante Borpatika Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/andante-borpatika-kft"
+        "link": "#N/A"
       },
       "name": "Andante Borpatika (bezárt)",
       "city": "Budapest",
@@ -171,49 +171,49 @@
       "id": 3,
       "address": "Balatonvilágos, Aligai út 1., 8171",
       "company": {
-        "name": "Appeninn Nyrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/appeninn-blt-kft"
+        "name": "PRO-MOT HUNGÁRIA Kft.",
+        "link": ""
       },
       "name": "Club Aliga",
       "city": "Balatonvilágos",
-      "type": "szálloda és strand",
+      "type": "szálloda",
       "link": "https://www.valaszonline.hu/2020/04/29/bayer-construct-balazs-attila-balatoni-kikotoberuhazas/",
       "mainOligarch": [
         {
           "name": "Jellinek Dániel",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+          "link": ""
         },
         {
           "name": "Balázs Attila",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balazs-attila"
+          "link": ""
+        },
+        {
+          "name": "Szivek Norbert",
+          "link": ""
         }
       ],
       "mainCEO": [],
       "oligarchs": [
         {
           "name": "Jellinek Dániel",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
+          "link": ""
         },
         {
           "name": "Balázs Attila",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balazs-attila"
+          "link": ""
+        },
+        {
+          "name": "Szivek Norbert",
+          "link": ""
         }
       ],
       "ceos": [
         {
-          "name": "Bihari Tamás",
-          "link": ""
-        },
-        {
-          "name": "Szabó Nóra",
-          "link": ""
-        },
-        {
-          "name": "Hegelsberger Zoltán",
+          "name": "Budavári Róbert",
           "link": ""
         }
       ],
-      "date": "2021.11.09",
+      "date": "2022.04.21",
       "details": ""
     },
     "geometry": {
@@ -231,7 +231,7 @@
       "address": "Budapest, Zoltán utca 10., 1054",
       "company": {
         "name": "Apriori Cultura Nonprofit Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/apriori-cultura-nonprofit-kft"
+        "link": ""
       },
       "name": "Scruton kávézó",
       "city": "Budapest",
@@ -510,7 +510,7 @@
       "address": "Balatonfüred, Széchenyi István u. 24., 8230",
       "company": {
         "name": "Balatontourist Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-camping-kft"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-1"
       },
       "name": "Füred Kemping",
       "city": "Balatonfüred",
@@ -553,7 +553,7 @@
       "address": "Révfülöp, Halász u. 5., 8253",
       "company": {
         "name": "Balatontourist Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-camping-kft"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-1"
       },
       "name": "Napfény Kemping",
       "city": "Révfülöp",
@@ -596,7 +596,7 @@
       "address": "Balatonszemes, Lellei u. 1-2., 8636",
       "company": {
         "name": "Balatontourist Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-camping-kft"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-1"
       },
       "name": "Vadvirág kemping",
       "city": "Balatonszemes",
@@ -639,7 +639,7 @@
       "address": "Vonyarcvashegy, Park u. 016/1, 8314",
       "company": {
         "name": "Balatontourist Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-camping-kft"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-1"
       },
       "name": "Kemping & üdülőfalu",
       "city": "Vonyarcvashegy",
@@ -682,7 +682,7 @@
       "address": "Keszthely, Entz Géza stny. 1., 8360",
       "company": {
         "name": "Balatontourist Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-camping-kft"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-1"
       },
       "name": "Zala Kemping",
       "city": "Keszthely",
@@ -725,7 +725,7 @@
       "address": "Balatonberény, Hétvezér u. 2., 8649",
       "company": {
         "name": "Balatontourist Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-camping-kft"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-1"
       },
       "name": "Berény naturista kemping",
       "city": "Balatonberény",
@@ -768,7 +768,7 @@
       "address": "Zalakaros, Gyógyfürdő tér 6., 8749",
       "company": {
         "name": "Balatontourist Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-camping-kft"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-1"
       },
       "name": "Termál kemping",
       "city": "Zalakaros",
@@ -811,7 +811,7 @@
       "address": "Badacsonytomaj, Füredi út 65., 8257",
       "company": {
         "name": "Balatontourist Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-camping-kft"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-1"
       },
       "name": "Balaton Vendégház",
       "city": "Badacsonytomaj",
@@ -854,7 +854,7 @@
       "address": "Felsőtárkány, Bükkerdő sétány 2-4., 3324",
       "company": {
         "name": "Bambara Hotel Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bambara-kft"
+        "link": ""
       },
       "name": "Bambara Hotel",
       "city": "Felsőtárkány",
@@ -909,7 +909,7 @@
       "address": "St. Lorenzen ob Murau, St. Lorenzen 6, 8861",
       "company": {
         "name": "BDPST Hotel Management Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
+        "link": ""
       },
       "name": "Alpenblick Hotel",
       "city": "St. Lorenzen ob Murau",
@@ -957,7 +957,7 @@
       "address": "Kreischberg, Kreischberg 2, 8861",
       "company": {
         "name": "BDPST Hotel Management Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
+        "link": ""
       },
       "name": "Hotel Relax Resort",
       "city": "Kreischberg",
@@ -1005,7 +1005,7 @@
       "address": "Gyöngyös, 3233 Gyöngyös, 3233",
       "company": {
         "name": "BDPST Hotel Management Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
+        "link": ""
       },
       "name": "Lifestyle Hotel Mátra",
       "city": "Gyöngyös",
@@ -1053,7 +1053,7 @@
       "address": "Tura, Park utca 37., 2194",
       "company": {
         "name": "BDPST Hotel Management Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
+        "link": ""
       },
       "name": "Botaniq",
       "city": "Tura",
@@ -1101,7 +1101,7 @@
       "address": "Los Alcázares, C/ los Luisos, 11, 30710",
       "company": {
         "name": "BDPST Hotel Management Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
+        "link": ""
       },
       "name": "Hotel Atrio del Mar",
       "city": "Los Alcázares",
@@ -1149,7 +1149,7 @@
       "address": "Budapest, Október 6. utca 26., 1051",
       "company": {
         "name": "BDPST Hotel Management Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bdpst-hotel-management-zrt"
+        "link": ""
       },
       "name": "Grand Hotel Budapest",
       "city": "Budapest",
@@ -1348,7 +1348,7 @@
       "address": "Bicske, Szent László u. 47., 2060",
       "company": {
         "name": "Bicskei Lovasudvar Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bicskei-lovasudvar-kft"
+        "link": ""
       },
       "name": "Fogadó a Három Lókötőhöz",
       "city": "Bicske",
@@ -1505,7 +1505,7 @@
       "address": "Hódmezővásárhely, Kossuth tér 3., 6800",
       "company": {
         "name": "Bónus István",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bonus-istvan"
+        "link": "#N/A"
       },
       "name": "Fekete Sas Mulató",
       "city": "Hódmezővásárhely",
@@ -1543,7 +1543,7 @@
       "address": "Hódmezővásárhely, Pálffy u. 4., 6800",
       "company": {
         "name": "Bónus István",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bonus-istvan"
+        "link": "#N/A"
       },
       "name": "Kis Bandula Faloda",
       "city": "Hódmezővásárhely",
@@ -1581,7 +1581,7 @@
       "address": "Hódmezővásárhely, Pálffy u. 4., 6800",
       "company": {
         "name": "Bónus István",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bonus-istvan"
+        "link": "#N/A"
       },
       "name": "Bandula borsoroló",
       "city": "Hódmezővásárhely",
@@ -1619,7 +1619,7 @@
       "address": "Hódmezővásárhely, Pálffy u. 2., 6800",
       "company": {
         "name": "Bónus István",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bonus-istvan"
+        "link": "#N/A"
       },
       "name": "Bandula kisvendéglő",
       "city": "Hódmezővásárhely",
@@ -1657,7 +1657,7 @@
       "address": "Hódmezővásárhely, Kossuth tér 3., 6800",
       "company": {
         "name": "Bónus István",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bonus-istvan"
+        "link": "#N/A"
       },
       "name": "Fekete Sas",
       "city": "Hódmezővásárhely",
@@ -1695,7 +1695,7 @@
       "address": "Hódmezővásárhely, Kaszap utca 27., 6800",
       "company": {
         "name": "Bónus István",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bonus-istvan"
+        "link": "#N/A"
       },
       "name": "Bagolyvár étterem",
       "city": "Hódmezővásárhely",
@@ -1733,7 +1733,7 @@
       "address": "Hódmezővásárhely, Zölderdő utca 4., 6800",
       "company": {
         "name": "Bónus István",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bonus-istvan"
+        "link": "#N/A"
       },
       "name": "Kökénydombi csárda",
       "city": "Hódmezővásárhely",
@@ -1883,7 +1883,7 @@
       "address": "Siófok, Siófok, Erkel Ferenc u. 2/C, 8600",
       "company": {
         "name": "Breeze Lake Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/breeze-lake-zrt"
+        "link": ""
       },
       "name": "Hotel Azúr",
       "city": "Siófok",
@@ -1943,7 +1943,7 @@
       "address": "Budapest, Erzsébet tér 7-8., 1051",
       "company": {
         "name": "Buno Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/buno-kft"
+        "link": ""
       },
       "name": "Nobu",
       "city": "Budapest",
@@ -2202,7 +2202,7 @@
       "address": "Sopron, Lackner Kristóf u. 33., 9400",
       "company": {
         "name": "CAI Hungary Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/cai-hungary-kftt"
+        "link": ""
       },
       "name": "Casino Sopron",
       "city": "Sopron",
@@ -2249,7 +2249,7 @@
       "address": "Győr, Vasvári Pál u. 1., 9024",
       "company": {
         "name": "Casino Win Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/casino-win-kft"
+        "link": ""
       },
       "name": "Casino Win Győr",
       "city": "Győr",
@@ -2292,7 +2292,7 @@
       "address": "Miskolc, Szűcs Sámuel u. 5., 3525",
       "company": {
         "name": "Casino Win Miskolc Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/casino-win-miskolc-kft"
+        "link": ""
       },
       "name": "Casino Tropicana",
       "city": "Miskolc",
@@ -2335,7 +2335,7 @@
       "address": "Pécs, Bajcsy-Zsilinszky u. 18., 7622",
       "company": {
         "name": "Casino Win Pécs Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/casino-win-pecs-kft"
+        "link": ""
       },
       "name": "Casino Win Pécs",
       "city": "Pécs",
@@ -2441,7 +2441,7 @@
       "address": "Celldömölk, Sági utca 56., 9500",
       "company": {
         "name": "CELL-BAHNBAU Kft.",
-        "link": ""
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/cell-bahnbau-kft"
       },
       "name": "Vasvirág Hotel",
       "city": "Celldömölk",
@@ -2484,7 +2484,7 @@
       "address": "Budapest, Jókai tér 6., 1061",
       "company": {
         "name": "Champion Wines Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/champion-wines-kft"
+        "link": ""
       },
       "name": "Vinárium",
       "city": "Budapest",
@@ -2536,7 +2536,7 @@
       "address": "Lovasberény, Erdősor üdülő 1., 8093",
       "company": {
         "name": "Civil Biztonsági Szolgálat Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/civil-biztonsagi-szolgalat-zrt"
+        "link": ""
       },
       "name": "Hotel Lovasberény",
       "city": "Lovasberény",
@@ -2591,7 +2591,7 @@
       "address": "Villány, Ady fasor 2, 7773",
       "company": {
         "name": "Csányi Pincészet Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-pinceszet-zrt"
+        "link": ""
       },
       "name": "Csányi borbolt",
       "city": "Villány",
@@ -2929,7 +2929,7 @@
       "address": "Bodrogkisfalud, Kossuth u., 3917",
       "company": {
         "name": "Dereszla Bortermelő Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/dereszla-sparkling-kft"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/dereszla-kft"
       },
       "name": "Dereszla borászat",
       "city": "Bodrogkisfalud",
@@ -3024,7 +3024,7 @@
       "address": "Somoskőújfalu, Vörösmarty út 1., 3121",
       "company": {
         "name": "Fenyvesi Gábor",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/fenyvesi-gabor"
+        "link": "#N/A"
       },
       "name": "Gesztenyéskert vendégház",
       "city": "Somoskőújfalu",
@@ -3143,7 +3143,7 @@
       "address": "Eger, Kistályai út 18., 3300",
       "company": {
         "name": "Gaszting Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/gaszting-kft"
+        "link": ""
       },
       "name": "Agria Étterem",
       "city": "Eger",
@@ -3190,7 +3190,7 @@
       "address": "Eger, Kistályai út 18., 3300",
       "company": {
         "name": "Gaszting Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/gaszting-kft"
+        "link": ""
       },
       "name": "Szent Lőrinc Hotel",
       "city": "Eger",
@@ -3301,7 +3301,7 @@
       "address": "Budapest, Fortuna utca 21, 1014",
       "company": {
         "name": "HARLEQUIN Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/harlequin-kereskedelmi-es-marketing-kft"
+        "link": ""
       },
       "name": "21 Magyar Vendéglő",
       "city": "Budapest",
@@ -3361,7 +3361,7 @@
       "address": "Budapest, Fortuna utca 3., 1014",
       "company": {
         "name": "HARLEQUIN Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/harlequin-kereskedelmi-es-marketing-kft"
+        "link": ""
       },
       "name": "Pest-Buda Étterem",
       "city": "Budapest",
@@ -3468,7 +3468,7 @@
       "address": "Gyomaendrőd, Dr. Szilágyi Ferenc üdülőtelep, 5500",
       "company": {
         "name": "Hidasháti Zrt.",
-        "link": ""
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hidashati-mezogazdasagi-zrt"
       },
       "name": "Hidasháti Panzió",
       "city": "Gyomaendrőd",
@@ -3510,10 +3510,10 @@
       "id": 73,
       "address": "Bogács, 037/4., 3412",
       "company": {
-        "name": "Hór Agro borászat",
+        "name": "Hór-Agro Zrt.",
         "link": ""
       },
-      "name": "Hór-Agro",
+      "name": "Hór Agro borászat",
       "city": "Bogács",
       "type": "borászat",
       "link": "",
@@ -3570,7 +3570,7 @@
       "address": "Mezőkövesd, Fülemüle út 2., 3400",
       "company": {
         "name": "Hotel Balneo Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hotel-balneo-kft"
+        "link": ""
       },
       "name": "Balneo",
       "city": "Mezőkövesd",
@@ -3830,7 +3830,7 @@
       "address": "Lillafüred, Erzsébet sétány 1., 3517",
       "company": {
         "name": "Hotel Palota Lillafüred Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hunguest-hotels-zrt"
+        "link": ""
       },
       "name": "Hunguest Hotel Palota",
       "city": "Lillafüred",
@@ -5978,7 +5978,7 @@
       "address": "Budapest, Szent Gellért tér 2., 1114",
       "company": {
         "name": "Indotek Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/indotek-zrt"
+        "link": ""
       },
       "name": "Gellért Hotel",
       "city": "Budapest",
@@ -6026,7 +6026,7 @@
       "address": "Harkány, Bartók B. u. 1., 7815",
       "company": {
         "name": "Investeur kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/finszter-erika"
+        "link": ""
       },
       "name": "Dráva Hotel",
       "city": "Harkány",
@@ -6238,7 +6238,7 @@
       "address": "Mende, Fő u. 41., 2235",
       "company": {
         "name": "Kaszanyi Vivien",
-        "link": ""
+        "link": "#N/A"
       },
       "name": "Vivien vendégház",
       "city": "Mende",
@@ -6324,7 +6324,7 @@
       "address": "Nyíregyháza, Tölgyes utca 21./b, 4431",
       "company": {
         "name": "Kelet-Rest Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/kelet-rest-kft"
+        "link": ""
       },
       "name": "Siesta Panzió",
       "city": "Nyíregyháza",
@@ -6414,7 +6414,7 @@
       "address": "Balatonboglár, Fő u. 44., 8691",
       "company": {
         "name": "Kislaki Bormanufaktúra Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/kislaki-bormanufaktura-szolo-es-bortermelo-kft/legli-attila"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/kislaki-bormanufaktura-szolo-es-bortermelo-kft"
       },
       "name": "Kislaki borkert és szállás",
       "city": "Balatonboglár",
@@ -6462,7 +6462,7 @@
       "address": "Balatonalmádi, Véghely Dezső utca 18., 8220",
       "company": {
         "name": "KONZUM Befektetési és Vagyonkezelő Nyrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/konzum-befektetesi-es-vagyonkezelesi-nyrt"
+        "link": "#N/A"
       },
       "name": "Yacht kemping",
       "city": "Balatonalmádi",
@@ -6508,7 +6508,7 @@
       "address": "Keszthely, Mikus Gyula stny. 3., 8360",
       "company": {
         "name": "KONZUM Befektetési és Vagyonkezelő Nyrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/konzum-befektetesi-es-vagyonkezelesi-nyrt"
+        "link": "#N/A"
       },
       "name": "Balaton Szálló",
       "city": "Keszthely",
@@ -6554,7 +6554,7 @@
       "address": "Budapest, Naphegy utca 67, 1016",
       "company": {
         "name": "Középpont Stúdió Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/kozeppont-studio-kft"
+        "link": ""
       },
       "name": "Naphegy étterem",
       "city": "Budapest",
@@ -6602,7 +6602,7 @@
       "address": "Biri, Fő utca 90-92., 4235",
       "company": {
         "name": "Közös Kincs Közhasznú Nonprofit Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/kozos-kincs-nonprofit-kftt"
+        "link": ""
       },
       "name": "Le Tin Kúria",
       "city": "Biri",
@@ -6650,7 +6650,7 @@
       "address": "Badacsonytomaj, Bogyay Lajos út 1, 8261",
       "company": {
         "name": "Laposa Birtok Kft.",
-        "link": ""
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/laposa-birtok-kft"
       },
       "name": "Laposa Birtok",
       "city": "Badacsonytomaj",
@@ -6706,7 +6706,7 @@
       "address": "Badacsonytomaj, Park utca 26., 8261",
       "company": {
         "name": "Laposa Birtok Kft.",
-        "link": ""
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/laposa-birtok-kft"
       },
       "name": "Hableány étterem",
       "city": "Badacsonytomaj",
@@ -6762,7 +6762,7 @@
       "address": "Badacsonytomaj, Kisfaludy Sándor u. 5., 8261",
       "company": {
         "name": "Laposa Birtok Kft.",
-        "link": ""
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/laposa-birtok-kft"
       },
       "name": "Szőlőhegy Bisztró",
       "city": "Badacsonytomaj",
@@ -7225,7 +7225,7 @@
       "address": "Balatonlelle, Napospart utca 1., 8638",
       "company": {
         "name": "Lellepart Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lellepart-kft"
+        "link": ""
       },
       "name": "Lellepart Apartmanház",
       "city": "Balatonlelle",
@@ -7263,7 +7263,7 @@
       "address": "Budapest, Alkotás u 53., 1123",
       "company": {
         "name": "Leroy.co Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/leroy-co-kft"
+        "link": ""
       },
       "name": "Tom George Piccolino",
       "city": "Budapest",
@@ -7670,7 +7670,7 @@
       "address": "Alcsútdoboz, Máriavölgy, 8087",
       "company": {
         "name": "Máriavölgy Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mariavolgy-zrt"
+        "link": ""
       },
       "name": "Pannonia Golf & Country Club",
       "city": "Alcsútdoboz",
@@ -8050,7 +8050,7 @@
       "address": "Budapest, Váci utca 22., 1052",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "Promenade City Hotel",
       "city": "Budapest",
@@ -8114,7 +8114,7 @@
       "address": "Budapest, Piarista köz 6., 1052",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "La Prima Fashion Hotel",
       "city": "Budapest",
@@ -8178,7 +8178,7 @@
       "address": "Budapest, Váci utca 77., 1056",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "Cosmo City Hotel",
       "city": "Budapest",
@@ -8242,7 +8242,7 @@
       "address": "Budapest, Baross tér 15., 1077",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "Baross City Hotel",
       "city": "Budapest",
@@ -8306,7 +8306,7 @@
       "address": "Budapest, Expo tér 2, 1101",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "Expo Congress Hotel",
       "city": "Budapest",
@@ -8370,7 +8370,7 @@
       "address": "Budapest, Csokonai u. 14., 1081",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "Atrium Fashion Hotel",
       "city": "Budapest",
@@ -8434,7 +8434,7 @@
       "address": "Budapest, Váci utca 83., 1056",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "Estilo Fashion Hotel",
       "city": "Budapest",
@@ -8498,7 +8498,7 @@
       "address": "Budapest, Nyár utca 6., 1072",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "Marco Polo Top Ho(s)tel",
       "city": "Budapest",
@@ -8562,7 +8562,7 @@
       "address": "Budapest, István utca 14., 1078",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "Star City Hotel",
       "city": "Budapest",
@@ -8626,7 +8626,7 @@
       "address": "Budapest, Úri utca 39, 1014",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "Buda Castle Fashion Hotel",
       "city": "Budapest",
@@ -8690,7 +8690,7 @@
       "address": "Budapest, Népszínház u. 39-41., 1081",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "Impulso Fashion Hotel",
       "city": "Budapest",
@@ -8754,7 +8754,7 @@
       "address": "Bécs, Schönbrunner Straße 41, 1050",
       "company": {
         "name": "MMG Hotels Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mellow-mood-kft"
+        "link": ""
       },
       "name": "La Prima Fashion Hotel Vienna",
       "city": "Bécs",
@@ -8869,7 +8869,7 @@
       "address": "Bakonybél, Szőlőgyöp, 8427",
       "company": {
         "name": "Nagy Tamás",
-        "link": ""
+        "link": "#N/A"
       },
       "name": "Galagonyás vendégház",
       "city": "Bakonybél",
@@ -8983,7 +8983,7 @@
       "address": "Badacsonytomaj, HRSZ 023/8, 8261",
       "company": {
         "name": "Nimfeum Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/nimfeum-kft"
+        "link": ""
       },
       "name": "Villa Salve",
       "city": "Badacsonytomaj",
@@ -9138,7 +9138,7 @@
       "address": "Budapest, Andrássy út 22., 1061",
       "company": {
         "name": "Opera Gasztronómia Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/opera-gasztronomia-kft"
+        "link": ""
       },
       "name": "Opera Cafe",
       "city": "Budapest",
@@ -9398,7 +9398,7 @@
       "id": 186,
       "address": "Győr, Széchenyi tér 3, 9022",
       "company": {
-        "name": "Pállffytália Kft.",
+        "name": "Pállfytália Kft.",
         "link": ""
       },
       "name": "Pálffytália étterem",
@@ -9442,7 +9442,7 @@
       "address": "Hollókő, Sport út 8., 3176",
       "company": {
         "name": "Palóc Hotel Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/paloc-hotel-kft"
+        "link": ""
       },
       "name": "Görbeország Vendégház",
       "city": "Hollókő",
@@ -9489,7 +9489,7 @@
       "address": "Keszthely, Mikus Gyula sétány 5., 8360",
       "company": {
         "name": "Pannon Tessera Hospitalis Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/pannon-tessera-hospitalis-zrt"
+        "link": ""
       },
       "name": "Helikon Hotel Keszthely",
       "city": "Keszthely",
@@ -9541,7 +9541,7 @@
       "address": "Keszthely, Mikus Gyula sétány 1., 8360",
       "company": {
         "name": "Pannon Tessera Hospitalis Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/pannon-tessera-hospitalis-zrt"
+        "link": ""
       },
       "name": "Hullám Hotel",
       "city": "Keszthely",
@@ -9593,7 +9593,7 @@
       "address": "Budapest, Petőfi Sándor u. 2-4., 1052",
       "company": {
         "name": "Párizs Property Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/parizs-property-kft"
+        "link": ""
       },
       "name": "Párisi Udvar Hotel",
       "city": "Budapest",
@@ -9720,7 +9720,7 @@
       "address": "Pécs, Alkotmány utca 94., 7624",
       "company": {
         "name": "Pécsi Sörfőzde Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/pecsi-sorfozde-zrt"
+        "link": ""
       },
       "name": "Pécsi Sörök Boltja",
       "city": "Pécs",
@@ -13704,7 +13704,7 @@
       "address": "Alcsútdoboz, Kastélykert út 6., 8087",
       "company": {
         "name": "Puskás Ferenc Sport Hotel Nonprofit Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/puskas-ferenc-sport-hotel-kft"
+        "link": ""
       },
       "name": "Puskás Ferenc Sport Hotel***",
       "city": "Alcsútdoboz",
@@ -13742,7 +13742,7 @@
       "address": "Etyek, Újhegy, 2091",
       "company": {
         "name": "Rókusfalvy Birtok Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/rokusfalvy-pal"
+        "link": ""
       },
       "name": "Rókusfalvy Birtok",
       "city": "Etyek",
@@ -13892,7 +13892,7 @@
       "address": "Tatárszentgyörgy, Sarlóspuszta, 2375",
       "company": {
         "name": "Sarlóspuszta Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/studio-v-kft"
+        "link": ""
       },
       "name": "Sarlóspuszta club hotel",
       "city": "Tatárszentgyörgy",
@@ -13935,7 +13935,7 @@
       "address": "Zalacsány, Csány László u. 24., 8782",
       "company": {
         "name": "Sghthermál Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/sghthermal-kft"
+        "link": ""
       },
       "name": "Batthányi Kúria",
       "city": "Zalacsány",
@@ -13986,7 +13986,7 @@
       "address": "Egerszalók, Széchenyi út 31., 3394",
       "company": {
         "name": "Shiraz Team Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/shiraz-team-kft"
+        "link": ""
       },
       "name": "Mesés Shiraz",
       "city": "Egerszalók",
@@ -14089,7 +14089,7 @@
       "address": "Esztergom, Táncsics Mihály utca 5., 2500",
       "company": {
         "name": "Solva Hotel Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/solva-hotel-kft"
+        "link": ""
       },
       "name": "Portobello Wellness & Yacht Hotel",
       "city": "Esztergom",
@@ -14183,7 +14183,7 @@
       "address": "Sárvár, Vadkert krt. 5., 9600",
       "company": {
         "name": "Spirit Hotel Gyógyszálloda Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/spirit-hotel-gyogyszalloda-kft"
+        "link": ""
       },
       "name": "Spirit Hotel",
       "city": "Sárvár",
@@ -14298,7 +14298,7 @@
       "address": "Géberjén, Móricz Zsigmond utca 2/A., 4754",
       "company": {
         "name": "Szatmár Nektárja Nonprofit Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szatmar-nektarja-nonprofit-kft"
+        "link": ""
       },
       "name": "Tündérmező Vendégház",
       "city": "Géberjén",
@@ -14374,7 +14374,7 @@
       "address": "Eger, Szépasszony-völgy, 3300",
       "company": {
         "name": "Szépasszonyvölgy Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szepasszonyvolgy-kft"
+        "link": ""
       },
       "name": "Hotel Ködmön",
       "city": "Eger",
@@ -14728,7 +14728,7 @@
       "address": "Mórahalom, Szegedi út 1/b, 6782",
       "company": {
         "name": "Thermálgyűrű Turisztikai és Vendéglátó Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/thermalgyuru-kft"
+        "link": ""
       },
       "name": "Thermál Panzió",
       "city": "Mórahalom",
@@ -14827,7 +14827,7 @@
       "address": "Tihany, Kiserdőtelepi út 075/15 hrsz, 8237",
       "company": {
         "name": "Tihany-Vin Kft.",
-        "link": ""
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/tihany-vin-kft"
       },
       "name": "Tihanyi Vinarius",
       "city": "Tihany",
@@ -14870,7 +14870,7 @@
       "address": "Tiszafüred, Húszöles út 27., 5350",
       "company": {
         "name": "Tisza-balneum Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/tisza-balneum-kft"
+        "link": ""
       },
       "name": "Tisza Balneum Hotel",
       "city": "Tiszafüred",
@@ -15145,7 +15145,7 @@
       "address": "Budapest, Nagymező utca 66., 1065",
       "company": {
         "name": "Ublot Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/ublot-kft"
+        "link": ""
       },
       "name": "BP Design Hotel",
       "city": "Budapest",
@@ -15196,7 +15196,7 @@
       "address": "Budapest, Clark Ádám tér 1, 1013",
       "company": {
         "name": "Unione-Clark Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/unione-clark-ingatlanhasznosito-kft"
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor/unione-clark-ingatlanhasznosito-kft"
       },
       "name": "Hotel Clark Budapest",
       "city": "Budapest",
@@ -15722,7 +15722,7 @@
       "address": "Budapest, Ybl Miklós tér 9., 1013",
       "company": {
         "name": "Vízház Gasztronómia Zrt.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/vizhaz-zrt"
+        "link": ""
       },
       "name": "Felix Kitchen&Bar",
       "city": "Budapest",
@@ -15765,7 +15765,7 @@
       "address": "Velence, Béke u. 57., 2481",
       "company": {
         "name": "VRS Part HOTEL Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/vrs-part-hotel-kft"
+        "link": ""
       },
       "name": "Velence Resort",
       "city": "Velence",
@@ -15856,7 +15856,7 @@
       "address": "Balatonlelle, Rákóczi u. 223., 8638",
       "company": {
         "name": "Witzmann Mihályné",
-        "link": ""
+        "link": "#N/A"
       },
       "name": "Witzmann Ház",
       "city": "Balatonlelle",
@@ -15949,7 +15949,7 @@
       "address": "Balatonakali, Balaton u. 8,, 8243",
       "company": {
         "name": "ZION Europe Ingatlanforgalmazó és Hasznosító Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/zion-europe-kft"
+        "link": ""
       },
       "name": "Strand-Holiday Kemping",
       "city": "Balatonakali",
@@ -16064,7 +16064,7 @@
       "address": "Taksony, Sziget sétány, 2335",
       "company": {
         "name": "Zöld Sziget Panzió Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/zold-sziget-panzio-kft"
+        "link": ""
       },
       "name": "Zöld sziget panzió",
       "city": "Taksony",
@@ -16111,7 +16111,7 @@
       "address": "Budapest, Alkotás u. 53., 1123",
       "company": {
         "name": "Zsidai Group Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/zsidai-csoport"
+        "link": ""
       },
       "name": "Spíler Buda",
       "city": "Budapest",
@@ -16157,7 +16157,7 @@
       "address": "Budapest, Úri utca 21., 1014",
       "company": {
         "name": "Zsidai Group Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/zsidai-csoport"
+        "link": ""
       },
       "name": "Budapest Mokka Cafe&Deli",
       "city": "Budapest",
@@ -16203,7 +16203,7 @@
       "address": "Budapest, Fortuna utca 3., 1014",
       "company": {
         "name": "Zsidai Group Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/zsidai-csoport"
+        "link": ""
       },
       "name": "Pest-Buda Hotel",
       "city": "Budapest",
@@ -16531,7 +16531,7 @@
       "address": "Szihalom, Vadász út 40-42., 3377",
       "company": {
         "name": "Pintérné Eötvös Ildikó",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/pinterne-eotvos-ildiko"
+        "link": "#N/A"
       },
       "name": "4 szobás szálláshely",
       "city": "Szihalom",
@@ -17341,7 +17341,7 @@
       "address": "Budapest, Olof Palme stny. 6., 1146",
       "company": {
         "name": "Csónakázótó Vendéglátóipari Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csonakazoto-vendeglatoipari-kft"
+        "link": ""
       },
       "name": "Városliget Café",
       "city": "Budapest",
@@ -17494,6 +17494,124 @@
       "coordinates": [
         47.51269365,
         19.08396021
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 363,
+      "address": "Balatonvilágos, Aligai út 1., 8171",
+      "company": {
+        "name": "PRO-MOT HUNGÁRIA Kft.",
+        "link": ""
+      },
+      "name": "Aligha Kert",
+      "city": "Balatonvilágos",
+      "type": "étterem",
+      "link": "https://www.valaszonline.hu/2020/04/29/bayer-construct-balazs-attila-balatoni-kikotoberuhazas/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": ""
+        },
+        {
+          "name": "Balázs Attila",
+          "link": ""
+        },
+        {
+          "name": "Szivek Norbert",
+          "link": ""
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": ""
+        },
+        {
+          "name": "Balázs Attila",
+          "link": ""
+        },
+        {
+          "name": "Szivek Norbert",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Budavári Róbert",
+          "link": ""
+        }
+      ],
+      "date": "2022.04.21",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.98519208,
+        18.16580809
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 364,
+      "address": "Balatonvilágos, Aligai út 1., 8171",
+      "company": {
+        "name": "PRO-MOT HUNGÁRIA Kft.",
+        "link": ""
+      },
+      "name": "Tarow Bisztró",
+      "city": "Balatonvilágos",
+      "type": "étterem",
+      "link": "https://www.valaszonline.hu/2020/04/29/bayer-construct-balazs-attila-balatoni-kikotoberuhazas/",
+      "mainOligarch": [
+        {
+          "name": "Jellinek Dániel",
+          "link": ""
+        },
+        {
+          "name": "Balázs Attila",
+          "link": ""
+        },
+        {
+          "name": "Szivek Norbert",
+          "link": ""
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Jellinek Dániel",
+          "link": ""
+        },
+        {
+          "name": "Balázs Attila",
+          "link": ""
+        },
+        {
+          "name": "Szivek Norbert",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Budavári Róbert",
+          "link": ""
+        }
+      ],
+      "date": "2022.04.21",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.98621479,
+        18.16471895
       ]
     }
   }
