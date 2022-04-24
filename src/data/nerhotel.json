@@ -90,7 +90,12 @@
           "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
         }
       ],
-      "mainCEO": [],
+      "mainCEO": [
+        {
+          "name": "Somlyai Zoltán",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
+        }
+      ],
       "oligarchs": [
         {
           "name": "Tiborcz István Ferenc",
@@ -13848,7 +13853,7 @@
       "id": 287,
       "address": "Balatonfüred, Zákonyi Ferenc utca 1, 8230",
       "company": {
-        "name": "S.Plissken Kft.",
+        "name": "Pécsi Sör Kft.",
         "link": ""
       },
       "name": "Terasz Étterem",
@@ -13857,24 +13862,29 @@
       "link": "",
       "mainOligarch": [
         {
-          "name": "Száraz István Péter",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
+          "name": "Szemerey Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szemerey-tamas"
         }
       ],
-      "mainCEO": [],
+      "mainCEO": [
+        {
+          "name": "Szemerey Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szemerey-tamas"
+        }
+      ],
       "oligarchs": [
         {
-          "name": "Száraz István Péter",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
+          "name": "Szemerey Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szemerey-tamas"
         }
       ],
       "ceos": [
         {
-          "name": "Ódor András",
-          "link": ""
+          "name": "Szemerey Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szemerey-tamas"
         }
       ],
-      "date": "2021.07.12",
+      "date": "2022.04.24",
       "details": ""
     },
     "geometry": {
@@ -17513,30 +17523,30 @@
       "mainOligarch": [
         {
           "name": "Jellinek Dániel",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
         },
         {
           "name": "Balázs Attila",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balazs-attila"
         },
         {
           "name": "Szivek Norbert",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szivek-norbert"
         }
       ],
       "mainCEO": [],
       "oligarchs": [
         {
           "name": "Jellinek Dániel",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
         },
         {
           "name": "Balázs Attila",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balazs-attila"
         },
         {
           "name": "Szivek Norbert",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szivek-norbert"
         }
       ],
       "ceos": [
@@ -17572,30 +17582,30 @@
       "mainOligarch": [
         {
           "name": "Jellinek Dániel",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
         },
         {
           "name": "Balázs Attila",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balazs-attila"
         },
         {
           "name": "Szivek Norbert",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szivek-norbert"
         }
       ],
       "mainCEO": [],
       "oligarchs": [
         {
           "name": "Jellinek Dániel",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/jellinek-daniel"
         },
         {
           "name": "Balázs Attila",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balazs-attila"
         },
         {
           "name": "Szivek Norbert",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szivek-norbert"
         }
       ],
       "ceos": [
@@ -17612,6 +17622,54 @@
       "coordinates": [
         46.98621479,
         18.16471895
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 365,
+      "address": "Balatonfüred, Zákonyi Ferenc utca 1. , 8230",
+      "company": {
+        "name": "Pécsi Sörfőzde Zrt.",
+        "link": ""
+      },
+      "name": "Stég Bisztró",
+      "city": "Balatonfüred",
+      "type": "étterem",
+      "link": "",
+      "mainOligarch": [
+        {
+          "name": "Szemerey Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szemerey-tamas"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Szemerey Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szemerey-tamas"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Szemerey Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szemerey-tamas"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Szemerey Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szemerey-tamas"
+        }
+      ],
+      "date": "2022.04.24",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.953883,
+        17.8927721
       ]
     }
   }
