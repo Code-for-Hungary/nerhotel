@@ -16747,5 +16747,53 @@
         17.8927721
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 346,
+      "address": "Badacsonytomaj, Kápolnavölgyi út 25., 8257",
+      "company": {
+        "name": "Folly Arborétum Kft.",
+        "link": ""
+      },
+      "name": "Folly borászat",
+      "city": "Badacsonytomaj",
+      "type": "borászat",
+      "link": "https://atlatszo.hu/kozpenz/2022/05/02/fidesz-kozeli-ceg-megbizasara-ment-el-az-ader-altal-is-unnepelt-arboretumnak-adott-felmilliardos-tamogatas-nagy-resze/",
+      "mainOligarch": [
+        {
+          "name": "Folly Réka",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/folly-reka"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Folly Réka",
+          "link": ""
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Folly Réka",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/folly-reka"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Folly Réka",
+          "link": ""
+        }
+      ],
+      "date": "2022.05.03",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.810029,
+        17.545368
+      ]
+    }
   }
 ]
