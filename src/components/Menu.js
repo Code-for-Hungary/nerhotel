@@ -31,7 +31,7 @@ const Menu = () => {
         <li><Link to="/">Térkép</Link></li>
         <li><Link to="/about">Mi ez?</Link></li>
         <li><Link to="/contact">Kontakt</Link></li>
-        <li><Link to="https://tamogatas.k-monitor.hu" target="_blank" rel="noopener noreferrer">Tetszik? Támogasd!</Link></li>
+        <li><a href="https://tamogatas.k-monitor.hu" target="_blank" rel="noopener noreferrer">Tetszik? Támogasd!</a></li>
         <li><Link to="/data-export">Adat export</Link></li>
       </ul>
       {isDesktop && <div className={styles.imageWrapper}>
