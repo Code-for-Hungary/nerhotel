@@ -8739,6 +8739,158 @@
     "type": "Feature",
     "properties": {
       "id": 173,
+      "address": "Lakitelek, Felsőalpár 3., 6065",
+      "company": {
+        "name": "Népfőiskola Alapítvány",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/nepfoiskola-alapitvany"
+      },
+      "name": "Kincsem Fogadó",
+      "city": "Lakitelek",
+      "type": "szálloda",
+      "link": "",
+      "mainOligarch": [],
+      "mainCEO": [
+        {
+          "name": "Lezsák Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lezsak-sandor"
+        }
+      ],
+      "oligarchs": [],
+      "ceos": [
+        {
+          "name": "Lezsák Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lezsak-sandor"
+        }
+      ],
+      "date": "2022.06.14",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.89363176,
+        19.96320398
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 174,
+      "address": "Lakitelek, Felsőalpár 3., 6065",
+      "company": {
+        "name": "Népfőiskola Alapítvány",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/nepfoiskola-alapitvany"
+      },
+      "name": "Avarok Szálláshelye Kemping\r",
+      "city": "Lakitelek",
+      "type": "kemping",
+      "link": "",
+      "mainOligarch": [],
+      "mainCEO": [
+        {
+          "name": "Lezsák Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lezsak-sandor"
+        }
+      ],
+      "oligarchs": [],
+      "ceos": [
+        {
+          "name": "Lezsák Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lezsak-sandor"
+        }
+      ],
+      "date": "2022.06.14",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.89330219,
+        19.96636597
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 175,
+      "address": "Lakitelek, Felsőalpár 3., 6065",
+      "company": {
+        "name": "Népfőiskola Alapítvány",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/nepfoiskola-alapitvany"
+      },
+      "name": "Tiszavirág Vendégház\r",
+      "city": "Lakitelek",
+      "type": "szálloda",
+      "link": "",
+      "mainOligarch": [],
+      "mainCEO": [
+        {
+          "name": "Lezsák Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lezsak-sandor"
+        }
+      ],
+      "oligarchs": [],
+      "ceos": [
+        {
+          "name": "Lezsák Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lezsak-sandor"
+        }
+      ],
+      "date": "2022.06.14",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.89548664,
+        19.96535796
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 176,
+      "address": "Lakitelek, Napsugár u. 5., 6065",
+      "company": {
+        "name": "Népfőiskola Alapítvány",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/nepfoiskola-alapitvany"
+      },
+      "name": "Tavirózsa Pihenőház",
+      "city": "Lakitelek",
+      "type": "szálloda",
+      "link": "",
+      "mainOligarch": [],
+      "mainCEO": [
+        {
+          "name": "Lezsák Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lezsak-sandor"
+        }
+      ],
+      "oligarchs": [],
+      "ceos": [
+        {
+          "name": "Lezsák Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lezsak-sandor"
+        }
+      ],
+      "date": "2022.06.14",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.85877692,
+        19.98495076
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 177,
       "address": "Badacsonytomaj, HRSZ 023/8, 8261",
       "company": {
         "name": "Nimfeum Kft.",
@@ -8789,7 +8941,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 174,
+      "id": 178,
       "address": "Szombathely, Szent István park 15., 9700",
       "company": {
         "name": "NTS hotel Garda Kft.",
@@ -8841,7 +8993,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 175,
+      "id": 179,
       "address": "Felsőpetény, Szabadság utca 29., 2611",
       "company": {
         "name": "NTS Vendégház Kft.",
@@ -8893,7 +9045,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 176,
+      "id": 180,
       "address": "Budapest, Andrássy út 22., 1061",
       "company": {
         "name": "Opera Gasztronómia Kft.",
@@ -8939,7 +9091,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 177,
+      "id": 181,
       "address": "Hajdúszoboszló, Daru zug 5/a, 4200",
       "company": {
         "name": "Optimum Füred Kft.",
@@ -8986,7 +9138,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 178,
+      "id": 182,
       "address": "Győr, Jedlik Ányos utca 19, 9022",
       "company": {
         "name": "PÁLFFY 2003 Kft.",
@@ -9042,7 +9194,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 179,
+      "id": 183,
       "address": "Győr, Megyeház tér, 9021",
       "company": {
         "name": "PÁLFFY 2003 Kft.",
@@ -9098,7 +9250,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 180,
+      "id": 184,
       "address": "Győr, Marcalváros II Mécs László utcai utca p, 9024",
       "company": {
         "name": "PÁLFFY 2003 Kft.",
@@ -9154,7 +9306,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 181,
+      "id": 185,
       "address": "Győr, Széchenyi tér 3, 9022",
       "company": {
         "name": "Pállfytália Kft.",
@@ -9197,7 +9349,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 182,
+      "id": 186,
       "address": "Hollókő, Sport út 8., 3176",
       "company": {
         "name": "Palóc Hotel Kft.",
@@ -9244,7 +9396,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 183,
+      "id": 187,
       "address": "Keszthely, Mikus Gyula sétány 5., 8360",
       "company": {
         "name": "Pannon Tessera Hospitalis Zrt.",
@@ -9296,7 +9448,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 184,
+      "id": 188,
       "address": "Keszthely, Mikus Gyula sétány 1., 8360",
       "company": {
         "name": "Pannon Tessera Hospitalis Zrt.",
@@ -9348,7 +9500,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 185,
+      "id": 189,
       "address": "Budapest, Petőfi Sándor u. 2-4., 1052",
       "company": {
         "name": "Párizs Property Kft.",
@@ -9420,7 +9572,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 186,
+      "id": 190,
       "address": "Bodrogkisfalud, 3357. hrsz., 3917",
       "company": {
         "name": "Patricius Borház Zrt.",
@@ -9475,7 +9627,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 187,
+      "id": 191,
       "address": "Pécs, Alkotmány utca 94., 7624",
       "company": {
         "name": "Pécsi Sörfőzde Zrt.",
@@ -9551,7 +9703,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 188,
+      "id": 192,
       "address": "Budapest, Üllői út 45-51., 1091",
       "company": {
         "name": "Poor Consulting Kft.",
@@ -9589,7 +9741,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 189,
+      "id": 193,
       "address": "Budapest, Régiposta utca 10., 1052",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -9632,7 +9784,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 190,
+      "id": 194,
       "address": "Budapest, Teréz krt 55., 1062",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -9675,7 +9827,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 191,
+      "id": 195,
       "address": "Budapest, Vörösvári út 52-54., 1035",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -9718,7 +9870,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 192,
+      "id": 196,
       "address": "Budapest, József krt 52-56., 1088",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -9761,7 +9913,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 193,
+      "id": 197,
       "address": "Budapest, Üllői út 133-137., 1098",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -9804,7 +9956,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 194,
+      "id": 198,
       "address": "Budapest, Szt.István körút 2., 1137",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -9847,7 +9999,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 195,
+      "id": 199,
       "address": "Budapest, Egressy tér, 1149",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -9890,7 +10042,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 196,
+      "id": 200,
       "address": "Budapest, Margit körút 103., 1024",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -9933,7 +10085,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 197,
+      "id": 201,
       "address": "Budapest, Múzeum krt 1/b, 1053",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -9976,7 +10128,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 198,
+      "id": 202,
       "address": "Budapest, Teréz krt 19., 1067",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10019,7 +10171,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 199,
+      "id": 203,
       "address": "Budapest, Váci út 1-3., 1069",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10062,7 +10214,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 200,
+      "id": 204,
       "address": "Budapest, Hungária krt 175., 1146",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10105,7 +10257,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 201,
+      "id": 205,
       "address": "Budapest, Nagytétényi út 37-45., 1222",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10148,7 +10300,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 202,
+      "id": 206,
       "address": "Budapest, Örs vezér tere 25., 1106",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10191,7 +10343,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 203,
+      "id": 207,
       "address": "Budapest, M3-as autópálya 12. km, 1152",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10234,7 +10386,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 204,
+      "id": 208,
       "address": "Budapest, Váci út 95., 1139",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10277,7 +10429,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 205,
+      "id": 209,
       "address": "Budapest, Bevásárló utca 195847/53, 1237",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10320,7 +10472,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 206,
+      "id": 210,
       "address": "Budapest, Kerepesi út 9., 1087",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10363,7 +10515,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 207,
+      "id": 211,
       "address": "Budapest, Szentmihályi út 131., 1153",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10406,7 +10558,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 208,
+      "id": 212,
       "address": "Budapest, Gyömrői út 99., 1103",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10449,7 +10601,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 209,
+      "id": 213,
       "address": "Budapest, Nagykőrösi út 347., 1239",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10492,7 +10644,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 210,
+      "id": 214,
       "address": "Budapest, Budaörsi út 112., 1112",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10535,7 +10687,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 211,
+      "id": 215,
       "address": "Budapest, Bethlen G. u. 1., 1077",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10578,7 +10730,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 212,
+      "id": 216,
       "address": "Budapest, Váci út 94-96., 1044",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10621,7 +10773,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 213,
+      "id": 217,
       "address": "Budapest, Ipartelep utca 1/a., 1039",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10664,7 +10816,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 214,
+      "id": 218,
       "address": "Budapest, Móricz Zsigmond körtér 3., 1114",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10707,7 +10859,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 215,
+      "id": 219,
       "address": "Budapest, Budafoki út 113., 1117",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10750,7 +10902,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 216,
+      "id": 220,
       "address": "Budapest, Pesti út 16-18., 1173",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10793,7 +10945,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 217,
+      "id": 221,
       "address": "Budapest, Gyáli út 46-48., 1097",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10836,7 +10988,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 218,
+      "id": 222,
       "address": "Budapest, Váci út 178-192., 1138",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10879,7 +11031,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 219,
+      "id": 223,
       "address": "Budapest, Széchenyi utca 4., 1203",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10922,7 +11074,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 220,
+      "id": 224,
       "address": "Budapest, Szentmihályi út 131. (Pólus Center), 1153",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -10965,7 +11117,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 221,
+      "id": 225,
       "address": "Budapest, Boráros tér 4., 1093",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11008,7 +11160,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 222,
+      "id": 226,
       "address": "Budapest, Nagytétényi út 27., 1222",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11051,7 +11203,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 223,
+      "id": 227,
       "address": "Budapest, Alkotás utca 53., 1123",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11094,7 +11246,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 224,
+      "id": 228,
       "address": "Budapest, Könyves Kálmán körút 25., 1101",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11137,7 +11289,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 225,
+      "id": 229,
       "address": "Budapest, Kerepesi út 73., 1106",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11180,7 +11332,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 226,
+      "id": 230,
       "address": "Budapest, Kossuth L utca 99., 1211",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11223,7 +11375,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 227,
+      "id": 231,
       "address": "Budapest, Könyves Kálmán krt 12-14., 1097",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11266,7 +11418,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 228,
+      "id": 232,
       "address": "Budapest, Nagytétényi út 33., 1222",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11309,7 +11461,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 229,
+      "id": 233,
       "address": "Győr, Baross utca 23., 9023",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11352,7 +11504,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 230,
+      "id": 234,
       "address": "Szeged, Kárász utca 11., 6720",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11395,7 +11547,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 231,
+      "id": 235,
       "address": "Sopron, Lackner K utca 60., 9400",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11438,7 +11590,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 232,
+      "id": 236,
       "address": "Debrecen, Füredi út 59/c, 4027",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11481,7 +11633,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 233,
+      "id": 237,
       "address": "Budaörs, Garibaldi út 2., 2040",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11524,7 +11676,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 234,
+      "id": 238,
       "address": "Szeged, Rókusi krt 27., 6724",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11567,7 +11719,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 235,
+      "id": 239,
       "address": "Szolnok, Thököly út 51., 5000",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11610,7 +11762,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 236,
+      "id": 240,
       "address": "Budaörs, Kinizsi u. 1-3., 2040",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11653,7 +11805,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 237,
+      "id": 241,
       "address": "Miskolc, Soltész Nagy K. utca 152., 3529",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11696,7 +11848,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 238,
+      "id": 242,
       "address": "Budakalász, Omszk park 1., 2011",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11739,7 +11891,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 239,
+      "id": 243,
       "address": "Veszprém, Brusznyai utca 16-18., 8200",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11782,7 +11934,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 240,
+      "id": 244,
       "address": "Vecsés, Fő út 250., 2220",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11825,7 +11977,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 241,
+      "id": 245,
       "address": "Tatabánya, Győri út 7-9., 2800",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11868,7 +12020,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 242,
+      "id": 246,
       "address": "Mosonmagyaróvár, Szekeres Richárd utca 19., 9200",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11911,7 +12063,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 243,
+      "id": 247,
       "address": "Dunakeszi, Nádas utca 6., 2120",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11954,7 +12106,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 244,
+      "id": 248,
       "address": "Győr, Pápai út 2856/3, 9024",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -11997,7 +12149,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 245,
+      "id": 249,
       "address": "Debrecen, Piac utca 53., 4025",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12040,7 +12192,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 246,
+      "id": 250,
       "address": "Székesfehérvár, Piac tér 1., 8000",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12083,7 +12235,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 247,
+      "id": 251,
       "address": "Miskolc, Búza tér 1., 3526",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12126,7 +12278,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 248,
+      "id": 252,
       "address": "Ács, M1-es autópálya 93, M1-es autópálya 93,7. km 0390/2/A, 2941",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12169,7 +12321,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 249,
+      "id": 253,
       "address": "Zalaegerszeg, Széchenyi tér 1., 8900",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12212,7 +12364,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 250,
+      "id": 254,
       "address": "Siófok, Zúgó utca 1., 8600",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12255,7 +12407,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 251,
+      "id": 255,
       "address": "Vértesszőlős, Határ út 1-3., 2837",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12298,7 +12450,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 252,
+      "id": 256,
       "address": "Nyíregyháza, Zrínyi út 4-6., 4400",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12341,7 +12493,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 253,
+      "id": 257,
       "address": "Törökbálint, M0 0199/2., 2045",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12384,7 +12536,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 254,
+      "id": 258,
       "address": "Szombathely, Fő tér 29., 9700",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12427,7 +12579,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 255,
+      "id": 259,
       "address": "Szigetszentmiklós, M0 0178/9/A, 2310",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12470,7 +12622,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 256,
+      "id": 260,
       "address": "Salgótarján, Bajcsy-Zsilinszky utca 2., 3100",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12513,7 +12665,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 257,
+      "id": 261,
       "address": "Kaposvár, Berzsenyi D. utca 11., 7400",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12556,7 +12708,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 258,
+      "id": 262,
       "address": "Eger, Széchenyi utca 8., 3300",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12599,7 +12751,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 259,
+      "id": 263,
       "address": "Székesfehérvár, Lövölde utca 1/a., 8000",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12642,7 +12794,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 260,
+      "id": 264,
       "address": "Debrecen, Péterfia utca 18., 4026",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12685,7 +12837,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 261,
+      "id": 265,
       "address": "Miskolc, Szentpáli utca 2-6., 3526",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12728,7 +12880,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 262,
+      "id": 266,
       "address": "Keszthely, Tapolcai út 56., 8360",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12771,7 +12923,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 263,
+      "id": 267,
       "address": "Kecskemét, Izsáki út 3., 6000",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12814,7 +12966,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 264,
+      "id": 268,
       "address": "Dunaújváros, Baracsi út 2-4., 2400",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12857,7 +13009,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 265,
+      "id": 269,
       "address": "Nagykanizsa, Balatoni út 43., 8800",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12900,7 +13052,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 266,
+      "id": 270,
       "address": "Kecskemét, Korona u. 2., 6000",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12943,7 +13095,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 267,
+      "id": 271,
       "address": "Érd, Budai út 13., 2030",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -12986,7 +13138,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 268,
+      "id": 272,
       "address": "Debrecen, Kishegyesi utca 2., 4031",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13029,7 +13181,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 269,
+      "id": 273,
       "address": "Szekszárd, Tartsay Vilmos u. 42., 7100",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13072,7 +13224,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 270,
+      "id": 274,
       "address": "Székesfehérvár, Szent Flórián krt. 3., 8000",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13115,7 +13267,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 271,
+      "id": 275,
       "address": "Pécs, Zsolnay V utca 4-6., 7632",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13158,7 +13310,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 272,
+      "id": 276,
       "address": "Pécs, Megyeri út 70., 7632",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13201,7 +13353,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 273,
+      "id": 277,
       "address": "Nyíregyháza, László u. 59., 4400",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13244,7 +13396,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 274,
+      "id": 278,
       "address": "Győr, Vasvári Pál u. 1., 9023",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13287,7 +13439,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 275,
+      "id": 279,
       "address": "Pécs, Bajcsy-Zsilinszky utca 11., 7622",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13330,7 +13482,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 276,
+      "id": 280,
       "address": "Balatonlelle, Rákóczi Ferenc utca 293., 8638",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13373,7 +13525,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 277,
+      "id": 281,
       "address": "Törökbálint, M0 autóút 6-os Km. bal oldal. ép., 2045",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13416,7 +13568,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 278,
+      "id": 282,
       "address": "Budapest, József krt. 8., 1085",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -13459,7 +13611,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 279,
+      "id": 283,
       "address": "Alcsútdoboz, Kastélykert út 6., 8087",
       "company": {
         "name": "Puskás Ferenc Sport Hotel Nonprofit Kft.",
@@ -13497,7 +13649,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 280,
+      "id": 284,
       "address": "Etyek, Újhegy, 2091",
       "company": {
         "name": "Rókusfalvy Birtok Kft.",
@@ -13561,7 +13713,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 281,
+      "id": 285,
       "address": "Budapest, Klauzál utca 32, 1072",
       "company": {
         "name": "S.Plissken Kft.",
@@ -13604,7 +13756,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 282,
+      "id": 286,
       "address": "Balatonfüred, Zákonyi Ferenc utca 1, 8230",
       "company": {
         "name": "Pécsi Sör Kft.",
@@ -13652,7 +13804,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 283,
+      "id": 287,
       "address": "Tatárszentgyörgy, Sarlóspuszta, 2375",
       "company": {
         "name": "Sarlóspuszta Zrt.",
@@ -13695,7 +13847,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 284,
+      "id": 288,
       "address": "Zalacsány, Csány László u. 24., 8782",
       "company": {
         "name": "Sghthermál Kft.",
@@ -13746,7 +13898,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 285,
+      "id": 289,
       "address": "Egerszalók, Széchenyi út 31., 3394",
       "company": {
         "name": "Shiraz Team Kft.",
@@ -13801,7 +13953,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 286,
+      "id": 290,
       "address": "Agárd, Bikavölgyi út 2., 2484",
       "company": {
         "name": "Simon és Simon Kft.",
@@ -13849,7 +14001,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 287,
+      "id": 291,
       "address": "Esztergom, Táncsics Mihály utca 5., 2500",
       "company": {
         "name": "Solva Hotel Kft.",
@@ -13896,7 +14048,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 288,
+      "id": 292,
       "address": "Esztergom, Táncsics Mihály utca 6., 2500",
       "company": {
         "name": "Solva Property Kft.",
@@ -13943,7 +14095,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 289,
+      "id": 293,
       "address": "Sárvár, Vadkert krt. 5., 9600",
       "company": {
         "name": "Spirit Hotel Gyógyszálloda Kft.",
@@ -14007,7 +14159,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 290,
+      "id": 294,
       "address": "Budapest, Vértanuk tere 1., 1054",
       "company": {
         "name": "Stúdió-V Kft.",
@@ -14058,7 +14210,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 291,
+      "id": 295,
       "address": "Géberjén, Móricz Zsigmond utca 2/A., 4754",
       "company": {
         "name": "Szatmár Nektárja Nonprofit Kft.",
@@ -14091,7 +14243,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 292,
+      "id": 296,
       "address": "Budapest, Állatkerti krt. 9-11., 1146",
       "company": {
         "name": "Széchenyi Étterem Kft.",
@@ -14134,7 +14286,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 293,
+      "id": 297,
       "address": "Eger, Szépasszony-völgy, 3300",
       "company": {
         "name": "Szépasszonyvölgy Kft.",
@@ -14190,7 +14342,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 294,
+      "id": 298,
       "address": "Szolnok, Galamb u. 9., 5000",
       "company": {
         "name": "Szolnok Tenisz Club Kft.",
@@ -14237,7 +14389,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 295,
+      "id": 299,
       "address": "Tállya, Rákóczi út 23., 3907",
       "company": {
         "name": "Tállya Bor Kft.",
@@ -14285,7 +14437,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 296,
+      "id": 300,
       "address": "Hegymagas, hrsz: 869, 8265",
       "company": {
         "name": "Tarányi Nonprofit Kft.",
@@ -14341,7 +14493,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 297,
+      "id": 301,
       "address": "Tarcal, Fő út 94., 3915",
       "company": {
         "name": "Témadesign Kft.",
@@ -14389,7 +14541,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 298,
+      "id": 302,
       "address": "Győr, Schweidel u. 7, 9022",
       "company": {
         "name": "Thália 2004 Kft.",
@@ -14437,7 +14589,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 299,
+      "id": 303,
       "address": "Visegrád, Lepence völgy 2., 2025",
       "company": {
         "name": "Thermal Hotel Visegrád Zrt.",
@@ -14488,7 +14640,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 300,
+      "id": 304,
       "address": "Mórahalom, Szegedi út 1/b, 6782",
       "company": {
         "name": "Thermálgyűrű Turisztikai és Vendéglátó Kft.",
@@ -14540,7 +14692,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 301,
+      "id": 305,
       "address": "Villány, Erkel Ferenc u. 10., 7773",
       "company": {
         "name": "Tiffán's Kft.",
@@ -14587,7 +14739,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 302,
+      "id": 306,
       "address": "Tihany, Kiserdőtelepi út 075/15 hrsz, 8237",
       "company": {
         "name": "Tihany-Vin Kft.",
@@ -14630,7 +14782,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 303,
+      "id": 307,
       "address": "Tiszafüred, Húszöles út 27., 5350",
       "company": {
         "name": "Tisza-balneum Kft.",
@@ -14681,7 +14833,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 304,
+      "id": 308,
       "address": "Hercegkút, Gombos-hegyi Pincesor, 3958",
       "company": {
         "name": "TOKAJ-PORTIUS PINCÉSZET Kft.",
@@ -14729,7 +14881,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 305,
+      "id": 309,
       "address": "Tarcal, , 3915",
       "company": {
         "name": "TOKAJICUM Borház Kft.",
@@ -14785,7 +14937,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 306,
+      "id": 310,
       "address": "Budapest, Király utca 13., 1075",
       "company": {
         "name": "Trinity Gasztronómia Kft.",
@@ -14845,7 +14997,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 307,
+      "id": 311,
       "address": "Budapest, Szentháromság utca 9-11, 1014",
       "company": {
         "name": "Trinity Gasztronómia Kft.",
@@ -14905,7 +15057,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 308,
+      "id": 312,
       "address": "Budapest, Nagymező utca 66., 1065",
       "company": {
         "name": "Ublot Kft.",
@@ -14956,7 +15108,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 309,
+      "id": 313,
       "address": "Budapest, Clark Ádám tér 1, 1013",
       "company": {
         "name": "Unione-Clark Kft.",
@@ -15004,7 +15156,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 310,
+      "id": 314,
       "address": "Budapest, Országház utca 31., 1014",
       "company": {
         "name": "V1 Gasztronómia Kft.",
@@ -15064,7 +15216,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 311,
+      "id": 315,
       "address": "Balatonudvari, Vászolyi út, 8242",
       "company": {
         "name": "Vaperty Investment Zrt.",
@@ -15112,7 +15264,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 312,
+      "id": 316,
       "address": "Pécs, Felsővámház utca 53., 7626",
       "company": {
         "name": "Vár - Gold Kft.",
@@ -15163,7 +15315,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 313,
+      "id": 317,
       "address": "Cegléd, Kossuth tér 9-10., 2700",
       "company": {
         "name": "Vassily Kft.",
@@ -15215,7 +15367,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 314,
+      "id": 318,
       "address": "Tarján, 2831 Tarján, 2831",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15258,7 +15410,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 315,
+      "id": 319,
       "address": "Alcsútdoboz, Kastély u. 7., 8087",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15301,7 +15453,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 316,
+      "id": 320,
       "address": "Alcsútdoboz, Vérti Vadaskert közepén, 8087",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15344,7 +15496,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 317,
+      "id": 321,
       "address": "Bélmegyer, , 5643",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15387,7 +15539,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 318,
+      "id": 322,
       "address": "Újrónafő, , 9244",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15430,7 +15582,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 319,
+      "id": 323,
       "address": "Zomba, Szentgálszőlőhegy 4., 7173",
       "company": {
         "name": "VINITIS-Agrárium Szőlészeti Kft.",
@@ -15482,7 +15634,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 320,
+      "id": 324,
       "address": "Budapest, Ybl Miklós tér 9., 1013",
       "company": {
         "name": "Vízház Gasztronómia Zrt.",
@@ -15525,7 +15677,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 321,
+      "id": 325,
       "address": "Velence, Béke u. 57., 2481",
       "company": {
         "name": "VRS Part HOTEL Kft.",
@@ -15568,7 +15720,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 322,
+      "id": 326,
       "address": "Győr, Juharfa u. 11., 9027",
       "company": {
         "name": "WHB Hotel Kft.",
@@ -15616,7 +15768,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 323,
+      "id": 327,
       "address": "Balatonlelle, Rákóczi u. 223., 8638",
       "company": {
         "name": "Witzmann Mihályné",
@@ -15654,7 +15806,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 324,
+      "id": 328,
       "address": "Zalacsány, , 8782",
       "company": {
         "name": "Zala Springs Golf Resort Zrt.",
@@ -15709,7 +15861,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 325,
+      "id": 329,
       "address": "Balatonakali, Balaton u. 8,, 8243",
       "company": {
         "name": "ZION Europe Ingatlanforgalmazó és Hasznosító Kft.",
@@ -15768,7 +15920,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 326,
+      "id": 330,
       "address": "Zalaszabar, hrsz. 1565., 8743",
       "company": {
         "name": "Zobori KalandoZoo Kft.",
@@ -15824,7 +15976,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 327,
+      "id": 331,
       "address": "Taksony, Sziget sétány, 2335",
       "company": {
         "name": "Zöld Sziget Panzió Kft.",
@@ -15871,7 +16023,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 328,
+      "id": 332,
       "address": "Budapest, Alkotás u. 53., 1123",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -15917,7 +16069,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 329,
+      "id": 333,
       "address": "Budapest, Úri utca 21., 1014",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -15963,7 +16115,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 330,
+      "id": 334,
       "address": "Budapest, Fortuna utca 3., 1014",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -16009,7 +16161,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 331,
+      "id": 335,
       "address": "Budapest, Tas vezér u. 7., 1113",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -16060,7 +16212,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 332,
+      "id": 336,
       "address": "Budapest, Móricz Zsigmond körtér Gomba épületegyüttes, 1117",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -16111,7 +16263,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 333,
+      "id": 337,
       "address": "Budapest, Móricz Zsigmond körtér Gomba épületegyüttes 1. cikk, 1117",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -16162,7 +16314,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 334,
+      "id": 338,
       "address": "Budapest, Ybl Miklós tér 6., 1013",
       "company": {
         "name": "Bárkert Kft.",
@@ -16205,7 +16357,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 335,
+      "id": 339,
       "address": "Kisvárda, Városmajor u. 47., 4600",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -16248,7 +16400,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 336,
+      "id": 340,
       "address": "Ózd, Kohász u. 2., 3600",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -16291,7 +16443,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 337,
+      "id": 341,
       "address": "Szihalom, Vadász út 40-42., 3377",
       "company": {
         "name": "Pintérné Eötvös Ildikó",
@@ -16319,7 +16471,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 338,
+      "id": 342,
       "address": "Budapest, Olof Palme stny. 6., 1146",
       "company": {
         "name": "Csónakázótó Vendéglátóipari Kft.",
@@ -16383,7 +16535,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 339,
+      "id": 343,
       "address": "Balatonakarattya, Koppány lejtő 2., 8172",
       "company": {
         "name": "Dry Beta Kft.",
@@ -16431,7 +16583,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 340,
+      "id": 344,
       "address": "Budapest, Olof Palme stny. 3., 1146",
       "company": {
         "name": "RaMpART Gasztronómia Kft.",
@@ -16482,7 +16634,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 341,
+      "id": 345,
       "address": "Balatonvilágos, Aligai út 1., 8171",
       "company": {
         "name": "PRO-MOT HUNGÁRIA Kft.",
@@ -16541,7 +16693,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 342,
+      "id": 346,
       "address": "Balatonvilágos, Aligai út 1., 8171",
       "company": {
         "name": "PRO-MOT HUNGÁRIA Kft.",
@@ -16600,7 +16752,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 343,
+      "id": 347,
       "address": "Balatonfüred, Zákonyi Ferenc utca 1. , 8230",
       "company": {
         "name": "Pécsi Sörfőzde Zrt.",
@@ -16648,7 +16800,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 344,
+      "id": 348,
       "address": "Badacsonytomaj, Kápolnavölgyi út 25., 8257",
       "company": {
         "name": "Folly Arborétum Kft.",
@@ -16696,7 +16848,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 345,
+      "id": 349,
       "address": "Budapest, Gasztro Sétány, 1138",
       "company": {
         "name": "Wonder Island Kft.",
@@ -16752,7 +16904,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 346,
+      "id": 350,
       "address": "Balatonlelle, Honvéd utca 55., 8638",
       "company": {
         "name": "Investeur Kft.",
