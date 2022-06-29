@@ -16488,15 +16488,10 @@
         },
         {
           "name": "Varga Lajos",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos"
+          "link": ""
         }
       ],
-      "mainCEO": [
-        {
-          "name": "Varga Lajos",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos"
-        }
-      ],
+      "mainCEO": [],
       "oligarchs": [
         {
           "name": "Faragó Tibor Dante",
@@ -16508,20 +16503,16 @@
         },
         {
           "name": "Varga Lajos",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos"
+          "link": ""
         }
       ],
       "ceos": [
         {
-          "name": "Varga Lajos",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-lajos"
-        },
-        {
-          "name": "Ondrusek Péter",
-          "link": ""
+          "name": "Bottyán István",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bottyan-istvan"
         }
       ],
-      "date": "2022.03.03",
+      "date": "2022.06.17",
       "details": ""
     },
     "geometry": {
@@ -16950,6 +16941,96 @@
       "coordinates": [
         46.7855905,
         17.67891523
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 351,
+      "address": "Budapest, Csónak u. 1., 1015",
+      "company": {
+        "name": "Hatvany Kávéház és Szalon Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hatvany-kavehaz-es-szalon-kft"
+      },
+      "name": "Aranybástya",
+      "city": "Budapest",
+      "type": "étterem",
+      "link": "",
+      "mainOligarch": [],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Bottyán István",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Bottyán István",
+          "link": ""
+        }
+      ],
+      "date": "2022.06.17",
+      "details": "A közérdekű vagyonkezelő alapítvánnyá formált, 1991-ben Antall József miniszterelnök kezdeményezésére létrejött Batthány Lajos Alapítvány többször vagyonjuttatásban is részesült. Így került hozzá a budai Vár oldalában álló Lónyay–Hatvany-villa is."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.49983628,
+        19.03679506
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 352,
+      "address": "Veszprém, Buhim u. 14-16., 8200",
+      "company": {
+        "name": "Oliva 2004 Kft.",
+        "link": ""
+      },
+      "name": "Oliva Hotel",
+      "city": "Veszprém",
+      "type": "szálloda",
+      "link": "https://atlatszo.hu/kozpenz/2022/06/28/kozel-300-millio-forintot-adott-hotelfejlesztesre-az-ekf-et-szervezo-ceg-a-sajat-fotanacsadojanak/",
+      "mainOligarch": [
+        {
+          "name": "Mészáros Zoltán",
+          "link": ""
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Mészáros Zoltán",
+          "link": ""
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Mészáros Zoltán",
+          "link": ""
+        },
+        {
+          "name": "Berzsenyi Miklós Dániel",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Mészáros Zoltán",
+          "link": ""
+        }
+      ],
+      "date": "2022.06.28",
+      "details": "Az Oliva 2004 Kft. többségi tulajdonosa Mészáros Zoltán, aki a százmilliós hoteltámogatásokat kiosztó Veszprém-Balaton 2023 Zrt. korábbi vezérigazgatója."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.09456483,
+        17.90793359
       ]
     }
   }
