@@ -16915,13 +16915,13 @@
       "oligarchs": [
         {
           "name": "Bottyán István",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bottyan-istvan"
         }
       ],
       "ceos": [
         {
           "name": "Bottyán István",
-          "link": ""
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bottyan-istvan"
         }
       ],
       "date": "2022.06.17",
@@ -17032,6 +17032,66 @@
       "coordinates": [
         47.4977693,
         19.04893313
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 353,
+      "address": "Etyek, Alcsúti út 4., 2091",
+      "company": {
+        "name": "Rókusfalvy Fogadó Kft.",
+        "link": ""
+      },
+      "name": "Rókusfalvy Fogadó",
+      "city": "Etyek",
+      "type": "szálloda",
+      "link": "https://24.hu/fn/gazdasag/2022/07/12/kozlony-musorvezeto-borasz-kormanybiztos-rokusfalvy/",
+      "mainOligarch": [
+        {
+          "name": "Rókusfalvy Pál",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/rokusfalvy-pal"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Rókusfalvy Pál",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/rokusfalvy-pal"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Rókusfalvy Pál",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/rokusfalvy-pal"
+        },
+        {
+          "name": "Rókusfalvy-Kun Ildikó",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Rókusfalvy Pál",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/rokusfalvy-pal"
+        },
+        {
+          "name": "Rókusfalvy-Kun Ildikó",
+          "link": ""
+        },
+        {
+          "name": "Schneider Balázs Ferenc",
+          "link": ""
+        }
+      ],
+      "date": "2022.07.12",
+      "details": "A ’90-es évek rádiós és tévés műsorvezetője, Rókusfalvy Pál Etyeken alapított borászatot. 2022-ben nemzeti bormarketingért felelős kormánybiztosnak nevezték ki."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.44456709,
+        18.74656041
       ]
     }
   }
