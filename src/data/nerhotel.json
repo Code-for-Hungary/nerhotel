@@ -13606,12 +13606,12 @@
       "address": "Etyek, Újhegy, 2091",
       "company": {
         "name": "Rókusfalvy Birtok Kft.",
-        "link": ""
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/rokusfalvy-birtok-kft"
       },
       "name": "Rókusfalvy Birtok",
       "city": "Etyek",
       "type": "szálloda / étterem",
-      "link": "",
+      "link": "https://24.hu/fn/gazdasag/2022/07/12/kozlony-musorvezeto-borasz-kormanybiztos-rokusfalvy/",
       "mainOligarch": [
         {
           "name": "Rókusfalvy Pál",
@@ -13652,8 +13652,8 @@
           "link": ""
         }
       ],
-      "date": "2020.09.29",
-      "details": ""
+      "date": "2022.07.12",
+      "details": "A ’90-es évek rádiós és tévés műsorvezetője, Rókusfalvy Pál Etyeken alapított borászatot. 2022-ben nemzeti bormarketingért felelős kormánybiztosnak nevezték ki."
     },
     "geometry": {
       "type": "Point",
