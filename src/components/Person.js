@@ -53,7 +53,7 @@ const Person = (props) => {
       <div className={styles.hotelWrapper}>
         <div className={styles.info}>
           <h1>{isMainOligarch && <Link to="/about"><Icon img={horseIcon} size="large" className={styles.inlineIcon}/></Link>}{personName}</h1>
-          {personUrl && <p>K-Monitor link: <a href={personUrl} target="_blank" rel="noopener noreferrer">{personName}</a></p>}
+          {personUrl && <p>K-Monitor sajtóadatbázis: <a href={personUrl} target="_blank" rel="noopener noreferrer">{personName}</a></p>}
           {(affiliatedHotels.length > 0) && (
             <>
               <div className={styles.hotelRow}>
