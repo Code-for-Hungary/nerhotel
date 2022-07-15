@@ -10681,7 +10681,7 @@
     "type": "Feature",
     "properties": {
       "id": 216,
-      "address": "Budapest, Nagytétényi út 27., 1222",
+      "address": "Budapest, Nagytétényi út 37., 1222",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
         "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
@@ -10982,7 +10982,7 @@
     "type": "Feature",
     "properties": {
       "id": 223,
-      "address": "Győr, Baross utca 23., 9023",
+      "address": "Győr, Baross út 23., 9023",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
         "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
@@ -11718,7 +11718,7 @@
         "name": "Progress Étteremhálózat Kft.",
         "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
       },
-      "name": "McDonald's",
+      "name": "McDonald's (átmenetileg zárva)",
       "city": "Székesfehérvár",
       "type": "étterem",
       "link": "https://g7.hu/vallalat/20190318/mostantol-nem-ehetsz-ugy-big-mac-et-hogy-abbol-ne-reszesuljon-a-ner/",
@@ -11741,7 +11741,7 @@
           "link": ""
         }
       ],
-      "date": "2020.05.22",
+      "date": "2022.07.15",
       "details": "A hazai McDonald's-okat üzemeltető cég tulajdonosa Scheer Sándor építőipari vállalkozó. Az állami építési tenderek egyik gyakori győztesének a Market Építő Zrt.-nek vezérigazgatója és társtulajdonosa (Garancsi István mellett). Korábban a Magyar Labdarúgó Szövetség elnökségi tagja."
     },
     "geometry": {
@@ -11971,7 +11971,7 @@
     "type": "Feature",
     "properties": {
       "id": 246,
-      "address": "Nyíregyháza, Zrínyi út 4-6., 4400",
+      "address": "Nyíregyháza, Zrínyi Ilona utca 4-6., 4400",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
         "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
@@ -12005,8 +12005,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        47.954369,
-        21.716044
+        47.95428627,
+        21.71605319
       ]
     }
   },
@@ -14836,101 +14836,6 @@
     "type": "Feature",
     "properties": {
       "id": 307,
-      "address": "Cegléd, Kossuth tér 9-10., 2700",
-      "company": {
-        "name": "Vassily Kft.",
-        "link": ""
-      },
-      "name": "Szindbád Étterem - Borozó",
-      "city": "Cegléd",
-      "type": "bár",
-      "link": "https://24.hu/belfold/2018/01/23/nyomozast-inditott-a-rendorseg-a-kormanyparti-kepviselo-ugyeben-aki-kozpenzbol-nyitott-borozot/",
-      "mainOligarch": [
-        {
-          "name": "Varga Zoltán Ernő",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-zoltan-erno"
-        }
-      ],
-      "mainCEO": [
-        {
-          "name": "Varga Zoltán Ernő",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-zoltan-erno"
-        }
-      ],
-      "oligarchs": [
-        {
-          "name": "Varga Zoltán Ernő",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-zoltan-erno"
-        },
-        {
-          "name": "Varga Ernő",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-erno"
-        }
-      ],
-      "ceos": [
-        {
-          "name": "Varga Zoltán Ernő",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/varga-zoltan-erno"
-        }
-      ],
-      "date": "2019.07.30",
-      "details": ""
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        47.170249,
-        19.796266
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "id": 308,
-      "address": "Tarján, 2831 Tarján, 2831",
-      "company": {
-        "name": "Vért Vadászati Kft.",
-        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/vert-vadaszati-kft"
-      },
-      "name": "Postás Vadásztársaság",
-      "city": "Tarján",
-      "type": "szálloda",
-      "link": "",
-      "mainOligarch": [
-        {
-          "name": "Mészáros Lőrinc",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        }
-      ],
-      "mainCEO": [],
-      "oligarchs": [
-        {
-          "name": "Mészáros Lőrinc",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        }
-      ],
-      "ceos": [
-        {
-          "name": "Adravecz Edit",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/adravecz-edit"
-        }
-      ],
-      "date": "2021.11.16",
-      "details": ""
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        47.5700909,
-        18.5244354
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "id": 309,
       "address": "Alcsútdoboz, Kastély u. 7., 8087",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -14973,7 +14878,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 310,
+      "id": 308,
       "address": "Alcsútdoboz, Vérti Vadaskert közepén, 8087",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15016,7 +14921,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 311,
+      "id": 309,
       "address": "Bélmegyer, , 5643",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15059,7 +14964,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 312,
+      "id": 310,
       "address": "Újrónafő, , 9244",
       "company": {
         "name": "Vért Vadászati Kft.",
@@ -15102,7 +15007,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 313,
+      "id": 311,
       "address": "Zomba, Szentgálszőlőhegy 4., 7173",
       "company": {
         "name": "VINITIS-Agrárium Szőlészeti Kft.",
@@ -15154,7 +15059,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 314,
+      "id": 312,
       "address": "Budapest, Ybl Miklós tér 9., 1013",
       "company": {
         "name": "Vízház Gasztronómia Zrt.",
@@ -15197,7 +15102,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 315,
+      "id": 313,
       "address": "Velence, Béke u. 57., 2481",
       "company": {
         "name": "VRS Part HOTEL Kft.",
@@ -15240,7 +15145,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 316,
+      "id": 314,
       "address": "Győr, Juharfa u. 11., 9027",
       "company": {
         "name": "WHB Hotel Kft.",
@@ -15288,7 +15193,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 317,
+      "id": 315,
       "address": "Balatonlelle, Rákóczi u. 223., 8638",
       "company": {
         "name": "Witzmann Mihályné",
@@ -15326,7 +15231,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 318,
+      "id": 316,
       "address": "Zalacsány, , 8782",
       "company": {
         "name": "Zala Springs Golf Resort Zrt.",
@@ -15381,72 +15286,51 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 319,
+      "id": 317,
       "address": "Balatonakali, Balaton u. 8,, 8243",
       "company": {
-        "name": "ZION Europe Ingatlanforgalmazó és Hasznosító Kft.",
-        "link": ""
+        "name": "Balatontourist Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/balatontourist-1"
       },
       "name": "Strand-Holiday Kemping",
       "city": "Balatonakali",
       "type": "kemping",
       "link": "http://magyarnarancs.hu/belpol/az-ellopott-balaton-109188",
-      "mainOligarch": [
-        {
-          "name": "Mészáros Lőrinc",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Mészáros Beatrix",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
-        }
-      ],
+      "mainOligarch": [],
       "mainCEO": [],
       "oligarchs": [
         {
           "name": "Mészáros Lőrinc",
           "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
-        },
-        {
-          "name": "Mészáros Beatrix",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-beatrix"
-        },
-        {
-          "name": "Homlok-Mészáros Ágnes",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/homlok-meszaros-agnes"
         }
       ],
       "ceos": [
         {
-          "name": "Gombai Gabriella",
+          "name": "Nagy Gábor Zoltán",
           "link": ""
         }
       ],
-      "date": "2021.11.09",
-      "details": "A 2007-ben privatizált egykori pártüdülőt 2018 júliusában az akkor még Mészáros-féle Konzum ingatlankezelő cége, az Appeninn vette meg, annak leányvállalatáé lett a területet és a kikötőt tulajdonló a Pro-Mot Hungária Kft. 74,99%-os üzletrésze. Később Tiborcz István is megjelent a cégben, amely állami támogatást nyert a kikötő fejlesztésére és az állami Erzsébet-program nyaralásainak egyik helyszíne lett. 2020-ban az Appeninnből Mészáros és Tiborcz is kiszálltak, az új tulajdonosok közt azonban felbukkant a Tiborczhoz köthető Balázs Attila, illetve továbbra is kisebbségi tulajdonos a Lexan-csoport, amit a sajtóban Szivek Norbert korábbi MNV-vezetőhöz kötnek."
+      "date": "2022.07.15",
+      "details": "A 2007-ben privatizált egykori pártüdülőt 2018 júliusában az akkor még Mészáros-féle Konzum ingatlankezelő cége, az Appeninn vette meg, annak leányvállalatáé lett a területet és a kikötőt tulajdonló a Pro-Mot Hungária Kft. 74,99%-os üzletrésze. Később Tiborcz István is megjelent a cégben, amely állami támogatást nyert a kikötő fejlesztésére és az állami Erzsébet-program nyaralásainak egyik helyszíne lett. "
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        46.8810886,
-        17.7529883
+        46.88107316,
+        17.75504315
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "id": 320,
+      "id": 318,
       "address": "Zalaszabar, hrsz. 1565., 8743",
       "company": {
         "name": "Zobori KalandoZoo Kft.",
         "link": ""
       },
-      "name": "KalandoZoo",
+      "name": "Zobori Élménypark",
       "city": "Zalaszabar",
       "type": "kalandpark",
       "link": "",
@@ -15496,7 +15380,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 321,
+      "id": 319,
       "address": "Taksony, Sziget sétány, 2335",
       "company": {
         "name": "Zöld Sziget Panzió Kft.",
@@ -15543,7 +15427,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 322,
+      "id": 320,
       "address": "Budapest, Alkotás u. 53., 1123",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -15589,7 +15473,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 323,
+      "id": 321,
       "address": "Budapest, Úri utca 21., 1014",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -15635,7 +15519,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 324,
+      "id": 322,
       "address": "Budapest, Fortuna utca 3., 1014",
       "company": {
         "name": "Zsidai Group Kft.",
@@ -15681,7 +15565,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 325,
+      "id": 323,
       "address": "Budapest, Tas vezér u. 7., 1113",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -15732,7 +15616,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 326,
+      "id": 324,
       "address": "Budapest, Móricz Zsigmond körtér Gomba épületegyüttes, 1117",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -15783,7 +15667,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 327,
+      "id": 325,
       "address": "Budapest, Móricz Zsigmond körtér Gomba épületegyüttes 1. cikk, 1117",
       "company": {
         "name": "Zsigmond Kert Kft.",
@@ -15834,7 +15718,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 328,
+      "id": 326,
       "address": "Budapest, Ybl Miklós tér 6., 1013",
       "company": {
         "name": "Bárkert Kft.",
@@ -15877,7 +15761,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 329,
+      "id": 327,
       "address": "Kisvárda, Városmajor u. 47., 4600",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -15920,7 +15804,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 330,
+      "id": 328,
       "address": "Ózd, Kohász u. 2., 3600",
       "company": {
         "name": "Progress Étteremhálózat Kft.",
@@ -15963,7 +15847,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 331,
+      "id": 329,
       "address": "Szihalom, Vadász út 40-42., 3377",
       "company": {
         "name": "Pintérné Eötvös Ildikó",
@@ -15991,7 +15875,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 332,
+      "id": 330,
       "address": "Budapest, Olof Palme stny. 6., 1146",
       "company": {
         "name": "Csónakázótó Vendéglátóipari Kft.",
@@ -16046,7 +15930,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 333,
+      "id": 331,
       "address": "Balatonakarattya, Koppány lejtő 2., 8172",
       "company": {
         "name": "Dry Beta Kft.",
@@ -16094,7 +15978,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 334,
+      "id": 332,
       "address": "Budapest, Olof Palme stny. 3., 1146",
       "company": {
         "name": "RaMpART Gasztronómia Kft.",
@@ -16145,7 +16029,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 335,
+      "id": 333,
       "address": "Balatonvilágos, Aligai út 1., 8171",
       "company": {
         "name": "PRO-MOT HUNGÁRIA Kft.",
@@ -16204,7 +16088,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 336,
+      "id": 334,
       "address": "Balatonvilágos, Aligai út 1., 8171",
       "company": {
         "name": "PRO-MOT HUNGÁRIA Kft.",
@@ -16263,7 +16147,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 337,
+      "id": 335,
       "address": "Balatonfüred, Zákonyi Ferenc utca 1. , 8230",
       "company": {
         "name": "Pécsi Sörfőzde Zrt.",
@@ -16311,7 +16195,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 338,
+      "id": 336,
       "address": "Badacsonytomaj, Kápolnavölgyi út 25., 8257",
       "company": {
         "name": "Folly Arborétum Kft.",
@@ -16359,7 +16243,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 339,
+      "id": 337,
       "address": "Budapest, Gasztro Sétány, 1138",
       "company": {
         "name": "Wonder Island Kft.",
@@ -16415,7 +16299,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 340,
+      "id": 338,
       "address": "Balatonlelle, Honvéd utca 55., 8638",
       "company": {
         "name": "Investeur Kft.",
@@ -16467,7 +16351,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 341,
+      "id": 339,
       "address": "Budapest, Csónak u. 1., 1015",
       "company": {
         "name": "Hatvany Kávéház és Szalon Kft.",
@@ -16505,7 +16389,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 342,
+      "id": 340,
       "address": "Veszprém, Buhim u. 14-16., 8200",
       "company": {
         "name": "Oliva 2004 Kft.",
@@ -16557,7 +16441,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 343,
+      "id": 341,
       "address": "Budapest, Dorottya utca 8., 1051",
       "company": {
         "name": "Bienvenue Üzemeltető Kft.",
@@ -16605,7 +16489,7 @@
   {
     "type": "Feature",
     "properties": {
-      "id": 344,
+      "id": 342,
       "address": "Etyek, Alcsúti út 4., 2091",
       "company": {
         "name": "Rókusfalvy Fogadó Kft.",
