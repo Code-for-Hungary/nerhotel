@@ -16445,7 +16445,7 @@
       "address": "Budapest, Dorottya utca 8., 1051",
       "company": {
         "name": "Bienvenue Üzemeltető Kft.",
-        "link": ""
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/bienvenue-kft"
       },
       "name": "D8 Hotel",
       "city": "Budapest",
@@ -16543,6 +16543,405 @@
       "coordinates": [
         47.44456709,
         18.74656041
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 343,
+      "address": "Budapest, Apor Vilmos tér 11.-12., 1124",
+      "company": {
+        "name": "Culinaris Kft.",
+        "link": ""
+      },
+      "name": "Culinaris Hegyvidék",
+      "city": "Budapest",
+      "type": "bolt",
+      "link": "https://444.hu/2020/09/21/a-ner-bekebelezte-a-culinarist",
+      "mainOligarch": [
+        {
+          "name": "Száraz István Péter",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Száraz István Péter",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szaraz-istvan"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Varga Ákos Gábor",
+          "link": ""
+        }
+      ],
+      "date": "2022.07.21",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.49102748,
+        19.01187682
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 344,
+      "address": "Pápa, Celli utca 11., 8500",
+      "company": {
+        "name": "Progress Étteremhálózat Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
+      },
+      "name": "McDonald's",
+      "city": "Pápa",
+      "type": "étterem",
+      "link": "https://g7.hu/vallalat/20190318/mostantol-nem-ehetsz-ugy-big-mac-et-hogy-abbol-ne-reszesuljon-a-ner/",
+      "mainOligarch": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Égi Zsolt",
+          "link": ""
+        }
+      ],
+      "date": "2022.07.21",
+      "details": "A hazai McDonald's-okat üzemeltető cég tulajdonosa Scheer Sándor építőipari vállalkozó. Az állami építési tenderek egyik gyakori győztesének a Market Építő Zrt.-nek vezérigazgatója és társtulajdonosa (Garancsi István mellett). Korábban a Magyar Labdarúgó Szövetség elnökségi tagja."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.32948152,
+        17.4582482
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 345,
+      "address": "Zalaegerszeg, Balatoni út 5., 8900",
+      "company": {
+        "name": "Progress Étteremhálózat Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
+      },
+      "name": "McDonald's",
+      "city": "Zalaegerszeg",
+      "type": "étterem",
+      "link": "https://g7.hu/vallalat/20190318/mostantol-nem-ehetsz-ugy-big-mac-et-hogy-abbol-ne-reszesuljon-a-ner/",
+      "mainOligarch": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Égi Zsolt",
+          "link": ""
+        }
+      ],
+      "date": "2022.07.21",
+      "details": "A hazai McDonald's-okat üzemeltető cég tulajdonosa Scheer Sándor építőipari vállalkozó. Az állami építési tenderek egyik gyakori győztesének a Market Építő Zrt.-nek vezérigazgatója és társtulajdonosa (Garancsi István mellett). Korábban a Magyar Labdarúgó Szövetség elnökségi tagja."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.84306959,
+        16.868125
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 346,
+      "address": "Pécs, Siklósi út 68, 7632",
+      "company": {
+        "name": "Progress Étteremhálózat Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
+      },
+      "name": "McDonald's",
+      "city": "Pécs",
+      "type": "étterem",
+      "link": "https://g7.hu/vallalat/20190318/mostantol-nem-ehetsz-ugy-big-mac-et-hogy-abbol-ne-reszesuljon-a-ner/",
+      "mainOligarch": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Égi Zsolt",
+          "link": ""
+        }
+      ],
+      "date": "2022.07.21",
+      "details": "A hazai McDonald's-okat üzemeltető cég tulajdonosa Scheer Sándor építőipari vállalkozó. Az állami építési tenderek egyik gyakori győztesének a Market Építő Zrt.-nek vezérigazgatója és társtulajdonosa (Garancsi István mellett). Korábban a Magyar Labdarúgó Szövetség elnökségi tagja."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.04895436,
+        18.23084293
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 347,
+      "address": "Velence, külterület hrsz 538/2., 2481",
+      "company": {
+        "name": "Progress Étteremhálózat Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
+      },
+      "name": "McDonald's",
+      "city": "Velence",
+      "type": "étterem",
+      "link": "https://g7.hu/vallalat/20190318/mostantol-nem-ehetsz-ugy-big-mac-et-hogy-abbol-ne-reszesuljon-a-ner/",
+      "mainOligarch": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Égi Zsolt",
+          "link": ""
+        }
+      ],
+      "date": "2022.07.21",
+      "details": "A hazai McDonald's-okat üzemeltető cég tulajdonosa Scheer Sándor építőipari vállalkozó. Az állami építési tenderek egyik gyakori győztesének a Market Építő Zrt.-nek vezérigazgatója és társtulajdonosa (Garancsi István mellett). Korábban a Magyar Labdarúgó Szövetség elnökségi tagja."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.24374613,
+        18.63652683
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 348,
+      "address": "Eger, Rákóczi út 100., 3300",
+      "company": {
+        "name": "Progress Étteremhálózat Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
+      },
+      "name": "McDonald's",
+      "city": "Eger",
+      "type": "étterem",
+      "link": "https://g7.hu/vallalat/20190318/mostantol-nem-ehetsz-ugy-big-mac-et-hogy-abbol-ne-reszesuljon-a-ner/",
+      "mainOligarch": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Égi Zsolt",
+          "link": ""
+        }
+      ],
+      "date": "2022.07.21",
+      "details": "A hazai McDonald's-okat üzemeltető cég tulajdonosa Scheer Sándor építőipari vállalkozó. Az állami építési tenderek egyik gyakori győztesének a Market Építő Zrt.-nek vezérigazgatója és társtulajdonosa (Garancsi István mellett). Korábban a Magyar Labdarúgó Szövetség elnökségi tagja."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.92565298,
+        20.36920426
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 349,
+      "address": "Kecskemét, Jókai utca 46., 6000",
+      "company": {
+        "name": "Progress Étteremhálózat Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
+      },
+      "name": "McDonald's",
+      "city": "Kecskemét",
+      "type": "étterem",
+      "link": "https://g7.hu/vallalat/20190318/mostantol-nem-ehetsz-ugy-big-mac-et-hogy-abbol-ne-reszesuljon-a-ner/",
+      "mainOligarch": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Égi Zsolt",
+          "link": ""
+        }
+      ],
+      "date": "2022.07.21",
+      "details": "A hazai McDonald's-okat üzemeltető cég tulajdonosa Scheer Sándor építőipari vállalkozó. Az állami építési tenderek egyik gyakori győztesének a Market Építő Zrt.-nek vezérigazgatója és társtulajdonosa (Garancsi István mellett). Korábban a Magyar Labdarúgó Szövetség elnökségi tagja."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.91499722,
+        19.68805043
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 350,
+      "address": "Szombathely, Kéthly Anna utca 7., 9700",
+      "company": {
+        "name": "Progress Étteremhálózat Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
+      },
+      "name": "McDonald's",
+      "city": "Szombathely",
+      "type": "étterem",
+      "link": "https://g7.hu/vallalat/20190318/mostantol-nem-ehetsz-ugy-big-mac-et-hogy-abbol-ne-reszesuljon-a-ner/",
+      "mainOligarch": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Égi Zsolt",
+          "link": ""
+        }
+      ],
+      "date": "2022.07.21",
+      "details": "A hazai McDonald's-okat üzemeltető cég tulajdonosa Scheer Sándor építőipari vállalkozó. Az állami építési tenderek egyik gyakori győztesének a Market Építő Zrt.-nek vezérigazgatója és társtulajdonosa (Garancsi István mellett). Korábban a Magyar Labdarúgó Szövetség elnökségi tagja."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.25298358,
+        16.61744229
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 351,
+      "address": "Cece, Arany János utca 4-6., 7013",
+      "company": {
+        "name": "Burger & Beer Kft.",
+        "link": ""
+      },
+      "name": "Cecei Sörüzem",
+      "city": "Cece",
+      "type": "étterem",
+      "link": "",
+      "mainOligarch": [
+        {
+          "name": "Lefkovics György",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Lefkovics György",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy"
+        },
+        {
+          "name": "Wossala Rozina",
+          "link": ""
+        },
+        {
+          "name": "Sztanó Tamás",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Lefkovicsné Kolos Ágnes",
+          "link": ""
+        },
+        {
+          "name": "Pryma Zoltán",
+          "link": ""
+        }
+      ],
+      "date": "2019.07.30",
+      "details": "Több, Lefkovicshoz kötődő cég is bérlői kedvezménnyel vett ingatlanokat az akkor még Rogán Antal vezette V. kerületi önkormányzattól."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.77094437,
+        18.62506759
       ]
     }
   }
