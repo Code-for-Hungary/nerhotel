@@ -16772,5 +16772,53 @@
         18.62506759
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 348,
+      "address": "Sopron, Ojtózi fasor 3., 9400",
+      "company": {
+        "name": "Adventor Hotel Kft.",
+        "link": ""
+      },
+      "name": "Fagus Hotel",
+      "city": "Sopron",
+      "type": "szálloda",
+      "link": "",
+      "mainOligarch": [
+        {
+          "name": "Sáfrány Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/safrany-tamas"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Sáfrány Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/safrany-tamas"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Sáfrány Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/safrany-tamas"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Sáfrány Tamás",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/safrany-tamas"
+        }
+      ],
+      "date": "2022.08.26",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.66672701,
+        16.58037332
+      ]
+    }
   }
 ]
