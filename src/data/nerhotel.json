@@ -16820,5 +16820,56 @@
         16.58037332
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 349,
+      "address": "Bükfürdő, Termál krt. 26., 9740",
+      "company": {
+        "name": "Hunguest Hotels Zrt.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hunguest-hotels-zrt"
+      },
+      "name": "Hunguest Bük",
+      "city": "Bükfürdő",
+      "type": "szálloda",
+      "link": "https://telex.hu/gazdasag/2022/08/29/meszaros-lorinc-opus-hunguest-bukfurdo-kisfaludy-program-1-5-milliardos-tamogatas",
+      "mainOligarch": [
+        {
+          "name": "Mészáros Lőrinc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Mészáros Lőrinc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Konczné Kondás Tünde",
+          "link": ""
+        },
+        {
+          "name": "Jean-Paul Herzog",
+          "link": ""
+        },
+        {
+          "name": "Szabó Tamás",
+          "link": ""
+        }
+      ],
+      "date": "2022.08.29",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.382205,
+        16.786021
+      ]
+    }
   }
 ]
