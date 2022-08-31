@@ -83,11 +83,15 @@
       "name": "Hotel Alice",
       "city": "Budapest",
       "type": "szálloda",
-      "link": "https://24.hu/fn/gazdasag/2020/08/31/tiborcz-istvan-paar-attila-andrassy-ut-butikhotel-granit-bank/",
+      "link": "https://444.hu/2022/08/31/tiborcz-istvan-eladta-az-andrassy-uti-butikhoteljet",
       "mainOligarch": [
         {
           "name": "Tiborcz István Ferenc",
           "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
+        },
+        {
+          "name": "Paár Attila",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/paar-attila"
         }
       ],
       "mainCEO": [
@@ -100,16 +104,24 @@
         {
           "name": "Tiborcz István Ferenc",
           "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/tiborcz-istvan"
+        },
+        {
+          "name": "Paár Attila",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/paar-attila"
         }
       ],
       "ceos": [
         {
           "name": "Somlyai Zoltán",
           "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/somlyai-zoltan"
+        },
+        {
+          "name": "Pápai Csaba",
+          "link": ""
         }
       ],
-      "date": "2020.08.30",
-      "details": ""
+      "date": "2022.08.30",
+      "details": "Az Andrássy úti butikhotel felújítására másfél milliárd forintos hitelt vett fel a miniszterelnök vejének érdekeltségébe tartozó társaság. Az épületet Tiborcz üzlettársának, Paár Attila cége szerezte meg 2017-ben egy állami árverésen. Az üzemeltetést 2022 nyarán adta át Tiborcz cége Paárénak."
     },
     "geometry": {
       "type": "Point",
