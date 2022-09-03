@@ -16773,5 +16773,43 @@
         16.786021
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 348,
+      "address": "Lakitelek, , 6065",
+      "company": {
+        "name": "Népfőiskola Alapítvány",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/nepfoiskola-alapitvany"
+      },
+      "name": "Hungarikum Hotel",
+      "city": "Lakitelek",
+      "type": "szálloda",
+      "link": "https://www.magyarhirlap.hu/belfold/20220902-atadtak-a-negycsillagos-hungarikum-hotelt-lakiteleken",
+      "mainOligarch": [],
+      "mainCEO": [
+        {
+          "name": "Lezsák Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lezsak-sandor"
+        }
+      ],
+      "oligarchs": [],
+      "ceos": [
+        {
+          "name": "Lezsák Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lezsak-sandor"
+        }
+      ],
+      "date": "2022.09.03",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.89592856,
+        19.96860844
+      ]
+    }
   }
 ]
