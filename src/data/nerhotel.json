@@ -16811,5 +16811,77 @@
         19.96860844
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 349,
+      "address": "Tihany, Rév u.3., 8237",
+      "company": {
+        "name": "Club Tihany Zrt.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/club-tihany-zrt"
+      },
+      "name": "Club Tihany",
+      "city": "Tihany",
+      "type": "szálloda",
+      "link": "https://atlatszo.hu/kozpenz/2022/09/20/nem-arulja-el-a-kozpenzbol-gazdalkodo-szervezo-mennyit-koltott-a-helyszinre-a-tranzit-fesztival/",
+      "mainOligarch": [
+        {
+          "name": "Szetlik Gergő",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szetlik-gergo"
+        },
+        {
+          "name": "Szetlik Lili",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szetlik-lili"
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Szetlik Gergő",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szetlik-gergo"
+        },
+        {
+          "name": "Szetlik Lili",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szetlik-lili"
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Szetlik Gergő",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szetlik-gergo"
+        },
+        {
+          "name": "Szetlik Lili",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szetlik-lili"
+        },
+        {
+          "name": "Josef Krammer",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Szetlik Gergő",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szetlik-gergo"
+        },
+        {
+          "name": "Szetlik Lili",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/szetlik-lili"
+        },
+        {
+          "name": "Kele Miklós",
+          "link": ""
+        }
+      ],
+      "date": "2022.09.22",
+      "details": "A Club Tihany Hotel többségi tulajdonosa a Habony Árpád unokahúgának és unokaöccsének (Szetlik Gergő és Lili) többségi tulajdonában álló Club Tihany Zrt. A cégben igazgatósági tag a Gyurcsány-kormány egykori külügyi államtitkára, Horváthné Fekszi Márta."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        46.88938663,
+        17.88641273
+      ]
+    }
   }
 ]
