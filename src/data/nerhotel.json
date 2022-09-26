@@ -8824,40 +8824,31 @@
         "name": "Pannon Tessera Hospitalis Zrt.",
         "link": ""
       },
-      "name": "Helikon Hotel Keszthely (bezárt)",
+      "name": "Helikon Hotel",
       "city": "Keszthely",
       "type": "szálloda",
-      "link": "http://valasz.hu/itthon/tiborcz-megallithatatlan-ket-hires-keszthelyi-szallodat-is-felvasarolt-127559",
+      "link": "https://24.hu/belfold/2021/03/24/keszthely-helikon-paar-attila/",
       "mainOligarch": [
         {
-          "name": "Boda Gábor Ferenc",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/boda-gabor"
+          "name": "Paár Attila",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/paar-attila"
         }
       ],
-      "mainCEO": [
-        {
-          "name": "Boda Gábor Ferenc",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/boda-gabor"
-        }
-      ],
+      "mainCEO": [],
       "oligarchs": [
         {
-          "name": "Boda Gábor Ferenc",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/boda-gabor"
-        },
-        {
-          "name": "Bodáné Konczos Judit",
-          "link": ""
+          "name": "Paár Attila",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/paar-attila"
         }
       ],
       "ceos": [
         {
-          "name": "Boda Gábor Ferenc",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/boda-gabor"
+          "name": "Fazekas Eufrozina",
+          "link": ""
         }
       ],
-      "date": "2020.05.30",
-      "details": "Boda Gábor Tiborcz Istvánnal közösen szereztek meg a két keszthelyi szállodát, amikre a Kisfaludy programból vissza nem térítendő támogatás is jutott."
+      "date": "2022.09.26",
+      "details": ""
     },
     "geometry": {
       "type": "Point",
@@ -8873,7 +8864,7 @@
       "id": 176,
       "address": "Keszthely, Mikus Gyula sétány 1., 8360",
       "company": {
-        "name": "Pannon Tessera Hospitalis Zrt.",
+        "name": "Hotel Helikon Kft.",
         "link": ""
       },
       "name": "Hullám Hotel (bezárt)",
