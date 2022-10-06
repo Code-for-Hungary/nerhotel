@@ -16874,5 +16874,72 @@
         17.88641273
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 350,
+      "address": "Budapest, Andrássy út 52., 1061",
+      "company": {
+        "name": "A52 Hotel Projekt Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/a8-a52-ingatlanforgalmazo-kft"
+      },
+      "name": "Hotel Oktogon",
+      "city": "Budapest",
+      "type": "szálloda",
+      "link": "https://24.hu/belfold/2018/09/10/garancsi-csanyi-hernadi-andrassy-palota/",
+      "mainOligarch": [
+        {
+          "name": "Csányi Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-sandor"
+        },
+        {
+          "name": "Hernádi Zsolt",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hernadi-zsolt"
+        },
+        {
+          "name": "Garancsi István",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Csányi Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/csanyi-sandor"
+        },
+        {
+          "name": "Hernádi Zsolt",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/hernadi-zsolt"
+        },
+        {
+          "name": "Garancsi István",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/garancsi-istvan"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Szöllősi Péter Mihály",
+          "link": ""
+        },
+        {
+          "name": "Dúl Zita",
+          "link": ""
+        },
+        {
+          "name": "Mészáros Mónika Krisztina",
+          "link": ""
+        }
+      ],
+      "date": "2022.10.06",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.50596967,
+        19.06389898
+      ]
+    }
   }
 ]
