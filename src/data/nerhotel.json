@@ -16941,5 +16941,48 @@
         19.06389898
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 351,
+      "address": "Miskolc, Vanger Vilmos utca 2., 3534",
+      "company": {
+        "name": "Progress Étteremhálózat Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/progress-etteremhalozat-kft"
+      },
+      "name": "McDonald's",
+      "city": "Miskolc",
+      "type": "étterem",
+      "link": "https://g7.hu/vallalat/20190318/mostantol-nem-ehetsz-ugy-big-mac-et-hogy-abbol-ne-reszesuljon-a-ner/",
+      "mainOligarch": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Scheer Sándor",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/scheer-sandor"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Égi Zsolt",
+          "link": ""
+        }
+      ],
+      "date": "2022.11.10",
+      "details": "A hazai McDonald's-okat üzemeltető cég tulajdonosa Scheer Sándor építőipari vállalkozó. Az állami építési tenderek egyik gyakori győztesének a Market Építő Zrt.-nek vezérigazgatója és társtulajdonosa (Garancsi István mellett). Korábban a Magyar Labdarúgó Szövetség elnökségi tagja."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        48.09966124,
+        20.71380995
+      ]
+    }
   }
 ]
