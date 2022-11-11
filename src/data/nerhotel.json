@@ -16984,5 +16984,151 @@
         20.71380995
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 352,
+      "address": "Sárospatak, Kazinczy Ferenc út 2., 3950",
+      "company": {
+        "name": "TOKAJ-PORTIUS PINCÉSZET Kft.",
+        "link": ""
+      },
+      "name": "Tokaj Portius (Furmitage Borbár) ",
+      "city": "Sárospatak",
+      "type": "borászat",
+      "link": "https://hvg.hu/gazdasag/20190227_160_millio_forintnyi_unios_penzt_kapott_Horcsik_Richard_fia_egy_borhazra",
+      "mainOligarch": [
+        {
+          "name": "Hörcsik Richárd",
+          "link": ""
+        }
+      ],
+      "mainCEO": [
+        {
+          "name": "Hörcsik Richárd",
+          "link": ""
+        }
+      ],
+      "oligarchs": [
+        {
+          "name": "Hörcsik Richárd",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Hörcsik Richárd",
+          "link": ""
+        }
+      ],
+      "date": "2022.11.11",
+      "details": "Dr. Hörcsik Richárd fia Hörcsik Richárd vezette a borászat 160 millió uniós támogatást kapott 2019-ben borház kialakításra."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        48.32960206,
+        21.57273836
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 353,
+      "address": "Bodrogkeresztúr, Kossuth u. 2., 3916",
+      "company": {
+        "name": "Dereszla Bortermelő Kft.",
+        "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/dereszla-kft"
+      },
+      "name": "Dereszla bisztró",
+      "city": "Bodrogkeresztúr",
+      "type": "borászat",
+      "link": "https://hvg.hu/360/hetilap360/2018/33/20183303fokusz1",
+      "mainOligarch": [
+        {
+          "name": "Mészáros Lőrinc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Mészáros Lőrinc",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszaros-lorinc"
+        },
+        {
+          "name": "Kalocsai László",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/kalocsai-laszlo"
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Kalocsai László",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/kalocsai-laszlo"
+        }
+      ],
+      "date": "2022.11.11",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        48.16986808,
+        21.36231079
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 354,
+      "address": "Budapest, Zrínyi u. 4/A, 1051",
+      "company": {
+        "name": "Ötkert Kft.",
+        "link": ""
+      },
+      "name": "Ötkert",
+      "city": "Budapest",
+      "type": "klub",
+      "link": "",
+      "mainOligarch": [
+        {
+          "name": "Lefkovics György",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy"
+        }
+      ],
+      "mainCEO": [],
+      "oligarchs": [
+        {
+          "name": "Lefkovics György",
+          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/lefkovics-gyorgy"
+        },
+        {
+          "name": "Csoknyay Zoltán",
+          "link": ""
+        },
+        {
+          "name": "Manninger Máté Gábor",
+          "link": ""
+        }
+      ],
+      "ceos": [
+        {
+          "name": "Németh Zsolt",
+          "link": ""
+        }
+      ],
+      "date": "2022.11.11",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.50036416,
+        19.04846781
+      ]
+    }
   }
 ]
