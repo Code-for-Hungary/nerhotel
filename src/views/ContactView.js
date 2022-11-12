@@ -18,6 +18,12 @@ const AboutView = (props) => {
             <p><a href="https://tamogatas.k-monitor.hu/" target="new">Támogasd munkánkat rendszeres adományoddal!</a></p>
         </section>
         <section>
+          <h2>Hely beküldése</h2>
+          <p>Tudsz egy étteremről, szálláshelyről vagy egyéb turisztikai érdekeltségről, aminek az üzemeltetője vélhetően politikaközeli szereplő? Küldd el nekünk az alábbi <a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6uNP-ML46outzCbOifdwKefAaB1x_j9eXMzeTJYGB5NEnA/viewform" target="new">űrlapon</a> keresztül.</p> Minden beküldést átnézünk, és a <a href="https://www.nerhotel.hu/#/about">módszertannak</a> megfelelés esetén hozzáadjuk az adatbázishoz.
+
+        </section>
+        </section>
+        <section>
           <h2>Elérhetőség</h2>
           <p><strong>K-Monitor Közhasznú Egyesület</strong></p>
           <p>Levelezési cím: 1062 Budapest, Bajza u. 23.</p>
