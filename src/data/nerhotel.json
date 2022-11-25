@@ -17219,11 +17219,11 @@
       "ceos": [
         {
           "name": "Czene Ferenc",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
+          "link": ""
         }
       ],
       "date": "2022.11.24",
-      "details": "A szálloda végső tulajdonosa a Mészáros Lőrinc vezette Felcsúti Utánpótlás Neveléséért Alapítvány."
+      "details": "A szálloda végső tulajdonosa az Orbán Viktor által alapított, Mészáros Lőrinc vezette Felcsúti Utánpótlás Neveléséért Alapítvány."
     },
     "geometry": {
       "type": "Point",
@@ -17252,11 +17252,11 @@
       "ceos": [
         {
           "name": "Czene Ferenc",
-          "link": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/meszarosne-kelemen-beatrix"
+          "link": ""
         }
       ],
       "date": "2022.11.24",
-      "details": "A szálloda végső tulajdonosa a Mészáros Lőrinc vezette Felcsúti Utánpótlás Neveléséért Alapítvány."
+      "details": "A szálloda végső tulajdonosa az Orbán Viktor által alapított, Mészáros Lőrinc vezette Felcsúti Utánpótlás Neveléséért Alapítvány."
     },
     "geometry": {
       "type": "Point",
@@ -17270,6 +17270,34 @@
     "type": "Feature",
     "properties": {
       "id": 358,
+      "address": ", , ",
+      "company": {
+        "name": "",
+        "link": ""
+      },
+      "name": "",
+      "city": "",
+      "type": "",
+      "link": "",
+      "mainOligarch": [],
+      "mainCEO": [],
+      "oligarchs": [],
+      "ceos": [],
+      "date": "",
+      "details": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": 359,
       "address": ", , ",
       "company": {
         "name": "",
