@@ -47,7 +47,7 @@ const AboutView = (props) => {
         <section>
           <h2>Hibát találtál? Jelezd felénk!</h2>
           <p>Az idegenforgalom és vendéglátás folyamatos mozgásban van, gyakran történnek változások a céges adatokban. Elképzelhető, hogy bizonyos, a NER Hotelben feltüntetett adatok mára elavultak, nem pontosak vagy éppen hiányosak.</p>
-          <p>Büszkék vagyunk rá, hogy önkéntesek segítségével építettük az alkalmazást és nyitottak vagyunk minden észrevételre. Járulj hozzá te is a fejlesztéshez! <a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6uNP-ML46outzCbOifdwKefAaB1x_j9eXMzeTJYGB5NEnA/viewform" target="_blank" rel="noopener noreferrer">Írd meg nekünk</a>, ha hibát találsz, vagy ha egy hely megjelenítésével nem értesz egyet! A beküldött információkat természetesen nem közvetlenül, hanem csak a saját módszertanunkkal való összevetés után vezetjük fel.</p>
+          <p>Büszkék vagyunk rá, hogy önkéntesek segítségével építettük az alkalmazást és nyitottak vagyunk minden észrevételre. Járulj hozzá te is a fejlesztéshez! <a href="mailto:info@k-monitor.hu">Írd meg nekünk</a>, ha hibát találsz, vagy ha egy hely megjelenítésével nem értesz egyet! A beküldött információkat természetesen nem közvetlenül, hanem csak a saját módszertanunkkal való összevetés után vezetjük fel.</p>
         </section>
       </div>
     </Layout>
