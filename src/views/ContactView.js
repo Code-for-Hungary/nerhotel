@@ -37,7 +37,7 @@ const AboutView = (props) => {
             érdekeltségről, aminek az üzemeltetője vélhetően politikaközeli
             szereplő? Küldd el nekünk az alábbi{" "}
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdi6uNP-ML46outzCbOifdwKefAaB1x_j9eXMzeTJYGB5NEnA/viewform"
+              href="https://www.partimap.eu/p/nerhotel-bekuldes"
               target="_blank"
               rel="noopener noreferrer"
             >
