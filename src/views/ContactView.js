@@ -22,7 +22,6 @@ const AboutView = (props) => {
           <p>Tudsz egy étteremről, szálláshelyről vagy egyéb turisztikai érdekeltségről, aminek az üzemeltetője vélhetően politikaközeli szereplő? Küldd el nekünk az alábbi <a href="https://www.partimap.eu/p/nerhotel-bekuldes" target="new">űrlapon</a> keresztül.</p> Minden beküldést átnézünk, és a <a href="https://www.nerhotel.hu/#/about">módszertannak</a> megfelelés esetén hozzáadjuk az adatbázishoz.
 
         </section>
-        </section>
         <section>
           <h2>Elérhetőség</h2>
           <p><strong>K-Monitor Közhasznú Egyesület</strong></p>
