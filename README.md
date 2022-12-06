@@ -1,68 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Mi ez?
 
-## Available Scripts
+A NER Hotel egy olyan webes alkalmazás, ami átláthatóbbá teszi a magyar szállás- és a vendéglátóhelyek tulajdonosi és üzemeltetői hátterét. Segítségével tájékozódhatsz, kinél cseng a kassza a költésed nyomán, ha asztalt vagy szállást foglalsz.
 
-In the project directory, you can run:
+Az alkalmazás [React](https://reactjs.org/)-tal és azon belül [Create React App](https://create-react-app.dev/)-al készült. A renderelést kliens oldalon végezük, szerver oldali komponense nincs az alkalmazásnak.
+A térképhez a [react-leaflet](https://react-leaflet.js.org/) library-t használjuk.
 
-### `npm start`
+## Hogyan futattom a helyi gépemen?
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1) Installáld fel a dependenciákat `yarn install` vagy `npm install` parancsal
+2) Futasd az alkalmazást DEV módban a `yarn start` vagy az `npm run start`
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+**Fontos!** JavaScript csomagkezelőnek a [Yarnt](https://yarnpkg.com/) preferáljuk. Természetesen ettől még használhatsz localban NPM-t is, ellenben a generált `package-lock.json`-t kivettük a verziókezelés alól, hogy a CI környezetben ne akadjon össze a `yarn.lock`-al és csak egy lock file-unk legyen, mint az igazság forrása.
 
-### `npm test`
+## Honnan jönnek az adatok?
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A térképen megjelenített helyeket az `src/data/nerhotel.json` file-ban tároljuk. Ezt a file-t a tartalomszerkesztők kézzel generálják ebből a [Google Sheetből](https://docs.google.com/spreadsheets/d/e/2PACX-1vSEboU5aIOUgZ-hmNpLQIYB8EZTc1HYAFf9mL97jvjVl6S9auEiFxJ1fwMpbr6-7dwPYl57BOK4ANfs/pub?gid=0&single=true&output=csv).
 
-### `npm run build`
+A szerkesztők az [adat import oldalon](https://www.nerhotel.hu/#/data-import) található formmal letöltik és átkonvertálják a CSV-t, majd kézzel frissítik és bekommitolják az `src/data/nerhotel.json`-t.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Hol lakik az oldal és hogyan deployolok?
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Az oldalt [Vercelen](https://vercel.com/) hosztoljuk. A Vercel platform össze van kötve ezzel a repóval, minden egyes masterbe mergelt commit elindítja a buildet és a deploymentet. Minden logot a Vercel felületén lehet látni, de a pull requestek alatt a Vercel botja automatikusan kirak egy táblázatot a deployment státuszról.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+A buildhez szükséges esetleges környezeti változókat, secreteket, build beállításokat is a Vercel felületén tudjuk kezelni. Erről bővebben lásd a [dokumentációt](https://vercel.com/guides/how-to-add-vercel-environment-variables).
