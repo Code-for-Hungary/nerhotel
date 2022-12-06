@@ -1,0 +1,29 @@
+{
+    "general": {
+        "backToMap": "Vissza a térképhez"
+    },
+    "navigation": {
+        "map": "Térkép",
+        "about": "Mi ez?",
+        "contact": "Kontakt",
+        "supportUs": "Tetszik? Támogasd!",
+        "export": "Adat export",
+        "address": {
+            "name": "K-Monitor<br/>Közhasznú Egyesület",
+            "heading": "Levelezési cím",
+            "address": "1062 Budapest, Bajza u. 23 I/1"
+        }
+    },
+    "hotel": {
+        "type": "Hely típusa",
+        "maintainer": "Üzemeltető",
+        "people": "Kapcsolódó személyek",
+        "address": "Cím",
+        "article": "Kapcsolódó cikk",
+        "additionalInfo": "Kapcsolódó információ",
+        "updatedOn": "Adatok frissítve"
+    },
+    "list": {
+        "emptyState": "Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet, <1>küldd el nekünk</1>!"
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-import Leaflet from "leaflet";
+import {Link} from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import Leaflet from 'leaflet';
 import {Map, TileLayer} from 'react-leaflet';
 import {HotelContext} from '../context';
 import {getMarkerList} from '../leaflet-helper.js';
@@ -25,6 +26,7 @@ function _getAllHotelsAffiliatedWithPerson(hotels, personName) {
 
 const Person = (props) => {
   const personName = props.name;
+  const { t } = useTranslation();
 
   const hotelContext = React.useContext(HotelContext);
   /** @type {Hotel[]} */
@@ -75,7 +77,7 @@ const Person = (props) => {
             </>
           )}
           <div className={styles.back} onClick={goBack}>
-            <Icon img={arrowIcon} alt="Vissza a térképhez" size="large"/>
+            <Icon img={arrowIcon} alt={t('backToMap')} size="large"/>
           </div>
         </div>
         <div className={styles.map}>

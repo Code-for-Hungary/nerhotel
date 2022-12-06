@@ -1,0 +1,58 @@
+.langSwitch {
+    --default-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0,0,0,0.2);
+    background-clip: padding-box;
+    border-radius: var(--default-radius);
+    padding: 0;
+    margin: 0;
+}
+
+.langSwitchButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    appearance: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-width: 0 0 1px 0;
+    cursor: pointer;
+}
+
+.langSwitchButton:hover:not(.active),
+.langSwitchButton:focus:not(.active) {
+    background-color: #ccc;
+}
+
+.langSwitchButton:first-of-type {
+    border-top-right-radius: var(--default-radius);
+    border-top-left-radius: var(--default-radius);
+}
+
+.langSwitchButton.active {
+    background: #f05f22;
+    color: #fff;
+}
+
+.langSwitchButton:last-of-type {
+    border-bottom-right-radius: var(--default-radius);
+    border-bottom-left-radius: var(--default-radius);
+    border-width: 0;
+}
+
+@media (max-width: 480px) {
+    .langSwitch {
+        flex-direction: row;
+    }
+
+    .langSwitchButton {
+        font-size: 12px;
+        width: 26px;
+        border-width: 0 1px 0 0;
+    }
+}

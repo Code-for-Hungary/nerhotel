@@ -12,13 +12,31 @@ import restaurant from '../assets/nh-restaurant.svg';
 import golf from '../assets/nh-golf.svg';
 import { MapContext } from '../context';
 
+import { config } from '../config';
+import LangSwitch from './LangSwitch';
+
+import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
+
 const Header = (props) => {
   const { dispatch } = React.useContext(MapContext);
+  const { i18n } = useTranslation();
+  const location = useLocation();
 
   const goHome = () => {
     dispatch({ type: 'TogglePopup', showPopup: false });
     props.history.push('/');
   };
+
+  const languageChangeHandler = (e) => {
+    const lang = e.target.value;
+    i18n.changeLanguage(lang);
+    localStorage.setItem(config.locales.paramName, lang);
+    props.history.push({
+      pathname: location.pathname,
+      search: `?${config.locales.paramName}=${lang}`,
+    });
+  }
 
   const onMenuCallback = React.useCallback(() => {
     dispatch({ type: 'ToggleMenu', showMenu: true })
@@ -44,6 +62,13 @@ const Header = (props) => {
           </div>
           {props.withSearch && <Search/>}
         </div>
+      </div>
+      <div className={styles.langSwitchContainer}>
+        <LangSwitch
+          availableLocales={config.locales.available}
+          onLanguageChange={languageChangeHandler}
+          currentLocale={i18n.resolvedLanguage}
+        />
       </div>
     </header>
   );

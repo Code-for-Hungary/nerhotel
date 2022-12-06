@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
@@ -13,12 +13,36 @@ import DataImportView from './views/DataImportView';
 
 import { MapContext, HotelContext } from './context';
 import reducer, { initialState } from './reducer';
+import { useTranslation } from 'react-i18next';
+import { config } from './config';
 
 import hotels from './data/nerhotel.json';
 
 function App () {
   const [state, dispatch] = React.useReducer(reducer, initialState);
   const mapData = { ...state, dispatch};
+  const { i18n } = useTranslation();
+  
+  useEffect(()=> {
+    const queryString = window.location.href.split('?')[1];
+    const urlParamsObj = new URLSearchParams(queryString);
+
+    let preferredLang;
+    if(urlParamsObj.has(config.locales.paramName)) {
+      preferredLang = urlParamsObj.get(config.locales.paramName)
+    } else {
+      preferredLang = localStorage.getItem(config.locales.paramName);
+    }
+
+    if(
+      preferredLang && 
+      config.locales.available.includes(preferredLang) &&
+      preferredLang !== i18n.options.lng
+    ) {
+      i18n.changeLanguage(preferredLang);
+      localStorage.setItem(config.locales.paramName, preferredLang);
+    }
+  }, [i18n]);
 
   return (
     <div className="App">

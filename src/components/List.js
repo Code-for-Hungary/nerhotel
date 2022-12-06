@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../css/list.module.css';
 import Icon from './Icon.js';
+import {Trans} from 'react-i18next';
 
 import closeIcon from '../assets/close-icon.svg';
 import horseIcon from '../assets/horse-icon.svg';
@@ -68,8 +69,11 @@ function List() {
         ))}
 
         {list.length === 0 && (
-          <p>Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet, <a href="https://www.partimap.eu/p/nerhotel-bekuldes">küldd el nekünk
-          </a>!</p>
+          <p>
+            <Trans i18nKey="list:emptyState">
+              Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet, <a href="https://www.partimap.eu/p/nerhotel-bekuldes">küldd el nekünk</a>!
+            </Trans>
+          </p>
         )}
       </div>
     </div>

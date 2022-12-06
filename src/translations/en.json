@@ -1,0 +1,29 @@
+{
+    "general": {
+
+    },
+    "navigation": {
+        "map": "Map view",
+        "about": "About the project",
+        "contact": "Contact",
+        "supportUs": "Support us",
+        "export": "Data export",
+        "address": {
+            "name": "K-Monitor",
+            "heading": "Mailing address",
+            "address": "1062 Budapest, Bajza u. 23 I/1"
+        }
+    },
+    "hotel": {
+        "type": "Location type",
+        "maintainer": "Operated by",
+        "people": "Associated persons",
+        "address": "Address",
+        "article": "Relevant article",
+        "additionalInfo": "More information",
+        "updatedOn": "Last update"
+    },
+    "list": {
+        "emptyState": "There is no matching location in our database. If you know of a place owned or managed by a politically exposed person, <1>send it to us</1>!"
+    }
+}

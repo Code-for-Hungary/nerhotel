@@ -1,6 +1,7 @@
 import React from 'react';
 import {Map as LeafletMap, Marker, TileLayer} from 'react-leaflet';
-import {Link} from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import {Link} from 'react-router-dom';
 import Icon from './Icon.js';
 
 import {getOligarchData} from '../utils';
@@ -47,6 +48,7 @@ const icon = createOrangeIcon();
 const Hotel = (props) => {
   const {dispatch} = React.useContext(MapContext);
   const {hotels} = React.useContext(HotelContext);
+  const { t } = useTranslation();
   const hotelById = hotels.find(hotel => hotel.properties.id === parseInt(props.id));
   const data = hotelById.properties;
   const [lat, lng] = hotelById.geometry.coordinates;
@@ -66,12 +68,12 @@ const Hotel = (props) => {
         <div className={styles.info}>
           <h1>{data.name}</h1>
           <div className={styles.hotelRow}>
-            <p>Hely típusa: <span>{data.type}</span></p>
+            <p>{t('hotel:type')}: <span>{data.type}</span></p>
           </div>
           {data.company && (
             <div className={styles.hotelRow}>
               <Icon img={hotelIcon} size="small"/>
-              <p>Üzemeltető:
+              <p>{t('hotel:maintainer')}:{" "}
                 {data.company.link ?
                   <span><a href={data.company.link} target="_blank" rel="noopener noreferrer">{data.company.name}</a></span> :
                   <span>{data.company.name}</span>}
@@ -81,7 +83,7 @@ const Hotel = (props) => {
           {(oligarchData.length > 0) && (
             <div className={styles.hotelRow}>
               <Icon img={horseIcon} size="small"/>
-              <p>Kapcsolódó személyek:<br/>
+              <p>{t('hotel:people')}:<br/>
                 {oligarchData.map((oligarch, key) => (
                   <span key={key} className={styles.oligarch}>
                      <Link to={`/person/${oligarch.name}`}>{oligarch.name}</Link>
@@ -94,27 +96,27 @@ const Hotel = (props) => {
           {data.address && (
             <div className={styles.hotelRow}>
               <Icon img={pinIcon} size="small"/>
-              <p>Cím: <span>{data.address}</span></p>
+              <p>{t('hotel:address')}: <span>{data.address}</span></p>
             </div>
           )}
           {data.link !== '' && (
             <div className={styles.hotelRow}>
               <Icon img={linkIcon} size="small"/>
-              <a href={data.link} target="_blank" rel="noopener noreferrer"><span>Kapcsolódó cikk</span></a>
+              <a href={data.link} target="_blank" rel="noopener noreferrer"><span>{t('hotel:article')}</span></a>
             </div>
           )}
           {data.details !== '' && (
             <div className={styles.hotelRow}>
-              <p><span>Kapcsolódó információ:</span><br/>{data.details}</p>
+              <p><span>{t('hotel:additionalInfo')}:</span><br/>{data.details}</p>
             </div>
           )}
           {data.date !== '' && (
             <div className={styles.hotelRow}>
-              <p>Adatok frissítve: <span>{data.date}</span></p>
+              <p>{t('hotel:updatedOn')}: <span>{data.date}</span></p>
             </div>
           )}
           <div className={styles.back} onClick={goBack}>
-            <Icon img={arrowIcon} alt="Vissza a térképhez" size="large"/>
+            <Icon img={arrowIcon} alt={t('backToMap')} size="large"/>
           </div>
         </div>
         <div className={styles.map}>
