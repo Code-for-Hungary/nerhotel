@@ -2,6 +2,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
     width: 75%;
     max-width: 420px;
     height: 100vh;
@@ -54,7 +56,8 @@
     .footer {
         position: absolute;
         bottom: 20px;
-        left: 20px;
+        left: 0;
+        right: 0;
     }
 }
 
@@ -62,6 +65,11 @@
     display: block;
     color: #000;
     margin-bottom: 10px;
+}
+
+.content {
+    position: relative;
+    flex: 1;
 }
 
 .close {

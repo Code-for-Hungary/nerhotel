@@ -62,7 +62,12 @@ function Search() {
   return (
     <div className={styles.form}>
       <form onSubmit={onSearchCallback}>
-        <input onKeyUp={onKeyUpCallback} className={styles.input} placeholder="keress név, hely, személy szerint"/>
+        <input
+          onKeyUp={onKeyUpCallback}
+          className={styles.input}
+          placeholder="keress név, hely, személy szerint"
+          type="search"
+        />
       </form>
     </div>
   );
