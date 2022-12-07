@@ -18,15 +18,12 @@ import LangSwitch from './LangSwitch';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 
+import { LinkWithQuery } from './LinkWithQuery';
+
 const Header = (props) => {
   const { dispatch } = React.useContext(MapContext);
   const { i18n } = useTranslation();
   const location = useLocation();
-
-  const goHome = () => {
-    dispatch({ type: 'TogglePopup', showPopup: false });
-    props.history.push('/');
-  };
 
   const languageChangeHandler = (e) => {
     const lang = e.target.value;
@@ -50,9 +47,13 @@ const Header = (props) => {
         <Icon img={listIcon} size="large"/>
       </div>
       <div className={styles.headerWrapper}>
-        <div onClick={() => goHome()} className={styles.logo}>
-          <img src={logo} alt=""/>
-        </div>
+        <LinkWithQuery
+          to="/"
+          onClick={() => { dispatch({ type: 'TogglePopup', showPopup: false }); }}
+          className={styles.logo}
+        >
+          <img src={logo} alt="" />
+        </LinkWithQuery>
         <div className={styles.headerInner}>
           <div className={styles.icons}>
             <img src={hotel} alt=""/>

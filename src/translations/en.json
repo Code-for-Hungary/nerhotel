@@ -1,6 +1,10 @@
 {
     "general": {
-
+        "backToMap": "Back to the map",
+        "additionalInfo": "More information",
+        "article": "Relevant article",
+        "address": "Address",
+        "maintainer": "Operated by"
     },
     "navigation": {
         "map": "Map view",
@@ -16,14 +20,21 @@
     },
     "hotel": {
         "type": "Location type",
-        "maintainer": "Operated by",
         "people": "Associated persons",
-        "address": "Address",
-        "article": "Relevant article",
-        "additionalInfo": "More information",
         "updatedOn": "Last update"
     },
     "list": {
         "emptyState": "There is no matching location in our database. If you know of a place owned or managed by a politically exposed person, <1>send it to us</1>!"
+    },
+    "person": {
+        "dbLink": "K-Monitor",
+        "relatedPlaces": "Related venues",
+        "pep": "PEP"
+    },
+    "search": {
+        "placeholder": "Search by venue, location or owner"
+    },
+    "popUp": {
+        "linkText": "Details"
     }
 }

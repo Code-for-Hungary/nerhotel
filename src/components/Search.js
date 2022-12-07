@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../css/search.module.css';
 
 import { MapContext, HotelContext } from '../context';
-
+import { useTranslation } from 'react-i18next';
 /**
  * @param {{name: string, address: string, mainOligarch: {name: string}[]}} place
  * @param {string} phrase
@@ -39,6 +39,7 @@ function removeAccents(string) {
 
 function Search() {
   const {dispatch} = React.useContext(MapContext);
+  const { t } = useTranslation();
   const {hotels} = React.useContext(HotelContext);
   const [value, setValue] = React.useState('');
 
@@ -65,7 +66,7 @@ function Search() {
         <input
           onKeyUp={onKeyUpCallback}
           className={styles.input}
-          placeholder="keress név, hely, személy szerint"
+          placeholder={t('search:placeholder')}
           type="search"
         />
       </form>

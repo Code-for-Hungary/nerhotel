@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 import styles from "../css/about.module.css";
-import { Link } from "react-router-dom";
+import { LinkWithQuery } from "../components/LinkWithQuery";
 
 // TODO: This is called "AboutView" but it's in a file called "ContactView". Also the CSS is reused.
 //       Suggestion: rename constant to "ContactView", and rename the CSS to something more generic,
@@ -45,7 +45,7 @@ const AboutView = (props) => {
             </a>{" "}
             keresztül.
           </p>{" "}
-          Minden beküldést átnézünk, és a <Link to="/about">módszertannak</Link>{" "}
+          Minden beküldést átnézünk, és a <LinkWithQuery to="/about">módszertannak</LinkWithQuery>{" "}
           megfelelés esetén hozzáadjuk az adatbázishoz.
         </section>
         <section>

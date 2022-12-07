@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { LinkWithQuery } from './LinkWithQuery';
 import { useTranslation } from 'react-i18next';
 import Leaflet from 'leaflet';
 import {Map, TileLayer} from 'react-leaflet';
@@ -45,40 +45,39 @@ const Person = (props) => {
 
   const bounds = affiliatedHotels.length ? new Leaflet.LatLngBounds(affiliatedHotels.map(hotel => ([hotel.geometry.coordinates[0], hotel.geometry.coordinates[1]]))) : undefined;
 
-  const goBack = () => {
-      props.history.push('/');
-    }
-  ;
-
   return (
     <div className={[styles.hotel, 'hotel'].join(' ')}>
       <div className={styles.hotelWrapper}>
         <div className={styles.info}>
-          <h1>{isMainOligarch && <Link to="/about"><Icon img={horseIcon} size="large" className={styles.inlineIcon}/></Link>}{personName}</h1>
-          {personUrl && <p>K-Monitor sajtóadatbázis: <a href={personUrl} target="_blank" rel="noopener noreferrer">{personName}</a></p>}
+          <h1>
+            {isMainOligarch && <LinkWithQuery to="/about"><Icon img={horseIcon} size="large" className={styles.inlineIcon}/></LinkWithQuery>}{personName}
+          </h1>
+          {personUrl && <p>{t('person:dbLink')}: <a href={personUrl} target="_blank" rel="noopener noreferrer">{personName}</a></p>}
           {(affiliatedHotels.length > 0) && (
             <>
               <div className={styles.hotelRow}>
                 <Icon img={hotelIcon} size="small"/>
-                <p>Kapcsolódó helyszínek:</p>
+                <p>{t('person:relatedPlaces')}:</p>
               </div>
               <div className={styles.hotelRow}>
                 <ul>
                   {affiliatedHotels.map((hotel, key) => (
                     <li key={key} className={styles.oligarch}>
-                        <Link to={`/hotel/${hotel.properties.id}`}>{hotel.properties.name}</Link>
-                      <span className={styles.title}> ({hotel.properties.type})</span>{hotel.properties.address && ` – ${hotel.properties.address}`}{hotel.properties.date && (<> – <span>Adat frissítve:</span> {hotel.properties.date}</>)}
+                        <LinkWithQuery to={`/hotel/${hotel.properties.id}`}>
+                          {hotel.properties.name}
+                        </LinkWithQuery>
+                      <span className={styles.title}> ({hotel.properties.type})</span>{hotel.properties.address && ` – ${hotel.properties.address}`}{hotel.properties.date && (<> – {hotel.properties.date}</>)}
                       {hotel.properties.details && (
-                        <p><span>Kapcsolódó információ:</span> {hotel.properties.details}</p>)}
+                        <p><span>{t('general:additionalInfo')}:</span> {hotel.properties.details}</p>)}
                     </li>
                   ))}
                 </ul>
               </div>
             </>
           )}
-          <div className={styles.back} onClick={goBack}>
+          <LinkWithQuery to="/" className={styles.back}>
             <Icon img={arrowIcon} alt={t('backToMap')} size="large"/>
-          </div>
+          </LinkWithQuery>
         </div>
         <div className={styles.map}>
           <Map className="markercluster-map" bounds={bounds} maxZoom={19}>

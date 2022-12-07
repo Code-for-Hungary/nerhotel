@@ -1,6 +1,10 @@
 {
     "general": {
-        "backToMap": "Vissza a térképhez"
+        "backToMap": "Vissza a térképhez",
+        "additionalInfo": "Kapcsolódó információ",
+        "article": "Kapcsolódó cikk",
+        "maintainer": "Üzemeltető",
+        "address": "Cím"
     },
     "navigation": {
         "map": "Térkép",
@@ -16,14 +20,21 @@
     },
     "hotel": {
         "type": "Hely típusa",
-        "maintainer": "Üzemeltető",
         "people": "Kapcsolódó személyek",
-        "address": "Cím",
-        "article": "Kapcsolódó cikk",
-        "additionalInfo": "Kapcsolódó információ",
         "updatedOn": "Adatok frissítve"
     },
     "list": {
         "emptyState": "Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet, <1>küldd el nekünk</1>!"
+    },
+    "person": {
+        "dbLink": "K-Monitor sajtóadatbázis",
+        "relatedPlaces": "Kapcsolódó helyszínek",
+        "pep": "PEP"
+    },
+    "search": {
+        "placeholder": "keress név, hely, személy szerint"
+    },
+    "popUp": {
+        "linkText": "részletek"
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../css/popup.module.css';
-import { Link } from 'react-router-dom';
+import { LinkWithQuery } from './LinkWithQuery';
 import Icon from './Icon';
 import closeIcon from '../assets/close-icon.svg';
 import horseIcon from '../assets/horse-icon.svg';
@@ -9,10 +9,11 @@ import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
 import { getOligarchData } from '../utils';
 import { MapContext } from '../context';
-
+import { useTranslation } from 'react-i18next';
 
 const Popup = (props) => {
   const { dispatch } = React.useContext(MapContext);
+  const { t } = useTranslation();
   const data = props.point.properties;
 
   const close = React.useCallback(() => {
@@ -35,7 +36,7 @@ const Popup = (props) => {
           <div className={styles.popupInfo}>
             <div className={styles.popupRow}>
               <div className={styles.popupCol}>
-                <span>Üzemeltető</span>
+                <span>{t('general:maintainer')}</span>
                 <div className={styles.popupRow}>
                   <Icon img={hotelIcon} size="small"/>
                   <div className={styles.company}>
@@ -48,14 +49,16 @@ const Popup = (props) => {
 
               {oligarchsToShow && oligarchsToShow.length > 0 &&
               (<div className={styles.popupCol}>
-                <span>PEP</span>
+                <span>{t('person:pep')}</span>
                 <div className={styles.popupRow}>
                   <Icon img={horseIcon} size="small"/>
                   <div className={styles.oligarch}>
                     {oligarchsToShow.map((oligarch, key) => (
                       <div key={key}>
                         {oligarch.data.link !== '' ? (
-                           <Link to={`/person/${oligarch.name}`}>{oligarch.name}</Link>
+                           <LinkWithQuery to={`/person/${oligarch.name}`}>
+                            {oligarch.name}
+                          </LinkWithQuery>
                         ) : (
                           <p>{oligarch.name}</p>
                         )}
@@ -65,10 +68,9 @@ const Popup = (props) => {
                   </div>
                 </div>
               </div>)}
-
             </div>
             <div>
-              <span>Cím</span>
+              <span>{t('general:address')}</span>
               <div className={styles.popupRow}>
                 <Icon img={pinIcon} size="small"/>
                 <p>{data.address}</p>
@@ -77,12 +79,16 @@ const Popup = (props) => {
             {data.link !== '' && (<div className={styles.popupRow}>
               <Icon img={linkIcon} size="small"/>
               <a href={data.link} target="_blank" rel="noopener noreferrer">
-                kapcsolódó cikk
+                {t('general:article')}
               </a>
             </div>)}
           </div>
-          {}
-          <Link to={`/hotel/${data.id}`} className={styles.moreButton}>részletek</Link>
+          <LinkWithQuery
+            to={`/hotel/${data.id}`}
+            className={styles.moreButton}
+          >
+            {t('popUp:linkText')}
+          </LinkWithQuery>
         </>
       </div>
     </div>

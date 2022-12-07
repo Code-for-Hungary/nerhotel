@@ -15,6 +15,7 @@ import horseIcon from '../assets/horse-icon.svg';
 import hotelIcon from '../assets/hotel-icon.svg';
 import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
+import { LinkWithQuery } from './LinkWithQuery.js';
 
 const icon = createOrangeIcon();
 
@@ -54,7 +55,6 @@ const Hotel = (props) => {
   const [lat, lng] = hotelById.geometry.coordinates;
 
   const goBack = () => {
-      props.history.push('/');
       dispatch({type: 'SetSelectedPoint', point: hotelById});
       dispatch({type: 'SetCenter', center: [lat, lng]});
     }
@@ -73,7 +73,7 @@ const Hotel = (props) => {
           {data.company && (
             <div className={styles.hotelRow}>
               <Icon img={hotelIcon} size="small"/>
-              <p>{t('hotel:maintainer')}:{" "}
+              <p>{t('general:maintainer')}:{" "}
                 {data.company.link ?
                   <span><a href={data.company.link} target="_blank" rel="noopener noreferrer">{data.company.name}</a></span> :
                   <span>{data.company.name}</span>}
@@ -96,18 +96,20 @@ const Hotel = (props) => {
           {data.address && (
             <div className={styles.hotelRow}>
               <Icon img={pinIcon} size="small"/>
-              <p>{t('hotel:address')}: <span>{data.address}</span></p>
+              <p>{t('general:address')}: <span>{data.address}</span></p>
             </div>
           )}
           {data.link !== '' && (
             <div className={styles.hotelRow}>
               <Icon img={linkIcon} size="small"/>
-              <a href={data.link} target="_blank" rel="noopener noreferrer"><span>{t('hotel:article')}</span></a>
+              <a href={data.link} target="_blank" rel="noopener noreferrer">
+                <span>{t('general:article')}</span>
+              </a>
             </div>
           )}
           {data.details !== '' && (
             <div className={styles.hotelRow}>
-              <p><span>{t('hotel:additionalInfo')}:</span><br/>{data.details}</p>
+              <p><span>{t('general:additionalInfo')}:</span><br/>{data.details}</p>
             </div>
           )}
           {data.date !== '' && (
@@ -115,9 +117,13 @@ const Hotel = (props) => {
               <p>{t('hotel:updatedOn')}: <span>{data.date}</span></p>
             </div>
           )}
-          <div className={styles.back} onClick={goBack}>
+          <LinkWithQuery
+            className={styles.back}
+            onClick={goBack}
+            to='/'
+          >
             <Icon img={arrowIcon} alt={t('backToMap')} size="large"/>
-          </div>
+          </LinkWithQuery>
         </div>
         <div className={styles.map}>
           <LeafletMap className="markercluster-map" center={[lat, lng]} zoom={17} maxZoom={19}
