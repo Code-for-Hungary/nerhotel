@@ -27,7 +27,7 @@ const Header = (props) => {
   const headerHeight = props.withSearch ? styles.large : styles.small;
 
   return (
-    <div className={[styles.header, headerHeight].join(' ')}>
+    <header className={[styles.header, headerHeight].join(' ')}>
       <div className={styles.menubutton} onClick={onMenuCallback}>
         <Icon img={listIcon} size="large"/>
       </div>
@@ -45,7 +45,7 @@ const Header = (props) => {
           {props.withSearch && <Search/>}
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
