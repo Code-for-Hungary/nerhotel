@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinkWithQuery } from './LinkWithQuery';
+import { SmartLink } from './SmartLink';
 import { useTranslation } from 'react-i18next';
 import Leaflet from 'leaflet';
 import {Map, TileLayer} from 'react-leaflet';
@@ -12,6 +12,8 @@ import styles from '../css/hotel.module.css';
 import arrowIcon from '../assets/arrow-icon.svg';
 import hotelIcon from '../assets/hotel-icon.svg';
 import horseIcon from '../assets/horse-icon.svg';
+
+import { config } from '../config';
 
 /**
  * @param {Hotel[]} hotels
@@ -50,9 +52,9 @@ const Person = (props) => {
       <div className={styles.hotelWrapper}>
         <div className={styles.info}>
           <h1>
-            {isMainOligarch && <LinkWithQuery to="/about"><Icon img={horseIcon} size="large" className={styles.inlineIcon}/></LinkWithQuery>}{personName}
+            {isMainOligarch && <SmartLink to="/about"><Icon img={horseIcon} size="large" className={styles.inlineIcon}/></SmartLink>}{personName}
           </h1>
-          {personUrl && <p>{t('person:dbLink')}: <a href={personUrl} target="_blank" rel="noopener noreferrer">{personName}</a></p>}
+          {personUrl && <p>{t('person:dbLink')}: <SmartLink to={personUrl}>{personName}</SmartLink></p>}
           {(affiliatedHotels.length > 0) && (
             <>
               <div className={styles.hotelRow}>
@@ -63,9 +65,9 @@ const Person = (props) => {
                 <ul>
                   {affiliatedHotels.map((hotel, key) => (
                     <li key={key} className={styles.oligarch}>
-                        <LinkWithQuery to={`/hotel/${hotel.properties.id}`}>
+                        <SmartLink to={`/hotel/${hotel.properties.id}`}>
                           {hotel.properties.name}
-                        </LinkWithQuery>
+                        </SmartLink>
                       <span className={styles.title}> ({hotel.properties.type})</span>{hotel.properties.address && ` – ${hotel.properties.address}`}{hotel.properties.date && (<> – {hotel.properties.date}</>)}
                       {hotel.properties.details && (
                         <p><span>{t('general:additionalInfo')}:</span> {hotel.properties.details}</p>)}
@@ -75,15 +77,15 @@ const Person = (props) => {
               </div>
             </>
           )}
-          <LinkWithQuery to="/" className={styles.back}>
+          <SmartLink to="/" className={styles.back}>
             <Icon img={arrowIcon} alt={t('backToMap')} size="large"/>
-          </LinkWithQuery>
+          </SmartLink>
         </div>
         <div className={styles.map}>
-          <Map className="markercluster-map" bounds={bounds} maxZoom={19}>
+          <Map className="markercluster-map" bounds={bounds} maxZoom={config.map.maxZoom}>
             <TileLayer
-              url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
-              attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+              url={config.map.url}
+              attribution={config.map.attribution}
             />
             {getMarkerList({points: affiliatedHotels})}
           </Map>

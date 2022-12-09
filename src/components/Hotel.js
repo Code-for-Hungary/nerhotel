@@ -1,7 +1,7 @@
 import React from 'react';
 import {Map as LeafletMap, Marker, TileLayer} from 'react-leaflet';
 import { useTranslation } from 'react-i18next';
-import {Link} from 'react-router-dom';
+import { SmartLink } from './SmartLink.js';
 import Icon from './Icon.js';
 
 import {getOligarchData} from '../utils';
@@ -15,7 +15,8 @@ import horseIcon from '../assets/horse-icon.svg';
 import hotelIcon from '../assets/hotel-icon.svg';
 import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
-import { LinkWithQuery } from './LinkWithQuery.js';
+
+import { config } from '../config.js';
 
 const icon = createOrangeIcon();
 
@@ -75,7 +76,11 @@ const Hotel = (props) => {
               <Icon img={hotelIcon} size="small"/>
               <p>{t('general:maintainer')}:{" "}
                 {data.company.link ?
-                  <span><a href={data.company.link} target="_blank" rel="noopener noreferrer">{data.company.name}</a></span> :
+                  <span>
+                    <SmartLink to={data.company.link}>
+                      {data.company.name}
+                    </SmartLink>
+                  </span> :
                   <span>{data.company.name}</span>}
               </p>
             </div>
@@ -86,7 +91,9 @@ const Hotel = (props) => {
               <p>{t('hotel:people')}:<br/>
                 {oligarchData.map((oligarch, key) => (
                   <span key={key} className={styles.oligarch}>
-                     <Link to={`/person/${oligarch.name}`}>{oligarch.name}</Link>
+                     <SmartLink to={`/person/${oligarch.name}`}>
+                        {oligarch.name}
+                      </SmartLink>
                     <span className={styles.title}> ({oligarch.data.type})</span><br/>
                   </span>
                 ))}
@@ -102,9 +109,9 @@ const Hotel = (props) => {
           {data.link !== '' && (
             <div className={styles.hotelRow}>
               <Icon img={linkIcon} size="small"/>
-              <a href={data.link} target="_blank" rel="noopener noreferrer">
+              <SmartLink to={data.link}>
                 <span>{t('general:article')}</span>
-              </a>
+              </SmartLink>
             </div>
           )}
           {data.details !== '' && (
@@ -117,20 +124,25 @@ const Hotel = (props) => {
               <p>{t('hotel:updatedOn')}: <span>{data.date}</span></p>
             </div>
           )}
-          <LinkWithQuery
+          <SmartLink
             className={styles.back}
             onClick={goBack}
             to='/'
           >
             <Icon img={arrowIcon} alt={t('backToMap')} size="large"/>
-          </LinkWithQuery>
+          </SmartLink>
         </div>
         <div className={styles.map}>
-          <LeafletMap className="markercluster-map" center={[lat, lng]} zoom={17} maxZoom={19}
-                      zoomControl={false}>
+          <LeafletMap
+            className="markercluster-map"
+            center={[lat, lng]}
+            zoom={17}
+            maxZoom={config.map.maxZoom}
+            zoomControl={false}
+          >
             <TileLayer
-              url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
-              attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+              url={config.map.url}
+              attribution={config.map.attribution}
             />
             <Marker position={[lat, lng]} icon={icon}/>
           </LeafletMap>

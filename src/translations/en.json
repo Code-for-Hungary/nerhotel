@@ -6,6 +6,11 @@
         "address": "Address",
         "maintainer": "Operated by"
     },
+    "error": {
+        "heading": "Some error happened",
+        "text": "The page that you've requested can't be found or something went wrong. Go back to the homepage or try again!",
+        "buttonText": "Back to homepage"
+    },
     "navigation": {
         "map": "Map view",
         "about": "About the project",

@@ -6,6 +6,11 @@
         "maintainer": "Üzemeltető",
         "address": "Cím"
     },
+    "error": {
+        "heading": "Valami hiba történt",
+        "text": "A kért oldal nem található, vagy valami elromlott. Menj vissza a főoldalra vagy próbáld újra!",
+        "buttonText": "Vissza a főoldalra"
+    },
     "navigation": {
         "map": "Térkép",
         "about": "Mi ez?",

@@ -35,7 +35,7 @@
 }
 
 .langSwitchButton.active {
-    background: #f05f22;
+    background: var(--nh-accent-color);
     color: #fff;
 }
 

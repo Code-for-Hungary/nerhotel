@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../css/popup.module.css';
-import { LinkWithQuery } from './LinkWithQuery';
+import { SmartLink } from './SmartLink';
+import Button from './Button';
 import Icon from './Icon';
 import closeIcon from '../assets/close-icon.svg';
 import horseIcon from '../assets/horse-icon.svg';
@@ -56,9 +57,9 @@ const Popup = (props) => {
                     {oligarchsToShow.map((oligarch, key) => (
                       <div key={key}>
                         {oligarch.data.link !== '' ? (
-                           <LinkWithQuery to={`/person/${oligarch.name}`}>
+                           <SmartLink to={`/person/${oligarch.name}`}>
                             {oligarch.name}
-                          </LinkWithQuery>
+                          </SmartLink>
                         ) : (
                           <p>{oligarch.name}</p>
                         )}
@@ -83,12 +84,9 @@ const Popup = (props) => {
               </a>
             </div>)}
           </div>
-          <LinkWithQuery
-            to={`/hotel/${data.id}`}
-            className={styles.moreButton}
-          >
+          <Button to={`/hotel/${data.id}`} isFull={true}>
             {t('popUp:linkText')}
-          </LinkWithQuery>
+          </Button>
         </>
       </div>
     </div>

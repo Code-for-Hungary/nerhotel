@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinkWithQuery } from './LinkWithQuery';
+import { SmartLink } from './SmartLink';
 import closeIcon from '../assets/close-icon.svg';
 import styles from '../css/menu.module.css';
 import Icon from './Icon';
@@ -33,33 +33,29 @@ const Menu = () => {
         </div>}
         <ul className={styles.menulist}>
           <li>
-            <LinkWithQuery to="/">
+            <SmartLink to="/" onClick={closeMenu}>
               {t('navigation:map')}
-            </LinkWithQuery>
+            </SmartLink>
           </li>
           <li>
-            <LinkWithQuery to="/about">
+            <SmartLink to="/about" onClick={closeMenu}>
               {t('navigation:about')}
-              </LinkWithQuery>
+            </SmartLink>
           </li>
           <li>
-            <LinkWithQuery to="/contact">
+            <SmartLink to="/contact" onClick={closeMenu}>
               {t('navigation:contact')}
-            </LinkWithQuery>
+            </SmartLink>
           </li>
           <li>
-            <a
-              href="https://tamogatas.k-monitor.hu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <SmartLink to="https://tamogatas.k-monitor.hu" onClick={closeMenu}>
               {t('navigation:supportUs')}
-            </a>
+            </SmartLink>
           </li>
           <li>
-            <LinkWithQuery to="/data-export">
+            <SmartLink to="/data-export" onClick={closeMenu}>
               {t('navigation:export')}
-            </LinkWithQuery>
+            </SmartLink>
           </li>
         </ul>
         {isDesktop && <div className={styles.imageWrapper}>
@@ -71,7 +67,9 @@ const Menu = () => {
           </p>
           <p>{t('navigation:address.heading')}:</p>
           <p>{t('navigation:address.address')}</p>
-          <a href="mailto:info@k-monitor.hu">info@k-monitor.hu</a>
+          <SmartLink to="info@k-monitor.hu">
+            info@k-monitor.hu
+          </SmartLink>
         </address>
       </div>
       <PoweredByVercel link={'https://vercel.com/'} />

@@ -13,6 +13,8 @@ import styles from '../css/map.module.css';
 import { MapContext, HotelContext } from '../context';
 import {createClusterCustomIcon, getMarkerList} from '../leaflet-helper.js';
 
+import { config } from '../config.js';
+
 /**
  * @param {Hotel[]} points
  * @param {LatLngBounds} bounds
@@ -90,10 +92,18 @@ function MapComponent() {
     <>
       <div className={styles.map}>
         <div className={styles.mapWrapper}>
-          <Map ref={mapRef} className="markercluster-map" center={center} zoom={16} maxZoom={19} onZoomEnd={calcPoints} onMoveEnd={calcPoints}>
+          <Map
+            ref={mapRef}
+            className="markercluster-map"
+            center={center}
+            zoom={6}
+            maxZoom={config.map.maxZoom}
+            onZoomEnd={calcPoints}
+            onMoveEnd={calcPoints}
+          >
             <TileLayer
-              url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
-              attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+              url={config.map.url}
+              attribution={config.map.attribution}
             />
             <MarkerClusterGroup maxClusterRadius={6} zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
               {getMarkerList({points: filteredPoints, selectedPoint, clickCallback: onMarkerClickCallback})}

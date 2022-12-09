@@ -1,4 +1,4 @@
-.about {
+.contentPage {
     width: 100%;
     max-width: 960px;
     margin: 150px auto 80px;
@@ -6,26 +6,30 @@
 }
 
 @media (max-width: 480px) {
-    .about {
+    .contentPage {
         width: 100%;
         padding: 0 20px;
     }
 }
 
-.about section {
+.contentPage section {
     margin-bottom: 45px;
 }
 
-.about h2 {
+.contentPage h2 {
     font-size: 24px;
 }
 
-.about p {
+.contentPage p {
     font-size: 16px;
     line-height: 1.6;
 }
 
-.about a {
-    color: #000;
-    margin-bottom: 15px;
+.contentPage a {
+    color: var(--nh-accent-color);
+}
+
+.contentPage a:hover,
+.contentPage a:focus {
+    text-decoration: none;
 }

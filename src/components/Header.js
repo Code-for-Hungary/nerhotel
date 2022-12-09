@@ -18,7 +18,7 @@ import LangSwitch from './LangSwitch';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 
-import { LinkWithQuery } from './LinkWithQuery';
+import { SmartLink } from './SmartLink';
 
 const Header = (props) => {
   const { dispatch } = React.useContext(MapContext);
@@ -47,13 +47,13 @@ const Header = (props) => {
         <Icon img={listIcon} size="large"/>
       </div>
       <div className={styles.headerWrapper}>
-        <LinkWithQuery
+        <SmartLink
           to="/"
           onClick={() => { dispatch({ type: 'TogglePopup', showPopup: false }); }}
           className={styles.logo}
         >
           <img src={logo} alt="" />
-        </LinkWithQuery>
+        </SmartLink>
         <div className={styles.headerInner}>
           <div className={styles.icons}>
             <img src={hotel} alt=""/>

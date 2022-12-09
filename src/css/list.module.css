@@ -69,7 +69,7 @@
 
 .listItem h1:hover,
 .listItem a:hover {
-  color: #F05F22;
+  color: var(--nh-accent-color);
 }
 
 .closeButton {
