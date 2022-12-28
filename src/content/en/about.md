@@ -22,8 +22,11 @@ To download the current database in csv format, click here.
   
 ## What's the data behind it all?
 All the information available on the website, which may demonstrate political or economic interests, is accessible and verifiable by anyone from public sources. The political sympathies of the owners or operators of the establishments listed in the database should not be used as a basis for inclusion on the NER Hotel.
+
 **Company information**: [Bisnode](https://partnercontrol.hu)
+
 **Background of individuals**: [K-Monitor media database](https://adatbazis.k-monitor.hu)
+
 **Data about the establishments**: National Trade Register, user submissions, collection by our volunteers (websites of places, press articles, Kisfaludy Programme, etc.).
 </section>
 <section>
