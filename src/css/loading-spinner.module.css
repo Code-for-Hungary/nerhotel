@@ -1,0 +1,42 @@
+@keyframes spin {
+    0% { transform: translate(-50%,-50%) rotate(0deg); }
+    100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+
+.spinner {
+    --spinner-border-width: calc(var(--spinner-size) * 0.1);
+
+    width: var(--spinner-size);
+    height: var(--spinner-size);
+    display: inline-block;
+    overflow: hidden;
+    background: #fff;
+}
+
+.spinnerAnimationContainer div {
+    position: absolute;
+    width: calc(var(--spinner-size) / 2 + var(--spinner-border-width));
+    height: calc(var(--spinner-size) / 2 + var(--spinner-border-width));
+    border: var(--spinner-border-width) solid var(--spinner-color);
+    border-top-color: transparent;
+    border-radius: 50%;
+}
+
+.spinnerAnimationContainer div {
+    animation: spin 1s linear infinite;
+    top: calc(var(--spinner-size) / 2);
+    left: calc(var(--spinner-size) / 2);
+}
+
+.spinnerAnimationContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+}
+
+.spinnerAnimationContainer div {
+    box-sizing: content-box;
+}

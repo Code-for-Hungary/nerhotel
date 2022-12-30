@@ -6,6 +6,19 @@ import Layout from './Layout';
 import styles from '../css/content-page.module.css';
 import rehypeRaw from 'rehype-raw';
 import { SmartLink } from '../components/SmartLink';
+import LoadingSpinner from '../components/LoadingSpinner';
+
+const getContent = async (fileName, lang) => {
+  try {
+    const mdFilePath = await import(`../content/${lang}/${fileName}.md`);
+    const mdFileResponse = await fetch(mdFilePath.default);
+    const mdFileContent = await mdFileResponse.text();
+
+    return mdFileContent;
+  } catch(e) {
+    throw e;
+  }
+}
 
 const ContentPageView = ({history, ...props}) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -17,18 +30,6 @@ const ContentPageView = ({history, ...props}) => {
   const pathNameAsArray = Array.from(location.pathname);
   pathNameAsArray.shift();
   const pathNameWithoutSlash = pathNameAsArray.join('');
-
-  const getContent = async (fileName, lang) => {
-    try {
-      const mdFilePath = await import(`../content/${lang}/${fileName}.md`);
-      const mdFileResponse = await fetch(mdFilePath.default);
-      const mdFileContent = await mdFileResponse.text();
-  
-      return mdFileContent;
-    } catch(e) {
-      throw e;
-    }
-  }
 
   useEffect(() => {
     setIsLoading(true);
@@ -58,8 +59,12 @@ const ContentPageView = ({history, ...props}) => {
   return (
     <Layout history={history}>
       <div className={styles.contentPage}>
-        {isLoading ? 
-          <span>Loading...</span>
+        {isLoading ?
+          (
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+              <LoadingSpinner />
+            </div>
+          )
             :
           <ReactMarkdown
             children={pageContent}

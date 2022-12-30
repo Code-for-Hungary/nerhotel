@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
@@ -7,7 +7,6 @@ import HotelView from './views/HotelView';
 import MapView from './views/MapView';
 import ContentPageView from './views/ContentPageView';
 import PersonView from './views/PersonView';
-import DataImportView from './views/DataImportView';
 import ErrorView from './views/ErrorView';
 import ErrorBoundary from './components/ErrorBoundary';
 
@@ -16,12 +15,13 @@ import reducer, { initialState } from './reducer';
 import { useTranslation } from 'react-i18next';
 import { config } from './config';
 
-import hotels from './data/nerhotel.json';
+import loadHotelDataFromCsv from './utils/load-hotel-data-from-csv';
 
 function App () {
   const [state, dispatch] = React.useReducer(reducer, initialState);
   const mapData = { ...state, dispatch};
   const { i18n } = useTranslation();
+  const [ hotels, setHotels ] = useState([]);
   
   useEffect(()=> {
     const queryString = window.location.href.split('?')[1];
@@ -44,8 +44,24 @@ function App () {
     }
   }, [i18n]);
 
+  useEffect(() => {
+    let isSubscribed = true;
+
+    loadHotelDataFromCsv().then(data => {
+      if(isSubscribed) {
+        setHotels(data);
+      }
+    }).catch(e => {
+      console.error(e);
+    })
+
+    return () => {
+      isSubscribed = false;
+    }
+  }, []);
+
   return (
-    <div className="App">
+    <>
       <ErrorBoundary>
         <HotelContext.Provider value={{hotels}}>
           <MapContext.Provider value={mapData}>
@@ -57,14 +73,13 @@ function App () {
                 <Route path="/contact" exact component={ContentPageView} />
                 <Route path="/person/:name" exact component={PersonView} />
                 <Route path="/data-export" exact component={ContentPageView} />
-                <Route path="/data-import" exact component={DataImportView} />
                 <Route path="*" component={ErrorView} />
               </Switch>
             </HashRouter>
           </MapContext.Provider>
         </HotelContext.Provider>
       </ErrorBoundary>
-    </div>
+    </>
   );
 }
 

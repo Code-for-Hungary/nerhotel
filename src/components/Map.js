@@ -42,8 +42,7 @@ function MapComponent() {
     showPopup,
     center,
     selectedPoint,
-    locationRequired,
-    map
+    locationRequired
   } = React.useContext(MapContext);
   const { hotels } = React.useContext(HotelContext);
   const [loaded, setLoaded] = React.useState(false);
@@ -57,12 +56,12 @@ function MapComponent() {
   }, [hotels, dispatch, mapRef]);
 
   React.useEffect(() => {
-    if (!loaded) {
+    if (!loaded && hotels.length) {
       calcPoints();
       dispatch({ type: 'SetMap', map: mapRef.current.leafletElement });
       setLoaded(true);
     }
-  }, [dispatch, loaded, calcPoints, mapRef, map]);
+  }, [dispatch, loaded, calcPoints, mapRef, hotels]);
 
   React.useEffect(() => {
     if (!locationRequired) {
