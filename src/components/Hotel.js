@@ -7,6 +7,7 @@ import Icon from './Icon.js';
 import {getOligarchData} from '../utils';
 import {MapContext, HotelContext} from '../context';
 import {createOrangeIcon} from "../leaflet-helper.js";
+import getTranslatedHotelProperty from '../utils/get-translated-hotel-property.js';
 
 import styles from '../css/hotel.module.css';
 
@@ -55,7 +56,8 @@ const goBack = (dispatch, hotelById, location) => {
 const Hotel = (props) => {
   const {dispatch} = React.useContext(MapContext);
   const {hotels} = React.useContext(HotelContext);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const { resolvedLanguage } = i18n;
   const hotelById = hotels.length ? hotels.find(hotel => hotel.properties.id === parseInt(props.id)) : null;
   const data = hotelById ? hotelById.properties : null;
   const location = hotelById ? hotelById.geometry.coordinates : null;
@@ -68,9 +70,9 @@ const Hotel = (props) => {
           {
             data ? (
               <React.Fragment>
-                <h1>{data.name}</h1>
+                <h1>{getTranslatedHotelProperty('name', resolvedLanguage, data)}</h1>
                 <div className={styles.hotelRow}>
-                  <p>{t('hotel:type')}: <span>{data.type}</span></p>
+                  <p>{t('hotel:type')}: <span>{getTranslatedHotelProperty('type', resolvedLanguage, data)}</span></p>
                 </div>
                 {data.company && (
                   <div className={styles.hotelRow}>
@@ -93,9 +95,9 @@ const Hotel = (props) => {
                       {oligarchData.map((oligarch, key) => (
                         <span key={key} className={styles.oligarch}>
                           <SmartLink to={`/person/${oligarch.name}`}>
-                              {oligarch.name}
-                            </SmartLink>
-                          <span className={styles.title}> ({oligarch.data.type})</span><br/>
+                            {oligarch.name}
+                          </SmartLink>
+                          <span className={styles.title}> ({t(oligarch.data.type)})</span><br/>
                         </span>
                       ))}
                     </p>
@@ -110,14 +112,17 @@ const Hotel = (props) => {
                 {data.link !== '' && (
                   <div className={styles.hotelRow}>
                     <Icon img={linkIcon} size="small"/>
-                    <SmartLink to={data.link}>
+                    <SmartLink to={getTranslatedHotelProperty('link', resolvedLanguage, data)}>
                       <span>{t('general:article')}</span>
                     </SmartLink>
                   </div>
                 )}
                 {data.details !== '' && (
                   <div className={styles.hotelRow}>
-                    <p><span>{t('general:additionalInfo')}:</span><br/>{data.details}</p>
+                    <p>
+                      <span>{t('general:additionalInfo')}:</span><br/>
+                      {getTranslatedHotelProperty('details', resolvedLanguage, data)}
+                    </p>
                   </div>
                 )}
                 {data.date !== '' && (

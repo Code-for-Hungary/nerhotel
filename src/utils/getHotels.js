@@ -23,6 +23,8 @@ function getAllOligarchs(people) {
  * @returns {Hotel[]}
  */
 export function getHotels(csvRowsAsObjects) {
+  console.log(csvRowsAsObjects);
+
   return csvRowsAsObjects.map((csvRow, index) => {
 	/** @type {{name: string, link: string}[]} */
 	const oligarchs = [
@@ -52,6 +54,11 @@ export function getHotels(csvRowsAsObjects) {
         ceos: getAllOligarchs(ceos),
         date: csvRow['date'],
         details: csvRow['details'],
+        en: {
+          name: csvRow['name_en'] ? csvRow['name_en'] : null,
+          link: csvRow['news_en'] ? csvRow['news_en'] : null,
+          details: csvRow['details_en'] ? csvRow['details_en'] : null,
+        }
       },
       geometry: {
         type: 'Point',

@@ -1,5 +1,5 @@
-const OWNER = 'cégtulajdonos';
-const MANAGER = 'cégvezető';
+const OWNER = 'person:owner';
+const MANAGER = 'person:manager';
 
 const reduceByName = (map, person) => {
   if (!map.has(person.name)) {

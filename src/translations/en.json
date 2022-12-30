@@ -34,7 +34,9 @@
     "person": {
         "dbLink": "K-Monitor",
         "relatedPlaces": "Related venues",
-        "pep": "PEP"
+        "pep": "PEP",
+        "owner": "owner",
+        "manager": "manager"
     },
     "search": {
         "placeholder": "Search by venue, location or owner"
