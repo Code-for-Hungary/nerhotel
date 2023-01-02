@@ -4,7 +4,14 @@
         "additionalInfo": "Kapcsolódó információ",
         "article": "Kapcsolódó cikk",
         "maintainer": "Üzemeltető",
-        "address": "Cím"
+        "address": "Cím",
+        "siteName": "NER Hotel",
+        "tagline": "Kinél cseng a kassza?"
+    },
+    "staticPageTitles": {
+        "about": "Mi az a NER Hotel?",
+        "contact": "Kapcsolat",
+        "data-export": "Adat export"
     },
     "error": {
         "heading": "Valami hiba történt",

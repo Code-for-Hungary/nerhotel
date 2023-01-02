@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown'
@@ -23,7 +24,7 @@ const getContent = async (fileName, lang) => {
 const ContentPageView = ({history, ...props}) => {
   const [isLoading, setIsLoading] = useState(false);
   const [pageContent, setPageContent] = useState('');
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { resolvedLanguage } = i18n;
   const location = useLocation();
   const { search } = location;
@@ -58,6 +59,9 @@ const ContentPageView = ({history, ...props}) => {
 
   return (
     <Layout history={history}>
+      <Helmet>
+        <title>{t(`staticPageTitles:${pathNameWithoutSlash}`)} - {t('general:siteName')}</title>
+      </Helmet>
       <div className={styles.contentPage}>
         {isLoading ?
           (

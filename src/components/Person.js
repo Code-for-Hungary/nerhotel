@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { SmartLink } from './SmartLink';
 import { useTranslation } from 'react-i18next';
 import Leaflet from 'leaflet';
@@ -51,7 +52,10 @@ const Person = (props) => {
 
   return (
     <div className={[styles.hotel, 'hotel'].join(' ')}>
-      { 
+      <Helmet>
+        <title>{personName} - {t('general:siteName')}</title>
+      </Helmet>
+      {
         affiliatedHotels && affiliatedHotels.length ? (
           <div className={styles.hotelWrapper}>
             <div className={styles.info}>

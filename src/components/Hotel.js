@@ -1,6 +1,7 @@
 import React from 'react';
 import {Map as LeafletMap, Marker, TileLayer} from 'react-leaflet';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import { SmartLink } from './SmartLink.js';
 import Icon from './Icon.js';
 
@@ -70,6 +71,9 @@ const Hotel = (props) => {
           {
             data ? (
               <React.Fragment>
+                <Helmet>
+                  <title>{getTranslatedHotelProperty('name', resolvedLanguage, data)} - {t('general:siteName')}</title>
+                </Helmet>
                 <h1>{getTranslatedHotelProperty('name', resolvedLanguage, data)}</h1>
                 <div className={styles.hotelRow}>
                   <p>{t('hotel:type')}: <span>{getTranslatedHotelProperty('type', resolvedLanguage, data)}</span></p>

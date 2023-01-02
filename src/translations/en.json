@@ -4,7 +4,14 @@
         "additionalInfo": "More information",
         "article": "Relevant article",
         "address": "Address",
-        "maintainer": "Operated by"
+        "maintainer": "Operated by",
+        "siteName": "NER Hotel",
+        "tagline": "Who gets the profit?"
+    },
+    "staticPageTitles": {
+        "about": "What is the NER Hotel?",
+        "contact": "Contact",
+        "data-export": "Data export"
     },
     "error": {
         "heading": "Some error happened",

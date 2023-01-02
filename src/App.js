@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 import './App.css';
 
@@ -20,7 +21,7 @@ import loadHotelDataFromCsv from './utils/load-hotel-data-from-csv';
 function App () {
   const [state, dispatch] = React.useReducer(reducer, initialState);
   const mapData = { ...state, dispatch};
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [ hotels, setHotels ] = useState([]);
   
   useEffect(()=> {
@@ -63,6 +64,9 @@ function App () {
   return (
     <>
       <ErrorBoundary>
+        <Helmet>
+          <title>{t('general:tagline')} - {t('general:siteName')}</title>
+        </Helmet>
         <HotelContext.Provider value={{hotels}}>
           <MapContext.Provider value={mapData}>
             <HashRouter>
