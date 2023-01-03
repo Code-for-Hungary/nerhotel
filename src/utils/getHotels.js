@@ -23,8 +23,6 @@ function getAllOligarchs(people) {
  * @returns {Hotel[]}
  */
 export function getHotels(csvRowsAsObjects) {
-  console.log(csvRowsAsObjects);
-
   return csvRowsAsObjects.map((csvRow, index) => {
 	/** @type {{name: string, link: string}[]} */
 	const oligarchs = [
