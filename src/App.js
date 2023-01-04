@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState, useReducer } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import {Helmet} from 'react-helmet';
 
@@ -19,7 +19,7 @@ import { config } from './config';
 import loadHotelDataFromCsv from './utils/load-hotel-data-from-csv';
 
 function App () {
-  const [state, dispatch] = React.useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
   const mapData = { ...state, dispatch};
   const { i18n, t } = useTranslation();
   const [ hotels, setHotels ] = useState([]);

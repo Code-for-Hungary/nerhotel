@@ -1,47 +1,17 @@
-import React from 'react';
+import { useContext, useCallback } from 'react';
 import styles from '../css/list.module.css';
 import Icon from './Icon.js';
 import {Trans} from 'react-i18next';
 
 import closeIcon from '../assets/close-icon.svg';
-import horseIcon from '../assets/horse-icon.svg';
-import pinIcon from '../assets/pin-icon.svg';
+import ListItem from './ListItem';
 
 import { MapContext } from '../context';
 
-
-const ListItem = ({ item }) => {
-  const oligarchs = item.properties.mainOligarch.length > 0 ?
-    item.properties.mainOligarch : item.properties.oligarchs;
-
-  return (<>
-    <h1>{item.properties.name}</h1>
-    <div className={styles.listItemRow}>
-      <div className={styles.listItemCol}>
-        <Icon img={horseIcon} size="small"/>
-        <div className={styles.oligarchList}>
-          {oligarchs.map((oligarch, key) => (
-              <p key={key}>
-                {oligarch.link ? (
-                  <a href={oligarch.link} target="_blank" rel="noopener noreferrer">{oligarch.name}</a>):
-                  oligarch.name
-                }
-              </p>
-          ))}
-        </div>
-      </div>
-      <div className={styles.listItemCol}>
-        <Icon img={pinIcon} size="small"/>
-        <p>{item.properties.address}</p>
-      </div>
-    </div>
-  </>)
-};
-
 function List() {
-  const { dispatch, list, map } = React.useContext(MapContext);
+  const { dispatch, list, map } = useContext(MapContext);
 
-  const showItem = React.useCallback((item) => () => {
+  const showItem = useCallback((item) => () => {
     const [lat, lng] = item.geometry.coordinates;
     if (map) {
       map.setView([lat, lng], 18);
@@ -52,7 +22,7 @@ function List() {
     dispatch({ type: 'TogglePopup', showPopup: true });
   }, [map, dispatch]);
 
-  const closeList = React.useCallback(() => {
+  const closeList = useCallback(() => {
       dispatch({ type: 'ToggleList', showList: false });
   }, [dispatch]);
 
@@ -63,9 +33,7 @@ function List() {
       </div>
       <div className={styles.listWrapper}>
         {list && list.length > 0 && list.map((item, key) => (
-          <div key={key} className={styles.listItem} onClick={showItem(item)}>
-            <ListItem item={item}/>
-          </div>
+          <ListItem key={key} item={item} onClick={showItem(item)}/>
         ))}
 
         {list.length === 0 && (

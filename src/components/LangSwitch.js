@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../css/lang-switch.module.css';
 
 function LangSwitch(props) {

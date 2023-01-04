@@ -1,5 +1,4 @@
-import React from 'react';
-
+import { useContext, useState, createRef, useCallback, useEffect } from 'react';
 import {Map, TileLayer} from 'react-leaflet';
 import LocateControl from './LocateControl.js';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
@@ -14,27 +13,7 @@ import { MapContext, HotelContext } from '../context';
 import {createClusterCustomIcon, getMarkerList} from '../leaflet-helper.js';
 
 import { config } from '../config.js';
-
-/**
- * @param {Hotel[]} points
- * @param {LatLngBounds} bounds
- * @returns {*}
- */
-function filterPoints(points, bounds) {
-  return points.filter(point => {
-    const [latitude, longitude] = point.geometry.coordinates;
-    return (longitude > bounds._southWest.lng && longitude < bounds._northEast.lng
-      && latitude > bounds._southWest.lat && latitude < bounds._northEast.lat);
-  });
-}
-
-const locateOptions = {
-    position: 'topright',
-    keepCurrentZoomLevel: false,
-    drawCircle: true,
-    enableHighAccuracy: true,
-    compassStyle: { radius: 2, color: '#65a' }
-  };
+import filterPoints from '../utils/map/filter-points.js';
 
 function MapComponent() {
   const {
@@ -43,19 +22,21 @@ function MapComponent() {
     center,
     selectedPoint,
     locationRequired
-  } = React.useContext(MapContext);
-  const { hotels } = React.useContext(HotelContext);
-  const [loaded, setLoaded] = React.useState(false);
-  const [filteredPoints, setFilteredPoints] = React.useState([]);
-  const mapRef = React.createRef();
-  const calcPoints = React.useCallback(() => {
-    let mapBounds = mapRef.current.leafletElement.getBounds();
-    const points = filterPoints(hotels, mapBounds);
-    setFilteredPoints(points);
-    dispatch({ type: 'SetList', list: points })
+  } = useContext(MapContext);
+  const { hotels } = useContext(HotelContext);
+  const [loaded, setLoaded] = useState(false);
+  const [filteredPoints, setFilteredPoints] = useState([]);
+  const mapRef = createRef();
+  const calcPoints = useCallback(() => {
+    if(mapRef.current && mapRef.current.leafletElement) {
+      const mapBounds = mapRef.current.leafletElement.getBounds();
+      const points = filterPoints(hotels, mapBounds);
+      setFilteredPoints(points);
+      dispatch({ type: 'SetList', list: points });
+    }
   }, [hotels, dispatch, mapRef]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!loaded && hotels.length) {
       calcPoints();
       dispatch({ type: 'SetMap', map: mapRef.current.leafletElement });
@@ -63,13 +44,13 @@ function MapComponent() {
     }
   }, [dispatch, loaded, calcPoints, mapRef, hotels]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!locationRequired) {
       dispatch({ type: 'SetLocator' });
     }
   }, [locationRequired, dispatch]);
 
-  const onMarkerClickCallback = React.useCallback(createCallbackForPoint, [dispatch]);
+  const onMarkerClickCallback = useCallback(createCallbackForPoint, [dispatch]);
 
   /**
    * @param {Hotel} point
@@ -82,7 +63,7 @@ function MapComponent() {
     };
   }
 
-  const openLocationListCallback = React.useCallback(() => {
+  const openLocationListCallback = useCallback(() => {
     calcPoints();
     dispatch({ type: 'ToggleList', showList: true });
   }, [dispatch, calcPoints]);
@@ -107,7 +88,18 @@ function MapComponent() {
             <MarkerClusterGroup maxClusterRadius={6} zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
               {getMarkerList({points: filteredPoints, selectedPoint, clickCallback: onMarkerClickCallback})}
             </MarkerClusterGroup>
-            <LocateControl options={locateOptions} started={locationRequired} />
+            <LocateControl
+              options={
+                {
+                  position: 'topright',
+                  keepCurrentZoomLevel: false,
+                  drawCircle: true,
+                  enableHighAccuracy: true,
+                  compassStyle: { radius: 2, color: '#65a' }
+                }
+              }
+              started={locationRequired}
+            />
           </Map>
           <div className={styles.listButton} onClick={openLocationListCallback}>
             <Icon img={listIcon} size="small"/>

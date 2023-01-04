@@ -1,4 +1,4 @@
-import React from 'react';
+import { useContext } from 'react';
 import {Map as LeafletMap, Marker, TileLayer} from 'react-leaflet';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
@@ -19,6 +19,7 @@ import linkIcon from '../assets/link-icon.svg';
 import pinIcon from '../assets/pin-icon.svg';
 
 import { config } from '../config.js';
+import goBack from '../utils/hotel/go-back.js';
 
 const icon = createOrangeIcon();
 
@@ -48,15 +49,9 @@ const icon = createOrangeIcon();
  * @property {{name: string, link: string}[]} properties.oligarchs
  * @property {{name: string, link: string}[]} properties.mainOligarch
  */
-
-const goBack = (dispatch, hotelById, location) => {
-  dispatch({type: 'SetSelectedPoint', point: hotelById});
-  dispatch({type: 'SetCenter', center: location});
-};
-
 const Hotel = (props) => {
-  const {dispatch} = React.useContext(MapContext);
-  const {hotels} = React.useContext(HotelContext);
+  const {dispatch} = useContext(MapContext);
+  const {hotels} = useContext(HotelContext);
   const { t, i18n } = useTranslation();
   const { resolvedLanguage } = i18n;
   const hotelById = hotels.length ? hotels.find(hotel => hotel.properties.id === parseInt(props.id)) : null;
@@ -70,7 +65,7 @@ const Hotel = (props) => {
         <div className={styles.info}>
           {
             data ? (
-              <React.Fragment>
+              <>
                 <Helmet>
                   <title>{getTranslatedHotelProperty('name', resolvedLanguage, data)} - {t('general:siteName')}</title>
                 </Helmet>
@@ -134,7 +129,7 @@ const Hotel = (props) => {
                     <p>{t('hotel:updatedOn')}: <span>{data.date}</span></p>
                   </div>
                 )}
-              </React.Fragment>
+              </>
             ) : null
           }
           

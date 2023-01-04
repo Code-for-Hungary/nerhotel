@@ -1,4 +1,4 @@
-import React from 'react';
+import { useContext, useCallback } from 'react';
 import styles from '../css/popup.module.css';
 import { SmartLink } from './SmartLink';
 import Button from './Button';
@@ -13,11 +13,11 @@ import { MapContext } from '../context';
 import { useTranslation } from 'react-i18next';
 
 const Popup = (props) => {
-  const { dispatch } = React.useContext(MapContext);
+  const { dispatch } = useContext(MapContext);
   const { t } = useTranslation();
   const data = props.point.properties;
 
-  const close = React.useCallback(() => {
+  const close = useCallback(() => {
     dispatch({ type: 'SetSelectedPoint', point: null });
     dispatch({ type: 'TogglePopup', showPopup: false });
   }, [dispatch]);

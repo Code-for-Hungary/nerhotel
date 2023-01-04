@@ -1,4 +1,4 @@
-import React from 'react';
+import { useContext } from 'react';
 import { Helmet } from 'react-helmet';
 import { SmartLink } from './SmartLink';
 import { useTranslation } from 'react-i18next';
@@ -16,24 +16,14 @@ import hotelIcon from '../assets/hotel-icon.svg';
 import horseIcon from '../assets/horse-icon.svg';
 
 import { config } from '../config';
-
-/**
- * @param {Hotel[]} hotels
- * @param {string} personName
- * @returns {Hotel[]}
- */
-function _getAllHotelsAffiliatedWithPerson(hotels, personName) {
-  return hotels.filter(
-    hotel => hotel.properties.ceos.find(ceo => ceo.name === personName)
-      || hotel.properties.oligarchs.find(oligarch => oligarch.name === personName));
-}
+import _getAllHotelsAffiliatedWithPerson from '../utils/person/get-all-hotels-affiliated-with-person';
 
 const Person = (props) => {
   const personName = props.name;
   const { t, i18n } = useTranslation();
   const { resolvedLanguage } = i18n;
 
-  const hotelContext = React.useContext(HotelContext);
+  const hotelContext = useContext(HotelContext);
   /** @type {Hotel[]} */
   const hotels = hotelContext.hotels;
   const affiliatedHotels = _getAllHotelsAffiliatedWithPerson(hotels, personName);

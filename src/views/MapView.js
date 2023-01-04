@@ -1,4 +1,3 @@
-import React from 'react';
 import MapComponent from '../components/Map.js';
 import Layout from './Layout';
 

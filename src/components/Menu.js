@@ -1,4 +1,4 @@
-import React from 'react';
+import { useContext, useCallback } from 'react';
 import { SmartLink } from './SmartLink';
 import closeIcon from '../assets/close-icon.svg';
 import styles from '../css/menu.module.css';
@@ -10,9 +10,9 @@ import PoweredByVercel from './PoweredByVercel';
 import { useTranslation } from 'react-i18next';
 
 const Menu = () => {
-  const { dispatch, showMenu } = React.useContext(MapContext);
+  const { dispatch, showMenu } = useContext(MapContext);
   const { t } = useTranslation();
-  const closeMenu = React.useCallback(() => {
+  const closeMenu = useCallback(() => {
     dispatch({ type: 'ToggleMenu', showMenu: false });
   }, [dispatch]);
 

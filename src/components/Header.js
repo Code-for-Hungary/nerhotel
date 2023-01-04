@@ -1,4 +1,4 @@
-import React from 'react';
+import { useContext, useCallback } from 'react';
 
 import Search from './Search';
 import styles from '../css/header.module.css';
@@ -21,7 +21,7 @@ import { useLocation } from 'react-router-dom';
 import { SmartLink } from './SmartLink';
 
 const Header = (props) => {
-  const { dispatch } = React.useContext(MapContext);
+  const { dispatch } = useContext(MapContext);
   const { i18n } = useTranslation();
   const location = useLocation();
 
@@ -35,7 +35,7 @@ const Header = (props) => {
     });
   }
 
-  const onMenuCallback = React.useCallback(() => {
+  const onMenuCallback = useCallback(() => {
     dispatch({ type: 'ToggleMenu', showMenu: true })
   }, [dispatch]);
 

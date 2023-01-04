@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../css/content-page.module.css';
 import Button from '../components/Button';
 import image from '../assets/nh-main.svg';

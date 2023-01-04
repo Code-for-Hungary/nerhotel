@@ -1,10 +1,11 @@
-import React from 'react';
 import styles from '../css/icon.module.css';
 
-export default function (props) {
+function Icon(props) {
   return (
     <div className={[styles.iconWrapper, styles[props.size]].join(' ') + ' ' + (props.className || '')}>
       <img src={props.img} alt={props.alt ? props.alt : ''} />
     </div>
   );
 }
+
+export default Icon;

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import isEmail from '../utils/is-email';
 import isUrl from '../utils/is-url';
