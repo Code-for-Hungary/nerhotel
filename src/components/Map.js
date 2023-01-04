@@ -66,6 +66,7 @@ function MapComponent() {
   const openLocationListCallback = useCallback(() => {
     calcPoints();
     dispatch({ type: 'ToggleList', showList: true });
+    dispatch({ type: 'TogglePopup', showPopup: false });
   }, [dispatch, calcPoints]);
 
   return (
