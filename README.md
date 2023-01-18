@@ -7,19 +7,40 @@ A térképhez a [react-leaflet](https://react-leaflet.js.org/) library-t haszná
 
 ## Hogyan futattom a helyi gépemen?
 
-1) Installáld fel a dependenciákat `yarn install` vagy `npm install` parancsal
-2) Futasd az alkalmazást DEV módban a `yarn start` vagy az `npm run start`
+1. Installáld fel a dependenciákat `yarn install` vagy `npm install` parancsal
+2. Futasd az alkalmazást DEV módban a `yarn start` vagy az `npm run start`
 
-**Fontos!** JavaScript csomagkezelőnek a [Yarnt](https://yarnpkg.com/) preferáljuk. Természetesen ettől még használhatsz localban NPM-t is, ellenben a generált `package-lock.json`-t kivettük a verziókezelés alól, hogy a CI környezetben ne akadjon össze a `yarn.lock`-al és csak egy lock file-unk legyen, mint az igazság forrása.
+> ⚠️ **Fontos!** JavaScript csomagkezelőnek a [Yarnt](https://yarnpkg.com/) preferáljuk. Természetesen ettől még használhatsz localban NPM-t is, ellenben a generált `package-lock.json`-t kivettük a verziókezelés alól, hogy a CI környezetben ne akadjon össze a `yarn.lock`-al és csak egy lock file-unk legyen, mint az igazság forrása.
 
 ## Honnan jönnek az adatok?
 
-A térképen megjelenített helyeket az `src/data/nerhotel.json` file-ban tároljuk. Ezt a file-t a tartalomszerkesztők kézzel generálják ebből a [Google Sheetből](https://docs.google.com/spreadsheets/d/e/2PACX-1vSEboU5aIOUgZ-hmNpLQIYB8EZTc1HYAFf9mL97jvjVl6S9auEiFxJ1fwMpbr6-7dwPYl57BOK4ANfs/pub?gid=0&single=true&output=csv).
+A térképen megjelenített helyeket egy [Google Sheetből](https://docs.google.com/spreadsheets/d/1FaeML93U76Fjh9GR7gbQhtb2O3Ga0ZY2honrYKyQQLo/edit#gid=0) szedjük.
 
-A szerkesztők az [adat import oldalon](https://www.nerhotel.hu/#/data-import) található formmal letöltik és átkonvertálják a CSV-t, majd kézzel frissítik és bekommitolják az `src/data/nerhotel.json`-t.
+A sheetnek van egy olyan URL-je ami kigenerálja az adatokat nyers CSV-ben. Ezt hívjuk le egy `fetch` kéréssel amikor elindítjuk az alkalmazást.
+
+### Honnan jönnek a szövegek.
+
+A felhasználói felületen látható szövegek nagy része az `src/translations` mappában található. A `hu.json` tartalmaza a magyar, az `en.json` pedig az angol szövegeket. Bővebb információt a JSON file-ok struktúrájáról és a kulcsok használatáról a [react-i18next](https://react.i18next.com/) fordításkezelő könyvtár dokumentációjában találasz.
+
+#### Szöveges oldalak
+
+A hosszabb szövegeket - például amikor teljes oldalak szövegét kell több nyelven definiálnunk - viszont külön [markdown](https://www.markdownguide.org/) file-okban tároljuk az `src/content` mappában. Minden egyes oldalhoz egy azonos nevű `.md` file tartozik egy az `en/` egy másik pedig a `hu/` mappában.
+
+Például a _Mi ez?_ oldal magyar tartalma az `src/hu/about.md` file-ban, míg az angol tartalom az `src/en/about.md`-ben található.
+
+> ⚠️ **Fontos!** A markdown file-ok nevének meg kell egyeznie annak a relatív elérési úttal (route-tal), ahol az oldal található. Értsd ha a szöveges oldalunk címe `nerhote.hu/about` akkor szövegeket tartalmazó file-nak mindenképpen `about.md`-nek kell lennie, különben nem fog működni.
+
+Ha az `.md` file-okban lévő szövegeket megváltoztatjuk (ehhez persze commitolnuk kell git-be és be kell küldenünk a változtatásainkat a `master` branchbe), akkor a felületen lévő szövegek is rögtön meg fognak változni (amint sikeresen lefutott a [build és a deploy folyamat](#hol-lakik-az-oldal-es-hogyan-deployolok)).
+
+A Markdown alapvetően [standard szintaxist](https://www.markdownguide.org/basic-syntax/) használ, pár dologra azonban oda kell figyelni:
+
+1. A külső linkek (`http://example.com`) mindig új ablakban fognak megnyílni, ehhez semmi extrát nem kell tenni
+2. Ha a NERHotelen belül akarsz linkelni egy aloldalra, akkor használj relatív URL-t. pl.: `[link a kapcsolat oldalra](/contact)`
+3. A nagyobb szövegtömböket amiket címsorok határolnak `<section>` elemekbe kell foglalnunk, azért hogy rendesen működjön a CSS formázás. Ellenben mivel a Markdown nem ismeri a `section` taget ezért nekünk kell ezeket a szövegrészeket kézzel `<section></section>` közé foglalni (a Markdown szintaxisba berakhatunk tetszőleges HTML tageket).
+4. Ha a nyitó `section`-ön belül közvetlenül egy címsorral akarjuk kezdeni a szövegünket, akkor kell a `<section>` után egy üres sort hagynunk, különben nem fog működni a Markdown formázásunk.
 
 ## Hol lakik az oldal és hogyan deployolok?
 
-Az oldalt [Vercelen](https://vercel.com/) hosztoljuk. A Vercel platform össze van kötve ezzel a repóval, minden egyes masterbe mergelt commit elindítja a buildet és a deploymentet. Minden logot a Vercel felületén lehet látni, de a pull requestek alatt a Vercel botja automatikusan kirak egy táblázatot a deployment státuszról.
+Az oldalt [Vercelen](https://vercel.com/) hosztoljuk. A Vercel platform össze van kötve ezzel a repóval, minden egyes `master` branchbe mergelt commit elindítja a buildet és a deploymentet. Minden logot a Vercel felületén lehet látni, de a pull requestek alatt a Vercel botja automatikusan kirak egy táblázatot a deployment státuszról.
 
 A buildhez szükséges esetleges környezeti változókat, secreteket, build beállításokat is a Vercel felületén tudjuk kezelni. Erről bővebben lásd a [dokumentációt](https://vercel.com/guides/how-to-add-vercel-environment-variables).
