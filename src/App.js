@@ -57,7 +57,9 @@ function App() {
       .catch((e) => {
         console.error(e);
       })
-      .finally(() => {});
+      .finally(() => {
+        dispatch({ type: "SetDataLoaded" });
+      });
 
     return () => {
       isSubscribed = false;

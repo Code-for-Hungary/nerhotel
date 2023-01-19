@@ -12,9 +12,11 @@ import { MapContext, HotelContext } from "../context";
 import { config } from "../config.js";
 import filterPoints from "../utils/map/filter-points.js";
 import MapCluster from "./MapCluster";
+import MapPlaceholder from "./MapPlaceholder.js";
 
 function MapComponent() {
-  const { dispatch, showPopup, center, selectedPoint } = useContext(MapContext);
+  const { dispatch, showPopup, center, selectedPoint, isDataLoaded } =
+    useContext(MapContext);
   const { t } = useTranslation();
 
   const { hotels } = useContext(HotelContext);
@@ -88,27 +90,31 @@ function MapComponent() {
     <>
       <div className={styles.map}>
         <div className={styles.mapWrapper}>
-          <Map
-            className="markercluster-map"
-            center={center}
-            zoom={6}
-            maxZoom={config.map.maxZoom}
-          >
-            <TileLayer
-              url={config.map.url}
-              attribution={config.map.attribution}
-            />
-            <MapCluster
-              filteredPoints={filteredPoints}
-              selectedPoint={selectedPoint}
-              onMarkerClickCallback={onMarkerClickCallback}
-              setMap={setMap}
-              onClusterClick={onClusterClickHandler}
-              onMove={moveHandler}
-            />
-            <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
-            <MapListOpener onLocationListOpen={openLocationList} />
-          </Map>
+          {isDataLoaded ? (
+            <Map
+              className="markercluster-map"
+              center={center}
+              zoom={6}
+              maxZoom={config.map.maxZoom}
+            >
+              <TileLayer
+                url={config.map.url}
+                attribution={config.map.attribution}
+              />
+              <MapCluster
+                filteredPoints={filteredPoints}
+                selectedPoint={selectedPoint}
+                onMarkerClickCallback={onMarkerClickCallback}
+                setMap={setMap}
+                onClusterClick={onClusterClickHandler}
+                onMove={moveHandler}
+              />
+              <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
+              <MapListOpener onLocationListOpen={openLocationList} />
+            </Map>
+          ) : (
+            <MapPlaceholder />
+          )}
         </div>
       </div>
       {showPopup && <Popup point={selectedPoint} />}
