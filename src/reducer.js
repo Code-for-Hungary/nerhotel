@@ -6,56 +6,50 @@ export const initialState = {
   showMenu: false,
   center: [47.498045, 19.0385183],
   selectedPoint: null,
-  locationRequired: false
 };
 
 export default function mapReducer(state, action) {
-  if(process.env.NODE_ENV === 'development') {
+  if (process.env.NODE_ENV === "development") {
     console.log(`==== ${action.type} ====`);
-    console.log('state: ', state);
-    console.log('action: ', action);
+    console.log("state: ", state);
+    console.log("action: ", action);
     console.log(`========`);
   }
   switch (action.type) {
-    case 'SetMap':
+    case "SetMap":
       return {
         ...state,
-        map: action.map
+        map: action.map,
       };
-    case 'SetList':
+    case "SetList":
       return {
         ...state,
-        list: action.list
+        list: action.list,
       };
-    case 'SetCenter':
+    case "SetCenter":
       return {
         ...state,
-        center: action.center
+        center: action.center,
       };
-    case 'SetSelectedPoint':
+    case "SetSelectedPoint":
       return {
         ...state,
-        selectedPoint: action.point
+        selectedPoint: action.point,
       };
-    case 'ToggleList':
+    case "ToggleList":
       return {
         ...state,
-        showList: action.showList
+        showList: action.showList,
       };
-    case 'TogglePopup':
+    case "TogglePopup":
       return {
         ...state,
-        showPopup: action.showPopup
+        showPopup: action.showPopup,
       };
-    case 'ToggleMenu':
+    case "ToggleMenu":
       return {
         ...state,
-        showMenu: action.showMenu
-      };
-    case 'SetLocator':
-      return {
-        ...state,
-        locationRequired: true
+        showMenu: action.showMenu,
       };
     default:
       return state;

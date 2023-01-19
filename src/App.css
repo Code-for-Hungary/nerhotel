@@ -1,12 +1,12 @@
 :root {
-  --nh-accent-color: #F05F22;
+  --nh-accent-color: #f05f22;
+  --nh-blue: #3366ff;
 }
 
 .leaflet-container {
   height: 100%;
   width: 100%;
 }
-
 
 .leaflet-pane.leaflet-tile-pane {
   filter: grayscale(1);

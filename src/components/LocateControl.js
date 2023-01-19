@@ -1,22 +1,16 @@
-import { Component } from 'react';
-import { withLeaflet } from 'react-leaflet';
-import Locate from 'leaflet.locatecontrol';
+import styles from "../css/map-list-opener.module.css";
+import Icon from "./Icon";
+import myLocationIcon from "../assets/my-location.svg";
 
-class LocateControl extends Component {
-  componentDidMount () {
-    const {options, started} = this.props;
-    const {map} = this.props.leaflet;
-
-    const lc = new Locate(options);
-    lc.addTo(map);
-    if (!started) {
-        lc.start();
-    }
-  }
-
-  render () {
-    return null;
-  }
+function LocateControl({ setMapToUsersLocation }) {
+  return (
+    <button
+      className={`${styles.controlButton} ${styles.locateButton}`}
+      onClick={setMapToUsersLocation}
+    >
+      <Icon img={myLocationIcon} />
+    </button>
+  );
 }
 
-export default withLeaflet(LocateControl);
+export default LocateControl;

@@ -19,7 +19,7 @@
 
 .map {
   height: calc(100vh - 200px);
-  z-index: -1;
+  z-index: 1;
 }
 
 .inlineIcon {
@@ -74,7 +74,6 @@
   font-weight: 700;
 }
 
-
 .hotelRow span.title {
   font-weight: 400;
   font-style: italic;
@@ -84,7 +83,6 @@
   /*text-decoration: none;*/
   color: #000;
 }
-
 
 .oligarch a {
   margin: 0;

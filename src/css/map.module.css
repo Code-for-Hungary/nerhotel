@@ -12,22 +12,6 @@
   z-index: 1;
 }
 
-.listButton {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 40px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
-  z-index: 1000;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  background: #fafafa;
-  cursor: pointer;
-}
-
 .clusterMarker {
   display: flex;
   justify-content: center;
