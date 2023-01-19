@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import { SmartLink } from "./SmartLink.js";
 import Icon from "./Icon.js";
+import HotelImage from "./HotelImage.js";
 
 import { getOligarchData } from "../utils";
 import { MapContext, HotelContext } from "../context";
@@ -165,6 +166,17 @@ const Hotel = (props) => {
                     {t("hotel:updatedOn")}: <span>{data.date}</span>
                   </p>
                 </div>
+              )}
+
+              {data.picture && (
+                <HotelImage
+                  src={data.picture}
+                  alt={getTranslatedHotelProperty(
+                    "name",
+                    resolvedLanguage,
+                    data
+                  )}
+                />
               )}
             </>
           ) : null}
