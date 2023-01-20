@@ -65,6 +65,9 @@ const Hotel = (props) => {
     ? getOligarchData(data.oligarchs || [], data.ceos || [])
     : null;
 
+  console.log(resolvedLanguage);
+  console.log(data);
+
   return (
     <div className={[styles.hotel, "hotel"].join(" ")}>
       <div className={styles.hotelWrapper}>
@@ -150,13 +153,16 @@ const Hotel = (props) => {
               {data.details !== "" && (
                 <div className={styles.hotelRow}>
                   <p>
-                    <span>{t("general:additionalInfo")}:</span>
-                    <br />
-                    {getTranslatedHotelProperty(
-                      "details",
-                      resolvedLanguage,
-                      data
-                    )}
+                    {(resolvedLanguage === "hu" && data.details) ||
+                    (resolvedLanguage === "en" && data.en.details) ? (
+                      <span style={{ display: "block" }}>
+                        {t("general:additionalInfo")}:
+                      </span>
+                    ) : null}
+                    {resolvedLanguage === "hu" ? data.details : null}
+                    {resolvedLanguage === "en" && data.en && data.en.details
+                      ? data.en.details
+                      : ""}
                   </p>
                 </div>
               )}
