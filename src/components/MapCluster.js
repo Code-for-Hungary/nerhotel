@@ -13,7 +13,7 @@ function MapCluster({
   onMove,
 }) {
   const map = useMap();
-  const mapEvents = useMapEvents({
+  useMapEvents({
     zoomend: onMove,
     moveend: onMove,
   });
