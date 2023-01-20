@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { useContext, useCallback } from 'react';
+import { SmartLink } from './SmartLink';
 import closeIcon from '../assets/close-icon.svg';
 import styles from '../css/menu.module.css';
 import Icon from './Icon';
@@ -7,10 +7,12 @@ import image from '../assets/nh-main.svg';
 import logo from '../assets/nh-logo.svg';
 import { MapContext } from '../context';
 import PoweredByVercel from './PoweredByVercel';
+import { useTranslation } from 'react-i18next';
 
 const Menu = () => {
-  const { dispatch, showMenu } = React.useContext(MapContext);
-  const closeMenu = React.useCallback(() => {
+  const { dispatch, showMenu } = useContext(MapContext);
+  const { t } = useTranslation();
+  const closeMenu = useCallback(() => {
     dispatch({ type: 'ToggleMenu', showMenu: false });
   }, [dispatch]);
 
@@ -30,20 +32,44 @@ const Menu = () => {
           <img src={logo} alt=""/>
         </div>}
         <ul className={styles.menulist}>
-          <li><Link to="/">Térkép</Link></li>
-          <li><Link to="/about">Mi ez?</Link></li>
-          <li><Link to="/contact">Kontakt</Link></li>
-          <li><a href="https://tamogatas.k-monitor.hu" target="_blank" rel="noopener noreferrer">Tetszik? Támogasd!</a></li>
-          <li><Link to="/data-export">Adat export</Link></li>
+          <li>
+            <SmartLink to="/" onClick={closeMenu}>
+              {t('navigation:map')}
+            </SmartLink>
+          </li>
+          <li>
+            <SmartLink to="/about" onClick={closeMenu}>
+              {t('navigation:about')}
+            </SmartLink>
+          </li>
+          <li>
+            <SmartLink to="/contact" onClick={closeMenu}>
+              {t('navigation:contact')}
+            </SmartLink>
+          </li>
+          <li>
+            <SmartLink to="https://tamogatas.k-monitor.hu" onClick={closeMenu}>
+              {t('navigation:supportUs')}
+            </SmartLink>
+          </li>
+          <li>
+            <SmartLink to="/data-export" onClick={closeMenu}>
+              {t('navigation:export')}
+            </SmartLink>
+          </li>
         </ul>
         {isDesktop && <div className={styles.imageWrapper}>
           <img src={image} alt=""/>
         </div>}
         <address className={styles.footer}>
-          <p><strong>K-Monitor<br/>Közhasznú Egyesület</strong></p>
-          <p>Levelezési cím:</p>
-          <p>1062 Budapest, Bajza u. 23 I/1</p>
-          <a href="mailto:info@k-monitor.hu">info@k-monitor.hu</a>
+          <p>
+            <strong dangerouslySetInnerHTML={{__html: t('navigation:address.name')}} />
+          </p>
+          <p>{t('navigation:address.heading')}:</p>
+          <p>{t('navigation:address.address')}</p>
+          <SmartLink to="info@k-monitor.hu">
+            info@k-monitor.hu
+          </SmartLink>
         </address>
       </div>
       <PoweredByVercel link={'https://vercel.com/'} />

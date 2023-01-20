@@ -1,9 +1,9 @@
 import Leaflet from "leaflet";
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import styles from "./css/map.module.css";
 import orangeIcon from "./assets/marker-icon-orange.svg";
 import blueIcon from "./assets/marker-icon-blue.svg";
-import {Marker} from "react-leaflet";
+import { Marker } from "react-leaflet";
 import React from "react";
 
 export function createOrangeIcon() {
@@ -25,22 +25,35 @@ export function createClusterCustomIcon(cluster) {
   });
 }
 
-
 /**
  * @param {Hotel[]} points
  * @param {Hotel|null} selectedPoint? Optional.
  * @param {function(Hotel): (function(): void)} clickCallback Optional.
  * @returns {React.Component[]}
  */
-export function getMarkerList({points, selectedPoint= null, clickCallback = () => {}}) {
+export function getMarkerList({
+  points,
+  selectedPoint = null,
+  clickCallback = () => {},
+}) {
   return points.map((point, index) => {
     const [latitude, longitude] = point.geometry.coordinates;
-    const isSelected = selectedPoint && selectedPoint.properties.id === point.properties.id;
+    const isSelected =
+      selectedPoint && selectedPoint.properties.id === point.properties.id;
     const DefaultIcon = getIcon(orangeIcon);
     const ActiveIcon = getIcon(blueIcon);
 
     return (
-      <Marker position={[latitude, longitude]} key={index} icon={isSelected ? ActiveIcon : DefaultIcon} onClick={clickCallback(point)}/>
+      <Marker
+        position={[latitude, longitude]}
+        key={index}
+        icon={isSelected ? ActiveIcon : DefaultIcon}
+        eventHandlers={{
+          click: () => {
+            clickCallback(point);
+          },
+        }}
+      />
     );
   });
 }
@@ -52,7 +65,6 @@ function getIcon(iconUrl) {
     iconSize: [40, 62],
     iconAnchor: [20, 52],
     shadowSize: [40, 62],
-    shadowAnchor: [12, 62]
+    shadowAnchor: [12, 62],
   });
 }
-

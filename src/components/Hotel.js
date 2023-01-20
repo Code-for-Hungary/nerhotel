@@ -1,19 +1,27 @@
-import React from 'react';
-import {Map as LeafletMap, Marker, TileLayer} from 'react-leaflet';
-import {Link} from "react-router-dom";
-import Icon from './Icon.js';
+import { useContext } from "react";
+import { MapContainer as LeafletMap, Marker, TileLayer } from "react-leaflet";
+import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
+import { SmartLink } from "./SmartLink.js";
+import Icon from "./Icon.js";
+import HotelImage from "./HotelImage.js";
 
-import {getOligarchData} from '../utils';
-import {MapContext, HotelContext} from '../context';
-import {createOrangeIcon} from "../leaflet-helper.js";
+import { getOligarchData } from "../utils";
+import { MapContext, HotelContext } from "../context";
+import { createOrangeIcon } from "../leaflet-helper.js";
+import getTranslatedHotelProperty from "../utils/get-translated-hotel-property.js";
 
-import styles from '../css/hotel.module.css';
+import styles from "../css/hotel.module.css";
 
-import arrowIcon from '../assets/arrow-icon.svg';
-import horseIcon from '../assets/horse-icon.svg';
-import hotelIcon from '../assets/hotel-icon.svg';
-import linkIcon from '../assets/link-icon.svg';
-import pinIcon from '../assets/pin-icon.svg';
+import arrowIcon from "../assets/arrow-icon.svg";
+import horseIcon from "../assets/horse-icon.svg";
+import hotelIcon from "../assets/hotel-icon.svg";
+import linkIcon from "../assets/link-icon.svg";
+import pinIcon from "../assets/pin-icon.svg";
+
+import { config } from "../config.js";
+import goBack from "../utils/hotel/go-back.js";
+import displayTranslatedPersonType from "../utils/person/display-translated-person-type.js";
 
 const icon = createOrangeIcon();
 
@@ -43,89 +51,160 @@ const icon = createOrangeIcon();
  * @property {{name: string, link: string}[]} properties.oligarchs
  * @property {{name: string, link: string}[]} properties.mainOligarch
  */
-
 const Hotel = (props) => {
-  const {dispatch} = React.useContext(MapContext);
-  const {hotels} = React.useContext(HotelContext);
-  const hotelById = hotels.find(hotel => hotel.properties.id === parseInt(props.id));
-  const data = hotelById.properties;
-  const [lat, lng] = hotelById.geometry.coordinates;
-
-  const goBack = () => {
-      props.history.push('/');
-      dispatch({type: 'SetSelectedPoint', point: hotelById});
-      dispatch({type: 'SetCenter', center: [lat, lng]});
-    }
-  ;
-
-  const oligarchData = getOligarchData(data.oligarchs || [], data.ceos || []);
+  const { dispatch } = useContext(MapContext);
+  const { hotels } = useContext(HotelContext);
+  const { t, i18n } = useTranslation();
+  const { resolvedLanguage } = i18n;
+  const hotelById = hotels.length
+    ? hotels.find((hotel) => hotel.properties.id === parseInt(props.id))
+    : null;
+  const data = hotelById ? hotelById.properties : null;
+  const location = hotelById ? hotelById.geometry.coordinates : null;
+  const oligarchData = hotelById
+    ? getOligarchData(data.oligarchs || [], data.ceos || [])
+    : null;
 
   return (
-    <div className={[styles.hotel, 'hotel'].join(' ')}>
+    <div className={[styles.hotel, "hotel"].join(" ")}>
       <div className={styles.hotelWrapper}>
         <div className={styles.info}>
-          <h1>{data.name}</h1>
-          <div className={styles.hotelRow}>
-            <p>Hely típusa: <span>{data.type}</span></p>
-          </div>
-          {data.company && (
-            <div className={styles.hotelRow}>
-              <Icon img={hotelIcon} size="small"/>
-              <p>Üzemeltető:
-                {data.company.link ?
-                  <span><a href={data.company.link} target="_blank" rel="noopener noreferrer">{data.company.name}</a></span> :
-                  <span>{data.company.name}</span>}
-              </p>
-            </div>
-          )}
-          {(oligarchData.length > 0) && (
-            <div className={styles.hotelRow}>
-              <Icon img={horseIcon} size="small"/>
-              <p>Kapcsolódó személyek:<br/>
-                {oligarchData.map((oligarch, key) => (
-                  <span key={key} className={styles.oligarch}>
-                     <Link to={`/person/${oligarch.name}`}>{oligarch.name}</Link>
-                    <span className={styles.title}> ({oligarch.data.type})</span><br/>
+          {data ? (
+            <>
+              <Helmet>
+                <title>
+                  {getTranslatedHotelProperty("name", resolvedLanguage, data)} -{" "}
+                  {t("general:siteName")}
+                </title>
+              </Helmet>
+              <h1>
+                {getTranslatedHotelProperty("name", resolvedLanguage, data)}
+              </h1>
+              <div className={styles.hotelRow}>
+                <p>
+                  {t("hotel:type")}:{" "}
+                  <span>
+                    {getTranslatedHotelProperty("type", resolvedLanguage, data)}
                   </span>
-                ))}
-              </p>
-            </div>
-          )}
-          {data.address && (
-            <div className={styles.hotelRow}>
-              <Icon img={pinIcon} size="small"/>
-              <p>Cím: <span>{data.address}</span></p>
-            </div>
-          )}
-          {data.link !== '' && (
-            <div className={styles.hotelRow}>
-              <Icon img={linkIcon} size="small"/>
-              <a href={data.link} target="_blank" rel="noopener noreferrer"><span>Kapcsolódó cikk</span></a>
-            </div>
-          )}
-          {data.details !== '' && (
-            <div className={styles.hotelRow}>
-              <p><span>Kapcsolódó információ:</span><br/>{data.details}</p>
-            </div>
-          )}
-          {data.date !== '' && (
-            <div className={styles.hotelRow}>
-              <p>Adatok frissítve: <span>{data.date}</span></p>
-            </div>
-          )}
-          <div className={styles.back} onClick={goBack}>
-            <Icon img={arrowIcon} alt="Vissza a térképhez" size="large"/>
-          </div>
+                </p>
+              </div>
+              {data.company && (
+                <div className={styles.hotelRow}>
+                  <Icon img={hotelIcon} size="small" />
+                  <p>
+                    {t("general:maintainer")}:{" "}
+                    {data.company.link ? (
+                      <span>
+                        <SmartLink to={data.company.link}>
+                          {data.company.name}
+                        </SmartLink>
+                      </span>
+                    ) : (
+                      <span>{data.company.name}</span>
+                    )}
+                  </p>
+                </div>
+              )}
+              {oligarchData && (
+                <div className={styles.hotelRow}>
+                  <Icon img={horseIcon} size="small" />
+                  <p>
+                    {t("hotel:people")}:<br />
+                    {oligarchData.map((oligarch, key) => (
+                      <span key={key} className={styles.oligarch}>
+                        <SmartLink to={`/person/${oligarch.name}`}>
+                          {oligarch.name}
+                        </SmartLink>
+                        <span className={styles.title}>
+                          {" "}
+                          ({displayTranslatedPersonType(oligarch.data.type, t)})
+                        </span>
+                        <br />
+                      </span>
+                    ))}
+                  </p>
+                </div>
+              )}
+              {data.address && (
+                <div className={styles.hotelRow}>
+                  <Icon img={pinIcon} size="small" />
+                  <p>
+                    {t("general:address")}: <span>{data.address}</span>
+                  </p>
+                </div>
+              )}
+              {data.link !== "" && (
+                <div className={styles.hotelRow}>
+                  <Icon img={linkIcon} size="small" />
+                  <SmartLink
+                    to={getTranslatedHotelProperty(
+                      "link",
+                      resolvedLanguage,
+                      data
+                    )}
+                  >
+                    <span>{t("general:article")}</span>
+                  </SmartLink>
+                </div>
+              )}
+              {data.details !== "" && (
+                <div className={styles.hotelRow}>
+                  <p>
+                    <span>{t("general:additionalInfo")}:</span>
+                    <br />
+                    {getTranslatedHotelProperty(
+                      "details",
+                      resolvedLanguage,
+                      data
+                    )}
+                  </p>
+                </div>
+              )}
+              {data.date !== "" && (
+                <div className={styles.hotelRow}>
+                  <p>
+                    {t("hotel:updatedOn")}: <span>{data.date}</span>
+                  </p>
+                </div>
+              )}
+
+              {data.picture && (
+                <HotelImage
+                  src={data.picture}
+                  alt={getTranslatedHotelProperty(
+                    "name",
+                    resolvedLanguage,
+                    data
+                  )}
+                />
+              )}
+            </>
+          ) : null}
+
+          <SmartLink
+            className={styles.back}
+            onClick={() => {
+              goBack(dispatch, hotelById, location);
+            }}
+            to="/"
+          >
+            <Icon img={arrowIcon} alt={t("backToMap")} size="large" />
+          </SmartLink>
         </div>
         <div className={styles.map}>
-          <LeafletMap className="markercluster-map" center={[lat, lng]} zoom={17} maxZoom={19}
-                      zoomControl={false}>
-            <TileLayer
-              url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
-              attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
-            />
-            <Marker position={[lat, lng]} icon={icon}/>
-          </LeafletMap>
+          {location ? (
+            <LeafletMap
+              className="markercluster-map"
+              center={location}
+              zoom={config.map.closeZoomLevel}
+            >
+              <TileLayer
+                url={config.map.url}
+                attribution={config.map.attribution}
+              />
+              <Marker position={location} icon={icon} />
+            </LeafletMap>
+          ) : null}
         </div>
       </div>
     </div>

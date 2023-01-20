@@ -1,112 +1,123 @@
-import React from 'react';
+import { useContext, useState, useCallback, useEffect } from "react";
+import { MapContainer as Map, TileLayer } from "react-leaflet";
+import LocateControl from "./LocateControl.js";
+import MapListOpener from "./MapListOpener";
+import { useTranslation } from "react-i18next";
 
-import {Map, TileLayer} from 'react-leaflet';
-import LocateControl from './LocateControl.js';
-import MarkerClusterGroup from 'react-leaflet-markercluster';
+import Popup from "../components/Popup";
 
-import Popup from '../components/Popup';
-import Icon from '../components/Icon';
+import styles from "../css/map.module.css";
+import { MapContext, HotelContext } from "../context";
 
-import listIcon from '../assets/menu-icon.svg';
-
-import styles from '../css/map.module.css';
-import { MapContext, HotelContext } from '../context';
-import {createClusterCustomIcon, getMarkerList} from '../leaflet-helper.js';
-
-/**
- * @param {Hotel[]} points
- * @param {LatLngBounds} bounds
- * @returns {*}
- */
-function filterPoints(points, bounds) {
-  return points.filter(point => {
-    const [latitude, longitude] = point.geometry.coordinates;
-    return (longitude > bounds._southWest.lng && longitude < bounds._northEast.lng
-      && latitude > bounds._southWest.lat && latitude < bounds._northEast.lat);
-  });
-}
-
-const locateOptions = {
-    position: 'topright',
-    keepCurrentZoomLevel: false,
-    drawCircle: true,
-    enableHighAccuracy: true,
-    compassStyle: { radius: 2, color: '#65a' }
-  };
+import { config } from "../config.js";
+import filterPoints from "../utils/map/filter-points.js";
+import MapCluster from "./MapCluster";
+import MapPlaceholder from "./MapPlaceholder.js";
 
 function MapComponent() {
-  const {
-    dispatch,
-    showPopup,
-    center,
-    selectedPoint,
-    locationRequired,
-    map
-  } = React.useContext(MapContext);
-  const { hotels } = React.useContext(HotelContext);
-  const [loaded, setLoaded] = React.useState(false);
-  const [filteredPoints, setFilteredPoints] = React.useState([]);
-  const mapRef = React.createRef();
-  const calcPoints = React.useCallback(() => {
-    let mapBounds = mapRef.current.leafletElement.getBounds();
-    const points = filterPoints(hotels, mapBounds);
-    setFilteredPoints(points);
-    dispatch({ type: 'SetList', list: points })
-  }, [hotels, dispatch, mapRef]);
+  const { dispatch, showPopup, center, selectedPoint, isDataLoaded } =
+    useContext(MapContext);
+  const { t } = useTranslation();
 
-  React.useEffect(() => {
-    if (!loaded) {
-      calcPoints();
-      dispatch({ type: 'SetMap', map: mapRef.current.leafletElement });
+  const { hotels } = useContext(HotelContext);
+  const [loaded, setLoaded] = useState(false);
+  const [map, setMap] = useState(null);
+  const [filteredPoints, setFilteredPoints] = useState([]);
+
+  const calcPoints = useCallback(
+    (map) => {
+      if (map) {
+        const mapBounds = map.getBounds();
+        const points = filterPoints(hotels, mapBounds);
+        setFilteredPoints(points);
+        dispatch({ type: "SetList", list: points });
+      }
+    },
+    [hotels, dispatch]
+  );
+
+  useEffect(() => {
+    calcPoints(map);
+    if (!loaded && hotels.length) {
+      if (map) {
+        dispatch({ type: "SetMap", map });
+      }
       setLoaded(true);
     }
-  }, [dispatch, loaded, calcPoints, mapRef, map]);
+  }, [dispatch, loaded, calcPoints, map, hotels]);
 
-  React.useEffect(() => {
-    if (!locationRequired) {
-      dispatch({ type: 'SetLocator' });
+  const setMapToUsersLocation = useCallback(() => {
+    if (map) {
+      map
+        .locate()
+        .on("locationfound", (e) => {
+          dispatch({ type: "TogglePopup", showPopup: false });
+          map.flyTo(e.latlng, config.map.closeZoomLevel);
+        })
+        .on("locationerror", (e) => {
+          alert(t("error:noGeoLocation"));
+          console.error(e);
+        });
     }
-  }, [locationRequired, dispatch]);
+  }, [map, dispatch, t]);
 
-  const onMarkerClickCallback = React.useCallback(createCallbackForPoint, [dispatch]);
+  useEffect(() => {
+    if (showPopup && selectedPoint && map) {
+      map.flyTo(selectedPoint.geometry.coordinates, map.getZoom());
+    }
+  }, [map, showPopup, selectedPoint]);
 
-  /**
-   * @param {Hotel} point
-   * @returns {function(): void}
-   */
-  function createCallbackForPoint(point) {
-    return () => {
-      dispatch({type: 'SetSelectedPoint', point});
-      dispatch({type: 'TogglePopup', showPopup: true});
-    };
+  function onMarkerClickCallback(point) {
+    dispatch({ type: "SetSelectedPoint", point });
+    dispatch({ type: "TogglePopup", showPopup: true });
   }
 
-  const openLocationListCallback = React.useCallback(() => {
-    calcPoints();
-    dispatch({ type: 'ToggleList', showList: true });
-  }, [dispatch, calcPoints]);
+  function openLocationList(map) {
+    calcPoints(map);
+    dispatch({ type: "ToggleList", showList: true });
+    dispatch({ type: "TogglePopup", showPopup: false });
+  }
+
+  function onClusterClickHandler() {
+    dispatch({ type: "TogglePopup", showPopup: false });
+  }
+
+  function moveHandler() {
+    calcPoints(map);
+  }
 
   return (
     <>
       <div className={styles.map}>
         <div className={styles.mapWrapper}>
-          <Map ref={mapRef} className="markercluster-map" center={center} zoom={16} maxZoom={19} onZoomEnd={calcPoints} onMoveEnd={calcPoints}>
-            <TileLayer
-              url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
-              attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
-            />
-            <MarkerClusterGroup maxClusterRadius={6} zoomToBoundsOnClick={true} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
-              {getMarkerList({points: filteredPoints, selectedPoint, clickCallback: onMarkerClickCallback})}
-            </MarkerClusterGroup>
-            <LocateControl options={locateOptions} started={locationRequired} />
-          </Map>
-          <div className={styles.listButton} onClick={openLocationListCallback}>
-            <Icon img={listIcon} size="small"/>
-          </div>
+          {isDataLoaded ? (
+            <Map
+              className="markercluster-map"
+              center={center}
+              zoom={6}
+              maxZoom={config.map.maxZoom}
+            >
+              <TileLayer
+                url={config.map.url}
+                attribution={config.map.attribution}
+              />
+              <MapCluster
+                filteredPoints={filteredPoints}
+                selectedPoint={selectedPoint}
+                onMarkerClickCallback={onMarkerClickCallback}
+                setMap={setMap}
+                onClusterClick={onClusterClickHandler}
+                onMove={moveHandler}
+              />
+              <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
+              <MapListOpener onLocationListOpen={openLocationList} />
+            </Map>
+          ) : (
+            <MapPlaceholder />
+          )}
         </div>
-
       </div>
-      {showPopup && (<Popup point={selectedPoint}/>)}
+      {showPopup && <Popup point={selectedPoint} />}
     </>
   );
 }

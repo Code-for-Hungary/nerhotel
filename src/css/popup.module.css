@@ -53,8 +53,9 @@
   transition: color .2s;
 }
 
-.popupInfo a:hover {
-  color: #F05F22;
+.popupInfo a:hover,
+.popupInfo a:focus {
+  color: var(--nh-accent-color);
 }
 
 .popupInner span {
@@ -74,26 +75,6 @@
   top: 20px;
   right: 15px;
   cursor: pointer;
-}
-
-
-.popupInner .moreButton {
-  width: 100%;
-  padding: 10px;
-  align-self: flex-end;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto;
-  background-color: #F05F22;
-  border-radius: 4px;
-  box-sizing: border-box;
-  transition: background-color .2s;
-}
-
-.popupInner .moreButton:hover {
-    background-color: #ce521d;
 }
 
 .popupRow {

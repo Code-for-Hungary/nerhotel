@@ -1,14 +1,18 @@
 .header {
+  --menu-button-top: 35px;
+  --padding-x: 20px;
+  --z-header: 10;
+  --header-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
   position: fixed;
   display: flex;
   top: 0;
   left: 0;
   width: 100%;
   height: 160px;
-  padding: 10px 20px;
+  padding: 10px var(--padding-x);
   background: #fff;
-  z-index: 10;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  z-index: var(--z-header);
+  box-shadow: var(--header-shadow);
   box-sizing: border-box;
 }
 
@@ -46,6 +50,18 @@
 }
 
 
+@media (min-width: 481px) and (max-width: 1100px) {
+  .header {
+    padding: 10px 74px 10px 70px; /* 1) */
+  }
+
+  .headerWrapper {
+    margin-left: 0; /* 1) */
+  }
+
+  /* 1: offset the absolute positioned hamburger icon and the language switcher */
+}
+
 .logo {
   display: block;
   height: 80%;
@@ -76,14 +92,11 @@
   width: 20%;
 }
 
-@media (max-width: 480px) {
-  .headerInner {
-    width: 80%;
-  }
-
-  .icons {
-    width: 100%;
-  }
+.langSwitchContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--padding-x);
 }
 
 .large {
@@ -109,7 +122,40 @@
 
 .menubutton {
   position: absolute;
-  top: 35px;
-  left: 20px;
+  top: var(--menu-button-top);
+  left: var(--padding-x);
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .headerInner {
+    width: 80%;
+  }
+
+  .icons {
+    width: 100%;
+  }
+
+  .langSwitchContainer {
+    top: auto;
+    bottom: 10px;
+    right: auto;
+    transform: none;
+    left: var(--padding-x);
+  }
+
+  .header {
+    --menu-button-top: 16px;
+  }
+  
+}
+
+@media (max-width: 350px) {
+  .logo {
+    margin-right: 16px;
+  }
+
+  .headerInner {
+    width: 70%;
+  }
 }

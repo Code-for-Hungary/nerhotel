@@ -45,7 +45,7 @@
 }
 
 .menulist li a:hover {
-    color: #F05F22;
+    color: var(--nh-accent-color);
 }
 
 .footer {

@@ -1,4 +1,4 @@
-import React from 'react';
+import { createContext } from 'react';
 
 const mapValue = {
   list: [],
@@ -11,10 +11,10 @@ const mapValue = {
   dispatch: () => {}
 };
 
-export const MapContext = React.createContext(mapValue);
+export const MapContext = createContext(mapValue);
 
 const hotelValue = {
   hotels: []
 };
 
-export const HotelContext = React.createContext(hotelValue);
+export const HotelContext = createContext(hotelValue);

@@ -1,0 +1,23 @@
+.button {
+    display: inline-block;
+    padding: 10px;
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--nh-accent-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: background-color .2s;
+    text-decoration: none;
+}
+  
+.button.fullWidth {
+    display: block;
+    width: 100%;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #ce521d;
+}
