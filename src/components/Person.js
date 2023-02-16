@@ -17,10 +17,12 @@ import horseIcon from "../assets/horse-icon.svg";
 
 import { config } from "../config";
 import _getAllHotelsAffiliatedWithPerson from "../utils/person/get-all-hotels-affiliated-with-person";
+import getTranslatedKMonitorLink from "../utils/person/get-translated-k-monitor-link";
 
 const Person = (props) => {
   const personName = props.name;
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const { resolvedLanguage } = i18n;
 
   const hotelContext = useContext(HotelContext);
   /** @type {Hotel[]} */
@@ -51,7 +53,10 @@ const Person = (props) => {
       ))
   );
   /** @type {string} */
-  const personUrl = affiliatedHotels.length && person ? person.link : "";
+  let personUrl = affiliatedHotels.length && person ? person.link : "";
+  if (personUrl && resolvedLanguage === "en") {
+    personUrl = getTranslatedKMonitorLink(personUrl);
+  }
 
   const bounds = affiliatedHotels.length
     ? new Leaflet.LatLngBounds(
