@@ -65,9 +65,6 @@ const Hotel = (props) => {
     ? getOligarchData(data.oligarchs || [], data.ceos || [])
     : null;
 
-  console.log(resolvedLanguage);
-  console.log(data);
-
   return (
     <div className={[styles.hotel, "hotel"].join(" ")}>
       <div className={styles.hotelWrapper}>
