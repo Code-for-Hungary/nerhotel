@@ -10,6 +10,7 @@ import ContentPageView from "./views/ContentPageView";
 import PersonView from "./views/PersonView";
 import ErrorView from "./views/ErrorView";
 import ErrorBoundary from "./components/ErrorBoundary";
+import AnalyticsWrapper from "./components/AnalyticsWrapper";
 
 import { MapContext, HotelContext } from "./context";
 import reducer, { initialState } from "./reducer";
@@ -77,15 +78,21 @@ function App() {
         <HotelContext.Provider value={{ hotels }}>
           <MapContext.Provider value={mapData}>
             <HashRouter>
-              <Switch>
-                <Route path="/" exact component={MapView} />
-                <Route path="/hotel/:id" exact component={HotelView} />
-                <Route path="/about" exact component={ContentPageView} />
-                <Route path="/contact" exact component={ContentPageView} />
-                <Route path="/person/:name" exact component={PersonView} />
-                <Route path="/data-export" exact component={ContentPageView} />
-                <Route path="*" component={ErrorView} />
-              </Switch>
+              <AnalyticsWrapper>
+                <Switch>
+                  <Route path="/" exact component={MapView} />
+                  <Route path="/hotel/:id" exact component={HotelView} />
+                  <Route path="/about" exact component={ContentPageView} />
+                  <Route path="/contact" exact component={ContentPageView} />
+                  <Route path="/person/:name" exact component={PersonView} />
+                  <Route
+                    path="/data-export"
+                    exact
+                    component={ContentPageView}
+                  />
+                  <Route path="*" component={ErrorView} />
+                </Switch>
+              </AnalyticsWrapper>
             </HashRouter>
           </MapContext.Provider>
         </HotelContext.Provider>
