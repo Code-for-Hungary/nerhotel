@@ -1,16 +1,9 @@
-function sendToGa(name, data) {
-  window.ga(() => {
-    const trackers = window.ga.getAll();
-    const firstTracker = trackers[0];
-    const trackerName = firstTracker.get("name");
-    window.ga(trackerName + "." + name, data);
-  });
-}
-
 function trackPageView() {
-  console.log(window.location.hash);
-  window.ga("set", "page", window.location.hash);
-  window.ga("send", "pageview");
+  const hashAsArray = window.location.hash.split("");
+  hashAsArray.shift();
+  const withoutHashMark = hashAsArray.join("");
+  window.ga("gtm2.set", "page", withoutHashMark);
+  window.ga("gtm2.send", "pageview");
 }
 
 export default trackPageView;
