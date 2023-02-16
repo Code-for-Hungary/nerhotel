@@ -6,7 +6,7 @@ import Leaflet from "leaflet";
 import { MapContainer as Map, TileLayer } from "react-leaflet";
 import { HotelContext } from "../context";
 import { getMarkerList } from "../leaflet-helper.js";
-import getTranslatedHotelProperty from "../utils/get-translated-hotel-property";
+import AssociatedHotel from "./person/AssociatedHotel";
 
 import Icon from "./Icon.js";
 
@@ -20,8 +20,7 @@ import _getAllHotelsAffiliatedWithPerson from "../utils/person/get-all-hotels-af
 
 const Person = (props) => {
   const personName = props.name;
-  const { t, i18n } = useTranslation();
-  const { resolvedLanguage } = i18n;
+  const { t } = useTranslation();
 
   const hotelContext = useContext(HotelContext);
   /** @type {Hotel[]} */
@@ -100,40 +99,7 @@ const Person = (props) => {
                 <div className={styles.hotelRow}>
                   <ul>
                     {affiliatedHotels.map((hotel, key) => (
-                      <li key={key} className={styles.oligarch}>
-                        <SmartLink to={`/hotel/${hotel.properties.id}`}>
-                          {getTranslatedHotelProperty(
-                            "name",
-                            resolvedLanguage,
-                            hotel.properties
-                          )}
-                        </SmartLink>
-                        <span className={styles.title}>
-                          {" "}
-                          (
-                          {getTranslatedHotelProperty(
-                            "type",
-                            resolvedLanguage,
-                            hotel.properties
-                          )}
-                          )
-                        </span>
-                        {hotel.properties.address &&
-                          ` – ${hotel.properties.address}`}
-                        {hotel.properties.date && (
-                          <> – {hotel.properties.date}</>
-                        )}
-                        {hotel.properties.details && (
-                          <p>
-                            <span>{t("general:additionalInfo")}:</span>{" "}
-                            {getTranslatedHotelProperty(
-                              "details",
-                              resolvedLanguage,
-                              hotel.properties
-                            )}
-                          </p>
-                        )}
-                      </li>
+                      <AssociatedHotel hotel={hotel} key={key} />
                     ))}
                   </ul>
                 </div>
