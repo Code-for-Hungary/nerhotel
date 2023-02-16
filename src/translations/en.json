@@ -40,7 +40,7 @@
     "emptyState": "There is no matching location in our database. If you know of a place owned or managed by a politically exposed person, <1>send it to us</1>!"
   },
   "person": {
-    "dbLink": "K-Monitor",
+    "dbLink": "More info in the K-Monitor database",
     "relatedPlaces": "Related venues",
     "pep": "PEP",
     "owner": "owner",
