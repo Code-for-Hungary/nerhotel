@@ -1,13 +1,12 @@
-import MapComponent from '../components/Map.js';
-import Layout from './Layout';
+import MapComponent from "../components/Map";
+import Layout from "./Layout";
 
 const MapView = (props) => {
   return (
     <Layout withSearch={true} withList={true} history={props.history}>
-      <MapComponent/>
+      <MapComponent />
     </Layout>
   );
 };
-
 
 export default MapView;

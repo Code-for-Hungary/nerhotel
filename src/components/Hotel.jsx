@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { MapContainer as LeafletMap, Marker, TileLayer } from "react-leaflet";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
-import { SmartLink } from "./SmartLink.js";
-import Icon from "./Icon.js";
-import HotelImage from "./HotelImage.js";
+import { SmartLink } from "./SmartLink";
+import Icon from "./Icon";
+import HotelImage from "./HotelImage";
 
 import { getOligarchData } from "../utils";
 import { MapContext, HotelContext } from "../context";

@@ -8,7 +8,7 @@ import { HotelContext } from "../context";
 import { getMarkerList } from "../leaflet-helper.js";
 import AssociatedHotel from "./person/AssociatedHotel";
 
-import Icon from "./Icon.js";
+import Icon from "./Icon";
 
 import styles from "../css/hotel.module.css";
 import arrowIcon from "../assets/arrow-icon.svg";
