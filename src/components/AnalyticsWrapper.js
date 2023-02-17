@@ -11,10 +11,9 @@ function AnalyticsWrapper({ children }) {
   useEffect(() => {
     if (selectedPoint) {
       ReactGa.event({
-        action: "open",
+        action: "open popup",
         category: "map",
-        label: "Map Pop-up Opened",
-        value: `${selectedPoint.properties.name} (id: ${selectedPoint.properties.id})`,
+        label: `${selectedPoint.properties.name} (id: ${selectedPoint.properties.id})`,
       });
     }
   }, [selectedPoint]);
