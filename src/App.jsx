@@ -1,5 +1,5 @@
 import { useEffect, useState, useReducer, lazy, Suspense } from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import "./App.css";
@@ -115,7 +115,7 @@ function App() {
                 </Helmet>
                 <HotelContext.Provider value={{ hotels }}>
                     <MapContext.Provider value={mapData}>
-                        <HashRouter>
+                        <BrowserRouter>
                             <AnalyticsWrapper>
                                 <Switch>
                                     <Route path="/" exact component={MapPage} />
@@ -127,7 +127,7 @@ function App() {
                                     <Route path="*" component={ErrorPage} />
                                 </Switch>
                             </AnalyticsWrapper>
-                        </HashRouter>
+                        </BrowserRouter>
                     </MapContext.Provider>
                 </HotelContext.Provider>
             </ErrorBoundary>
