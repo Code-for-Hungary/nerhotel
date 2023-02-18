@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import Leaflet from "leaflet";
 import { MapContainer as Map, TileLayer } from "react-leaflet";
 import { HotelContext } from "../context";
-import { getMarkerList } from "../leaflet-helper.js";
+import { getMarkerList } from "../leaflet-helper.jsx";
 import AssociatedHotel from "./person/AssociatedHotel";
 
 import Icon from "./Icon";

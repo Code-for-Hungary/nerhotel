@@ -1,3 +1,4 @@
+import { describe, it, expect } from "vitest";
 import getTranslatedKMonitorLink from "./get-translated-k-monitor-link";
 
 describe("A function to get a Google Translate link for the person database URLs", () => {

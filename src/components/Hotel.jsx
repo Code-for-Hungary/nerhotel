@@ -8,7 +8,7 @@ import HotelImage from "./HotelImage";
 
 import { getOligarchData } from "../utils";
 import { MapContext, HotelContext } from "../context";
-import { createOrangeIcon } from "../leaflet-helper.js";
+import { createOrangeIcon } from "../leaflet-helper.jsx";
 import getTranslatedHotelProperty from "../utils/get-translated-hotel-property.js";
 
 import styles from "../css/hotel.module.css";

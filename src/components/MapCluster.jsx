@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useMap, useMapEvents } from "react-leaflet";
 
-import { createClusterCustomIcon, getMarkerList } from "../leaflet-helper.js";
+import { createClusterCustomIcon, getMarkerList } from "../leaflet-helper.jsx";
 import MarkerClusterGroup from "react-leaflet-cluster";
 
 function MapCluster({
