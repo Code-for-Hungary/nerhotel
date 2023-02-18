@@ -1,10 +1,8 @@
-import { useContext, useState, useCallback, useEffect } from "react";
+import { useContext, useState, useCallback, useEffect, lazy, Suspense } from "react";
 import { MapContainer as Map, TileLayer } from "react-leaflet";
 import LocateControl from "./LocateControl";
 import MapListOpener from "./MapListOpener";
 import { useTranslation } from "react-i18next";
-
-import Popup from "../components/Popup";
 
 import styles from "../css/map.module.css";
 import { MapContext, HotelContext } from "../context";
@@ -13,6 +11,16 @@ import { config } from "../config.js";
 import filterPoints from "../utils/map/filter-points.js";
 import MapCluster from "./MapCluster";
 import MapPlaceholder from "./MapPlaceholder";
+
+const Popup = lazy(() => import("../components/Popup"));
+
+function LazyPopup(props) {
+    return (
+        <Suspense>
+            <Popup {...props} />
+        </Suspense>
+    );
+}
 
 function MapComponent() {
     const { dispatch, showPopup, center, selectedPoint, isDataLoaded } = useContext(MapContext);
@@ -107,7 +115,7 @@ function MapComponent() {
                     )}
                 </div>
             </div>
-            {showPopup && <Popup point={selectedPoint} />}
+            {showPopup && <LazyPopup point={selectedPoint} />}
         </>
     );
 }
