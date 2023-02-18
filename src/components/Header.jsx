@@ -54,14 +54,14 @@ const Header = (props) => {
                     }}
                     className={styles.logo}
                 >
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="" width="47" height="112" style={{ aspectRatio: "47 / 112" }} />
                 </SmartLink>
                 <div className={styles.headerInner}>
                     <div className={styles.icons}>
-                        <img src={hotel} alt="" />
-                        <img src={beach} alt="" />
-                        <img src={restaurant} alt="" />
-                        <img src={golf} alt="" />
+                        <img src={hotel} alt="" width="40" height="40" />
+                        <img src={beach} alt="" width="40" height="40" />
+                        <img src={restaurant} alt="" width="40" height="40" />
+                        <img src={golf} alt="" width="40" height="40" />
                     </div>
                     {props.withSearch && <Search />}
                 </div>
