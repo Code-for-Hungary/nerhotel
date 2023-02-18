@@ -8,10 +8,10 @@ A térképhez a [react-leaflet](https://react-leaflet.js.org/) library-t haszná
 
 ## Hogyan futattom a helyi gépemen?
 
-1. Installáld fel a dependenciákat `yarn install` vagy `npm install` parancsal
-2. Futasd az alkalmazást DEV módban a `yarn dev` vagy az `npm run dev`
+1. Installáld fel a dependenciákat `npm install` vagy `yarn install` parancsal
+2. Futasd az alkalmazást DEV módban a `npm run dev` vagy az `yarn dev`
 
-> ⚠️ **Fontos!** JavaScript csomagkezelőnek a [Yarnt](https://yarnpkg.com/) preferáljuk. Természetesen ettől még használhatsz localban NPM-t is, ellenben a generált `package-lock.json`-t kivettük a verziókezelés alól, hogy a CI környezetben ne akadjon össze a `yarn.lock`-al és csak egy lock file-unk legyen, mint az igazság forrása.
+> ⚠️ **Fontos!** JavaScript csomagkezelőnek a NPM-t preferáljuk. Természetesen ettől még használhatsz localban Yarn-t (vagy bármi mást) is, ellenben a generált `yarn.lock`-t kivettük a verziókezelés alól, hogy a CI környezetben ne akadjon össze a `package-lock.json`-al és csak egy lock file-unk legyen, mint az igazság forrása.
 
 ## Honnan jönnek az adatok?
 

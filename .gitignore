@@ -4,8 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-# The project preferes Yarn so only yarn.lock should be in VCS
-package-lock.json
+# The project preferes NPM so only npm-lock.json should be in VCS
+yarn.lock
 
 # testing
 /coverage
