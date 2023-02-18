@@ -20,85 +20,77 @@ import { config } from "./config";
 import loadHotelDataFromCsv from "./utils/load-hotel-data-from-csv";
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  const mapData = { ...state, dispatch };
-  const { i18n, t } = useTranslation();
-  const [hotels, setHotels] = useState([]);
+    const [state, dispatch] = useReducer(reducer, initialState);
+    const mapData = { ...state, dispatch };
+    const { i18n, t } = useTranslation();
+    const [hotels, setHotels] = useState([]);
 
-  useEffect(() => {
-    const queryString = window.location.href.split("?")[1];
-    const urlParamsObj = new URLSearchParams(queryString);
+    useEffect(() => {
+        const queryString = window.location.href.split("?")[1];
+        const urlParamsObj = new URLSearchParams(queryString);
 
-    let preferredLang;
-    if (urlParamsObj.has(config.locales.paramName)) {
-      preferredLang = urlParamsObj.get(config.locales.paramName);
-    } else {
-      preferredLang = localStorage.getItem(config.locales.paramName);
-    }
-
-    if (
-      preferredLang &&
-      config.locales.available.includes(preferredLang) &&
-      preferredLang !== i18n.options.lng
-    ) {
-      i18n.changeLanguage(preferredLang);
-      localStorage.setItem(config.locales.paramName, preferredLang);
-    }
-  }, [i18n]);
-
-  useEffect(() => {
-    let isSubscribed = true;
-
-    loadHotelDataFromCsv()
-      .then((data) => {
-        if (isSubscribed) {
-          setHotels(data);
+        let preferredLang;
+        if (urlParamsObj.has(config.locales.paramName)) {
+            preferredLang = urlParamsObj.get(config.locales.paramName);
+        } else {
+            preferredLang = localStorage.getItem(config.locales.paramName);
         }
-      })
-      .catch((e) => {
-        console.error(e);
-      })
-      .finally(() => {
-        dispatch({ type: "SetDataLoaded" });
-      });
 
-    return () => {
-      isSubscribed = false;
-    };
-  }, []);
+        if (preferredLang && config.locales.available.includes(preferredLang) && preferredLang !== i18n.options.lng) {
+            i18n.changeLanguage(preferredLang);
+            localStorage.setItem(config.locales.paramName, preferredLang);
+        }
+    }, [i18n]);
 
-  return (
-    <>
-      <ErrorBoundary>
-        <Helmet>
-          <title>
-            {t("general:tagline")} - {t("general:siteName")}
-          </title>
-        </Helmet>
-        <HotelContext.Provider value={{ hotels }}>
-          <MapContext.Provider value={mapData}>
-            <HashRouter>
-              <AnalyticsWrapper>
-                <Switch>
-                  <Route path="/" exact component={MapView} />
-                  <Route path="/hotel/:id" exact component={HotelView} />
-                  <Route path="/about" exact component={ContentPageView} />
-                  <Route path="/contact" exact component={ContentPageView} />
-                  <Route path="/person/:name" exact component={PersonView} />
-                  <Route
-                    path="/data-export"
-                    exact
-                    component={ContentPageView}
-                  />
-                  <Route path="*" component={ErrorView} />
-                </Switch>
-              </AnalyticsWrapper>
-            </HashRouter>
-          </MapContext.Provider>
-        </HotelContext.Provider>
-      </ErrorBoundary>
-    </>
-  );
+    useEffect(() => {
+        let isSubscribed = true;
+
+        loadHotelDataFromCsv()
+            .then((data) => {
+                if (isSubscribed) {
+                    setHotels(data);
+                }
+            })
+            .catch((e) => {
+                console.error(e);
+            })
+            .finally(() => {
+                dispatch({ type: "SetDataLoaded" });
+            });
+
+        return () => {
+            isSubscribed = false;
+        };
+    }, []);
+
+    return (
+        <>
+            <ErrorBoundary>
+                <Helmet>
+                    <title>
+                        {t("general:tagline")} - {t("general:siteName")}
+                    </title>
+                </Helmet>
+                <HotelContext.Provider value={{ hotels }}>
+                    <MapContext.Provider value={mapData}>
+                        <HashRouter>
+                            <AnalyticsWrapper>
+                                <Switch>
+                                    <Route path="/" exact component={MapView} />
+                                    <Route path="/hotel/:id" exact component={HotelView} />
+                                    <Route path="/about" exact component={ContentPageView} />
+                                    <Route path="/contact" exact component={ContentPageView} />
+                                    <Route path="/person/:name" exact component={PersonView} />
+                                    <Route path="/data-export" exact component={ContentPageView} />
+                                    <Route path="*" component={ErrorView} />
+                                </Switch>
+                            </AnalyticsWrapper>
+                        </HashRouter>
+                    </MapContext.Provider>
+                </HotelContext.Provider>
+            </ErrorBoundary>
+        </>
+    );
 }
 
 export default App;

@@ -52,166 +52,127 @@ const icon = createOrangeIcon();
  * @property {{name: string, link: string}[]} properties.mainOligarch
  */
 const Hotel = (props) => {
-  const { dispatch } = useContext(MapContext);
-  const { hotels } = useContext(HotelContext);
-  const { t, i18n } = useTranslation();
-  const { resolvedLanguage } = i18n;
-  const hotelById = hotels.length
-    ? hotels.find((hotel) => hotel.properties.id === parseInt(props.id))
-    : null;
-  const data = hotelById ? hotelById.properties : null;
-  const location = hotelById ? hotelById.geometry.coordinates : null;
-  const oligarchData = hotelById
-    ? getOligarchData(data.oligarchs || [], data.ceos || [])
-    : null;
+    const { dispatch } = useContext(MapContext);
+    const { hotels } = useContext(HotelContext);
+    const { t, i18n } = useTranslation();
+    const { resolvedLanguage } = i18n;
+    const hotelById = hotels.length ? hotels.find((hotel) => hotel.properties.id === parseInt(props.id)) : null;
+    const data = hotelById ? hotelById.properties : null;
+    const location = hotelById ? hotelById.geometry.coordinates : null;
+    const oligarchData = hotelById ? getOligarchData(data.oligarchs || [], data.ceos || []) : null;
 
-  return (
-    <div className={[styles.hotel, "hotel"].join(" ")}>
-      <div className={styles.hotelWrapper}>
-        <div className={styles.info}>
-          {data ? (
-            <>
-              <Helmet>
-                <title>
-                  {getTranslatedHotelProperty("name", resolvedLanguage, data)} -{" "}
-                  {t("general:siteName")}
-                </title>
-              </Helmet>
-              <h1>
-                {getTranslatedHotelProperty("name", resolvedLanguage, data)}
-              </h1>
-              <div className={styles.hotelRow}>
-                <p>
-                  {t("hotel:type")}:{" "}
-                  <span>
-                    {getTranslatedHotelProperty("type", resolvedLanguage, data)}
-                  </span>
-                </p>
-              </div>
-              {data.company && (
-                <div className={styles.hotelRow}>
-                  <Icon img={hotelIcon} size="small" />
-                  <p>
-                    {t("general:maintainer")}:{" "}
-                    {data.company.link ? (
-                      <span>
-                        <SmartLink to={data.company.link}>
-                          {data.company.name}
-                        </SmartLink>
-                      </span>
-                    ) : (
-                      <span>{data.company.name}</span>
-                    )}
-                  </p>
-                </div>
-              )}
-              {oligarchData && (
-                <div className={styles.hotelRow}>
-                  <Icon img={horseIcon} size="small" />
-                  <p>
-                    {t("hotel:people")}:<br />
-                    {oligarchData.map((oligarch, key) => (
-                      <span key={key} className={styles.oligarch}>
-                        <SmartLink to={`/person/${oligarch.name}`}>
-                          {oligarch.name}
-                        </SmartLink>
-                        <span className={styles.title}>
-                          {" "}
-                          ({displayTranslatedPersonType(oligarch.data.type, t)})
-                        </span>
-                        <br />
-                      </span>
-                    ))}
-                  </p>
-                </div>
-              )}
-              {data.address && (
-                <div className={styles.hotelRow}>
-                  <Icon img={pinIcon} size="small" />
-                  <p>
-                    {t("general:address")}: <span>{data.address}</span>
-                  </p>
-                </div>
-              )}
-              {data.link !== "" && (
-                <div className={styles.hotelRow}>
-                  <Icon img={linkIcon} size="small" />
-                  <SmartLink
-                    to={getTranslatedHotelProperty(
-                      "link",
-                      resolvedLanguage,
-                      data
-                    )}
-                  >
-                    <span>{t("general:article")}</span>
-                  </SmartLink>
-                </div>
-              )}
-              {data.details !== "" && (
-                <div className={styles.hotelRow}>
-                  <p>
-                    {(resolvedLanguage === "hu" && data.details) ||
-                    (resolvedLanguage === "en" && data.en.details) ? (
-                      <span style={{ display: "block" }}>
-                        {t("general:additionalInfo")}:
-                      </span>
+    return (
+        <div className={[styles.hotel, "hotel"].join(" ")}>
+            <div className={styles.hotelWrapper}>
+                <div className={styles.info}>
+                    {data ? (
+                        <>
+                            <Helmet>
+                                <title>
+                                    {getTranslatedHotelProperty("name", resolvedLanguage, data)} - {t("general:siteName")}
+                                </title>
+                            </Helmet>
+                            <h1>{getTranslatedHotelProperty("name", resolvedLanguage, data)}</h1>
+                            <div className={styles.hotelRow}>
+                                <p>
+                                    {t("hotel:type")}: <span>{getTranslatedHotelProperty("type", resolvedLanguage, data)}</span>
+                                </p>
+                            </div>
+                            {data.company && (
+                                <div className={styles.hotelRow}>
+                                    <Icon img={hotelIcon} size="small" />
+                                    <p>
+                                        {t("general:maintainer")}:{" "}
+                                        {data.company.link ? (
+                                            <span>
+                                                <SmartLink to={data.company.link}>{data.company.name}</SmartLink>
+                                            </span>
+                                        ) : (
+                                            <span>{data.company.name}</span>
+                                        )}
+                                    </p>
+                                </div>
+                            )}
+                            {oligarchData && (
+                                <div className={styles.hotelRow}>
+                                    <Icon img={horseIcon} size="small" />
+                                    <p>
+                                        {t("hotel:people")}:<br />
+                                        {oligarchData.map((oligarch, key) => (
+                                            <span key={key} className={styles.oligarch}>
+                                                <SmartLink to={`/person/${oligarch.name}`}>{oligarch.name}</SmartLink>
+                                                <span className={styles.title}>
+                                                    {" "}
+                                                    ({displayTranslatedPersonType(oligarch.data.type, t)})
+                                                </span>
+                                                <br />
+                                            </span>
+                                        ))}
+                                    </p>
+                                </div>
+                            )}
+                            {data.address && (
+                                <div className={styles.hotelRow}>
+                                    <Icon img={pinIcon} size="small" />
+                                    <p>
+                                        {t("general:address")}: <span>{data.address}</span>
+                                    </p>
+                                </div>
+                            )}
+                            {data.link !== "" && (
+                                <div className={styles.hotelRow}>
+                                    <Icon img={linkIcon} size="small" />
+                                    <SmartLink to={getTranslatedHotelProperty("link", resolvedLanguage, data)}>
+                                        <span>{t("general:article")}</span>
+                                    </SmartLink>
+                                </div>
+                            )}
+                            {data.details !== "" && (
+                                <div className={styles.hotelRow}>
+                                    <p>
+                                        {(resolvedLanguage === "hu" && data.details) || (resolvedLanguage === "en" && data.en.details) ? (
+                                            <span style={{ display: "block" }}>{t("general:additionalInfo")}:</span>
+                                        ) : null}
+                                        {resolvedLanguage === "hu" ? data.details : null}
+                                        {resolvedLanguage === "en" && data.en && data.en.details ? data.en.details : ""}
+                                    </p>
+                                </div>
+                            )}
+                            {data.date !== "" && (
+                                <div className={styles.hotelRow}>
+                                    <p>
+                                        {t("hotel:updatedOn")}: <span>{data.date}</span>
+                                    </p>
+                                </div>
+                            )}
+
+                            {data.picture && (
+                                <HotelImage src={data.picture} alt={getTranslatedHotelProperty("name", resolvedLanguage, data)} />
+                            )}
+                        </>
                     ) : null}
-                    {resolvedLanguage === "hu" ? data.details : null}
-                    {resolvedLanguage === "en" && data.en && data.en.details
-                      ? data.en.details
-                      : ""}
-                  </p>
-                </div>
-              )}
-              {data.date !== "" && (
-                <div className={styles.hotelRow}>
-                  <p>
-                    {t("hotel:updatedOn")}: <span>{data.date}</span>
-                  </p>
-                </div>
-              )}
 
-              {data.picture && (
-                <HotelImage
-                  src={data.picture}
-                  alt={getTranslatedHotelProperty(
-                    "name",
-                    resolvedLanguage,
-                    data
-                  )}
-                />
-              )}
-            </>
-          ) : null}
-
-          <SmartLink
-            className={styles.back}
-            onClick={() => {
-              goBack(dispatch, hotelById, location);
-            }}
-            to="/"
-          >
-            <Icon img={arrowIcon} alt={t("backToMap")} size="large" />
-          </SmartLink>
+                    <SmartLink
+                        className={styles.back}
+                        onClick={() => {
+                            goBack(dispatch, hotelById, location);
+                        }}
+                        to="/"
+                    >
+                        <Icon img={arrowIcon} alt={t("backToMap")} size="large" />
+                    </SmartLink>
+                </div>
+                <div className={styles.map}>
+                    {location ? (
+                        <LeafletMap className="markercluster-map" center={location} zoom={config.map.closeZoomLevel}>
+                            <TileLayer url={config.map.url} attribution={config.map.attribution} />
+                            <Marker position={location} icon={icon} />
+                        </LeafletMap>
+                    ) : null}
+                </div>
+            </div>
         </div>
-        <div className={styles.map}>
-          {location ? (
-            <LeafletMap
-              className="markercluster-map"
-              center={location}
-              zoom={config.map.closeZoomLevel}
-            >
-              <TileLayer
-                url={config.map.url}
-                attribution={config.map.attribution}
-              />
-              <Marker position={location} icon={icon} />
-            </LeafletMap>
-          ) : null}
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Hotel;

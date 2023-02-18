@@ -1,11 +1,11 @@
-import styles from '../css/icon.module.css';
+import styles from "../css/icon.module.css";
 
 function Icon(props) {
-  return (
-    <div className={[styles.iconWrapper, styles[props.size]].join(' ') + ' ' + (props.className || '')}>
-      <img src={props.img} alt={props.alt ? props.alt : ''} />
-    </div>
-  );
+    return (
+        <div className={[styles.iconWrapper, styles[props.size]].join(" ") + " " + (props.className || "")}>
+            <img src={props.img} alt={props.alt ? props.alt : ""} />
+        </div>
+    );
 }
 
 export default Icon;

@@ -1,5 +1,5 @@
-import Layout from './Layout';
-import ErrorScreen from '../components/ErrorScreen';
+import Layout from "./Layout";
+import ErrorScreen from "../components/ErrorScreen";
 
 function ErrorView(props) {
     return (

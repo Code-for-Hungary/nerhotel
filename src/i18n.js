@@ -5,12 +5,12 @@ import en from "./translations/en.json";
 import { config } from "./config";
 
 i18next.use(initReactI18next).init({
-  debug: import.meta.env.MODE === "development",
-  defaultNS: "general",
-  lng: config.locales.default,
-  fallbackLng: config.locales.default,
-  resources: {
-    hu,
-    en,
-  },
+    debug: import.meta.env.MODE === "development",
+    defaultNS: "general",
+    lng: config.locales.default,
+    fallbackLng: config.locales.default,
+    resources: {
+        hu,
+        en,
+    },
 });

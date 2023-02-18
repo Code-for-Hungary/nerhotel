@@ -1,4 +1,4 @@
-import styles from '../css/lang-switch.module.css';
+import styles from "../css/lang-switch.module.css";
 
 function LangSwitch(props) {
     return (
@@ -6,10 +6,7 @@ function LangSwitch(props) {
             {props.availableLocales.map((locale) => {
                 const isCurrent = props.currentLocale === locale;
                 return (
-                    <label
-                        className={`${styles.langSwitchButton} ${isCurrent ? styles.active : ''}`}
-                        key={locale}
-                    >
+                    <label className={`${styles.langSwitchButton} ${isCurrent ? styles.active : ""}`} key={locale}>
                         <span className="sr-only">
                             <input
                                 type="radio"
@@ -21,7 +18,7 @@ function LangSwitch(props) {
                         </span>
                         {locale}
                     </label>
-                )
+                );
             })}
         </form>
     );
