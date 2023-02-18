@@ -1,0 +1,6 @@
+*.md
+*.svg
+.gitignore
+*.txt
+yarn.lock
+*.json

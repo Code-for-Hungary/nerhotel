@@ -1,158 +1,158 @@
 .header {
-  --menu-button-top: 35px;
-  --padding-x: 20px;
-  --z-header: 10;
-  --header-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
-  position: fixed;
-  display: flex;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 160px;
-  padding: 10px var(--padding-x);
-  background: #fff;
-  z-index: var(--z-header);
-  box-shadow: var(--header-shadow);
-  box-sizing: border-box;
+    --menu-button-top: 35px;
+    --padding-x: 20px;
+    --z-header: 10;
+    --header-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    padding: 10px var(--padding-x);
+    background: #fff;
+    z-index: var(--z-header);
+    box-shadow: var(--header-shadow);
+    box-sizing: border-box;
 }
 
 .headerWrapper {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .small .headerWrapper {
-  justify-content: flex-start;
+    justify-content: flex-start;
 }
 
 @media (max-width: 480px) {
-  .header {
-    justify-content: flex-end;
-  }
+    .header {
+        justify-content: flex-end;
+    }
 
-  .headerWrapper,
-  .small .headerWrapper {
-    justify-content: flex-end;
-  }
+    .headerWrapper,
+    .small .headerWrapper {
+        justify-content: flex-end;
+    }
 
-  .headerWrapper {
-    max-width: 80%;
-    margin: 0;
-  }
+    .headerWrapper {
+        max-width: 80%;
+        margin: 0;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 1100px) {
-  .header {
-    padding: 10px 74px 10px 70px; /* 1) */
-  }
+    .header {
+        padding: 10px 74px 10px 70px; /* 1) */
+    }
 
-  .headerWrapper {
-    margin-left: 0; /* 1) */
-  }
+    .headerWrapper {
+        margin-left: 0; /* 1) */
+    }
 
-  /* 1: offset the absolute positioned hamburger icon and the language switcher */
+    /* 1: offset the absolute positioned hamburger icon and the language switcher */
 }
 
 .logo {
-  display: block;
-  height: 80%;
-  margin-right: 20px;
-  cursor: pointer;
+    display: block;
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 .logo img {
-  height: 100%;
+    height: 100%;
 }
 
 .headerInner {
-  display: flex;
-  width: 90%;
-  height: 80%;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    width: 90%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .icons {
-  width: 25%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .icons img {
-  width: 20%;
+    width: 20%;
 }
 
 .langSwitchContainer {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: var(--padding-x);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: var(--padding-x);
 }
 
 .large {
-  height: 160px;
+    height: 160px;
 }
 
 .small {
-  height: 100px;
+    height: 100px;
 }
 
 .small .icons {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .header a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .header h1 {
-  color: #000;
-  text-transform: uppercase;
+    color: #000;
+    text-transform: uppercase;
 }
 
 .menubutton {
-  position: absolute;
-  top: var(--menu-button-top);
-  left: var(--padding-x);
-  cursor: pointer;
+    position: absolute;
+    top: var(--menu-button-top);
+    left: var(--padding-x);
+    cursor: pointer;
 }
 
 @media (max-width: 480px) {
-  .headerInner {
-    width: 80%;
-  }
+    .headerInner {
+        width: 80%;
+    }
 
-  .icons {
-    width: 100%;
-  }
+    .icons {
+        width: 100%;
+    }
 
-  .langSwitchContainer {
-    top: auto;
-    bottom: 10px;
-    right: auto;
-    transform: none;
-    left: var(--padding-x);
-  }
+    .langSwitchContainer {
+        top: auto;
+        bottom: 10px;
+        right: auto;
+        transform: none;
+        left: var(--padding-x);
+    }
 
-  .header {
-    --menu-button-top: 16px;
-  }
+    .header {
+        --menu-button-top: 16px;
+    }
 }
 
 @media (max-width: 350px) {
-  .logo {
-    margin-right: 16px;
-  }
+    .logo {
+        margin-right: 16px;
+    }
 
-  .headerInner {
-    width: 70%;
-  }
+    .headerInner {
+        width: 70%;
+    }
 }

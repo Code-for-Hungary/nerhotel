@@ -8,10 +8,10 @@
     background-color: var(--nh-accent-color);
     border-radius: 4px;
     box-sizing: border-box;
-    transition: background-color .2s;
+    transition: background-color 0.2s;
     text-decoration: none;
 }
-  
+
 .button.fullWidth {
     display: block;
     width: 100%;

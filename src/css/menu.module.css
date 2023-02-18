@@ -12,7 +12,7 @@
     overflow: auto;
     background: #fff;
     box-sizing: border-box;
-    box-shadow: 12px 0 40px 5px rgba(0, 0, 0, 0.2)
+    box-shadow: 12px 0 40px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logoWrapper {
@@ -41,7 +41,7 @@
     font-weight: 700;
     color: #000;
     text-decoration: none;
-    transition: color .2s;
+    transition: color 0.2s;
 }
 
 .menulist li a:hover {

@@ -1,35 +1,33 @@
 .list {
-  position: absolute;
-  top: 160px;
-  left: 0;
-  width: 100%;
-  min-height: calc(100vh - 160px);
-  padding: 20px;
-  background: #fff;
-  z-index: 2;
-  box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    min-height: calc(100vh - 160px);
+    padding: 20px;
+    background: #fff;
+    z-index: 2;
+    box-sizing: border-box;
 }
 
 .listWrapper {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-
-
 .oligarchList {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .oligarchList p {
-  margin: 0 0 5px;
+    margin: 0 0 5px;
 }
 
 .closeButton {
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
 }

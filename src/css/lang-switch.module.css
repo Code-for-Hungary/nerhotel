@@ -2,7 +2,7 @@
     --default-radius: 2px;
     display: flex;
     flex-direction: column;
-    border: 2px solid rgba(0,0,0,0.2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
     background-clip: padding-box;
     border-radius: var(--default-radius);
     padding: 0;

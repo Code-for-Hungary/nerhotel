@@ -1,17 +1,13 @@
-import { SmartLink } from './SmartLink';
-import styles from '../css/button.module.css';
+import { SmartLink } from "./SmartLink";
+import styles from "../css/button.module.css";
 
-function Button({to, className, isFull, children, ...props}) {
-    const fullWidthClassName = isFull ? styles.fullWidth : '';
-    const classNames = `${styles.button} ${fullWidthClassName} ${className ? className : ''}`;
+function Button({ to, className, isFull, children, ...props }) {
+    const fullWidthClassName = isFull ? styles.fullWidth : "";
+    const classNames = `${styles.button} ${fullWidthClassName} ${className ? className : ""}`;
 
-    if(to) {
+    if (to) {
         return (
-            <SmartLink
-                to={to}
-                className={classNames}
-                {...props}
-            >
+            <SmartLink to={to} className={classNames} {...props}>
                 {children}
             </SmartLink>
         );

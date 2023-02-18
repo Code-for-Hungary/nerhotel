@@ -1,0 +1,5 @@
+semi: true
+bracketSameLine: false
+arrowParens: "always"
+tabWidth: 4
+printWidth: 140

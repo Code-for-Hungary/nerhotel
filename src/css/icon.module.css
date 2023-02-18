@@ -1,22 +1,22 @@
 .iconWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .large {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 }
 
 .small {
-  width: 20px;
-  height: 20px;
-  min-width: 20px
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
 }
 
 .iconWrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

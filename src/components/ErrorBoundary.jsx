@@ -1,5 +1,5 @@
-import { Component } from 'react';
-import ErrorScreen from '../components/ErrorScreen';
+import { Component } from "react";
+import ErrorScreen from "../components/ErrorScreen";
 
 class ErrorBoundary extends Component {
     constructor(props) {
@@ -19,7 +19,6 @@ class ErrorBoundary extends Component {
 
         return this.props.children;
     }
-
 }
 
 export default ErrorBoundary;

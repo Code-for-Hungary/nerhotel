@@ -9,7 +9,7 @@ const container = document.getElementById("root");
 const root = createRoot(container);
 
 const tagManagerArgs = {
-  gtmId: import.meta.env.VITE_GTM_ID,
+    gtmId: import.meta.env.VITE_GTM_ID,
 };
 
 TagManager.initialize(tagManagerArgs);
