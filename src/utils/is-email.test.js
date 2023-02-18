@@ -7,6 +7,6 @@ describe("A function to validate an email address", () => {
     });
 
     it("returns true if an email address is passed", () => {
-        expect(isEmail("john.doe@example")).toBeTruthy();
+        expect(isEmail("john.doe@example.com")).toBeTruthy();
     });
 });
