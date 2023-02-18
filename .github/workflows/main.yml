@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: "16"
       - name: Install dependencies
-        run: npm ci --no-fund --no-optional
+        run: npm ci --no-fund --no-optional --legacy-peer-deps
       - name: Unit tests
         run: npm run test
       - name: Code linter
