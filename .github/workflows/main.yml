@@ -1,27 +1,23 @@
+---
 name: Quality gate
 on:
-    workflow_dispatch:
-
+  - workflow_dispatch
 jobs:
-    quality-gate:
-        runs-on: ubuntu-20.04
-            steps:
-                - name: Checkout
-                    uses: actions/checkout@v2.3.1
-
-                - name: Setup Node.js
-                    uses: actions/setup-node@v2
-                    with:
-                        node-version: '16'
-
-                - name: Install dependencies
-                    run: npm ci --no-fund --no-optional
-                
-                - name: Unit tests
-                    run: npm run test
-
-                - name: Code linter
-                    run: npm run lint
-
-                - name: Check code formatting
-                    run: npm run format:check
+  quality-gate:
+    name: Check code
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - name: Install dependencies
+        run: npm ci --no-fund --no-optional
+      - name: Unit tests
+        run: npm run test
+      - name: Code linter
+        run: npm run lint
+      - name: Check code formatting
+        run: npm run format:check
