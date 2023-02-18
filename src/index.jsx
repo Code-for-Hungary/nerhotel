@@ -1,3 +1,4 @@
+import React from "react";
 import { createRoot } from "react-dom/client";
 import ReactGA from "react-ga";
 import "./index.css";
@@ -7,8 +8,6 @@ import "./i18n";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-ReactGA.initialize(process.env.REACT_APP_GA_ID, {
-  debug: process.env.NODE_ENV === "development",
-});
+ReactGA.initialize(import.meta.env.VITE_GA_ID);
 
 root.render(<App />);

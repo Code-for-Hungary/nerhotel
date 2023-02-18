@@ -10,7 +10,7 @@ export const initialState = {
 };
 
 export default function mapReducer(state, action) {
-  if (process.env.NODE_ENV === "development") {
+  if (import.meta.env.MODE === "development") {
     console.log(`==== ${action.type} ====`);
     console.log("state: ", state);
     console.log("action: ", action);

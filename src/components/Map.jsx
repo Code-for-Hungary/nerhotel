@@ -1,6 +1,6 @@
 import { useContext, useState, useCallback, useEffect } from "react";
 import { MapContainer as Map, TileLayer } from "react-leaflet";
-import LocateControl from "./LocateControl.js";
+import LocateControl from "./LocateControl";
 import MapListOpener from "./MapListOpener";
 import { useTranslation } from "react-i18next";
 
@@ -12,7 +12,7 @@ import { MapContext, HotelContext } from "../context";
 import { config } from "../config.js";
 import filterPoints from "../utils/map/filter-points.js";
 import MapCluster from "./MapCluster";
-import MapPlaceholder from "./MapPlaceholder.js";
+import MapPlaceholder from "./MapPlaceholder";
 
 function MapComponent() {
   const { dispatch, showPopup, center, selectedPoint, isDataLoaded } =
