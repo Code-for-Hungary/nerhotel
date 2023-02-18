@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta
-      name="facebook-domain-verification"
-      content="qglx1h06qwrin111atqggk0gep6wzj"
-    />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:url" content="https://nerhotel.hu/" />
-    <meta property="og:image" content="https://nerhotel.hu/nh-cover.png" />
-    <meta
-      property="og:description"
-      content="Nézz utána, kinél cseng a kassza! Politikaközeli turisztikai helyek."
-    />
-    <meta
-      name="google-site-verification"
-      content="YG952tup0CgNUdNHWbDOvzvoBcwIlQAgVzXOTN4wh3k"
-    />
-    <link rel="icon" href="favicon.png" />
-    <title>Kinél cseng a kassza? - NER Hotel</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/react-leaflet-markercluster/dist/styles.min.css"
-    />
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script type="module" src="/src/index.jsx"></script>
-  </body>
+    <head>
+        <meta name="facebook-domain-verification" content="qglx1h06qwrin111atqggk0gep6wzj" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:url" content="https://nerhotel.hu/" />
+        <meta property="og:image" content="https://nerhotel.hu/nh-cover.png" />
+        <meta property="og:description" content="Nézz utána, kinél cseng a kassza! Politikaközeli turisztikai helyek." />
+        <meta name="google-site-verification" content="YG952tup0CgNUdNHWbDOvzvoBcwIlQAgVzXOTN4wh3k" />
+        <link rel="icon" href="favicon.png" />
+        <title>Kinél cseng a kassza? - NER Hotel</title>
+
+        <!-- 
+            CSS needed for Leaflet.js, loaded from CDN manually
+            Keep the version in the URL in sync with the package installed from package.json
+         -->
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.css" as="style" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.css"
+            media="print"
+            onload="this.media='all'"
+        />
+
+        <!-- Icon font loaded from CDN -->
+        <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            media="print"
+            onload="this.media='all'"
+        />
+
+        <link rel="preconnect" href="https://b.basemaps.cartocdn.com/" />
+        <link rel="dns-prefetch" href="https://b.basemaps.cartocdn.com/" />
+    </head>
+    <body>
+        <noscript>Az oldal működéséhez be kell kapcsolnod a böngészőben a Javascriptet!</noscript>
+        <div id="root"></div>
+        <script type="module" src="/src/index.jsx"></script>
+    </body>
 </html>
