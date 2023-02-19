@@ -1,7 +1,7 @@
 import { useEffect, useContext } from "react";
-import { MapContext } from "../context";
 import { useHistory } from "react-router-dom";
-import trackPageView from "../utils/track-page-view";
+import { MapContext } from "../../context";
+import trackPageView from "../../utils/analytics/track-page-view";
 
 function AnalyticsWrapper({ children }) {
     const history = useHistory();
