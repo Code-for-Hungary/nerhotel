@@ -1,55 +1,55 @@
 {
-  "general": {
-    "backToMap": "Back to the map",
-    "additionalInfo": "More information",
-    "article": "Relevant article",
-    "address": "Address",
-    "maintainer": "Operated by",
-    "siteName": "NER Hotel",
-    "tagline": "Who gets the profit?"
-  },
-  "staticPageTitles": {
-    "about": "What is the NER Hotel?",
-    "contact": "Contact",
-    "data-export": "Data export"
-  },
-  "error": {
-    "heading": "Some error happened",
-    "text": "The page that you've requested can't be found or something went wrong. Go back to the homepage or try again!",
-    "buttonText": "Back to homepage",
-    "noGeoLocation": "We could not determine your location, or you need to grant permission to access it"
-  },
-  "navigation": {
-    "map": "Map view",
-    "about": "About the project",
-    "contact": "Contact",
-    "supportUs": "Support us",
-    "export": "Data export",
-    "address": {
-      "name": "K-Monitor",
-      "heading": "Mailing address",
-      "address": "1062 Budapest, Bajza u. 23 I/1"
+    "general": {
+        "backToMap": "Back to the map",
+        "additionalInfo": "More information",
+        "article": "Relevant article",
+        "address": "Address",
+        "maintainer": "Operated by",
+        "siteName": "NER Hotel",
+        "tagline": "Who gets the profit?"
+    },
+    "staticPageTitles": {
+        "about": "What is the NER Hotel?",
+        "contact": "Contact",
+        "data-export": "Data export"
+    },
+    "error": {
+        "heading": "Some error happened",
+        "text": "The page that you've requested can't be found or something went wrong. Go back to the homepage or try again!",
+        "buttonText": "Back to homepage",
+        "noGeoLocation": "We could not determine your location, or you need to grant permission to access it"
+    },
+    "navigation": {
+        "map": "Map view",
+        "about": "About the project",
+        "contact": "Contact",
+        "supportUs": "Support us",
+        "export": "Data export",
+        "address": {
+            "name": "K-Monitor",
+            "heading": "Mailing address",
+            "address": "1062 Budapest, Bajza u. 23 I/1"
+        }
+    },
+    "hotel": {
+        "type": "Location type",
+        "people": "Associated persons",
+        "updatedOn": "Last update"
+    },
+    "list": {
+        "emptyState": "There is no matching location in our database. If you know of a place owned or managed by a politically exposed person, <1>send it to us</1>!"
+    },
+    "person": {
+        "dbLink": "More info in the K-Monitor database",
+        "relatedPlaces": "Related venues",
+        "pep": "PEP",
+        "owner": "owner",
+        "manager": "manager"
+    },
+    "search": {
+        "placeholder": "Search by venue, location or owner"
+    },
+    "popUp": {
+        "linkText": "Details"
     }
-  },
-  "hotel": {
-    "type": "Location type",
-    "people": "Associated persons",
-    "updatedOn": "Last update"
-  },
-  "list": {
-    "emptyState": "There is no matching location in our database. If you know of a place owned or managed by a politically exposed person, <1>send it to us</1>!"
-  },
-  "person": {
-    "dbLink": "More info in the K-Monitor database",
-    "relatedPlaces": "Related venues",
-    "pep": "PEP",
-    "owner": "owner",
-    "manager": "manager"
-  },
-  "search": {
-    "placeholder": "Search by venue, location or owner"
-  },
-  "popUp": {
-    "linkText": "Details"
-  }
 }

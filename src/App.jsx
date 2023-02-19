@@ -1,11 +1,11 @@
 import { useEffect, useState, useReducer, lazy, Suspense } from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import "./App.css";
 
 import ErrorBoundary from "./components/ErrorBoundary";
-import AnalyticsWrapper from "./components/AnalyticsWrapper";
+import AnalyticsWrapper from "./components/analytics/AnalyticsWrapper";
 
 import { MapContext, HotelContext } from "./context";
 import reducer, { initialState } from "./reducer";
@@ -14,6 +14,7 @@ import { config } from "./config";
 
 import loadHotelDataFromCsv from "./utils/load-hotel-data-from-csv";
 import LoadingSpinner from "./components/LoadingSpinner";
+import LegacyHashRouteRedirect from "./components/routing/LegacyHashRouteRedirect";
 
 const HotelView = lazy(() => import("./views/HotelView"));
 const MapView = lazy(() => import("./views/MapView"));
@@ -115,19 +116,21 @@ function App() {
                 </Helmet>
                 <HotelContext.Provider value={{ hotels }}>
                     <MapContext.Provider value={mapData}>
-                        <HashRouter>
-                            <AnalyticsWrapper>
-                                <Switch>
-                                    <Route path="/" exact component={MapPage} />
-                                    <Route path="/hotel/:id" exact component={HotelPage} />
-                                    <Route path="/person/:name" exact component={PersonPage} />
-                                    <Route path="/about" exact component={ContentPage} />
-                                    <Route path="/contact" exact component={ContentPage} />
-                                    <Route path="/data-export" exact component={ContentPage} />
-                                    <Route path="*" component={ErrorPage} />
-                                </Switch>
-                            </AnalyticsWrapper>
-                        </HashRouter>
+                        <BrowserRouter>
+                            <LegacyHashRouteRedirect>
+                                <AnalyticsWrapper>
+                                    <Switch>
+                                        <Route path="/" exact component={MapPage} />
+                                        <Route path="/hotel/:id" exact component={HotelPage} />
+                                        <Route path="/person/:name" exact component={PersonPage} />
+                                        <Route path="/about" exact component={ContentPage} />
+                                        <Route path="/contact" exact component={ContentPage} />
+                                        <Route path="/data-export" exact component={ContentPage} />
+                                        <Route path="*" component={ErrorPage} />
+                                    </Switch>
+                                </AnalyticsWrapper>
+                            </LegacyHashRouteRedirect>
+                        </BrowserRouter>
                     </MapContext.Provider>
                 </HotelContext.Provider>
             </ErrorBoundary>
