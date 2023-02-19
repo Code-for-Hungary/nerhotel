@@ -26,6 +26,13 @@
     display: inline-block;
 }
 
+@media (min-width: 769px) {
+    .map {
+        position: sticky;
+        top: 140px;
+    }
+}
+
 @media (max-width: 768px) {
     .hotel {
         padding: 20px;
