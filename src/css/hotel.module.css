@@ -10,7 +10,18 @@
 }
 
 .info {
-    width: 33%;
+    width: 50%;
+    padding-right: 4rem;
+    box-sizing: border-box;
+}
+
+.info a {
+    color: var(--nh-accent-color);
+}
+
+.info a:hover,
+.info a:focus {
+    text-decoration: none;
 }
 
 .map {
@@ -46,6 +57,7 @@
     .info {
         width: 100%;
         margin-bottom: 20px;
+        padding-right: 0;
     }
 
     .map {
@@ -84,11 +96,6 @@
 .hotelRow span.title {
     font-weight: 400;
     font-style: italic;
-}
-
-.hotelRow a {
-    /*text-decoration: none;*/
-    color: #000;
 }
 
 .oligarch a {
