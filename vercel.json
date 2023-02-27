@@ -12,7 +12,7 @@
             "headers": [
                 {
                     "key": "Content-Encoding",
-                    "value": "gzip, deflate"
+                    "value": "gzip"
                 }
             ]
         }
