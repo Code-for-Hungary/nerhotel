@@ -8,7 +8,7 @@
     "trailingSlash": false,
     "headers": [
         {
-            "source": "/nh-cover.png",
+            "source": "/nh-cover.jpg",
             "headers": [
                 {
                     "key": "Content-Encoding",
