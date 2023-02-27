@@ -5,5 +5,16 @@
             "destination": "/index.html"
         }
     ],
-    "trailingSlash": false
+    "trailingSlash": false,
+    "headers": [
+        {
+            "source": "/nh-cover.png",
+            "headers": [
+                {
+                    "key": "Content-Encoding",
+                    "value": "gzip"
+                }
+            ]
+        }
+    ]
 }
