@@ -3,6 +3,7 @@
 # What is Hotel Oligarch?
 
 Hungarian public discourse has long been characterised by the aspiration of the political elite to create an aligned class. With the right connections and political backing, it is possible to acquire considerable wealth in just a few years through targeted public procurements, non-repayable grants and soft loans. Today, in the tourism sector, the businesses that benefit from these processes have become unavoidable, with hundreds of hotels and restaurants being taken over by politically connected actors. As customers we still have the opportunity to vote with our wallets against the further expansion of the politically backed entrepreneurial class.
+  
 The Hungarian name of the site (NER Hotel) refers to the System of National Cooperation (NER) introduced by the governing party that has led Hungary since 2010.
 
 **Hotel Oligarch is a web-based application that makes the ownership and management of Hungarian tourism establishments more transparent. It helps you to find out who profits when you book a table in a restaurant or stay in a hotel.**
