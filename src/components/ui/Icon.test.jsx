@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
-import Icon from "./Icon";
+import Icon from "./ui/Icon";
 
 describe("A component for rendering an icon", () => {
     it("renders an image to the screen", () => {

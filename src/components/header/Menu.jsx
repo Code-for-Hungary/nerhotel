@@ -1,17 +1,19 @@
 import { useContext, useCallback } from "react";
-import { SmartLink } from "./SmartLink";
-import closeIcon from "../assets/close-icon.svg";
-import styles from "../css/menu.module.css";
-import Icon from "./Icon";
-import image from "../assets/nh-main.svg";
-import logo from "../assets/nh-logo.svg";
-import { MapContext } from "../context";
-import PoweredByVercel from "./PoweredByVercel";
+import { SmartLink } from "../SmartLink";
+import closeIcon from "../../assets/close-icon.svg";
+import styles from "./Menu.module.css";
+import Icon from "../ui/Icon";
+import image from "../../assets/nh-main.svg";
+import logo from "../../assets/nh-logo.svg";
+import logoEn from "../../assets/nh-logo-en.svg";
+import { MapContext } from "../../context";
+import PoweredByVercel from "../PoweredByVercel";
 import { useTranslation } from "react-i18next";
 
 const Menu = () => {
     const { dispatch, showMenu } = useContext(MapContext);
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const { resolvedLanguage } = i18n;
     const closeMenu = useCallback(() => {
         dispatch({ type: "ToggleMenu", showMenu: false });
     }, [dispatch]);
@@ -30,7 +32,7 @@ const Menu = () => {
                 </div>
                 {isDesktop && (
                     <div className={styles.logoWrapper}>
-                        <img src={logo} alt="" />
+                        <img src={resolvedLanguage === "hu" ? logo : logoEn} alt="" style={{ aspectRatio: "47 / 112" }} />
                     </div>
                 )}
                 <ul className={styles.menulist}>

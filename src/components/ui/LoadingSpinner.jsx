@@ -1,4 +1,4 @@
-import styles from "../css/loading-spinner.module.css";
+import styles from "./LoadingSpinner.module.css";
 
 function LoadingSpinner({ size = "40px", color = "var(--nh-accent-color)", ...props }) {
     return (

@@ -3,7 +3,7 @@ import { MapContainer as LeafletMap, Marker, TileLayer } from "react-leaflet";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import { SmartLink } from "./SmartLink";
-import Icon from "./Icon";
+import Icon from "./ui/Icon";
 import HotelImage from "./HotelImage";
 
 import { getOligarchData } from "../utils";

@@ -1,4 +1,4 @@
-import styles from "../css/icon.module.css";
+import styles from "./Icon.module.css";
 
 function Icon(props) {
     return (
