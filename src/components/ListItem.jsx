@@ -1,4 +1,4 @@
-import Icon from "./Icon";
+import Icon from "./ui/Icon";
 import horseIcon from "../assets/horse-icon.svg";
 import pinIcon from "../assets/pin-icon.svg";
 import styles from "../css/list-item.module.css";

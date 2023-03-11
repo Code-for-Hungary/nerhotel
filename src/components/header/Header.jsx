@@ -1,28 +1,30 @@
 import { useContext, useCallback } from "react";
 
 import Search from "./Search";
-import styles from "../css/header.module.css";
-import Icon from "./Icon";
-import listIcon from "../assets/menu-icon.svg";
+import styles from "./Header.module.css";
+import Icon from "../ui/Icon";
+import listIcon from "../../assets/menu-icon.svg";
 
-import logo from "../assets/nh-logo.svg";
-import hotel from "../assets/nh-hotel.svg";
-import beach from "../assets/nh-beach.svg";
-import restaurant from "../assets/nh-restaurant.svg";
-import golf from "../assets/nh-golf.svg";
-import { MapContext } from "../context";
+import logo from "../../assets/nh-logo.svg";
+import logoEn from "../../assets/nh-logo-en.svg";
+import hotel from "../../assets/nh-hotel.svg";
+import beach from "../../assets/nh-beach.svg";
+import restaurant from "../../assets/nh-restaurant.svg";
+import golf from "../../assets/nh-golf.svg";
+import { MapContext } from "../../context";
 
-import { config } from "../config";
-import LangSwitch from "./LangSwitch";
+import { config } from "../../config";
+import LangSwitch from "../LangSwitch";
 
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 
-import { SmartLink } from "./SmartLink";
+import { SmartLink } from "../SmartLink";
 
 const Header = (props) => {
     const { dispatch } = useContext(MapContext);
     const { i18n } = useTranslation();
+    const { resolvedLanguage } = i18n;
     const location = useLocation();
 
     const languageChangeHandler = (e) => {
@@ -54,7 +56,13 @@ const Header = (props) => {
                     }}
                     className={styles.logo}
                 >
-                    <img src={logo} alt="" width="47" height="112" style={{ aspectRatio: "47 / 112" }} />
+                    <img
+                        src={resolvedLanguage === "hu" ? logo : logoEn}
+                        alt=""
+                        width="47"
+                        height="112"
+                        style={{ aspectRatio: "47 / 112" }}
+                    />
                 </SmartLink>
                 <div className={styles.headerInner}>
                     <div className={styles.icons}>

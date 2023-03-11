@@ -1,6 +1,6 @@
 import { useContext, useCallback } from "react";
 import styles from "../css/list.module.css";
-import Icon from "./Icon";
+import Icon from "./ui/Icon";
 import { Trans } from "react-i18next";
 
 import closeIcon from "../assets/close-icon.svg";

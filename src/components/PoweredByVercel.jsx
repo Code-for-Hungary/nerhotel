@@ -1,4 +1,4 @@
-import styles from "../css/powered-by-vercel.module.css";
+import styles from "./PoweredByVercel.module.css";
 import { SmartLink } from "./SmartLink";
 
 function PoweredByVercel(props) {

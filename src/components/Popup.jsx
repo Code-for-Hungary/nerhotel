@@ -1,8 +1,8 @@
 import { useContext, useCallback } from "react";
 import styles from "../css/popup.module.css";
 import { SmartLink } from "./SmartLink";
-import Button from "./Button";
-import Icon from "./Icon";
+import Button from "./ui/Button";
+import Icon from "./ui/Icon";
 import closeIcon from "../assets/close-icon.svg";
 import horseIcon from "../assets/horse-icon.svg";
 import hotelIcon from "../assets/hotel-icon.svg";

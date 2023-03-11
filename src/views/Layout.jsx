@@ -1,7 +1,7 @@
 import { useEffect, useContext } from "react";
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 import List from "../components/List";
-import Menu from "../components/Menu";
+import Menu from "../components/header/Menu";
 import { MapContext } from "../context";
 
 const Layout = (props) => {

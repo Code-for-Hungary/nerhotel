@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 import { config } from "./config";
 
 import loadHotelDataFromCsv from "./utils/load-hotel-data-from-csv";
-import LoadingSpinner from "./components/LoadingSpinner";
+import LoadingSpinner from "./components/ui/LoadingSpinner";
 import LegacyHashRouteRedirect from "./components/routing/LegacyHashRouteRedirect";
 
 const HotelView = lazy(() => import("./views/HotelView"));

@@ -1,10 +1,10 @@
 import { useContext, useState, useCallback } from "react";
-import styles from "../css/search.module.css";
+import styles from "./Search.module.css";
 
-import { MapContext, HotelContext } from "../context";
+import { MapContext, HotelContext } from "../../context";
 import { useTranslation } from "react-i18next";
 
-import findProperty from "../utils/search/find-property";
+import findProperty from "../../utils/search/find-property";
 
 function Search() {
     const { dispatch } = useContext(MapContext);

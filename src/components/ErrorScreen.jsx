@@ -1,8 +1,7 @@
 import styles from "../css/content-page.module.css";
-import Button from "../components/Button";
+import Button from "../components/ui/Button";
 import image from "../assets/nh-main.svg";
 import { useTranslation } from "react-i18next";
-import buttonStyles from "../css/button.module.css";
 
 function ErrorScreen(props) {
     const { t } = useTranslation();
@@ -15,9 +14,9 @@ function ErrorScreen(props) {
                 {!props.standAlone ? (
                     <Button to="/">{t("error:buttonText")}</Button>
                 ) : (
-                    <a href="/" className={buttonStyles.button}>
+                    <Button href="/" isPlainAnchor>
                         {t("error:buttonText")}
-                    </a>
+                    </Button>
                 )}
             </p>
 
