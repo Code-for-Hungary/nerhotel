@@ -27,15 +27,14 @@
 @media screen and (min-width: 600px) {
     .PersonProfile-figure {
         margin-right: 1rem;
-        margin-left: 0;
-        margin-right: 0;
+        margin-bottom: 0;
         border-bottom: none;
         width: auto;
     }
 }
 
 .PersonProfile-figure > img {
-    --size: 100px;
+    --size: 53px;
     display: block;
     aspect-ratio: 1 / 1;
     border-radius: 100%;
@@ -43,12 +42,6 @@
     height: var(--size);
     margin-left: auto;
     margin-right: auto;
-}
-
-@media screen and (min-width: 1024px) {
-    .PersonProfile-figure > img {
-        --size: 120px;
-    }
 }
 
 .PersonProfile-body {

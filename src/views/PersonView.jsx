@@ -1,5 +1,5 @@
 import Layout from "./Layout";
-import Person from "../components/Person";
+import Person from "../components/person/Person";
 
 const PersonView = (props) => {
     const personName = props.match.params.name;

@@ -5,7 +5,7 @@ function PersonProfile({ profileImage, text, name }) {
         <article className={styles.PersonProfile}>
             {profileImage ? (
                 <figure className={styles["PersonProfile-figure"]}>
-                    <img src={profileImage} alt={name} width="120" height="120" />
+                    <img src={profileImage} alt={name} width="53" height="53" />
                 </figure>
             ) : null}
             <div className={styles["PersonProfile-body"]}>
