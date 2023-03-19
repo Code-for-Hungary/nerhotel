@@ -7,6 +7,7 @@
     "i18next": "^22.0.6",
     "leaflet": "^1.9.3",
     "leaflet.markercluster": "^1.5.3",
+    "mkdirp": "^2.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-gtm-module": "^2.0.11",

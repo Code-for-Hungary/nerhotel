@@ -14,6 +14,10 @@ yarn.lock
 /build
 /dist
 
+# downloaded data
+/data
+/scripts/download-hotels-as-json.*.js
+
 # misc
 .DS_Store
 .env
