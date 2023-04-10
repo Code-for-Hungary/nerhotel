@@ -36,7 +36,7 @@ const Person = (props) => {
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
     const [isProfileInfoLoading, setIsProfileInfoLoading] = useState(false);
-    const [profileInfo, setProfileInfo] = useState({});
+    const [profileInfo, setProfileInfo] = useState(null);
     const [profileInfoError, setProfileInfoError] = useState(false);
 
     const hotelContext = useContext(HotelContext);
@@ -50,6 +50,7 @@ const Person = (props) => {
             ? affiliatedHotels[0].properties.ceos.find((ceo) => ceo.name === personName) ||
               affiliatedHotels[0].properties.oligarchs.find((oligarch) => oligarch.name === personName)
             : undefined;
+    const kMonitorDbId = person && person.id ? person.id : null;
     const isMainOligarch = !!(
         affiliatedHotels &&
         affiliatedHotels.length &&
@@ -67,23 +68,29 @@ const Person = (props) => {
         : undefined;
 
     const loadPersonProfile = useCallback(() => {
-        setIsProfileInfoLoading(true);
-        getPersonProfile(personName)
-            .then((response) => {
-                setProfileInfo({
-                    name: personName,
-                    profileImage: response.results[0].image_small_url,
-                    text: response.results[0].description,
+        if (kMonitorDbId && personName) {
+            setIsProfileInfoLoading(true);
+            getPersonProfile(kMonitorDbId)
+                .then((response) => {
+                    if (response.results && response.results.length && response.results[0] && response.results[0].description) {
+                        setProfileInfo({
+                            name: personName,
+                            profileImage: response.results[0].image_small_url,
+                            text: response.results[0].description,
+                        });
+                    } else {
+                        setProfileInfoError(true);
+                    }
+                })
+                .catch((e) => {
+                    console.error(e);
+                    setProfileInfoError(true);
+                })
+                .finally(() => {
+                    setIsProfileInfoLoading(false);
                 });
-            })
-            .catch((e) => {
-                console.error(e);
-                setProfileInfoError(true);
-            })
-            .finally(() => {
-                setIsProfileInfoLoading(false);
-            });
-    }, [personName]);
+        }
+    }, [personName, kMonitorDbId]);
 
     useEffect(loadPersonProfile, [loadPersonProfile]);
 
@@ -107,7 +114,7 @@ const Person = (props) => {
                         </h1>
 
                         {import.meta.env.VITE_FEATURE_FLAG_PERSON_INFO && isProfileInfoLoading ? <LoadingSpinner /> : null}
-                        {import.meta.env.VITE_FEATURE_FLAG_PERSON_INFO && !isProfileInfoLoading && !profileInfoError ? (
+                        {import.meta.env.VITE_FEATURE_FLAG_PERSON_INFO && !isProfileInfoLoading && !profileInfoError && profileInfo ? (
                             <PersonProfileCard {...profileInfo} />
                         ) : null}
 

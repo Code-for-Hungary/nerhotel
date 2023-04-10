@@ -17,12 +17,12 @@
 }
 
 .contentPage h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .contentPage p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: var(--copy-line-height);
 }
 
 .contentPage a {
