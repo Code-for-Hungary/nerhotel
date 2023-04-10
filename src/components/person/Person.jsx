@@ -68,7 +68,7 @@ const Person = (props) => {
         : undefined;
 
     const loadPersonProfile = useCallback(() => {
-        if (kMonitorDbId && personName) {
+        if (kMonitorDbId && personName && resolvedLanguage === "hu") {
             setIsProfileInfoLoading(true);
             getPersonProfile(kMonitorDbId)
                 .then((response) => {
@@ -90,7 +90,7 @@ const Person = (props) => {
                     setIsProfileInfoLoading(false);
                 });
         }
-    }, [personName, kMonitorDbId]);
+    }, [personName, kMonitorDbId, resolvedLanguage]);
 
     useEffect(loadPersonProfile, [loadPersonProfile]);
 
@@ -114,7 +114,11 @@ const Person = (props) => {
                         </h1>
 
                         {import.meta.env.VITE_FEATURE_FLAG_PERSON_INFO && isProfileInfoLoading ? <LoadingSpinner /> : null}
-                        {import.meta.env.VITE_FEATURE_FLAG_PERSON_INFO && !isProfileInfoLoading && !profileInfoError && profileInfo ? (
+                        {import.meta.env.VITE_FEATURE_FLAG_PERSON_INFO &&
+                        !isProfileInfoLoading &&
+                        !profileInfoError &&
+                        profileInfo &&
+                        resolvedLanguage === "hu" ? (
                             <PersonProfileCard {...profileInfo} />
                         ) : null}
 
