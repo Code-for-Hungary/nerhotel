@@ -15,6 +15,10 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 31%);
 }
 
+.TextCropper--inactive .TextCropper__mask {
+    display: none;
+}
+
 .TextCropper__opener {
     background: none;
     appearance: none;
@@ -44,7 +48,8 @@
     position: relative;
 }
 
-.TextCropper--open .TextCropper__crop {
+.TextCropper--open .TextCropper__crop,
+.TextCropper--inactive .TextCropper__crop {
     overflow: visible;
     height: auto;
 }

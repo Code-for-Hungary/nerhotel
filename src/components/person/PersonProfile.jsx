@@ -6,7 +6,7 @@ function PersonProfile({ profileImage, text, name }) {
         <article className={styles.PersonProfile}>
             {profileImage ? (
                 <figure className={styles["PersonProfile-figure"]}>
-                    <div className={styles["PersonProfile-image"]} style={{ backgroundImage: `url(${profileImage})` }} ariaLabel={name} />
+                    <div className={styles["PersonProfile-image"]} style={{ backgroundImage: `url(${profileImage})` }} aria-label={name} />
                 </figure>
             ) : null}
             <div className={styles["PersonProfile-body"]}>
