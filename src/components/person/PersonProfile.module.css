@@ -27,28 +27,28 @@
 @media screen and (min-width: 600px) {
     .PersonProfile-figure {
         margin-right: 1rem;
-        margin-left: 0;
-        margin-right: 0;
+        margin-bottom: 0;
         border-bottom: none;
         width: auto;
     }
 }
 
-.PersonProfile-figure > img {
-    --size: 100px;
+/* The image we get from the API is not always 1:1
+   so the easiest to avoid having a distorted image is to result to
+   a <div> with CSS background-image...
+ */
+.PersonProfile-image {
+    --size: 53px;
     display: block;
-    aspect-ratio: 1 / 1;
     border-radius: 100%;
     width: var(--size);
     height: var(--size);
     margin-left: auto;
     margin-right: auto;
-}
-
-@media screen and (min-width: 1024px) {
-    .PersonProfile-figure > img {
-        --size: 120px;
-    }
+    background-color: rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 
 .PersonProfile-body {

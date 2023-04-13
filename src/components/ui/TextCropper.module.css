@@ -1,0 +1,55 @@
+.TextCropper {
+    position: relative;
+}
+
+.TextCropper__mask {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    padding: 15px 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 31%);
+}
+
+.TextCropper--inactive .TextCropper__mask {
+    display: none;
+}
+
+.TextCropper__opener {
+    background: none;
+    appearance: none;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    color: var(--nh-accent-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.TextCropper__opener:hover,
+.TextCropper__opener:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.TextCropper__crop {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: var(--text-cropper-height);
+    line-height: var(--copy-line-height);
+}
+
+.TextCropper--open .TextCropper__mask {
+    position: relative;
+}
+
+.TextCropper--open .TextCropper__crop,
+.TextCropper--inactive .TextCropper__crop {
+    overflow: visible;
+    height: auto;
+}

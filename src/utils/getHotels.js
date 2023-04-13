@@ -1,5 +1,5 @@
 function cleanPersonData(person) {
-    return { name: person.name.replace(/!/g, "").trim(), link: person.link };
+    return { name: person.name.replace(/!/g, "").trim(), link: person.link, id: person.id };
 }
 
 /**
@@ -26,15 +26,15 @@ export function getHotels(csvRowsAsObjects) {
     return csvRowsAsObjects.map((csvRow, index) => {
         /** @type {{name: string, link: string}[]} */
         const oligarchs = [
-            { name: csvRow["T1 OL"], link: csvRow["T1_link"] },
-            { name: csvRow["T2 OL"], link: csvRow["T2_link"] },
-            { name: csvRow["T3 OL"], link: csvRow["T3_link"] },
+            { name: csvRow["T1 OL"], link: csvRow["T1_link"], id: csvRow["T1_ID"] },
+            { name: csvRow["T2 OL"], link: csvRow["T2_link"], id: csvRow["T2_ID"] },
+            { name: csvRow["T3 OL"], link: csvRow["T3_link"], id: csvRow["T3_ID"] },
         ];
         /** @type {{name: string, link: string}[]} */
         const ceos = [
-            { name: csvRow["IT1"], link: csvRow["IT1_link"] },
-            { name: csvRow["IT2"], link: csvRow["IT2_link"] },
-            { name: csvRow["IT3"], link: csvRow["IT3_link"] },
+            { name: csvRow["IT1"], link: csvRow["IT1_link"], id: csvRow["IT1_ID"] },
+            { name: csvRow["IT2"], link: csvRow["IT2_link"], id: csvRow["IT2_ID"] },
+            { name: csvRow["IT3"], link: csvRow["IT3_link"], id: csvRow["IT3_ID"] },
         ];
         return {
             type: "Feature",

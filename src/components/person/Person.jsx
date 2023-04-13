@@ -1,30 +1,43 @@
-import { useContext } from "react";
+import { useContext, useState, lazy, Suspense, useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet";
-import { SmartLink } from "./SmartLink";
+import { SmartLink } from "../SmartLink";
 import { useTranslation } from "react-i18next";
 import Leaflet from "leaflet";
 import { MapContainer as Map, TileLayer } from "react-leaflet";
-import { HotelContext } from "../context";
-import { getMarkerList } from "../leaflet-helper.jsx";
-import AssociatedHotel from "./person/AssociatedHotel";
+import { HotelContext } from "../../context";
+import { getMarkerList } from "../../leaflet-helper.jsx";
+import AssociatedHotel from "./AssociatedHotel";
+import LoadingSpinner from "../ui/LoadingSpinner";
 
-import Icon from "./ui/Icon";
+import Icon from "../ui/Icon";
 
-import styles from "../css/hotel.module.css";
-import arrowIcon from "../assets/arrow-icon.svg";
-import hotelIcon from "../assets/hotel-icon.svg";
-import horseIcon from "../assets/horse-icon.svg";
+import styles from "../../css/hotel.module.css";
+import arrowIcon from "../../assets/arrow-icon.svg";
+import hotelIcon from "../../assets/hotel-icon.svg";
+import horseIcon from "../../assets/horse-icon.svg";
 
-import { config } from "../config";
-import _getAllHotelsAffiliatedWithPerson from "../utils/person/get-all-hotels-affiliated-with-person";
-import getTranslatedKMonitorLink from "../utils/person/get-translated-k-monitor-link";
+import { config } from "../../config";
+import _getAllHotelsAffiliatedWithPerson from "../../utils/person/get-all-hotels-affiliated-with-person";
+import getTranslatedKMonitorLink from "../../utils/person/get-translated-k-monitor-link";
+import getPersonProfile from "../../utils/person/get-person-profile";
 
-import PersonProfile from "./person/PersonProfile";
+const PersonProfile = lazy(() => import("./PersonProfile"));
+
+function PersonProfileCard(props) {
+    return (
+        <Suspense fallback={<LoadingSpinner />}>
+            <PersonProfile {...props} />
+        </Suspense>
+    );
+}
 
 const Person = (props) => {
     const personName = props.name;
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
+    const [isProfileInfoLoading, setIsProfileInfoLoading] = useState(false);
+    const [profileInfo, setProfileInfo] = useState(null);
+    const [profileInfoError, setProfileInfoError] = useState(false);
 
     const hotelContext = useContext(HotelContext);
     /** @type {Hotel[]} */
@@ -37,6 +50,7 @@ const Person = (props) => {
             ? affiliatedHotels[0].properties.ceos.find((ceo) => ceo.name === personName) ||
               affiliatedHotels[0].properties.oligarchs.find((oligarch) => oligarch.name === personName)
             : undefined;
+    const kMonitorDbId = person && person.id ? person.id : null;
     const isMainOligarch = !!(
         affiliatedHotels &&
         affiliatedHotels.length &&
@@ -53,11 +67,32 @@ const Person = (props) => {
         ? new Leaflet.LatLngBounds(affiliatedHotels.map((hotel) => [hotel.geometry.coordinates[0], hotel.geometry.coordinates[1]]))
         : undefined;
 
-    const DUMMY_PERSON = {
-        profileImage: "https://adatbazis.k-monitor.hu/images/persons/3406_b.jpg",
-        text: '<strong>Mészáros Lőrinc</strong>&nbsp;(Felcsút, 1966. február 24.) magyar vállalkozó, gázszerelő, 2011-től Felcsút község polgármestere volt a Fidesz–KDNP jelöltjeként, azonban 2018-ban lemondott. Személye jelentős polémiát okozott a politikai és egyéb közbeszédben is, miután az eredetileg gázszerelő Mészáros szinte a semmiből lett néhány év alatt vagyonos, 2016-ra Magyarország 31. leggazdagabb embere, amit sokan a fideszes politikai hátszéllel indokolnak, miután a 2010-es kormányváltást követően duplázódott meg évente a vagyona és lett annak a községnek a polgármestere, ahonnan a választást megnyerő Fidesz elnöke, majd másodszor is miniszterelnök Orbán Viktor is származik, ezért az is elhíresült róla, hogy valójában „Orbán strómanja”. Mészáros emiatt később pert indított az Együtt párt ellen, mert a párt politikusai többször „Orbán strómanjának” nevezték. (<a href="https://hu.wikipedia.org/wiki/M%C3%A9sz%C3%A1ros_L%C5%91rinc_(v%C3%A1llalkoz%C3%B3)">Wikipédia</a>) Mészáros a Napi.hu gazdaglistáján 2017-re&nbsp;<a href="http://index.hu/gazdasag/2017/04/27/100_leggazdagabb_napi.hu_2017/">100 milliárdos vagyonnövekedéssel</a>&nbsp;az 5. helyre ugrott. 2018 óta a leggazdagabb magyarként tartják&nbsp;<a href="https://www.napi.hu/tozsdek-piacok/forbes_meszaros_lorinc_a_leggazdagabb_magyar_egy_ev_alatt_haromszorosara_nott_a_vagyona.675908.html">számon</a>.',
-        name: personName,
-    };
+    const loadPersonProfile = useCallback(() => {
+        if (kMonitorDbId && personName && resolvedLanguage === "hu") {
+            setIsProfileInfoLoading(true);
+            getPersonProfile(kMonitorDbId)
+                .then((response) => {
+                    if (response.results && response.results.length && response.results[0] && response.results[0].description) {
+                        setProfileInfo({
+                            name: personName,
+                            profileImage: response.results[0].image_small_url,
+                            text: response.results[0].description,
+                        });
+                    } else {
+                        setProfileInfoError(true);
+                    }
+                })
+                .catch((e) => {
+                    console.error(e);
+                    setProfileInfoError(true);
+                })
+                .finally(() => {
+                    setIsProfileInfoLoading(false);
+                });
+        }
+    }, [personName, kMonitorDbId, resolvedLanguage]);
+
+    useEffect(loadPersonProfile, [loadPersonProfile]);
 
     return (
         <div className={[styles.hotel, "hotel"].join(" ")}>
@@ -78,9 +113,10 @@ const Person = (props) => {
                             {personName}
                         </h1>
 
-                        {/* TODO: Fill this card with real data */}
-                        {/* This UI item is behind a feature flag until we can figure out where to get the data from */}
-                        {import.meta.env.VITE_FEATURE_FLAG_PERSON_INFO && <PersonProfile {...DUMMY_PERSON} />}
+                        {isProfileInfoLoading ? <LoadingSpinner /> : null}
+                        {!isProfileInfoLoading && !profileInfoError && profileInfo && resolvedLanguage === "hu" ? (
+                            <PersonProfileCard {...profileInfo} />
+                        ) : null}
 
                         {personUrl && (
                             <p>

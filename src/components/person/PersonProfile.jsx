@@ -1,15 +1,18 @@
 import styles from "./PersonProfile.module.css";
+import TextCropper from "../ui/TextCropper";
 
 function PersonProfile({ profileImage, text, name }) {
     return (
         <article className={styles.PersonProfile}>
             {profileImage ? (
                 <figure className={styles["PersonProfile-figure"]}>
-                    <img src={profileImage} alt={name} width="120" height="120" />
+                    <div className={styles["PersonProfile-image"]} style={{ backgroundImage: `url(${profileImage})` }} aria-label={name} />
                 </figure>
             ) : null}
             <div className={styles["PersonProfile-body"]}>
-                <div dangerouslySetInnerHTML={{ __html: text }} />
+                <TextCropper openTextLabel="Tovább..." closeTextLabel="Bezár">
+                    <div dangerouslySetInnerHTML={{ __html: text }} />
+                </TextCropper>
             </div>
         </article>
     );
