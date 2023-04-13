@@ -113,12 +113,8 @@ const Person = (props) => {
                             {personName}
                         </h1>
 
-                        {import.meta.env.VITE_FEATURE_FLAG_PERSON_INFO && isProfileInfoLoading ? <LoadingSpinner /> : null}
-                        {import.meta.env.VITE_FEATURE_FLAG_PERSON_INFO &&
-                        !isProfileInfoLoading &&
-                        !profileInfoError &&
-                        profileInfo &&
-                        resolvedLanguage === "hu" ? (
+                        {isProfileInfoLoading ? <LoadingSpinner /> : null}
+                        {!isProfileInfoLoading && !profileInfoError && profileInfo && resolvedLanguage === "hu" ? (
                             <PersonProfileCard {...profileInfo} />
                         ) : null}
 
