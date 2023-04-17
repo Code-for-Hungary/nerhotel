@@ -37,7 +37,7 @@
         "updatedOn": "Last update"
     },
     "list": {
-        "emptyState": "There is no matching location in our database. If you know of a place owned or managed by a politically exposed person, <1>send it to us</1>!"
+        "emptyState": "There is no matching location in our database. <a href="mailto:info@k-monitor.hu">Let us know</a>, If you know of a place owned or managed by a politically exposed person!"
     },
     "person": {
         "dbLink": "More info in the K-Monitor database",
