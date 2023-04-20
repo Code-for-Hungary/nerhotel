@@ -14,7 +14,12 @@ The content of the site is produced by K-Monitor using the following methodology
   
 ## What kind of places are presented?
 
-Hotel Oligarch includes hospitality, accommodation and tourism establishments that are linked to politically exposed persons (PEPs), as in the profits are realized by such actors. It may happen that the owner of a property is different from the owner of the opearating company, in which case the latter is taken as the basis, since the profits accrue directly to the operator. Politically exposed persons are primarily considered to be prominent public figures, their close relatives and persons closely associated with them, as defined in Article 4 of Act LIII of 2017. In order to identify PEPs in the tourism industry, Hotel Oligarch - in line with international auditing standards - uses a broader definition: this includes decision-makers in local governments, heads of governmental organisations in the tourism sector, and persons who, based on their press profile, have extensive links with a politically exposed person.
+Hotel Oligarch includes hospitality, accommodation and tourism establishments that are operated by
+1) **owned by** (in a whole or in part) **politically exposed persons** (PEPs),
+2) **managed by PEPs**,
+3) an entity that is owned by a **private equity fund** linked to PEPs (with the ability to hide the beneficial owners).
+  
+It may happen that the owner of a property is different from the owner of the opearating company, in which case the latter is taken as the basis, since the profits accrue directly to the operator. Politically exposed persons are primarily considered to be prominent public figures, their close relatives and persons closely associated with them, as defined in Article 4 of Act LIII of 2017. In order to identify PEPs in the tourism industry, Hotel Oligarch - in line with international auditing standards - uses a broader definition: this includes decision-makers in local governments, heads of governmental organisations in the tourism sector, and persons who, based on their press profile, have extensive links with a politically exposed person.
 
 Hotel Oligarch aims to provide credible and structured information on the tourism interests of such people, and serve as a guide in making informed consumer choices.
 
