@@ -1,7 +1,7 @@
 import { useContext, useCallback } from "react";
 import styles from "../css/list.module.css";
 import Icon from "./ui/Icon";
-import { Trans } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 
 import closeIcon from "../assets/close-icon.svg";
 import ListItem from "./ListItem";
@@ -10,6 +10,7 @@ import { MapContext } from "../context";
 
 function List() {
     const { dispatch, list, map } = useContext(MapContext);
+    const { t } = useTranslation();
 
     const showItem = useCallback(
         (item) => () => {
@@ -40,8 +41,11 @@ function List() {
                 {list.length === 0 && (
                     <p>
                         <Trans i18nKey="list:emptyState">
-                            Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet,{" "}
-                            <a href="https://www.partimap.eu/p/nerhotel-bekuldes">küldd el nekünk</a>!
+                            Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet,
+                            <a href={t("list:sendToUsLink")} target="_blank" rel="noopener noreferrer">
+                                küldd el nekünk
+                            </a>
+                            !
                         </Trans>
                     </p>
                 )}
