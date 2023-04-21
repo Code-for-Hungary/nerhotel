@@ -37,7 +37,8 @@
         "updatedOn": "Adatok frissítve"
     },
     "list": {
-        "emptyState": "Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet, <a href="https://www.partimap.eu/hu/p/nerhotel-bekuldes/0" target=new">küldd el nekünk</a>!"
+        "sendToUsLink": "https://www.partimap.eu/hu/p/nerhotel-bekuldes/0",
+        "emptyState": "Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet, <1>küldd el nekünk</1>!"
     },
     "person": {
         "dbLink": "Kapcsolódó cikkek a K-Monitor sajtóadatbázisában",
