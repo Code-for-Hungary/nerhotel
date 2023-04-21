@@ -23,6 +23,51 @@ A sheetnek van egy olyan URL-je ami kigenerálja az adatokat nyers CSV-ben. Ezt 
 
 A felhasználói felületen látható szövegek nagy része az `src/translations` mappában található. A `hu.json` tartalmaza a magyar, az `en.json` pedig az angol szövegeket. Bővebb információt a JSON file-ok struktúrájáról és a kulcsok használatáról a [react-i18next](https://react.i18next.com/) fordításkezelő könyvtár dokumentációjában találasz.
 
+#### HTML a lefordítot szövegekben
+
+Ha egyszerű HTML formázó tageket (`<em>`, `<strong>`) vagy linkeket akarunk rakni a fordításokba, akkor NE írjuk be a HTML tageket a JSON-ban tárolt szövegekbe.
+Ehelyett a JSX kódban a `react-i18next` által felkínált [`<Trans>` komponenst](https://react.i18next.com/latest/trans-component) kell használnunk, a JSON-ban pedig az adott pozícióban lévő tageket számként rakjuk be.
+
+Alapból a `Trans` tagek közé rakunk egy szöveget az alapértelmezett nyelven és a szövegbe rakunk tetszőleges HTML tageket és/vagy további fordítandó szövegeket, melyek más kulcsokra hivatkoznak.
+
+Például:
+```jsx
+// a React kódban
+import { useTranslation, Trans } from "react-i18next";
+const { t } = useTranslation();
+
+return (
+    <Trans i18nKey="a-szovegunk-kulcsa">
+        Nagyon <strong>fontos</strong>, hogy hivatkozunk erre a <a href={t('a-link-kulcsa-ami-mas-angolul-es-magyarul')} target="_blank">weboldalra</a> <em>itten ni</em>.
+    </Trans>
+)
+
+```
+
+```json
+// hu.json
+{
+    "a-szovegunk-kulcsa": "Nagyon <1>fontos</1>, hogy hivatkozunk erre a <2>weboldalra</2> <3>itten ni</3>."
+    "a-link-kulcsa-ami-mas-angolul-es-magyarul": "https://example.com/hu"
+}
+```
+
+```json
+// en.json
+{
+    "a-szovegunk-kulcsa": "It's very <1>important</1>, to refer to this <2>website</2> <3>here</3>."
+    "a-link-kulcsa-ami-mas-angolul-es-magyarul": "https://example.com/en"
+}
+```
+
+Figyeljük meg, hogy a JSON-ban szereplő `<1></1>`, `<2></2>`, `<3></3>`... `<n></n>` tageket bárhova tehetjük a szövegünkben (ezek természetesen nem "valódi" HTML tagek, csak a fordító keretrendszerben léteznek és bármilyen szám lehet a `<>` között csak az a lényeg, hogy sorrendben egymás után következenek), hiszen nem biztos, hogy a kiemelni vagy linkelni kívánt szó ugyanott lesz az angol meg a magyar mondatban. Ha a HTML tagekre attribútumokat akarunk rakni azt a JSX kódban kell megtenni. 
+
+Lásd például a fenti kódban a `target="_blank"` attribútumot az `<a>` tagen, értelemszerűen ez minden nyelvi verzióban ugyanaz lesz.
+
+Ha az attribútumok értékeit is le akarjuk fordítani akkor azokra külön kulcsot kell felvenni a JSON file-okban és a `t()` függvénnyel kell beinjektálni a HTML-be.
+
+További információt a [react-i18next dokumentációjában](https://react.i18next.com/latest/trans-component) találsz.
+
 #### Szöveges oldalak
 
 A hosszabb szövegeket - például amikor teljes oldalak szövegét kell több nyelven definiálnunk - viszont külön [markdown](https://www.markdownguide.org/) file-okban tároljuk az `src/content` mappában. Minden egyes oldalhoz egy azonos nevű `.md` file tartozik egy az `en/` egy másik pedig a `hu/` mappában.
