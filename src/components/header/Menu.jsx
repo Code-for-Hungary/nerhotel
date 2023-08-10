@@ -47,6 +47,9 @@ const Menu = () => {
                         </SmartLink>
                     </li>
                     <li>
+                        <a href="https://www.partimap.eu/hu/p/nerhotel-bekuldes/0" target=new">Küldj be!</a>
+                    </li>
+                    <li>
                         <SmartLink to="/contact" onClick={closeMenu}>
                             {t("navigation:contact")}
                         </SmartLink>
