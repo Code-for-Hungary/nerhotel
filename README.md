@@ -8,10 +8,12 @@ A térképhez a [react-leaflet](https://react-leaflet.js.org/) library-t haszná
 
 ## Hogyan futattom a helyi gépemen?
 
-1. Installáld fel a dependenciákat `npm install` vagy `yarn install` parancsal
+1. Installáld fel a dependenciákat `npm install --legacy-peer-deps` vagy `yarn install --legacy-peer-deps` parancsal
 2. Futasd az alkalmazást DEV módban a `npm run dev` vagy az `yarn dev`
 
 > ⚠️ **Fontos!** JavaScript csomagkezelőnek a NPM-t preferáljuk. Természetesen ettől még használhatsz localban Yarn-t (vagy bármi mást) is, ellenben a generált `yarn.lock`-t kivettük a verziókezelés alól, hogy a CI környezetben ne akadjon össze a `package-lock.json`-al és csak egy lock file-unk legyen, mint az igazság forrása.
+
+> ⚠️ A `--legacy-peer-deps` parancsra szükségünk lesz, mert az egyik függőségünk ([`vite-plugin-markdown`](https://www.npmjs.com/package/vite-plugin-markdown)) korábbi Vite verziót határoz meg [peer dependency-ként](https://nodejs.org/es/blog/npm/peer-dependencies), mint amelyiket mi használunk.
 
 ## Honnan jönnek az adatok?
 
