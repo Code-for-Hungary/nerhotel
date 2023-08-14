@@ -1,56 +1,68 @@
 {
-  "name": "ner-hotel",
-  "version": "1.2.0",
-  "private": true,
-  "license": "GPL-3.0-or-later",
-  "dependencies": {
-    "i18next": "^22.0.6",
-    "leaflet": "^1.9.3",
-    "leaflet.markercluster": "^1.5.3",
-    "mkdirp": "^2.1.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-gtm-module": "^2.0.11",
-    "react-helmet": "^6.1.0",
-    "react-i18next": "^12.1.1",
-    "react-leaflet": "^4.2.0",
-    "react-leaflet-cluster": "^2.1.0",
-    "react-markdown": "^8.0.4",
-    "react-router-dom": "^5.1.0",
-    "react-scripts": "5.0.1",
-    "rehype-raw": "^6.1.1"
-  },
-  "devDependencies": {
-    "@testing-library/react": "^14.0.0",
-    "@vitejs/plugin-react": "^3.1.0",
-    "prettier": "^2.8.4",
-    "vite": "^4.1.0",
-    "vite-plugin-markdown": "^2.1.0",
-    "vitest": "^0.28.5"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint:fix": "eslint src --ext .js,.jsx --fix",
-    "lint": "eslint src --ext .js,.jsx",
-    "test": "vitest",
-    "format:fix": "prettier ./src --write",
-    "format:check": "prettier ./src --check"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "ner-hotel",
+    "version": "1.2.0",
+    "private": true,
+    "license": "GPL-3.0-or-later",
+    "engines": {
+        "node": "^18.*.*",
+        "npm": "^8.*.*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Code-for-Hungary/nerhotel"
+    },
+    "bugs": {
+        "url": "https://github.com/Code-for-Hungary/nerhotel/issues",
+        "email": "info@k-monitor.hu"
+    },
+    "dependencies": {
+        "i18next": "^22.0.6",
+        "leaflet": "^1.9.3",
+        "leaflet.markercluster": "^1.5.3",
+        "mkdirp": "^2.1.5",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-gtm-module": "^2.0.11",
+        "react-helmet": "^6.1.0",
+        "react-i18next": "^12.1.1",
+        "react-leaflet": "^4.2.0",
+        "react-leaflet-cluster": "^2.1.0",
+        "react-markdown": "^8.0.4",
+        "react-router-dom": "^5.1.0",
+        "react-scripts": "5.0.1",
+        "rehype-raw": "^6.1.1"
+    },
+    "devDependencies": {
+        "@testing-library/react": "^14.0.0",
+        "@vitejs/plugin-react": "^3.1.0",
+        "prettier": "^2.8.4",
+        "vite": "^4.1.0",
+        "vite-plugin-markdown": "^2.1.0",
+        "vitest": "^0.28.5"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "lint:fix": "eslint src --ext .js,.jsx --fix",
+        "lint": "eslint src --ext .js,.jsx",
+        "test": "vitest",
+        "format:fix": "prettier ./src --write",
+        "format:check": "prettier ./src --check"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
