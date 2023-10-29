@@ -54,6 +54,7 @@
         "format:fix": "prettier ./src --write",
         "format:check": "prettier ./src --check",
         "translations:download": "env-cmd tolgee pull --overwrite  -- ./src/translations",
+        "translations:download:ci": "tolgee pull --overwrite  -- ./src/translations",
         "translations:upload": "env-cmd tolgee push --force-mode override ./src/translations",
         "translations:empty-file": "node ./scripts/translations/create-empty-language-file.js"
     },
