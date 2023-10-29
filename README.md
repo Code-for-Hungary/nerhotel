@@ -51,9 +51,18 @@ Ezt az `npm run translations:upload` parancsal teheted meg.
 
 > ℹ️ A fent említett `translations:download`, `translations:upload` parancsok a Tolgee CLI-t használják, erről bővbben [itt olvashatsz](https://tolgee.io/tolgee-cli/).
 
-Ha egy új üres nyelvi file-t akarsz létrehozni azt megteheted az `npm run translations:empty-file <lang-code>` parancsal. A szkript létre fogja hozni az `src/translations/<lang-code>.json` file-t (tehát a filenév az lesz amit paraméterként átadunk a kitejesztés pedig automatikusan `.json`). A file gyakorlatilag lemásolja a `hu.json`-t és minden kulcs értékét üres sztringel helyetesti, ehhez természetesen az kell, hogy a `hu.json`-t korábban letöltsük. 
+Ha egy új üres nyelvi file-t akarsz létrehozni azt megteheted az `npm run translations:empty-file <lang-code>` parancsal. A szkript létre fogja hozni az `src/translations/<lang-code>.json` file-t (tehát a filenév az lesz amit paraméterként átadunk a kitejesztés pedig automatikusan `.json`). A file gyakorlatilag lemásolja a `hu.json`-t és minden kulcs értékét üres sztringel helyetesti, ehhez természetesen az kell, hogy a `hu.json`-t korábban letöltsük.
 
-### Honnan jönnek a szövegek.
+A fordításokat minden egyes deploymentnél frissen letöltjük a Tolgee-ból.
+
+Ha változtatsz valamit a Tolgee felületén az nem fog automatikusan megjelenni a weboldalon. Ehhez manuálisan el kell indítanod az éles deploymentet a github felületén. 
+
+- Menj a repository `Actions` fülére és keresd meg a **Deploy-Production** actiont a bal oldalon
+- Ha rákattintasz, jobb oldalt kell látnod egy `Run Workflow` gombot, kattints rá és várd meg amíg lefut a deployment
+
+Lásd a [Github dokumentációját](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow).
+
+### Honnan jönnek a szövegek?
 
 A felhasználói felületen látható szövegek nagy része az `src/translations` mappában található. A `hu.json` tartalmaza a magyar, az `en.json` pedig az angol szövegeket. Bővebb információt a JSON file-ok struktúrájáról és a kulcsok használatáról a [react-i18next](https://react.i18next.com/) fordításkezelő könyvtár dokumentációjában találasz.
 
@@ -121,9 +130,20 @@ A Markdown alapvetően [standard szintaxist](https://www.markdownguide.org/basic
 
 ## Hol lakik az oldal és hogyan deployolok?
 
-Az oldalt [Vercelen](https://vercel.com/) hosztoljuk. A Vercel platform össze van kötve ezzel a repóval, minden egyes `master` branchbe mergelt commit elindítja a buildet és a deploymentet. Minden logot a Vercel felületén lehet látni, de a pull requestek alatt a Vercel botja automatikusan kirak egy táblázatot a deployment státuszról.
+Az oldalt [Vercelen](https://vercel.com/) hosztoljuk.
 
-A buildhez szükséges esetleges környezeti változókat, secreteket, build beállításokat is a Vercel felületén tudjuk kezelni. Erről bővebben lásd a [dokumentációt](https://vercel.com/guides/how-to-add-vercel-environment-variables).
+A deploymentet Github actionök segítségével végezzük.
+
+Minden egyes Pull Request elindítja a `Deploy-Preview` nevű actionönt (`.github/vercel-preview-deployment.yml`).
+Ezzel a Vercel létrehoz egy Preview URL-t ahol az adott branch változtatásait nézhetjük meg. Az URL-t látni fogjuk a Github action logjaininak végén (keresd a `Deploy Project Artifacts to Vervel` alatt) illetve a Vercel admin felületén a **Deployments** menü alatt.
+
+Minden `master` branchbe bemergelt Pull Request pedig elindítja a `Deploy-Production` nevű actionönt (`.github/vercel-production-deployment.yml`). Ez voltaképp ugyanazt csinálja, mint a `Deploy-Preview`, azzal a különbséggel, hogy ez már az éles domainre rakja ki a változtatásokat.
+
+Minden logot megtalálsz a Vercel admin felületén.
+
+A buildhez szükséges esetleges környezeti változókat a Github repó `Settings` menüpontja alatt lehet beállítani.
+
+> ℹ️ A Vercelt akár automatikusan, Github actionök nélkül is össze lehet kötni a repóval, de azért választottuk a manuális deploymentet, mert így hozzá tudjuk adni a fordítási file-ok letöltését a CI-hoz.
 
 ## Az adatbázi lementése JSON-ba
 
