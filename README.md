@@ -9,7 +9,12 @@ A térképhez a [react-leaflet](https://react-leaflet.js.org/) library-t haszná
 ## Hogyan futattom a helyi gépemen?
 
 1. Installáld fel a dependenciákat `npm install --legacy-peer-deps` vagy `yarn install --legacy-peer-deps` parancsal
-2. Futasd az alkalmazást DEV módban a `npm run dev` vagy az `yarn dev`
+2. Töltsd le a fordításokat! A fordításokat tartalmazó file-okat nem tároljuk verziókezelésben, mert minden egyes deploymentnél a fordítás menedzser rendszerünkből töltjük le őket. Ezért, amikor először futattod a projektet helyi gépen, kézzel le kell töltened őket. Ehhez a következőt kell tenned:
+ - Szerezz be egy API kulcsot a [Tolgee-hoz](https://tolgee.io/) (fordítás menedzser). Ehhez először kelleni fog egy admin hozzáférés, amit valamelyik projekt admintól kérhetsz. Ezután kövesd a lépéseket a [Tolgee dokumenticiójából](https://tolgee.io/platform/account_settings/api_keys_and_pat_tokens).
+ - Hozz létre egy `.env` file-t a projekt gyökérkönyvtárában (ez a file nem fog be kerülni a gitbe) és hozd létre benne ezt a környezeti változót:
+ `TOLGEE_API_KEY=<Az API kulcs>`
+ - Futasd az `npm run translations:download` parancsot a terminálodból. Ez létre fogja hozni a `hu.json`, `en.json`, `de.json` file-okat a `src/translations` mappában.
+3. Futasd az alkalmazást DEV módban a `npm run dev` vagy az `yarn dev`
 
 > ⚠️ **Fontos!** JavaScript csomagkezelőnek a NPM-t preferáljuk. Természetesen ettől még használhatsz localban Yarn-t (vagy bármi mást) is, ellenben a generált `yarn.lock`-t kivettük a verziókezelés alól, hogy a CI környezetben ne akadjon össze a `package-lock.json`-al és csak egy lock file-unk legyen, mint az igazság forrása.
 
@@ -20,6 +25,33 @@ A térképhez a [react-leaflet](https://react-leaflet.js.org/) library-t haszná
 A térképen megjelenített helyeket egy [Google Sheetből](https://docs.google.com/spreadsheets/d/1FaeML93U76Fjh9GR7gbQhtb2O3Ga0ZY2honrYKyQQLo/edit#gid=0) szedjük.
 
 A sheetnek van egy olyan URL-je ami kigenerálja az adatokat nyers CSV-ben. Ezt hívjuk le egy `fetch` kéréssel amikor elindítjuk az alkalmazást, majd kliensoldalon JS-ben használható adatstruktúrává alakítjuk.
+
+## Fordításkezelés
+
+Az oldal fordításait egy [Tolgee](https://tolgee.io/) nevű fordításkezelő rendszerben tartjuk (jelenleg a hostolt verzió ingyenes csomagját használjuk, de a rendszert lehet saját szerveren is hostolni). A fordítások megjelenítésére és a nyelvváltásra a [react-i18next](https://react.i18next.com/) csomagot haználjuk.
+
+A fordításokat tartalmazó file-okat nem tároljuk verziókezelésben, mert minden egyes deploymentnél a fordítás menedzser rendszerünkből töltjük le őket.
+
+A Tolgee [adminját itt](https://app.tolgee.io/login) éred el.
+
+A fordításokat a következőképpen töltheted le:
+
+- Szerezz be egy API kulcsot a [Tolgee-hoz](https://tolgee.io/) (fordítás menedzser). Ehhez először kelleni fog egy admin hozzáférés, amit valamelyik projekt admintól kérhetsz. Ezután kövesd a lépéseket a [Tolgee dokumenticiójából](https://tolgee.io/platform/account_settings/api_keys_and_pat_tokens).
+- Hozz létre egy `.env` file-t a projekt gyökérkönyvtárában (ez a file nem fog be kerülni a gitbe) és hozd létre benne ezt a környezeti változót:
+`TOLGEE_API_KEY=<Az API kulcs>`
+- Futasd az `npm run translations:download` parancsot a terminálodból. Ez létre fogja hozni a `hu.json`, `en.json`, `de.json` file-okat a `src/translations` mappában.
+
+Miután letöltötted a JSON file-okat, hozzáadhatsz új kucsokat vagy módoíthatod a mglévő fordításokat. Ahhoz, hogy ez be is kerüljön a fordításkezelőbe, természetesen fel is kell oda töltened őket.
+
+Ezt az `npm run translations:upload` parancsal teheted meg.
+
+> ⚠️ A parancsal nem fogsz tudni kulcsokat törölni! Ha törölsz egy kulcsot a JSON-okból és feltötöd őket az a Tolgee felületén még ugyanúgy ott lesz. Szintén ha átnevezel egy kulcsot, az új kulcsként fog megjelenni a Tolgee adminján. Szóval fordítő kulcsot átnevezni vagy törölni csak az adminról tudsz.
+
+> ⚠️ A letöltött file-okban csak azok a kulcsok fognak szerplni, amikhez van fordítás az adott nyelvre. Ha gy nyelv létre van már hozva a Tolgee felültén, de nincs hozzá felvéve egyetlen fordítás sem, akkor letöltő zkript nem fogja létrrhozni az adott nelv JSON file-át.
+
+> ℹ️ A fent említett `translations:download`, `translations:upload` parancsok a Tolgee CLI-t használják, erről bővbben [itt olvashatsz](https://tolgee.io/tolgee-cli/).
+
+Ha egy új üres nyelvi file-t akarsz létrehozni azt megteheted az `npm run translations:empty-file <lang-code>` parancsal. A szkript létre fogja hozni az `src/translations/<lang-code>.json` file-t (tehát a filenév az lesz amit paraméterként átadunk a kitejesztés pedig automatikusan `.json`). A file gyakorlatilag lemásolja a `hu.json`-t és minden kulcs értékét üres sztringel helyetesti, ehhez természetesen az kell, hogy a `hu.json`-t korábban letöltsük. 
 
 ### Honnan jönnek a szövegek.
 
