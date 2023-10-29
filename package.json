@@ -34,7 +34,11 @@
     },
     "devDependencies": {
         "@testing-library/react": "^14.0.0",
+        "@tolgee/cli": "^1.2.0",
         "@vitejs/plugin-react": "^3.1.0",
+        "dotenv": "^16.3.1",
+        "env-cmd": "^10.1.0",
+        "node-libcurl": "^3.0.0",
         "prettier": "^2.8.4",
         "vite": "^4.1.0",
         "vite-plugin-markdown": "^2.1.0",
@@ -48,7 +52,11 @@
         "lint": "eslint src --ext .js,.jsx",
         "test": "vitest",
         "format:fix": "prettier ./src --write",
-        "format:check": "prettier ./src --check"
+        "format:check": "prettier ./src --check",
+        "translations:download": "env-cmd tolgee pull --overwrite  -- ./src/translations",
+        "translations:download:ci": "tolgee pull --overwrite  -- ./src/translations",
+        "translations:upload": "env-cmd tolgee push --force-mode override ./src/translations",
+        "translations:empty-file": "node ./scripts/translations/create-empty-language-file.js"
     },
     "eslintConfig": {
         "extends": "react-app"
