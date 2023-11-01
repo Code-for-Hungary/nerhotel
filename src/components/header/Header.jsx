@@ -7,10 +7,6 @@ import listIcon from "../../assets/menu-icon.svg";
 
 import logo from "../../assets/nh-logo.svg";
 import logoEn from "../../assets/nh-logo-en.svg";
-import hotel from "../../assets/nh-hotel.svg";
-import beach from "../../assets/nh-beach.svg";
-import restaurant from "../../assets/nh-restaurant.svg";
-import golf from "../../assets/nh-golf.svg";
 import { MapContext } from "../../context";
 
 import { config } from "../../config";
@@ -41,14 +37,9 @@ const Header = (props) => {
         dispatch({ type: "ToggleMenu", showMenu: true });
     }, [dispatch]);
 
-    const headerHeight = props.withSearch ? styles.large : styles.small;
-
     return (
-        <header className={[styles.header, headerHeight].join(" ")}>
-            <div className={styles.menubutton} onClick={onMenuCallback}>
-                <Icon img={listIcon} size="large" />
-            </div>
-            <div className={styles.headerWrapper}>
+        <header className={styles.header}>
+            <div className={styles.logoContainer}>
                 <SmartLink
                     to="/"
                     onClick={() => {
@@ -61,18 +52,13 @@ const Header = (props) => {
                         alt=""
                         width="47"
                         height="112"
+                        className={styles.logo}
                         style={{ aspectRatio: "47 / 112" }}
                     />
                 </SmartLink>
-                <div className={styles.headerInner}>
-                    <div className={styles.icons}>
-                        <img src={hotel} alt="" width="40" height="40" />
-                        <img src={beach} alt="" width="40" height="40" />
-                        <img src={restaurant} alt="" width="40" height="40" />
-                        <img src={golf} alt="" width="40" height="40" />
-                    </div>
-                    {props.withSearch && <Search />}
-                </div>
+            </div>
+            <div className={styles.searchContainer}>
+                <Search />
             </div>
             <div className={styles.langSwitchContainer}>
                 <LangSwitch
@@ -80,6 +66,11 @@ const Header = (props) => {
                     onLanguageChange={languageChangeHandler}
                     currentLocale={i18n.resolvedLanguage}
                 />
+            </div>
+            <div className={styles.menuContainer}>
+                <button onClick={onMenuCallback} type="button" className="resetButton">
+                    <Icon img={listIcon} size="large" />
+                </button>
             </div>
         </header>
     );

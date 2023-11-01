@@ -13,10 +13,10 @@ const Layout = (props) => {
 
     return (
         <>
-            <Header withSearch={props.withSearch} history={props.history} />
+            <Header history={props.history} />
             <Menu />
             {props.children}
-            {props.withList && showList && <List />}
+            {showList && <List />}
         </>
     );
 };

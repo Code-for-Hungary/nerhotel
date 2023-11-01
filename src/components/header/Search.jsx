@@ -3,6 +3,8 @@ import styles from "./Search.module.css";
 
 import { MapContext, HotelContext } from "../../context";
 import { useTranslation } from "react-i18next";
+import Icon from "../ui/Icon";
+import searchIcon from "../../assets/search.svg";
 
 import findProperty from "../../utils/search/find-property";
 
@@ -15,6 +17,7 @@ function Search() {
     const onSearchCallback = useCallback(
         (event) => {
             event.preventDefault();
+            console.log(event);
             dispatch({ type: "TogglePopup", showPopup: false });
 
             const results = hotels.filter((hotel) => findProperty(hotel.properties, value.toLowerCase()));
@@ -39,6 +42,9 @@ function Search() {
         <div className={styles.form}>
             <form onSubmit={onSearchCallback}>
                 <input onKeyUp={onKeyUpCallback} className={styles.input} placeholder={t("search:placeholder")} type="search" />
+                <button type="submit" className={[styles.searchButton, "resetButton"].join(" ")}>
+                    <Icon img={searchIcon} size="large" />
+                </button>
             </form>
         </div>
     );
