@@ -2,6 +2,7 @@ import { useContext, useCallback } from "react";
 import styles from "../css/list.module.css";
 import Icon from "./ui/Icon";
 import { useTranslation, Trans } from "react-i18next";
+import { useHistory, useLocation } from "react-router-dom";
 
 import closeIcon from "../assets/close-icon.svg";
 import ListItem from "./ListItem";
@@ -11,6 +12,8 @@ import { MapContext } from "../context";
 function List() {
     const { dispatch, list, map } = useContext(MapContext);
     const { t } = useTranslation();
+    const history = useHistory();
+    const location = useLocation();
 
     const showItem = useCallback(
         (item) => () => {
@@ -22,8 +25,11 @@ function List() {
             dispatch({ type: "SetSelectedPoint", point: item });
             dispatch({ type: "ToggleList", showList: false });
             dispatch({ type: "TogglePopup", showPopup: true });
+            if (location.pathname !== "/") {
+                history.push("/");
+            }
         },
-        [map, dispatch]
+        [map, dispatch, history, location]
     );
 
     const closeList = useCallback(() => {
@@ -31,7 +37,7 @@ function List() {
     }, [dispatch]);
 
     return (
-        <div className={styles.list}>
+        <div className={styles.list} aria-modal>
             <div className={styles.closeButton} onClick={closeList}>
                 <Icon img={closeIcon} size="large" />
             </div>
