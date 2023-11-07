@@ -33,4 +33,11 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .searchButton {
+        display: block;
+    }
 }

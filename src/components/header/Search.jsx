@@ -17,7 +17,6 @@ function Search() {
     const onSearchCallback = useCallback(
         (event) => {
             event.preventDefault();
-            console.log(event);
             dispatch({ type: "TogglePopup", showPopup: false });
 
             const results = hotels.filter((hotel) => findProperty(hotel.properties, value.toLowerCase()));
