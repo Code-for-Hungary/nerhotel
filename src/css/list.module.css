@@ -1,9 +1,9 @@
 .list {
     position: absolute;
-    top: 160px;
+    top: var(--header-height);
     left: 0;
     width: 100%;
-    min-height: calc(100vh - 160px);
+    min-height: calc(100vh - var(--header-height));
     padding: 20px;
     background: #fff;
     z-index: 2;

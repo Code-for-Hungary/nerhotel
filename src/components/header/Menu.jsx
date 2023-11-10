@@ -22,19 +22,19 @@ const Menu = () => {
         return null;
     }
 
-    const isDesktop = window.innerWidth > 768;
-
     return (
-        <aside className={styles.menu}>
+        <nav className={styles.menu}>
             <div className={styles.content}>
-                <div onClick={closeMenu} className={styles.close}>
-                    <Icon img={closeIcon} size="large" />
+                <div className={styles.close}>
+                    <button onClick={closeMenu} type="button" className="resetButton">
+                        <Icon img={closeIcon} size="large" />
+                    </button>
                 </div>
-                {isDesktop && (
-                    <div className={styles.logoWrapper}>
-                        <img src={resolvedLanguage === "hu" ? logo : logoEn} alt="" style={{ aspectRatio: "47 / 112" }} />
-                    </div>
-                )}
+
+                <div className={styles.logoWrapper}>
+                    <img src={resolvedLanguage === "hu" ? logo : logoEn} alt="" style={{ aspectRatio: "47 / 112" }} />
+                </div>
+
                 <ul className={styles.menulist}>
                     <li>
                         <SmartLink to="/" onClick={closeMenu}>
@@ -67,11 +67,11 @@ const Menu = () => {
                         </SmartLink>
                     </li>
                 </ul>
-                {isDesktop && (
-                    <div className={styles.imageWrapper}>
-                        <img src={image} alt="" />
-                    </div>
-                )}
+
+                <div className={styles.imageWrapper}>
+                    <img src={image} alt="" />
+                </div>
+
                 <address className={styles.footer}>
                     <p>
                         <strong
@@ -86,7 +86,7 @@ const Menu = () => {
                 </address>
             </div>
             <PoweredByVercel link={"https://vercel.com/"} />
-        </aside>
+        </nav>
     );
 };
 

@@ -1,7 +1,7 @@
 .menu {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     width: 75%;
@@ -13,17 +13,6 @@
     background: #fff;
     box-sizing: border-box;
     box-shadow: 12px 0 40px 5px rgba(0, 0, 0, 0.2);
-}
-
-.logoWrapper {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    width: 20%;
-}
-
-.logoWrapper img {
-    width: 100%;
 }
 
 .menulist {
@@ -73,13 +62,36 @@
 }
 
 .close {
-    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.imageWrapper,
+.logoWrapper {
+    display: none;
 }
 
 .imageWrapper {
     width: 80%;
     margin: 0 auto;
 }
-.imageWrapper img {
+
+.logoWrapper {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 20%;
+}
+
+.imageWrapper img,
+.logoWrapper img {
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .imageWrapper,
+    .logoWrapper {
+        display: block;
+    }
 }
