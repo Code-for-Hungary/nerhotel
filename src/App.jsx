@@ -106,6 +106,8 @@ function App() {
         };
     }, []);
 
+    console.log("TEST!!!");
+
     return (
         <>
             <ErrorBoundary>
