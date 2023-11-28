@@ -106,7 +106,7 @@ function App() {
         };
     }, []);
 
-    console.log("TEST!!!");
+    console.log("TEST!!! TEST!!!");
 
     return (
         <>
