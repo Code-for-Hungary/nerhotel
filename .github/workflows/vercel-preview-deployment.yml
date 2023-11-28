@@ -22,5 +22,5 @@ jobs:
               run: npm ci --fund=false --audit=false --legacy-peer-deps && npm run translations:download:ci
             - name: Build Project Artifacts
               run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
-            - name: Deploy Project Artifacts to Vercel
+            - name: Deploy Project Artifacts to Vercel (Preview)
               run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
