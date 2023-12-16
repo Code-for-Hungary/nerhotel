@@ -50,10 +50,10 @@ const Header = (props) => {
                     <img
                         src={resolvedLanguage === "hu" ? logo : logoEn}
                         alt=""
-                        width="47"
-                        height="112"
+                        width="27"
+                        height="64"
+                        style={{ aspectRatio: "27 / 64" }}
                         className={styles.logo}
-                        style={{ aspectRatio: "47 / 112" }}
                     />
                 </SmartLink>
             </div>
