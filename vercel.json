@@ -6,8 +6,5 @@
         }
     ],
     "trailingSlash": false,
-    "installCommand": "npm ci --fund=false --audit=false --legacy-peer-deps",
-    "github": {
-        "enabled": false
-    }
+    "installCommand": "npm ci --fund=false --audit=false --legacy-peer-deps"
 }

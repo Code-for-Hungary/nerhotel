@@ -38,32 +38,32 @@ const Menu = () => {
                 <ul className={styles.menulist}>
                     <li>
                         <SmartLink to="/" onClick={closeMenu}>
-                            {t("navigation:map")}
+                            {t("navigation.map")}
                         </SmartLink>
                     </li>
                     <li>
                         <SmartLink to="/about" onClick={closeMenu}>
-                            {t("navigation:about")}
+                            {t("navigation.about")}
                         </SmartLink>
                     </li>
                     <li>
-                        <SmartLink to={t("navigation:submit-link")} onClick={closeMenu}>
-                            {t("navigation:submit")}
+                        <SmartLink to={t("navigation.submit-link")} onClick={closeMenu}>
+                            {t("navigation.submit")}
                         </SmartLink>
                     </li>
                     <li>
                         <SmartLink to="/contact" onClick={closeMenu}>
-                            {t("navigation:contact")}
+                            {t("navigation.contact")}
                         </SmartLink>
                     </li>
                     <li>
                         <SmartLink to="https://tamogatas.k-monitor.hu" onClick={closeMenu}>
-                            {t("navigation:supportUs")}
+                            {t("navigation.supportUs")}
                         </SmartLink>
                     </li>
                     <li>
                         <SmartLink to="/data-export" onClick={closeMenu}>
-                            {t("navigation:export")}
+                            {t("navigation.export")}
                         </SmartLink>
                     </li>
                 </ul>
@@ -76,12 +76,12 @@ const Menu = () => {
                     <p>
                         <strong
                             dangerouslySetInnerHTML={{
-                                __html: t("navigation:address.name"),
+                                __html: t("navigation.address.name"),
                             }}
                         />
                     </p>
-                    <p>{t("navigation:address.heading")}:</p>
-                    <p>{t("navigation:address.address")}</p>
+                    <p>{t("navigation.address.heading")}:</p>
+                    <p>{t("navigation.address.address")}</p>
                     <SmartLink to="info@k-monitor.hu">info@k-monitor.hu</SmartLink>
                 </address>
             </div>

@@ -16,7 +16,9 @@
         "email": "info@k-monitor.hu"
     },
     "dependencies": {
+        "@tolgee/i18next": "^5.16.3",
         "i18next": "^22.0.6",
+        "i18next-icu": "^2.3.0",
         "leaflet": "^1.9.3",
         "leaflet.markercluster": "^1.5.3",
         "mkdirp": "^2.1.5",
@@ -34,11 +36,7 @@
     },
     "devDependencies": {
         "@testing-library/react": "^14.0.0",
-        "@tolgee/cli": "^1.2.0",
         "@vitejs/plugin-react": "^3.1.0",
-        "dotenv": "^16.3.1",
-        "env-cmd": "^10.1.0",
-        "node-libcurl": "^3.0.0",
         "prettier": "^2.8.4",
         "vite": "^4.1.0",
         "vite-plugin-markdown": "^2.1.0",
@@ -52,11 +50,7 @@
         "lint": "eslint src --ext .js,.jsx",
         "test": "vitest",
         "format:fix": "prettier ./src --write",
-        "format:check": "prettier ./src --check",
-        "translations:download": "env-cmd tolgee pull --overwrite  -- ./src/translations",
-        "translations:download:ci": "tolgee pull --overwrite  -- ./src/translations",
-        "translations:upload": "env-cmd tolgee push --force-mode override ./src/translations",
-        "translations:empty-file": "node ./scripts/translations/create-empty-language-file.js"
+        "format:check": "prettier ./src --check"
     },
     "eslintConfig": {
         "extends": "react-app"

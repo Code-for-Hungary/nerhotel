@@ -61,7 +61,7 @@ function MapComponent() {
                     map.flyTo(e.latlng, config.map.closeZoomLevel);
                 })
                 .on("locationerror", (e) => {
-                    alert(t("error:noGeoLocation"));
+                    alert(t("error.noGeoLocation"));
                     console.error(e);
                 });
         }

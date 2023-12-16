@@ -38,7 +38,7 @@ const Popup = (props) => {
                     <div className={styles.popupInfo}>
                         <div className={styles.popupRow}>
                             <div className={styles.popupCol}>
-                                <span>{t("general:maintainer")}</span>
+                                <span>{t("general.maintainer")}</span>
                                 <div className={styles.popupRow}>
                                     <Icon img={hotelIcon} size="small" />
                                     <div className={styles.company}>
@@ -57,7 +57,7 @@ const Popup = (props) => {
 
                             {oligarchsToShow && oligarchsToShow.length > 0 && (
                                 <div className={styles.popupCol}>
-                                    <span>{t("person:pep")}</span>
+                                    <span>{t("person.pep")}</span>
                                     <div className={styles.popupRow}>
                                         <Icon img={horseIcon} size="small" />
                                         <div className={styles.oligarch}>
@@ -77,7 +77,7 @@ const Popup = (props) => {
                             )}
                         </div>
                         <div>
-                            <span>{t("general:address")}</span>
+                            <span>{t("general.address")}</span>
                             <div className={styles.popupRow}>
                                 <Icon img={pinIcon} size="small" />
                                 <p>{data.address}</p>
@@ -87,13 +87,13 @@ const Popup = (props) => {
                             <div className={styles.popupRow}>
                                 <Icon img={linkIcon} size="small" />
                                 <a href={data.link} target="_blank" rel="noopener noreferrer">
-                                    {t("general:article")}
+                                    {t("general.article")}
                                 </a>
                             </div>
                         )}
                     </div>
                     <Button to={`/hotel/${data.id}`} isFull={true}>
-                        {t("popUp:linkText")}
+                        {t("popUp.linkText")}
                     </Button>
                 </>
             </div>
