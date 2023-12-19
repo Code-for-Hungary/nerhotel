@@ -2,7 +2,8 @@
     --nh-accent-color: #f05f22;
     --nh-blue: #3366ff;
     --copy-line-height: 1.6;
-    --header-height: 85px;
+    --header-height: 84px;
+    --page-gutter: 20px;
 }
 
 .leaflet-container {

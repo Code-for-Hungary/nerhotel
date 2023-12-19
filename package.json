@@ -18,7 +18,6 @@
     "dependencies": {
         "@tolgee/i18next": "^5.16.3",
         "i18next": "^22.0.6",
-        "i18next-icu": "^2.3.0",
         "leaflet": "^1.9.3",
         "leaflet.markercluster": "^1.5.3",
         "mkdirp": "^2.1.5",
@@ -32,6 +31,7 @@
         "react-markdown": "^8.0.4",
         "react-router-dom": "^5.1.0",
         "react-scripts": "5.0.1",
+        "react-transition-group": "^4.4.5",
         "rehype-raw": "^6.1.1"
     },
     "devDependencies": {

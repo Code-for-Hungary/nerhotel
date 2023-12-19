@@ -1,5 +1,6 @@
-import { useContext, useState, useCallback, useEffect, lazy, Suspense } from "react";
+import { useContext, useState, useCallback, useEffect, useRef } from "react";
 import { MapContainer as Map, TileLayer } from "react-leaflet";
+import { CSSTransition } from "react-transition-group";
 import LocateControl from "./LocateControl";
 import MapListOpener from "./MapListOpener";
 import { useTranslation } from "react-i18next";
@@ -12,19 +13,17 @@ import filterPoints from "../utils/map/filter-points.js";
 import MapCluster from "./MapCluster";
 import MapPlaceholder from "./MapPlaceholder";
 
-const Popup = lazy(() => import("../components/Popup"));
-
-function LazyPopup(props) {
-    return (
-        <Suspense>
-            <Popup {...props} />
-        </Suspense>
-    );
-}
+import Popup from "./Popup";
 
 function MapComponent() {
     const { dispatch, showPopup, center, selectedPoint, isDataLoaded } = useContext(MapContext);
     const { t } = useTranslation();
+    const transitionContainerRef = useRef(null);
+
+    const close = useCallback(() => {
+        dispatch({ type: "SetSelectedPoint", point: null });
+        dispatch({ type: "TogglePopup", showPopup: false });
+    }, [dispatch]);
 
     const { hotels } = useContext(HotelContext);
     const [loaded, setLoaded] = useState(false);
@@ -115,7 +114,9 @@ function MapComponent() {
                     )}
                 </div>
             </div>
-            {showPopup && <LazyPopup point={selectedPoint} />}
+            <CSSTransition in={showPopup} nodeRef={transitionContainerRef} classNames="Popup" unmountOnExit timeout={200}>
+                <Popup point={selectedPoint} onClose={close} ref={transitionContainerRef} />
+            </CSSTransition>
         </>
     );
 }

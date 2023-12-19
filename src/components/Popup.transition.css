@@ -1,0 +1,17 @@
+.Popup-enter {
+    opacity: 0;
+    transform: translateY(10vh);
+}
+.Popup-enter-active {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(0);
+}
+.Popup-exit {
+    opacity: 1;
+}
+.Popup-exit-active {
+    opacity: 0;
+    transform: translateY(10vh);
+    transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,17 @@
+.Menu-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+.Menu-enter-active {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    transform: translateX(0);
+}
+.Menu-exit {
+    opacity: 1;
+}
+.Menu-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.2s ease-in-out;
+}

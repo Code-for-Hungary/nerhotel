@@ -1,0 +1,122 @@
+/* By default it will cover the map as it were it's own screen */
+.popup {
+    --padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* on larger screens we turn it into a pop-up over the map */
+@media screen and (min-width: 600px) {
+    .popup {
+        width: 100%;
+        max-width: 400px;
+        max-height: 80vh;
+        top: auto;
+        bottom: 40px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.popupFooter {
+    padding: var(--padding);
+}
+
+.popupHeader {
+    border-bottom: 1px solid #ccc;
+    padding: var(--padding) calc(var(--padding) + 30px + 10px) var(--padding) var(--padding);
+    min-height: var(--header-height);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.popupContent {
+    padding: var(--padding);
+    box-sizing: border-box;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.popup h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.popupContent a {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.popupContent a {
+    margin-left: 5px;
+    transition: color 0.2s;
+}
+
+.popupContent a:hover,
+.popupContent a:focus {
+    color: var(--nh-accent-color);
+}
+
+.popupContent span {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.popupContent p {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 10px 5px;
+}
+
+.close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: var(--padding);
+}
+
+.popupRow {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.popupRowTopLevel {
+    gap: 16px;
+}
+
+.popupCol {
+    width: 50%;
+}
+
+.oligarch span {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.company a,
+.oligarch a {
+    display: inline-block;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}

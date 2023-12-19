@@ -1,5 +1,4 @@
 import i18next from "i18next";
-import ICU from "i18next-icu";
 import { withTolgee, Tolgee, I18nextPlugin, DevTools, BackendFetch } from "@tolgee/i18next";
 import { initReactI18next } from "react-i18next";
 import { config } from "./config";
@@ -15,7 +14,7 @@ const tolgee = Tolgee()
         apiKey: isDevMode ? import.meta.env.VITE_TOLGEE_API_KEY : "",
     });
 
-withTolgee(i18next, tolgee).use(initReactI18next).use(ICU).init({
+withTolgee(i18next, tolgee).use(initReactI18next).init({
     debug: isDevMode,
     lng: config.locales.default,
     fallbackLng: config.locales.default,
