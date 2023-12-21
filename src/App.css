@@ -4,6 +4,18 @@
     --copy-line-height: 1.6;
     --header-height: 84px;
     --page-gutter: 20px;
+    --h1-size: 1.5rem;
+    --h1-mb: 0.6em;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --h1-size: 1.75rem;
+    }
+}
+
+h1 {
+    font-size: var(--h1-size);
 }
 
 .leaflet-container {

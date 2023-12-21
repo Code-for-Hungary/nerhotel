@@ -1,9 +1,14 @@
 .contentPage {
     width: 100%;
     max-width: 960px;
-    margin: 150px auto 80px;
+    margin: calc(var(--header-height) + var(--h1-size)) auto 80px;
     padding: 0 var(--page-gutter);
     box-sizing: border-box;
+}
+
+.contentPage h1 {
+    margin-top: 0;
+    margin-bottom: var(--h1-mb);
 }
 
 .contentPage section {
@@ -17,6 +22,19 @@
 .contentPage p {
     font-size: 1rem;
     line-height: var(--copy-line-height);
+}
+
+.contentPage li {
+    margin: 0.5em;
+    line-height: var(--copy-line-height);
+}
+
+.contentPage li:last-of-type {
+    margin-bottom: 0;
+}
+
+.contentPage p:first-of-type {
+    margin-top: 0;
 }
 
 .contentPage a {

@@ -13,6 +13,10 @@
     flex-direction: column;
 }
 
+.desktopCloseIcon {
+    display: none;
+}
+
 /* on larger screens we turn it into a pop-up over the map */
 @media screen and (min-width: 600px) {
     .popup {
@@ -27,6 +31,14 @@
         border-radius: 10px;
         box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.3);
     }
+
+    .desktopCloseIcon {
+        display: flex;
+    }
+
+    .mobileCloseIcon {
+        display: none;
+    }
 }
 
 .popupFooter {
@@ -35,13 +47,21 @@
 
 .popupHeader {
     border-bottom: 1px solid #ccc;
-    padding: var(--padding) calc(var(--padding) + 30px + 10px) var(--padding) var(--padding);
+    padding: var(--padding);
+    padding-left: calc(var(--padding) + 30px + 20px);
     min-height: var(--header-height);
     display: flex;
     flex-direction: row;
     position: relative;
     align-items: center;
     box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+    .popupHeader {
+        padding: var(--padding);
+        padding-right: calc(var(--padding) + 30px + 10px);
+    }
 }
 
 .popupContent {
@@ -52,7 +72,6 @@
 }
 
 .popup h1 {
-    font-size: 28px;
     margin: 0;
 }
 
@@ -90,7 +109,14 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: var(--padding);
+    left: var(--padding);
+}
+
+@media screen and (min-width: 600px) {
+    .close {
+        right: var(--padding);
+        left: auto;
+    }
 }
 
 .popupRow {

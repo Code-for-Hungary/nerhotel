@@ -8,6 +8,7 @@ import horseIcon from "../assets/horse-icon.svg";
 import hotelIcon from "../assets/hotel-icon.svg";
 import linkIcon from "../assets/link-icon.svg";
 import pinIcon from "../assets/pin-icon.svg";
+import arrowIcon from "../assets/arrow-icon.svg";
 import { getOligarchData } from "../utils";
 import { useTranslation } from "react-i18next";
 import displayTranslatedPersonType from "../utils/person/display-translated-person-type";
@@ -26,7 +27,8 @@ const Popup = forwardRef((props, ref) => {
             <header className={styles.popupHeader}>
                 <h1>{data.name}</h1>
                 <button className={`${styles.close} resetButton`} onClick={props.onClose}>
-                    <Icon img={closeIcon} size="large" />
+                    <Icon img={closeIcon} size="large" className={styles.desktopCloseIcon} />
+                    <Icon img={arrowIcon} size="large" className={styles.mobileCloseIcon} />
                 </button>
             </header>
             <div className={styles.popupContent}>
