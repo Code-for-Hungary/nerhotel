@@ -9,11 +9,7 @@ A térképhez a [react-leaflet](https://react-leaflet.js.org/) library-t haszná
 ## Hogyan futattom a helyi gépemen?
 
 1. Installáld fel a dependenciákat `npm install --legacy-peer-deps` vagy `yarn install --legacy-peer-deps` parancsal
-2. Töltsd le a fordításokat! A fordításokat tartalmazó file-okat nem tároljuk verziókezelésben, mert minden egyes deploymentnél a fordítás menedzser rendszerünkből töltjük le őket. Ezért, amikor először futattod a projektet helyi gépen, kézzel le kell töltened őket. Ehhez a következőt kell tenned:
- - Szerezz be egy API kulcsot a [Tolgee-hoz](https://tolgee.io/) (fordítás menedzser). Ehhez először kelleni fog egy admin hozzáférés, amit valamelyik projekt admintól kérhetsz. Ezután kövesd a lépéseket a [Tolgee dokumenticiójából](https://tolgee.io/platform/account_settings/api_keys_and_pat_tokens).
- - Hozz létre egy `.env` file-t a projekt gyökérkönyvtárában (ez a file nem fog be kerülni a gitbe) és hozd létre benne ezt a környezeti változót:
- `TOLGEE_API_KEY=<Az API kulcs>`
- - Futasd az `npm run translations:download` parancsot a terminálodból. Ez létre fogja hozni a `hu.json`, `en.json`, `de.json` file-okat a `src/translations` mappában.
+2. Ahhoz, hogy megkapd és szerkeszteni is tud a lefordított szövegeket, szükséged lesz egy API kulcsra a [Tolgee fordítás menedzserhez](https://tolgee.io/). API kulcsot az admin felületről tudsz generálni. A [dokumentációban](https://tolgee.io/blog/how-to-localize-vue-app#step-3-generate-api-key) láthatod, hogy hogyan. Az admin felülethez hozzáférést a projekt egyik adminjától kaphatsz.
 3. Futasd az alkalmazást DEV módban a `npm run dev` vagy az `yarn dev`
 
 > ⚠️ **Fontos!** JavaScript csomagkezelőnek a NPM-t preferáljuk. Természetesen ettől még használhatsz localban Yarn-t (vagy bármi mást) is, ellenben a generált `yarn.lock`-t kivettük a verziókezelés alól, hogy a CI környezetben ne akadjon össze a `package-lock.json`-al és csak egy lock file-unk legyen, mint az igazság forrása.
@@ -28,43 +24,17 @@ A sheetnek van egy olyan URL-je ami kigenerálja az adatokat nyers CSV-ben. Ezt 
 
 ## Fordításkezelés
 
-Az oldal fordításait egy [Tolgee](https://tolgee.io/) nevű fordításkezelő rendszerben tartjuk (jelenleg a hostolt verzió ingyenes csomagját használjuk, de a rendszert lehet saját szerveren is hostolni). A fordítások megjelenítésére és a nyelvváltásra a [react-i18next](https://react.i18next.com/) csomagot haználjuk.
-
-A fordításokat tartalmazó file-okat nem tároljuk verziókezelésben, mert minden egyes deploymentnél a fordítás menedzser rendszerünkből töltjük le őket.
+Az oldal fordításait egy [Tolgee](https://tolgee.io/) nevű fordításkezelő rendszerben tartjuk (jelenleg a hostolt verzió ingyenes csomagját használjuk, de a rendszert lehet saját szerveren is hostolni). A fordítások megjelenítésére és a nyelvváltásra a [react-i18next](https://react.i18next.com/) csomagot és a [Tolgee SDK-ját](https://tolgee.io/js-sdk) használjuk.
 
 A Tolgee [adminját itt](https://app.tolgee.io/login) éred el.
 
-A fordításokat a következőképpen töltheted le:
+Mind fejlesztéskor mind az éles környezetben közvetlenül a Tolgee-ból kapjuk a szövegeket.
 
-- Szerezz be egy API kulcsot a [Tolgee-hoz](https://tolgee.io/) (fordítás menedzser). Ehhez először kelleni fog egy admin hozzáférés, amit valamelyik projekt admintól kérhetsz. Ezután kövesd a lépéseket a [Tolgee dokumenticiójából](https://tolgee.io/platform/account_settings/api_keys_and_pat_tokens).
-- Hozz létre egy `.env` file-t a projekt gyökérkönyvtárában (ez a file nem fog be kerülni a gitbe) és hozd létre benne ezt a környezeti változót:
-`TOLGEE_API_KEY=<Az API kulcs>`
-- Futasd az `npm run translations:download` parancsot a terminálodból. Ez létre fogja hozni a `hu.json`, `en.json`, `de.json` file-okat a `src/translations` mappában.
+A fejlesztői környezetben a saját felhasználói felületünkről tudjuk is szerkeszteni a fordításokat, kommenteket, tageket, screenshotokat feltölteni. Ha az `alt` (`option`) billentyű lenyomásával együtt fölé megyünk az egérrel egy olyan szövegnek, ami fordításként van jelen, akkor rákattinva megnyílik egy panel ahol közvetlenül tudjuk szerkeszteni anélkül, hogy megnyitnánk a Tolgee adminját. Ezt in-context fordításnak hívjuk, [itt olvashatsz](https://tolgee.io/js-sdk#in-context-translating) többet róla.
 
-Miután letöltötted a JSON file-okat, hozzáadhatsz új kucsokat vagy módoíthatod a mglévő fordításokat. Ahhoz, hogy ez be is kerüljön a fordításkezelőbe, természetesen fel is kell oda töltened őket.
+Az éles környezetben is közvetlenül a Tolgee-ból húzzuk be a fordításokat, az úgy nevezett [Content Delivery](https://tolgee.io/platform/projects_and_organizations/content_delivery) segítségével. Ez azt jelenti, hogy ha valamit megváltoztatsz a Tolgee adminján az weboldalon is meg fog változni*, kód kirakása nélkül.
 
-Ezt az `npm run translations:upload` parancsal teheted meg.
-
-> ⚠️ A parancsal nem fogsz tudni kulcsokat törölni! Ha törölsz egy kulcsot a JSON-okból és feltötöd őket az a Tolgee felületén még ugyanúgy ott lesz. Szintén ha átnevezel egy kulcsot, az új kulcsként fog megjelenni a Tolgee adminján. Szóval fordítő kulcsot átnevezni vagy törölni csak az adminról tudsz.
-
-> ⚠️ A letöltött file-okban csak azok a kulcsok fognak szerplni, amikhez van fordítás az adott nyelvre. Ha gy nyelv létre van már hozva a Tolgee felültén, de nincs hozzá felvéve egyetlen fordítás sem, akkor letöltő zkript nem fogja létrrhozni az adott nelv JSON file-át.
-
-> ℹ️ A fent említett `translations:download`, `translations:upload` parancsok a Tolgee CLI-t használják, erről bővbben [itt olvashatsz](https://tolgee.io/tolgee-cli/).
-
-Ha egy új üres nyelvi file-t akarsz létrehozni azt megteheted az `npm run translations:empty-file <lang-code>` parancsal. A szkript létre fogja hozni az `src/translations/<lang-code>.json` file-t (tehát a filenév az lesz amit paraméterként átadunk a kitejesztés pedig automatikusan `.json`). A file gyakorlatilag lemásolja a `hu.json`-t és minden kulcs értékét üres sztringel helyetesti, ehhez természetesen az kell, hogy a `hu.json`-t korábban letöltsük.
-
-A fordításokat minden egyes deploymentnél frissen letöltjük a Tolgee-ból.
-
-Ha változtatsz valamit a Tolgee felületén az nem fog automatikusan megjelenni a weboldalon. Ehhez manuálisan el kell indítanod az éles deploymentet a github felületén. 
-
-- Menj a repository `Actions` fülére és keresd meg a **Deploy-Production** actiont a bal oldalon
-- Ha rákattintasz, jobb oldalt kell látnod egy `Run Workflow` gombot, kattints rá és várd meg amíg lefut a deployment
-
-Lásd a [Github dokumentációját](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow).
-
-### Honnan jönnek a szövegek?
-
-A felhasználói felületen látható szövegek nagy része az `src/translations` mappában található. A `hu.json` tartalmaza a magyar, az `en.json` pedig az angol szövegeket. Bővebb információt a JSON file-ok struktúrájáról és a kulcsok használatáról a [react-i18next](https://react.i18next.com/) fordításkezelő könyvtár dokumentációjában találasz.
+`*` Mivel a JSON file-kat a Tolgee cacheli ezért van, hogy 10-15 percet is várni kell amíg a változtatásaink megjelenek.
 
 #### HTML a lefordítot szövegekben
 
@@ -88,7 +58,6 @@ return (
 ```
 
 ```json
-// hu.json
 {
     "a-szovegunk-kulcsa": "Nagyon <1>fontos</1>, hogy hivatkozunk erre a <2>weboldalra</2> <3>itten ni</3>."
     "a-link-kulcsa-ami-mas-angolul-es-magyarul": "https://example.com/hu"
@@ -96,7 +65,6 @@ return (
 ```
 
 ```json
-// en.json
 {
     "a-szovegunk-kulcsa": "It's very <1>important</1>, to refer to this <2>website</2> <3>here</3>."
     "a-link-kulcsa-ami-mas-angolul-es-magyarul": "https://example.com/en"
@@ -132,20 +100,11 @@ A Markdown alapvetően [standard szintaxist](https://www.markdownguide.org/basic
 
 Az oldalt [Vercelen](https://vercel.com/) hosztoljuk.
 
-A deploymentet Github actionök segítségével végezzük.
-
-Minden egyes Pull Request elindítja a `Deploy-Preview` nevű actionönt (`.github/vercel-preview-deployment.yml`).
-Ezzel a Vercel létrehoz egy Preview URL-t ahol az adott branch változtatásait nézhetjük meg. Az URL-t látni fogjuk a Github action logjaininak végén (keresd a `Deploy Project Artifacts to Vervel` alatt) illetve a Vercel admin felületén a **Deployments** menü alatt.
-
-Minden `master` branchbe bemergelt Pull Request pedig elindítja a `Deploy-Production` nevű actionönt (`.github/vercel-production-deployment.yml`). Ez voltaképp ugyanazt csinálja, mint a `Deploy-Preview`, azzal a különbséggel, hogy ez már az éles domainre rakja ki a változtatásokat.
-
 Minden logot megtalálsz a Vercel admin felületén.
 
 A buildhez szükséges esetleges környezeti változókat a Github repó `Settings` menüpontja alatt lehet beállítani.
 
-> ℹ️ A Vercelt akár automatikusan, Github actionök nélkül is össze lehet kötni a repóval, de azért választottuk a manuális deploymentet, mert így hozzá tudjuk adni a fordítási file-ok letöltését a CI-hoz.
-
-## Az adatbázi lementése JSON-ba
+## Az adatbázis lementése JSON-ba
 
 Van egy Node.js szkript a `scripts/download-hotels-as-json.js`, ami ugyanazt a kódot használja az Google sheetsben tárolt adatok kinyerésére, mint amit futásidőben is meghívunk. A különbség az, hogy ez lementi a JSON-t a `data/nerhotel.json` file-ba.
 Ez hasznos lehet, ha mondjuk egy másik adatbázisba akarjuk migrálni az adatokat.

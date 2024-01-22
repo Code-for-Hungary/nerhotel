@@ -69,20 +69,20 @@ const Hotel = (props) => {
                         <>
                             <Helmet>
                                 <title>
-                                    {getTranslatedHotelProperty("name", resolvedLanguage, data)} - {t("general:siteName")}
+                                    {getTranslatedHotelProperty("name", resolvedLanguage, data)} - {t("general.siteName")}
                                 </title>
                             </Helmet>
                             <h1>{getTranslatedHotelProperty("name", resolvedLanguage, data)}</h1>
                             <div className={styles.hotelRow}>
                                 <p>
-                                    {t("hotel:type")}: <span>{getTranslatedHotelProperty("type", resolvedLanguage, data)}</span>
+                                    {t("hotel.type")}: <span>{getTranslatedHotelProperty("type", resolvedLanguage, data)}</span>
                                 </p>
                             </div>
                             {data.company && (
                                 <div className={styles.hotelRow}>
                                     <Icon img={hotelIcon} size="small" />
                                     <p>
-                                        {t("general:maintainer")}:{" "}
+                                        {t("general.maintainer")}:{" "}
                                         {data.company.link ? (
                                             <span>
                                                 <SmartLink to={data.company.link}>{data.company.name}</SmartLink>
@@ -97,7 +97,7 @@ const Hotel = (props) => {
                                 <div className={styles.hotelRow}>
                                     <Icon img={horseIcon} size="small" />
                                     <p>
-                                        {t("hotel:people")}:<br />
+                                        {t("hotel.people")}:<br />
                                         {oligarchData.map((oligarch, key) => (
                                             <span key={key} className={styles.oligarch}>
                                                 <SmartLink to={`/person/${oligarch.name}`}>{oligarch.name}</SmartLink>
@@ -115,7 +115,7 @@ const Hotel = (props) => {
                                 <div className={styles.hotelRow}>
                                     <Icon img={pinIcon} size="small" />
                                     <p>
-                                        {t("general:address")}: <span>{data.address}</span>
+                                        {t("general.address")}: <span>{data.address}</span>
                                     </p>
                                 </div>
                             )}
@@ -123,7 +123,7 @@ const Hotel = (props) => {
                                 <div className={styles.hotelRow}>
                                     <Icon img={linkIcon} size="small" />
                                     <SmartLink to={getTranslatedHotelProperty("link", resolvedLanguage, data)}>
-                                        <span>{t("general:article")}</span>
+                                        <span>{t("general.article")}</span>
                                     </SmartLink>
                                 </div>
                             )}
@@ -131,7 +131,7 @@ const Hotel = (props) => {
                                 <div className={styles.hotelRow}>
                                     <p>
                                         {(resolvedLanguage === "hu" && data.details) || (resolvedLanguage === "en" && data.en.details) ? (
-                                            <span style={{ display: "block" }}>{t("general:additionalInfo")}:</span>
+                                            <span style={{ display: "block" }}>{t("general.additionalInfo")}:</span>
                                         ) : null}
                                         {resolvedLanguage === "hu" ? data.details : null}
                                         {resolvedLanguage === "en" && data.en && data.en.details ? data.en.details : ""}
@@ -141,7 +141,7 @@ const Hotel = (props) => {
                             {data.date !== "" && (
                                 <div className={styles.hotelRow}>
                                     <p>
-                                        {t("hotel:updatedOn")}: <span>{data.date}</span>
+                                        {t("hotel.updatedOn")}: <span>{data.date}</span>
                                     </p>
                                 </div>
                             )}

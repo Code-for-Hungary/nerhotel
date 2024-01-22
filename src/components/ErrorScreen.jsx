@@ -8,14 +8,14 @@ function ErrorScreen(props) {
 
     return (
         <div className={styles.contentPage}>
-            <h1>{t("error:heading")}</h1>
-            <p>{t("error:text")}</p>
+            <h1>{t("error.heading")}</h1>
+            <p>{t("error.text")}</p>
             <p style={{ textAlign: "center" }}>
                 {!props.standAlone ? (
-                    <Button to="/">{t("error:buttonText")}</Button>
+                    <Button to="/">{t("error.buttonText")}</Button>
                 ) : (
                     <Button href="/" isPlainAnchor>
-                        {t("error:buttonText")}
+                        {t("error.buttonText")}
                     </Button>
                 )}
             </p>

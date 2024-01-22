@@ -40,7 +40,7 @@ function Search() {
     return (
         <div className={styles.form}>
             <form onSubmit={onSearchCallback}>
-                <input onKeyUp={onKeyUpCallback} className={styles.input} placeholder={t("search:placeholder")} type="search" />
+                <input onKeyUp={onKeyUpCallback} className={styles.input} placeholder={t("search.placeholder")} type="search" />
                 <button type="submit" className={[styles.searchButton, "resetButton"].join(" ")}>
                     <Icon img={searchIcon} size="large" />
                 </button>

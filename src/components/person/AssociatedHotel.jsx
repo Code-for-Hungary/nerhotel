@@ -23,7 +23,7 @@ function AssociatedHotel({ hotel, ...props }) {
             {hotel.properties.date && <> – {hotel.properties.date}</>}
             {details && (
                 <p>
-                    <span>{t("general:additionalInfo")}:</span> {details}
+                    <span>{t("general.additionalInfo")}:</span> {details}
                 </p>
             )}
         </li>

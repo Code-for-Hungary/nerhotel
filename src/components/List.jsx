@@ -46,9 +46,9 @@ function List() {
 
                 {list.length === 0 && (
                     <p>
-                        <Trans i18nKey="list:emptyState">
+                        <Trans i18nKey="list.emptyState">
                             Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet,
-                            <a href={t("list:sendToUsLink")} target="_blank" rel="noopener noreferrer">
+                            <a href={t("list.sendToUsLink")} target="_blank" rel="noopener noreferrer">
                                 küldd el nekünk
                             </a>
                             !

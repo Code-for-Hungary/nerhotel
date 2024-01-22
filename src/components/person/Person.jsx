@@ -98,7 +98,7 @@ const Person = (props) => {
         <div className={[styles.hotel, "hotel"].join(" ")}>
             <Helmet>
                 <title>
-                    {personName} - {t("general:siteName")}
+                    {personName} - {t("general.siteName")}
                 </title>
             </Helmet>
             {affiliatedHotels && affiliatedHotels.length ? (
@@ -120,14 +120,14 @@ const Person = (props) => {
 
                         {personUrl && (
                             <p>
-                                {t("person:dbLink")}: <SmartLink to={personUrl}>{personName}</SmartLink>
+                                {t("person.dbLink")}: <SmartLink to={personUrl}>{personName}</SmartLink>
                             </p>
                         )}
                         {affiliatedHotels.length > 0 && (
                             <>
                                 <div className={styles.hotelRow}>
                                     <Icon img={hotelIcon} size="small" />
-                                    <p>{t("person:relatedPlaces")}:</p>
+                                    <p>{t("person.relatedPlaces")}:</p>
                                 </div>
                                 <div className={styles.hotelRow}>
                                     <ul>
