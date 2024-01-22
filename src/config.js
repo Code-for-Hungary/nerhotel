@@ -6,7 +6,7 @@ export const config = {
         default: "hu",
         available: ["hu", "en", "de"],
         paramName: "plang",
-        tolgeeContentDeliveryUrl: "https://cdn.tolg.ee/3c53b03e65a1fff6cd32b1c904bfa7e3",
+        tolgeeContentDeliveryUrl: "https://cdn.tolg.ee/f853f27fff178fd3340dad767ebb4637",
         tolgeeApiUrl: "https://app.tolgee.io",
     },
     map: {
