@@ -29,7 +29,7 @@ Minden beküldést átnézünk, és a [módszertannak](/about) megfelelés eset�
 
 **K-Monitor Közhasznú Egyesület**
 
-Levelezési cím: 1062 Budapest, Bajza u. 23.
-
-[info@k-monitor.hu](info@k-monitor.hu)&nbsp;[k-monitor.hu](https://k-monitor.hu)
+Levelezési cím: 1062 Budapest, Bajza u. 23. <br/>
+[info@k-monitor.hu](mailto:info@k-monitor.hu)<br/>
+[k-monitor.hu](https://k-monitor.hu)
 </section>

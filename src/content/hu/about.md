@@ -11,7 +11,7 @@ mellett és a politikai hátszéllel segített vállalkozói réteg további té
 **A NER HOTEL egy olyan webes alkalmazás, ami átláthatóbbá teszi a magyar szállás- és a vendéglátóhelyek tulajdonosi és üzemeltetői hátterét.** Segítségével tájékozódhatsz, kinél cseng a
 kassza a költésed nyomán, ha asztalt vagy szállást foglalsz.
 
-Az oldal tartalmát az alábbi módszertan alapján a K-Monitor készíti. Az oldal fejlesztésben a [Code for Hungary](https://github.com/Code-for-Hungary) önkéntesei vettek részt. Az eszköz [nyílt forráskóddal](https://github.com/Code-for-Hungary/nerhotel) rendelkezik, így szabadon továbbfejleszthető, alakítható és felhasználható. Ha segítenél, [itt tudsz beszállni a csapatba](https://docs.google.com/forms/d/e/1FAIpQLSeep6bUaI0nC-ZelkPjdUdw_kvzAJu2XJc8qpNhAJeIRSyZEA/viewform)!
+Az oldal tartalmát az alábbi módszertan alapján a [K-Monitor készíti](https://k-monitor.hu/fooldal). Az oldal fejlesztésben a [Code for Hungary](https://github.com/Code-for-Hungary) önkéntesei vettek részt. Az eszköz [nyílt forráskóddal](https://github.com/Code-for-Hungary/nerhotel) rendelkezik, így szabadon továbbfejleszthető, alakítható és felhasználható. Ha segítenél, [itt tudsz beszállni a csapatba](https://docs.google.com/forms/d/e/1FAIpQLSeep6bUaI0nC-ZelkPjdUdw_kvzAJu2XJc8qpNhAJeIRSyZEA/viewform)!
 </section>
 
 <section>
@@ -31,10 +31,11 @@ tekintettel egy ennél bővebb definíciót használ. Ez tartalmazza az önkorm�
 sajtóprofiljuk alapján valamely politikailag exponált személlyel kiterjedt, a szereplők reputációját befolyásoló kapcsolatot tartanak fenn.
 
 A NER HOTEL célja, hogy ezen személyek turisztikai érdekeltségeiről hiteles és rendszerezett információt kínáljon, ami egy szempontja lehet a tudatos fogyasztói döntéseknek. Az ehhez
-szükséges információk feltérképezését nyilvánosan is elérhető sajtóhírek és cégadatok alapján, a [K-Monitor sajtóadatbázisát](https://net.jogtar.hu/jogszabaly?docid=a1700053.tv) felhasználva folyamatosan végezzük.
+szükséges információk feltérképezését nyilvánosan is elérhető sajtóhírek és cégadatok alapján, a [K-Monitor sajtóadatbázisát](https://adatbazis.k-monitor.hu/) felhasználva folyamatosan végezzük.
 
 Az aktuális adatbázis tartalmának csv formátumban letöltéséhez [kattints ide](/data-export).
 </section>
+
 <section>
 
 ## Milyen adatokra alapozzuk mindezt?
@@ -48,6 +49,7 @@ adatbázisban szereplő helyek tulajdonosainak vagy üzemeltetőinek politikai s
 
 **Helyek adatai:** Országos Kereskedelmi Nyilvántartás, önkéntes gyűjtés (helyek honlapjai, sajtócikkek, [Kisfaludy Program](https://k-monitor.hu/adatbazis/cimkek/kisfaludy-program), stb.)
 </section>
+
 <section>
 
 ## Milyen forrásból? Honnan volt rá pénz?
@@ -58,6 +60,7 @@ Ezen mikroadományokon túl más forrás nem kapcsolódik a projekthez.
 
 **Ha értékesnek találod a munkánkat, [támogasd a K-Monitort rendszeres adományoddal](https://tamogatas.k-monitor.hu)!**
 </section>
+
 <section>
 
 ## Hibát találtál? Jelezd felénk!

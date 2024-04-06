@@ -52,7 +52,7 @@ const ContentPageView = ({ history }) => {
         <Layout history={history}>
             <Helmet>
                 <title>
-                    {t(`staticPageTitles:${pathNameWithoutSlash}`)} - {t("general.siteName")}
+                    {t(`staticPageTitles.${pathNameWithoutSlash}`)} - {t("general.siteName")}
                 </title>
             </Helmet>
             <div className={styles.contentPage}>

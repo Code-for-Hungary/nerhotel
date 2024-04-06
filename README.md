@@ -32,7 +32,7 @@ Mind fejlesztéskor mind az éles környezetben közvetlenül a Tolgee-ból kapj
 
 A fejlesztői környezetben a saját felhasználói felületünkről tudjuk is szerkeszteni a fordításokat, kommenteket, tageket, screenshotokat feltölteni. Ha az `alt` (`option`) billentyű lenyomásával együtt fölé megyünk az egérrel egy olyan szövegnek, ami fordításként van jelen, akkor rákattinva megnyílik egy panel ahol közvetlenül tudjuk szerkeszteni anélkül, hogy megnyitnánk a Tolgee adminját. Ezt in-context fordításnak hívjuk, [itt olvashatsz](https://tolgee.io/js-sdk#in-context-translating) többet róla.
 
-Az éles környezetben is közvetlenül a Tolgee-ból húzzuk be a fordításokat, az úgy nevezett [Content Delivery](https://tolgee.io/platform/projects_and_organizations/content_delivery) segítségével. Ez azt jelenti, hogy ha valamit megváltoztatsz a Tolgee adminján az weboldalon is meg fog változni*, kód kirakása nélkül.
+Az éles környezetben is közvetlenül a Tolgee-ból húzzuk be a fordításokat, az úgy nevezett [Content Delivery](https://tolgee.io/platform/projects_and_organizations/content_delivery) segítségével. Ez azt jelenti, hogy ha valamit megváltoztatsz a Tolgee adminján az weboldalon is meg fog változni \*, kód kirakása nélkül.
 
 `*` Mivel a JSON file-kat a Tolgee cacheli ezért van, hogy 10-15 percet is várni kell amíg a változtatásaink megjelenek.
 
