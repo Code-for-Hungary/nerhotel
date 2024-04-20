@@ -61,6 +61,12 @@ export function getHotels(csvRowsAsObjects) {
                     details: csvRow["details_en"] ? csvRow["details_en"] : null,
                     type: csvRow["category"],
                 },
+                de: {
+                    name: csvRow["name_de"] ? csvRow["name_de"] : null,
+                    link: csvRow["news_de"] ? csvRow["news_de"] : null,
+                    details: csvRow["details_de"] ? csvRow["details_de"] : null,
+                    type: csvRow["category_de"],
+                },
                 picture: csvRow["picture"] ? csvRow["picture"] : null,
             },
             geometry: {
