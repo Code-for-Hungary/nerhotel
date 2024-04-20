@@ -106,14 +106,12 @@ function App() {
         };
     }, []);
 
-    console.log("TEST!!! TEST!!!");
-
     return (
         <>
             <ErrorBoundary>
                 <Helmet>
                     <title>
-                        {t("general:tagline")} - {t("general:siteName")}
+                        {t("general.tagline")} - {t("general.siteName")}
                     </title>
                 </Helmet>
                 <HotelContext.Provider value={{ hotels }}>

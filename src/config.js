@@ -4,8 +4,10 @@ export const config = {
         "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEboU5aIOUgZ-hmNpLQIYB8EZTc1HYAFf9mL97jvjVl6S9auEiFxJ1fwMpbr6-7dwPYl57BOK4ANfs/pub?gid=0&single=true&output=csv",
     locales: {
         default: "hu",
-        available: ["hu", "en"],
+        available: ["hu", "en", "de"],
         paramName: "plang",
+        tolgeeContentDeliveryUrl: "https://cdn.tolg.ee/f853f27fff178fd3340dad767ebb4637",
+        tolgeeApiUrl: "https://app.tolgee.io",
     },
     map: {
         url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",

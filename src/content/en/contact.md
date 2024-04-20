@@ -13,7 +13,7 @@ Principles of our operation are openness, independence and a critical approach.
 
 ## Submit an establishment
 
-Do you know of a restaurant, hotel or other tourist attraction whose operator is presumably a politically exposed person? [Send it to us](info@k-monitor.hu)!
+Do you know of a restaurant, hotel or other tourist attraction whose operator is presumably a politically exposed person? [Send it to us](https://www.partimap.eu/en/p/nerhotel-bekuldes/0)!
 
 All submissions will be reviewed and added to the database if they meet the [methodology](/about).
 </section>
@@ -24,7 +24,7 @@ All submissions will be reviewed and added to the database if they meet the [met
 
 **K-Monitor Public Benefit Association**
 
-Hungary, 1062 Budapest, Bajza utca 23.
-
-[info@k-monitor.hu](info@k-monitor.hu)&nbsp;[k-monitor.hu](https://k-monitor.hu/en)
+Hungary, 1062 Budapest, Bajza utca 23.<br/>
+[info@k-monitor.hu](mailto:info@k-monitor.hu)<br/>
+[k-monitor.hu](https://k-monitor.hu/en)
 </section>
