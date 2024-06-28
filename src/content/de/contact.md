@@ -23,7 +23,7 @@ Alle Einsendungen werden geprüft und in die Datenbank aufgenommen, wenn sie [de
 
 **K-Monitor**
 
-Ungarn, 1062 Budapest, Bajza utca 23.<br/>
+Ungarn, 1077 Budapest, Jósika utca 25.<br/>
 [info@k-monitor.hu](mailto:info@k-monitor.hu)<br/>
 [k-monitor.hu](https://k-monitor.hu/en)
 </section>
