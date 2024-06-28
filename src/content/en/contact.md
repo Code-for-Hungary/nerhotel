@@ -24,7 +24,7 @@ All submissions will be reviewed and added to the database if they meet the [met
 
 **K-Monitor Public Benefit Association**
 
-Hungary, 1062 Budapest, Bajza utca 23.<br/>
+Hungary, 1077 Budapest, Jósika utca 25.<br/>
 [info@k-monitor.hu](mailto:info@k-monitor.hu)<br/>
 [k-monitor.hu](https://k-monitor.hu/en)
 </section>
