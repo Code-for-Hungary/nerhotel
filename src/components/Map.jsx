@@ -14,6 +14,7 @@ import MapCluster from "./MapCluster";
 import MapPlaceholder from "./MapPlaceholder";
 
 import Popup from "./Popup";
+import FilterControl from "./FilterControl.jsx";
 
 function MapComponent() {
     const { dispatch, showPopup, center, selectedPoint, isDataLoaded } = useContext(MapContext);
@@ -28,18 +29,20 @@ function MapComponent() {
     const { hotels } = useContext(HotelContext);
     const [loaded, setLoaded] = useState(false);
     const [map, setMap] = useState(null);
+    const [filterType, setFilterType] = useState("mind");
     const [filteredPoints, setFilteredPoints] = useState([]);
 
     const calcPoints = useCallback(
         (map) => {
             if (map) {
                 const mapBounds = map.getBounds();
-                const points = filterPoints(hotels, mapBounds);
+                let points = filterPoints(hotels, mapBounds);
+                if (filterType != "mind") points = points.filter((point) => point.properties.type.includes(filterType));
                 setFilteredPoints(points);
                 dispatch({ type: "SetList", list: points });
             }
         },
-        [hotels, dispatch]
+        [hotels, dispatch, filterType]
     );
 
     useEffect(() => {
@@ -106,6 +109,7 @@ function MapComponent() {
                                 onClusterClick={onClusterClickHandler}
                                 onMove={moveHandler}
                             />
+                            <FilterControl filterType={filterType} setFilterType={setFilterType} />
                             <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
                             <MapListOpener onLocationListOpen={openLocationList} />
                         </Map>

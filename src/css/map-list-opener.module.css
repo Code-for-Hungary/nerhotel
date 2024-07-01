@@ -14,6 +14,55 @@
     box-sizing: border-box;
 }
 
+.filterRowWrapper {
+    padding-top: 100px;
+    margin: 10px;
+    height: calc(100% - 100px);
+    right: 0px;
+    bottom: 0px;
+    z-index: 1000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterRow {
+    background: #fafafa;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterButton {
+    color: #fafafa;
+    background-color: #aaa;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.1s ease;
+    margin: 3px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterButton:hover {
+    filter: brightness(90%);
+}
+
+.selectedButton {
+    background-color: var(--nh-accent-color);
+}
+
 .locateButton {
     top: 12px;
     border-bottom-width: 1px;
