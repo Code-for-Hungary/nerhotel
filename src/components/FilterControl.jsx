@@ -3,8 +3,11 @@ import { GiCampingTent } from "react-icons/gi";
 import { MdCasino, MdLocalBar, MdLocalCafe, MdOutlineRestaurant, MdSelectAll } from "react-icons/md";
 import { TbHotelService } from "react-icons/tb";
 import styles from "../css/map-list-opener.module.css";
+import { FaFilter } from "react-icons/fa6";
+import { useState, useEffect, useCallback } from "react";
 
 function FilterControl({ filterType, setFilterType }) {
+    const [filterOpen, setFilterOpen] = useState(false);
     const size = 16;
     const options = [
         { type: "mind", category: "all", name: "Alles", icon: <MdSelectAll size={size} /> },
@@ -18,21 +21,33 @@ function FilterControl({ filterType, setFilterType }) {
         { type: "kiskereskedelem", category: "retail", name: "Einzelhandel", icon: <FaShoppingBasket size={size} /> },
         { type: "szálloda", category: "hotel", name: "Hotel", icon: <TbHotelService size={size} /> },
     ];
+    const toggleFilterOpen = useCallback(() => {
+        setFilterOpen((prevState) => !prevState);
+    }, []);
+
+    useEffect(() => {
+        console.log("filterOpen:", filterOpen);
+    }, [filterOpen]);
 
     return (
-        <div className={`${styles.filterRowWrapper}`}>
-            <div className={`${styles.filterRow}`}>
-                {options.map((option) => (
-                    <button
-                        className={`${filterType == option.type ? styles.selectedButton : ""} ${styles.filterButton}`}
-                        title={option.type}
-                        onClick={() => setFilterType(option.type)}
-                    >
-                        {option.icon}
-                    </button>
-                ))}
+        <>
+            <button className={`${styles.controlButton} ${styles.filterOpenButton}`} onClick={toggleFilterOpen}>
+                <FaFilter />
+            </button>
+            <div className={` ${styles.filterRowWrapper} ${filterOpen ? styles.filterOpen : ""}`} key={filterOpen ? "open" : "closed"}>
+                <div className={`${styles.filterRow}`}>
+                    {options.map((option) => (
+                        <button
+                            className={`${filterType === option.type ? styles.selectedButton : ""} ${styles.filterButton}`}
+                            title={option.type}
+                            onClick={() => setFilterType(option.type)}
+                        >
+                            {option.icon}
+                        </button>
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 

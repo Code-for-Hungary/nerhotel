@@ -14,17 +14,28 @@
     box-sizing: border-box;
 }
 
+.filterOpen {
+    visibility: visible !important;
+}
+
+.filterOpenButton {
+    top: 80px;
+    border-top-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
 .filterRowWrapper {
-    padding-top: 100px;
+    visibility: hidden;
+    padding-top: 2px;
     margin: 10px;
-    height: calc(100% - 100px);
-    right: 0px;
-    bottom: 0px;
+    right: 40px;
+    top: 0px;
     z-index: 1000;
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .filterRow {
@@ -33,8 +44,8 @@
     border-radius: 4px;
     padding: 5px;
     display: flex;
-    flex-direction: column;
-    height: fit-content;
+    flex-direction: row;
+    width: 100px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -75,4 +86,7 @@
     border-top-width: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    border-bottom-width: 1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
