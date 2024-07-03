@@ -18,7 +18,7 @@ import FilterControl from "./FilterControl.jsx";
 
 function MapComponent() {
     const { dispatch, showPopup, center, selectedPoint, isDataLoaded } = useContext(MapContext);
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const transitionContainerRef = useRef(null);
 
     const close = useCallback(() => {
@@ -111,7 +111,7 @@ function MapComponent() {
                             />
                             <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
                             <MapListOpener onLocationListOpen={openLocationList} />
-                            <FilterControl filterType={filterType} setFilterType={setFilterType} />
+                            <FilterControl language={i18n.language} filterType={filterType} setFilterType={setFilterType} />
                         </Map>
                     ) : (
                         <MapPlaceholder />

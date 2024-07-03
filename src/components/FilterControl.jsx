@@ -6,24 +6,37 @@ import styles from "../css/map-list-opener.module.css";
 import { FaFilter } from "react-icons/fa6";
 import { useState, useCallback } from "react";
 
-function FilterControl({ filterType, setFilterType }) {
+function FilterControl({ language, filterType, setFilterType }) {
     const [filterOpen, setFilterOpen] = useState(false);
     const size = 16;
     const options = [
-        { type: "mind", category: "all", name: "Alles", icon: <MdSelectAll size={size} /> },
-        { type: "bár", category: "bar", name: "Bar", icon: <MdLocalBar size={size} /> },
-        { type: "borászat", category: "winery", name: "Weingut", icon: <FaWineBottle size={size} /> },
-        { type: "étterem", category: "restaurant", name: "Restaurant", icon: <MdOutlineRestaurant size={size} /> },
-        { type: "kávézó", category: "café", name: "Cafe", icon: <MdLocalCafe size={size} /> },
-        { type: "spa&sport", category: "spa&sport", name: "Spa und Sport", icon: <FaSpa size={size} /> },
-        { type: "kaszinó", category: "casino", name: "Kasino", icon: <MdCasino size={size} /> },
-        { type: "kemping", category: "camping", name: "Camping", icon: <GiCampingTent size={size} /> },
-        { type: "kiskereskedelem", category: "retail", name: "Einzelhandel", icon: <FaShoppingBasket size={size} /> },
-        { type: "szálloda", category: "hotel", name: "Hotel", icon: <TbHotelService size={size} /> },
+        { type: "mind", category: "all", category_de: "Alles", icon: <MdSelectAll size={size} /> },
+        { type: "bár", category: "bar", category_de: "Bar", icon: <MdLocalBar size={size} /> },
+        { type: "borászat", category: "winery", category_de: "Weingut", icon: <FaWineBottle size={size} /> },
+        { type: "étterem", category: "restaurant", category_de: "Restaurant", icon: <MdOutlineRestaurant size={size} /> },
+        { type: "kávézó", category: "café", category_de: "Cafe", icon: <MdLocalCafe size={size} /> },
+        { type: "spa&sport", category: "spa&sport", category_de: "Spa und Sport", icon: <FaSpa size={size} /> },
+        { type: "kaszinó", category: "casino", category_de: "Kasino", icon: <MdCasino size={size} /> },
+        { type: "kemping", category: "camping", category_de: "Camping", icon: <GiCampingTent size={size} /> },
+        { type: "kiskereskedelem", category: "retail", category_de: "Einzelhandel", icon: <FaShoppingBasket size={size} /> },
+        { type: "szálloda", category: "hotel", category_de: "Hotel", icon: <TbHotelService size={size} /> },
     ];
     const toggleFilterOpen = useCallback(() => {
         setFilterOpen((prevState) => !prevState);
     }, []);
+
+    function getTranslation(language, option) {
+        switch (language) {
+            case "hu":
+                return option.type;
+            case "en":
+                return option.category;
+            case "de":
+                return option.category_de;
+            default:
+                return option.type;
+        }
+    }
 
     return (
         <>
@@ -38,10 +51,13 @@ function FilterControl({ filterType, setFilterType }) {
                             className={`${filterType === option.type && styles.selectedRow} 
                                 ${styles.filterRow}
                                 ${i !== options.length - 1 && styles.filterRowSeparator}`}
-                            onClick={() => setFilterType(option.type)}
+                            onClick={() => {
+                                setFilterType(option.type);
+                                setFilterOpen(false);
+                            }}
                         >
                             <button className={`${styles.filterButton}`}>{option.icon}</button>
-                            <span>{option.type}</span>
+                            <span>{getTranslation(language, option)}</span>
                         </div>
                     ))}
                 </div>
