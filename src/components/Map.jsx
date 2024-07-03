@@ -109,9 +109,9 @@ function MapComponent() {
                                 onClusterClick={onClusterClickHandler}
                                 onMove={moveHandler}
                             />
-                            <FilterControl filterType={filterType} setFilterType={setFilterType} />
                             <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
                             <MapListOpener onLocationListOpen={openLocationList} />
+                            <FilterControl filterType={filterType} setFilterType={setFilterType} />
                         </Map>
                     ) : (
                         <MapPlaceholder />

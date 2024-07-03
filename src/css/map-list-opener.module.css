@@ -98,6 +98,22 @@
     background-color: var(--nh-accent-color) !important;
 }
 
+.cornerIcon {
+    visibility: hidden;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 7px;
+    height: 7px;
+    background-color: var(--nh-accent-color);
+    border-radius: 50%;
+    z-index: 1001;
+}
+
+.showCornerIcon {
+    visibility: visible;
+}
+
 .locateButton {
     top: 12px;
     border-bottom-width: 1px;

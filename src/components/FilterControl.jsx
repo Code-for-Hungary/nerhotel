@@ -4,7 +4,7 @@ import { MdCasino, MdLocalBar, MdLocalCafe, MdOutlineRestaurant, MdSelectAll } f
 import { TbHotelService } from "react-icons/tb";
 import styles from "../css/map-list-opener.module.css";
 import { FaFilter } from "react-icons/fa6";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 
 function FilterControl({ filterType, setFilterType }) {
     const [filterOpen, setFilterOpen] = useState(false);
@@ -29,6 +29,7 @@ function FilterControl({ filterType, setFilterType }) {
         <>
             <button className={`${styles.controlButton} ${styles.filterOpenButton}`} onClick={toggleFilterOpen}>
                 <FaFilter />
+                <div className={`${styles.cornerIcon} ${filterType !== "mind" && styles.showCornerIcon}`}></div>
             </button>
             <div className={` ${styles.filterPanelWrapper} ${filterOpen && styles.filterOpen}`} key={filterOpen ? "open" : "closed"}>
                 <div className={`${styles.filterPanel}`}>
