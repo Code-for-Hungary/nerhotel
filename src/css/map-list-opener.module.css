@@ -25,7 +25,7 @@
     border-top-right-radius: 0;
 }
 
-.filterRowWrapper {
+.filterPanelWrapper {
     visibility: hidden;
     padding-top: 2px;
     margin: 10px;
@@ -38,17 +38,41 @@
     align-items: start;
 }
 
-.filterRow {
+.filterPanel {
     background: #fafafa;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 5px;
     display: flex;
-    flex-direction: row;
-    width: 100px;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.filterRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-start;
+    width: 100%;
+    cursor: pointer;
+}
+
+.filterRow:hover:not(.selectedRow) {
+    filter: brightness(94%);
+}
+
+.filterRow span {
+    color: #666;
+}
+
+.filterRow:hover span {
+    color: #444;
+}
+
+.filterRowSeparator {
+    border-bottom: #aaa 1px solid;
 }
 
 .filterButton {
@@ -56,7 +80,6 @@
     background-color: #aaa;
     border-radius: 50%;
     border: none;
-    cursor: pointer;
     transition: filter 0.1s ease;
     margin: 3px;
     width: 25px;
@@ -64,14 +87,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 5px;
 }
 
-.filterButton:hover {
-    filter: brightness(90%);
+.selectedRow span {
+    color: #000 !important;
 }
 
-.selectedButton {
-    background-color: var(--nh-accent-color);
+.selectedRow .filterButton {
+    background-color: var(--nh-accent-color) !important;
 }
 
 .locateButton {

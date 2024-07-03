@@ -25,25 +25,23 @@ function FilterControl({ filterType, setFilterType }) {
         setFilterOpen((prevState) => !prevState);
     }, []);
 
-    useEffect(() => {
-        console.log("filterOpen:", filterOpen);
-    }, [filterOpen]);
-
     return (
         <>
             <button className={`${styles.controlButton} ${styles.filterOpenButton}`} onClick={toggleFilterOpen}>
                 <FaFilter />
             </button>
-            <div className={` ${styles.filterRowWrapper} ${filterOpen ? styles.filterOpen : ""}`} key={filterOpen ? "open" : "closed"}>
-                <div className={`${styles.filterRow}`}>
-                    {options.map((option) => (
-                        <button
-                            className={`${filterType === option.type ? styles.selectedButton : ""} ${styles.filterButton}`}
-                            title={option.type}
+            <div className={` ${styles.filterPanelWrapper} ${filterOpen && styles.filterOpen}`} key={filterOpen ? "open" : "closed"}>
+                <div className={`${styles.filterPanel}`}>
+                    {options.map((option, i) => (
+                        <div
+                            className={`${filterType === option.type && styles.selectedRow} 
+                                ${styles.filterRow}
+                                ${i !== options.length - 1 && styles.filterRowSeparator}`}
                             onClick={() => setFilterType(option.type)}
                         >
-                            {option.icon}
-                        </button>
+                            <button className={`${styles.filterButton}`}>{option.icon}</button>
+                            <span>{option.type}</span>
+                        </div>
                     ))}
                 </div>
             </div>
