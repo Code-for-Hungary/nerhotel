@@ -110,12 +110,32 @@
     z-index: 1001;
 }
 
+button {
+    border: none;
+    outline: none;
+    margin: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    padding: 0;
+}
+
 .showCornerIcon {
     visibility: visible;
 }
 
 .locateButton {
     top: 12px;
+    padding: 4px;
     border-bottom-width: 1px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
