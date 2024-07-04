@@ -2,7 +2,8 @@ import { FaShoppingBasket, FaSpa, FaWineBottle } from "react-icons/fa";
 import { GiCampingTent } from "react-icons/gi";
 import { MdCasino, MdLocalBar, MdLocalCafe, MdOutlineRestaurant, MdSelectAll } from "react-icons/md";
 import { TbHotelService } from "react-icons/tb";
-import styles from "../css/map-list-opener.module.css";
+import styles from "./FilterControl.module.css";
+import { controlButton } from "../css/map-list-opener.module.css";
 import { FaFilter } from "react-icons/fa6";
 import { useState, useCallback } from "react";
 
@@ -40,7 +41,7 @@ function FilterControl({ language, filterType, setFilterType }) {
 
     return (
         <>
-            <button className={`${styles.controlButton} ${styles.filterOpenButton}`} onClick={toggleFilterOpen}>
+            <button className={`${controlButton} ${styles.filterOpenButton}`} onClick={toggleFilterOpen}>
                 <FaFilter />
                 <div className={`${styles.cornerIcon} ${filterType !== "mind" && styles.showCornerIcon}`}></div>
             </button>

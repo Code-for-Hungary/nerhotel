@@ -14,7 +14,7 @@ import MapCluster from "./MapCluster";
 import MapPlaceholder from "./MapPlaceholder";
 
 import Popup from "./Popup";
-import FilterControl from "./FilterControl.jsx";
+import FilterControl from "./FilterControl";
 
 function MapComponent() {
     const { dispatch, showPopup, center, selectedPoint, isDataLoaded } = useContext(MapContext);
@@ -37,7 +37,7 @@ function MapComponent() {
             if (map) {
                 const mapBounds = map.getBounds();
                 let points = filterPoints(hotels, mapBounds);
-                if (filterType != "mind") points = points.filter((point) => point.properties.type.includes(filterType));
+                if (filterType !== "mind") points = points.filter((point) => point.properties.type.includes(filterType));
                 setFilteredPoints(points);
                 dispatch({ type: "SetList", list: points });
             }
