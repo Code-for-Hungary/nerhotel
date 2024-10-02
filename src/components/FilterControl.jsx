@@ -49,7 +49,8 @@ function FilterControl({ language, filterType, setFilterType }) {
                 <div className={`${styles.filterPanel}`}>
                     {options.map((option, i) => (
                         <div
-                            className={`${filterType === option.type && styles.selectedRow} 
+                            key={`${option.type}-${i}`}
+                            className={`${filterType === option.type && styles.selectedRow}
                                 ${styles.filterRow}
                                 ${i !== options.length - 1 && styles.filterRowSeparator}`}
                             onClick={() => {

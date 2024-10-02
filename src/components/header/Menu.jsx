@@ -20,6 +20,7 @@ const Menu = () => {
     const { resolvedLanguage } = i18n;
     const closeMenu = useCallback(() => {
         dispatch({ type: "ToggleMenu", showMenu: false });
+        dispatch({ type: "ToggleList", showList: false });
     }, [dispatch]);
 
     return (
