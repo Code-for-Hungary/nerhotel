@@ -98,9 +98,7 @@ A Markdown alapvetően [standard szintaxist](https://www.markdownguide.org/basic
 
 ## Hol lakik az oldal és hogyan deployolok?
 
-Az oldalt [Vercelen](https://vercel.com/) hosztoljuk.
-
-Minden logot megtalálsz a Vercel admin felületén.
+Az oldalt egy saját szerveren futó [coolify](https://github.com/coollabsio/coolify)-ból hosztoljuk.
 
 A buildhez szükséges esetleges környezeti változókat a Github repó `Settings` menüpontja alatt lehet beállítani.
 
