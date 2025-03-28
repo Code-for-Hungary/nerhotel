@@ -7,7 +7,6 @@ import image from "../../assets/nh-main.svg";
 import logo from "../../assets/nh-logo.svg";
 import logoEn from "../../assets/nh-logo-en.svg";
 import { MapContext } from "../../context";
-import PoweredByVercel from "../PoweredByVercel";
 import { useTranslation } from "react-i18next";
 import { CSSTransition } from "react-transition-group";
 import "./Menu.transition.css";
@@ -88,7 +87,6 @@ const Menu = () => {
                             <SmartLink to="info@k-monitor.hu">info@k-monitor.hu</SmartLink>
                         </address>
                     </div>
-                    <PoweredByVercel link={"https://vercel.com/"} />
                 </nav>
             </CSSTransition>
             <CSSTransition in={showMenu} nodeRef={backdropRef} classNames="MenuBackdrop" unmountOnExit timeout={200}>
