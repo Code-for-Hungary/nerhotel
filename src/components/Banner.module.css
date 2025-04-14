@@ -1,0 +1,50 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0363a0;
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    top: 95px;
+    left: 55px;
+    right: 55px;
+    z-index: 1;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.bannerContent {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bannerContent p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.bannerContent a {
+    color: white;
+    text-decoration: underline;
+}
+
+.bannerImage {
+    height: 40px;
+    width: auto;
+}
+
+.dismissButton {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.dismissButton:hover {
+    opacity: 0.8;
+}
