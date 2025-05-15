@@ -67,5 +67,5 @@ Ezen mikroadományokon túl más forrás nem kapcsolódik a projekthez.
 
 Az idegenforgalom és vendéglátás folyamatos mozgásban van, gyakran történnek változások a céges adatokban. Elképzelhető, hogy bizonyos, a NER Hotelben feltüntetett adatok mára elavultak, nem pontosak vagy éppen hiányosak.
 
-Büszkék vagyunk rá, hogy önkéntesek segítségével építettük az alkalmazást és nyitottak vagyunk minden észrevételre. Járulj hozzá te is a fejlesztéshez! [Írd meg nekünk](info@k-monitor.hu), ha hibát találsz, vagy ha egy hely megjelenítésével nem értesz egyet! A beküldött információkat természetesen nem közvetlenül, hanem csak a saját módszertanunkkal való összevetés után vezetjük fel.
+Büszkék vagyunk rá, hogy önkéntesek segítségével építettük az alkalmazást és nyitottak vagyunk minden észrevételre. Járulj hozzá te is a fejlesztéshez! [Írd meg nekünk](info@k-monitor.hu), ha hibát találsz, vagy ha egy hely megjelenítésével nem értesz egyet! Új helyeket [ezen az űrlapon](https://www.partimap.eu/hu/p/nerhotel-bekuldes/0) keresztül küldhetsz be. A 2025. január 1. utáni beküldéseket és az ezek alapján végzett módosításokat [ebben a táblázatban](https://docs.google.com/spreadsheets/d/e/2PACX-1vSEboU5aIOUgZ-hmNpLQIYB8EZTc1HYAFf9mL97jvjVl6S9auEiFxJ1fwMpbr6-7dwPYl57BOK4ANfs/pubhtml?gid=108278171&single=true) vezetjük.
 </section>
