@@ -18,7 +18,7 @@ hatóságok pedig hatékonyan feltárják és szankcionálják a korrupciót.
 
 Tudsz egy étteremről, szálláshelyről vagy egyéb turisztikai
 érdekeltségről, aminek az üzemeltetője vélhetően politikaközeli
-szereplő? Küldd el nekünk az alábbi [űrlapon](https://www.partimap.eu/p/nerhotel-bekuldes) keresztül.
+szereplő? Küldd el nekünk az alábbi [űrlapon](https://www.partimap.eu/p/nerhotel-bekuldes) keresztül. A 2025. január 1. utáni beküldéseket és az ezek alapján végzett módosításokat [ebben a táblázatban](https://docs.google.com/spreadsheets/d/e/2PACX-1vSEboU5aIOUgZ-hmNpLQIYB8EZTc1HYAFf9mL97jvjVl6S9auEiFxJ1fwMpbr6-7dwPYl57BOK4ANfs/pubhtml?gid=108278171&single=true) vezetjük.
 
 Minden beküldést átnézünk, és a [módszertannak](/about) megfelelés esetén hozzáadjuk az adatbázishoz.
 </section>
