@@ -68,6 +68,16 @@ const Menu = () => {
                                     {t("navigation.export")}
                                 </SmartLink>
                             </li>
+                            {/* This page is only relevant to Hungarian speakers as it's not translated,
+                                so it doesn't make sense to add a translation key.
+                            */}
+                            {resolvedLanguage === "hu" && (
+                                <li>
+                                    <SmartLink to="/press-releases" onClick={closeMenu}>
+                                        #nerhotel
+                                    </SmartLink>
+                                </li>
+                            )}
                         </ul>
 
                         <div className={styles.imageWrapper}>
