@@ -34,7 +34,6 @@ export const PressReleases = () => {
                                 source={result.source}
                                 newspaper={result.newspaper}
                                 url={result.url}
-                                tags={result.tags}
                             />
                         ))}
                     </>
