@@ -19,6 +19,26 @@ function getAllOligarchs(people) {
 }
 
 /**
+ *
+ * @param {string} city
+ * @param {string} address
+ * @param {string} zip
+ */
+function makeAddress(city, address, zip) {
+    const addressParts = [city];
+
+    if (address) {
+        addressParts.push(address);
+    }
+
+    if (zip) {
+        addressParts.push(zip);
+    }
+
+    return addressParts.join(", ");
+}
+
+/**
  * @param {Object<string, string>[]} csvRowsAsObjects
  * @returns {Hotel[]}
  */
@@ -40,7 +60,7 @@ export function getHotels(csvRowsAsObjects) {
             type: "Feature",
             properties: {
                 id: index,
-                address: [csvRow["city"], csvRow["loc_address"], csvRow["zip"]].join(", "),
+                address: makeAddress(csvRow["city"], csvRow["loc_address"], csvRow["zip"]),
                 company: {
                     name: csvRow["company"].trim(),
                     link: csvRow["company_link"],

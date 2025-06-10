@@ -2,8 +2,6 @@ import { useEffect, useState, useReducer, lazy, Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-import "./App.css";
-
 import ErrorBoundary from "./components/ErrorBoundary";
 import AnalyticsWrapper from "./components/analytics/AnalyticsWrapper";
 

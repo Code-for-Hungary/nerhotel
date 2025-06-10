@@ -1,7 +1,8 @@
 .button {
+    position: relative;
     display: inline-block;
-    padding: 10px;
-    color: #fff !important;
+    padding: 10px 16px;
+    color: var(--nh-background-color);
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -10,6 +11,29 @@
     box-sizing: border-box;
     transition: background-color 0.2s;
     text-decoration: none;
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+
+    & .buttonLoader {
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+}
+
+.button[disabled] {
+    cursor: not-allowed;
+}
+
+.button.loading {
+    color: rgba(0, 0, 0, 0);
+
+    & .buttonLoader {
+        display: inline-block;
+    }
 }
 
 .button.fullWidth {
@@ -17,7 +41,7 @@
     width: 100%;
 }
 
-.button:hover,
-.button:focus {
-    background-color: #ce521d;
+.button:not([disabled]):hover,
+.button:not([disabled]):focus {
+    background-color: var(--nh-accent-color-darker);
 }

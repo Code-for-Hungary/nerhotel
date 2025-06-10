@@ -3,7 +3,7 @@
     width: 34px;
     height: 34px;
     z-index: 1000;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--nh-gray);
     border-radius: 4px;
     background: #fafafa;
     cursor: pointer;
@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-button {
+.button {
     border: none;
     outline: none;
     margin: 0;

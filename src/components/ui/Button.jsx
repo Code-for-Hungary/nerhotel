@@ -1,9 +1,10 @@
 import { SmartLink } from "../SmartLink";
 import styles from "./Button.module.css";
 
-function Button({ to, className, isFull, children, isPlainAnchor, ...props }) {
+function Button({ to, className, isFull, children, isPlainAnchor, loading, ...props }) {
     const fullWidthClassName = isFull ? styles.fullWidth : "";
-    const classNames = `${styles.button} ${fullWidthClassName} ${className ? className : ""}`;
+    const loadingClassName = loading ? styles.loading : "";
+    const classNames = `${styles.button} ${fullWidthClassName} ${loadingClassName} ${className ? className : ""}`;
 
     if (to) {
         return (
@@ -13,7 +14,7 @@ function Button({ to, className, isFull, children, isPlainAnchor, ...props }) {
         );
     }
 
-    if (isPlainAnchor) {
+    if (to && isPlainAnchor) {
         return (
             <a href={to} className={classNames} {...props}>
                 {children}

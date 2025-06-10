@@ -13,7 +13,7 @@
     width: 100%;
     height: var(--header-height);
     padding: 10px var(--page-gutter);
-    background: #fff;
+    background: var(--nh-background-color);
     z-index: var(--z-header);
     box-shadow: var(--header-shadow);
     box-sizing: border-box;

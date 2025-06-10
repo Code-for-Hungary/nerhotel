@@ -1,0 +1,46 @@
+.Skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.SkeletonText {
+    border-radius: 20px;
+}
+
+.SkeletonTag {
+    border-radius: 4px;
+    height: 24px;
+}
+
+.SkeletonTextP {
+    width: 100%;
+    height: 1rem;
+}
+
+.SkeletonTextH2 {
+    width: 100%;
+    height: var(--h2-size);
+}
+
+.SkeletonLines {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.SkeletonLinesParagraph {
+    gap: 4px;
+}
+
+.SkeletonLinesH2 {
+    gap: 6px;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: var(--nh-gray-lighter);
+    }
+    100% {
+        background-color: var(--nh-gray);
+    }
+}
