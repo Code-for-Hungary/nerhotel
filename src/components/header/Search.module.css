@@ -22,7 +22,7 @@
     border-radius: 20px;
     font-size: 1rem;
     box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--nh-gray);
     transition: all 0.3s ease-in-out;
 }
 

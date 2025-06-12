@@ -2,8 +2,6 @@ import { useEffect, useState, useReducer, lazy, Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-import "./App.css";
-
 import ErrorBoundary from "./components/ErrorBoundary";
 import AnalyticsWrapper from "./components/analytics/AnalyticsWrapper";
 
@@ -21,6 +19,7 @@ const MapView = lazy(() => import("./views/MapView"));
 const ContentPageView = lazy(() => import("./views/ContentPageView"));
 const PersonView = lazy(() => import("./views/PersonView"));
 const ErrorView = lazy(() => import("./views/ErrorView"));
+const PressReleaseView = lazy(() => import("./views/PressReleasesView"));
 
 function HotelPage(props) {
     return (
@@ -58,6 +57,14 @@ function ErrorPage(props) {
     return (
         <Suspense fallback={<LoadingSpinner />}>
             <ErrorView {...props} />
+        </Suspense>
+    );
+}
+
+function PressReleasePage(props) {
+    return (
+        <Suspense fallback={<LoadingSpinner />}>
+            <PressReleaseView {...props} />
         </Suspense>
     );
 }
@@ -126,6 +133,7 @@ function App() {
                                         <Route path="/about" exact component={ContentPage} />
                                         <Route path="/contact" exact component={ContentPage} />
                                         <Route path="/data-export" exact component={ContentPage} />
+                                        <Route path="/press-releases" exact component={PressReleasePage} />
                                         <Route path="*" component={ErrorPage} />
                                     </Switch>
                                 </AnalyticsWrapper>

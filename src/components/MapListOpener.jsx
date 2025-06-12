@@ -7,14 +7,14 @@ function MapListOpener({ onLocationListOpen }) {
     const map = useMap();
 
     return (
-        <div
+        <button
             className={`${styles.controlButton} ${styles.listButton}`}
             onClick={() => {
                 onLocationListOpen(map);
             }}
         >
             <Icon img={listIcon} size="small" />
-        </div>
+        </button>
     );
 }
 

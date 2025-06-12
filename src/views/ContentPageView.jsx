@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
-import ReactMarkdown from "react-markdown";
-import Layout from "./Layout";
-import styles from "../css/content-page.module.css";
 import rehypeRaw from "rehype-raw";
+import ReactMarkdown from "react-markdown";
+
+import Layout from "./Layout";
 import { SmartLink } from "../components/SmartLink";
+import { Wrapper } from "../components/ui/wrapper/Wrapper";
+import { Content } from "../components/ui/content/Content";
 
 const getContent = async (fileName, lang) => {
     try {
@@ -55,15 +57,17 @@ const ContentPageView = ({ history }) => {
                     {t(`staticPageTitles.${pathNameWithoutSlash}`)} - {t("general.siteName")}
                 </title>
             </Helmet>
-            <div className={styles.contentPage}>
-                <ReactMarkdown
-                    children={pageContent}
-                    components={{
-                        a: ({ node, href, ...props }) => <SmartLink to={href} {...props} />,
-                    }}
-                    rehypePlugins={[rehypeRaw]}
-                />
-            </div>
+            <Wrapper>
+                <Content>
+                    <ReactMarkdown
+                        children={pageContent}
+                        components={{
+                            a: ({ node, href, ...props }) => <SmartLink to={href} {...props} />,
+                        }}
+                        rehypePlugins={[rehypeRaw]}
+                    />
+                </Content>
+            </Wrapper>
         </Layout>
     );
 };

@@ -3,7 +3,7 @@ import { GiCampingTent } from "react-icons/gi";
 import { MdCasino, MdLocalBar, MdLocalCafe, MdOutlineRestaurant, MdSelectAll } from "react-icons/md";
 import { TbHotelService } from "react-icons/tb";
 import styles from "./FilterControl.module.css";
-import { controlButton } from "../css/map-list-opener.module.css";
+import { controlButton, button } from "../css/map-list-opener.module.css";
 import { FaFilter } from "react-icons/fa6";
 import { useState, useCallback } from "react";
 
@@ -58,7 +58,7 @@ function FilterControl({ language, filterType, setFilterType }) {
                                 setFilterOpen(false);
                             }}
                         >
-                            <button className={`${styles.filterButton}`}>{option.icon}</button>
+                            <button className={`${styles.filterButton} ${button}`}>{option.icon}</button>
                             <span>{getTranslation(language, option)}</span>
                         </div>
                     ))}

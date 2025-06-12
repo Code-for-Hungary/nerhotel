@@ -1,0 +1,98 @@
+:root {
+    --nh-background-color: #fff;
+    --nh-text-color: #15141a;
+    --nh-text-color-secondary: #817e8f;
+    --nh-accent-color: #f05f22;
+    --nh-accent-color-darker: #ce521d;
+    --nh-blue: #3366ff;
+    --nh-gray-lighter: rgba(0, 0, 0, 0.1);
+    --nh-gray: rgba(0, 0, 0, 0.2);
+    --copy-line-height: 1.6;
+    --header-height: 84px;
+    --page-gutter: 20px;
+    --h1-size: 1.5rem;
+    --h2-size: 1.2rem;
+    --h1-mb: 0.6em;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --h1-size: 1.8rem;
+        --h2-size: 1.5rem;
+    }
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+}
+
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+}
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--nh-text-color);
+}
+
+address {
+    font-style: normal;
+}
+
+.resetButton {
+    padding: 0;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.resetList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type="search"]::-ms-clear,
+input[type="search"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}

@@ -1,0 +1,11 @@
+.VStack {
+    --gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap);
+
+    @media screen and (min-height: 800px) {
+        --gap: 28px;
+    }
+}

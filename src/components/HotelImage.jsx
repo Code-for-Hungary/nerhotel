@@ -10,8 +10,7 @@ function HotelImage({ src, alt = "" }) {
                 alt={alt}
                 loading="lazy"
                 onError={(e) => {
-                    console.log(e);
-                    // this.style.display = "none";
+                    console.error(e);
                     imgContainerRef.current.style.display = "none";
                 }}
             />

@@ -8,7 +8,7 @@
     left: 0;
     overflow: hidden;
     z-index: 10000;
-    background: #fff;
+    background: var(--nh-background-color);
     display: flex;
     flex-direction: column;
 }

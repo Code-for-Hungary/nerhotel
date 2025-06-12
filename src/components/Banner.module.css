@@ -10,7 +10,7 @@
     left: 55px;
     right: 55px;
     z-index: 1;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--nh-gray);
     border-radius: 4px;
 }
 

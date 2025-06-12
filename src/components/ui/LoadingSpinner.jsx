@@ -1,9 +1,9 @@
 import styles from "./LoadingSpinner.module.css";
 
-function LoadingSpinner({ size = "40px", color = "var(--nh-accent-color)", ...props }) {
+function LoadingSpinner({ size = "40px", color = "var(--nh-accent-color)", className, ...props }) {
     return (
         <div
-            className={styles.spinner}
+            className={`${styles.spinner} ${className || ""}`}
             style={{
                 "--spinner-size": size,
                 "--spinner-color": color,

@@ -1,0 +1,9 @@
+.ButtonRow {
+    --gap: 28px;
+    margin-top: var(--gap);
+    text-align: center;
+
+    @media screen and (min-height: 800px) {
+        --gap: 32px;
+    }
+}

@@ -20,7 +20,7 @@
     height: 24px;
     font-size: 15px;
     font-weight: 700;
-    color: #fff;
+    color: var(--nh-background-color);
     background: #009933;
     border-radius: 100%;
 }

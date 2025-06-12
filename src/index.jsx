@@ -1,7 +1,6 @@
-import React from "react";
 import { createRoot } from "react-dom/client";
 import TagManager from "react-gtm-module";
-import "./index.css";
+import "./global.css";
 import App from "./App";
 import "./i18n";
 
