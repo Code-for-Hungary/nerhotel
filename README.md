@@ -100,7 +100,13 @@ A Markdown alapvetően [standard szintaxist](https://www.markdownguide.org/basic
 
 Az oldalt egy saját szerveren futó [coolify](https://github.com/coollabsio/coolify)-ból hosztoljuk.
 
-A buildhez szükséges esetleges környezeti változókat a Github repó `Settings` menüpontja alatt lehet beállítani.
+A buildhez szükséges esetleges környezeti változókat is a Coolify-ban lehet beállítani.
+
+Ha bemergelünk egy PR-t a `master` branchbe, akkor a Coolify automatikusan kirakja az éles domainre, ha pedig a `dev` branchbe mergelünk egy PR-t, akkor a `dev.nerhotel.hu` aldomainre fognak automatikusan kimenni a változtatások.
+
+A `dev` és a `master` branchek "védettek", ami azt jelenti, hogy nem tudsz közvetlenül pusholni beléjük, csak PR-okat tudsz bemergelni.
+
+Először mergelj be egy PR-t a `dev` branchbe, a változtatásokat le lehet ellenőrizni a staging környezeten (`dev.nerhotel.hu`) majd ha minden rendben van, akkor mergeld be a `dev`-t a `master`-be és a változtatások automatikusan kikerülnek az éles domainre.
 
 ## Az adatbázis lementése JSON-ba
 
