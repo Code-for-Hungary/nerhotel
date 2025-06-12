@@ -1,17 +1,27 @@
-import { FaNewspaper } from "react-icons/fa6";
+import { FaNewspaper, FaCalendarDays } from "react-icons/fa6";
 
 import { SkeletonH2, SkeletonParagraph, SkeletonTag } from "../skeleton/Skeleton";
 
 import styles from "./ArticleCard.module.css";
 
-export function ArticleCard({ url, title, description, newspaper, source, tags, showSkeleton = false, ...props }) {
+function formatTimestamp(timestamp) {
+    const date = new Date(timestamp * 1000);
+
+    const year = date.getFullYear();
+    const month = date.toLocaleString("hu-HU", { month: "long" });
+    const day = date.getDate();
+
+    return `${year} ${month} ${day}.`;
+}
+
+export function ArticleCard({ title, description, newspaper, source, tags, timestamp, showSkeleton = false, ...props }) {
     return (
         <article className={styles.articleCard} {...props}>
             {showSkeleton && <SkeletonH2 />}
 
             {!showSkeleton && (
                 <h2 className={styles.heading}>
-                    <a href={url} target="_blank" rel="noopener noreferrer">
+                    <a href={source} target="_blank" rel="noopener noreferrer">
                         {title}
                     </a>
                 </h2>
@@ -22,9 +32,14 @@ export function ArticleCard({ url, title, description, newspaper, source, tags, 
                     {showSkeleton && <SkeletonTag style={{ width: "100px" }} />}
 
                     {!showSkeleton && (
-                        <a href={source} className={styles.tag} target="_blank" rel="noopener noreferrer">
-                            <FaNewspaper /> {newspaper}
-                        </a>
+                        <>
+                            <span className={styles.meta}>
+                                <FaNewspaper /> {newspaper}
+                            </span>
+                            <time className={styles.meta} datetime={new Date(timestamp).toISOString()}>
+                                <FaCalendarDays /> {formatTimestamp(timestamp)}
+                            </time>
+                        </>
                     )}
                 </div>
             )}
@@ -55,7 +70,7 @@ export function ArticleCard({ url, title, description, newspaper, source, tags, 
                 </ul>
             )}
             {!showSkeleton && (
-                <a aria-hidden className={styles.anchor} href={url} target="_blank" rel="noopener noreferrer">
+                <a aria-hidden className={styles.anchor} href={source} target="_blank" rel="noopener noreferrer">
                     <span style={{ display: "none" }}>{title}</span>
                 </a>
             )}
