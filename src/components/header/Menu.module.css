@@ -29,50 +29,61 @@
     list-style: none;
     padding: 0;
     margin-bottom: 40px;
+    flex: 1;
 }
 
 .menulist li {
     margin: 0 0 20px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 .menulist li a {
     font-size: 22px;
     font-weight: 700;
-    color: #000;
+    color: var(--nh-text-color);
     text-decoration: none;
     transition: color 0.2s;
 }
 
-.menulist li a:hover {
+.menulist li a:hover,
+.menulist li a:focus {
     color: var(--nh-accent-color);
 }
 
-.footer {
-    font-size: 14px;
-}
-
-@media (max-width: 480px) {
-    .footer {
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        right: 0;
+@media screen and (max-height: 600px) {
+    .menulist li a {
+        font-size: 20px;
     }
 }
 
-.footer a {
-    display: block;
-    color: #000;
-    margin-bottom: 10px;
-}
+.footer {
+    font-size: 0.875rem;
 
-.content {
-    position: relative;
-    flex: 1;
+    a {
+        color: var(--nh-accent-color);
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    p {
+        margin: 0 0 0.5rem 0;
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
 }
 
 .close {
     display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 100%;
     justify-content: flex-end;
 }
@@ -85,11 +96,13 @@
 .imageWrapper {
     width: 80%;
     margin: 0 auto;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .logoWrapper {
     position: absolute;
-    top: 20px;
+    top: 36px;
     right: 40px;
     width: 20%;
 }
