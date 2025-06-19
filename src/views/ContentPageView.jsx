@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
 import ReactMarkdown from "react-markdown";
 
@@ -21,11 +21,12 @@ const getContent = async (fileName, lang) => {
     }
 };
 
-const ContentPageView = ({ history }) => {
+const ContentPageView = () => {
     const [pageContent, setPageContent] = useState("");
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
     const location = useLocation();
+    const navigate = useNavigate();
     const { search } = location;
     const pathNameAsArray = Array.from(location.pathname);
     pathNameAsArray.shift();
@@ -42,16 +43,19 @@ const ContentPageView = ({ history }) => {
             })
             .catch((e) => {
                 console.error(e);
-                history.push(`/500${search}`);
+                navigate({
+                    pathname: "/500",
+                    search,
+                });
             });
 
         return () => {
             isSubscribed = false;
         };
-    }, [resolvedLanguage, pathNameWithoutSlash, history, search]);
+    }, [resolvedLanguage, pathNameWithoutSlash, search]);
 
     return (
-        <Layout history={history}>
+        <Layout>
             <Helmet>
                 <title>
                     {t(`staticPageTitles.${pathNameWithoutSlash}`)} - {t("general.siteName")}

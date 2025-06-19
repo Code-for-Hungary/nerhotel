@@ -1,11 +1,9 @@
 import MapComponent from "../components/Map";
 import Layout from "./Layout";
-// import Banner from "../components/Banner";
 
-const MapView = (props) => {
+const MapView = () => {
     return (
-        <Layout withSearch={true} withList={true} history={props.history}>
-            {/* <Banner /> */}
+        <Layout withSearch={true} withList={true}>
             <MapComponent />
         </Layout>
     );

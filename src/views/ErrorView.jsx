@@ -1,9 +1,9 @@
 import Layout from "./Layout";
 import ErrorScreen from "../components/ErrorScreen";
 
-function ErrorView(props) {
+function ErrorView() {
     return (
-        <Layout history={props.history}>
+        <Layout>
             <ErrorScreen />
         </Layout>
     );

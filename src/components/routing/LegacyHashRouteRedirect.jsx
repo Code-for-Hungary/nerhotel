@@ -1,17 +1,18 @@
 import { useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function LegacyHashRouteRedirect({ children }) {
-    const history = useHistory();
+    const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
-        if (window.location.hash && window.location.hash.includes("/")) {
-            const hashAsArray = window.location.hash.split("");
+        if (location.hash && location.hash.includes("/")) {
+            const hashAsArray = location.hash.split("");
             hashAsArray.shift();
             const withoutHashMark = hashAsArray.join("");
-            history.push(withoutHashMark);
+            navigate(withoutHashMark, { replace: true });
         }
-    }, [history]);
+    }, [location]);
 
     return <>{children}</>;
 }

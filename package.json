@@ -3,9 +3,10 @@
     "version": "1.2.0",
     "private": true,
     "license": "GPL-3.0-or-later",
+    "type": "module",
     "engines": {
-        "node": "^18.*.*",
-        "npm": "^8.*.*"
+        "node": "^24.*.*",
+        "npm": "^11.*.*"
     },
     "repository": {
         "type": "git",
@@ -16,32 +17,31 @@
         "email": "info@k-monitor.hu"
     },
     "dependencies": {
-        "@tolgee/i18next": "^5.16.3",
-        "i18next": "^22.0.6",
-        "leaflet": "^1.9.3",
+        "@tolgee/i18next": "^6.2.6",
+        "i18next": "^25.2.1",
+        "leaflet": "^1.9.4",
         "leaflet.markercluster": "^1.5.3",
-        "mkdirp": "^2.1.5",
+        "mkdirp": "^3.0.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-gtm-module": "^2.0.11",
         "react-helmet": "^6.1.0",
-        "react-i18next": "^12.1.1",
-        "react-icons": "^5.2.1",
+        "react-i18next": "^15.5.3",
+        "react-icons": "^5.5.0",
         "react-leaflet": "^4.2.0",
         "react-leaflet-cluster": "^2.1.0",
-        "react-markdown": "^8.0.4",
-        "react-router-dom": "^5.1.0",
-        "react-scripts": "5.0.1",
+        "react-markdown": "^10.1.0",
+        "react-router-dom": "^6.30.1",
         "react-transition-group": "^4.4.5",
-        "rehype-raw": "^6.1.1"
+        "rehype-raw": "^7.0.0"
     },
     "devDependencies": {
-        "@testing-library/react": "^14.0.0",
-        "@vitejs/plugin-react": "^3.1.0",
+        "@testing-library/react": "^16.3.0",
+        "@vitejs/plugin-react": "^4.5.2",
         "prettier": "^2.8.4",
-        "vite": "^4.1.0",
-        "vite-plugin-markdown": "^2.1.0",
-        "vitest": "^0.28.5"
+        "vite": "^6.3.5",
+        "vite-plugin-markdown": "^2.2.0",
+        "vitest": "^3.2.3"
     },
     "scripts": {
         "dev": "vite",

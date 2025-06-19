@@ -1,8 +1,9 @@
+import { useTranslation, Trans } from "react-i18next";
+import { useNavigation, useLocation } from "react-router-dom";
+
 import { useContext, useCallback } from "react";
 import styles from "../css/list.module.css";
 import Icon from "./ui/Icon";
-import { useTranslation, Trans } from "react-i18next";
-import { useHistory, useLocation } from "react-router-dom";
 
 import closeIcon from "../assets/close-icon.svg";
 import ListItem from "./ListItem";
@@ -12,7 +13,7 @@ import { MapContext } from "../context";
 function List() {
     const { dispatch, list, map } = useContext(MapContext);
     const { t } = useTranslation();
-    const history = useHistory();
+    const navigate = useNavigation();
     const location = useLocation();
 
     const showItem = useCallback(
@@ -26,7 +27,7 @@ function List() {
             dispatch({ type: "ToggleList", showList: false });
             dispatch({ type: "TogglePopup", showPopup: true });
             if (location.pathname !== "/") {
-                history.push("/");
+                navigate("/");
             }
         },
         [map, dispatch, history, location]

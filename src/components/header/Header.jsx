@@ -1,4 +1,6 @@
 import { useContext, useCallback } from "react";
+import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import Search from "./Search";
 import styles from "./Header.module.css";
@@ -12,14 +14,12 @@ import { MapContext } from "../../context";
 import { config } from "../../config";
 import LangSwitch from "../LangSwitch";
 
-import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
-
 import { SmartLink } from "../SmartLink";
 
-const Header = (props) => {
+const Header = () => {
     const { dispatch } = useContext(MapContext);
     const { i18n } = useTranslation();
+    const navigate = useNavigate();
     const { resolvedLanguage } = i18n;
     const location = useLocation();
 
@@ -27,7 +27,7 @@ const Header = (props) => {
         const lang = e.target.value;
         i18n.changeLanguage(lang);
         localStorage.setItem(config.locales.paramName, lang);
-        props.history.push({
+        navigate({
             pathname: location.pathname,
             search: `?${config.locales.paramName}=${lang}`,
         });

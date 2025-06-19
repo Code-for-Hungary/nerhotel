@@ -1,5 +1,5 @@
 import { useEffect, useState, useReducer, lazy, Suspense } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -126,16 +126,16 @@ function App() {
                         <BrowserRouter>
                             <LegacyHashRouteRedirect>
                                 <AnalyticsWrapper>
-                                    <Switch>
-                                        <Route path="/" exact component={MapPage} />
-                                        <Route path="/hotel/:id" exact component={HotelPage} />
-                                        <Route path="/person/:name" exact component={PersonPage} />
-                                        <Route path="/about" exact component={ContentPage} />
-                                        <Route path="/contact" exact component={ContentPage} />
-                                        <Route path="/data-export" exact component={ContentPage} />
-                                        <Route path="/press-releases" exact component={PressReleasePage} />
-                                        <Route path="*" component={ErrorPage} />
-                                    </Switch>
+                                    <Routes>
+                                        <Route path="/" element={<MapPage />} />
+                                        <Route path="/hotel/:id" element={<HotelPage />} />
+                                        <Route path="/person/:name" element={<PersonPage />} />
+                                        <Route path="/about" element={<ContentPage />} />
+                                        <Route path="/contact" element={<ContentPage />} />
+                                        <Route path="/data-export" element={<ContentPage />} />
+                                        <Route path="/press-releases" element={<PressReleasePage />} />
+                                        {/* <Route path="*" element={<ErrorPage />} /> */}
+                                    </Routes>
                                 </AnalyticsWrapper>
                             </LegacyHashRouteRedirect>
                         </BrowserRouter>

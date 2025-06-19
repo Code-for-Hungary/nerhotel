@@ -1,9 +1,9 @@
 import Layout from "./Layout";
 import { PressReleases } from "../components/press-releases/PressReleases";
 
-const PressReleasesView = (props) => {
+const PressReleasesView = () => {
     return (
-        <Layout history={props.history}>
+        <Layout>
             <PressReleases />
         </Layout>
     );

@@ -1,11 +1,14 @@
+import { useParams } from "react-router-dom";
+
 import Layout from "./Layout";
 import Person from "../components/person/Person";
 
-const PersonView = (props) => {
-    const personName = props.match.params.name;
+const PersonView = () => {
+    const { name } = useParams();
+
     return (
-        <Layout history={props.history}>
-            <Person name={personName} history={props.history} />
+        <Layout>
+            <Person name={name} />
         </Layout>
     );
 };

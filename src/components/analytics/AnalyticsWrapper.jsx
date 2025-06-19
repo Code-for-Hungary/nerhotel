@@ -1,10 +1,10 @@
 import { useEffect, useContext } from "react";
-import { useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { MapContext } from "../../context";
 import trackPageView from "../../utils/analytics/track-page-view";
 
 function AnalyticsWrapper({ children }) {
-    const history = useHistory();
+    const location = useLocation();
     const { selectedPoint } = useContext(MapContext);
 
     useEffect(() => {
@@ -22,8 +22,7 @@ function AnalyticsWrapper({ children }) {
 
     useEffect(() => {
         trackPageView();
-        history.listen(trackPageView);
-    }, [history]);
+    }, [location]);
 
     return <>{children}</>;
 }
