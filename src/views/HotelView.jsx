@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 
 import Layout from "./Layout";
 import Hotel from "../components/Hotel";

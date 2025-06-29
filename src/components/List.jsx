@@ -1,5 +1,5 @@
 import { useTranslation, Trans } from "react-i18next";
-import { useNavigation, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router";
 
 import { useContext, useCallback } from "react";
 import styles from "../css/list.module.css";
@@ -13,7 +13,7 @@ import { MapContext } from "../context";
 function List() {
     const { dispatch, list, map } = useContext(MapContext);
     const { t } = useTranslation();
-    const navigate = useNavigation();
+    const navigate = useNavigate();
     const location = useLocation();
 
     const showItem = useCallback(

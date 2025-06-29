@@ -1,5 +1,5 @@
 import { useEffect, useContext } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 import { MapContext } from "../../context";
 import trackPageView from "../../utils/analytics/track-page-view";
 

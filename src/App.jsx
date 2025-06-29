@@ -1,5 +1,5 @@
-import { useEffect, useState, useReducer, lazy, Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect, useState, useReducer } from "react";
+import { BrowserRouter, Route, Routes } from "react-router";
 import { Helmet } from "react-helmet";
 
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -11,63 +11,14 @@ import { useTranslation } from "react-i18next";
 import { config } from "./config";
 
 import loadHotelDataFromCsv from "./utils/load-hotel-data-from-csv";
-import LoadingSpinner from "./components/ui/LoadingSpinner";
 import LegacyHashRouteRedirect from "./components/routing/LegacyHashRouteRedirect";
 
-const HotelView = lazy(() => import("./views/HotelView"));
-const MapView = lazy(() => import("./views/MapView"));
-const ContentPageView = lazy(() => import("./views/ContentPageView"));
-const PersonView = lazy(() => import("./views/PersonView"));
-const ErrorView = lazy(() => import("./views/ErrorView"));
-const PressReleaseView = lazy(() => import("./views/PressReleasesView"));
-
-function HotelPage(props) {
-    return (
-        <Suspense fallback={<LoadingSpinner />}>
-            <HotelView {...props} />
-        </Suspense>
-    );
-}
-
-function MapPage(props) {
-    return (
-        <Suspense fallback={<LoadingSpinner />}>
-            <MapView {...props} />
-        </Suspense>
-    );
-}
-
-function ContentPage(props) {
-    return (
-        <Suspense fallback={<LoadingSpinner />}>
-            <ContentPageView {...props} />
-        </Suspense>
-    );
-}
-
-function PersonPage(props) {
-    return (
-        <Suspense fallback={<LoadingSpinner />}>
-            <PersonView {...props} />
-        </Suspense>
-    );
-}
-
-function ErrorPage(props) {
-    return (
-        <Suspense fallback={<LoadingSpinner />}>
-            <ErrorView {...props} />
-        </Suspense>
-    );
-}
-
-function PressReleasePage(props) {
-    return (
-        <Suspense fallback={<LoadingSpinner />}>
-            <PressReleaseView {...props} />
-        </Suspense>
-    );
-}
+import HotelView from "./views/HotelView";
+import MapView from "./views/MapView";
+import ContentPageView from "./views/ContentPageView";
+import PersonView from "./views/PersonView";
+import ErrorView from "./views/ErrorView";
+import PressReleasesView from "./views/PressReleasesView";
 
 function App() {
     const [state, dispatch] = useReducer(reducer, initialState);
@@ -127,14 +78,14 @@ function App() {
                             <LegacyHashRouteRedirect>
                                 <AnalyticsWrapper>
                                     <Routes>
-                                        <Route path="/" element={<MapPage />} />
-                                        <Route path="/hotel/:id" element={<HotelPage />} />
-                                        <Route path="/person/:name" element={<PersonPage />} />
-                                        <Route path="/about" element={<ContentPage />} />
-                                        <Route path="/contact" element={<ContentPage />} />
-                                        <Route path="/data-export" element={<ContentPage />} />
-                                        <Route path="/press-releases" element={<PressReleasePage />} />
-                                        {/* <Route path="*" element={<ErrorPage />} /> */}
+                                        <Route path="/" element={<MapView />} />
+                                        <Route path="/hotel/:id" element={<HotelView />} />
+                                        <Route path="/person/:name" element={<PersonView />} />
+                                        <Route path="/about" element={<ContentPageView />} />
+                                        <Route path="/contact" element={<ContentPageView />} />
+                                        <Route path="/data-export" element={<ContentPageView />} />
+                                        <Route path="/press-releases" element={<PressReleasesView />} />
+                                        <Route path="*" element={<ErrorView />} />
                                     </Routes>
                                 </AnalyticsWrapper>
                             </LegacyHashRouteRedirect>
