@@ -1,6 +1,6 @@
 import { useEffect, useState, useReducer } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import ErrorBoundary from "./components/ErrorBoundary";
 import AnalyticsWrapper from "./components/analytics/AnalyticsWrapper";
@@ -65,7 +65,7 @@ function App() {
     }, []);
 
     return (
-        <>
+        <HelmetProvider>
             <ErrorBoundary>
                 <Helmet>
                     <title>
@@ -93,7 +93,7 @@ function App() {
                     </MapContext.Provider>
                 </HotelContext.Provider>
             </ErrorBoundary>
-        </>
+        </HelmetProvider>
     );
 }
 
