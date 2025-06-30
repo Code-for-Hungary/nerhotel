@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { MapContainer as LeafletMap, Marker, TileLayer } from "react-leaflet";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { SmartLink } from "./SmartLink";
 import Icon from "./ui/Icon";
 import HotelImage from "./HotelImage";

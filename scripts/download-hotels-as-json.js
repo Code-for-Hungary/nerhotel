@@ -1,7 +1,7 @@
 import loadHotelDataFromCsv from "../src/utils/load-hotel-data-from-csv.js";
-const fs = require("fs");
-const mkdirp = require("mkdirp");
-const path = require("path");
+import fs from "fs";
+import { mkdirp } from "mkdirp";
+import path from "path";
 
 function downloadHotelsAsJSON() {
     loadHotelDataFromCsv()

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useMap, useMapEvents } from "react-leaflet";
 
 import { createClusterCustomIcon, getMarkerList } from "../leaflet-helper.jsx";
-import MarkerClusterGroup from "react-leaflet-cluster";
+import MarkerClusterGroup from "react-leaflet-markercluster";
 
 function MapCluster({ filteredPoints, selectedPoint, onMarkerClickCallback, setMap, onClusterClick, onMove }) {
     const map = useMap();

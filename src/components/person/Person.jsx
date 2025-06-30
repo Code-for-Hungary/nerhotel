@@ -1,5 +1,5 @@
 import { useContext, useState, lazy, Suspense, useEffect, useCallback } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { SmartLink } from "../SmartLink";
 import { useTranslation } from "react-i18next";
 import Leaflet from "leaflet";
