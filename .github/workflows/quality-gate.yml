@@ -16,7 +16,7 @@ jobs:
               with:
                   node-version: "22"
             - name: Install dependencies
-              run: npm ci --fund=false --audit=false --legacy-peer-deps
+              run: npm ci --fund=false --audit=false
             - name: Unit tests
               run: npm run test -- --watch=false
             - name: Code linter
