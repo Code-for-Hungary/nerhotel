@@ -4,6 +4,7 @@ import { CSSTransition } from "react-transition-group";
 import LocateControl from "./LocateControl";
 import MapListOpener from "./MapListOpener";
 import { useTranslation } from "react-i18next";
+import ShareLinkControl from "./ShareLinkControl";
 
 import styles from "../css/map.module.css";
 import { MapContext, HotelContext } from "../context";
@@ -31,6 +32,7 @@ function MapComponent() {
     const [map, setMap] = useState(null);
     const [filterType, setFilterType] = useState("mind");
     const [filteredPoints, setFilteredPoints] = useState([]);
+    const [hasInitialFlyTo, setHasInitialFlyTo] = useState(false);
 
     const calcPoints = useCallback(
         (map) => {
@@ -75,6 +77,39 @@ function MapComponent() {
         }
     }, [map, showPopup, selectedPoint]);
 
+    const shareLink = useCallback(() => {
+        if (map) {
+            const center = map.getCenter();
+            const zoom = map.getZoom();
+            const filterParam = filterType !== "mind" ? `&filter=${filterType}` : "";
+            const url = `${window.location.origin}${window.location.pathname}?lat=${center.lat.toFixed(4)}&lng=${center.lng.toFixed(
+                4
+            )}&zoom=${zoom}${filterParam}`;
+            navigator.clipboard.writeText(url);
+            window.history.pushState({}, "", url);
+        }
+    }, [map, filterType]);
+
+    useEffect(() => {
+        if (map && !hasInitialFlyTo) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lat = urlParams.get("lat");
+            const lng = urlParams.get("lng");
+            const zoom = urlParams.get("zoom");
+            const filter = urlParams.get("filter");
+
+            if (lat && lng && zoom) {
+                map.flyTo([parseFloat(lat), parseFloat(lng)], parseInt(zoom));
+            }
+
+            if (filter) {
+                setFilterType(filter);
+            }
+
+            setHasInitialFlyTo(true);
+        }
+    }, [map, hasInitialFlyTo]);
+
     function onMarkerClickCallback(point) {
         dispatch({ type: "SetSelectedPoint", point });
         dispatch({ type: "TogglePopup", showPopup: true });
@@ -112,6 +147,7 @@ function MapComponent() {
                             <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
                             <MapListOpener onLocationListOpen={openLocationList} />
                             <FilterControl language={i18n.language} filterType={filterType} setFilterType={setFilterType} />
+                            <ShareLinkControl shareLink={shareLink} />
                         </Map>
                     ) : (
                         <MapPlaceholder />
