@@ -1,6 +1,7 @@
 import { useContext, useState, useCallback, useEffect, useRef } from "react";
 import { MapContainer as Map, TileLayer } from "react-leaflet";
 import { CSSTransition } from "react-transition-group";
+import { useSearchParams } from "react-router";
 import LocateControl from "./LocateControl";
 import MapListOpener from "./MapListOpener";
 import { useTranslation } from "react-i18next";
@@ -21,6 +22,7 @@ function MapComponent() {
     const { dispatch, showPopup, center, selectedPoint, isDataLoaded } = useContext(MapContext);
     const { t, i18n } = useTranslation();
     const transitionContainerRef = useRef(null);
+    const [searchParams, setSearchParams] = useSearchParams();
 
     const close = useCallback(() => {
         dispatch({ type: "SetSelectedPoint", point: null });
@@ -81,22 +83,26 @@ function MapComponent() {
         if (map) {
             const center = map.getCenter();
             const zoom = map.getZoom();
-            const filterParam = filterType !== "mind" ? `&filter=${filterType}` : "";
-            const url = `${window.location.origin}${window.location.pathname}?lat=${center.lat.toFixed(4)}&lng=${center.lng.toFixed(
-                4
-            )}&zoom=${zoom}${filterParam}`;
+            const newParams = {
+                lat: center.lat.toFixed(4),
+                lng: center.lng.toFixed(4),
+                zoom: zoom.toString(),
+            };
+            if (filterType !== "mind") {
+                newParams.filter = filterType;
+            }
+            setSearchParams(newParams, { replace: true });
+            const url = `${window.location.origin}${window.location.pathname}?${new URLSearchParams(newParams).toString()}`;
             navigator.clipboard.writeText(url);
-            window.history.pushState({}, "", url);
         }
-    }, [map, filterType]);
+    }, [map, filterType, setSearchParams]);
 
     useEffect(() => {
         if (map && !hasInitialFlyTo) {
-            const urlParams = new URLSearchParams(window.location.search);
-            const lat = urlParams.get("lat");
-            const lng = urlParams.get("lng");
-            const zoom = urlParams.get("zoom");
-            const filter = urlParams.get("filter");
+            const lat = searchParams.get("lat");
+            const lng = searchParams.get("lng");
+            const zoom = searchParams.get("zoom");
+            const filter = searchParams.get("filter");
 
             if (lat && lng && zoom) {
                 map.flyTo([parseFloat(lat), parseFloat(lng)], parseInt(zoom));
@@ -108,7 +114,7 @@ function MapComponent() {
 
             setHasInitialFlyTo(true);
         }
-    }, [map, hasInitialFlyTo]);
+    }, [map, hasInitialFlyTo, searchParams]);
 
     function onMarkerClickCallback(point) {
         dispatch({ type: "SetSelectedPoint", point });
