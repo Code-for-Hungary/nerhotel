@@ -1,4 +1,4 @@
-import { useContext, useCallback } from "react";
+import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
 
@@ -16,7 +16,7 @@ import LangSwitch from "../LangSwitch";
 
 import { SmartLink } from "../SmartLink";
 
-const Header = () => {
+const Header = ({ onMenuOpen }) => {
     const { dispatch } = useContext(MapContext);
     const { i18n } = useTranslation();
     const navigate = useNavigate();
@@ -32,10 +32,6 @@ const Header = () => {
             search: `?${config.locales.paramName}=${lang}`,
         });
     };
-
-    const onMenuCallback = useCallback(() => {
-        dispatch({ type: "ToggleMenu", showMenu: true });
-    }, [dispatch]);
 
     return (
         <header className={styles.header}>
@@ -68,7 +64,7 @@ const Header = () => {
                 />
             </div>
             <div className={styles.menuContainer}>
-                <button onClick={onMenuCallback} type="button" className="resetButton">
+                <button onClick={onMenuOpen} type="button" className="resetButton">
                     <Icon img={listIcon} size="large" />
                 </button>
             </div>

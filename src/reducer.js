@@ -47,11 +47,6 @@ export default function mapReducer(state, action) {
                 ...state,
                 showPopup: action.showPopup,
             };
-        case "ToggleMenu":
-            return {
-                ...state,
-                showMenu: action.showMenu,
-            };
         case "SetDataLoaded":
             return {
                 ...state,

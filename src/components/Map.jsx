@@ -1,5 +1,5 @@
-import { useContext, useState, useCallback, useEffect, useRef } from "react";
-import { MapContainer as Map, TileLayer } from "react-leaflet";
+import { useContext, useState, useCallback, useEffect, useRef, useMemo } from "react";
+import { MapContainer, TileLayer } from "react-leaflet";
 import { CSSTransition } from "react-transition-group";
 import { useSearchParams } from "react-router";
 import LocateControl from "./LocateControl";
@@ -18,7 +18,7 @@ import MapPlaceholder from "./MapPlaceholder";
 import Popup from "./Popup";
 import FilterControl from "./FilterControl";
 
-function MapComponent() {
+function Map() {
     const { dispatch, showPopup, center, selectedPoint, isDataLoaded } = useContext(MapContext);
     const { t, i18n } = useTranslation();
     const transitionContainerRef = useRef(null);
@@ -135,30 +135,34 @@ function MapComponent() {
         calcPoints(map);
     }
 
+    const mapDisplay = useMemo(() => {
+        if (!isDataLoaded) {
+            return <MapPlaceholder />;
+        }
+
+        return (
+            <MapContainer className="markercluster-map" center={center} zoom={6} maxZoom={config.map.maxZoom}>
+                <TileLayer url={config.map.url} attribution={config.map.attribution} />
+                <MapCluster
+                    filteredPoints={filteredPoints}
+                    selectedPoint={selectedPoint}
+                    onMarkerClickCallback={onMarkerClickCallback}
+                    setMap={setMap}
+                    onClusterClick={onClusterClickHandler}
+                    onMove={moveHandler}
+                />
+                <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
+                <MapListOpener onLocationListOpen={openLocationList} />
+                <FilterControl language={i18n.language} filterType={filterType} setFilterType={setFilterType} />
+                <ShareLinkControl shareLink={shareLink} />
+            </MapContainer>
+        );
+    }, [isDataLoaded, filteredPoints, center]);
+
     return (
         <>
             <div className={styles.map}>
-                <div className={styles.mapWrapper}>
-                    {isDataLoaded ? (
-                        <Map className="markercluster-map" center={center} zoom={6} maxZoom={config.map.maxZoom}>
-                            <TileLayer url={config.map.url} attribution={config.map.attribution} />
-                            <MapCluster
-                                filteredPoints={filteredPoints}
-                                selectedPoint={selectedPoint}
-                                onMarkerClickCallback={onMarkerClickCallback}
-                                setMap={setMap}
-                                onClusterClick={onClusterClickHandler}
-                                onMove={moveHandler}
-                            />
-                            <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
-                            <MapListOpener onLocationListOpen={openLocationList} />
-                            <FilterControl language={i18n.language} filterType={filterType} setFilterType={setFilterType} />
-                            <ShareLinkControl shareLink={shareLink} />
-                        </Map>
-                    ) : (
-                        <MapPlaceholder />
-                    )}
-                </div>
+                <div className={styles.mapWrapper}>{mapDisplay}</div>
             </div>
             <CSSTransition in={showPopup} nodeRef={transitionContainerRef} classNames="Popup" unmountOnExit timeout={200}>
                 <Popup point={selectedPoint} onClose={close} ref={transitionContainerRef} />
@@ -167,4 +171,4 @@ function MapComponent() {
     );
 }
 
-export default MapComponent;
+export default Map;
