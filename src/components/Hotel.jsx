@@ -7,9 +7,11 @@ import Icon from "./ui/Icon";
 import HotelImage from "./HotelImage";
 
 import { getOligarchData } from "../utils";
-import { MapContext, HotelContext } from "../context";
+import { MapContext } from "../context";
 import { createOrangeIcon } from "../leaflet-helper.jsx";
 import getTranslatedHotelProperty from "../utils/get-translated-hotel-property.js";
+
+import { useHotelsContext } from "../context/hotels-provider.jsx";
 
 import styles from "../css/hotel.module.css";
 
@@ -53,7 +55,7 @@ const icon = createOrangeIcon();
  */
 const Hotel = (props) => {
     const { dispatch } = useContext(MapContext);
-    const { hotels } = useContext(HotelContext);
+    const { hotels } = useHotelsContext();
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
     const hotelById = hotels.length ? hotels.find((hotel) => hotel.properties.id === parseInt(props.id)) : null;

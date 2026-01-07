@@ -1,16 +1,16 @@
-import { useEffect, useState, useReducer } from "react";
+import { useEffect, useReducer } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import ErrorBoundary from "./components/ErrorBoundary";
 import AnalyticsWrapper from "./components/analytics/AnalyticsWrapper";
 
-import { MapContext, HotelContext } from "./context";
+import { MapContext } from "./context";
+import { HotelsProvider } from "./context/hotels-provider";
 import reducer, { initialState } from "./reducer";
 import { useTranslation } from "react-i18next";
 import { config } from "./config";
 
-import loadHotelDataFromCsv from "./utils/load-hotel-data-from-csv";
 import LegacyHashRouteRedirect from "./components/routing/LegacyHashRouteRedirect";
 
 import HotelView from "./views/HotelView";
@@ -24,7 +24,6 @@ function App() {
     const [state, dispatch] = useReducer(reducer, initialState);
     const mapData = { ...state, dispatch };
     const { i18n, t } = useTranslation();
-    const [hotels, setHotels] = useState([]);
 
     useEffect(() => {
         const queryString = window.location.href.split("?")[1];
@@ -43,27 +42,6 @@ function App() {
         }
     }, [i18n]);
 
-    useEffect(() => {
-        let isSubscribed = true;
-
-        loadHotelDataFromCsv()
-            .then((data) => {
-                if (isSubscribed) {
-                    setHotels(data);
-                }
-            })
-            .catch((e) => {
-                console.error(e);
-            })
-            .finally(() => {
-                dispatch({ type: "SetDataLoaded" });
-            });
-
-        return () => {
-            isSubscribed = false;
-        };
-    }, []);
-
     return (
         <HelmetProvider>
             <ErrorBoundary>
@@ -72,7 +50,7 @@ function App() {
                         {t("general.tagline")} - {t("general.siteName")}
                     </title>
                 </Helmet>
-                <HotelContext.Provider value={{ hotels }}>
+                <HotelsProvider>
                     <MapContext.Provider value={mapData}>
                         <BrowserRouter>
                             <LegacyHashRouteRedirect>
@@ -91,7 +69,7 @@ function App() {
                             </LegacyHashRouteRedirect>
                         </BrowserRouter>
                     </MapContext.Provider>
-                </HotelContext.Provider>
+                </HotelsProvider>
             </ErrorBoundary>
         </HelmetProvider>
     );

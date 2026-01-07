@@ -8,7 +8,9 @@ import { useTranslation } from "react-i18next";
 import ShareLinkControl from "./ShareLinkControl";
 
 import styles from "../css/map.module.css";
-import { MapContext, HotelContext } from "../context";
+import { MapContext } from "../context";
+
+import { useHotelsContext } from "../context/hotels-provider.jsx";
 
 import { config } from "../config.js";
 import filterPoints from "../utils/map/filter-points.js";
@@ -19,7 +21,7 @@ import Popup from "./Popup";
 import FilterControl from "./FilterControl";
 
 function Map() {
-    const { dispatch, showPopup, center, selectedPoint, isDataLoaded } = useContext(MapContext);
+    const { dispatch, showPopup, center, selectedPoint } = useContext(MapContext);
     const { t, i18n } = useTranslation();
     const transitionContainerRef = useRef(null);
     const [searchParams, setSearchParams] = useSearchParams();
@@ -29,7 +31,7 @@ function Map() {
         dispatch({ type: "TogglePopup", showPopup: false });
     }, [dispatch]);
 
-    const { hotels } = useContext(HotelContext);
+    const { hotels, isLoading } = useHotelsContext();
     const [loaded, setLoaded] = useState(false);
     const [map, setMap] = useState(null);
     const [filterType, setFilterType] = useState("mind");
@@ -136,7 +138,7 @@ function Map() {
     }
 
     const mapDisplay = useMemo(() => {
-        if (!isDataLoaded) {
+        if (isLoading) {
             return <MapPlaceholder />;
         }
 
@@ -157,7 +159,7 @@ function Map() {
                 <ShareLinkControl shareLink={shareLink} />
             </MapContainer>
         );
-    }, [isDataLoaded, filteredPoints, center]);
+    }, [isLoading, filteredPoints, center]);
 
     return (
         <>

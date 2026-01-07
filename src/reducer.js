@@ -1,6 +1,5 @@
 export const initialState = {
     list: [],
-    isDataLoaded: false,
     map: null,
     showList: false,
     showPopup: false,
@@ -46,11 +45,6 @@ export default function mapReducer(state, action) {
             return {
                 ...state,
                 showPopup: action.showPopup,
-            };
-        case "SetDataLoaded":
-            return {
-                ...state,
-                isDataLoaded: true,
             };
         default:
             return state;

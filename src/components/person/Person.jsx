@@ -4,7 +4,7 @@ import { SmartLink } from "../SmartLink";
 import { useTranslation } from "react-i18next";
 import Leaflet from "leaflet";
 import { MapContainer as Map, TileLayer } from "react-leaflet";
-import { HotelContext } from "../../context";
+import { useHotelsContext } from "../../context/hotels-provider.jsx";
 import { getMarkerList } from "../../leaflet-helper.jsx";
 import AssociatedHotel from "./AssociatedHotel";
 import LoadingSpinner from "../ui/LoadingSpinner";
@@ -39,9 +39,8 @@ const Person = (props) => {
     const [profileInfo, setProfileInfo] = useState(null);
     const [profileInfoError, setProfileInfoError] = useState(false);
 
-    const hotelContext = useContext(HotelContext);
     /** @type {Hotel[]} */
-    const hotels = hotelContext.hotels;
+    const { hotels } = useHotelsContext();
     const affiliatedHotels = _getAllHotelsAffiliatedWithPerson(hotels, personName);
 
     /** @type {{name: string, link: string}|undefined} */

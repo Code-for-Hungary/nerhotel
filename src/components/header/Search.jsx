@@ -1,7 +1,8 @@
 import { useContext, useState, useCallback } from "react";
 import styles from "./Search.module.css";
 
-import { MapContext, HotelContext } from "../../context";
+import { MapContext } from "../../context";
+import { useHotelsContext } from "../../context/hotels-provider";
 import { useTranslation } from "react-i18next";
 import Icon from "../ui/Icon";
 import searchIcon from "../../assets/search.svg";
@@ -11,7 +12,7 @@ import findProperty from "../../utils/search/find-property";
 function Search() {
     const { dispatch } = useContext(MapContext);
     const { t } = useTranslation();
-    const { hotels } = useContext(HotelContext);
+    const { hotels } = useHotelsContext();
     const [value, setValue] = useState("");
 
     const onSearchCallback = useCallback(

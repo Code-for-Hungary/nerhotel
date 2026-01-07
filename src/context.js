@@ -12,9 +12,3 @@ const mapValue = {
 };
 
 export const MapContext = createContext(mapValue);
-
-const hotelValue = {
-    hotels: [],
-};
-
-export const HotelContext = createContext(hotelValue);
