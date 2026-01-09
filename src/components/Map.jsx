@@ -22,13 +22,14 @@ import FilterControl from "./FilterControl";
 
 function Map() {
     const [showPopup, setShowPopup] = useState();
-    const { dispatch, center, selectedPoint } = useContext(MapContext);
+    const [selectedPoint, setSelectedPoint] = useState();
+    const { dispatch, center } = useContext(MapContext);
     const { t, i18n } = useTranslation();
     const transitionContainerRef = useRef(null);
     const [searchParams, setSearchParams] = useSearchParams();
 
     const close = useCallback(() => {
-        dispatch({ type: "SetSelectedPoint", point: null });
+        setSelectedPoint(undefined);
         setShowPopup(false);
     }, [dispatch]);
 
@@ -119,7 +120,7 @@ function Map() {
 
     function onMarkerClickCallback(point) {
         console.log("point", point);
-        dispatch({ type: "SetSelectedPoint", point });
+        setSelectedPoint(point);
         setShowPopup(true);
     }
 
@@ -134,6 +135,7 @@ function Map() {
     }
 
     function moveHandler() {
+        console.log("moveHandler");
         calcPoints(map);
     }
 

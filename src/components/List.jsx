@@ -23,7 +23,7 @@ function List() {
                 map.setView([lat, lng], 18);
             }
             dispatch({ type: "SetCenter", center: [lat, lng] });
-            dispatch({ type: "SetSelectedPoint", point: item });
+            // dispatch({ type: "SetSelectedPoint", point: item });
             dispatch({ type: "ToggleList", showList: false });
             if (location.pathname !== "/") {
                 navigate("/");

@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import { MapContainer as LeafletMap, Marker, TileLayer } from "react-leaflet";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
@@ -7,7 +6,6 @@ import Icon from "./ui/Icon";
 import HotelImage from "./HotelImage";
 
 import { getOligarchData } from "../utils";
-import { MapContext } from "../context";
 import { createOrangeIcon } from "../leaflet-helper.jsx";
 import getTranslatedHotelProperty from "../utils/get-translated-hotel-property.js";
 
@@ -22,7 +20,6 @@ import linkIcon from "../assets/link-icon.svg";
 import pinIcon from "../assets/pin-icon.svg";
 
 import { config } from "../config.js";
-import goBack from "../utils/hotel/go-back.js";
 import displayTranslatedPersonType from "../utils/person/display-translated-person-type.js";
 
 const icon = createOrangeIcon();
@@ -54,7 +51,6 @@ const icon = createOrangeIcon();
  * @property {{name: string, link: string}[]} properties.mainOligarch
  */
 const Hotel = (props) => {
-    const { dispatch } = useContext(MapContext);
     const { hotels } = useHotelsContext();
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
@@ -154,13 +150,7 @@ const Hotel = (props) => {
                         </>
                     ) : null}
 
-                    <SmartLink
-                        className={styles.back}
-                        onClick={() => {
-                            goBack(dispatch, hotelById, location);
-                        }}
-                        to="/"
-                    >
+                    <SmartLink className={styles.back} to="/">
                         <Icon img={arrowIcon} alt={t("backToMap")} size="large" />
                     </SmartLink>
                 </div>
