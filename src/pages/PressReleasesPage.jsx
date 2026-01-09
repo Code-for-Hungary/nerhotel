@@ -1,7 +1,7 @@
 import Layout from "./Layout";
 import { PressReleases } from "../components/press-releases/PressReleases";
 
-const PressReleasesView = () => {
+const PressReleasesPage = () => {
     return (
         <Layout>
             <PressReleases />
@@ -9,4 +9,4 @@ const PressReleasesView = () => {
     );
 };
 
-export default PressReleasesView;
+export default PressReleasesPage;

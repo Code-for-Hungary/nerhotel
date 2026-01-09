@@ -1,9 +1,10 @@
 import { useState } from "react";
+
 import styles from "./ShareLinkControl.module.css";
-import listStyles from "../css/map-list-opener.module.css";
-import Icon from "./ui/Icon";
-import Toast from "./ui/Toast";
-import shareIcon from "../assets/share-icon.svg";
+import listStyles from "../../css/map-list-opener.module.css";
+import Icon from "../ui/Icon";
+import Toast from "../ui/Toast";
+import shareIcon from "../../assets/share-icon.svg";
 
 function ShareLinkControl({ shareLink }) {
     const [showToast, setShowToast] = useState(false);

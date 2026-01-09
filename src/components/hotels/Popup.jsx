@@ -1,17 +1,17 @@
 import { forwardRef } from "react";
-import styles from "./Popup.module.css";
-import { SmartLink } from "./SmartLink";
-import Button from "./ui/Button";
-import Icon from "./ui/Icon";
-import closeIcon from "../assets/close-icon.svg";
-import horseIcon from "../assets/horse-icon.svg";
-import hotelIcon from "../assets/hotel-icon.svg";
-import linkIcon from "../assets/link-icon.svg";
-import pinIcon from "../assets/pin-icon.svg";
-import arrowIcon from "../assets/arrow-icon.svg";
-import { getOligarchData } from "../utils";
 import { useTranslation } from "react-i18next";
-import displayTranslatedPersonType from "../utils/person/display-translated-person-type";
+import styles from "./Popup.module.css";
+import { SmartLink } from "../SmartLink";
+import Button from "../ui/Button";
+import Icon from "../ui/Icon";
+import closeIcon from "../../assets/close-icon.svg";
+import horseIcon from "../../assets/horse-icon.svg";
+import hotelIcon from "../../assets/hotel-icon.svg";
+import linkIcon from "../../assets/link-icon.svg";
+import pinIcon from "../../assets/pin-icon.svg";
+import arrowIcon from "../../assets/arrow-icon.svg";
+import { getOligarchData } from "../../utils";
+import displayTranslatedPersonType from "../../utils/person/display-translated-person-type";
 import "./Popup.transition.css";
 
 const Popup = forwardRef((props, ref) => {

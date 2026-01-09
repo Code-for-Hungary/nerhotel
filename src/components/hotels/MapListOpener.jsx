@@ -1,7 +1,7 @@
 import { useMap } from "react-leaflet";
-import Icon from "../components/ui/Icon";
-import listIcon from "../assets/menu-icon.svg";
-import styles from "../css/map-list-opener.module.css";
+import Icon from "../ui/Icon";
+import listIcon from "../../assets/menu-icon.svg";
+import styles from "../../css/map-list-opener.module.css";
 
 function MapListOpener({ onLocationListOpen }) {
     const map = useMap();

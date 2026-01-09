@@ -21,7 +21,7 @@ const getContent = async (fileName, lang) => {
     }
 };
 
-const ContentPageView = () => {
+const ContentPage = () => {
     const [pageContent, setPageContent] = useState("");
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
@@ -76,4 +76,4 @@ const ContentPageView = () => {
     );
 };
 
-export default ContentPageView;
+export default ContentPage;

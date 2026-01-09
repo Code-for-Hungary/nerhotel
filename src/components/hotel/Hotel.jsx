@@ -1,26 +1,27 @@
 import { MapContainer as LeafletMap, Marker, TileLayer } from "react-leaflet";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import { SmartLink } from "./SmartLink";
-import Icon from "./ui/Icon";
+
+import { SmartLink } from "../SmartLink";
+import Icon from "../ui/Icon";
 import HotelImage from "./HotelImage";
 
-import { getOligarchData } from "../utils";
-import { createOrangeIcon } from "../leaflet-helper.jsx";
-import getTranslatedHotelProperty from "../utils/get-translated-hotel-property.js";
+import { getOligarchData } from "../../utils";
+import { createOrangeIcon } from "../../leaflet-helper.jsx";
+import getTranslatedHotelProperty from "../../utils/get-translated-hotel-property.js";
 
-import { useHotelsContext } from "../context/hotels-provider.jsx";
+import { useHotelsContext } from "../../context/hotels-provider.jsx";
 
-import styles from "../css/hotel.module.css";
+import styles from "../../css/hotel.module.css";
 
-import arrowIcon from "../assets/arrow-icon.svg";
-import horseIcon from "../assets/horse-icon.svg";
-import hotelIcon from "../assets/hotel-icon.svg";
-import linkIcon from "../assets/link-icon.svg";
-import pinIcon from "../assets/pin-icon.svg";
+import arrowIcon from "../../assets/arrow-icon.svg";
+import horseIcon from "../../assets/horse-icon.svg";
+import hotelIcon from "../../assets/hotel-icon.svg";
+import linkIcon from "../../assets/link-icon.svg";
+import pinIcon from "../../assets/pin-icon.svg";
 
-import { config } from "../config.js";
-import displayTranslatedPersonType from "../utils/person/display-translated-person-type.js";
+import { config } from "../../config.js";
+import displayTranslatedPersonType from "../../utils/person/display-translated-person-type.js";
 
 const icon = createOrangeIcon();
 

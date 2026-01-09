@@ -1,6 +1,6 @@
-import styles from "../css/map-list-opener.module.css";
-import Icon from "./ui/Icon";
-import myLocationIcon from "../assets/my-location.svg";
+import styles from "../../css/map-list-opener.module.css";
+import Icon from "../ui/Icon";
+import myLocationIcon from "../../assets/my-location.svg";
 
 function LocateControl({ setMapToUsersLocation }) {
     return (

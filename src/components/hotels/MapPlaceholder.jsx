@@ -1,4 +1,4 @@
-import LoadingSpinner from "./ui/LoadingSpinner";
+import LoadingSpinner from "../ui/LoadingSpinner";
 
 function MapPlaceholder() {
     return (

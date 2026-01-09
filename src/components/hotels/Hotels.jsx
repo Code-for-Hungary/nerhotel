@@ -2,25 +2,26 @@ import { useContext, useState, useCallback, useEffect, useRef, useMemo } from "r
 import { MapContainer, TileLayer } from "react-leaflet";
 import { CSSTransition } from "react-transition-group";
 import { useSearchParams } from "react-router";
-import LocateControl from "./LocateControl";
-import MapListOpener from "./MapListOpener";
+
+import LocateControl from "./LocateControl.jsx";
+import MapListOpener from "./MapListOpener.jsx";
 import { useTranslation } from "react-i18next";
-import ShareLinkControl from "./ShareLinkControl";
+import ShareLinkControl from "./ShareLinkControl.jsx";
 
-import styles from "../css/map.module.css";
-import { MapContext } from "../context";
+import styles from "../../css/map.module.css";
+import { MapContext } from "../../context.js";
 
-import { useHotelsContext } from "../context/hotels-provider.jsx";
+import { useHotelsContext } from "../../context/hotels-provider.jsx";
 
-import { config } from "../config.js";
-import filterPoints from "../utils/map/filter-points.js";
-import MapCluster from "./MapCluster";
-import MapPlaceholder from "./MapPlaceholder";
+import { config } from "../../config.js";
+import filterPoints from "../../utils/map/filter-points.js";
+import MapCluster from "./MapCluster.jsx";
+import MapPlaceholder from "./MapPlaceholder.jsx";
 
-import Popup from "./Popup";
-import FilterControl from "./FilterControl";
+import Popup from "./Popup.jsx";
+import FilterControl from "./FilterControl.jsx";
 
-function Map() {
+function Hotels() {
     const [showPopup, setShowPopup] = useState();
     const [selectedPoint, setSelectedPoint] = useState();
     const { dispatch, center } = useContext(MapContext);
@@ -175,4 +176,4 @@ function Map() {
     );
 }
 
-export default Map;
+export default Hotels;

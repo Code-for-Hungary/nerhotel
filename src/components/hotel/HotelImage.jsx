@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import styles from "../css/hotel-image.module.css";
+import styles from "../../css/hotel-image.module.css";
 
 function HotelImage({ src, alt = "" }) {
     const imgContainerRef = useRef(null);

@@ -13,12 +13,12 @@ import { config } from "./config";
 
 import LegacyHashRouteRedirect from "./components/routing/LegacyHashRouteRedirect";
 
-import HotelView from "./views/HotelView";
-import MapView from "./views/MapView";
-import ContentPageView from "./views/ContentPageView";
-import PersonView from "./views/PersonView";
-import ErrorView from "./views/ErrorView";
-import PressReleasesView from "./views/PressReleasesView";
+import HotelPage from "./pages/HotelPage";
+import HotelsPage from "./pages/HotelsPage";
+import ContentPage from "./pages/ContentPage";
+import PersonPage from "./pages/PersonPage";
+import ErrorPage from "./pages/ErrorPage";
+import PressReleasesPage from "./pages/PressReleasesPage";
 
 function App() {
     const [state, dispatch] = useReducer(reducer, initialState);
@@ -56,14 +56,14 @@ function App() {
                             <LegacyHashRouteRedirect>
                                 <AnalyticsWrapper>
                                     <Routes>
-                                        <Route path="/" element={<MapView />} />
-                                        <Route path="/hotel/:id" element={<HotelView />} />
-                                        <Route path="/person/:name" element={<PersonView />} />
-                                        <Route path="/about" element={<ContentPageView />} />
-                                        <Route path="/contact" element={<ContentPageView />} />
-                                        <Route path="/data-export" element={<ContentPageView />} />
-                                        <Route path="/press-releases" element={<PressReleasesView />} />
-                                        <Route path="*" element={<ErrorView />} />
+                                        <Route path="/" element={<HotelsPage />} />
+                                        <Route path="/hotel/:id" element={<HotelPage />} />
+                                        <Route path="/person/:name" element={<PersonPage />} />
+                                        <Route path="/about" element={<ContentPage />} />
+                                        <Route path="/contact" element={<ContentPage />} />
+                                        <Route path="/data-export" element={<ContentPage />} />
+                                        <Route path="/press-releases" element={<PressReleasesPage />} />
+                                        <Route path="*" element={<ErrorPage />} />
                                     </Routes>
                                 </AnalyticsWrapper>
                             </LegacyHashRouteRedirect>

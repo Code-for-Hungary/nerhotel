@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import Layout from "./Layout";
 import Person from "../components/person/Person";
 
-const PersonView = () => {
+const PersonPage = () => {
     const { name } = useParams();
 
     return (
@@ -13,4 +13,4 @@ const PersonView = () => {
     );
 };
 
-export default PersonView;
+export default PersonPage;

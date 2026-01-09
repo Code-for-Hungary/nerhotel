@@ -1,7 +1,7 @@
 import Layout from "./Layout";
 import ErrorScreen from "../components/ErrorScreen";
 
-function ErrorView() {
+function ErrorPage() {
     return (
         <Layout>
             <ErrorScreen />
@@ -9,4 +9,4 @@ function ErrorView() {
     );
 }
 
-export default ErrorView;
+export default ErrorPage;

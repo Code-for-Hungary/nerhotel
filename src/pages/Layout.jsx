@@ -1,4 +1,4 @@
-import { useEffect, useContext, useState } from "react";
+import { useContext, useState } from "react";
 import Header from "../components/header/Header";
 import List from "../components/List";
 import Menu from "../components/header/Menu";
@@ -10,7 +10,7 @@ const Layout = (props) => {
 
     return (
         <>
-            <Header history={props.history} onMenuOpen={() => setShowMenu(true)} />
+            <Header onMenuOpen={() => setShowMenu(true)} />
             <Menu showMenu={showMenu} onClose={() => setShowMenu(false)} />
             {props.children}
             {showList && <List />}
