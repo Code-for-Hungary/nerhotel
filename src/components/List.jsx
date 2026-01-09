@@ -25,7 +25,6 @@ function List() {
             dispatch({ type: "SetCenter", center: [lat, lng] });
             dispatch({ type: "SetSelectedPoint", point: item });
             dispatch({ type: "ToggleList", showList: false });
-            dispatch({ type: "TogglePopup", showPopup: true });
             if (location.pathname !== "/") {
                 navigate("/");
             }

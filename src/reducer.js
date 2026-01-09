@@ -41,11 +41,6 @@ export default function mapReducer(state, action) {
                 ...state,
                 showList: action.showList,
             };
-        case "TogglePopup":
-            return {
-                ...state,
-                showPopup: action.showPopup,
-            };
         default:
             return state;
     }

@@ -21,18 +21,18 @@ import Popup from "./Popup";
 import FilterControl from "./FilterControl";
 
 function Map() {
-    const { dispatch, showPopup, center, selectedPoint } = useContext(MapContext);
+    const [showPopup, setShowPopup] = useState();
+    const { dispatch, center, selectedPoint } = useContext(MapContext);
     const { t, i18n } = useTranslation();
     const transitionContainerRef = useRef(null);
     const [searchParams, setSearchParams] = useSearchParams();
 
     const close = useCallback(() => {
         dispatch({ type: "SetSelectedPoint", point: null });
-        dispatch({ type: "TogglePopup", showPopup: false });
+        setShowPopup(false);
     }, [dispatch]);
 
     const { hotels, isLoading } = useHotelsContext();
-    const [loaded, setLoaded] = useState(false);
     const [map, setMap] = useState(null);
     const [filterType, setFilterType] = useState("mind");
     const [filteredPoints, setFilteredPoints] = useState([]);
@@ -53,19 +53,18 @@ function Map() {
 
     useEffect(() => {
         calcPoints(map);
-        if (!loaded && hotels.length) {
+        if (!isLoading && hotels.length) {
             if (map) {
                 dispatch({ type: "SetMap", map });
             }
-            setLoaded(true);
         }
-    }, [dispatch, loaded, calcPoints, map, hotels]);
+    }, [dispatch, isLoading, calcPoints, map, hotels]);
 
     const setMapToUsersLocation = useCallback(() => {
         if (map) {
             map.locate()
                 .on("locationfound", (e) => {
-                    dispatch({ type: "TogglePopup", showPopup: false });
+                    setShowPopup(false);
                     map.flyTo(e.latlng, config.map.closeZoomLevel);
                 })
                 .on("locationerror", (e) => {
@@ -119,18 +118,19 @@ function Map() {
     }, [map, hasInitialFlyTo, searchParams]);
 
     function onMarkerClickCallback(point) {
+        console.log("point", point);
         dispatch({ type: "SetSelectedPoint", point });
-        dispatch({ type: "TogglePopup", showPopup: true });
+        setShowPopup(true);
     }
 
     function openLocationList(map) {
         calcPoints(map);
         dispatch({ type: "ToggleList", showList: true });
-        dispatch({ type: "TogglePopup", showPopup: false });
+        setShowPopup(false);
     }
 
     function onClusterClickHandler() {
-        dispatch({ type: "TogglePopup", showPopup: false });
+        setShowPopup(false);
     }
 
     function moveHandler() {

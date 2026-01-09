@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
 
@@ -9,7 +8,6 @@ import listIcon from "../../assets/menu-icon.svg";
 
 import logo from "../../assets/nh-logo.svg";
 import logoEn from "../../assets/nh-logo-en.svg";
-import { MapContext } from "../../context";
 
 import { config } from "../../config";
 import LangSwitch from "../LangSwitch";
@@ -17,7 +15,6 @@ import LangSwitch from "../LangSwitch";
 import { SmartLink } from "../SmartLink";
 
 const Header = ({ onMenuOpen }) => {
-    const { dispatch } = useContext(MapContext);
     const { i18n } = useTranslation();
     const navigate = useNavigate();
     const { resolvedLanguage } = i18n;
@@ -36,13 +33,7 @@ const Header = ({ onMenuOpen }) => {
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
-                <SmartLink
-                    to="/"
-                    onClick={() => {
-                        dispatch({ type: "TogglePopup", showPopup: false });
-                    }}
-                    className={styles.logo}
-                >
+                <SmartLink to="/" className={styles.logo}>
                     <img
                         src={resolvedLanguage === "hu" ? logo : logoEn}
                         alt=""
