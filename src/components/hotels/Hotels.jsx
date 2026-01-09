@@ -21,10 +21,13 @@ import MapPlaceholder from "./MapPlaceholder.jsx";
 import Popup from "./Popup.jsx";
 import FilterControl from "./FilterControl.jsx";
 
+const INITIAL_CENTER = [47.498045, 19.0385183];
+
 function Hotels() {
     const [showPopup, setShowPopup] = useState();
+    const [visibleItemsOnMap, setVisibleItemsOnMap] = useState([]);
     const [selectedPoint, setSelectedPoint] = useState();
-    const { dispatch, center } = useContext(MapContext);
+    const { dispatch } = useContext(MapContext);
     const { t, i18n } = useTranslation();
     const transitionContainerRef = useRef(null);
     const [searchParams, setSearchParams] = useSearchParams();
@@ -146,7 +149,7 @@ function Hotels() {
         }
 
         return (
-            <MapContainer className="markercluster-map" center={center} zoom={6} maxZoom={config.map.maxZoom}>
+            <MapContainer className="markercluster-map" center={INITIAL_CENTER} zoom={6} maxZoom={config.map.maxZoom}>
                 <TileLayer url={config.map.url} attribution={config.map.attribution} />
                 <MapCluster
                     filteredPoints={filteredPoints}
@@ -162,7 +165,7 @@ function Hotels() {
                 <ShareLinkControl shareLink={shareLink} />
             </MapContainer>
         );
-    }, [isLoading, filteredPoints, center]);
+    }, [isLoading, filteredPoints]);
 
     return (
         <>

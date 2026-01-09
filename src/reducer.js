@@ -26,16 +26,6 @@ export default function mapReducer(state, action) {
                 ...state,
                 list: action.list,
             };
-        case "SetCenter":
-            return {
-                ...state,
-                center: action.center,
-            };
-        case "SetSelectedPoint":
-            return {
-                ...state,
-                selectedPoint: action.point,
-            };
         case "ToggleList":
             return {
                 ...state,
