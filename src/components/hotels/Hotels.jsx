@@ -1,182 +1,39 @@
-import { useContext, useState, useCallback, useEffect, useRef, useMemo } from "react";
-import { MapContainer, TileLayer } from "react-leaflet";
-import { CSSTransition } from "react-transition-group";
-import { useSearchParams } from "react-router";
-
-import LocateControl from "./LocateControl.jsx";
-import MapListOpener from "./MapListOpener.jsx";
-import { useTranslation } from "react-i18next";
-import ShareLinkControl from "./ShareLinkControl.jsx";
+import { useState } from "react";
+import { MapContainer } from "react-leaflet";
 
 import styles from "../../css/map.module.css";
-import { MapContext } from "../../context.js";
 
 import { useHotelsContext } from "../../context/hotels-provider.jsx";
 
 import { config } from "../../config.js";
 import filterPoints from "../../utils/map/filter-points.js";
-import MapCluster from "./MapCluster.jsx";
 import MapPlaceholder from "./MapPlaceholder.jsx";
 
-import Popup from "./Popup.jsx";
-import FilterControl from "./FilterControl.jsx";
+import { MapView } from "./MapView.jsx";
+import ListView from "../List.jsx";
 
 const INITIAL_CENTER = [47.498045, 19.0385183];
 
 function Hotels() {
-    const [showPopup, setShowPopup] = useState();
-    const [visibleItemsOnMap, setVisibleItemsOnMap] = useState([]);
-    const [selectedPoint, setSelectedPoint] = useState();
-    const { dispatch } = useContext(MapContext);
-    const { t, i18n } = useTranslation();
-    const transitionContainerRef = useRef(null);
-    const [searchParams, setSearchParams] = useSearchParams();
-
-    const close = useCallback(() => {
-        setSelectedPoint(undefined);
-        setShowPopup(false);
-    }, [dispatch]);
-
     const { hotels, isLoading } = useHotelsContext();
-    const [map, setMap] = useState(null);
-    const [filterType, setFilterType] = useState("mind");
-    const [filteredPoints, setFilteredPoints] = useState([]);
-    const [hasInitialFlyTo, setHasInitialFlyTo] = useState(false);
 
-    const calcPoints = useCallback(
-        (map) => {
-            if (map) {
-                const mapBounds = map.getBounds();
-                let points = filterPoints(hotels, mapBounds);
-                if (filterType !== "mind") points = points.filter((point) => point.properties.type.includes(filterType));
-                setFilteredPoints(points);
-                dispatch({ type: "SetList", list: points });
-            }
-        },
-        [hotels, dispatch, filterType]
-    );
-
-    useEffect(() => {
-        calcPoints(map);
-        if (!isLoading && hotels.length) {
-            if (map) {
-                dispatch({ type: "SetMap", map });
-            }
-        }
-    }, [dispatch, isLoading, calcPoints, map, hotels]);
-
-    const setMapToUsersLocation = useCallback(() => {
-        if (map) {
-            map.locate()
-                .on("locationfound", (e) => {
-                    setShowPopup(false);
-                    map.flyTo(e.latlng, config.map.closeZoomLevel);
-                })
-                .on("locationerror", (e) => {
-                    alert(t("error.noGeoLocation"));
-                    console.error(e);
-                });
-        }
-    }, [map, dispatch, t]);
-
-    useEffect(() => {
-        if (showPopup && selectedPoint && map) {
-            map.flyTo(selectedPoint.geometry.coordinates, map.getZoom());
-        }
-    }, [map, showPopup, selectedPoint]);
-
-    const shareLink = useCallback(() => {
-        if (map) {
-            const center = map.getCenter();
-            const zoom = map.getZoom();
-            const newParams = {
-                lat: center.lat.toFixed(4),
-                lng: center.lng.toFixed(4),
-                zoom: zoom.toString(),
-            };
-            if (filterType !== "mind") {
-                newParams.filter = filterType;
-            }
-            setSearchParams(newParams, { replace: true });
-            const url = `${window.location.origin}${window.location.pathname}?${new URLSearchParams(newParams).toString()}`;
-            navigator.clipboard.writeText(url);
-        }
-    }, [map, filterType, setSearchParams]);
-
-    useEffect(() => {
-        if (map && !hasInitialFlyTo) {
-            const lat = searchParams.get("lat");
-            const lng = searchParams.get("lng");
-            const zoom = searchParams.get("zoom");
-            const filter = searchParams.get("filter");
-
-            if (lat && lng && zoom) {
-                map.flyTo([parseFloat(lat), parseFloat(lng)], parseInt(zoom));
-            }
-
-            if (filter) {
-                setFilterType(filter);
-            }
-
-            setHasInitialFlyTo(true);
-        }
-    }, [map, hasInitialFlyTo, searchParams]);
-
-    function onMarkerClickCallback(point) {
-        console.log("point", point);
-        setSelectedPoint(point);
-        setShowPopup(true);
+    if (isLoading) {
+        <MapPlaceholder />;
     }
 
-    function openLocationList(map) {
-        calcPoints(map);
-        dispatch({ type: "ToggleList", showList: true });
-        setShowPopup(false);
-    }
-
-    function onClusterClickHandler() {
-        setShowPopup(false);
-    }
-
-    function moveHandler() {
-        console.log("moveHandler");
-        calcPoints(map);
-    }
-
-    const mapDisplay = useMemo(() => {
-        if (isLoading) {
-            return <MapPlaceholder />;
-        }
-
+    if (!isLoading && hotels.length) {
         return (
-            <MapContainer className="markercluster-map" center={INITIAL_CENTER} zoom={6} maxZoom={config.map.maxZoom}>
-                <TileLayer url={config.map.url} attribution={config.map.attribution} />
-                <MapCluster
-                    filteredPoints={filteredPoints}
-                    selectedPoint={selectedPoint}
-                    onMarkerClickCallback={onMarkerClickCallback}
-                    setMap={setMap}
-                    onClusterClick={onClusterClickHandler}
-                    onMove={moveHandler}
-                />
-                <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
-                <MapListOpener onLocationListOpen={openLocationList} />
-                <FilterControl language={i18n.language} filterType={filterType} setFilterType={setFilterType} />
-                <ShareLinkControl shareLink={shareLink} />
-            </MapContainer>
-        );
-    }, [isLoading, filteredPoints]);
-
-    return (
-        <>
             <div className={styles.map}>
-                <div className={styles.mapWrapper}>{mapDisplay}</div>
+                <div className={styles.mapWrapper} id="mapWrapper">
+                    <MapContainer center={INITIAL_CENTER} zoom={6} maxZoom={config.map.maxZoom}>
+                        <MapView hotels={hotels} />
+                    </MapContainer>
+                </div>
             </div>
-            <CSSTransition in={showPopup} nodeRef={transitionContainerRef} classNames="Popup" unmountOnExit timeout={200}>
-                <Popup point={selectedPoint} onClose={close} ref={transitionContainerRef} />
-            </CSSTransition>
-        </>
-    );
+        );
+    }
+
+    return null;
 }
 
 export default Hotels;

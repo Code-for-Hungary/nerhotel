@@ -157,7 +157,7 @@ const Hotel = (props) => {
                 </div>
                 <div className={styles.map}>
                     {location ? (
-                        <LeafletMap className="markercluster-map" center={location} zoom={config.map.closeZoomLevel}>
+                        <LeafletMap center={location} zoom={config.map.closeZoomLevel}>
                             <TileLayer url={config.map.url} attribution={config.map.attribution} />
                             <Marker position={location} icon={icon} />
                         </LeafletMap>

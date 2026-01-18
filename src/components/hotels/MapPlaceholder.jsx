@@ -3,7 +3,7 @@ import LoadingSpinner from "../ui/LoadingSpinner";
 function MapPlaceholder() {
     return (
         <div
-            className="markercluster-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+            className="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
             style={{ position: "relative" }}
         >
             <div

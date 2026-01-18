@@ -1,11 +1,10 @@
-import { useContext, useState, lazy, Suspense, useEffect, useCallback } from "react";
+import { useState, lazy, Suspense, useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet-async";
 import { SmartLink } from "../SmartLink";
 import { useTranslation } from "react-i18next";
 import Leaflet from "leaflet";
-import { MapContainer as Map, TileLayer } from "react-leaflet";
+import { MapContainer as Map, TileLayer, Marker } from "react-leaflet";
 import { useHotelsContext } from "../../context/hotels-provider.jsx";
-import { getMarkerList } from "../../leaflet-helper.jsx";
 import AssociatedHotel from "./AssociatedHotel";
 import LoadingSpinner from "../ui/LoadingSpinner";
 
@@ -20,6 +19,8 @@ import { config } from "../../config";
 import _getAllHotelsAffiliatedWithPerson from "../../utils/person/get-all-hotels-affiliated-with-person";
 import getTranslatedKMonitorLink from "../../utils/person/get-translated-k-monitor-link";
 import getPersonProfile from "../../utils/person/get-person-profile";
+import orangeIcon from "../../assets/marker-icon-orange.svg";
+import { getIcon } from "../../leaflet-helper";
 
 const PersonProfile = lazy(() => import("./PersonProfile"));
 
@@ -142,9 +143,25 @@ const Person = (props) => {
                         </SmartLink>
                     </div>
                     <div className={styles.map}>
-                        <Map className="markercluster-map" bounds={bounds}>
+                        <Map bounds={bounds}>
                             <TileLayer url={config.map.url} attribution={config.map.attribution} />
-                            {getMarkerList({ points: affiliatedHotels })}
+                            {affiliatedHotels.map((point) => {
+                                const [latitude, longitude] = point.geometry.coordinates;
+                                const DefaultIcon = getIcon(orangeIcon);
+
+                                return (
+                                    <Marker
+                                        position={[latitude, longitude]}
+                                        key={point.properties.id}
+                                        icon={DefaultIcon}
+                                        eventHandlers={{
+                                            click: () => {
+                                                clickCallback(point);
+                                            },
+                                        }}
+                                    />
+                                );
+                            })}
                         </Map>
                     </div>
                 </div>

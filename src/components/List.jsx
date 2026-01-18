@@ -1,60 +1,41 @@
 import { useTranslation, Trans } from "react-i18next";
-import { useNavigate, useLocation } from "react-router";
 
-import { useContext, useCallback } from "react";
 import styles from "../css/list.module.css";
 import Icon from "./ui/Icon";
 
 import closeIcon from "../assets/close-icon.svg";
 import ListItem from "./ListItem";
 
-import { MapContext } from "../context";
-
-function List() {
-    const { dispatch, list, map } = useContext(MapContext);
+function List({ list, onItemClick, onClose }) {
     const { t } = useTranslation();
-    const navigate = useNavigate();
-    const location = useLocation();
-
-    const showItem = useCallback(
-        (item) => () => {
-            const [lat, lng] = item.geometry.coordinates;
-            if (map) {
-                map.setView([lat, lng], 18);
-            }
-            // dispatch({ type: "SetCenter", center: [lat, lng] });
-            // dispatch({ type: "SetSelectedPoint", point: item });
-            dispatch({ type: "ToggleList", showList: false });
-            if (location.pathname !== "/") {
-                navigate("/");
-            }
-        },
-        [map, dispatch, history, location]
-    );
-
-    const closeList = useCallback(() => {
-        dispatch({ type: "ToggleList", showList: false });
-    }, [dispatch]);
 
     return (
         <div className={styles.list} aria-modal>
-            <div className={styles.closeButton} onClick={closeList}>
-                <Icon img={closeIcon} size="large" />
-            </div>
-            <div className={styles.listWrapper}>
-                {list && list.length > 0 && list.map((item, key) => <ListItem key={key} item={item} onClick={showItem(item)} />)}
+            <div className={styles.listContent}>
+                <div className={styles.closeContainer}>
+                    <button type="button" className={`resetButton ${styles.closeButton}`} onClick={onClose}>
+                        <Icon img={closeIcon} size="large" />
+                    </button>
+                </div>
+                <div className={styles.scrollPlane}>
+                    <div className={styles.listWrapper}>
+                        {list &&
+                            list.length > 0 &&
+                            list.map((item) => <ListItem key={item.properties.id} item={item} onClick={() => onItemClick(item)} />)}
 
-                {list.length === 0 && (
-                    <p>
-                        <Trans i18nKey="list.emptyState">
-                            Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet,
-                            <a href={t("list.sendToUsLink")} target="_blank" rel="noopener noreferrer">
-                                küldd el nekünk
-                            </a>
-                            !
-                        </Trans>
-                    </p>
-                )}
+                        {list.length === 0 && (
+                            <p>
+                                <Trans i18nKey="list.emptyState">
+                                    Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet,
+                                    <a href={t("list.sendToUsLink")} target="_blank" rel="noopener noreferrer">
+                                        küldd el nekünk
+                                    </a>
+                                    !
+                                </Trans>
+                            </p>
+                        )}
+                    </div>
+                </div>
             </div>
         </div>
     );

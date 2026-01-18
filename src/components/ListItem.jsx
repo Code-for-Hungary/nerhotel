@@ -23,8 +23,8 @@ const ListItem = ({ item, onClick, ...props }) => {
                 <div className={styles.listItemCol}>
                     <Icon img={horseIcon} size="small" />
                     <div className={styles.oligarchList}>
-                        {oligarchs.map((oligarch, key) => (
-                            <p key={key}>
+                        {oligarchs.map((oligarch) => (
+                            <p key={oligarch.name}>
                                 {oligarch.link ? (
                                     <a href={oligarch.link} target="_blank" rel="noopener noreferrer">
                                         {oligarch.name}

@@ -25,35 +25,7 @@ export function createClusterCustomIcon(cluster) {
     });
 }
 
-/**
- * @param {Hotel[]} points
- * @param {Hotel|null} selectedPoint? Optional.
- * @param {function(Hotel): (function(): void)} clickCallback Optional.
- * @returns {React.Component[]}
- */
-export function getMarkerList({ points, selectedPoint = null, clickCallback = () => {} }) {
-    return points.map((point, index) => {
-        const [latitude, longitude] = point.geometry.coordinates;
-        const isSelected = selectedPoint && selectedPoint.properties.id === point.properties.id;
-        const DefaultIcon = getIcon(orangeIcon);
-        const ActiveIcon = getIcon(blueIcon);
-
-        return (
-            <Marker
-                position={[latitude, longitude]}
-                key={index}
-                icon={isSelected ? ActiveIcon : DefaultIcon}
-                eventHandlers={{
-                    click: () => {
-                        clickCallback(point);
-                    },
-                }}
-            />
-        );
-    });
-}
-
-function getIcon(iconUrl) {
+export function getIcon(iconUrl) {
     return Leaflet.icon({
         iconUrl,
         shadowUrl: iconShadow,

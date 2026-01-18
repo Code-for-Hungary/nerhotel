@@ -1,12 +1,12 @@
 .list {
     position: absolute;
-    top: var(--header-height);
+    top: 0;
     left: 0;
     width: 100%;
-    min-height: calc(100vh - var(--header-height));
+    bottom: 0;
     padding: 20px;
     background: var(--nh-background-color);
-    z-index: 2;
+    z-index: 1001;
     box-sizing: border-box;
 }
 
@@ -16,17 +16,24 @@
     margin: 0 auto;
 }
 
-.oligarchList {
+.listContent {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
-.oligarchList p {
-    margin: 0 0 5px;
+.scrollPlane {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.closeContainer {
+    display: flex;
+    justify-content: end;
+    flex-grow: 0;
 }
 
 .closeButton {
-    position: absolute;
     top: 20px;
     right: 15px;
     cursor: pointer;

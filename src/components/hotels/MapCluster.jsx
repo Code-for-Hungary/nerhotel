@@ -4,7 +4,7 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 
 import { createClusterCustomIcon, getMarkerList } from "../../leaflet-helper.jsx";
 
-function MapCluster({ filteredPoints, selectedPoint, onMarkerClickCallback, setMap, onClusterClick, onMove }) {
+function MapCluster({ pointsToDisplay, selectedPoint, onMarkerClickCallback, setMap, onClusterClick, onMove }) {
     const map = useMap();
     useMapEvents({
         zoomend: onMove,
@@ -25,7 +25,7 @@ function MapCluster({ filteredPoints, selectedPoint, onMarkerClickCallback, setM
             onClick={onClusterClick}
         >
             {getMarkerList({
-                points: filteredPoints,
+                points: pointsToDisplay,
                 selectedPoint,
                 clickCallback: onMarkerClickCallback,
             })}
