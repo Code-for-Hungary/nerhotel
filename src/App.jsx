@@ -1,13 +1,11 @@
-import { useEffect, useReducer } from "react";
+import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import ErrorBoundary from "./components/ErrorBoundary";
-import AnalyticsWrapper from "./components/analytics/AnalyticsWrapper";
+import AnalyticsProvider from "./components/analytics/AnalyticsProvider";
 
-import { MapContext } from "./context";
 import { HotelsProvider } from "./context/hotels-provider";
-import reducer, { initialState } from "./reducer";
 import { useTranslation } from "react-i18next";
 import { config } from "./config";
 
@@ -21,8 +19,6 @@ import ErrorPage from "./pages/ErrorPage";
 import PressReleasesPage from "./pages/PressReleasesPage";
 
 function App() {
-    const [state, dispatch] = useReducer(reducer, initialState);
-    const mapData = { ...state, dispatch };
     const { i18n, t } = useTranslation();
 
     useEffect(() => {
@@ -51,24 +47,22 @@ function App() {
                     </title>
                 </Helmet>
                 <HotelsProvider>
-                    <MapContext.Provider value={mapData}>
-                        <BrowserRouter>
-                            <LegacyHashRouteRedirect>
-                                <AnalyticsWrapper>
-                                    <Routes>
-                                        <Route path="/" element={<HotelsPage />} />
-                                        <Route path="/hotel/:id" element={<HotelPage />} />
-                                        <Route path="/person/:name" element={<PersonPage />} />
-                                        <Route path="/about" element={<ContentPage />} />
-                                        <Route path="/contact" element={<ContentPage />} />
-                                        <Route path="/data-export" element={<ContentPage />} />
-                                        <Route path="/press-releases" element={<PressReleasesPage />} />
-                                        <Route path="*" element={<ErrorPage />} />
-                                    </Routes>
-                                </AnalyticsWrapper>
-                            </LegacyHashRouteRedirect>
-                        </BrowserRouter>
-                    </MapContext.Provider>
+                    <BrowserRouter>
+                        <LegacyHashRouteRedirect>
+                            <AnalyticsProvider>
+                                <Routes>
+                                    <Route path="/" element={<HotelsPage />} />
+                                    <Route path="/hotel/:id" element={<HotelPage />} />
+                                    <Route path="/person/:name" element={<PersonPage />} />
+                                    <Route path="/about" element={<ContentPage />} />
+                                    <Route path="/contact" element={<ContentPage />} />
+                                    <Route path="/data-export" element={<ContentPage />} />
+                                    <Route path="/press-releases" element={<PressReleasesPage />} />
+                                    <Route path="*" element={<ErrorPage />} />
+                                </Routes>
+                            </AnalyticsProvider>
+                        </LegacyHashRouteRedirect>
+                    </BrowserRouter>
                 </HotelsProvider>
             </ErrorBoundary>
         </HelmetProvider>

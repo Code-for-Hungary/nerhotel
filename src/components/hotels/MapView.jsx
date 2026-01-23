@@ -16,6 +16,7 @@ import Popup from "./Popup.jsx";
 
 import getPointsWithinBounds from "../../utils/map/get-points-within-bounds.js";
 import { filterPoints } from "../../utils/map/filter-points.js";
+import { useAnalyticsContext } from "../analytics/AnalyticsProvider.jsx";
 
 import List from "../List.jsx";
 
@@ -56,6 +57,7 @@ const MemoizedMarker = memo(({ point, onMarkerClick, selectionRef }) => {
 
 export function MapView({ hotels }) {
     const map = useMap();
+    const { dispatchAnalyticsEvent } = useAnalyticsContext();
 
     const [filterType, setFilterType] = useState("mind");
 
@@ -128,6 +130,10 @@ export function MapView({ hotels }) {
     useEffect(() => {
         if (selectedPoint) {
             map.flyTo(selectedPoint.geometry.coordinates, map.getZoom());
+            dispatchAnalyticsEvent({
+                type: "OpenPopup",
+                payload: { name: selectedPoint.properties.name, id: selectedPoint.properties.id },
+            });
         }
     }, [map, selectedPoint]);
 

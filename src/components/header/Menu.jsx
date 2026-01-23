@@ -6,7 +6,6 @@ import Icon from "../ui/Icon";
 import image from "../../assets/nh-main.svg";
 import logo from "../../assets/nh-logo.svg";
 import logoEn from "../../assets/nh-logo-en.svg";
-import { MapContext } from "../../context";
 import { useTranslation } from "react-i18next";
 import { CSSTransition } from "react-transition-group";
 import "./Menu.transition.css";
