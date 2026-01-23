@@ -20,7 +20,7 @@ import _getAllHotelsAffiliatedWithPerson from "../../utils/person/get-all-hotels
 import getTranslatedKMonitorLink from "../../utils/person/get-translated-k-monitor-link";
 import getPersonProfile from "../../utils/person/get-person-profile";
 import orangeIcon from "../../assets/marker-icon-orange.svg";
-import { getIcon } from "../../leaflet-helper";
+import { ORANGE_ICON } from "../../leaflet-helper";
 
 const PersonProfile = lazy(() => import("./PersonProfile"));
 
@@ -147,13 +147,14 @@ const Person = (props) => {
                             <TileLayer url={config.map.url} attribution={config.map.attribution} />
                             {affiliatedHotels.map((point) => {
                                 const [latitude, longitude] = point.geometry.coordinates;
-                                const DefaultIcon = getIcon(orangeIcon);
+
+                                if (Number.isNaN(latitude) || Number.isNaN(longitude)) return null;
 
                                 return (
                                     <Marker
                                         position={[latitude, longitude]}
                                         key={point.properties.id}
-                                        icon={DefaultIcon}
+                                        icon={ORANGE_ICON}
                                         eventHandlers={{
                                             click: () => {
                                                 clickCallback(point);

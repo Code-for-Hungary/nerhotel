@@ -7,7 +7,7 @@ import Icon from "../ui/Icon";
 import HotelImage from "./HotelImage";
 
 import { getOligarchData } from "../../utils";
-import { createOrangeIcon } from "../../leaflet-helper.jsx";
+import { ORANGE_ICON } from "../../leaflet-helper.jsx";
 import getTranslatedHotelProperty from "../../utils/get-translated-hotel-property.js";
 
 import { useHotelsContext } from "../../context/hotels-provider.jsx";
@@ -22,8 +22,6 @@ import pinIcon from "../../assets/pin-icon.svg";
 
 import { config } from "../../config.js";
 import displayTranslatedPersonType from "../../utils/person/display-translated-person-type.js";
-
-const icon = createOrangeIcon();
 
 /**
  * @typedef {Object} HotelGeometry
@@ -156,10 +154,10 @@ const Hotel = (props) => {
                     </SmartLink>
                 </div>
                 <div className={styles.map}>
-                    {location ? (
+                    {location && !Number.isNaN(location[0]) && !Number.isNaN(location[1]) ? (
                         <LeafletMap center={location} zoom={config.map.closeZoomLevel}>
                             <TileLayer url={config.map.url} attribution={config.map.attribution} />
-                            <Marker position={location} icon={icon} />
+                            <Marker position={location} icon={ORANGE_ICON} />
                         </LeafletMap>
                     ) : null}
                 </div>

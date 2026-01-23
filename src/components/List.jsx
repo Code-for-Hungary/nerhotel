@@ -21,7 +21,7 @@ function List({ list, onItemClick, onClose }) {
                     <div className={styles.listWrapper}>
                         {list &&
                             list.length > 0 &&
-                            list.map((item) => <ListItem key={item.properties.id} item={item} onClick={() => onItemClick(item)} />)}
+                            list.map((item) => <ListItem key={item.properties.id} item={item} onClick={onItemClick} />)}
 
                         {list.length === 0 && (
                             <p>

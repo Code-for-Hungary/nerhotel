@@ -7,10 +7,13 @@ import { TbHotelService } from "react-icons/tb";
 
 import styles from "./FilterControl.module.css";
 import { controlButton, button } from "../../css/map-list-opener.module.css";
+import { useTranslation } from "react-i18next";
 
-function FilterControl({ language, filterType, setFilterType }) {
+const size = 16;
+
+function FilterControl({ filterType, setFilterType }) {
     const [filterOpen, setFilterOpen] = useState(false);
-    const size = 16;
+    const { i18n } = useTranslation();
     const options = [
         { type: "mind", category: "all", category_de: "Alles", icon: <MdSelectAll size={size} /> },
         { type: "bár", category: "bar", category_de: "Bar", icon: <MdLocalBar size={size} /> },
@@ -60,7 +63,7 @@ function FilterControl({ language, filterType, setFilterType }) {
                             }}
                         >
                             <button className={`${styles.filterButton} ${button}`}>{option.icon}</button>
-                            <span>{getTranslation(language, option)}</span>
+                            <span>{getTranslation(i18n.language, option)}</span>
                         </div>
                     ))}
                 </div>
