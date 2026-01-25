@@ -17,6 +17,7 @@ import ContentPage from "./pages/ContentPage";
 import PersonPage from "./pages/PersonPage";
 import ErrorPage from "./pages/ErrorPage";
 import PressReleasesPage from "./pages/PressReleasesPage";
+import { SearchPage } from "./pages/SearchPage";
 
 function App() {
     const { i18n, t } = useTranslation();
@@ -58,6 +59,7 @@ function App() {
                                     <Route path="/contact" element={<ContentPage />} />
                                     <Route path="/data-export" element={<ContentPage />} />
                                     <Route path="/press-releases" element={<PressReleasesPage />} />
+                                    <Route path="/search" element={<SearchPage />} />
                                     <Route path="*" element={<ErrorPage />} />
                                 </Routes>
                             </AnalyticsProvider>

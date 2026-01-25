@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
 
-import Search from "./Search";
+import SearchForm from "./SearchForm";
 import styles from "./Header.module.css";
 import Icon from "../ui/Icon";
 import listIcon from "../../assets/menu-icon.svg";
@@ -45,7 +45,7 @@ const Header = ({ onMenuOpen }) => {
                 </SmartLink>
             </div>
             <div className={styles.searchContainer}>
-                <Search />
+                <SearchForm />
             </div>
             <div className={styles.langSwitchContainer}>
                 <LangSwitch
