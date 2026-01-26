@@ -28,14 +28,14 @@ const ContentPage = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const { search } = location;
-    const pathNameAsArray = Array.from(location.pathname);
-    pathNameAsArray.shift();
-    const pathNameWithoutSlash = pathNameAsArray.join("");
+    const pathNameAsArray = location.pathname.split("/").filter((segment) => segment !== "");
+    console.log(pathNameAsArray);
+    const lastPathSegment = pathNameAsArray.at(-1);
 
     useEffect(() => {
         let isSubscribed = true;
 
-        getContent(pathNameWithoutSlash, resolvedLanguage)
+        getContent(lastPathSegment, resolvedLanguage)
             .then((data) => {
                 if (isSubscribed) {
                     setPageContent(data);
@@ -52,13 +52,13 @@ const ContentPage = () => {
         return () => {
             isSubscribed = false;
         };
-    }, [resolvedLanguage, pathNameWithoutSlash, search]);
+    }, [resolvedLanguage, lastPathSegment, search]);
 
     return (
         <Layout>
             <Helmet>
                 <title>
-                    {t(`staticPageTitles.${pathNameWithoutSlash}`)} - {t("general.siteName")}
+                    {t(`staticPageTitles.${lastPathSegment}`)} - {t("general.siteName")}
                 </title>
             </Helmet>
             <Wrapper>

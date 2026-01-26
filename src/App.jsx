@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
@@ -7,9 +6,6 @@ import AnalyticsProvider from "./components/analytics/AnalyticsProvider";
 
 import { HotelsProvider } from "./context/hotels-provider";
 import { useTranslation } from "react-i18next";
-import { config } from "./config";
-
-import LegacyHashRouteRedirect from "./components/routing/LegacyHashRouteRedirect";
 
 import HotelPage from "./pages/HotelPage";
 import HotelsPage from "./pages/HotelsPage";
@@ -18,26 +14,10 @@ import PersonPage from "./pages/PersonPage";
 import ErrorPage from "./pages/ErrorPage";
 import PressReleasesPage from "./pages/PressReleasesPage";
 import { SearchPage } from "./pages/SearchPage";
+import { LanguageLayout } from "./pages/LanguageLayout";
 
 function App() {
-    const { i18n, t } = useTranslation();
-
-    useEffect(() => {
-        const queryString = window.location.href.split("?")[1];
-        const urlParamsObj = new URLSearchParams(queryString);
-
-        let preferredLang;
-        if (urlParamsObj.has(config.locales.paramName)) {
-            preferredLang = urlParamsObj.get(config.locales.paramName);
-        } else {
-            preferredLang = localStorage.getItem(config.locales.paramName);
-        }
-
-        if (preferredLang && config.locales.available.includes(preferredLang) && preferredLang !== i18n.options.lng) {
-            i18n.changeLanguage(preferredLang);
-            localStorage.setItem(config.locales.paramName, preferredLang);
-        }
-    }, [i18n]);
+    const { t } = useTranslation();
 
     return (
         <HelmetProvider>
@@ -49,21 +29,21 @@ function App() {
                 </Helmet>
                 <HotelsProvider>
                     <BrowserRouter>
-                        <LegacyHashRouteRedirect>
-                            <AnalyticsProvider>
-                                <Routes>
-                                    <Route path="/" element={<HotelsPage />} />
-                                    <Route path="/hotel/:id" element={<HotelPage />} />
-                                    <Route path="/person/:name" element={<PersonPage />} />
-                                    <Route path="/about" element={<ContentPage />} />
-                                    <Route path="/contact" element={<ContentPage />} />
-                                    <Route path="/data-export" element={<ContentPage />} />
-                                    <Route path="/press-releases" element={<PressReleasesPage />} />
-                                    <Route path="/search" element={<SearchPage />} />
+                        <AnalyticsProvider>
+                            <Routes>
+                                <Route path="/:lang?" element={<LanguageLayout />}>
+                                    <Route index element={<HotelsPage />} />
+                                    <Route path="hotel/:id" element={<HotelPage />} />
+                                    <Route path="person/:name" element={<PersonPage />} />
+                                    <Route path="about" element={<ContentPage />} />
+                                    <Route path="contact" element={<ContentPage />} />
+                                    <Route path="data-export" element={<ContentPage />} />
+                                    <Route path="press-releases" element={<PressReleasesPage />} />
+                                    <Route path="search" element={<SearchPage />} />
                                     <Route path="*" element={<ErrorPage />} />
-                                </Routes>
-                            </AnalyticsProvider>
-                        </LegacyHashRouteRedirect>
+                                </Route>
+                            </Routes>
+                        </AnalyticsProvider>
                     </BrowserRouter>
                 </HotelsProvider>
             </ErrorBoundary>

@@ -21,13 +21,18 @@ const Header = ({ onMenuOpen }) => {
     const location = useLocation();
 
     const languageChangeHandler = (e) => {
-        const lang = e.target.value;
-        i18n.changeLanguage(lang);
-        localStorage.setItem(config.locales.paramName, lang);
-        navigate({
-            pathname: location.pathname,
-            search: `?${config.locales.paramName}=${lang}`,
-        });
+        const newLang = e.target.value;
+        // Replaces the first part of the path with the new language
+        const pathParts = location.pathname.split("/").filter(Boolean);
+
+        // If first part is a known lang, replace it; otherwise, prepend it
+        if (config.locales.available.includes(pathParts[0])) {
+            pathParts[0] = newLang;
+        } else {
+            pathParts.unshift(newLang);
+        }
+
+        navigate("/" + pathParts.join("/") + location.search);
     };
 
     return (
