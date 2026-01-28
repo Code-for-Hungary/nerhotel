@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, useMemo, useCallback, memo } from "react";
 import { createPortal } from "react-dom";
-import { TileLayer, useMap, Marker } from "react-leaflet";
+import { TileLayer, useMap, Marker, Tooltip } from "react-leaflet";
 import { useSearchParams } from "react-router";
 import { useTranslation } from "react-i18next";
 import MarkerClusterGroup from "react-leaflet-markercluster";
@@ -55,7 +55,9 @@ const MemoizedMarker = memo(({ point, onMarkerClick, selectionRef }) => {
             eventHandlers={{
                 click: () => onMarkerClick(point),
             }}
-        />
+        >
+            <Tooltip>{point.properties.name}</Tooltip>
+        </Marker>
     );
 });
 
