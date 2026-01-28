@@ -22,7 +22,7 @@ const Popup = forwardRef((props, ref) => {
     const simpleOligarchs = data ? getOligarchData(data.oligarchs || [], data.ceos || []) : undefined;
     const oligarchsToShow = mainOligarchs && mainOligarchs.length > 0 ? mainOligarchs : simpleOligarchs;
 
-    return data ? (
+    return (
         <div className={styles.popup} ref={ref}>
             <header className={styles.popupHeader}>
                 <h1>{data.name}</h1>
@@ -94,7 +94,7 @@ const Popup = forwardRef((props, ref) => {
                 </Button>
             </footer>
         </div>
-    ) : null;
+    );
 });
 
 export default Popup;

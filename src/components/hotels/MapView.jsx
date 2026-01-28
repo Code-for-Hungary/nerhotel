@@ -72,6 +72,8 @@ export function MapView({ hotels }) {
     const [searchParams, setSearchParams] = useSearchParams();
 
     const [showList, setShowList] = useState(false);
+    const [showPopUp, setShowPopUp] = useState(false);
+    console.log("showPopUp", showPopUp);
 
     const [selectedPoint, setSelectedPoint] = useState(); // tells the pop-up what's selected
     const selectionRef = useRef(selectedPoint); // Use this for the Markers
@@ -105,13 +107,15 @@ export function MapView({ hotels }) {
         setPointsShownOnMap(getPointsToDisplay());
         setShowList(true);
         selectionRef.current = undefined;
-        setSelectedPoint(undefined);
+        setShowPopUp(false);
+        // setSelectedPoint(undefined);
     }
 
     // Wrapped in useCallback since it's a dependency of a memoized component
     const onClusterClickHandler = useCallback(() => {
         selectionRef.current = undefined;
-        setSelectedPoint(undefined);
+        // setSelectedPoint(undefined);
+        setShowPopUp(false);
     }, []);
 
     useEffect(() => {
@@ -143,7 +147,8 @@ export function MapView({ hotels }) {
         map.locate()
             .on("locationfound", (e) => {
                 selectionRef.current = undefined;
-                setSelectedPoint(undefined);
+                // setSelectedPoint(undefined);
+                setShowPopUp(false);
                 map.flyTo(e.latlng, config.map.closeZoomLevel);
             })
             .on("locationerror", (e) => {
@@ -160,6 +165,7 @@ export function MapView({ hotels }) {
 
         selectionRef.current = point;
         setSelectedPoint(point);
+        setShowPopUp(true);
 
         // Dispatch one event with both IDs that need a refresh
         window.dispatchEvent(
@@ -176,7 +182,8 @@ export function MapView({ hotels }) {
         const previousId = selectionRef.current?.properties.id;
 
         selectionRef.current = undefined;
-        setSelectedPoint(undefined);
+        // setSelectedPoint(undefined);
+        setShowPopUp(false);
 
         // Refresh the one that was just closed
         window.dispatchEvent(
@@ -265,10 +272,13 @@ export function MapView({ hotels }) {
                 <CSSTransition
                     mountOnEnter
                     unmountOnExit
-                    in={!!selectedPoint}
+                    in={showPopUp}
                     nodeRef={popUpTransitionContainerRef}
                     classNames="Popup"
                     timeout={200}
+                    onExited={() => {
+                        setSelectedPoint(undefined);
+                    }}
                 >
                     <Popup point={selectedPoint} onClose={closePopUp} ref={popUpTransitionContainerRef} />
                 </CSSTransition>,
