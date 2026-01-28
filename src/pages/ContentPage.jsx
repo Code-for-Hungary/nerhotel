@@ -29,7 +29,6 @@ const ContentPage = () => {
     const navigate = useNavigate();
     const { search } = location;
     const pathNameAsArray = location.pathname.split("/").filter((segment) => segment !== "");
-    console.log(pathNameAsArray);
     const lastPathSegment = pathNameAsArray.at(-1);
 
     useEffect(() => {

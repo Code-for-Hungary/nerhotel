@@ -9,9 +9,9 @@ function LangSwitch(props) {
         <form className={styles.langSwitch}>
             <label>
                 <span className="sr-only">{t("i18n.changeLangLabel")}</span>
-                <select defaultValue={props.currentLocale} onChange={props.onLanguageChange}>
+                <select value={props.currentLocale} onChange={props.onLanguageChange}>
                     {props.availableLocales.map((locale) => (
-                        <option key={locale} value={locale} selected={locale === props.currentLocale}>
+                        <option key={locale} value={locale}>
                             {locale.toUpperCase()}
                         </option>
                     ))}

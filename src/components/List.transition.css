@@ -1,0 +1,21 @@
+/* 1. The starting state for entry */
+.List-enter {
+    opacity: 0;
+}
+
+/* 2. The active state for entry - where the movement happens */
+.List-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+}
+
+/* 3. The starting state for exit */
+.List-exit {
+    opacity: 1;
+}
+
+/* 4. The active state for exit */
+.List-exit-active {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}

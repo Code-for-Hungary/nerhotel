@@ -13,6 +13,7 @@ import { config } from "../../config.js";
 import FilterControl from "./FilterControl.jsx";
 import { createClusterCustomIcon, ORANGE_ICON, BLUE_ICON } from "../../leaflet-helper.jsx";
 import Popup from "./Popup.jsx";
+import "./Popup.transition.css";
 
 import getPointsWithinBounds from "../../utils/map/get-points-within-bounds.js";
 import { filterPoints } from "../../utils/map/filter-points.js";
@@ -65,7 +66,8 @@ export function MapView({ hotels }) {
 
     const { t } = useTranslation();
 
-    const transitionContainerRef = useRef(null);
+    const popUpTransitionContainerRef = useRef(null);
+    const listTransitionContainerRef = useRef(null);
 
     const [searchParams, setSearchParams] = useSearchParams();
 
@@ -228,31 +230,50 @@ export function MapView({ hotels }) {
         [hotels, filterType, onMarkerClickCallback]
     );
 
-    if (showList) {
-        return createPortal(
-            <List list={pointsShownOnMap} onItemClick={onListItemClick} onClose={closeList} />,
-            document.getElementById("mapWrapper")
-        );
-    }
+    return (
+        <>
+            {createPortal(
+                <CSSTransition
+                    mountOnEnter
+                    unmountOnExit
+                    in={showList}
+                    nodeRef={listTransitionContainerRef}
+                    timeout={200}
+                    classNames="List"
+                >
+                    <List
+                        list={pointsShownOnMap}
+                        onItemClick={onListItemClick}
+                        onClose={closeList}
+                        ref={listTransitionContainerRef}
+                        style={{ position: "relative", top: "var(--header-height)" }}
+                    />
+                </CSSTransition>,
+                document.body
+            )}
+            {!showList && (
+                <>
+                    {displayMap}
+                    <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
+                    <MapListOpener onLocationListOpen={openLocationList} />
+                    <FilterControl filterType={filterType} setFilterType={setFilterType} />
+                    <ShareLinkControl shareLink={shareLink} />
+                </>
+            )}
 
-    if (!showList) {
-        return (
-            <>
-                {displayMap}
-                <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
-                <MapListOpener onLocationListOpen={openLocationList} />
-                <FilterControl filterType={filterType} setFilterType={setFilterType} />
-                <ShareLinkControl shareLink={shareLink} />
-
-                {createPortal(
-                    <CSSTransition in={selectedPoint !== undefined} nodeRef={transitionContainerRef} classNames="Popup" timeout={200}>
-                        <Popup point={selectedPoint} onClose={closePopUp} ref={transitionContainerRef} />
-                    </CSSTransition>,
-                    document.getElementById("mapWrapper")
-                )}
-            </>
-        );
-    }
-
-    return null;
+            {createPortal(
+                <CSSTransition
+                    mountOnEnter
+                    unmountOnExit
+                    in={!!selectedPoint}
+                    nodeRef={popUpTransitionContainerRef}
+                    classNames="Popup"
+                    timeout={200}
+                >
+                    <Popup point={selectedPoint} onClose={closePopUp} ref={popUpTransitionContainerRef} />
+                </CSSTransition>,
+                document.getElementById("mapWrapper")
+            )}
+        </>
+    );
 }

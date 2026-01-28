@@ -1,13 +1,10 @@
 .list {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    bottom: 0;
+    height: calc(100vh - var(--header-height));
     padding: 20px;
     background: var(--nh-background-color);
-    z-index: 1001;
     box-sizing: border-box;
+    transform: translate(0);
+    will-change: opacity;
 }
 
 .listWrapper {

@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { useTranslation, Trans } from "react-i18next";
 
 import styles from "../css/list.module.css";
@@ -5,12 +6,13 @@ import Icon from "./ui/Icon";
 
 import closeIcon from "../assets/close-icon.svg";
 import ListItem from "./ListItem";
+import "./List.transition.css";
 
-function List({ list, onItemClick, onClose }) {
+const List = forwardRef(({ list, onItemClick, onClose, ...props }, ref) => {
     const { t } = useTranslation();
 
     return (
-        <div className={styles.list} aria-modal>
+        <div className={styles.list} aria-modal ref={ref} {...props}>
             <div className={styles.listContent}>
                 <div className={styles.closeContainer}>
                     <button type="button" className={`resetButton ${styles.closeButton}`} onClick={onClose}>
@@ -39,6 +41,6 @@ function List({ list, onItemClick, onClose }) {
             </div>
         </div>
     );
-}
+});
 
 export default List;

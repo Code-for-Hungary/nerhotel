@@ -20,7 +20,7 @@ function Hotels() {
 
     if (!isLoading && hotels.length) {
         return (
-            <div className={styles.map}>
+            <div className={styles.map} id="map">
                 <div className={styles.mapWrapper} id="mapWrapper">
                     <MapContainer center={INITIAL_CENTER} zoom={6} maxZoom={config.map.maxZoom}>
                         <MapView hotels={hotels} />
