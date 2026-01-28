@@ -112,13 +112,11 @@ export function MapView({ hotels }) {
         setShowList(true);
         selectionRef.current = undefined;
         setShowPopUp(false);
-        // setSelectedPoint(undefined);
     }
 
     // Wrapped in useCallback since it's a dependency of a memoized component
     const onClusterClickHandler = useCallback(() => {
         selectionRef.current = undefined;
-        // setSelectedPoint(undefined);
         setShowPopUp(false);
     }, []);
 
@@ -151,7 +149,6 @@ export function MapView({ hotels }) {
         map.locate()
             .on("locationfound", (e) => {
                 selectionRef.current = undefined;
-                // setSelectedPoint(undefined);
                 setShowPopUp(false);
                 map.flyTo(e.latlng, config.map.closeZoomLevel);
             })
@@ -186,7 +183,6 @@ export function MapView({ hotels }) {
         const previousId = selectionRef.current?.properties.id;
 
         selectionRef.current = undefined;
-        // setSelectedPoint(undefined);
         setShowPopUp(false);
 
         // Refresh the one that was just closed
