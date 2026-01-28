@@ -21,6 +21,9 @@ import { useAnalyticsContext } from "../analytics/AnalyticsProvider.jsx";
 
 import List from "../List.jsx";
 
+const preloadBlue = new Image();
+preloadBlue.src = BLUE_ICON;
+
 const MemoizedMarker = memo(({ point, onMarkerClick, selectionRef }) => {
     const [, setTick] = useState(0);
     const pointId = point.properties.id;
