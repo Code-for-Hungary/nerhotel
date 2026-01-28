@@ -78,7 +78,6 @@ export function MapView({ hotels }) {
 
     const [showList, setShowList] = useState(false);
     const [showPopUp, setShowPopUp] = useState(false);
-    console.log("showPopUp", showPopUp);
 
     const [selectedPoint, setSelectedPoint] = useState(); // tells the pop-up what's selected
     const selectionRef = useRef(selectedPoint); // Use this for the Markers

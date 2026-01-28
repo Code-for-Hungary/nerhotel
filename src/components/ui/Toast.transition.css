@@ -1,0 +1,17 @@
+.Toast-enter {
+    opacity: 0;
+    margin-bottom: -10px;
+}
+.Toast-enter-active {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, margin-bottom 0.2s ease-in-out;
+    margin-bottom: 0;
+}
+.Toast-exit {
+    opacity: 1;
+}
+.Toast-exit-active {
+    opacity: 0;
+    margin-bottom: -10px;
+    transition: opacity 0.2s ease-in-out, margin-bottom 0.2s ease-in-out;
+}
