@@ -27,8 +27,7 @@ const Popup = forwardRef((props, ref) => {
             <header className={styles.popupHeader}>
                 <h1>{data.name}</h1>
                 <button className={`${styles.close} resetButton`} onClick={props.onClose}>
-                    <Icon img={closeIcon} size="large" className={styles.desktopCloseIcon} />
-                    <Icon img={arrowIcon} size="large" className={styles.mobileCloseIcon} />
+                    <Icon img={closeIcon} size="large" className={styles.closeIcon} />
                 </button>
             </header>
             <div className={styles.popupContent}>
