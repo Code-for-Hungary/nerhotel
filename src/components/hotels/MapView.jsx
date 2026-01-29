@@ -254,6 +254,7 @@ export function MapView({ hotels }) {
                         onClose={closeList}
                         ref={listTransitionContainerRef}
                         style={{ position: "relative", top: "var(--header-height)" }}
+                        emptyState={t("list.mapEmptyState")}
                     />
                 </CSSTransition>,
                 document.body
