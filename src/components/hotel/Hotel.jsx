@@ -150,7 +150,7 @@ const Hotel = (props) => {
                     ) : null}
 
                     <SmartLink className={styles.back} to="/">
-                        <Icon img={arrowIcon} alt={t("backToMap")} size="large" />
+                        <Icon img={arrowIcon} alt={t("general.backToMap")} size="large" />
                     </SmartLink>
                 </div>
                 <div className={styles.map}>

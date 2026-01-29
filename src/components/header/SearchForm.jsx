@@ -1,43 +1,17 @@
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, useSearchParams } from "react-router";
 
 import styles from "./SearchForm.module.css";
 
-// import { useHotelsContext } from "../../context/hotels-provider";
 import { useTranslation } from "react-i18next";
 import Icon from "../ui/Icon";
 import searchIcon from "../../assets/search.svg";
 
-// import findProperty from "../../utils/search/find-property";
-
 function SearchForm() {
-    // const { dispatch } = useContext(MapContext);
     const { t } = useTranslation();
     const navigate = useNavigate();
-    // const { hotels } = useHotelsContext();
-    const [value, setValue] = useState("");
-
-    // const onSearchCallback = useCallback(
-    //     (event) => {
-    //         event.preventDefault();
-
-    //         const results = hotels.filter((hotel) => findProperty(hotel.properties, value.toLowerCase()));
-    //         // dispatch({ type: "SetList", list: results });
-    //         // dispatch({ type: "ToggleList", showList: true });
-    //     },
-    //     [dispatch, hotels, value]
-    // );
-
-    // const onKeyUpCallback = useCallback(
-    //     (event) => {
-    //         setValue(event.target.value);
-    //         if (event.key === "Escape" || value === "") {
-    //             // dispatch({ type: "SetList", list: [] });
-    //             // dispatch({ type: "ToggleList", showList: false });
-    //         }
-    //     },
-    //     [value, dispatch]
-    // );
+    const [searchParams] = useSearchParams();
+    const [value, setValue] = useState(searchParams.get("q") ?? "");
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
