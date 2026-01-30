@@ -1,17 +1,21 @@
-import { FaFilter } from "react-icons/fa6";
-import { useState, useCallback } from "react";
+import { useTranslation } from "react-i18next";
+import { useState, useCallback, useRef } from "react";
 import { FaShoppingBasket, FaSpa, FaWineBottle } from "react-icons/fa";
 import { GiCampingTent } from "react-icons/gi";
+import { FaFilter } from "react-icons/fa6";
 import { MdCasino, MdLocalBar, MdLocalCafe, MdOutlineRestaurant, MdSelectAll } from "react-icons/md";
 import { TbHotelService } from "react-icons/tb";
 
 import styles from "./FilterControl.module.css";
 import { controlButton, button } from "../../css/map-list-opener.module.css";
-import { useTranslation } from "react-i18next";
+import { CSSTransition } from "react-transition-group";
+import { ControlsTooltip } from "./ControlsTooltip";
 
 const size = 16;
 
-function FilterControl({ filterType, setFilterType }) {
+function FilterControl({ filterType, setFilterType, label }) {
+    const [showTooltip, setShowTooltip] = useState(false);
+    const tooltipRef = useRef(null);
     const [filterOpen, setFilterOpen] = useState(false);
     const { i18n } = useTranslation();
     const options = [
@@ -44,8 +48,14 @@ function FilterControl({ filterType, setFilterType }) {
     }
 
     return (
-        <>
-            <button className={`${controlButton} ${styles.filterOpenButton}`} onClick={toggleFilterOpen}>
+        <div className="relative">
+            <button
+                aria-label={label}
+                onMouseEnter={() => setShowTooltip(true)}
+                onMouseLeave={() => setShowTooltip(false)}
+                className={`${controlButton} ${styles.filterOpenButton}`}
+                onClick={toggleFilterOpen}
+            >
                 <FaFilter />
                 <div className={`${styles.cornerIcon} ${filterType !== "mind" && styles.showCornerIcon}`}></div>
             </button>
@@ -68,7 +78,17 @@ function FilterControl({ filterType, setFilterType }) {
                     ))}
                 </div>
             </div>
-        </>
+            <CSSTransition
+                mountOnEnter
+                unmountOnExit
+                in={!filterOpen && showTooltip}
+                classNames="ControlsTooltip"
+                timeout={200}
+                nodeRef={tooltipRef}
+            >
+                <ControlsTooltip message={label} ref={tooltipRef} />
+            </CSSTransition>
+        </div>
     );
 }
 

@@ -21,6 +21,8 @@ import { useAnalyticsContext } from "../analytics/AnalyticsProvider.jsx";
 
 import List from "../List.jsx";
 
+import { Controls } from "./Controls.jsx";
+
 const preloadBlue = new Image();
 preloadBlue.src = BLUE_ICON;
 
@@ -133,7 +135,9 @@ export function MapView({ hotels }) {
         if (filter) {
             setFilterType(filter);
         }
-    }, [map, searchParams]);
+        // hotels is needed as dependency otherwise filtered list won't get recalculated
+        // in the memoized component
+    }, [map, searchParams, hotels]);
 
     useEffect(() => {
         if (selectedPoint) {
@@ -203,10 +207,9 @@ export function MapView({ hotels }) {
         setShowList(false);
     };
 
-    const displayMap = useMemo(
+    const memoizedMap = useMemo(
         () => (
             <>
-                <TileLayer url={config.map.url} attribution={config.map.attribution} />
                 {/* We wrap the cluster group in the Provider. 
                    We pass the CURRENT selectedPoint into the value.
                 */}
@@ -261,11 +264,14 @@ export function MapView({ hotels }) {
             )}
             {!showList && (
                 <>
-                    {displayMap}
-                    <LocateControl setMapToUsersLocation={setMapToUsersLocation} />
-                    <MapListOpener onLocationListOpen={openLocationList} />
-                    <FilterControl filterType={filterType} setFilterType={setFilterType} />
-                    <ShareLinkControl shareLink={shareLink} />
+                    <TileLayer url={config.map.url} attribution={config.map.attribution} />
+                    {memoizedMap}
+                    <Controls>
+                        <LocateControl label={t("mapControl.location")} setMapToUsersLocation={setMapToUsersLocation} />
+                        <MapListOpener label={t("mapControl.list")} onLocationListOpen={openLocationList} />
+                        <FilterControl label={t("mapControl.filter")} filterType={filterType} setFilterType={setFilterType} />
+                        <ShareLinkControl label={t("mapControl.share")} shareLink={shareLink} />
+                    </Controls>
                 </>
             )}
 

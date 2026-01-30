@@ -7,10 +7,13 @@ import listStyles from "../../css/map-list-opener.module.css";
 import Icon from "../ui/Icon";
 import Toast from "../ui/Toast";
 import shareIcon from "../../assets/share-icon.svg";
+import { ControlsTooltip } from "./ControlsTooltip";
 
-function ShareLinkControl({ shareLink }) {
+function ShareLinkControl({ shareLink, label }) {
     const [showToast, setShowToast] = useState(false);
     const toastRef = useRef(null);
+    const [showTooltip, setShowTooltip] = useState(false);
+    const tooltipRef = useRef(null);
 
     const handleClick = () => {
         shareLink();
@@ -27,8 +30,14 @@ function ShareLinkControl({ shareLink }) {
     }, [showToast]);
 
     return (
-        <>
-            <button className={`${listStyles.controlButton} ${styles.shareButton}`} onClick={handleClick}>
+        <div className="relative">
+            <button
+                onMouseEnter={() => setShowTooltip(true)}
+                onMouseLeave={() => setShowTooltip(false)}
+                aria-label={label}
+                className={`${listStyles.controlButton} ${styles.shareButton}`}
+                onClick={handleClick}
+            >
                 <Icon img={shareIcon} />
             </button>
             {createPortal(
@@ -37,7 +46,10 @@ function ShareLinkControl({ shareLink }) {
                 </CSSTransition>,
                 document.body
             )}
-        </>
+            <CSSTransition mountOnEnter unmountOnExit in={showTooltip} classNames="ControlsTooltip" timeout={200} nodeRef={tooltipRef}>
+                <ControlsTooltip message={label} ref={tooltipRef} />
+            </CSSTransition>
+        </div>
     );
 }
 
