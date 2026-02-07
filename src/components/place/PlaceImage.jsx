@@ -1,10 +1,10 @@
 import { useRef } from "react";
-import styles from "../../css/hotel-image.module.css";
+import styles from "./PlaceImage.module.css";
 
-function HotelImage({ src, alt = "" }) {
+function PlaceImage({ src, alt = "" }) {
     const imgContainerRef = useRef(null);
     return (
-        <figure className={styles.hotelImage} ref={imgContainerRef}>
+        <figure className={styles.placeImage} ref={imgContainerRef}>
             <img
                 src={src}
                 alt={alt}
@@ -18,4 +18,4 @@ function HotelImage({ src, alt = "" }) {
     );
 }
 
-export default HotelImage;
+export default PlaceImage;

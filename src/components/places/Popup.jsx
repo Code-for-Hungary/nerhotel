@@ -6,10 +6,9 @@ import Button from "../ui/Button";
 import Icon from "../ui/Icon";
 import closeIcon from "../../assets/close-icon.svg";
 import horseIcon from "../../assets/horse-icon.svg";
-import hotelIcon from "../../assets/hotel-icon.svg";
+import placeIcon from "../../assets/place-icon.svg";
 import linkIcon from "../../assets/link-icon.svg";
 import pinIcon from "../../assets/pin-icon.svg";
-import arrowIcon from "../../assets/arrow-icon.svg";
 import { getOligarchData } from "../../utils";
 import displayTranslatedPersonType from "../../utils/person/display-translated-person-type";
 import "./Popup.transition.css";
@@ -35,7 +34,7 @@ const Popup = forwardRef((props, ref) => {
                     <div className={styles.popupCol}>
                         <span>{t("general.maintainer")}</span>
                         <div className={styles.popupRow}>
-                            <Icon img={hotelIcon} size="small" />
+                            <Icon img={placeIcon} size="small" />
                             <div className={styles.company}>
                                 {data.company && data.company.link ? (
                                     <p>
@@ -88,7 +87,7 @@ const Popup = forwardRef((props, ref) => {
                 )}
             </div>
             <footer className={styles.popupFooter}>
-                <Button to={`/hotel/${data.id}`} isFull={true} onClick={props.onClose}>
+                <Button to={`/place/${data.id}`} isFull={true} onClick={props.onClose}>
                     {t("popUp.linkText")}
                 </Button>
             </footer>

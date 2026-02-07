@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import getTranslatedHotelProperty from "./get-translated-hotel-property";
+import getTranslatedPlaceProperty from "./get-translated-place-property";
 
 describe("A function to get a the equivalent field from an object based on a language value", () => {
     it("throws an exception when we try to get a non-existing property", () => {
@@ -9,7 +9,7 @@ describe("A function to get a the equivalent field from an object based on a lan
         };
 
         expect(() => {
-            getTranslatedHotelProperty("categories", "en", data);
+            getTranslatedPlaceProperty("categories", "en", data);
         }).toThrow(Error);
     });
 
@@ -18,7 +18,7 @@ describe("A function to get a the equivalent field from an object based on a lan
             name: "Hakapeszi Maki",
         };
 
-        expect(getTranslatedHotelProperty("name", "en", data)).toEqual("Hakapeszi Maki");
+        expect(getTranslatedPlaceProperty("name", "en", data)).toEqual("Hakapeszi Maki");
     });
 
     it("returns the key from the top level if a language key is found however it doesn't contain the specified key", () => {
@@ -29,7 +29,7 @@ describe("A function to get a the equivalent field from an object based on a lan
             },
         };
 
-        expect(getTranslatedHotelProperty("name", "en", data)).toEqual("Hakapeszi Maki");
+        expect(getTranslatedPlaceProperty("name", "en", data)).toEqual("Hakapeszi Maki");
     });
 
     it("returns the equivalent key from the translation object when found", () => {
@@ -40,6 +40,6 @@ describe("A function to get a the equivalent field from an object based on a lan
             },
         };
 
-        expect(getTranslatedHotelProperty("name", "de", data)).toEqual("Herr Maki Hakapeszi");
+        expect(getTranslatedPlaceProperty("name", "de", data)).toEqual("Herr Maki Hakapeszi");
     });
 });

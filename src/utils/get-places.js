@@ -42,7 +42,7 @@ function makeAddress(city, address, zip) {
  * @param {Object<string, string>[]} csvRowsAsObjects
  * @returns {Hotel[]}
  */
-export function getHotels(csvRowsAsObjects) {
+export function getPlaces(csvRowsAsObjects) {
     return csvRowsAsObjects.map((csvRow, index) => {
         /** @type {{name: string, link: string}[]} */
         const oligarchs = [

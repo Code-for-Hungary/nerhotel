@@ -4,22 +4,22 @@ import { SmartLink } from "../SmartLink";
 import { useTranslation } from "react-i18next";
 import Leaflet from "leaflet";
 import { MapContainer as Map, TileLayer, Marker } from "react-leaflet";
-import { useHotelsContext } from "../../context/hotels-provider.jsx";
-import AssociatedHotel from "./AssociatedHotel";
+import { usePlacesContext } from "../../context/places-provider.jsx";
+import AssociatedPlace from "./AssociatedPlace.jsx";
 import LoadingSpinner from "../ui/LoadingSpinner";
 
 import Icon from "../ui/Icon";
 
-import styles from "../../css/hotel.module.css";
+import styles from "../../css/place.module.css";
 import arrowIcon from "../../assets/arrow-icon.svg";
-import hotelIcon from "../../assets/hotel-icon.svg";
+import placeIcon from "../../assets/place-icon.svg";
 import horseIcon from "../../assets/horse-icon.svg";
 
 import { config } from "../../config";
-import _getAllHotelsAffiliatedWithPerson from "../../utils/person/get-all-hotels-affiliated-with-person";
+import _getAllPlacesAffiliatedWithPerson from "../../utils/person/get-all-places-affiliated-with-person.js";
 import getTranslatedKMonitorLink from "../../utils/person/get-translated-k-monitor-link";
 import getPersonProfile from "../../utils/person/get-person-profile";
-import orangeIcon from "../../assets/marker-icon-orange.svg";
+
 import { ORANGE_ICON } from "../../leaflet-helper";
 
 const PersonProfile = lazy(() => import("./PersonProfile"));
@@ -41,30 +41,30 @@ const Person = (props) => {
     const [profileInfoError, setProfileInfoError] = useState(false);
 
     /** @type {Hotel[]} */
-    const { hotels } = useHotelsContext();
-    const affiliatedHotels = _getAllHotelsAffiliatedWithPerson(hotels, personName);
+    const { places } = usePlacesContext();
+    const affiliatedPlaces = _getAllPlacesAffiliatedWithPerson(places, personName);
 
     /** @type {{name: string, link: string}|undefined} */
     const person =
-        affiliatedHotels && affiliatedHotels.length
-            ? affiliatedHotels[0].properties.ceos.find((ceo) => ceo.name === personName) ||
-              affiliatedHotels[0].properties.oligarchs.find((oligarch) => oligarch.name === personName)
+        affiliatedPlaces && affiliatedPlaces.length
+            ? affiliatedPlaces[0].properties.ceos.find((ceo) => ceo.name === personName) ||
+              affiliatedPlaces[0].properties.oligarchs.find((oligarch) => oligarch.name === personName)
             : undefined;
     const kMonitorDbId = person && person.id ? person.id : null;
     const isMainOligarch = !!(
-        affiliatedHotels &&
-        affiliatedHotels.length &&
-        (affiliatedHotels[0].properties.mainCEO.find((ceo) => ceo.name === personName) ||
-            affiliatedHotels[0].properties.mainOligarch.find((oligarch) => oligarch.name === personName))
+        affiliatedPlaces &&
+        affiliatedPlaces.length &&
+        (affiliatedPlaces[0].properties.mainCEO.find((ceo) => ceo.name === personName) ||
+            affiliatedPlaces[0].properties.mainOligarch.find((oligarch) => oligarch.name === personName))
     );
     /** @type {string} */
-    let personUrl = affiliatedHotels.length && person ? person.link : "";
+    let personUrl = affiliatedPlaces.length && person ? person.link : "";
     if (personUrl && resolvedLanguage === "en") {
         personUrl = getTranslatedKMonitorLink(personUrl);
     }
 
-    const bounds = affiliatedHotels.length
-        ? new Leaflet.LatLngBounds(affiliatedHotels.map((hotel) => [hotel.geometry.coordinates[0], hotel.geometry.coordinates[1]]))
+    const bounds = affiliatedPlaces.length
+        ? new Leaflet.LatLngBounds(affiliatedPlaces.map((place) => [place.geometry.coordinates[0], place.geometry.coordinates[1]]))
         : undefined;
 
     const loadPersonProfile = useCallback(() => {
@@ -95,14 +95,14 @@ const Person = (props) => {
     useEffect(loadPersonProfile, [loadPersonProfile]);
 
     return (
-        <div className={[styles.hotel, "hotel"].join(" ")}>
+        <div className={[styles.place, "place"].join(" ")}>
             <Helmet>
                 <title>
                     {personName} - {t("general.siteName")}
                 </title>
             </Helmet>
-            {affiliatedHotels && affiliatedHotels.length ? (
-                <div className={styles.hotelWrapper}>
+            {affiliatedPlaces && affiliatedPlaces.length ? (
+                <div className={styles.placeWrapper}>
                     <div className={styles.info}>
                         <h1>
                             {isMainOligarch && (
@@ -123,16 +123,16 @@ const Person = (props) => {
                                 {t("person.dbLink")}: <SmartLink to={personUrl}>{personName}</SmartLink>
                             </p>
                         )}
-                        {affiliatedHotels.length > 0 && (
+                        {affiliatedPlaces.length > 0 && (
                             <>
-                                <div className={styles.hotelRow}>
-                                    <Icon img={hotelIcon} size="small" />
+                                <div className={styles.placeRow}>
+                                    <Icon img={placeIcon} size="small" />
                                     <p>{t("person.relatedPlaces")}:</p>
                                 </div>
-                                <div className={styles.hotelRow}>
+                                <div className={styles.placeRow}>
                                     <ul>
-                                        {affiliatedHotels.map((hotel, key) => (
-                                            <AssociatedHotel hotel={hotel} key={key} />
+                                        {affiliatedPlaces.map((place, key) => (
+                                            <AssociatedPlace place={place} key={key} />
                                         ))}
                                     </ul>
                                 </div>
@@ -145,7 +145,7 @@ const Person = (props) => {
                     <div className={styles.map}>
                         <Map bounds={bounds}>
                             <TileLayer url={config.map.url} attribution={config.map.attribution} />
-                            {affiliatedHotels.map((point) => {
+                            {affiliatedPlaces.map((point) => {
                                 const [latitude, longitude] = point.geometry.coordinates;
 
                                 if (Number.isNaN(latitude) || Number.isNaN(longitude)) return null;

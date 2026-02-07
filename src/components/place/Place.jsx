@@ -2,21 +2,21 @@ import { MapContainer as LeafletMap, Marker, TileLayer } from "react-leaflet";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 
-import { SmartLink } from "../SmartLink";
-import Icon from "../ui/Icon";
-import HotelImage from "./HotelImage";
+import { SmartLink } from "../SmartLink.jsx";
+import Icon from "../ui/Icon.jsx";
+import PlaceImage from "./PlaceImage.jsx";
 
-import { getOligarchData } from "../../utils";
+import { getOligarchData } from "../../utils/index.js";
 import { ORANGE_ICON } from "../../leaflet-helper.jsx";
-import getTranslatedHotelProperty from "../../utils/get-translated-hotel-property.js";
+import getTranslatedPlaceProperty from "../../utils/get-translated-place-property.js";
 
-import { useHotelsContext } from "../../context/hotels-provider.jsx";
+import { usePlacesContext } from "../../context/places-provider.jsx";
 
-import styles from "../../css/hotel.module.css";
+import styles from "../../css/place.module.css";
 
 import arrowIcon from "../../assets/arrow-icon.svg";
 import horseIcon from "../../assets/horse-icon.svg";
-import hotelIcon from "../../assets/hotel-icon.svg";
+import placeIcon from "../../assets/place-icon.svg";
 import linkIcon from "../../assets/link-icon.svg";
 import pinIcon from "../../assets/pin-icon.svg";
 
@@ -49,35 +49,35 @@ import displayTranslatedPersonType from "../../utils/person/display-translated-p
  * @property {{name: string, link: string}[]} properties.oligarchs
  * @property {{name: string, link: string}[]} properties.mainOligarch
  */
-const Hotel = (props) => {
-    const { hotels } = useHotelsContext();
+const Place = (props) => {
+    const { places } = usePlacesContext();
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
-    const hotelById = hotels.length ? hotels.find((hotel) => hotel.properties.id === parseInt(props.id)) : null;
-    const data = hotelById ? hotelById.properties : null;
-    const location = hotelById ? hotelById.geometry.coordinates : null;
-    const oligarchData = hotelById ? getOligarchData(data.oligarchs || [], data.ceos || []) : null;
+    const placeById = places.length ? places.find((place) => place.properties.id === parseInt(props.id)) : null;
+    const data = placeById ? placeById.properties : null;
+    const location = placeById ? placeById.geometry.coordinates : null;
+    const oligarchData = placeById ? getOligarchData(data.oligarchs || [], data.ceos || []) : null;
 
     return (
-        <div className={[styles.hotel, "hotel"].join(" ")}>
-            <div className={styles.hotelWrapper}>
+        <div className={[styles.place, "place"].join(" ")}>
+            <div className={styles.placeWrapper}>
                 <div className={styles.info}>
                     {data ? (
                         <>
                             <Helmet>
                                 <title>
-                                    {getTranslatedHotelProperty("name", resolvedLanguage, data)} - {t("general.siteName")}
+                                    {getTranslatedPlaceProperty("name", resolvedLanguage, data)} - {t("general.siteName")}
                                 </title>
                             </Helmet>
-                            <h1>{getTranslatedHotelProperty("name", resolvedLanguage, data)}</h1>
-                            <div className={styles.hotelRow}>
+                            <h1>{getTranslatedPlaceProperty("name", resolvedLanguage, data)}</h1>
+                            <div className={styles.placeRow}>
                                 <p>
-                                    {t("hotel.type")}: <span>{getTranslatedHotelProperty("type", resolvedLanguage, data)}</span>
+                                    {t("hotel.type")}: <span>{getTranslatedPlaceProperty("type", resolvedLanguage, data)}</span>
                                 </p>
                             </div>
                             {data.company && (
-                                <div className={styles.hotelRow}>
-                                    <Icon img={hotelIcon} size="small" />
+                                <div className={styles.placeRow}>
+                                    <Icon img={placeIcon} size="small" />
                                     <p>
                                         {t("general.maintainer")}:{" "}
                                         {data.company.link ? (
@@ -91,7 +91,7 @@ const Hotel = (props) => {
                                 </div>
                             )}
                             {oligarchData && (
-                                <div className={styles.hotelRow}>
+                                <div className={styles.placeRow}>
                                     <Icon img={horseIcon} size="small" />
                                     <p>
                                         {t("hotel.people")}:<br />
@@ -109,7 +109,7 @@ const Hotel = (props) => {
                                 </div>
                             )}
                             {data.address && (
-                                <div className={styles.hotelRow}>
+                                <div className={styles.placeRow}>
                                     <Icon img={pinIcon} size="small" />
                                     <p>
                                         {t("general.address")}: <span>{data.address}</span>
@@ -117,15 +117,15 @@ const Hotel = (props) => {
                                 </div>
                             )}
                             {data.link !== "" && (
-                                <div className={styles.hotelRow}>
+                                <div className={styles.placeRow}>
                                     <Icon img={linkIcon} size="small" />
-                                    <SmartLink to={getTranslatedHotelProperty("link", resolvedLanguage, data)}>
+                                    <SmartLink to={getTranslatedPlaceProperty("link", resolvedLanguage, data)}>
                                         <span>{t("general.article")}</span>
                                     </SmartLink>
                                 </div>
                             )}
                             {data.details !== "" && (
-                                <div className={styles.hotelRow}>
+                                <div className={styles.placeRow}>
                                     <p>
                                         {(resolvedLanguage === "hu" && data.details) || (resolvedLanguage === "en" && data.en.details) ? (
                                             <span style={{ display: "block" }}>{t("general.additionalInfo")}:</span>
@@ -136,7 +136,7 @@ const Hotel = (props) => {
                                 </div>
                             )}
                             {data.date !== "" && (
-                                <div className={styles.hotelRow}>
+                                <div className={styles.placeRow}>
                                     <p>
                                         {t("hotel.updatedOn")}: <span>{data.date}</span>
                                     </p>
@@ -144,7 +144,7 @@ const Hotel = (props) => {
                             )}
 
                             {data.picture && (
-                                <HotelImage src={data.picture} alt={getTranslatedHotelProperty("name", resolvedLanguage, data)} />
+                                <PlaceImage src={data.picture} alt={getTranslatedPlaceProperty("name", resolvedLanguage, data)} />
                             )}
                         </>
                     ) : null}
@@ -166,4 +166,4 @@ const Hotel = (props) => {
     );
 };
 
-export default Hotel;
+export default Place;

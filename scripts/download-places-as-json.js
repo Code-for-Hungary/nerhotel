@@ -1,10 +1,10 @@
-import loadHotelDataFromCsv from "../src/utils/load-hotel-data-from-csv.js";
+import loadPlaceDataFromCsv from "../src/utils/load-place-data-from-csv.js";
 import fs from "fs";
 import { mkdirp } from "mkdirp";
 import path from "path";
 
-function downloadHotelsAsJSON() {
-    loadHotelDataFromCsv()
+function downloadPlacesAsJSON() {
+    loadPlaceDataFromCsv()
         .then(async (data) => {
             const filePath = path.join(__dirname, "..", "data", "nerhotel.json");
             mkdirp(path.dirname(filePath)).then((dir) => {
@@ -17,4 +17,4 @@ function downloadHotelsAsJSON() {
         });
 }
 
-downloadHotelsAsJSON();
+downloadPlacesAsJSON();

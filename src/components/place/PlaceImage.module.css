@@ -1,4 +1,4 @@
-.hotelImage {
+.placeImage {
     display: block;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
     margin: 1rem auto 2rem auto;
 }
 
-.hotelImage > img {
+.placeImage > img {
     display: block;
     width: 100%;
     max-width: 100%;

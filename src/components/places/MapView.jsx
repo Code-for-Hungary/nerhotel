@@ -26,9 +26,9 @@ import { Controls } from "./Controls.jsx";
 const preloadBlue = new Image();
 preloadBlue.src = BLUE_ICON;
 
-const MemoizedMarker = memo(({ point, onMarkerClick, selectionRef }) => {
+const MemoizedMarker = memo(({ place, onMarkerClick, selectionRef }) => {
     const [, setTick] = useState(0);
-    const pointId = point.properties.id;
+    const pointId = place.properties.id;
 
     useEffect(() => {
         const handleUpdate = (event) => {
@@ -46,7 +46,7 @@ const MemoizedMarker = memo(({ point, onMarkerClick, selectionRef }) => {
 
     const isSelected = selectionRef.current?.properties.id === pointId;
     const icon = isSelected ? BLUE_ICON : ORANGE_ICON;
-    const [latitude, longitude] = point.geometry.coordinates;
+    const [latitude, longitude] = place.geometry.coordinates;
 
     if (Number.isNaN(latitude) || Number.isNaN(longitude)) return null;
 
@@ -55,21 +55,21 @@ const MemoizedMarker = memo(({ point, onMarkerClick, selectionRef }) => {
             position={[latitude, longitude]}
             icon={icon}
             eventHandlers={{
-                click: () => onMarkerClick(point),
+                click: () => onMarkerClick(place),
             }}
         >
-            <Tooltip>{point.properties.name}</Tooltip>
+            <Tooltip>{place.properties.name}</Tooltip>
         </Marker>
     );
 });
 
-export function MapView({ hotels }) {
+export function MapView({ places }) {
     const map = useMap();
     const { dispatchAnalyticsEvent } = useAnalyticsContext();
 
     const [filterType, setFilterType] = useState("mind");
 
-    const [pointsShownOnMap, setPointsShownOnMap] = useState(hotels);
+    const [pointsShownOnMap, setPointsShownOnMap] = useState(places);
 
     const { t } = useTranslation();
 
@@ -104,7 +104,7 @@ export function MapView({ hotels }) {
 
     function getPointsToDisplay() {
         return getPointsWithinBounds(
-            hotels.filter((point) => filterPoints(point, filterType)),
+            places.filter((place) => filterPoints(place, filterType)),
             map.getBounds()
         );
     }
@@ -135,9 +135,9 @@ export function MapView({ hotels }) {
         if (filter) {
             setFilterType(filter);
         }
-        // hotels is needed as dependency otherwise filtered list won't get recalculated
+        // places is needed as dependency otherwise filtered list won't get recalculated
         // in the memoized component
-    }, [map, searchParams, hotels]);
+    }, [map, searchParams, places]);
 
     useEffect(() => {
         if (selectedPoint) {
@@ -222,12 +222,12 @@ export function MapView({ hotels }) {
                     chunkedLoading
                     onClick={onClusterClickHandler}
                 >
-                    {hotels
-                        .filter((point) => filterPoints(point, filterType))
-                        .map((point) => (
+                    {places
+                        .filter((place) => filterPoints(place, filterType))
+                        .map((place) => (
                             <MemoizedMarker
-                                key={point.properties.id}
-                                point={point}
+                                key={place.properties.id}
+                                place={place}
                                 onMarkerClick={onMarkerClickCallback}
                                 selectionRef={selectionRef}
                             />
@@ -237,7 +237,7 @@ export function MapView({ hotels }) {
         ),
         // IMPORTANT: selectedPoint is NOT listed as dependency of useMemo.
         // This prevents the "Flash" because the Map is never rebuilt.
-        [hotels, filterType, onMarkerClickCallback]
+        [places, filterType, onMarkerClickCallback]
     );
 
     return (

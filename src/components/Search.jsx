@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { Trans, useTranslation } from "react-i18next";
 
-import { useHotelsContext } from "../context/hotels-provider";
+import { usePlacesContext } from "../context/places-provider";
 
 import findProperty from "../utils/search/find-property";
 
@@ -12,16 +12,16 @@ import LoadingSpinner from "./ui/LoadingSpinner";
 
 export const Search = ({ query }) => {
     const [results, setResults] = useState([]);
-    const { hotels, isLoading } = useHotelsContext();
+    const { places, isLoading } = usePlacesContext();
     const navigate = useNavigate();
     const { t } = useTranslation();
 
     useEffect(() => {
-        if (!isLoading && hotels.length && query && query.length) {
-            const found = hotels.filter((hotel) => findProperty(hotel.properties, query.toLowerCase()));
+        if (!isLoading && places.length && query && query.length) {
+            const found = places.filter((place) => findProperty(place.properties, query.toLowerCase()));
             setResults(found);
         }
-    }, [hotels, isLoading, query]);
+    }, [places, isLoading, query]);
 
     return (
         <div className={styles.map}>

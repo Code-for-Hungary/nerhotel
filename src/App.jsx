@@ -4,11 +4,11 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import ErrorBoundary from "./components/ErrorBoundary";
 import AnalyticsProvider from "./components/analytics/AnalyticsProvider";
 
-import { HotelsProvider } from "./context/hotels-provider";
+import { PlacesProvider } from "./context/places-provider";
 import { useTranslation } from "react-i18next";
 
-import HotelPage from "./pages/HotelPage";
-import HotelsPage from "./pages/HotelsPage";
+import PlacePage from "./pages/PlacePage";
+import PlacesPage from "./pages/PlacesPage";
 import ContentPage from "./pages/ContentPage";
 import PersonPage from "./pages/PersonPage";
 import ErrorPage from "./pages/ErrorPage";
@@ -27,13 +27,13 @@ function App() {
                         {t("general.tagline")} - {t("general.siteName")}
                     </title>
                 </Helmet>
-                <HotelsProvider>
+                <PlacesProvider>
                     <BrowserRouter>
                         <AnalyticsProvider>
                             <Routes>
                                 <Route path="/:lang?" element={<LanguageLayout />}>
-                                    <Route index element={<HotelsPage />} />
-                                    <Route path="hotel/:id" element={<HotelPage />} />
+                                    <Route index element={<PlacesPage />} />
+                                    <Route path="place/:id" element={<PlacePage />} />
                                     <Route path="person/:name" element={<PersonPage />} />
                                     <Route path="about" element={<ContentPage />} />
                                     <Route path="contact" element={<ContentPage />} />
@@ -45,7 +45,7 @@ function App() {
                             </Routes>
                         </AnalyticsProvider>
                     </BrowserRouter>
-                </HotelsProvider>
+                </PlacesProvider>
             </ErrorBoundary>
         </HelmetProvider>
     );

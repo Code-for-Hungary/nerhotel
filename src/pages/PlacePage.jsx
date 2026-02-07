@@ -1,16 +1,16 @@
 import { useParams } from "react-router";
 
 import Layout from "./Layout";
-import Hotel from "../components/hotel/Hotel";
+import Place from "../components/place/Place";
 
-const HotelPage = () => {
+const PlacePage = () => {
     const { id } = useParams();
 
     return (
         <Layout>
-            <Hotel id={id} />
+            <Place id={id} />
         </Layout>
     );
 };
 
-export default HotelPage;
+export default PlacePage;

@@ -11,7 +11,7 @@ const ListItem = ({ item, onClick, ...props }) => {
     return (
         <div className={styles.listItem} {...props}>
             <h1>
-                <Link to={`/hotel/${item.properties.id}`}>{item.properties.name}</Link>
+                <Link to={`/place/${item.properties.id}`}>{item.properties.name}</Link>
             </h1>
             <div className={styles.listItemRow}>
                 <div className={styles.listItemCol}>

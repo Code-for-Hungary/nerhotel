@@ -1,12 +1,12 @@
-import { config } from "../config";
-import { getHotels } from "./getHotels";
+import { config } from "../config.js";
+import { getPlaces } from "./get-places.js";
 import { convertCsvToObject } from "./csvParser.js";
 
-async function loadHotelDataFromCsv() {
+async function loadPlaceDataFromCsv() {
     const response = await fetch(config.csvUrl, { method: "GET" });
     const csvString = await response.text();
     const csvRowsAsObjects = convertCsvToObject(csvString);
-    return getHotels(csvRowsAsObjects);
+    return getPlaces(csvRowsAsObjects);
 }
 
-export default loadHotelDataFromCsv;
+export default loadPlaceDataFromCsv;

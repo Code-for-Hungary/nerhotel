@@ -2,7 +2,7 @@ import { MapContainer } from "react-leaflet";
 
 import styles from "../../css/map.module.css";
 
-import { useHotelsContext } from "../../context/hotels-provider.jsx";
+import { usePlacesContext } from "../../context/places-provider.jsx";
 
 import { config } from "../../config.js";
 import MapPlaceholder from "./MapPlaceholder.jsx";
@@ -11,19 +11,19 @@ import { MapView } from "./MapView.jsx";
 
 const INITIAL_CENTER = [47.498045, 19.0385183];
 
-function Hotels() {
-    const { hotels, isLoading } = useHotelsContext();
+function Places() {
+    const { places, isLoading } = usePlacesContext();
 
     if (isLoading) {
         <MapPlaceholder />;
     }
 
-    if (!isLoading && hotels.length) {
+    if (!isLoading && places.length) {
         return (
             <div className={styles.map} id="map">
                 <div className={styles.mapWrapper} id="mapWrapper">
                     <MapContainer center={INITIAL_CENTER} zoom={6} maxZoom={config.map.maxZoom}>
-                        <MapView hotels={hotels} />
+                        <MapView places={places} />
                     </MapContainer>
                 </div>
             </div>
@@ -33,4 +33,4 @@ function Hotels() {
     return null;
 }
 
-export default Hotels;
+export default Places;

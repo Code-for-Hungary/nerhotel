@@ -1,4 +1,4 @@
-const getTranslatedHotelProperty = (propertyName, lang, properties) => {
+const getTranslatedPlaceProperty = (propertyName, lang, properties) => {
     if (!properties[lang] || propertyName in properties[lang] === false || !properties[lang][propertyName]) {
         if (propertyName in properties === false) {
             throw new Error(`${propertyName} not found in properties`);
@@ -10,4 +10,4 @@ const getTranslatedHotelProperty = (propertyName, lang, properties) => {
     return properties[lang][propertyName];
 };
 
-export default getTranslatedHotelProperty;
+export default getTranslatedPlaceProperty;

@@ -119,16 +119,16 @@ Mivel a node.js szkript behúzza az `src` file-ban található JS modulokat amik
 Ezt legegyszerűbben egy command line-ból kiadott [Rollup parancsal](https://rollupjs.org/command-line-interface/) tudjuk megtenni (az `npx` parancsot használva nem kell a Rollupot fel installálni sem a projektbe sem a gépünkre globálisan)
 
 ```bash
-npx rollup scripts/download-hotels-as-json.js --file scripts/download-hotels-as-json.bundle.js --format esm
+npx rollup scripts/download-places-as-json.js --file scripts/download-places-as-json.bundle.js --format esm
 ```
-> ⚠️ A létrejött `scripts/download-hotels-as-json.bundle.js` nem fog bekerülni gitbe.
+> ⚠️ A létrejött `scripts/download-places-as-json.bundle.js` nem fog bekerülni gitbe.
 
 ### 2) Futasuk a bundle-t
 
 Miután létrehoztuk futassuk le
 
 ```bash
-node scripts/download-hotels-as-json.bundle.js
+node scripts/download-places-as-json.bundle.js
 ```
 
 > ⚠️ A szkript futásához minimum Node.js 18-as verzió fog kelleni ugyanis a behúzott szkriptben `fetch` API-t kell futattnunk. Ha nem akarsz globálisan frissíteni hanszálj [NVM](https://github.com/nvm-sh/nvm)-t.
