@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, useMemo, useCallback, memo } from "react";
 import { createPortal } from "react-dom";
-import { TileLayer, useMap, Marker, Tooltip } from "react-leaflet";
+import { TileLayer, useMap, useMapEvents, Marker, Tooltip } from "react-leaflet";
 import { useSearchParams } from "react-router";
 import { useTranslation } from "react-i18next";
 import MarkerClusterGroup from "react-leaflet-markercluster";
@@ -67,9 +67,12 @@ MemoizedMarker.displayName = "MemoizedMarker";
 
 export function MapView({ places }) {
     const map = useMap();
+
     const { dispatchAnalyticsEvent } = useAnalyticsContext();
 
-    const [filterType, setFilterType] = useState("mind");
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    const [filterType, setFilterType] = useState(searchParams.get("filter") || "mind");
 
     const filteredPlaces = useMemo(() => places.filter((place) => filterPlaces(place, filterType)), [places, filterType]);
     const [pointsShownOnMap, setPointsShownOnMap] = useState(filteredPlaces);
@@ -79,8 +82,6 @@ export function MapView({ places }) {
     const popUpTransitionContainerRef = useRef(null);
     const listTransitionContainerRef = useRef(null);
 
-    const [searchParams, setSearchParams] = useSearchParams();
-
     const [showList, setShowList] = useState(false);
     const [showPopUp, setShowPopUp] = useState(false);
 
@@ -89,19 +90,17 @@ export function MapView({ places }) {
 
     const closeList = () => setShowList(false);
 
-    const shareLink = () => {
-        const center = map.getCenter();
-        const zoom = map.getZoom();
-        const newParams = {
-            lat: center.lat.toFixed(4),
-            lng: center.lng.toFixed(4),
-            zoom: zoom.toString(),
-        };
-        if (filterType !== "mind") {
-            newParams.filter = filterType;
-        }
-        setSearchParams(newParams, { replace: true });
-        const url = `${window.location.origin}${window.location.pathname}?${new URLSearchParams(newParams).toString()}`;
+    const setFilterTypeHandler = (type) => {
+        setFilterType(type);
+        setSearchParams((searchParams) => {
+            searchParams.set("filter", type);
+            return searchParams;
+        });
+    };
+
+    const copyCurrentURLToCLipBoard = () => {
+        const url = window.location;
+
         navigator.clipboard.writeText(url);
     };
 
@@ -122,18 +121,14 @@ export function MapView({ places }) {
         setShowPopUp(false);
     }, []);
 
+    // set the initial staring point based on the url parameters
     useEffect(() => {
         const lat = searchParams.get("lat");
         const lng = searchParams.get("lng");
-        const zoom = searchParams.get("zoom");
-        const filter = searchParams.get("filter");
+        const zoom = searchParams.get("zoom") ?? map.getZoom();
 
         if (lat && lng && zoom) {
-            map.flyTo([parseFloat(lat), parseFloat(lng)], parseInt(zoom));
-        }
-
-        if (filter) {
-            setFilterType(filter);
+            map.flyTo([parseFloat(lat), parseFloat(lng)], parseInt(zoom, 10));
         }
     }, []);
 
@@ -205,6 +200,23 @@ export function MapView({ places }) {
         setShowList(false);
     };
 
+    useMapEvents({
+        zoomend: () => {
+            setSearchParams((searchParams) => {
+                searchParams.set("zoom", map.getZoom());
+                return searchParams;
+            });
+        },
+        moveend: () => {
+            setSearchParams((searchParams) => {
+                const center = map.getCenter();
+                searchParams.set("lat", center.lat.toFixed(4));
+                searchParams.set("lng", center.lng.toFixed(4));
+                return searchParams;
+            });
+        },
+    });
+
     const memoizedMap = useMemo(
         () => (
             <MarkerClusterGroup
@@ -263,8 +275,8 @@ export function MapView({ places }) {
                     <Controls>
                         <LocateControl label={t("mapControl.location")} setMapToUsersLocation={setMapToUsersLocation} />
                         <MapListOpener label={t("mapControl.list")} onLocationListOpen={openLocationList} />
-                        <FilterControl label={t("mapControl.filter")} filterType={filterType} setFilterType={setFilterType} />
-                        <ShareLinkControl label={t("mapControl.share")} shareLink={shareLink} />
+                        <FilterControl label={t("mapControl.filter")} filterType={filterType} setFilterType={setFilterTypeHandler} />
+                        <ShareLinkControl label={t("mapControl.share")} shareLink={copyCurrentURLToCLipBoard} />
                     </Controls>
                 </>
             )}

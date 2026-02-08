@@ -1,5 +1,6 @@
 import { MapContainer as LeafletMap, Marker, TileLayer } from "react-leaflet";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router";
 import { Helmet } from "react-helmet-async";
 
 import { SmartLink } from "../SmartLink.jsx";
@@ -55,8 +56,18 @@ const Place = (props) => {
     const { resolvedLanguage } = i18n;
     const placeById = places.length ? places.find((place) => place.properties.id === parseInt(props.id)) : null;
     const data = placeById ? placeById.properties : null;
-    const location = placeById ? placeById.geometry.coordinates : null;
+    const coordinates = placeById ? placeById.geometry.coordinates : null;
     const oligarchData = placeById ? getOligarchData(data.oligarchs || [], data.ceos || []) : null;
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const backHandler = (e) => {
+        if (location.key === "default") {
+            return;
+        }
+        e.preventDefault();
+        navigate(-1);
+    };
 
     return (
         <div className={[styles.place, "place"].join(" ")}>
@@ -149,15 +160,15 @@ const Place = (props) => {
                         </>
                     ) : null}
 
-                    <SmartLink className={styles.back} to="/">
+                    <SmartLink className={styles.back} to="/" onClick={backHandler}>
                         <Icon img={arrowIcon} alt={t("general.backToMap")} size="large" />
                     </SmartLink>
                 </div>
                 <div className={styles.map}>
-                    {location && !Number.isNaN(location[0]) && !Number.isNaN(location[1]) ? (
-                        <LeafletMap center={location} zoom={config.map.closeZoomLevel}>
+                    {coordinates && !Number.isNaN(coordinates[0]) && !Number.isNaN(coordinates[1]) ? (
+                        <LeafletMap center={coordinates} zoom={config.map.closeZoomLevel}>
                             <TileLayer url={config.map.url} attribution={config.map.attribution} />
-                            <Marker position={location} icon={ORANGE_ICON} />
+                            <Marker position={coordinates} icon={ORANGE_ICON} />
                         </LeafletMap>
                     ) : null}
                 </div>

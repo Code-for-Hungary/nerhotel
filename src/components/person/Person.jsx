@@ -1,5 +1,7 @@
 import { useState, lazy, Suspense, useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet-async";
+import { useNavigate, useLocation } from "react-router";
+
 import { SmartLink } from "../SmartLink";
 import { useTranslation } from "react-i18next";
 import Leaflet from "leaflet";
@@ -39,6 +41,16 @@ const Person = (props) => {
     const [isProfileInfoLoading, setIsProfileInfoLoading] = useState(false);
     const [profileInfo, setProfileInfo] = useState(null);
     const [profileInfoError, setProfileInfoError] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const backHandler = (e) => {
+        if (location.key === "default") {
+            return;
+        }
+        e.preventDefault();
+        navigate(-1);
+    };
 
     /** @type {Hotel[]} */
     const { places } = usePlacesContext();
@@ -138,7 +150,7 @@ const Person = (props) => {
                                 </div>
                             </>
                         )}
-                        <SmartLink to="/" className={styles.back}>
+                        <SmartLink to="/" className={styles.back} onClick={backHandler}>
                             <Icon img={arrowIcon} alt={t("backToMap")} size="large" />
                         </SmartLink>
                     </div>
