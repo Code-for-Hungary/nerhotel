@@ -16,7 +16,7 @@ import Popup from "./Popup.jsx";
 import "./Popup.transition.css";
 
 import getPointsWithinBounds from "../../utils/map/get-points-within-bounds.js";
-import { filterPoints } from "../../utils/map/filter-points.js";
+import { filterPlaces } from "../../utils/map/filter-places.js";
 import { useAnalyticsContext } from "../analytics/AnalyticsProvider.jsx";
 
 import List from "../List.jsx";
@@ -63,13 +63,16 @@ const MemoizedMarker = memo(({ place, onMarkerClick, selectionRef }) => {
     );
 });
 
+MemoizedMarker.displayName = "MemoizedMarker";
+
 export function MapView({ places }) {
     const map = useMap();
     const { dispatchAnalyticsEvent } = useAnalyticsContext();
 
     const [filterType, setFilterType] = useState("mind");
 
-    const [pointsShownOnMap, setPointsShownOnMap] = useState(places);
+    const filteredPlaces = useMemo(() => places.filter((place) => filterPlaces(place, filterType)), [places, filterType]);
+    const [pointsShownOnMap, setPointsShownOnMap] = useState(filteredPlaces);
 
     const { t } = useTranslation();
 
@@ -103,10 +106,7 @@ export function MapView({ places }) {
     };
 
     function getPointsToDisplay() {
-        return getPointsWithinBounds(
-            places.filter((place) => filterPoints(place, filterType)),
-            map.getBounds()
-        );
+        return getPointsWithinBounds(filteredPlaces, map.getBounds());
     }
 
     function openLocationList() {
@@ -135,9 +135,7 @@ export function MapView({ places }) {
         if (filter) {
             setFilterType(filter);
         }
-        // places is needed as dependency otherwise filtered list won't get recalculated
-        // in the memoized component
-    }, [map, searchParams, places]);
+    }, []);
 
     useEffect(() => {
         if (selectedPoint) {
@@ -209,35 +207,31 @@ export function MapView({ places }) {
 
     const memoizedMap = useMemo(
         () => (
-            <>
-                {/* We wrap the cluster group in the Provider. 
-                   We pass the CURRENT selectedPoint into the value.
-                */}
-
-                <MarkerClusterGroup
-                    maxClusterRadius={6}
-                    zoomToBoundsOnClick={true}
-                    showCoverageOnHover={false}
-                    iconCreateFunction={createClusterCustomIcon}
-                    chunkedLoading
-                    onClick={onClusterClickHandler}
-                >
-                    {places
-                        .filter((place) => filterPoints(place, filterType))
-                        .map((place) => (
-                            <MemoizedMarker
-                                key={place.properties.id}
-                                place={place}
-                                onMarkerClick={onMarkerClickCallback}
-                                selectionRef={selectionRef}
-                            />
-                        ))}
-                </MarkerClusterGroup>
-            </>
+            <MarkerClusterGroup
+                maxClusterRadius={6}
+                zoomToBoundsOnClick
+                showCoverageOnHover={false}
+                iconCreateFunction={createClusterCustomIcon}
+                chunkedLoading
+                onClick={onClusterClickHandler}
+                // IMPORTANT: the key is needed to re-add markers when the filters change,
+                // if the filter is taken from the URL the memoized list seems to get stuck and pins are duplicated
+                key={filterType}
+            >
+                {filteredPlaces.map((place) => (
+                    <MemoizedMarker
+                        // the name is only added to the key to add debugging (we'll see this in the React Tree view in the devTools)
+                        key={`${place.properties.id}-${place.properties.name}`}
+                        place={place}
+                        onMarkerClick={onMarkerClickCallback}
+                        selectionRef={selectionRef}
+                    />
+                ))}
+            </MarkerClusterGroup>
         ),
         // IMPORTANT: selectedPoint is NOT listed as dependency of useMemo.
         // This prevents the "Flash" because the Map is never rebuilt.
-        [places, filterType, onMarkerClickCallback]
+        [filteredPlaces, filterType, onMarkerClickCallback]
     );
 
     return (
