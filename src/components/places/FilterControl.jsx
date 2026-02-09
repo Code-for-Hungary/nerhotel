@@ -7,7 +7,7 @@ import { MdCasino, MdLocalBar, MdLocalCafe, MdOutlineRestaurant, MdSelectAll } f
 import { TbHotelService } from "react-icons/tb";
 
 import styles from "./FilterControl.module.css";
-import { controlButton, button } from "../../css/map-list-opener.module.css";
+import { controlButton } from "../../css/map-list-opener.module.css";
 import { CSSTransition } from "react-transition-group";
 import { ControlsTooltip } from "./ControlsTooltip";
 import "./FilterControl.transition.css";
@@ -84,20 +84,18 @@ function FilterControl({ filterType, setFilterType, label }) {
             <CSSTransition mountOnEnter unmountOnExit in={filterOpen} classNames="FilterControl" timeout={200} nodeRef={filterWrapperRef}>
                 <div className={styles.filterPanelWrapper} ref={filterWrapperRef}>
                     <div className={`${styles.filterPanel}`}>
-                        {options.map((option, i) => (
-                            <div
+                        {options.map((option) => (
+                            <button
                                 key={option.type}
-                                className={`${filterType === option.type && styles.selectedRow}
-                                ${styles.filterRow}
-                                ${i !== options.length - 1 && styles.filterRowSeparator}`}
+                                className={`resetButton ${filterType === option.type ? styles.selectedRow : ""} ${styles.filterRow}`}
                                 onClick={() => {
                                     setFilterType(option.type);
                                     setFilterOpen(false);
                                 }}
                             >
-                                <button className={`${styles.filterButton} ${button}`}>{option.icon}</button>
+                                <div className={styles.filterButton}>{option.icon}</div>
                                 <span>{getTranslation(i18n.language, option)}</span>
-                            </div>
+                            </button>
                         ))}
                     </div>
                 </div>

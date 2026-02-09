@@ -37,6 +37,11 @@
     align-self: flex-start;
     width: 100%;
     cursor: pointer;
+    border-bottom: #aaa 1px solid;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
 }
 
 .filterRow:hover:not(.selectedRow) {
@@ -45,14 +50,11 @@
 
 .filterRow span {
     color: #666;
+    white-space: nowrap;
 }
 
 .filterRow:hover span {
     color: #444;
-}
-
-.filterRowSeparator {
-    border-bottom: #aaa 1px solid;
 }
 
 .filterButton {
@@ -70,8 +72,8 @@
     margin-right: 5px;
 }
 
-.selectedRow span {
-    color: #000 !important;
+.selectedRow.filterRow span {
+    color: var(--nh-text-color);
 }
 
 .selectedRow .filterButton {
