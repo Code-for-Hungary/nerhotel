@@ -1,8 +1,10 @@
 import { defineConfig } from "eslint/config";
 import js from "@eslint/js";
+import globals from "globals";
 import react from "eslint-plugin-react";
 
 export default defineConfig([
+    js.configs.recommended,
     {
         files: ["**/*.js"],
         plugins: {
@@ -22,6 +24,10 @@ export default defineConfig([
                     jsx: true,
                     modules: true,
                 },
+            },
+            globals: {
+                ...globals.browser,
+                ...globals.node,
             },
         },
     },
