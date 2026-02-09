@@ -1,11 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 
 import ErrorBoundary from "./components/ErrorBoundary";
 import AnalyticsProvider from "./components/analytics/AnalyticsProvider";
 
 import { PlacesProvider } from "./context/places-provider";
-import { useTranslation } from "react-i18next";
+
+import { ScrollToTop } from "./components/navigation/ScrollToTop";
 
 import PlacePage from "./pages/PlacePage";
 import PlacesPage from "./pages/PlacesPage";
@@ -29,6 +31,7 @@ function App() {
                 </Helmet>
                 <PlacesProvider>
                     <BrowserRouter>
+                        <ScrollToTop />
                         <AnalyticsProvider>
                             <Routes>
                                 <Route path="/:lang?" element={<LanguageLayout />}>
