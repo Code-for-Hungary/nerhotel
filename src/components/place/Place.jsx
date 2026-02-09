@@ -1,4 +1,4 @@
-import { MapContainer as LeafletMap, Marker, TileLayer } from "react-leaflet";
+import { MapContainer as LeafletMap, Marker, Tooltip, TileLayer } from "react-leaflet";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useLocation } from "react-router";
 import { Helmet } from "react-helmet-async";
@@ -168,7 +168,9 @@ const Place = (props) => {
                     {coordinates && !Number.isNaN(coordinates[0]) && !Number.isNaN(coordinates[1]) ? (
                         <LeafletMap center={coordinates} zoom={config.map.closeZoomLevel}>
                             <TileLayer url={config.map.url} attribution={config.map.attribution} />
-                            <Marker position={coordinates} icon={ORANGE_ICON} />
+                            <Marker position={coordinates} icon={ORANGE_ICON}>
+                                <Tooltip>{getTranslatedPlaceProperty("name", resolvedLanguage, data)}</Tooltip>
+                            </Marker>
                         </LeafletMap>
                     ) : null}
                 </div>
