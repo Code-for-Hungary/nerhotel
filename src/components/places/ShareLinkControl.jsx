@@ -11,11 +11,39 @@ import { ControlsTooltip } from "./ControlsTooltip";
 
 import { canHover } from "../../utils/can-hover";
 
-function ShareLinkControl({ shareLink, label }) {
+import { isIOS, isAndroid } from "../../utils/platform-detection";
+import { useTranslation } from "react-i18next";
+
+function ShareLinkControl({ label }) {
     const [showToast, setShowToast] = useState(false);
     const toastRef = useRef(null);
     const [showTooltip, setShowTooltip] = useState(false);
     const tooltipRef = useRef(null);
+    const { i18n } = useTranslation();
+    // apart from checking for the existence of the WebShare API we
+    // want to make sure that this feature only activates on iOS and Android
+    // because some desktop browsers (eg.: Safari on macOS) implement the WebShare API
+    // but the experience is clunky and way worse then copy-to-clipboard
+    // so we want to keep using a simple copy-to-clipboard flow on "desktop"
+    const shouldUseNativeShare = navigator.share && (isAndroid() || isIOS());
+
+    const doSharing = () => {
+        const queryParams = new URLSearchParams(window.location.search);
+        queryParams.set("utm_source", "map_sharing_button");
+
+        const url = `${window.location.origin}?${queryParams}`;
+
+        if (shouldUseNativeShare) {
+            navigator
+                .share({
+                    title: i18n.resolvedLanguage === "hu" ? "NERHotel" : "HotelOligarch",
+                    url,
+                })
+                .catch((error) => console.error("Error sharing", error));
+        } else {
+            navigator.clipboard.writeText(url);
+        }
+    };
 
     const handleMouseEnter = () => {
         if (canHover()) {
@@ -24,8 +52,11 @@ function ShareLinkControl({ shareLink, label }) {
     };
 
     const handleClick = () => {
-        shareLink();
-        setShowToast(true);
+        doSharing();
+        // No need for this toast when using the native share panel on mobile
+        if (!shouldUseNativeShare) {
+            setShowToast(true);
+        }
     };
 
     useEffect(() => {

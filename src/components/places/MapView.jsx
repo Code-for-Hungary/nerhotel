@@ -98,15 +98,6 @@ export function MapView({ places }) {
         });
     };
 
-    const copyCurrentURLToCLipBoard = () => {
-        const queryParams = new URLSearchParams(searchParams);
-        queryParams.set("utm_source", "map_sharing_button");
-
-        const url = `${window.location.origin}?${queryParams}`;
-
-        navigator.clipboard.writeText(url);
-    };
-
     function getPointsToDisplay() {
         return getPointsWithinBounds(filteredPlaces, map.getBounds());
     }
@@ -279,7 +270,7 @@ export function MapView({ places }) {
                         <LocateControl label={t("mapControl.location")} setMapToUsersLocation={setMapToUsersLocation} />
                         <MapListOpener label={t("mapControl.list")} onLocationListOpen={openLocationList} />
                         <FilterControl label={t("mapControl.filter")} filterType={filterType} setFilterType={setFilterTypeHandler} />
-                        <ShareLinkControl label={t("mapControl.share")} shareLink={copyCurrentURLToCLipBoard} />
+                        <ShareLinkControl label={t("mapControl.share")} />
                     </Controls>
                 </>
             )}
