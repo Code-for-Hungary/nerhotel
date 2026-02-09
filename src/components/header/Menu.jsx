@@ -21,7 +21,7 @@ const Menu = ({ showMenu, onClose }) => {
             <CSSTransition in={showMenu} nodeRef={menuRef} classNames="Menu" unmountOnExit timeout={200}>
                 <nav className={styles.menu} ref={menuRef}>
                     <div className={styles.close}>
-                        <button onClick={onClose} type="button" className="resetButton">
+                        <button onClick={onClose} type="button" className="resetButton" aria-label={t("navigation.closeMenu")}>
                             <Icon img={closeIcon} size="large" />
                         </button>
                     </div>

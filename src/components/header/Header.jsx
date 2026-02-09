@@ -15,7 +15,7 @@ import LangSwitch from "../LangSwitch";
 import { SmartLink } from "../SmartLink";
 
 const Header = ({ onMenuOpen }) => {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     const navigate = useNavigate();
     const { resolvedLanguage } = i18n;
     const location = useLocation();
@@ -60,7 +60,7 @@ const Header = ({ onMenuOpen }) => {
                 />
             </div>
             <div className={styles.menuContainer}>
-                <button onClick={onMenuOpen} type="button" className="resetButton">
+                <button onClick={onMenuOpen} type="button" className="resetButton" aria-label={t("navigation.openMenu")}>
                     <Icon img={listIcon} size="large" />
                 </button>
             </div>
