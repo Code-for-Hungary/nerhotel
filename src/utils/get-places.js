@@ -43,7 +43,7 @@ function makeAddress(city, address, zip) {
  * @returns {Hotel[]}
  */
 export function getPlaces(csvRowsAsObjects) {
-    return csvRowsAsObjects.map((csvRow, index) => {
+    return csvRowsAsObjects.map((csvRow) => {
         /** @type {{name: string, link: string}[]} */
         const oligarchs = [
             { name: csvRow["T1 OL"], link: csvRow["T1_link"], id: csvRow["T1_ID"] },
@@ -59,7 +59,7 @@ export function getPlaces(csvRowsAsObjects) {
         return {
             type: "Feature",
             properties: {
-                id: index,
+                id: csvRow["pl_id"],
                 address: makeAddress(csvRow["city"], csvRow["loc_address"], csvRow["zip"]),
                 company: {
                     name: csvRow["company"].trim(),

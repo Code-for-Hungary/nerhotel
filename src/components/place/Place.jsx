@@ -54,7 +54,7 @@ const Place = (props) => {
     const { places } = usePlacesContext();
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
-    const placeById = places.length ? places.find((place) => place.properties.id === parseInt(props.id)) : null;
+    const placeById = places.length ? places.find((place) => place.properties.id === props.id) : null;
     const data = placeById ? placeById.properties : null;
     const coordinates = placeById ? placeById.geometry.coordinates : null;
     const oligarchData = placeById ? getOligarchData(data.oligarchs || [], data.ceos || []) : null;
