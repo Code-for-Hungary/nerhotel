@@ -1,8 +1,8 @@
 /* By default it will cover the map as it were it's own screen */
 .popup {
     --padding: 20px;
-    position: absolute;
-    top: 8vh;
+    position: fixed;
+    top: calc(var(--header-height) + 8vh);
     right: 0;
     bottom: 0;
     left: 0;
@@ -23,7 +23,8 @@
 /* on larger screens we turn it into a pop-up over the map */
 @media screen and (min-width: 600px) {
     .popup {
-        width: 100%;
+        position: absolute;
+        width: auto;
         max-width: 400px;
         max-height: 80vh;
         top: auto;
@@ -37,7 +38,11 @@
 }
 
 .popupFooter {
+    flex-grow: 0;
     padding: var(--padding);
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
 }
 
 .popupHeader {
