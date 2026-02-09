@@ -27,11 +27,26 @@
     flex: 1;
 }
 
+.menuLabel {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     .searchContainer > * {
         max-width: 62%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .menuButton {
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+    }
+
+    .menuLabel {
+        display: inline;
+        font-size: 1rem;
     }
 }
 

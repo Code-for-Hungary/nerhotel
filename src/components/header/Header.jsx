@@ -60,8 +60,14 @@ const Header = ({ onMenuOpen }) => {
                 />
             </div>
             <div className={styles.menuContainer}>
-                <button onClick={onMenuOpen} type="button" className="resetButton" aria-label={t("navigation.openMenu")}>
+                <button
+                    onClick={onMenuOpen}
+                    type="button"
+                    className={`${styles.menuButton} resetButton`}
+                    aria-label={t("navigation.openMenu")}
+                >
                     <Icon img={listIcon} size="large" />
+                    <span className={styles.menuLabel}>{t("navigation.menuLabel")}</span>
                 </button>
             </div>
         </header>
