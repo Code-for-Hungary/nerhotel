@@ -10,6 +10,7 @@ import styles from "./FilterControl.module.css";
 import { controlButton, button } from "../../css/map-list-opener.module.css";
 import { CSSTransition } from "react-transition-group";
 import { ControlsTooltip } from "./ControlsTooltip";
+import "./FilterControl.transition.css";
 
 import { canHover } from "../../utils/can-hover";
 
@@ -18,6 +19,7 @@ const size = 16;
 function FilterControl({ filterType, setFilterType, label }) {
     const [showTooltip, setShowTooltip] = useState(false);
     const tooltipRef = useRef(null);
+    const filterWrapperRef = useRef(null);
     const [filterOpen, setFilterOpen] = useState(false);
     const { i18n } = useTranslation();
     const options = [
@@ -56,47 +58,51 @@ function FilterControl({ filterType, setFilterType, label }) {
     }
 
     return (
-        <div className="relative">
-            <button
-                aria-label={label}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={() => setShowTooltip(false)}
-                className={`${controlButton} ${styles.filterOpenButton}`}
-                onClick={toggleFilterOpen}
-            >
-                <FaFilter />
-                <div className={`${styles.cornerIcon} ${filterType !== "mind" && styles.showCornerIcon}`}></div>
-            </button>
-            <div className={` ${styles.filterPanelWrapper} ${filterOpen && styles.filterOpen}`} key={filterOpen ? "open" : "closed"}>
-                <div className={`${styles.filterPanel}`}>
-                    {options.map((option, i) => (
-                        <div
-                            key={`${option.type}-${i}`}
-                            className={`${filterType === option.type && styles.selectedRow}
+        <>
+            <div className="relative">
+                <button
+                    aria-label={label}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={() => setShowTooltip(false)}
+                    className={`${controlButton} ${styles.filterOpenButton}`}
+                    onClick={toggleFilterOpen}
+                >
+                    <FaFilter />
+                    <div className={`${styles.cornerIcon} ${filterType !== "mind" && styles.showCornerIcon}`}></div>
+                </button>
+                <CSSTransition
+                    mountOnEnter
+                    unmountOnExit
+                    in={!filterOpen && showTooltip}
+                    classNames="ControlsTooltip"
+                    timeout={200}
+                    nodeRef={tooltipRef}
+                >
+                    <ControlsTooltip message={label} ref={tooltipRef} />
+                </CSSTransition>
+            </div>
+            <CSSTransition mountOnEnter unmountOnExit in={filterOpen} classNames="FilterControl" timeout={200} nodeRef={filterWrapperRef}>
+                <div className={styles.filterPanelWrapper} ref={filterWrapperRef}>
+                    <div className={`${styles.filterPanel}`}>
+                        {options.map((option, i) => (
+                            <div
+                                key={option.type}
+                                className={`${filterType === option.type && styles.selectedRow}
                                 ${styles.filterRow}
                                 ${i !== options.length - 1 && styles.filterRowSeparator}`}
-                            onClick={() => {
-                                setFilterType(option.type);
-                                setFilterOpen(false);
-                            }}
-                        >
-                            <button className={`${styles.filterButton} ${button}`}>{option.icon}</button>
-                            <span>{getTranslation(i18n.language, option)}</span>
-                        </div>
-                    ))}
+                                onClick={() => {
+                                    setFilterType(option.type);
+                                    setFilterOpen(false);
+                                }}
+                            >
+                                <button className={`${styles.filterButton} ${button}`}>{option.icon}</button>
+                                <span>{getTranslation(i18n.language, option)}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <CSSTransition
-                mountOnEnter
-                unmountOnExit
-                in={!filterOpen && showTooltip}
-                classNames="ControlsTooltip"
-                timeout={200}
-                nodeRef={tooltipRef}
-            >
-                <ControlsTooltip message={label} ref={tooltipRef} />
             </CSSTransition>
-        </div>
+        </>
     );
 }
 
