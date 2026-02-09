@@ -71,6 +71,7 @@ export function MapView({ places }) {
     const { dispatchAnalyticsEvent } = useAnalyticsContext();
 
     const [searchParams, setSearchParams] = useSearchParams();
+    const [isUserLocationPending, setIsUserLocationPending] = useState(false);
 
     const [filterType, setFilterType] = useState(searchParams.get("filter") || "mind");
 
@@ -136,17 +137,49 @@ export function MapView({ places }) {
         }
     }, [map, selectedPoint]);
 
-    const setMapToUsersLocation = () => {
-        map.locate()
-            .on("locationfound", (e) => {
-                selectionRef.current = undefined;
-                setShowPopUp(false);
-                map.flyTo(e.latlng, config.map.closeZoomLevel);
-            })
-            .on("locationerror", (e) => {
+    const goToUsersLocation = () => {
+        setIsUserLocationPending(true);
+
+        // One-time setup for Leaflet listeners
+        map.once("locationfound", (e) => {
+            selectionRef.current = undefined;
+            setShowPopUp(false);
+            setIsUserLocationPending(false);
+            map.flyTo(e.latlng, config.map.closeZoomLevel);
+        });
+
+        map.once("locationerror", (e) => {
+            setIsUserLocationPending(false);
+            // Only alert if it's a real denial, not just a timeout
+            // Code 1 is PERMISSION_DENIED
+            if (e.code === 1) {
                 alert(t("error.noGeoLocation"));
-                console.error(e);
-            });
+            }
+            console.error("Location error:", e.message);
+        });
+
+        map.locate({
+            setView: false, // We handle this manually with flyTo
+            timeout: 60000, // increase the time while Leaflet waits for permission to location access before throwing a timeout error
+            enableHighAccuracy: true,
+        });
+    };
+
+    const handleUserLocation = async () => {
+        if (!navigator.geolocation) {
+            alert(t("error.geoLocationNotSupported"));
+            return;
+        }
+
+        const permissionResult = await navigator.permissions.query({ name: "geolocation" });
+
+        if (permissionResult.state === "denied") {
+            alert(t("error.noGeoLocation"));
+            return;
+        }
+
+        // If granted or prompt, just let Leaflet handle the UI/UX
+        goToUsersLocation();
     };
 
     // Wrapped in useCallback to keep it a stable reference for the memoized component
@@ -267,7 +300,11 @@ export function MapView({ places }) {
                     <TileLayer url={config.map.url} attribution={config.map.attribution} />
                     {memoizedMap}
                     <Controls>
-                        <LocateControl label={t("mapControl.location")} setMapToUsersLocation={setMapToUsersLocation} />
+                        <LocateControl
+                            label={t("mapControl.location")}
+                            setMapToUsersLocation={handleUserLocation}
+                            pending={isUserLocationPending}
+                        />
                         <MapListOpener label={t("mapControl.list")} onLocationListOpen={openLocationList} />
                         <FilterControl label={t("mapControl.filter")} filterType={filterType} setFilterType={setFilterTypeHandler} />
                         <ShareLinkControl label={t("mapControl.share")} />
