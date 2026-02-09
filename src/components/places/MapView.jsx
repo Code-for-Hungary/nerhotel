@@ -99,7 +99,10 @@ export function MapView({ places }) {
     };
 
     const copyCurrentURLToCLipBoard = () => {
-        const url = window.location;
+        const queryParams = new URLSearchParams(searchParams);
+        queryParams.set("utm_source", "map_sharing_button");
+
+        const url = `${window.location.origin}?${queryParams}`;
 
         navigator.clipboard.writeText(url);
     };
