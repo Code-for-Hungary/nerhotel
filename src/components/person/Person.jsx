@@ -1,11 +1,12 @@
 import { useState, lazy, Suspense, useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet-async";
 import { useNavigate, useLocation } from "react-router";
+import MarkerClusterGroup from "react-leaflet-markercluster";
 
 import { SmartLink } from "../SmartLink";
 import { useTranslation } from "react-i18next";
 import Leaflet from "leaflet";
-import { MapContainer as Map, TileLayer, Marker } from "react-leaflet";
+import { MapContainer as Map, TileLayer, Marker, Tooltip } from "react-leaflet";
 import { usePlacesContext } from "../../context/places-provider.jsx";
 import AssociatedPlace from "./AssociatedPlace.jsx";
 import LoadingSpinner from "../ui/LoadingSpinner";
@@ -23,6 +24,7 @@ import getTranslatedKMonitorLink from "../../utils/person/get-translated-k-monit
 import getPersonProfile from "../../utils/person/get-person-profile";
 
 import { ORANGE_ICON } from "../../leaflet-helper";
+import { createClusterCustomIcon } from "../../leaflet-helper.jsx";
 
 const PersonProfile = lazy(() => import("./PersonProfile"));
 
@@ -157,24 +159,34 @@ const Person = (props) => {
                     <div className={styles.map}>
                         <Map bounds={bounds}>
                             <TileLayer url={config.map.url} attribution={config.map.attribution} />
-                            {affiliatedPlaces.map((point) => {
-                                const [latitude, longitude] = point.geometry.coordinates;
+                            <MarkerClusterGroup
+                                maxClusterRadius={6}
+                                zoomToBoundsOnClick
+                                showCoverageOnHover={false}
+                                iconCreateFunction={createClusterCustomIcon}
+                                chunkedLoading
+                            >
+                                {affiliatedPlaces.map((place) => {
+                                    const [latitude, longitude] = place.geometry.coordinates;
 
-                                if (Number.isNaN(latitude) || Number.isNaN(longitude)) return null;
+                                    if (Number.isNaN(latitude) || Number.isNaN(longitude)) return null;
 
-                                return (
-                                    <Marker
-                                        position={[latitude, longitude]}
-                                        key={point.properties.id}
-                                        icon={ORANGE_ICON}
-                                        eventHandlers={{
-                                            click: () => {
-                                                clickCallback(point);
-                                            },
-                                        }}
-                                    />
-                                );
-                            })}
+                                    return (
+                                        <Marker
+                                            position={[latitude, longitude]}
+                                            key={`${place.properties.id}-${place.properties.name}`}
+                                            icon={ORANGE_ICON}
+                                            eventHandlers={{
+                                                click: () => {
+                                                    navigate(`/place/${place.properties.id}`);
+                                                },
+                                            }}
+                                        >
+                                            <Tooltip>{place.properties.name}</Tooltip>
+                                        </Marker>
+                                    );
+                                })}
+                            </MarkerClusterGroup>
                         </Map>
                     </div>
                 </div>

@@ -6,15 +6,23 @@ import Icon from "../ui/Icon";
 import myLocationIcon from "../../assets/my-location.svg";
 import { ControlsTooltip } from "./ControlsTooltip";
 
+import { canHover } from "../../utils/can-hover";
+
 function LocateControl({ setMapToUsersLocation, label }) {
     const [showTooltip, setShowTooltip] = useState(false);
     const tooltipRef = useRef(null);
+
+    const handleMouseEnter = () => {
+        if (canHover()) {
+            setShowTooltip(true);
+        }
+    };
 
     return (
         <div className="relative">
             <button
                 aria-label={label}
-                onMouseEnter={() => setShowTooltip(true)}
+                onMouseEnter={handleMouseEnter}
                 onMouseLeave={() => setShowTooltip(false)}
                 className={`${styles.controlButton} ${styles.locateButton}`}
                 onClick={setMapToUsersLocation}

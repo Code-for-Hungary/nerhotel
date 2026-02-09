@@ -6,14 +6,22 @@ import listIcon from "../../assets/list-icon.svg";
 import styles from "../../css/map-list-opener.module.css";
 import { ControlsTooltip } from "./ControlsTooltip";
 
+import { canHover } from "../../utils/can-hover";
+
 function MapListOpener({ onLocationListOpen, label }) {
     const [showTooltip, setShowTooltip] = useState(false);
     const tooltipRef = useRef(null);
 
+    const handleMouseEnter = () => {
+        if (canHover()) {
+            setShowTooltip(true);
+        }
+    };
+
     return (
         <div className="relative">
             <button
-                onMouseEnter={() => setShowTooltip(true)}
+                onMouseEnter={handleMouseEnter}
                 onMouseLeave={() => setShowTooltip(false)}
                 aria-label={label}
                 className={`${styles.controlButton} ${styles.listButton}`}

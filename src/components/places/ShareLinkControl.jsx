@@ -9,11 +9,19 @@ import Toast from "../ui/Toast";
 import shareIcon from "../../assets/share-icon.svg";
 import { ControlsTooltip } from "./ControlsTooltip";
 
+import { canHover } from "../../utils/can-hover";
+
 function ShareLinkControl({ shareLink, label }) {
     const [showToast, setShowToast] = useState(false);
     const toastRef = useRef(null);
     const [showTooltip, setShowTooltip] = useState(false);
     const tooltipRef = useRef(null);
+
+    const handleMouseEnter = () => {
+        if (canHover()) {
+            setShowTooltip(true);
+        }
+    };
 
     const handleClick = () => {
         shareLink();
@@ -32,7 +40,7 @@ function ShareLinkControl({ shareLink, label }) {
     return (
         <div className="relative">
             <button
-                onMouseEnter={() => setShowTooltip(true)}
+                onMouseEnter={handleMouseEnter}
                 onMouseLeave={() => setShowTooltip(false)}
                 aria-label={label}
                 className={`${listStyles.controlButton} ${styles.shareButton}`}

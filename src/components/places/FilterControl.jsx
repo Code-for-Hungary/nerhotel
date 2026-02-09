@@ -11,6 +11,8 @@ import { controlButton, button } from "../../css/map-list-opener.module.css";
 import { CSSTransition } from "react-transition-group";
 import { ControlsTooltip } from "./ControlsTooltip";
 
+import { canHover } from "../../utils/can-hover";
+
 const size = 16;
 
 function FilterControl({ filterType, setFilterType, label }) {
@@ -34,6 +36,12 @@ function FilterControl({ filterType, setFilterType, label }) {
         setFilterOpen((prevState) => !prevState);
     }, []);
 
+    const handleMouseEnter = () => {
+        if (canHover()) {
+            setShowTooltip(true);
+        }
+    };
+
     function getTranslation(language, option) {
         switch (language) {
             case "hu":
@@ -51,7 +59,7 @@ function FilterControl({ filterType, setFilterType, label }) {
         <div className="relative">
             <button
                 aria-label={label}
-                onMouseEnter={() => setShowTooltip(true)}
+                onMouseEnter={handleMouseEnter}
                 onMouseLeave={() => setShowTooltip(false)}
                 className={`${controlButton} ${styles.filterOpenButton}`}
                 onClick={toggleFilterOpen}
