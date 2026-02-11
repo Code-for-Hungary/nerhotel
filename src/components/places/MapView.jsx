@@ -24,7 +24,7 @@ import List from "../List.jsx";
 import { Controls } from "./Controls.jsx";
 
 const preloadBlue = new Image();
-preloadBlue.src = BLUE_ICON;
+preloadBlue.src = BLUE_ICON.options.iconUrl;
 
 const MemoizedMarker = memo(({ place, onMarkerClick, selectionRef }) => {
     const [, setTick] = useState(0);
