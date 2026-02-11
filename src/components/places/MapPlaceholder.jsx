@@ -4,7 +4,7 @@ function MapPlaceholder() {
     return (
         <div
             className="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-            style={{ position: "relative" }}
+            style={{ position: "absolute" }}
         >
             <div
                 style={{

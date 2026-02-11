@@ -15,7 +15,7 @@ function Places() {
     const { places, isLoading } = usePlacesContext();
 
     if (isLoading) {
-        <MapPlaceholder />;
+        return <MapPlaceholder />;
     }
 
     if (!isLoading && places.length) {
