@@ -41,7 +41,9 @@ function ShareLinkControl({ label }) {
                 })
                 .catch((error) => console.error("Error sharing", error));
         } else {
-            navigator.clipboard.writeText(url);
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(url);
+            }
         }
     };
 
