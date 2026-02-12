@@ -1,7 +1,14 @@
-import styles from "./Toast.module.css";
+import { forwardRef } from "react";
 
-function Toast({ message }) {
-    return <div className={styles.toast}>{message}</div>;
-}
+import styles from "./Toast.module.css";
+import "./Toast.transition.css";
+
+const Toast = forwardRef(({ message, ...props }, ref) => {
+    return (
+        <div className={styles.toast} {...props} ref={ref}>
+            {message}
+        </div>
+    );
+});
 
 export default Toast;

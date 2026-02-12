@@ -1,52 +1,44 @@
-import { useContext, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router";
 
-import Search from "./Search";
+import SearchForm from "./SearchForm";
 import styles from "./Header.module.css";
 import Icon from "../ui/Icon";
 import listIcon from "../../assets/menu-icon.svg";
 
 import logo from "../../assets/nh-logo.svg";
 import logoEn from "../../assets/nh-logo-en.svg";
-import { MapContext } from "../../context";
 
 import { config } from "../../config";
 import LangSwitch from "../LangSwitch";
 
 import { SmartLink } from "../SmartLink";
 
-const Header = () => {
-    const { dispatch } = useContext(MapContext);
-    const { i18n } = useTranslation();
+const Header = ({ onMenuOpen }) => {
+    const { t, i18n } = useTranslation();
     const navigate = useNavigate();
     const { resolvedLanguage } = i18n;
     const location = useLocation();
 
     const languageChangeHandler = (e) => {
-        const lang = e.target.value;
-        i18n.changeLanguage(lang);
-        localStorage.setItem(config.locales.paramName, lang);
-        navigate({
-            pathname: location.pathname,
-            search: `?${config.locales.paramName}=${lang}`,
-        });
-    };
+        const newLang = e.target.value;
+        // Replaces the first part of the path with the new language
+        const pathParts = location.pathname.split("/").filter(Boolean);
 
-    const onMenuCallback = useCallback(() => {
-        dispatch({ type: "ToggleMenu", showMenu: true });
-    }, [dispatch]);
+        // If first part is a known lang, replace it; otherwise, prepend it
+        if (config.locales.available.includes(pathParts[0])) {
+            pathParts[0] = newLang;
+        } else {
+            pathParts.unshift(newLang);
+        }
+
+        navigate("/" + pathParts.join("/") + location.search);
+    };
 
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
-                <SmartLink
-                    to="/"
-                    onClick={() => {
-                        dispatch({ type: "TogglePopup", showPopup: false });
-                    }}
-                    className={styles.logo}
-                >
+                <SmartLink to="/" className={styles.logo}>
                     <img
                         src={resolvedLanguage === "hu" ? logo : logoEn}
                         alt=""
@@ -58,7 +50,7 @@ const Header = () => {
                 </SmartLink>
             </div>
             <div className={styles.searchContainer}>
-                <Search />
+                <SearchForm />
             </div>
             <div className={styles.langSwitchContainer}>
                 <LangSwitch
@@ -68,8 +60,14 @@ const Header = () => {
                 />
             </div>
             <div className={styles.menuContainer}>
-                <button onClick={onMenuCallback} type="button" className="resetButton">
+                <button
+                    onClick={onMenuOpen}
+                    type="button"
+                    className={`${styles.menuButton} resetButton`}
+                    aria-label={t("navigation.openMenu")}
+                >
                     <Icon img={listIcon} size="large" />
+                    <span className={styles.menuLabel}>{t("navigation.menuLabel")}</span>
                 </button>
             </div>
         </header>

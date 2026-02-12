@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import Icon from "./ui/Icon";
 import horseIcon from "../assets/horse-icon.svg";
 import pinIcon from "../assets/pin-icon.svg";
@@ -7,24 +9,16 @@ const ListItem = ({ item, onClick, ...props }) => {
     const oligarchs = item.properties.mainOligarch.length > 0 ? item.properties.mainOligarch : item.properties.oligarchs;
 
     return (
-        <div
-            className={styles.listItem}
-            {...props}
-            tabIndex={0}
-            onClick={onClick}
-            onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                    onClick();
-                }
-            }}
-        >
-            <h1>{item.properties.name}</h1>
+        <div className={styles.listItem} {...props}>
+            <h1>
+                <Link to={`/place/${item.properties.id}`}>{item.properties.name}</Link>
+            </h1>
             <div className={styles.listItemRow}>
                 <div className={styles.listItemCol}>
                     <Icon img={horseIcon} size="small" />
                     <div className={styles.oligarchList}>
-                        {oligarchs.map((oligarch, key) => (
-                            <p key={key}>
+                        {oligarchs.map((oligarch) => (
+                            <p key={oligarch.name}>
                                 {oligarch.link ? (
                                     <a href={oligarch.link} target="_blank" rel="noopener noreferrer">
                                         {oligarch.name}

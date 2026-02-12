@@ -16,7 +16,7 @@ yarn.lock
 
 # downloaded data
 /data
-/scripts/download-hotels-as-json.*.js
+/scripts/download-places-as-json.*.js
 
 # misc
 .DS_Store

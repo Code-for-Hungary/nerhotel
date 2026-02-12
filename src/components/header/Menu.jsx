@@ -1,4 +1,4 @@
-import { useContext, useCallback, useRef } from "react";
+import { useRef } from "react";
 import { SmartLink } from "../SmartLink";
 import closeIcon from "../../assets/close-icon.svg";
 import styles from "./Menu.module.css";
@@ -6,28 +6,22 @@ import Icon from "../ui/Icon";
 import image from "../../assets/nh-main.svg";
 import logo from "../../assets/nh-logo.svg";
 import logoEn from "../../assets/nh-logo-en.svg";
-import { MapContext } from "../../context";
 import { useTranslation } from "react-i18next";
 import { CSSTransition } from "react-transition-group";
 import "./Menu.transition.css";
 
-const Menu = () => {
+const Menu = ({ showMenu, onClose }) => {
     const menuRef = useRef(null);
     const backdropRef = useRef(null);
-    const { dispatch, showMenu } = useContext(MapContext);
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
-    const closeMenu = useCallback(() => {
-        dispatch({ type: "ToggleMenu", showMenu: false });
-        dispatch({ type: "ToggleList", showList: false });
-    }, [dispatch]);
 
     return (
         <>
             <CSSTransition in={showMenu} nodeRef={menuRef} classNames="Menu" unmountOnExit timeout={200}>
                 <nav className={styles.menu} ref={menuRef}>
                     <div className={styles.close}>
-                        <button onClick={closeMenu} type="button" className="resetButton">
+                        <button onClick={onClose} type="button" className="resetButton" aria-label={t("navigation.closeMenu")}>
                             <Icon img={closeIcon} size="large" />
                         </button>
                     </div>
@@ -38,32 +32,32 @@ const Menu = () => {
 
                     <ul className={styles.menulist}>
                         <li>
-                            <SmartLink to="/" onClick={closeMenu}>
+                            <SmartLink to="/" onClick={onClose}>
                                 {t("navigation.map")}
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to="/about" onClick={closeMenu}>
+                            <SmartLink to="/about" onClick={onClose}>
                                 {t("navigation.about")}
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to={t("navigation.submit-link")} onClick={closeMenu}>
+                            <SmartLink to={t("navigation.submit-link")} onClick={onClose}>
                                 {t("navigation.submit")}
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to="/contact" onClick={closeMenu}>
+                            <SmartLink to="/contact" onClick={onClose}>
                                 {t("navigation.contact")}
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to="https://tamogatas.k-monitor.hu" onClick={closeMenu}>
+                            <SmartLink to="https://tamogatas.k-monitor.hu" onClick={onClose}>
                                 {t("navigation.supportUs")}
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to="/data-export" onClick={closeMenu}>
+                            <SmartLink to="/data-export" onClick={onClose}>
                                 {t("navigation.export")}
                             </SmartLink>
                         </li>
@@ -72,7 +66,7 @@ const Menu = () => {
                             */}
                         {resolvedLanguage === "hu" && (
                             <li>
-                                <SmartLink to="/press-releases" onClick={closeMenu}>
+                                <SmartLink to="/press-releases" onClick={onClose}>
                                     #nerhotel
                                 </SmartLink>
                             </li>
@@ -102,7 +96,7 @@ const Menu = () => {
                 </nav>
             </CSSTransition>
             <CSSTransition in={showMenu} nodeRef={backdropRef} classNames="MenuBackdrop" unmountOnExit timeout={200}>
-                <div className={styles.backdrop} ref={backdropRef} onClick={closeMenu} />
+                <div className={styles.backdrop} ref={backdropRef} onClick={onClose} />
             </CSSTransition>
         </>
     );

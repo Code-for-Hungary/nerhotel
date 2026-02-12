@@ -1,0 +1,17 @@
+.ControlsTooltip-enter {
+    opacity: 0;
+    transform: translateX(10px);
+}
+.ControlsTooltip-enter-active {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transform: translateX(0);
+}
+.ControlsTooltip-exit {
+    opacity: 1;
+}
+.ControlsTooltip-exit-active {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
