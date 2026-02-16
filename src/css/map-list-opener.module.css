@@ -1,13 +1,12 @@
 .controlButton {
-    right: 10px;
     width: 34px;
     height: 34px;
-    z-index: 1000;
+
     border: 2px solid var(--nh-gray);
     border-radius: 4px;
     background: #fafafa;
     cursor: pointer;
-    position: absolute;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +33,6 @@
 }
 
 .locateButton {
-    top: 12px;
     padding: 4px;
     border-bottom-width: 1px;
     border-bottom-left-radius: 0;
@@ -42,7 +40,6 @@
 }
 
 .listButton {
-    top: 46px;
     border-top-width: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;

@@ -1,0 +1,5 @@
+.controlsTooltip {
+    z-index: 1000; /* makes it appear over the map */
+    top: 0;
+    right: 42px; /* hard-coded, given that these buttons are always 34px wide and the arrow of the tooltip is 6px and we want a bit of distance */
+}

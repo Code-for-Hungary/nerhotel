@@ -1,9 +1,8 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router";
 import isEmail from "../utils/is-email";
 import isUrl from "../utils/is-url";
 
 export const SmartLink = ({ children, to, ...props }) => {
-    const { search } = useLocation();
     const isToAnEmail = isEmail(to);
 
     if (isUrl(to) || isToAnEmail) {
@@ -17,7 +16,7 @@ export const SmartLink = ({ children, to, ...props }) => {
     }
 
     return (
-        <Link to={to + search} {...props}>
+        <Link to={to} {...props}>
             {children}
         </Link>
     );

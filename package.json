@@ -3,9 +3,10 @@
     "version": "1.2.0",
     "private": true,
     "license": "GPL-3.0-or-later",
+    "type": "module",
     "engines": {
-        "node": "^18.*.*",
-        "npm": "^8.*.*"
+        "node": "^24.*.*",
+        "npm": "^11.*.*"
     },
     "repository": {
         "type": "git",
@@ -16,32 +17,37 @@
         "email": "info@k-monitor.hu"
     },
     "dependencies": {
-        "@tolgee/i18next": "^5.16.3",
-        "i18next": "^22.0.6",
-        "leaflet": "^1.9.3",
+        "@tolgee/i18next": "^6.2.6",
+        "i18next": "^25.2.1",
+        "leaflet": "^1.9.4",
         "leaflet.markercluster": "^1.5.3",
-        "mkdirp": "^2.1.5",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
+        "mkdirp": "^3.0.1",
+        "react": "~19.2.4",
+        "react-dom": "~19.2.4",
         "react-gtm-module": "^2.0.11",
-        "react-helmet": "^6.1.0",
-        "react-i18next": "^12.1.1",
-        "react-icons": "^5.2.1",
-        "react-leaflet": "^4.2.0",
-        "react-leaflet-cluster": "^2.1.0",
-        "react-markdown": "^8.0.4",
-        "react-router-dom": "^5.1.0",
-        "react-scripts": "5.0.1",
+        "react-helmet-async": "^2.0.5",
+        "react-i18next": "^15.5.3",
+        "react-icons": "^5.5.0",
+        "react-leaflet": "^5.0.0",
+        "react-leaflet-markercluster": "^5.0.0-rc.0",
+        "react-markdown": "^10.1.0",
+        "react-router": "^7.6.2",
         "react-transition-group": "^4.4.5",
-        "rehype-raw": "^6.1.1"
+        "rehype-raw": "^7.0.0"
     },
     "devDependencies": {
-        "@testing-library/react": "^14.0.0",
-        "@vitejs/plugin-react": "^3.1.0",
+        "@eslint/js": "^9.30.0",
+        "@testing-library/react": "^16.3.0",
+        "@vitejs/plugin-basic-ssl": "^2.1.4",
+        "@vitejs/plugin-react": "^4.5.2",
+        "eslint": "^9.30.0",
+        "eslint-plugin-react": "^7.37.5",
+        "globals": "^17.3.0",
+        "jsdom": "^26.1.0",
         "prettier": "^2.8.4",
-        "vite": "^4.1.0",
-        "vite-plugin-markdown": "^2.1.0",
-        "vitest": "^0.28.5"
+        "vite": "^6.3.5",
+        "vite-plugin-markdown": "^2.2.0",
+        "vitest": "^3.2.3"
     },
     "scripts": {
         "dev": "vite",
@@ -67,5 +73,10 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "overrides": {
+        "react-helmet-async": {
+            "react": "^19.1.0"
+        }
     }
 }

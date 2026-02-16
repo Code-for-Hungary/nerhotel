@@ -1,0 +1,16 @@
+import { useParams } from "react-router";
+
+import Layout from "./Layout";
+import Person from "../components/person/Person";
+
+const PersonPage = () => {
+    const { name } = useParams();
+
+    return (
+        <Layout>
+            <Person name={name} />
+        </Layout>
+    );
+};
+
+export default PersonPage;
