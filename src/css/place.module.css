@@ -7,6 +7,9 @@
 .place h1 {
     margin-top: 0;
     margin-bottom: var(--h1-mb);
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .placeWrapper {

@@ -12,6 +12,11 @@
     z-index: 1;
     border: 2px solid var(--nh-gray);
     border-radius: 4px;
+
+    &.inline {
+        position: static;
+        margin-bottom: 20px;
+    }
 }
 
 .bannerContent {

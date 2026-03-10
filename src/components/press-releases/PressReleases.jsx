@@ -17,14 +17,19 @@ import { PAGE_SIZE } from "./api";
 import { usePressReleases } from "./hooks/use-press-releases";
 import { html as intro } from "./content/intro.md";
 
+import { OnePercentDonationBanner } from "../one-percent-donation-banner";
+import { useBannerContext } from "../../context/banner-provider";
+
 // This screen is only available in Hungarian, if we choose to translate it, we should add this message to Tolgee
 const ERROR_MESSAGE = "Hiba történt az adatok betöltése közben, kérlek próbáld újratölteni az oldalt!";
 
 export const PressReleases = () => {
+    const { isVisible, onDismiss } = useBannerContext();
     const { initialItemsLoading, results, total, loadMoreHandler, nextPageLoading } = usePressReleases(ERROR_MESSAGE, PAGE_SIZE);
 
     return (
         <Wrapper narrow>
+            {isVisible && <OnePercentDonationBanner isInline onDismiss={onDismiss} />}
             <Content style={{ paddingBottom: "1rem" }}>
                 <h1>#NERHotel</h1>
 
