@@ -24,7 +24,6 @@ import pinIcon from "../../assets/pin-icon.svg";
 import { config } from "../../config.js";
 import displayTranslatedPersonType from "../../utils/person/display-translated-person-type.js";
 
-import { isOnePercentDonationSeason } from "../one-percent-donation-banner/utils.js";
 import { useBannerContext } from "../../context/banner-provider.jsx";
 import { OnePercentDonationBanner } from "../one-percent-donation-banner";
 
