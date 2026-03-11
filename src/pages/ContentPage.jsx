@@ -10,6 +10,9 @@ import { SmartLink } from "../components/SmartLink";
 import { Wrapper } from "../components/ui/wrapper/Wrapper";
 import { Content } from "../components/ui/content/Content";
 
+import { OnePercentDonationBanner } from "../components/one-percent-donation-banner";
+import { useBannerContext } from "../context/banner-provider";
+
 const getContent = async (fileName, lang) => {
     try {
         const mdFilePath = await import(`../content/${lang}/${fileName}.md`);
@@ -30,6 +33,7 @@ const ContentPage = () => {
     const { search } = location;
     const pathNameAsArray = location.pathname.split("/").filter((segment) => segment !== "");
     const lastPathSegment = pathNameAsArray.at(-1);
+    const { isVisible, onDismiss } = useBannerContext();
 
     useEffect(() => {
         let isSubscribed = true;
@@ -62,6 +66,7 @@ const ContentPage = () => {
             </Helmet>
             <Wrapper>
                 <Content>
+                    {isVisible && <OnePercentDonationBanner onDismiss={onDismiss} isInline />}
                     <ReactMarkdown
                         children={pageContent}
                         components={{

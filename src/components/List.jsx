@@ -8,7 +8,7 @@ import closeIcon from "../assets/close-icon.svg";
 import ListItem from "./ListItem";
 import "./List.transition.css";
 
-const List = forwardRef(({ list, onItemClick, onClose, emptyState, ...props }, ref) => {
+const List = forwardRef(({ list, onItemClick, onClose, emptyState, beforeItemsSlot, ...props }, ref) => {
     return (
         <div className={styles.list} aria-modal ref={ref} {...props}>
             <div className={styles.listContent}>
@@ -19,6 +19,7 @@ const List = forwardRef(({ list, onItemClick, onClose, emptyState, ...props }, r
                 </div>
                 <div className={styles.scrollPlane}>
                     <div className={styles.listWrapper}>
+                        {beforeItemsSlot ? beforeItemsSlot : null}
                         {list &&
                             list.length > 0 &&
                             list.map((item) => <ListItem key={item.properties.id} item={item} onClick={onItemClick} />)}

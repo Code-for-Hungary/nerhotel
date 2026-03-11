@@ -6,6 +6,8 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import AnalyticsProvider from "./components/analytics/AnalyticsProvider";
 
 import { PlacesProvider } from "./context/places-provider";
+import { BannerProvider } from "./context/banner-provider";
+import { isOnePercentDonationSeason, checkIfAlreadyDismissed, rememberDismiss } from "./components/one-percent-donation-banner";
 
 import { ScrollToTop } from "./components/navigation/ScrollToTop";
 
@@ -19,7 +21,7 @@ import { SearchPage } from "./pages/SearchPage";
 import { LanguageLayout } from "./pages/LanguageLayout";
 
 function App() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <HelmetProvider>
@@ -33,19 +35,26 @@ function App() {
                     <BrowserRouter>
                         <ScrollToTop />
                         <AnalyticsProvider>
-                            <Routes>
-                                <Route path="/:lang?" element={<LanguageLayout />}>
-                                    <Route index element={<PlacesPage />} />
-                                    <Route path="place/:id" element={<PlacePage />} />
-                                    <Route path="person/:name" element={<PersonPage />} />
-                                    <Route path="about" element={<ContentPage />} />
-                                    <Route path="contact" element={<ContentPage />} />
-                                    <Route path="data-export" element={<ContentPage />} />
-                                    <Route path="press-releases" element={<PressReleasesPage />} />
-                                    <Route path="search" element={<SearchPage />} />
-                                    <Route path="*" element={<ErrorPage />} />
-                                </Route>
-                            </Routes>
+                            <BannerProvider
+                                condition={isOnePercentDonationSeason}
+                                dismissCallback={rememberDismiss}
+                                checkIfDismissed={checkIfAlreadyDismissed}
+                                lang={i18n.resolvedLanguage}
+                            >
+                                <Routes>
+                                    <Route path="/:lang?" element={<LanguageLayout />}>
+                                        <Route index element={<PlacesPage />} />
+                                        <Route path="place/:id" element={<PlacePage />} />
+                                        <Route path="person/:name" element={<PersonPage />} />
+                                        <Route path="about" element={<ContentPage />} />
+                                        <Route path="contact" element={<ContentPage />} />
+                                        <Route path="data-export" element={<ContentPage />} />
+                                        <Route path="press-releases" element={<PressReleasesPage />} />
+                                        <Route path="search" element={<SearchPage />} />
+                                        <Route path="*" element={<ErrorPage />} />
+                                    </Route>
+                                </Routes>
+                            </BannerProvider>
                         </AnalyticsProvider>
                     </BrowserRouter>
                 </PlacesProvider>

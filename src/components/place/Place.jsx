@@ -24,6 +24,9 @@ import pinIcon from "../../assets/pin-icon.svg";
 import { config } from "../../config.js";
 import displayTranslatedPersonType from "../../utils/person/display-translated-person-type.js";
 
+import { useBannerContext } from "../../context/banner-provider.jsx";
+import { OnePercentDonationBanner } from "../one-percent-donation-banner";
+
 /**
  * @typedef {Object} HotelGeometry
  * @property {string} type
@@ -60,6 +63,7 @@ const Place = (props) => {
     const oligarchData = placeById ? getOligarchData(data.oligarchs || [], data.ceos || []) : null;
     const navigate = useNavigate();
     const location = useLocation();
+    const { isVisible, onDismiss } = useBannerContext();
 
     const backHandler = (e) => {
         if (location.key === "default") {
@@ -70,7 +74,8 @@ const Place = (props) => {
     };
 
     return (
-        <div className={[styles.place, "place"].join(" ")}>
+        <div className={styles.place}>
+            {isVisible && <OnePercentDonationBanner isInline onDismiss={onDismiss} />}
             <div className={styles.placeWrapper}>
                 <div className={styles.info}>
                     {data ? (

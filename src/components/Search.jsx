@@ -10,11 +10,15 @@ import styles from "../css/map.module.css";
 import List from "./List";
 import LoadingSpinner from "./ui/LoadingSpinner";
 
+import { OnePercentDonationBanner } from "./one-percent-donation-banner";
+import { useBannerContext } from "../context/banner-provider";
+
 export const Search = ({ query }) => {
     const [results, setResults] = useState([]);
     const { places, isLoading } = usePlacesContext();
     const navigate = useNavigate();
     const { t } = useTranslation();
+    const { isVisible, onDismiss } = useBannerContext();
 
     useEffect(() => {
         if (!isLoading && places.length && query && query.length) {
@@ -43,6 +47,7 @@ export const Search = ({ query }) => {
                     <List
                         list={results}
                         onClose={() => navigate(-1)}
+                        beforeItemsSlot={isVisible ? <OnePercentDonationBanner isInline onDismiss={onDismiss} /> : null}
                         emptyState={
                             <Trans i18nKey="list.emptyState">
                                 Adatbázisunkban nincsen megfelelő szállás- vagy vendéglátóhely. Ha tudsz egy politikaközeli helyet,
