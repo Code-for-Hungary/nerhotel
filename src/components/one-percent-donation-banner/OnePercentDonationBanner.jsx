@@ -20,7 +20,7 @@ export const OnePercentDonationBanner = ({ isInline, onDismiss, ...props }) => {
                     Hasznosnak találod az oldalt?{" "}
                     <strong>
                         <a
-                            href="https://tamogatas.k-monitor.hu/#onepc?utm_source=nerhotel_banner"
+                            href="https://tamogatas.k-monitor.hu/?utm_source=nerhotel_banner#onepc"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
