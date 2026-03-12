@@ -34,6 +34,7 @@ function SearchForm() {
                 <input
                     onChange={(e) => setValue(e.target.value)}
                     value={value}
+                    name="q"
                     className={styles.input}
                     placeholder={t("search.placeholder")}
                     type="search"

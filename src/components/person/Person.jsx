@@ -26,6 +26,9 @@ import getPersonProfile from "../../utils/person/get-person-profile";
 import { ORANGE_ICON } from "../../leaflet-helper";
 import { createClusterCustomIcon } from "../../leaflet-helper.jsx";
 
+import { OnePercentDonationBanner } from "../one-percent-donation-banner";
+import { useBannerContext } from "../../context/banner-provider.jsx";
+
 const PersonProfile = lazy(() => import("./PersonProfile"));
 
 function PersonProfileCard(props) {
@@ -45,6 +48,7 @@ const Person = (props) => {
     const [profileInfoError, setProfileInfoError] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
+    const { isVisible, onDismiss } = useBannerContext();
 
     const backHandler = (e) => {
         if (location.key === "default") {
@@ -109,7 +113,8 @@ const Person = (props) => {
     useEffect(loadPersonProfile, [loadPersonProfile]);
 
     return (
-        <div className={[styles.place, "place"].join(" ")}>
+        <div className={styles.place}>
+            {isVisible && <OnePercentDonationBanner isInline onDismiss={onDismiss} />}
             <Helmet>
                 <title>
                     {personName} - {t("general.siteName")}
@@ -120,7 +125,7 @@ const Person = (props) => {
                     <div className={styles.info}>
                         <h1>
                             {isMainOligarch && (
-                                <SmartLink to="/about">
+                                <SmartLink to="/about" style={{ lineHeight: 0 }}>
                                     <Icon img={horseIcon} size="large" className={styles.inlineIcon} />
                                 </SmartLink>
                             )}

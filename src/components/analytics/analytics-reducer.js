@@ -14,6 +14,14 @@ export function analyticsReducer(state, action) {
                     label: `${action.payload.name} (id: ${action.payload.id})`,
                 },
             };
+        case "CloseOnePercentBanner":
+            return {
+                event: "event",
+                eventProps: {
+                    action: "dismiss one percent tax donation banner",
+                    category: "banner",
+                },
+            };
         default:
             return state;
     }
