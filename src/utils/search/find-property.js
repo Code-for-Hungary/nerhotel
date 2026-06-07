@@ -1,4 +1,5 @@
 import removeAccents from "./remove-accents";
+import { getUniqueElements } from "../get-unique-elements";
 
 /**
  * @param {{name: string, address: string, mainOligarch: {name: string}[]}} place
@@ -6,16 +7,25 @@ import removeAccents from "./remove-accents";
  * @returns {*|boolean}
  */
 function findProperty(place, phrase) {
-    let foundOligarch = [];
-    if (place.mainOligarch.length > 0) {
-        foundOligarch = place.mainOligarch.filter((oligarch) => {
-            return oligarch.name.toLowerCase().includes(phrase) || removeAccents(oligarch.name).includes(phrase);
+    let foundNames = [];
+    const allAssociatedNames = [
+        ...place.ceos.map((ceo) => ceo.name),
+        ...place.mainCEO.map((mainCEO) => mainCEO.name),
+        ...place.mainOligarch.map((mainOligarch) => mainOligarch.name),
+        ...place.oligarchs.map((oligarch) => oligarch.name),
+    ];
+
+    const allAssociatedNamesDeduped = getUniqueElements(allAssociatedNames);
+
+    if (allAssociatedNamesDeduped.length > 0) {
+        foundNames = allAssociatedNamesDeduped.filter((name) => {
+            return name.toLowerCase().includes(phrase) || removeAccents(name).includes(phrase);
         });
     }
     const foundPlace = place.name && (place.name.toLowerCase().includes(phrase) || removeAccents(place.name).includes(phrase));
     const foundAddress = place.address && (place.address.toLowerCase().includes(phrase) || removeAccents(place.address).includes(phrase));
 
-    return foundPlace || foundAddress || foundOligarch.length > 0;
+    return foundPlace || foundAddress || foundNames.length > 0;
 }
 
 export default findProperty;

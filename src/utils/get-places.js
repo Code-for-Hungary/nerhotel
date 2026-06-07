@@ -55,6 +55,8 @@ export function getPlaces(csvRowsAsObjects) {
             { name: csvRow["IT1"], link: csvRow["IT1_link"], id: csvRow["IT1_ID"] },
             { name: csvRow["IT2"], link: csvRow["IT2_link"], id: csvRow["IT2_ID"] },
             { name: csvRow["IT3"], link: csvRow["IT3_link"], id: csvRow["IT3_ID"] },
+            { name: csvRow["IT4"], link: csvRow["IT4_link"], id: csvRow["IT4_ID"] },
+            { name: csvRow["IT5"], link: csvRow["IT5_link"], id: csvRow["IT5_ID"] },
         ];
         return {
             type: "Feature",
