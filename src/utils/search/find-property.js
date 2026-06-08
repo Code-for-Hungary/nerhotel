@@ -8,13 +8,7 @@ import { getUniqueElements } from "../get-unique-elements";
  */
 function findProperty(place, phrase) {
     let foundNames = [];
-    const allAssociatedNames = [
-        ...place.ceos.map((ceo) => ceo.name),
-        ...place.mainCEO.map((mainCEO) => mainCEO.name),
-        ...place.mainOligarch.map((mainOligarch) => mainOligarch.name),
-        ...place.oligarchs.map((oligarch) => oligarch.name),
-    ];
-
+    const allAssociatedNames = [...place.ceos.map((ceo) => ceo.name), ...place.oligarchs.map((oligarch) => oligarch.name)];
     const allAssociatedNamesDeduped = getUniqueElements(allAssociatedNames);
 
     if (allAssociatedNamesDeduped.length > 0) {
