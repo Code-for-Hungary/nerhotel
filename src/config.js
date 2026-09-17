@@ -1,3 +1,5 @@
+const mapApiKey = import.meta.env?.VITE_MAP_API_KEY ?? "cb1_3oex_1_a21d507b6fde30cc2c42e1b6";
+
 export const config = {
     csvUrl: "https://docs.google.com/spreadsheets/d/1FaeML93U76Fjh9GR7gbQhtb2O3Ga0ZY2honrYKyQQLo/gviz/tq?tqx=out:csv&sheet=Sheet1",
     csvDownloadUrl:
@@ -10,7 +12,7 @@ export const config = {
         tolgeeApiUrl: "https://app.tolgee.io",
     },
     map: {
-        url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_3oex_1_a21d507b6fde30cc2c42e1b6",
+        url: `https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png${mapApiKey ? `?key=${mapApiKey}` : ""}`,
         attribution:
             "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>",
         maxZoom: 19,
