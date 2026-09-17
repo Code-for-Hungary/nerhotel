@@ -10,7 +10,7 @@ export const config = {
         tolgeeApiUrl: "https://app.tolgee.io",
     },
     map: {
-        url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_3oex_1_a21d507b6fde30cc2c42e1b6",
         attribution:
             "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>",
         maxZoom: 19,
