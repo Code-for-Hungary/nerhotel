@@ -1,4 +1,4 @@
-const mapApiKey = import.meta.env?.VITE_MAP_API_KEY ?? "cb1_3oex_1_a21d507b6fde30cc2c42e1b6";
+const mapApiKey = import.meta.env?.VITE_MAP_API_KEY ?? "cb1_3oex_2_783436d79231b1cee3238724";
 
 export const config = {
     csvUrl: "https://docs.google.com/spreadsheets/d/1FaeML93U76Fjh9GR7gbQhtb2O3Ga0ZY2honrYKyQQLo/gviz/tq?tqx=out:csv&sheet=Sheet1",
