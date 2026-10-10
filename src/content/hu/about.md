@@ -11,7 +11,7 @@ mellett és a politikai hátszéllel segített vállalkozói réteg további té
 **A NER HOTEL egy olyan webes alkalmazás, ami átláthatóbbá teszi a magyar szállás- és a vendéglátóhelyek tulajdonosi és üzemeltetői hátterét.** Segítségével tájékozódhatsz, kinél cseng a
 kassza a költésed nyomán, ha asztalt vagy szállást foglalsz.
 
-Az oldal tartalmát az alábbi módszertan alapján a [K-Monitor készíti](https://k-monitor.hu/fooldal). Az oldal fejlesztésben a [Code for Hungary](https://github.com/Code-for-Hungary) önkéntesei vettek részt. Az eszköz [nyílt forráskóddal](https://github.com/Code-for-Hungary/nerhotel) rendelkezik, így szabadon továbbfejleszthető, alakítható és felhasználható. Ha segítenél, [itt tudsz beszállni a csapatba](https://docs.google.com/forms/d/e/1FAIpQLSeep6bUaI0nC-ZelkPjdUdw_kvzAJu2XJc8qpNhAJeIRSyZEA/viewform)!
+Az oldal tartalmát az alábbi módszertan alapján a [K-Monitor készíti](https://k-monitor.hu/fooldal). Az oldal fejlesztésben a [Code for Hungary](https://github.com/Code-for-Hungary) önkéntesei vettek részt. Az eszköz [nyílt forráskóddal](https://github.com/Code-for-Hungary/nerhotel) rendelkezik, így szabadon továbbfejleszthető, alakítható és felhasználható. Az oldal a [Creative Commons Nevezd meg! - Így add tovább! 4.0 Nemzetközi Licenc](https://creativecommons.org/licenses/by-sa/4.0/) feltételeinek megfelelően felhasználható. Ha segítenél, [itt tudsz beszállni a csapatba](https://docs.google.com/forms/d/e/1FAIpQLSeep6bUaI0nC-ZelkPjdUdw_kvzAJu2XJc8qpNhAJeIRSyZEA/viewform)!
 </section>
 
 <section>
@@ -45,9 +45,9 @@ adatbázisban szereplő helyek tulajdonosainak vagy üzemeltetőinek politikai s
 
 **Személyek háttere:** [K-Monitor sajtóadatbázis](https://k-monitor.hu/adatbazis)
 
-**Céginformációk:** Bisnode
+**Céginformációk:** Bisnode, Opten
 
-**Helyek adatai:** Országos Kereskedelmi Nyilvántartás, önkéntes gyűjtés (helyek honlapjai, sajtócikkek, [Kisfaludy Program](https://k-monitor.hu/adatbazis/cimkek/kisfaludy-program), stb.)
+**Helyek adatai:** [Országos Kereskedelmi Nyilvántartás](https://oknyir.kh.gov.hu/), önkéntesek gyűjtése (helyek honlapjai, sajtócikkek, [Kisfaludy Program](https://k-monitor.hu/adatbazis/cimkek/kisfaludy-program), látogatói beküldés, stb.)
 </section>
 
 <section>
