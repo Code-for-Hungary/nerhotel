@@ -18,7 +18,7 @@ Az oldal tartalmát az alábbi módszertan alapján a [K-Monitor készíti](http
 
 ## Milyen helyek szerepelnek rajta?
 
-A NER HOTEL célja a szállás-, vendéglátó- és idegenforgalmihelyek tulajdonosi hátterének átláthatóbbá tétele. A honlapon olyan helyekek találhatók, amelyek üzemeltetője
+A NER HOTEL célja a szállás-, vendéglátó- és idegenforgalmihelyek tulajdonosi hátterének átláthatóbbá tétele. A honlapon olyan turisztikai kereskedelmi helyek találhatók, amelyek üzemeltetője
 1) **politikailag exponált személyekhez** (PEP) köthető, 
 2) **irányításában PEP-ek vesznek részt**, vagy 
 3) tulajdonosi hátterében politikaközeli szereplőkhöz köthető ([a tulajdonosok elrejtésére alkalmas](https://g7.hu/vallalat/20220214/a-meszaros-fele-alapokat-gazdagitja-a-magyar-cegek-profitjanak-6-szazaleka/)) **magántőkealap** szerepel.
