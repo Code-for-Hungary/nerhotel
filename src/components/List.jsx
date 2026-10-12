@@ -1,5 +1,4 @@
 import { forwardRef } from "react";
-import { useTranslation, Trans } from "react-i18next";
 
 import styles from "../css/list.module.css";
 import Icon from "./ui/Icon";
