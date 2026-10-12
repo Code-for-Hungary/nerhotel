@@ -3,6 +3,7 @@ const isUrl = (string) => {
         const url = new URL(string);
         return url.protocol === "http:" || url.protocol === "https:";
     } catch (e) {
+        console.error(e);
         return false;
     }
 };
