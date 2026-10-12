@@ -14,14 +14,10 @@ import { OnePercentDonationBanner } from "../components/one-percent-donation-ban
 import { useBannerContext } from "../context/banner-provider";
 
 const getContent = async (fileName, lang) => {
-    try {
-        const mdFilePath = await import(`../content/${lang}/${fileName}.md`);
-        const mdFileContent = mdFilePath.html;
+    const mdFilePath = await import(`../content/${lang}/${fileName}.md`);
+    const mdFileContent = mdFilePath.html;
 
-        return mdFileContent;
-    } catch (e) {
-        throw e;
-    }
+    return mdFileContent;
 };
 
 const ContentPage = () => {
@@ -70,7 +66,7 @@ const ContentPage = () => {
                     <ReactMarkdown
                         children={pageContent}
                         components={{
-                            a: ({ node, href, ...props }) => <SmartLink to={href} {...props} />,
+                            a: ({ _node, href, ...props }) => <SmartLink to={href} {...props} />,
                         }}
                         rehypePlugins={[rehypeRaw]}
                     />
