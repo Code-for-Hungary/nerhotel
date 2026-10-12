@@ -36,7 +36,7 @@ export const PressReleases = () => {
                 <ReactMarkdown
                     children={intro}
                     components={{
-                        a: ({ node, href, ...props }) => <SmartLink to={href} {...props} />,
+                        a: ({ _node, href, ...props }) => <SmartLink to={href} {...props} />,
                     }}
                     rehypePlugins={[rehypeRaw]}
                 />
