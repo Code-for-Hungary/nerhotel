@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
@@ -20,44 +20,64 @@ import PressReleasesPage from "./pages/PressReleasesPage";
 import { SearchPage } from "./pages/SearchPage";
 import { LanguageLayout } from "./pages/LanguageLayout";
 
+// Root layout that wraps application-wide providers INSIDE the router context
+function RootLayout() {
+    const { i18n } = useTranslation();
+
+    return (
+        <PlacesProvider>
+            <ScrollToTop />
+            <AnalyticsProvider>
+                <BannerProvider
+                    condition={isOnePercentDonationSeason}
+                    dismissCallback={rememberDismiss}
+                    checkIfDismissed={checkIfAlreadyDismissed}
+                    lang={i18n.resolvedLanguage}
+                >
+                    <Outlet />
+                </BannerProvider>
+            </AnalyticsProvider>
+        </PlacesProvider>
+    );
+}
+
+// Define the router configuration object
+const router = createBrowserRouter([
+    {
+        element: <RootLayout />,
+        children: [
+            {
+                path: "/:lang?",
+                element: <LanguageLayout />,
+                children: [
+                    { index: true, element: <PlacesPage /> },
+                    { path: "place/:id", element: <PlacePage /> },
+                    { path: "person/:name", element: <PersonPage /> },
+                    { path: "about", element: <ContentPage /> },
+                    { path: "contact", element: <ContentPage /> },
+                    { path: "data-export", element: <ContentPage /> },
+                    { path: "press-releases", element: <PressReleasesPage /> },
+                    { path: "search", element: <SearchPage /> },
+                    { path: "*", element: <ErrorPage /> },
+                ],
+            },
+        ],
+    },
+]);
+
 function App() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <HelmetProvider>
             <ErrorBoundary>
                 <Helmet>
                     <title>
-                        {t("general.tagline")} - {t("general.siteName")}
+                        {t("general.tagline")}
+                        {t("general.siteName")}
                     </title>
                 </Helmet>
-                <PlacesProvider>
-                    <BrowserRouter>
-                        <ScrollToTop />
-                        <AnalyticsProvider>
-                            <BannerProvider
-                                condition={isOnePercentDonationSeason}
-                                dismissCallback={rememberDismiss}
-                                checkIfDismissed={checkIfAlreadyDismissed}
-                                lang={i18n.resolvedLanguage}
-                            >
-                                <Routes>
-                                    <Route path="/:lang?" element={<LanguageLayout />}>
-                                        <Route index element={<PlacesPage />} />
-                                        <Route path="place/:id" element={<PlacePage />} />
-                                        <Route path="person/:name" element={<PersonPage />} />
-                                        <Route path="about" element={<ContentPage />} />
-                                        <Route path="contact" element={<ContentPage />} />
-                                        <Route path="data-export" element={<ContentPage />} />
-                                        <Route path="press-releases" element={<PressReleasesPage />} />
-                                        <Route path="search" element={<SearchPage />} />
-                                        <Route path="*" element={<ErrorPage />} />
-                                    </Route>
-                                </Routes>
-                            </BannerProvider>
-                        </AnalyticsProvider>
-                    </BrowserRouter>
-                </PlacesProvider>
+                <RouterProvider router={router} />
             </ErrorBoundary>
         </HelmetProvider>
     );
