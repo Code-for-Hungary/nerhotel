@@ -51,7 +51,7 @@ const ContentPage = () => {
         return () => {
             isSubscribed = false;
         };
-    }, [resolvedLanguage, lastPathSegment, search]);
+    }, [resolvedLanguage, lastPathSegment, search, navigate]);
 
     return (
         <Layout>
