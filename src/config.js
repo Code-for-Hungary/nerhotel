@@ -18,4 +18,13 @@ export const config = {
         maxZoom: 19,
         closeZoomLevel: 17,
     },
+    api: {
+        base: import.meta.env?.VITE_API_BASE ?? "",
+        endpoints: {
+            places: "/places",
+            place: "/places/",
+            placesByPerson: "/places/person/",
+            search: "/places/search",
+        },
+    },
 };

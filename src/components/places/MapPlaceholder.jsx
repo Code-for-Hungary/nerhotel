@@ -1,22 +1,26 @@
+import Layout from "../../pages/Layout";
+
 import LoadingSpinner from "../ui/LoadingSpinner";
 
 function MapPlaceholder() {
     return (
-        <div
-            className="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-            style={{ position: "absolute" }}
-        >
+        <Layout>
             <div
-                style={{
-                    position: "absolute",
-                    top: "50%",
-                    left: "50%",
-                    transform: "translate3d(-50%, -50%, 0)",
-                }}
+                className="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                style={{ position: "absolute" }}
             >
-                <LoadingSpinner size="64px" color="var(--nh-blue)" />
+                <div
+                    style={{
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        transform: "translate3d(-50%, -50%, 0)",
+                    }}
+                >
+                    <LoadingSpinner size="64px" color="var(--nh-blue)" />
+                </div>
             </div>
-        </div>
+        </Layout>
     );
 }
 

@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef, useMemo, useCallback, memo } from "react";
 import { createPortal } from "react-dom";
 import { TileLayer, useMap, useMapEvents, Marker, Tooltip } from "react-leaflet";
-import { useSearchParams } from "react-router";
 import { useTranslation } from "react-i18next";
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import { CSSTransition } from "react-transition-group";
@@ -27,7 +26,7 @@ const preloadBlue = new Image();
 preloadBlue.src = BLUE_ICON.options.iconUrl;
 
 const MemoizedMarker = memo(({ place, onMarkerClick, selectionRef }) => {
-    const [, setTick] = useState(0);
+    const [_, setTick] = useState(0);
     const pointId = place.properties.id;
 
     useEffect(() => {
@@ -65,15 +64,27 @@ const MemoizedMarker = memo(({ place, onMarkerClick, selectionRef }) => {
 
 MemoizedMarker.displayName = "MemoizedMarker";
 
+function updateURLWithPosition(map) {
+    const center = map.getCenter();
+    const params = new URLSearchParams(window.location.search);
+    params.set("zoom", map.getZoom());
+    params.set("lat", center.lat.toFixed(4));
+    params.set("lng", center.lng.toFixed(4));
+
+    window.history.replaceState({}, "", `${window.location.pathname}?${params.toString()}`);
+}
+
 export function MapView({ places }) {
     const map = useMap();
 
     const { dispatchAnalyticsEvent } = useAnalyticsContext();
 
-    const [searchParams, setSearchParams] = useSearchParams();
     const [isUserLocationPending, setIsUserLocationPending] = useState(false);
 
-    const [filterType, setFilterType] = useState(searchParams.get("filter") || "mind");
+    const [filterType, setFilterType] = useState(() => {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("filter") || "mind";
+    });
 
     const filteredPlaces = useMemo(() => places.filter((place) => filterPlaces(place, filterType)), [places, filterType]);
     const [pointsShownOnMap, setPointsShownOnMap] = useState(filteredPlaces);
@@ -93,10 +104,11 @@ export function MapView({ places }) {
 
     const setFilterTypeHandler = (type) => {
         setFilterType(type);
-        setSearchParams((searchParams) => {
-            searchParams.set("filter", type);
-            return searchParams;
-        });
+
+        const params = new URLSearchParams(window.location.search);
+        params.set("filter", type);
+
+        window.history.replaceState({}, "", `${window.location.pathname}?${params.toString()}`);
     };
 
     function getPointsToDisplay() {
@@ -117,15 +129,17 @@ export function MapView({ places }) {
     }, []);
 
     // set the initial staring point based on the url parameters
+    // Set initial starting point based natively on URL parameters once on mount
     useEffect(() => {
-        const lat = searchParams.get("lat");
-        const lng = searchParams.get("lng");
-        const zoom = searchParams.get("zoom") ?? map.getZoom();
+        const params = new URLSearchParams(window.location.search);
+        const lat = params.get("lat");
+        const lng = params.get("lng");
+        const zoom = params.get("zoom") ?? map.getZoom();
 
         if (lat && lng && zoom) {
             map.flyTo([parseFloat(lat), parseFloat(lng)], parseInt(zoom, 10));
         }
-    }, []);
+    }, [map]);
 
     useEffect(() => {
         if (selectedPoint) {
@@ -135,7 +149,7 @@ export function MapView({ places }) {
                 payload: { name: selectedPoint.properties.name, id: selectedPoint.properties.id },
             });
         }
-    }, [map, selectedPoint]);
+    }, [map, selectedPoint, dispatchAnalyticsEvent]);
 
     const goToUsersLocation = () => {
         setIsUserLocationPending(true);
@@ -207,7 +221,7 @@ export function MapView({ places }) {
         const previousId = selectionRef.current?.properties.id;
 
         selectionRef.current = undefined;
-        setShowPopUp(false);
+        // setShowPopUp(false);
 
         // Refresh the one that was just closed
         window.dispatchEvent(
@@ -221,7 +235,7 @@ export function MapView({ places }) {
         if (selectionRef.current !== undefined) {
             closePopUp();
         }
-    }, [filterType]);
+    }, [filterType, closePopUp]);
 
     const onListItemClick = () => {
         setShowList(false);
@@ -229,18 +243,10 @@ export function MapView({ places }) {
 
     useMapEvents({
         zoomend: () => {
-            setSearchParams((searchParams) => {
-                searchParams.set("zoom", map.getZoom());
-                return searchParams;
-            });
+            updateURLWithPosition(map);
         },
         moveend: () => {
-            setSearchParams((searchParams) => {
-                const center = map.getCenter();
-                searchParams.set("lat", center.lat.toFixed(4));
-                searchParams.set("lng", center.lng.toFixed(4));
-                return searchParams;
-            });
+            updateURLWithPosition(map);
         },
     });
 
@@ -324,7 +330,14 @@ export function MapView({ places }) {
                         setSelectedPoint(undefined);
                     }}
                 >
-                    <Popup point={selectedPoint} onClose={closePopUp} ref={popUpTransitionContainerRef} />
+                    <Popup
+                        point={selectedPoint}
+                        onClose={() => {
+                            closePopUp();
+                            setShowPopUp(false);
+                        }}
+                        ref={popUpTransitionContainerRef}
+                    />
                 </CSSTransition>,
                 document.getElementById("mapWrapper")
             )}

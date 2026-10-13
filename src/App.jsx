@@ -5,14 +5,14 @@ import { useTranslation } from "react-i18next";
 import ErrorBoundary from "./components/ErrorBoundary";
 import AnalyticsProvider from "./components/analytics/AnalyticsProvider";
 
-import { PlacesProvider } from "./context/places-provider";
 import { BannerProvider } from "./context/banner-provider";
 import { isOnePercentDonationSeason, checkIfAlreadyDismissed, rememberDismiss } from "./components/one-percent-donation-banner";
 
 import { ScrollToTop } from "./components/navigation/ScrollToTop";
+import MapPlaceholder from "./components/places/MapPlaceholder";
 
 import PlacePage from "./pages/PlacePage";
-import PlacesPage from "./pages/PlacesPage";
+import PlacesPage, { clientLoader as placesLoader } from "./pages/PlacesPage";
 import ContentPage from "./pages/ContentPage";
 import PersonPage from "./pages/PersonPage";
 import ErrorPage from "./pages/ErrorPage";
@@ -25,7 +25,7 @@ function RootLayout() {
     const { i18n } = useTranslation();
 
     return (
-        <PlacesProvider>
+        <>
             <ScrollToTop />
             <AnalyticsProvider>
                 <BannerProvider
@@ -37,7 +37,7 @@ function RootLayout() {
                     <Outlet />
                 </BannerProvider>
             </AnalyticsProvider>
-        </PlacesProvider>
+        </>
     );
 }
 
@@ -50,7 +50,13 @@ const router = createBrowserRouter([
                 path: "/:lang?",
                 element: <LanguageLayout />,
                 children: [
-                    { index: true, element: <PlacesPage /> },
+                    {
+                        index: true,
+                        element: <PlacesPage />,
+                        loader: placesLoader,
+                        errorElement: <ErrorPage />,
+                        hydrateFallbackElement: <MapPlaceholder />,
+                    },
                     { path: "place/:id", element: <PlacePage /> },
                     { path: "person/:name", element: <PersonPage /> },
                     { path: "about", element: <ContentPage /> },
