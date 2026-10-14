@@ -15,7 +15,7 @@ export async function clientLoader() {
 
     if (!res.ok) throw new Error("Failed to fetch places");
 
-    return res.json();
+    return await res.json();
 }
 
 const PlacesPage = () => {

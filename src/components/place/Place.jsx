@@ -11,8 +11,6 @@ import { getOligarchData } from "../../utils/index.js";
 import { ORANGE_ICON } from "../../leaflet-helper.jsx";
 import getTranslatedPlaceProperty from "../../utils/get-translated-place-property.js";
 
-import { usePlacesContext } from "../../context/places-provider.jsx";
-
 import styles from "../../css/place.module.css";
 
 import arrowIcon from "../../assets/arrow-icon.svg";
@@ -53,14 +51,12 @@ import { OnePercentDonationBanner } from "../one-percent-donation-banner";
  * @property {{name: string, link: string}[]} properties.oligarchs
  * @property {{name: string, link: string}[]} properties.mainOligarch
  */
-const Place = (props) => {
-    const { places } = usePlacesContext();
+const Place = ({ place }) => {
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
-    const placeById = places.length ? places.find((place) => place.properties.id === props.id) : null;
-    const data = placeById ? placeById.properties : null;
-    const coordinates = placeById ? placeById.geometry.coordinates : null;
-    const oligarchData = placeById ? getOligarchData(data.oligarchs || [], data.ceos || []) : null;
+    const placeProperties = place ? place.properties : null;
+    const coordinates = place ? place.geometry.coordinates : null;
+    const oligarchData = place ? getOligarchData(placeProperties.oligarchs || [], placeProperties.ceos || []) : null;
     const navigate = useNavigate();
     const location = useLocation();
     const { isVisible, onDismiss } = useBannerContext();
@@ -78,30 +74,30 @@ const Place = (props) => {
             {isVisible && <OnePercentDonationBanner isInline onDismiss={onDismiss} />}
             <div className={styles.placeWrapper}>
                 <div className={styles.info}>
-                    {data ? (
+                    {placeProperties ? (
                         <>
                             <Helmet>
                                 <title>
-                                    {getTranslatedPlaceProperty("name", resolvedLanguage, data)} - {t("general.siteName")}
+                                    {getTranslatedPlaceProperty("name", resolvedLanguage, placeProperties)} - {t("general.siteName")}
                                 </title>
                             </Helmet>
-                            <h1>{getTranslatedPlaceProperty("name", resolvedLanguage, data)}</h1>
+                            <h1>{getTranslatedPlaceProperty("name", resolvedLanguage, placeProperties)}</h1>
                             <div className={styles.placeRow}>
                                 <p>
-                                    {t("hotel.type")}: <span>{getTranslatedPlaceProperty("type", resolvedLanguage, data)}</span>
+                                    {t("hotel.type")}: <span>{getTranslatedPlaceProperty("type", resolvedLanguage, placeProperties)}</span>
                                 </p>
                             </div>
-                            {data.company && (
+                            {placeProperties.company && (
                                 <div className={styles.placeRow}>
                                     <Icon img={placeIcon} size="small" />
                                     <p>
                                         {t("general.maintainer")}:{" "}
-                                        {data.company.link ? (
+                                        {placeProperties.company.link ? (
                                             <span>
-                                                <SmartLink to={data.company.link}>{data.company.name}</SmartLink>
+                                                <SmartLink to={placeProperties.company.link}>{placeProperties.company.name}</SmartLink>
                                             </span>
                                         ) : (
-                                            <span>{data.company.name}</span>
+                                            <span>{placeProperties.company.name}</span>
                                         )}
                                     </p>
                                 </div>
@@ -111,8 +107,8 @@ const Place = (props) => {
                                     <Icon img={horseIcon} size="small" />
                                     <p>
                                         {t("hotel.people")}:<br />
-                                        {oligarchData.map((oligarch, key) => (
-                                            <span key={key} className={styles.oligarch}>
+                                        {oligarchData.map((oligarch) => (
+                                            <span key={oligarch.name} className={styles.oligarch}>
                                                 <SmartLink to={`/person/${oligarch.name}`}>{oligarch.name}</SmartLink>
                                                 <span className={styles.title}>
                                                     {" "}
@@ -124,43 +120,49 @@ const Place = (props) => {
                                     </p>
                                 </div>
                             )}
-                            {data.address && (
+                            {placeProperties.address && (
                                 <div className={styles.placeRow}>
                                     <Icon img={pinIcon} size="small" />
                                     <p>
-                                        {t("general.address")}: <span>{data.address}</span>
+                                        {t("general.address")}: <span>{placeProperties.address}</span>
                                     </p>
                                 </div>
                             )}
-                            {data.link !== "" && (
+                            {placeProperties.link !== "" && (
                                 <div className={styles.placeRow}>
                                     <Icon img={linkIcon} size="small" />
-                                    <SmartLink to={getTranslatedPlaceProperty("link", resolvedLanguage, data)}>
+                                    <SmartLink to={getTranslatedPlaceProperty("link", resolvedLanguage, placeProperties)}>
                                         <span>{t("general.article")}</span>
                                     </SmartLink>
                                 </div>
                             )}
-                            {data.details !== "" && (
+                            {placeProperties.details !== "" && (
                                 <div className={styles.placeRow}>
                                     <p>
-                                        {(resolvedLanguage === "hu" && data.details) || (resolvedLanguage === "en" && data.en.details) ? (
+                                        {(resolvedLanguage === "hu" && placeProperties.details) ||
+                                        (resolvedLanguage === "en" && placeProperties.en.details) ? (
                                             <span style={{ display: "block" }}>{t("general.additionalInfo")}:</span>
                                         ) : null}
-                                        {resolvedLanguage === "hu" ? data.details : null}
-                                        {resolvedLanguage === "en" && data.en && data.en.details ? data.en.details : ""}
+                                        {resolvedLanguage === "hu" ? placeProperties.details : null}
+                                        {resolvedLanguage === "en" && placeProperties.en && placeProperties.en.details
+                                            ? placeProperties.en.details
+                                            : ""}
                                     </p>
                                 </div>
                             )}
-                            {data.date !== "" && (
+                            {placeProperties.date !== "" && (
                                 <div className={styles.placeRow}>
                                     <p>
-                                        {t("hotel.updatedOn")}: <span>{data.date}</span>
+                                        {t("hotel.updatedOn")}: <span>{placeProperties.date}</span>
                                     </p>
                                 </div>
                             )}
 
-                            {data.picture && (
-                                <PlaceImage src={data.picture} alt={getTranslatedPlaceProperty("name", resolvedLanguage, data)} />
+                            {placeProperties.picture && (
+                                <PlaceImage
+                                    src={placeProperties.picture}
+                                    alt={getTranslatedPlaceProperty("name", resolvedLanguage, placeProperties)}
+                                />
                             )}
                         </>
                     ) : null}
@@ -174,7 +176,7 @@ const Place = (props) => {
                         <LeafletMap center={coordinates} zoom={config.map.closeZoomLevel}>
                             <TileLayer url={config.map.url} attribution={config.map.attribution} />
                             <Marker position={coordinates} icon={ORANGE_ICON}>
-                                <Tooltip>{getTranslatedPlaceProperty("name", resolvedLanguage, data)}</Tooltip>
+                                <Tooltip>{getTranslatedPlaceProperty("name", resolvedLanguage, placeProperties)}</Tooltip>
                             </Marker>
                         </LeafletMap>
                     ) : null}

@@ -11,7 +11,7 @@ import { isOnePercentDonationSeason, checkIfAlreadyDismissed, rememberDismiss } 
 import { ScrollToTop } from "./components/navigation/ScrollToTop";
 import MapPlaceholder from "./components/places/MapPlaceholder";
 
-import PlacePage from "./pages/PlacePage";
+import PlacePage, { clientLoader as placeLoader } from "./pages/PlacePage";
 import PlacesPage, { clientLoader as placesLoader } from "./pages/PlacesPage";
 import ContentPage from "./pages/ContentPage";
 import PersonPage from "./pages/PersonPage";
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
                         errorElement: <ErrorPage />,
                         hydrateFallbackElement: <MapPlaceholder />,
                     },
-                    { path: "place/:id", element: <PlacePage /> },
+                    { path: "place/:id", element: <PlacePage />, loader: placeLoader },
                     { path: "person/:name", element: <PersonPage /> },
                     { path: "about", element: <ContentPage /> },
                     { path: "contact", element: <ContentPage /> },
