@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./Popup.module.css";
 import { SmartLink } from "../SmartLink";
@@ -13,7 +12,7 @@ import { getOligarchData } from "../../utils";
 import displayTranslatedPersonType from "../../utils/person/display-translated-person-type";
 import "./Popup.transition.css";
 
-const Popup = forwardRef((props, ref) => {
+const Popup = ({ ref, ...props }) => {
     const { t } = useTranslation();
     const data = props.point ? props.point.properties : undefined;
 
@@ -93,6 +92,6 @@ const Popup = forwardRef((props, ref) => {
             </footer>
         </div>
     );
-});
+};
 
 export default Popup;
