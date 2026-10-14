@@ -55,8 +55,8 @@ const Popup = forwardRef((props, ref) => {
                             <div className={styles.popupRow}>
                                 <Icon img={horseIcon} size="small" />
                                 <div className={styles.oligarch}>
-                                    {oligarchsToShow.map((oligarch, key) => (
-                                        <div key={key}>
+                                    {oligarchsToShow.map((oligarch) => (
+                                        <div key={oligarch.name}>
                                             {oligarch.data.link !== "" ? (
                                                 <SmartLink to={`/person/${oligarch.name}`}>{oligarch.name}</SmartLink>
                                             ) : (

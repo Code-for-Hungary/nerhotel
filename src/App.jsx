@@ -14,7 +14,7 @@ import MapPlaceholder from "./components/places/MapPlaceholder";
 import PlacePage, { clientLoader as placeLoader } from "./pages/PlacePage";
 import PlacesPage, { clientLoader as placesLoader } from "./pages/PlacesPage";
 import ContentPage from "./pages/ContentPage";
-import PersonPage from "./pages/PersonPage";
+import PersonPage, { clientLoader as personLoader } from "./pages/PersonPage";
 import ErrorPage from "./pages/ErrorPage";
 import PressReleasesPage from "./pages/PressReleasesPage";
 import { SearchPage } from "./pages/SearchPage";
@@ -58,7 +58,7 @@ const router = createBrowserRouter([
                         hydrateFallbackElement: <MapPlaceholder />,
                     },
                     { path: "place/:id", element: <PlacePage />, loader: placeLoader },
-                    { path: "person/:name", element: <PersonPage /> },
+                    { path: "person/:name", element: <PersonPage />, loader: personLoader },
                     { path: "about", element: <ContentPage /> },
                     { path: "contact", element: <ContentPage /> },
                     { path: "data-export", element: <ContentPage /> },
