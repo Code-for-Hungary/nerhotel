@@ -15,20 +15,24 @@ const ListItem = ({ item, onClick, ...props }) => {
             </h1>
             <div className={styles.listItemRow}>
                 <div className={styles.listItemCol}>
-                    <Icon img={horseIcon} size="small" />
-                    <div className={styles.oligarchList}>
-                        {oligarchs.map((oligarch) => (
-                            <p key={oligarch.name}>
-                                {oligarch.link ? (
-                                    <a href={oligarch.link} target="_blank" rel="noopener noreferrer">
-                                        {oligarch.name}
-                                    </a>
-                                ) : (
-                                    oligarch.name
-                                )}
-                            </p>
-                        ))}
-                    </div>
+                    {oligarchs && oligarchs.length > 0 && (
+                        <>
+                            <Icon img={horseIcon} size="small" />
+                            <div className={styles.oligarchList}>
+                                {oligarchs.map((oligarch) => (
+                                    <p key={oligarch.name}>
+                                        {oligarch.link ? (
+                                            <a href={oligarch.link} target="_blank" rel="noopener noreferrer">
+                                                {oligarch.name}
+                                            </a>
+                                        ) : (
+                                            oligarch.name
+                                        )}
+                                    </p>
+                                ))}
+                            </div>
+                        </>
+                    )}
                 </div>
                 <div className={styles.listItemCol}>
                     <Icon img={pinIcon} size="small" />

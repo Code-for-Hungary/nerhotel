@@ -17,7 +17,7 @@ import ContentPage from "./pages/ContentPage";
 import PersonPage, { clientLoader as personLoader } from "./pages/PersonPage";
 import ErrorPage from "./pages/ErrorPage";
 import PressReleasesPage from "./pages/PressReleasesPage";
-import { SearchPage } from "./pages/SearchPage";
+import { SearchPage, clientLoader as searchResultsLoader } from "./pages/SearchPage";
 import { LanguageLayout } from "./pages/LanguageLayout";
 
 // Root layout that wraps application-wide providers INSIDE the router context
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
                     { path: "contact", element: <ContentPage /> },
                     { path: "data-export", element: <ContentPage /> },
                     { path: "press-releases", element: <PressReleasesPage /> },
-                    { path: "search", element: <SearchPage /> },
+                    { path: "search", element: <SearchPage />, loader: searchResultsLoader },
                     { path: "*", element: <ErrorPage /> },
                 ],
             },

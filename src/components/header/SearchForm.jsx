@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useNavigate, useSearchParams } from "react-router";
+import { Form, useSearchParams } from "react-router";
 
 import styles from "./SearchForm.module.css";
 
@@ -9,40 +8,25 @@ import searchIcon from "../../assets/search.svg";
 
 function SearchForm() {
     const { t } = useTranslation();
-    const navigate = useNavigate();
     const [searchParams] = useSearchParams();
-    const [value, setValue] = useState(searchParams.get("q") ?? "");
+    const initialQuery = searchParams.get("q") ?? "";
 
     const onSubmitHandler = (e) => {
-        e.preventDefault();
-
-        const normalizedValue = value.trim();
+        const normalizedValue = e.currentTarget.value.trim();
 
         if (normalizedValue.length === 0) {
-            return;
+            e.preventDefault();
         }
-
-        navigate({
-            pathname: "/search",
-            search: `?q=${encodeURIComponent(normalizedValue)}`,
-        });
     };
 
     return (
         <div className={styles.form}>
-            <form onSubmit={onSubmitHandler}>
-                <input
-                    onChange={(e) => setValue(e.target.value)}
-                    value={value}
-                    name="q"
-                    className={styles.input}
-                    placeholder={t("search.placeholder")}
-                    type="search"
-                />
+            <Form method="get" action="/search" onSubmit={onSubmitHandler}>
+                <input defaultValue={initialQuery} name="q" className={styles.input} placeholder={t("search.placeholder")} type="search" />
                 <button type="submit" className={[styles.searchButton, "resetButton"].join(" ")}>
                     <Icon img={searchIcon} size="large" />
                 </button>
-            </form>
+            </Form>
         </div>
     );
 }
