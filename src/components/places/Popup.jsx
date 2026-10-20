@@ -76,7 +76,7 @@ const Popup = ({ ref, ...props }) => {
                         <p>{data.address}</p>
                     </div>
                 </div>
-                {data.link !== "" && (
+                {data.link && (
                     <div className={styles.popupRow}>
                         <Icon img={linkIcon} size="small" />
                         <a href={data.link} target="_blank" rel="noopener noreferrer">
