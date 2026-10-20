@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import ErrorBoundary from "./components/ErrorBoundary";
 import AnalyticsProvider from "./components/analytics/AnalyticsProvider";
+import { LoadingBar } from "./components/loading-bar";
 
 import { BannerProvider } from "./context/banner-provider";
 import { isOnePercentDonationSeason, checkIfAlreadyDismissed, rememberDismiss } from "./components/one-percent-donation-banner";
@@ -20,7 +21,6 @@ import PressReleasesPage from "./pages/PressReleasesPage";
 import { SearchPage, clientLoader as searchResultsLoader } from "./pages/SearchPage";
 import { LanguageLayout } from "./pages/LanguageLayout";
 
-// Root layout that wraps application-wide providers INSIDE the router context
 function RootLayout() {
     const { i18n } = useTranslation();
 
@@ -34,6 +34,7 @@ function RootLayout() {
                     checkIfDismissed={checkIfAlreadyDismissed}
                     lang={i18n.resolvedLanguage}
                 >
+                    <LoadingBar />
                     <Outlet />
                 </BannerProvider>
             </AnalyticsProvider>
@@ -41,7 +42,6 @@ function RootLayout() {
     );
 }
 
-// Define the router configuration object
 const router = createBrowserRouter([
     {
         element: <RootLayout />,

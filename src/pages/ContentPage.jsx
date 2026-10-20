@@ -64,12 +64,13 @@ const ContentPage = () => {
                 <Content>
                     {isVisible && <OnePercentDonationBanner onDismiss={onDismiss} isInline />}
                     <ReactMarkdown
-                        children={pageContent}
                         components={{
                             a: ({ _node, href, ...props }) => <SmartLink to={href} {...props} />,
                         }}
                         rehypePlugins={[rehypeRaw]}
-                    />
+                    >
+                        {pageContent}
+                    </ReactMarkdown>
                 </Content>
             </Wrapper>
         </Layout>

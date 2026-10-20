@@ -42,6 +42,10 @@ export async function clientLoader({ params }) {
                 throw new Error(`No valid results for person ID "${kMonitorDbId}" from the person profile endpoint`);
             }
 
+            if (!profileResponse.results[0].description) {
+                throw new Error(`No description field in the first result object, value was "${profileResponse.results[0].description}"`);
+            }
+
             personProfile = {
                 name: personName,
                 profileImage: profileResponse.results[0].image_small_url,

@@ -33,22 +33,17 @@
     }
 }
 
-/* The image we get from the API is not always 1:1
-   so the easiest to avoid having a distorted image is to result to
-   a <div> with CSS background-image...
- */
 .PersonProfile-image {
     --size: 53px;
     display: block;
+    object-fit: cover;
+    object-position: center;
     border-radius: 100%;
     width: var(--size);
     height: var(--size);
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(0, 0, 0, 0.1);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
 }
 
 .PersonProfile-body {
