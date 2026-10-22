@@ -34,12 +34,13 @@ export const PressReleases = () => {
                 <h1>#NERHotel</h1>
 
                 <ReactMarkdown
-                    children={intro}
                     components={{
                         a: ({ _node, href, ...props }) => <SmartLink to={href} {...props} />,
                     }}
                     rehypePlugins={[rehypeRaw]}
-                />
+                >
+                    {intro}
+                </ReactMarkdown>
             </Content>
             <VStack>
                 {initialItemsLoading && <InitialLoadingSkeleton />}

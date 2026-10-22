@@ -26,6 +26,7 @@ const preloadBlue = new Image();
 preloadBlue.src = BLUE_ICON.options.iconUrl;
 
 const MemoizedMarker = memo(({ place, onMarkerClick, selectionRef }) => {
+    // eslint-disable-next-line @eslint-react/use-state
     const [_, setTick] = useState(0);
     const pointId = place.properties.id;
 
@@ -80,6 +81,8 @@ export function MapView({ places }) {
     const { dispatchAnalyticsEvent } = useAnalyticsContext();
 
     const [isUserLocationPending, setIsUserLocationPending] = useState(false);
+
+    const [portalContainer] = useState(() => document.getElementById("mapWrapper"));
 
     const [filterType, setFilterType] = useState(() => {
         const params = new URLSearchParams(window.location.search);
@@ -274,9 +277,7 @@ export function MapView({ places }) {
                 ))}
             </MarkerClusterGroup>
         ),
-        // IMPORTANT: selectedPoint is NOT listed as dependency of useMemo.
-        // This prevents the "Flash" because the Map is never rebuilt.
-        [filteredPlaces, filterType, onMarkerClickCallback]
+        [filteredPlaces, filterType, onMarkerClickCallback, onClusterClickHandler]
     );
 
     return (
@@ -339,7 +340,7 @@ export function MapView({ places }) {
                         ref={popUpTransitionContainerRef}
                     />
                 </CSSTransition>,
-                document.getElementById("mapWrapper")
+                portalContainer
             )}
         </>
     );

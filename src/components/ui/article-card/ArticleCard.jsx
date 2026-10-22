@@ -60,8 +60,8 @@ export function ArticleCard({ title, description, newspaper, source, tags, times
                     )}
 
                     {!showSkeleton &&
-                        tags.map((tag, i) => (
-                            <li key={`${tag.name}-${i}`}>
+                        tags.map((tag) => (
+                            <li key={`${tag.name}`}>
                                 <a href={tag.url} className={styles.tag} target="_blank" rel="noopener noreferrer">
                                     {tag.name}
                                 </a>
