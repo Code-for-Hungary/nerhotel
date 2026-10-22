@@ -1,13 +1,16 @@
 import { useRef } from "react";
+import { Trans, useTranslation } from "react-i18next";
+import { CSSTransition } from "react-transition-group";
+
 import { SmartLink } from "../SmartLink";
-import closeIcon from "../../assets/close-icon.svg";
-import styles from "./Menu.module.css";
 import Icon from "../ui/Icon";
+
+import closeIcon from "../../assets/close-icon.svg";
 import image from "../../assets/nh-main.svg";
 import logo from "../../assets/nh-logo.svg";
 import logoEn from "../../assets/nh-logo-en.svg";
-import { useTranslation } from "react-i18next";
-import { CSSTransition } from "react-transition-group";
+
+import styles from "./Menu.module.css";
 import "./Menu.transition.css";
 
 const Menu = ({ showMenu, onClose }) => {
@@ -79,11 +82,9 @@ const Menu = ({ showMenu, onClose }) => {
 
                     <address className={styles.footer}>
                         <p>
-                            <strong
-                                dangerouslySetInnerHTML={{
-                                    __html: t("navigation.address.name"),
-                                }}
-                            />
+                            <strong>
+                                <Trans i18nKey="navigation.address.name" />
+                            </strong>
                         </p>
                         <p>
                             {t("navigation.address.heading")}: <br />
