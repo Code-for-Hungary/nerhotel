@@ -1,6 +1,5 @@
 import { MapContainer as LeafletMap, Marker, Tooltip, TileLayer } from "react-leaflet";
 import { useTranslation } from "react-i18next";
-import { useNavigate, useLocation } from "react-router";
 import { Helmet } from "react-helmet-async";
 
 import { SmartLink } from "../SmartLink.jsx";
@@ -57,17 +56,7 @@ const Place = ({ place }) => {
     const placeProperties = place ? place.properties : null;
     const coordinates = place ? place.geometry.coordinates : null;
     const oligarchData = place ? getOligarchData(placeProperties.oligarchs || [], placeProperties.ceos || []) : null;
-    const navigate = useNavigate();
-    const location = useLocation();
     const { isVisible, onDismiss } = useBannerContext();
-
-    const backHandler = (e) => {
-        if (location.key === "default") {
-            return;
-        }
-        e.preventDefault();
-        navigate(-1);
-    };
 
     return (
         <div className={styles.place}>
@@ -167,7 +156,7 @@ const Place = ({ place }) => {
                         </>
                     ) : null}
 
-                    <SmartLink className={styles.back} to="/" onClick={backHandler}>
+                    <SmartLink className={styles.back} to="/" title={t("general.backToMap")}>
                         <Icon img={arrowIcon} alt={t("general.backToMap")} size="large" />
                     </SmartLink>
                 </div>

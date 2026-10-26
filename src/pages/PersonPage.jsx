@@ -3,7 +3,6 @@ import { useLoaderData } from "react-router";
 import Layout from "./Layout";
 import Person from "../components/person/Person";
 import { getApiUrl } from "../utils/api/get-api-url";
-import getPersonProfile from "../utils/person/get-person-profile";
 
 export async function clientLoader({ params }) {
     const personName = params.name;
@@ -28,39 +27,13 @@ export async function clientLoader({ params }) {
             affiliatedPlaces[0].properties.mainOligarch.find((oligarch) => oligarch.name === personName))
     );
 
-    let personProfile;
-    const kMonitorDbId = person && person.id ? person.id : null;
-    if (kMonitorDbId) {
-        try {
-            const profileResponse = await getPersonProfile(kMonitorDbId);
-
-            if (profileResponse.error) {
-                throw new Error(profileResponse.error);
-            }
-
-            if (!profileResponse.results || !profileResponse.results.length) {
-                throw new Error(`No valid results for person ID "${kMonitorDbId}" from the person profile endpoint`);
-            }
-
-            if (!profileResponse.results[0].description) {
-                throw new Error(`No description field in the first result object, value was "${profileResponse.results[0].description}"`);
-            }
-
-            personProfile = {
-                name: personName,
-                profileImage: profileResponse.results[0].image_small_url,
-                text: profileResponse.results[0].description,
-            };
-        } catch (error) {
-            console.error(error);
-        }
-    }
+    const kMonitorDbId = person && person.id ? person.id : undefined;
 
     return {
         personName,
         affiliatedPlaces,
         isMainOligarch,
-        personProfile,
+        kMonitorDbId,
     };
 }
 
@@ -73,7 +46,7 @@ const PersonPage = () => {
                 personName={data.personName}
                 affiliatedPlaces={data.affiliatedPlaces}
                 isMainOligarch={data.isMainOligarch}
-                personProfile={data.personProfile}
+                kMonitorDbId={data.kMonitorDbId}
             />
         </Layout>
     );

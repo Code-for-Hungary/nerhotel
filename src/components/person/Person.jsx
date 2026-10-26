@@ -1,14 +1,17 @@
+import { Suspense } from "react";
 import { Helmet } from "react-helmet-async";
-import { useNavigate, useLocation } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import MarkerClusterGroup from "react-leaflet-markercluster";
-
-import { SmartLink } from "../SmartLink";
 import { useTranslation } from "react-i18next";
 import Leaflet from "leaflet";
 import { MapContainer as Map, TileLayer, Marker, Tooltip } from "react-leaflet";
+
+import { SmartLink } from "../SmartLink";
 import AssociatedPlace from "./AssociatedPlace.jsx";
 
 import Icon from "../ui/Icon";
+
+import ErrorBoundary from "../ErrorBoundary.jsx";
 
 import styles from "../../css/place.module.css";
 import arrowIcon from "../../assets/arrow-icon.svg";
@@ -23,22 +26,13 @@ import { createClusterCustomIcon } from "../../leaflet-helper.jsx";
 import { OnePercentDonationBanner } from "../one-percent-donation-banner";
 import { useBannerContext } from "../../context/banner-provider.jsx";
 
-import PersonProfile from "./PersonProfile";
+import PersonProfile, { PersonProfileSkeleton } from "./PersonProfile";
 
-const Person = ({ personName, affiliatedPlaces, isMainOligarch, personProfile }) => {
-    const { t, i18n } = useTranslation();
-    const { resolvedLanguage } = i18n;
+const Person = ({ personName, affiliatedPlaces, isMainOligarch, kMonitorDbId }) => {
+    const { t } = useTranslation();
+    const { lang } = useParams();
     const navigate = useNavigate();
-    const location = useLocation();
     const { isVisible: isBannerVisible, onDismiss } = useBannerContext();
-
-    const backHandler = (e) => {
-        if (location.key === "default") {
-            return;
-        }
-        e.preventDefault();
-        navigate(-1);
-    };
 
     /** @type {{name: string, link: string}|undefined} */
     const person =
@@ -73,7 +67,13 @@ const Person = ({ personName, affiliatedPlaces, isMainOligarch, personProfile })
                             {personName}
                         </h1>
 
-                        {personProfile && resolvedLanguage === "hu" && <PersonProfile {...personProfile} />}
+                        {kMonitorDbId && lang === "hu" && (
+                            <ErrorBoundary fallback={null}>
+                                <Suspense fallback={<PersonProfileSkeleton />}>
+                                    <PersonProfile id={kMonitorDbId} />
+                                </Suspense>
+                            </ErrorBoundary>
+                        )}
 
                         {personUrl && (
                             <p>
@@ -95,8 +95,8 @@ const Person = ({ personName, affiliatedPlaces, isMainOligarch, personProfile })
                                 </div>
                             </>
                         )}
-                        <SmartLink to="/" className={styles.back} onClick={backHandler}>
-                            <Icon img={arrowIcon} alt={t("backToMap")} size="large" />
+                        <SmartLink to="/" className={styles.back} title={t("general.backToMap")}>
+                            <Icon img={arrowIcon} alt={t("general.backToMap")} size="large" />
                         </SmartLink>
                     </div>
                     <div className={styles.map}>
