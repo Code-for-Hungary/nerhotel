@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: npm ci --fund=false --audit=false
       - name: Unit tests
-        run: npm run test -- --ci --runInBand
+        run: npm run test:ci
       # - name: Code linter
       #   run: npm run lint
       - name: Check code formatting
