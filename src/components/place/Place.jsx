@@ -117,7 +117,7 @@ const Place = ({ place }) => {
                                     </p>
                                 </div>
                             )}
-                            {placeProperties.link !== "" && (
+                            {placeProperties.link !== null && (
                                 <div className={styles.placeRow}>
                                     <Icon img={linkIcon} size="small" />
                                     <SmartLink to={getTranslatedPlaceProperty("link", resolvedLanguage, placeProperties)}>
