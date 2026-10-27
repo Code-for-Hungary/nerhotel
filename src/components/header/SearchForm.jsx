@@ -12,9 +12,9 @@ function SearchForm() {
     const initialQuery = searchParams.get("q") ?? "";
 
     const onSubmitHandler = (e) => {
-        const normalizedValue = e.currentTarget.value.trim();
+        const normalizedValue = e.currentTarget.value?.trim();
 
-        if (normalizedValue.length === 0) {
+        if (normalizedValue?.length === 0) {
             e.preventDefault();
         }
     };
