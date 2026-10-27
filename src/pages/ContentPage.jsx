@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useLoaderData } from "react-router";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { useLocation, useNavigate } from "react-router";
 import rehypeRaw from "rehype-raw";
 import ReactMarkdown from "react-markdown";
 
@@ -13,51 +12,32 @@ import { Content } from "../components/ui/content/Content";
 import { OnePercentDonationBanner } from "../components/one-percent-donation-banner";
 import { useBannerContext } from "../context/banner-provider";
 
-const getContent = async (fileName, lang) => {
-    const mdFilePath = await import(`../content/${lang}/${fileName}.md`);
-    const mdFileContent = mdFilePath.html;
+export async function clientLoader({ params }) {
+    const lang = params.lang || "hu";
 
-    return mdFileContent;
-};
+    const pathSegments = new URL(location.href).pathname.split("/").filter(Boolean);
+    const lastPathSegment = pathSegments.at(-1);
+
+    try {
+        const mdFilePath = await import(`../content/${lang}/${lastPathSegment}.md`);
+        return { htmlContent: mdFilePath.html, pageKey: lastPathSegment };
+    } catch (e) {
+        console.error(e);
+        // This will trigger React Router to render whatever is set for `errorElement` instead of `element`
+        throw new Response("Content not found", { status: 404 });
+    }
+}
 
 const ContentPage = () => {
-    const [pageContent, setPageContent] = useState("");
-    const { t, i18n } = useTranslation();
-    const { resolvedLanguage } = i18n;
-    const location = useLocation();
-    const navigate = useNavigate();
-    const { search } = location;
-    const pathNameAsArray = location.pathname.split("/").filter((segment) => segment !== "");
-    const lastPathSegment = pathNameAsArray.at(-1);
+    const { htmlContent, pageKey } = useLoaderData();
+    const { t } = useTranslation();
     const { isVisible, onDismiss } = useBannerContext();
-
-    useEffect(() => {
-        let isSubscribed = true;
-
-        getContent(lastPathSegment, resolvedLanguage)
-            .then((data) => {
-                if (isSubscribed) {
-                    setPageContent(data);
-                }
-            })
-            .catch((e) => {
-                console.error(e);
-                navigate({
-                    pathname: "/500",
-                    search,
-                });
-            });
-
-        return () => {
-            isSubscribed = false;
-        };
-    }, [resolvedLanguage, lastPathSegment, search, navigate]);
 
     return (
         <Layout>
             <Helmet>
                 <title>
-                    {t(`staticPageTitles.${lastPathSegment}`)} - {t("general.siteName")}
+                    {t(`staticPageTitles.${pageKey}`)} - {t("general.siteName")}
                 </title>
             </Helmet>
             <Wrapper>
@@ -69,7 +49,7 @@ const ContentPage = () => {
                         }}
                         rehypePlugins={[rehypeRaw]}
                     >
-                        {pageContent}
+                        {htmlContent}
                     </ReactMarkdown>
                 </Content>
             </Wrapper>

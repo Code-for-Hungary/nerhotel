@@ -14,7 +14,7 @@ import MapPlaceholder from "./components/places/MapPlaceholder";
 
 import PlacePage, { clientLoader as placeLoader } from "./pages/PlacePage";
 import PlacesPage, { clientLoader as placesLoader } from "./pages/PlacesPage";
-import ContentPage from "./pages/ContentPage";
+import ContentPage, { clientLoader as contentLoader } from "./pages/ContentPage";
 import PersonPage, { clientLoader as personLoader } from "./pages/PersonPage";
 import ErrorPage from "./pages/ErrorPage";
 import PressReleasesPage from "./pages/PressReleasesPage";
@@ -57,13 +57,13 @@ const router = createBrowserRouter([
                         errorElement: <ErrorPage />,
                         hydrateFallbackElement: <MapPlaceholder />,
                     },
-                    { path: "place/:id", element: <PlacePage />, loader: placeLoader },
-                    { path: "person/:name", element: <PersonPage />, loader: personLoader },
-                    { path: "about", element: <ContentPage /> },
-                    { path: "contact", element: <ContentPage /> },
-                    { path: "data-export", element: <ContentPage /> },
+                    { path: "place/:id", element: <PlacePage />, loader: placeLoader, errorElement: <ErrorPage /> },
+                    { path: "person/:name", element: <PersonPage />, loader: personLoader, errorElement: <ErrorPage /> },
+                    { path: "about", element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
+                    { path: "contact", element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
+                    { path: "data-export", element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
                     { path: "press-releases", element: <PressReleasesPage /> },
-                    { path: "search", element: <SearchPage />, loader: searchResultsLoader },
+                    { path: "search", element: <SearchPage />, loader: searchResultsLoader, errorElement: <ErrorPage /> },
                     { path: "*", element: <ErrorPage /> },
                 ],
             },
