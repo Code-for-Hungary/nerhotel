@@ -1,6 +1,6 @@
 const mapApiKey = import.meta.env?.VITE_MAP_API_KEY ?? "cb1_3oex_2_783436d79231b1cee3238724";
 
-export const config = {
+export const config = Object.freeze({
     locales: {
         default: "hu",
         available: ["hu", "en", "de"],
@@ -24,4 +24,14 @@ export const config = {
             search: "/places/search",
         },
     },
-};
+});
+
+export const KNOWN_ROUTES = Object.freeze({
+    ABOUT: "about",
+    CONTACT: "contact",
+    DATA_EXPORT: "data-export",
+    PRESS_RELEASES: "press-releases",
+    SEARCH: "search",
+    PLACE: "place",
+    PERSON: "person",
+});

@@ -28,6 +28,8 @@ import { useBannerContext } from "../../context/banner-provider.jsx";
 
 import PersonProfile, { PersonProfileSkeleton } from "./PersonProfile";
 
+import { KNOWN_ROUTES } from "../../config";
+
 const Person = ({ personName, affiliatedPlaces, isMainOligarch, kMonitorDbId }) => {
     const { t } = useTranslation();
     const { lang } = useParams();
@@ -60,7 +62,7 @@ const Person = ({ personName, affiliatedPlaces, isMainOligarch, kMonitorDbId }) 
                     <div className={styles.info}>
                         <h1>
                             {isMainOligarch && (
-                                <SmartLink to="/about" style={{ lineHeight: 0 }}>
+                                <SmartLink to={`/${KNOWN_ROUTES.ABOUT}`} style={{ lineHeight: 0 }}>
                                     <Icon img={horseIcon} size="large" className={styles.inlineIcon} />
                                 </SmartLink>
                             )}

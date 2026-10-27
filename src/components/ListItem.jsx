@@ -5,13 +5,15 @@ import horseIcon from "../assets/horse-icon.svg";
 import pinIcon from "../assets/pin-icon.svg";
 import styles from "../css/list-item.module.css";
 
+import { KNOWN_ROUTES } from "../config";
+
 const ListItem = ({ item, onClick, ...props }) => {
     const oligarchs = item.properties.mainOligarch.length > 0 ? item.properties.mainOligarch : item.properties.oligarchs;
 
     return (
         <div className={styles.listItem} {...props} onClick={onClick}>
             <h1>
-                <Link to={`/place/${item.properties.id}`}>{item.properties.name}</Link>
+                <Link to={`/${KNOWN_ROUTES.PLACE}/${item.properties.id}`}>{item.properties.name}</Link>
             </h1>
             <div className={styles.listItemRow}>
                 <div className={styles.listItemCol}>

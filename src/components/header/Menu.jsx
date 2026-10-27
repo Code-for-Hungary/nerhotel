@@ -13,6 +13,8 @@ import logoEn from "../../assets/nh-logo-en.svg";
 import styles from "./Menu.module.css";
 import "./Menu.transition.css";
 
+import { KNOWN_ROUTES } from "../../config";
+
 const Menu = ({ showMenu, onClose }) => {
     const menuRef = useRef(null);
     const backdropRef = useRef(null);
@@ -40,7 +42,7 @@ const Menu = ({ showMenu, onClose }) => {
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to="/about" onClick={onClose}>
+                            <SmartLink to={`/${KNOWN_ROUTES.ABOUT}`} onClick={onClose}>
                                 {t("navigation.about")}
                             </SmartLink>
                         </li>
@@ -50,7 +52,7 @@ const Menu = ({ showMenu, onClose }) => {
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to="/contact" onClick={onClose}>
+                            <SmartLink to={`/${KNOWN_ROUTES.CONTACT}`} onClick={onClose}>
                                 {t("navigation.contact")}
                             </SmartLink>
                         </li>
@@ -60,16 +62,17 @@ const Menu = ({ showMenu, onClose }) => {
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to="/data-export" onClick={onClose}>
+                            <SmartLink to={`/${KNOWN_ROUTES.DATA_EXPORT}`} onClick={onClose}>
                                 {t("navigation.export")}
                             </SmartLink>
                         </li>
-                        {/* This page is only relevant to Hungarian speakers as it's not translated,
-                                so it doesn't make sense to add a translation key.
-                            */}
+                        {/* 
+                            This page is only relevant to Hungarian speakers as it's not translated,
+                            so it doesn't make sense to add a translation key.
+                        */}
                         {resolvedLanguage === "hu" && (
                             <li>
-                                <SmartLink to="/press-releases" onClick={onClose}>
+                                <SmartLink to={`/${KNOWN_ROUTES.PRESS_RELEASES}`} onClick={onClose}>
                                     #nerhotel
                                 </SmartLink>
                             </li>

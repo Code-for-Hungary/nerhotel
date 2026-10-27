@@ -21,6 +21,8 @@ import PressReleasesPage from "./pages/PressReleasesPage";
 import { SearchPage, clientLoader as searchResultsLoader } from "./pages/SearchPage";
 import { LanguageLayout } from "./pages/LanguageLayout";
 
+import { KNOWN_ROUTES } from "./config";
+
 function RootLayout() {
     const { i18n } = useTranslation();
 
@@ -57,13 +59,13 @@ const router = createBrowserRouter([
                         errorElement: <ErrorPage />,
                         hydrateFallbackElement: <MapPlaceholder />,
                     },
-                    { path: "place/:id", element: <PlacePage />, loader: placeLoader, errorElement: <ErrorPage /> },
-                    { path: "person/:name", element: <PersonPage />, loader: personLoader, errorElement: <ErrorPage /> },
-                    { path: "about", element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
-                    { path: "contact", element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
-                    { path: "data-export", element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
-                    { path: "press-releases", element: <PressReleasesPage /> },
-                    { path: "search", element: <SearchPage />, loader: searchResultsLoader, errorElement: <ErrorPage /> },
+                    { path: `${KNOWN_ROUTES.PLACE}/:id`, element: <PlacePage />, loader: placeLoader, errorElement: <ErrorPage /> },
+                    { path: `${KNOWN_ROUTES.PERSON}/:name`, element: <PersonPage />, loader: personLoader, errorElement: <ErrorPage /> },
+                    { path: KNOWN_ROUTES.ABOUT, element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
+                    { path: KNOWN_ROUTES.CONTACT, element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
+                    { path: KNOWN_ROUTES.DATA_EXPORT, element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
+                    { path: KNOWN_ROUTES.PRESS_RELEASES, element: <PressReleasesPage /> },
+                    { path: KNOWN_ROUTES.SEARCH, element: <SearchPage />, loader: searchResultsLoader, errorElement: <ErrorPage /> },
                     { path: "*", element: <ErrorPage /> },
                 ],
             },

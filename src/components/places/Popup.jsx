@@ -12,6 +12,8 @@ import { getOligarchData } from "../../utils";
 import displayTranslatedPersonType from "../../utils/person/display-translated-person-type";
 import "./Popup.transition.css";
 
+import { KNOWN_ROUTES } from "../../config";
+
 const Popup = ({ ref, ...props }) => {
     const { t } = useTranslation();
     const data = props.point ? props.point.properties : undefined;
@@ -57,7 +59,7 @@ const Popup = ({ ref, ...props }) => {
                                     {oligarchsToShow.map((oligarch) => (
                                         <div key={oligarch.name}>
                                             {oligarch.data.link !== "" ? (
-                                                <SmartLink to={`/person/${oligarch.name}`}>{oligarch.name}</SmartLink>
+                                                <SmartLink to={`/${KNOWN_ROUTES.PERSON}/${oligarch.name}`}>{oligarch.name}</SmartLink>
                                             ) : (
                                                 <p>{oligarch.name}</p>
                                             )}
@@ -86,7 +88,7 @@ const Popup = ({ ref, ...props }) => {
                 )}
             </div>
             <footer className={styles.popupFooter}>
-                <Button to={`/place/${data.id}`} isFull={true} onClick={props.onClose}>
+                <Button to={`/${KNOWN_ROUTES.PLACE}/${data.id}`} isFull={true} onClick={props.onClose}>
                     {t("popUp.linkText")}
                 </Button>
             </footer>

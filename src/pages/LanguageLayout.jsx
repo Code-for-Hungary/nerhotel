@@ -4,6 +4,8 @@ import { useParams, useNavigate, useLocation, Outlet } from "react-router";
 
 import { config } from "../config";
 
+const getPreferredLang = () => localStorage.getItem(config.locales.paramName) || config.locales.default;
+
 export function LanguageLayout() {
     const { lang } = useParams();
     const { i18n } = useTranslation();
@@ -13,8 +15,7 @@ export function LanguageLayout() {
     useEffect(() => {
         // 1. If no language is in the URL path
         if (!lang) {
-            const preferredLang = localStorage.getItem(config.locales.paramName) || "hu";
-            // Redirect to /hu/current-path
+            const preferredLang = getPreferredLang();
             navigate(`/${preferredLang}${location.pathname}${location.search}`, { replace: true });
             return;
         }
@@ -26,8 +27,10 @@ export function LanguageLayout() {
                 localStorage.setItem(config.locales.paramName, lang);
             }
         } else {
-            // 3. Fallback for invalid language codes (e.g., /fr/page -> /hu/page)
-            navigate(`/hu${location.pathname.replace(`/${lang}`, "")}`, { replace: true });
+            // 3. Any first segment that is not a valid locale (whether it's /about or /dsdsdsds).
+            // Prepend the preferred language prefix so React Router can parse it correctly.
+            const preferredLang = getPreferredLang();
+            navigate(`/${preferredLang}${location.pathname}${location.search}`, { replace: true });
         }
     }, [lang, i18n, navigate, location.pathname, location.search]);
 
