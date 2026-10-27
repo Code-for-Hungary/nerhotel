@@ -17,7 +17,7 @@ import PlacesPage, { clientLoader as placesLoader } from "./pages/PlacesPage";
 import ContentPage, { clientLoader as contentLoader } from "./pages/ContentPage";
 import PersonPage, { clientLoader as personLoader } from "./pages/PersonPage";
 import ErrorPage from "./pages/ErrorPage";
-import PressReleasesPage from "./pages/PressReleasesPage";
+import PressReleasesPage, { clientLoader as pressReleasesLoader } from "./pages/PressReleasesPage";
 import { SearchPage, clientLoader as searchResultsLoader } from "./pages/SearchPage";
 import { LanguageLayout } from "./pages/LanguageLayout";
 
@@ -64,7 +64,12 @@ const router = createBrowserRouter([
                     { path: KNOWN_ROUTES.ABOUT, element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
                     { path: KNOWN_ROUTES.CONTACT, element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
                     { path: KNOWN_ROUTES.DATA_EXPORT, element: <ContentPage />, loader: contentLoader, errorElement: <ErrorPage /> },
-                    { path: KNOWN_ROUTES.PRESS_RELEASES, element: <PressReleasesPage /> },
+                    {
+                        path: KNOWN_ROUTES.PRESS_RELEASES,
+                        element: <PressReleasesPage />,
+                        loader: pressReleasesLoader,
+                        errorElement: <ErrorPage />,
+                    },
                     { path: KNOWN_ROUTES.SEARCH, element: <SearchPage />, loader: searchResultsLoader, errorElement: <ErrorPage /> },
                     { path: "*", element: <ErrorPage /> },
                 ],
