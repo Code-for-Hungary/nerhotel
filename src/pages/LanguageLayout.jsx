@@ -31,6 +31,7 @@ export function LanguageLayout() {
             // Prepend the preferred language prefix so React Router can parse it correctly.
             const preferredLang = getPreferredLang();
             navigate(`/${preferredLang}${location.pathname}${location.search}`, { replace: true });
+            return;
         }
     }, [lang, i18n, navigate, location.pathname, location.search]);
 

@@ -123,7 +123,7 @@ const Person = ({ personName, affiliatedPlaces, isMainOligarch, kMonitorDbId }) 
                                             icon={ORANGE_ICON}
                                             eventHandlers={{
                                                 click: () => {
-                                                    navigate(`/place/${place.properties.id}`);
+                                                    navigate(`/${KNOWN_ROUTES.PLACE}/${place.properties.id}`);
                                                 },
                                             }}
                                         >
