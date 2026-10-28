@@ -1,48 +1,36 @@
-import { useState } from "react";
-import { useNavigate, useSearchParams } from "react-router";
+import { Form, useSearchParams, useParams } from "react-router";
 
 import styles from "./SearchForm.module.css";
 
 import { useTranslation } from "react-i18next";
 import Icon from "../ui/Icon";
 import searchIcon from "../../assets/search.svg";
+import { config } from "../../config";
 
 function SearchForm() {
-    const { t } = useTranslation();
-    const navigate = useNavigate();
+    const { t, i18n } = useTranslation();
     const [searchParams] = useSearchParams();
-    const [value, setValue] = useState(searchParams.get("q") ?? "");
+    const { lang } = useParams();
+    const initialQuery = searchParams.get("q") ?? "";
+
+    const currentLang = lang || i18n.resolvedLanguage || config.locales.default;
 
     const onSubmitHandler = (e) => {
-        e.preventDefault();
+        const normalizedValue = e.currentTarget.value?.trim();
 
-        const normalizedValue = value.trim();
-
-        if (normalizedValue.length === 0) {
-            return;
+        if (normalizedValue?.length === 0) {
+            e.preventDefault();
         }
-
-        navigate({
-            pathname: "/search",
-            search: `?q=${encodeURIComponent(normalizedValue)}`,
-        });
     };
 
     return (
         <div className={styles.form}>
-            <form onSubmit={onSubmitHandler}>
-                <input
-                    onChange={(e) => setValue(e.target.value)}
-                    value={value}
-                    name="q"
-                    className={styles.input}
-                    placeholder={t("search.placeholder")}
-                    type="search"
-                />
+            <Form method="get" action={`/${currentLang}/search`} onSubmit={onSubmitHandler}>
+                <input defaultValue={initialQuery} name="q" className={styles.input} placeholder={t("search.placeholder")} type="search" />
                 <button type="submit" className={[styles.searchButton, "resetButton"].join(" ")}>
                     <Icon img={searchIcon} size="large" />
                 </button>
-            </form>
+            </Form>
         </div>
     );
 }

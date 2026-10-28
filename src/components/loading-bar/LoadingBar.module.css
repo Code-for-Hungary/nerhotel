@@ -1,0 +1,23 @@
+/* src/components/ui/LoadingBar.module.css */
+.progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: var(--nh-accent-color);
+    z-index: 99999;
+    pointer-events: none;
+    transition: width 400ms ease-out, opacity 200ms ease-in;
+}
+
+.progressBar.idle {
+    width: 100%;
+    opacity: 0;
+    /* Reset width instantly after fade-out so it's ready for the next click */
+    transition: width 0ms ease 200ms, opacity 200ms ease-in;
+}
+
+.progressBar.loading {
+    width: 75%; /* Glides smoothly up to 75% while waiting for data */
+    opacity: 1;
+}

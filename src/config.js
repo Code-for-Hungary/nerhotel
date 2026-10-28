@@ -1,9 +1,6 @@
 const mapApiKey = import.meta.env?.VITE_MAP_API_KEY ?? "cb1_3oex_2_783436d79231b1cee3238724";
 
-export const config = {
-    csvUrl: "https://docs.google.com/spreadsheets/d/1FaeML93U76Fjh9GR7gbQhtb2O3Ga0ZY2honrYKyQQLo/gviz/tq?tqx=out:csv&sheet=Sheet1",
-    csvDownloadUrl:
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEboU5aIOUgZ-hmNpLQIYB8EZTc1HYAFf9mL97jvjVl6S9auEiFxJ1fwMpbr6-7dwPYl57BOK4ANfs/pub?gid=0&single=true&output=csv",
+export const config = Object.freeze({
     locales: {
         default: "hu",
         available: ["hu", "en", "de"],
@@ -18,4 +15,23 @@ export const config = {
         maxZoom: 19,
         closeZoomLevel: 17,
     },
-};
+    api: {
+        base: import.meta.env?.VITE_API_BASE ?? "",
+        endpoints: {
+            places: "/places",
+            place: "/places/",
+            placesByPerson: "/places/person/",
+            search: "/places/search",
+        },
+    },
+});
+
+export const KNOWN_ROUTES = Object.freeze({
+    ABOUT: "about",
+    CONTACT: "contact",
+    DATA_EXPORT: "data-export",
+    PRESS_RELEASES: "press-releases",
+    SEARCH: "search",
+    PLACE: "place",
+    PERSON: "person",
+});

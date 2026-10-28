@@ -3,6 +3,8 @@ import styles from "../../css/place.module.css";
 import { SmartLink } from "../SmartLink";
 import getTranslatedPlaceProperty from "../../utils/get-translated-place-property";
 
+import { KNOWN_ROUTES } from "../../config";
+
 function AssociatedPlace({ place, ...props }) {
     const { t, i18n } = useTranslation();
     const { resolvedLanguage } = i18n;
@@ -15,7 +17,7 @@ function AssociatedPlace({ place, ...props }) {
     }
     return (
         <li className={styles.oligarch} {...props}>
-            <SmartLink to={`/place/${place.properties.id}`}>
+            <SmartLink to={`/${KNOWN_ROUTES.PLACE}/${place.properties.id}`}>
                 {getTranslatedPlaceProperty("name", resolvedLanguage, place.properties)}
             </SmartLink>
             <span className={styles.title}> ({getTranslatedPlaceProperty("type", resolvedLanguage, place.properties)})</span>

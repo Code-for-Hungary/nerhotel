@@ -1,4 +1,4 @@
-import { useContext, createContext, useEffect, useState, useMemo } from "react";
+import { use, createContext, useState, useMemo } from "react";
 
 const BannerContext = createContext({
     isVisible: false,
@@ -7,31 +7,30 @@ const BannerContext = createContext({
 BannerContext.displayName = "BannerContext";
 
 export function useBannerContext() {
-    return useContext(BannerContext);
+    return use(BannerContext);
 }
 
 export function BannerProvider({ condition, dismissCallback, checkIfDismissed, children, lang }) {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isDismissed, setIsDismissed] = useState(() => checkIfDismissed());
 
-    // have to make sure that all of this runs only on the client
-    useEffect(() => {
-        if (condition() && !checkIfDismissed() && lang === "hu") {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
-    }, [lang]);
+    const isVisible = useMemo(() => {
+        if (lang !== "hu") return false;
+        if (!condition()) return false;
+        if (isDismissed) return false;
+
+        return true;
+    }, [lang, condition, isDismissed]);
 
     const value = useMemo(
         () => ({
             isVisible,
             onDismiss: () => {
-                setIsVisible(false);
+                setIsDismissed(false);
                 dismissCallback();
             },
         }),
-        [isVisible, setIsVisible, dismissCallback]
+        [isVisible, setIsDismissed, dismissCallback]
     );
 
-    return <BannerContext.Provider value={value}>{children}</BannerContext.Provider>;
+    return <BannerContext value={value}>{children}</BannerContext>;
 }

@@ -1,4 +1,4 @@
-import { useEffect, useContext, useReducer, createContext } from "react";
+import { useEffect, use, useReducer, createContext } from "react";
 import { useLocation } from "react-router";
 
 import trackPageView from "../../utils/analytics/track-page-view";
@@ -10,7 +10,7 @@ const AnalyticsContext = createContext();
 AnalyticsContext.displayName = "AnalyticsContext";
 
 export function useAnalyticsContext() {
-    const ctx = useContext(AnalyticsContext);
+    const ctx = use(AnalyticsContext);
 
     if (!ctx) {
         throw new Error("useAnalyticsContext must be used within a AnalyticsContext.Provider");
@@ -33,7 +33,7 @@ function AnalyticsProvider({ children }) {
         trackPageView();
     }, [location]);
 
-    return <AnalyticsContext.Provider value={{ dispatchAnalyticsEvent: dispatch }}>{children}</AnalyticsContext.Provider>;
+    return <AnalyticsContext value={{ dispatchAnalyticsEvent: dispatch }}>{children}</AnalyticsContext>;
 }
 
 export default AnalyticsProvider;
