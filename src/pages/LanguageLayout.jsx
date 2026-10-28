@@ -4,8 +4,10 @@ import { useParams, useNavigate, useLocation, Outlet } from "react-router";
 
 import { config } from "../config";
 
-const getPreferredLang = () => localStorage.getItem(config.locales.paramName) || config.locales.default;
-
+const getPreferredLang = () => {
+    if (typeof window === "undefined") return config.locales.default;
+    return localStorage.getItem(config.locales.paramName) || config.locales.default;
+};
 export function LanguageLayout() {
     const { lang } = useParams();
     const { i18n } = useTranslation();
@@ -24,6 +26,7 @@ export function LanguageLayout() {
         if (config.locales.available.includes(lang)) {
             if (i18n.language !== lang) {
                 i18n.changeLanguage(lang);
+                if (typeof window === "undefined") return;
                 localStorage.setItem(config.locales.paramName, lang);
             }
         } else {

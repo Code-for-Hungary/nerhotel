@@ -4,12 +4,16 @@ function getStorageKey() {
 }
 
 export function rememberDismiss() {
+    if (typeof window !== "undefined") return;
+
     if (window.localStorage) {
         window.localStorage.setItem(getStorageKey(), true);
     }
 }
 
 export function checkIfAlreadyDismissed() {
+    if (typeof window !== "undefined") return false;
+
     if (window.localStorage) {
         return !!window.localStorage.getItem(getStorageKey());
     }

@@ -31,10 +31,12 @@ import PersonProfile, { PersonProfileSkeleton } from "./PersonProfile";
 import { KNOWN_ROUTES } from "../../config";
 
 const Person = ({ personName, affiliatedPlaces, isMainOligarch, kMonitorDbId }) => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const { lang } = useParams();
     const navigate = useNavigate();
     const { isVisible: isBannerVisible, onDismiss } = useBannerContext();
+
+    const currentLang = lang || i18n.resolvedLanguage || config.locales.default;
 
     /** @type {{name: string, link: string}|undefined} */
     const person =
@@ -123,7 +125,7 @@ const Person = ({ personName, affiliatedPlaces, isMainOligarch, kMonitorDbId }) 
                                             icon={ORANGE_ICON}
                                             eventHandlers={{
                                                 click: () => {
-                                                    navigate(`/${KNOWN_ROUTES.PLACE}/${place.properties.id}`);
+                                                    navigate(`/${currentLang}/${KNOWN_ROUTES.PLACE}/${place.properties.id}`);
                                                 },
                                             }}
                                         >
