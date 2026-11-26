@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./Popup.module.css";
 import { SmartLink } from "../SmartLink";
@@ -13,7 +12,9 @@ import { getOligarchData } from "../../utils";
 import displayTranslatedPersonType from "../../utils/person/display-translated-person-type";
 import "./Popup.transition.css";
 
-const Popup = forwardRef((props, ref) => {
+import { KNOWN_ROUTES } from "../../config";
+
+const Popup = ({ ref, ...props }) => {
     const { t } = useTranslation();
     const data = props.point ? props.point.properties : undefined;
 
@@ -55,10 +56,10 @@ const Popup = forwardRef((props, ref) => {
                             <div className={styles.popupRow}>
                                 <Icon img={horseIcon} size="small" />
                                 <div className={styles.oligarch}>
-                                    {oligarchsToShow.map((oligarch, key) => (
-                                        <div key={key}>
+                                    {oligarchsToShow.map((oligarch) => (
+                                        <div key={oligarch.name}>
                                             {oligarch.data.link !== "" ? (
-                                                <SmartLink to={`/person/${oligarch.name}`}>{oligarch.name}</SmartLink>
+                                                <SmartLink to={`/${KNOWN_ROUTES.PERSON}/${oligarch.name}`}>{oligarch.name}</SmartLink>
                                             ) : (
                                                 <p>{oligarch.name}</p>
                                             )}
@@ -77,7 +78,7 @@ const Popup = forwardRef((props, ref) => {
                         <p>{data.address}</p>
                     </div>
                 </div>
-                {data.link !== "" && (
+                {data.link && (
                     <div className={styles.popupRow}>
                         <Icon img={linkIcon} size="small" />
                         <a href={data.link} target="_blank" rel="noopener noreferrer">
@@ -87,12 +88,12 @@ const Popup = forwardRef((props, ref) => {
                 )}
             </div>
             <footer className={styles.popupFooter}>
-                <Button to={`/place/${data.id}`} isFull={true} onClick={props.onClose}>
+                <Button to={`/${KNOWN_ROUTES.PLACE}/${data.id}`} isFull={true} onClick={props.onClose}>
                     {t("popUp.linkText")}
                 </Button>
             </footer>
         </div>
     );
-});
+};
 
 export default Popup;

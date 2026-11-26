@@ -1,17 +1,17 @@
-import { useState, lazy, Suspense, useEffect, useCallback } from "react";
+import { Suspense } from "react";
 import { Helmet } from "react-helmet-async";
-import { useNavigate, useLocation } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import MarkerClusterGroup from "react-leaflet-markercluster";
-
-import { SmartLink } from "../SmartLink";
 import { useTranslation } from "react-i18next";
 import Leaflet from "leaflet";
 import { MapContainer as Map, TileLayer, Marker, Tooltip } from "react-leaflet";
-import { usePlacesContext } from "../../context/places-provider.jsx";
+
+import { SmartLink } from "../SmartLink";
 import AssociatedPlace from "./AssociatedPlace.jsx";
-import LoadingSpinner from "../ui/LoadingSpinner";
 
 import Icon from "../ui/Icon";
+
+import ErrorBoundary from "../ErrorBoundary.jsx";
 
 import styles from "../../css/place.module.css";
 import arrowIcon from "../../assets/arrow-icon.svg";
@@ -19,9 +19,6 @@ import placeIcon from "../../assets/place-icon.svg";
 import horseIcon from "../../assets/horse-icon.svg";
 
 import { config } from "../../config";
-import _getAllPlacesAffiliatedWithPerson from "../../utils/person/get-all-places-affiliated-with-person.js";
-import getTranslatedKMonitorLink from "../../utils/person/get-translated-k-monitor-link";
-import getPersonProfile from "../../utils/person/get-person-profile";
 
 import { ORANGE_ICON } from "../../leaflet-helper";
 import { createClusterCustomIcon } from "../../leaflet-helper.jsx";
@@ -29,38 +26,17 @@ import { createClusterCustomIcon } from "../../leaflet-helper.jsx";
 import { OnePercentDonationBanner } from "../one-percent-donation-banner";
 import { useBannerContext } from "../../context/banner-provider.jsx";
 
-const PersonProfile = lazy(() => import("./PersonProfile"));
+import PersonProfile, { PersonProfileSkeleton } from "./PersonProfile";
 
-function PersonProfileCard(props) {
-    return (
-        <Suspense fallback={<LoadingSpinner />}>
-            <PersonProfile {...props} />
-        </Suspense>
-    );
-}
+import { KNOWN_ROUTES } from "../../config";
 
-const Person = (props) => {
-    const personName = props.name;
+const Person = ({ personName, affiliatedPlaces, isMainOligarch, kMonitorDbId }) => {
     const { t, i18n } = useTranslation();
-    const { resolvedLanguage } = i18n;
-    const [isProfileInfoLoading, setIsProfileInfoLoading] = useState(false);
-    const [profileInfo, setProfileInfo] = useState(null);
-    const [profileInfoError, setProfileInfoError] = useState(false);
+    const { lang } = useParams();
     const navigate = useNavigate();
-    const location = useLocation();
-    const { isVisible, onDismiss } = useBannerContext();
+    const { isVisible: isBannerVisible, onDismiss } = useBannerContext();
 
-    const backHandler = (e) => {
-        if (location.key === "default") {
-            return;
-        }
-        e.preventDefault();
-        navigate(-1);
-    };
-
-    /** @type {Hotel[]} */
-    const { places } = usePlacesContext();
-    const affiliatedPlaces = _getAllPlacesAffiliatedWithPerson(places, personName);
+    const currentLang = lang || i18n.resolvedLanguage || config.locales.default;
 
     /** @type {{name: string, link: string}|undefined} */
     const person =
@@ -68,53 +44,16 @@ const Person = (props) => {
             ? affiliatedPlaces[0].properties.ceos.find((ceo) => ceo.name === personName) ||
               affiliatedPlaces[0].properties.oligarchs.find((oligarch) => oligarch.name === personName)
             : undefined;
-    const kMonitorDbId = person && person.id ? person.id : null;
-    const isMainOligarch = !!(
-        affiliatedPlaces &&
-        affiliatedPlaces.length &&
-        (affiliatedPlaces[0].properties.mainCEO.find((ceo) => ceo.name === personName) ||
-            affiliatedPlaces[0].properties.mainOligarch.find((oligarch) => oligarch.name === personName))
-    );
     /** @type {string} */
-    let personUrl = affiliatedPlaces.length && person ? person.link : "";
-    if (personUrl && resolvedLanguage === "en") {
-        personUrl = getTranslatedKMonitorLink(personUrl);
-    }
+    const personUrl = affiliatedPlaces.length && person ? person.link : "";
 
     const bounds = affiliatedPlaces.length
         ? new Leaflet.LatLngBounds(affiliatedPlaces.map((place) => [place.geometry.coordinates[0], place.geometry.coordinates[1]]))
         : undefined;
 
-    const loadPersonProfile = useCallback(() => {
-        if (kMonitorDbId && personName && resolvedLanguage === "hu") {
-            setIsProfileInfoLoading(true);
-            getPersonProfile(kMonitorDbId)
-                .then((response) => {
-                    if (response.results && response.results.length && response.results[0] && response.results[0].description) {
-                        setProfileInfo({
-                            name: personName,
-                            profileImage: response.results[0].image_small_url,
-                            text: response.results[0].description,
-                        });
-                    } else {
-                        setProfileInfoError(true);
-                    }
-                })
-                .catch((e) => {
-                    console.error(e);
-                    setProfileInfoError(true);
-                })
-                .finally(() => {
-                    setIsProfileInfoLoading(false);
-                });
-        }
-    }, [personName, kMonitorDbId, resolvedLanguage]);
-
-    useEffect(loadPersonProfile, [loadPersonProfile]);
-
     return (
         <div className={styles.place}>
-            {isVisible && <OnePercentDonationBanner isInline onDismiss={onDismiss} />}
+            {isBannerVisible && <OnePercentDonationBanner isInline onDismiss={onDismiss} />}
             <Helmet>
                 <title>
                     {personName} - {t("general.siteName")}
@@ -125,17 +64,20 @@ const Person = (props) => {
                     <div className={styles.info}>
                         <h1>
                             {isMainOligarch && (
-                                <SmartLink to="/about" style={{ lineHeight: 0 }}>
+                                <SmartLink to={`/${KNOWN_ROUTES.ABOUT}`} style={{ lineHeight: 0 }}>
                                     <Icon img={horseIcon} size="large" className={styles.inlineIcon} />
                                 </SmartLink>
                             )}
                             {personName}
                         </h1>
 
-                        {isProfileInfoLoading ? <LoadingSpinner /> : null}
-                        {!isProfileInfoLoading && !profileInfoError && profileInfo && resolvedLanguage === "hu" ? (
-                            <PersonProfileCard {...profileInfo} />
-                        ) : null}
+                        {kMonitorDbId && lang === "hu" && (
+                            <ErrorBoundary fallback={null}>
+                                <Suspense fallback={<PersonProfileSkeleton />}>
+                                    <PersonProfile id={kMonitorDbId} />
+                                </Suspense>
+                            </ErrorBoundary>
+                        )}
 
                         {personUrl && (
                             <p>
@@ -150,15 +92,15 @@ const Person = (props) => {
                                 </div>
                                 <div className={styles.placeRow}>
                                     <ul>
-                                        {affiliatedPlaces.map((place, key) => (
-                                            <AssociatedPlace place={place} key={key} />
+                                        {affiliatedPlaces.map((place) => (
+                                            <AssociatedPlace place={place} key={place.properties.id} />
                                         ))}
                                     </ul>
                                 </div>
                             </>
                         )}
-                        <SmartLink to="/" className={styles.back} onClick={backHandler}>
-                            <Icon img={arrowIcon} alt={t("backToMap")} size="large" />
+                        <SmartLink to="/" className={styles.back} title={t("general.backToMap")}>
+                            <Icon img={arrowIcon} alt={t("general.backToMap")} size="large" />
                         </SmartLink>
                     </div>
                     <div className={styles.map}>
@@ -183,7 +125,7 @@ const Person = (props) => {
                                             icon={ORANGE_ICON}
                                             eventHandlers={{
                                                 click: () => {
-                                                    navigate(`/place/${place.properties.id}`);
+                                                    navigate(`/${currentLang}/${KNOWN_ROUTES.PLACE}/${place.properties.id}`);
                                                 },
                                             }}
                                         >

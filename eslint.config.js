@@ -1,28 +1,18 @@
-import { defineConfig } from "eslint/config";
 import js from "@eslint/js";
 import globals from "globals";
-import react from "eslint-plugin-react";
+import react from "@eslint-react/eslint-plugin";
 
-export default defineConfig([
+export default [
     js.configs.recommended,
+    react.configs.recommended,
     {
-        files: ["**/*.js"],
-        plugins: {
-            js,
-            react,
-        },
-        extends: ["js/recommended"],
-        rules: {
-            "no-unused-vars": "warn",
-            "no-undef": "warn",
-            "react/jsx-uses-react": "error",
-            "react/jsx-uses-vars": "error",
-        },
+        files: ["**/*.js", "**/*.jsx"],
         languageOptions: {
+            ecmaVersion: "latest",
+            sourceType: "module",
             parserOptions: {
                 ecmaFeatures: {
                     jsx: true,
-                    modules: true,
                 },
             },
             globals: {
@@ -30,5 +20,18 @@ export default defineConfig([
                 ...globals.node,
             },
         },
+        rules: {
+            "no-undef": "error",
+            "no-unused-vars": [
+                "error",
+                {
+                    vars: "all",
+                    args: "after-used",
+                    varsIgnorePattern: "^_",
+                    argsIgnorePattern: "^_",
+                    caughtErrorsIgnorePattern: "^_",
+                },
+            ],
+        },
     },
-]);
+];

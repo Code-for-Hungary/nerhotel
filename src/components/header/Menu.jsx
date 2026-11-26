@@ -1,14 +1,19 @@
 import { useRef } from "react";
+import { Trans, useTranslation } from "react-i18next";
+import { CSSTransition } from "react-transition-group";
+
 import { SmartLink } from "../SmartLink";
-import closeIcon from "../../assets/close-icon.svg";
-import styles from "./Menu.module.css";
 import Icon from "../ui/Icon";
+
+import closeIcon from "../../assets/close-icon.svg";
 import image from "../../assets/nh-main.svg";
 import logo from "../../assets/nh-logo.svg";
 import logoEn from "../../assets/nh-logo-en.svg";
-import { useTranslation } from "react-i18next";
-import { CSSTransition } from "react-transition-group";
+
+import styles from "./Menu.module.css";
 import "./Menu.transition.css";
+
+import { KNOWN_ROUTES } from "../../config";
 
 const Menu = ({ showMenu, onClose }) => {
     const menuRef = useRef(null);
@@ -37,7 +42,7 @@ const Menu = ({ showMenu, onClose }) => {
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to="/about" onClick={onClose}>
+                            <SmartLink to={`/${KNOWN_ROUTES.ABOUT}`} onClick={onClose}>
                                 {t("navigation.about")}
                             </SmartLink>
                         </li>
@@ -47,7 +52,7 @@ const Menu = ({ showMenu, onClose }) => {
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to="/contact" onClick={onClose}>
+                            <SmartLink to={`/${KNOWN_ROUTES.CONTACT}`} onClick={onClose}>
                                 {t("navigation.contact")}
                             </SmartLink>
                         </li>
@@ -57,16 +62,17 @@ const Menu = ({ showMenu, onClose }) => {
                             </SmartLink>
                         </li>
                         <li>
-                            <SmartLink to="/data-export" onClick={onClose}>
+                            <SmartLink to={`/${KNOWN_ROUTES.DATA_EXPORT}`} onClick={onClose}>
                                 {t("navigation.export")}
                             </SmartLink>
                         </li>
-                        {/* This page is only relevant to Hungarian speakers as it's not translated,
-                                so it doesn't make sense to add a translation key.
-                            */}
+                        {/* 
+                            This page is only relevant to Hungarian speakers as it's not translated,
+                            so it doesn't make sense to add a translation key.
+                        */}
                         {resolvedLanguage === "hu" && (
                             <li>
-                                <SmartLink to="/press-releases" onClick={onClose}>
+                                <SmartLink to={`/${KNOWN_ROUTES.PRESS_RELEASES}`} onClick={onClose}>
                                     #nerhotel
                                 </SmartLink>
                             </li>
@@ -79,11 +85,9 @@ const Menu = ({ showMenu, onClose }) => {
 
                     <address className={styles.footer}>
                         <p>
-                            <strong
-                                dangerouslySetInnerHTML={{
-                                    __html: t("navigation.address.name"),
-                                }}
-                            />
+                            <strong>
+                                <Trans i18nKey="navigation.address.name" />
+                            </strong>
                         </p>
                         <p>
                             {t("navigation.address.heading")}: <br />

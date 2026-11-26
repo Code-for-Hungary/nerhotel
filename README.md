@@ -107,34 +107,3 @@ Ha bemergelünk egy PR-t a `master` branchbe, akkor a Coolify automatikusan kira
 A `dev` és a `master` branchek "védettek", ami azt jelenti, hogy nem tudsz közvetlenül pusholni beléjük, csak PR-okat tudsz bemergelni.
 
 Először mergelj be egy PR-t a `dev` branchbe, a változtatásokat le lehet ellenőrizni a staging környezeten (`dev.nerhotel.hu`) majd ha minden rendben van, akkor mergeld be a `dev`-t a `master`-be és a változtatások automatikusan kikerülnek az éles domainre.
-
-## Az adatbázis lementése JSON-ba
-
-Van egy Node.js szkript a `scripts/download-hotels-as-json.js`, ami ugyanazt a kódot használja az Google sheetsben tárolt adatok kinyerésére, mint amit futásidőben is meghívunk. A különbség az, hogy ez lementi a JSON-t a `data/nerhotel.json` file-ba.
-Ez hasznos lehet, ha mondjuk egy másik adatbázisba akarjuk migrálni az adatokat.
-
-### 1) Készítsünk egy bundle-t
-
-Mivel a node.js szkript behúzza az `src` file-ban található JS modulokat amik ESM modulok így össze kell őket csomagolnunk hogy a node futatni tudja.
-Ezt legegyszerűbben egy command line-ból kiadott [Rollup parancsal](https://rollupjs.org/command-line-interface/) tudjuk megtenni (az `npx` parancsot használva nem kell a Rollupot fel installálni sem a projektbe sem a gépünkre globálisan)
-
-```bash
-npx rollup scripts/download-places-as-json.js --file scripts/download-places-as-json.bundle.js --format esm
-```
-> ⚠️ A létrejött `scripts/download-places-as-json.bundle.js` nem fog bekerülni gitbe.
-
-### 2) Futasuk a bundle-t
-
-Miután létrehoztuk futassuk le
-
-```bash
-node scripts/download-places-as-json.bundle.js
-```
-
-> ⚠️ A szkript futásához minimum Node.js 18-as verzió fog kelleni ugyanis a behúzott szkriptben `fetch` API-t kell futattnunk. Ha nem akarsz globálisan frissíteni hanszálj [NVM](https://github.com/nvm-sh/nvm)-t.
-
-Ha a szkript sikeresen lefutott, akkor látnod kell egy `data/nerhotel.json` file-t.
-
-> ⚠️ A `data/nerhotel.json` nincs verzió kezelés alatt!
-
-Ha a `data` mappa, vagy a file már létezik akkor a szkript nem fogja felülírni azokat, szóval ha újra le akarod tölteni és menteni az adatokat akkor kézzel törölnöd kell ezt a file-t és a mappát is.

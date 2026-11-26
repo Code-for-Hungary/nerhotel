@@ -14,7 +14,11 @@ class ErrorBoundary extends Component {
 
     render() {
         if (this.state.hasError) {
-            return <ErrorScreen standAlone={true} />;
+            if (this.props.fallback === undefined) {
+                return <ErrorScreen standAlone={true} />;
+            }
+
+            return this.props.fallback;
         }
 
         return this.props.children;
